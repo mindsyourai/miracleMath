@@ -1,0 +1,2364 @@
+{
+  "project": "miracleMath",
+  "agent": "Agent 1 (root-word counts & paired relationships)",
+  "generated_by": "data/root_counts_script.py (run it to regenerate)",
+  "methodology": {
+    "primary_source": {
+      "name": "Quranic Arabic Corpus, morphology version 0.4",
+      "copyright": "Copyright (C) 2011 Kais Dukes, GNU GPL",
+      "site": "https://corpus.quran.com",
+      "file": "corpus/quranic-corpus-morphology-0.4.txt",
+      "sha256": "a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46",
+      "bytes": 6309503,
+      "lines_total": 128276,
+      "data_lines_segments": 128219,
+      "how_obtained": "corpus.quran.com's official download page (https://corpus.quran.com/download/) serves v0.4 only behind an email form (POST to /download/default.jsp) and publishes no direct file URL; the Java API (JQuranTree) is a Java library, not a REST API, so there is no live endpoint to query. This file was fetched from the textminingthequran.com mirror of the identical v0.4 file and verified against the corpus's own published figures (128,276 lines; 77,429 words; header copyright block verbatim). It was NOT downloaded directly from corpus.quran.com."
+    },
+    "display_source": {
+      "name": "Tanzil Quran Text, Uthmani script",
+      "site": "https://tanzil.net",
+      "file": "corpus/quran-uthmani.txt",
+      "sha256": "ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af",
+      "bytes": 1334737,
+      "role": "Arabic display text only (verse quotes and matched tokens, copied byte-for-byte, never retyped); also used for the totals cross-check."
+    },
+    "counting_rules": [
+      "Counting unit: one QAC word = one (surah, verse, word) location. A word with several segments (prefix + stem + suffix) is counted once even if several segments carry the root.",
+      "Matching is by ROOT: first (e.g. jannah ROOT jnn, dunya ROOT dnw), then narrowed by LEM: to the intended sense. Where QAC assigns no ROOT (proper nouns: jahannam; the time-adverb yawma'idhin), matching is by LEM: (or FORM:) alone -- stated per concept in qac_root/qac_lemmas.",
+      "Buckwalter transliteration is used ONLY for matching (ROOT:/LEM:/FORM: fields). All Arabic shown comes from the Tanzil file.",
+      "Prefixes (wa-, fa-, bi-, li-, ka-, al-) and suffixes (pronouns, case endings, plural/dual markers) are already segmented in QAC, so they need no stripping: matching is on the stem segment's ROOT/LEM, which is prefix- and suffix-independent.",
+      "Plurals and duals are included wherever the lemma covers them (e.g. jan~ap covers jannah + jannat; rijaAl covers rijal). Where a plural has its own lemma it is cited separately (nisa' for women).",
+      "Basmalah: QAC contains only the basmalah of 1:1 as words. The basmalahs prepended to verse 1 of the other 112 surahs in the Tanzil file are NOT QAC words and are NOT counted. This affects the Allah anchor by exactly 112 (see extras).",
+      "Diacritics: not stripped by us -- QAC's annotation already encodes vowels in FORM and sense in LEM, which is what resolves look-alikes (iman vs ayman 'oaths', malak 'angel' vs malik 'king', dhakar 'male' vs dhikr 'remembrance').",
+      "Ambiguous roots are split by LEM and the excluded senses are listed per concept (grain for Hbb, expiation for kfr, safety/trust for Amn, compulsion for krh, hiring for Ajr, choosing for xyr, sparks for $rr, clothes for vwb).",
+      "Ratios are a:b as a/b rounded to 2 decimals; ratio_str gives the raw counts.",
+      "English (Clear Quran) translation was NOT used as a counting source anywhere."
+    ],
+    "verse_mapping": "Line index -> surah:ayah via the standard ayah counts per surah; table verified to sum to 6236 before use.",
+    "reproduce": "python3 data/root_counts_script.py"
+  },
+  "totals": {
+    "qac_segments": 128219,
+    "qac_words": 77429,
+    "qac_verses": 6236,
+    "qac_surahs": 114,
+    "tanzil_whitespace_tokens_6236_verses": 77881,
+    "tanzil_vs_qac_token_difference": 452,
+    "tanzil_vs_qac_explanation": "Tanzil has 452 more whitespace tokens than QAC has words: 448 = 112 basmalahs x 4 words (prepended in Tanzil, absent from QAC except 1:1; Surahs 95 and 97 spell the basmalah with a doubled ba, so a plain startswith count finds only 111 of the 113 basmalah lines) + 4 tokens where the two texts segment words differently (per-verse audit: 4 verses differ, net 4 tokens; see alignment_audit). QAC words and Tanzil tokens are different units; the counts are not forced to match.",
+    "allah_anchor_qac_lemma_llah": 2699,
+    "alignment_audit": {
+      "verses_with_word_count_mismatch": 4,
+      "total_diff_qac_minus_tanzil": -4,
+      "mismatches": [
+        {
+          "surah": 2,
+          "ayah": 181,
+          "qac_words": 13,
+          "tanzil_tokens_adj": 14,
+          "diff_qac_minus_tanzil": -1
+        },
+        {
+          "surah": 8,
+          "ayah": 6,
+          "qac_words": 11,
+          "tanzil_tokens_adj": 12,
+          "diff_qac_minus_tanzil": -1
+        },
+        {
+          "surah": 13,
+          "ayah": 37,
+          "qac_words": 19,
+          "tanzil_tokens_adj": 20,
+          "diff_qac_minus_tanzil": -1
+        },
+        {
+          "surah": 37,
+          "ayah": 130,
+          "qac_words": 3,
+          "tanzil_tokens_adj": 4,
+          "diff_qac_minus_tanzil": -1
+        }
+      ]
+    }
+  },
+  "pairs": [
+    {
+      "id": "heaven_hell",
+      "label_en": "Heaven / Hell",
+      "label_ar": "الجنة / جهنم",
+      "a": {
+        "term_en": "heaven (Garden)",
+        "term_ar": "الجنة",
+        "qac_root": [
+          "jnn"
+        ],
+        "qac_lemmas": [
+          "jan~ap"
+        ],
+        "root_note": "ROOT jnn, LEM jan~ap",
+        "count": 147,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 25,
+            "qac_location": "2:25:8",
+            "arabic": "جَنَّٰتٍ",
+            "verse_arabic": "وَبَشِّرِ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ أَنَّ لَهُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ كُلَّمَا رُزِقُوا۟ مِنْهَا مِن ثَمَرَةٍ رِّزْقًا قَالُوا۟ هَٰذَا ٱلَّذِى رُزِقْنَا مِن قَبْلُ وَأُتُوا۟ بِهِۦ مُتَشَٰبِهًا وَلَهُمْ فِيهَآ أَزْوَٰجٌ مُّطَهَّرَةٌ وَهُمْ فِيهَا خَٰلِدُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 35,
+            "qac_location": "2:35:6",
+            "arabic": "ٱلْجَنَّةَ",
+            "verse_arabic": "وَقُلْنَا يَٰٓـَٔادَمُ ٱسْكُنْ أَنتَ وَزَوْجُكَ ٱلْجَنَّةَ وَكُلَا مِنْهَا رَغَدًا حَيْثُ شِئْتُمَا وَلَا تَقْرَبَا هَٰذِهِ ٱلشَّجَرَةَ فَتَكُونَا مِنَ ٱلظَّٰلِمِينَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 82,
+            "qac_location": "2:82:7",
+            "arabic": "ٱلْجَنَّةِ",
+            "verse_arabic": "وَٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلْجَنَّةِ هُمْ فِيهَا خَٰلِدُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "جَنَّٰتٍ": 37,
+          "ٱلْجَنَّةَ": 18,
+          "ٱلْجَنَّةِ": 27,
+          "جَنَّةٍۭ": 1,
+          "جَنَّةٌ": 3,
+          "جَنَّٰتٌ": 5,
+          "وَجَنَّةٍ": 2,
+          "وَجَنَّٰتٌ": 2,
+          "جَنَّٰتِ": 11,
+          "وَجَنَّٰتٍ": 4,
+          "ٱلْجَنَّةُ": 6,
+          "جَنَّٰتُ": 9,
+          "جَنَّتَيْنِ": 2,
+          "ٱلْجَنَّتَيْنِ": 2,
+          "جَنَّتَهُۥ": 1,
+          "جَنَّتَكَ": 1,
+          "جَنَّتِكَ": 1,
+          "جَنَّةُ": 2,
+          "جَنَّةِ": 1,
+          "جَنَّتَانِ": 3,
+          "بِجَنَّتَيْهِمْ": 1,
+          "بِٱلْجَنَّةِ": 1,
+          "ٱلْجَنَّاتِ": 1,
+          "وَجَنَّتُ": 1,
+          "جَنَّةٍ": 2,
+          "جَنَّةَ": 1,
+          "جَنَّةً": 1,
+          "جَنَّتِى": 1
+        },
+        "lemma_breakdown": {
+          "jan~ap": 147
+        },
+        "notes": "Garden only. Same root jnn also gives jinn (39 words), madness/possession (majnun, 11), shield (junnah, 2), fetuses (ajinnah, 1) and the verb janna 'night covered' (1) -- all excluded via LEM."
+      },
+      "b": {
+        "term_en": "Hell (Jahannam)",
+        "term_ar": "جهنم",
+        "qac_root": [],
+        "qac_lemmas": [
+          "jahan~am"
+        ],
+        "root_note": "proper noun: no ROOT in QAC; LEM jahan~am",
+        "count": 77,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 206,
+            "qac_location": "2:206:10",
+            "arabic": "جَهَنَّمُ",
+            "verse_arabic": "وَإِذَا قِيلَ لَهُ ٱتَّقِ ٱللَّهَ أَخَذَتْهُ ٱلْعِزَّةُ بِٱلْإِثْمِ فَحَسْبُهُۥ جَهَنَّمُ وَلَبِئْسَ ٱلْمِهَادُ"
+          },
+          {
+            "surah": 3,
+            "ayah": 12,
+            "qac_location": "3:12:7",
+            "arabic": "جَهَنَّمَ",
+            "verse_arabic": "قُل لِّلَّذِينَ كَفَرُوا۟ سَتُغْلَبُونَ وَتُحْشَرُونَ إِلَىٰ جَهَنَّمَ وَبِئْسَ ٱلْمِهَادُ"
+          },
+          {
+            "surah": 3,
+            "ayah": 162,
+            "qac_location": "3:162:11",
+            "arabic": "جَهَنَّمُ",
+            "verse_arabic": "أَفَمَنِ ٱتَّبَعَ رِضْوَٰنَ ٱللَّهِ كَمَنۢ بَآءَ بِسَخَطٍ مِّنَ ٱللَّهِ وَمَأْوَىٰهُ جَهَنَّمُ وَبِئْسَ ٱلْمَصِيرُ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "جَهَنَّمُ": 18,
+          "جَهَنَّمَ": 54,
+          "بِجَهَنَّمَ": 2,
+          "لِجَهَنَّمَ": 3
+        },
+        "lemma_breakdown": {
+          "jahan~am": 77
+        },
+        "notes": "Unambiguous proper name of Hell."
+      },
+      "ratio": 1.91,
+      "ratio_str": "147:77",
+      "notes": "Secondary hell-word: nar (fire), 145 -- see extras. Jannah 147 is the figure most often quoted; it reproduces exactly here (singular + plural garden, LEM jan~ap)."
+    },
+    {
+      "id": "heaven_hell_fire",
+      "label_en": "Heaven / Hell-fire (nar)",
+      "label_ar": "الجنة / النار",
+      "a": {
+        "term_en": "heaven (Garden)",
+        "term_ar": "الجنة",
+        "qac_root": [
+          "jnn"
+        ],
+        "qac_lemmas": [
+          "jan~ap"
+        ],
+        "root_note": "ROOT jnn, LEM jan~ap",
+        "count": 147,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 25,
+            "qac_location": "2:25:8",
+            "arabic": "جَنَّٰتٍ",
+            "verse_arabic": "وَبَشِّرِ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ أَنَّ لَهُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ كُلَّمَا رُزِقُوا۟ مِنْهَا مِن ثَمَرَةٍ رِّزْقًا قَالُوا۟ هَٰذَا ٱلَّذِى رُزِقْنَا مِن قَبْلُ وَأُتُوا۟ بِهِۦ مُتَشَٰبِهًا وَلَهُمْ فِيهَآ أَزْوَٰجٌ مُّطَهَّرَةٌ وَهُمْ فِيهَا خَٰلِدُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 35,
+            "qac_location": "2:35:6",
+            "arabic": "ٱلْجَنَّةَ",
+            "verse_arabic": "وَقُلْنَا يَٰٓـَٔادَمُ ٱسْكُنْ أَنتَ وَزَوْجُكَ ٱلْجَنَّةَ وَكُلَا مِنْهَا رَغَدًا حَيْثُ شِئْتُمَا وَلَا تَقْرَبَا هَٰذِهِ ٱلشَّجَرَةَ فَتَكُونَا مِنَ ٱلظَّٰلِمِينَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 82,
+            "qac_location": "2:82:7",
+            "arabic": "ٱلْجَنَّةِ",
+            "verse_arabic": "وَٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلْجَنَّةِ هُمْ فِيهَا خَٰلِدُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "جَنَّٰتٍ": 37,
+          "ٱلْجَنَّةَ": 18,
+          "ٱلْجَنَّةِ": 27,
+          "جَنَّةٍۭ": 1,
+          "جَنَّةٌ": 3,
+          "جَنَّٰتٌ": 5,
+          "وَجَنَّةٍ": 2,
+          "وَجَنَّٰتٌ": 2,
+          "جَنَّٰتِ": 11,
+          "وَجَنَّٰتٍ": 4,
+          "ٱلْجَنَّةُ": 6,
+          "جَنَّٰتُ": 9,
+          "جَنَّتَيْنِ": 2,
+          "ٱلْجَنَّتَيْنِ": 2,
+          "جَنَّتَهُۥ": 1,
+          "جَنَّتَكَ": 1,
+          "جَنَّتِكَ": 1,
+          "جَنَّةُ": 2,
+          "جَنَّةِ": 1,
+          "جَنَّتَانِ": 3,
+          "بِجَنَّتَيْهِمْ": 1,
+          "بِٱلْجَنَّةِ": 1,
+          "ٱلْجَنَّاتِ": 1,
+          "وَجَنَّتُ": 1,
+          "جَنَّةٍ": 2,
+          "جَنَّةَ": 1,
+          "جَنَّةً": 1,
+          "جَنَّتِى": 1
+        },
+        "lemma_breakdown": {
+          "jan~ap": 147
+        },
+        "notes": "As above."
+      },
+      "b": {
+        "term_en": "fire / Hell-fire",
+        "term_ar": "النار",
+        "qac_root": [
+          "nwr"
+        ],
+        "qac_lemmas": [
+          "naAr"
+        ],
+        "root_note": "ROOT nwr, LEM naAr",
+        "count": 145,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 17,
+            "qac_location": "2:17:5",
+            "arabic": "نَارًا",
+            "verse_arabic": "مَثَلُهُمْ كَمَثَلِ ٱلَّذِى ٱسْتَوْقَدَ نَارًا فَلَمَّآ أَضَآءَتْ مَا حَوْلَهُۥ ذَهَبَ ٱللَّهُ بِنُورِهِمْ وَتَرَكَهُمْ فِى ظُلُمَٰتٍ لَّا يُبْصِرُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 24,
+            "qac_location": "2:24:7",
+            "arabic": "ٱلنَّارَ",
+            "verse_arabic": "فَإِن لَّمْ تَفْعَلُوا۟ وَلَن تَفْعَلُوا۟ فَٱتَّقُوا۟ ٱلنَّارَ ٱلَّتِى وَقُودُهَا ٱلنَّاسُ وَٱلْحِجَارَةُ أُعِدَّتْ لِلْكَٰفِرِينَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 39,
+            "qac_location": "2:39:7",
+            "arabic": "ٱلنَّارِ",
+            "verse_arabic": "وَٱلَّذِينَ كَفَرُوا۟ وَكَذَّبُوا۟ بِـَٔايَٰتِنَآ أُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ هُمْ فِيهَا خَٰلِدُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "نَارًا": 19,
+          "ٱلنَّارَ": 11,
+          "ٱلنَّارِ": 70,
+          "ٱلنَّارُ": 21,
+          "نَارٌ": 4,
+          "نَّارٍ": 5,
+          "نَارِ": 4,
+          "نَارَ": 3,
+          "نَارُ": 3,
+          "فَٱلنَّارُ": 2,
+          "نَّارِ": 1,
+          "يَٰنَارُ": 1,
+          "وَٱلنَّارُ": 1
+        },
+        "lemma_breakdown": {
+          "naAr": 145
+        },
+        "notes": "All nar words: Hell-fire AND literal fire (e.g. Moses' fire, 20:10; the fire of this world). QAC's LEM naAr does not separate the senses, so 145 is the combined count; jahannam (77) is the unambiguous Hell count."
+      },
+      "ratio": 1.01,
+      "ratio_str": "147:145",
+      "notes": "Tanzil surface check agrees exactly: 145 نار tokens once the vocative يَٰنَارُ ('O Fire!', 21:69) is counted."
+    },
+    {
+      "id": "world_hereafter",
+      "label_en": "This world / Hereafter",
+      "label_ar": "الدنيا / الآخرة",
+      "a": {
+        "term_en": "this world",
+        "term_ar": "الدنيا",
+        "qac_root": [
+          "dnw"
+        ],
+        "qac_lemmas": [
+          "d~unoyaA"
+        ],
+        "root_note": "ROOT dnw, LEM d~unoyaA",
+        "count": 115,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 85,
+            "qac_location": "2:85:38",
+            "arabic": "ٱلدُّنْيَا",
+            "verse_arabic": "ثُمَّ أَنتُمْ هَٰٓؤُلَآءِ تَقْتُلُونَ أَنفُسَكُمْ وَتُخْرِجُونَ فَرِيقًا مِّنكُم مِّن دِيَٰرِهِمْ تَظَٰهَرُونَ عَلَيْهِم بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَإِن يَأْتُوكُمْ أُسَٰرَىٰ تُفَٰدُوهُمْ وَهُوَ مُحَرَّمٌ عَلَيْكُمْ إِخْرَاجُهُمْ أَفَتُؤْمِنُونَ بِبَعْضِ ٱلْكِتَٰبِ وَتَكْفُرُونَ بِبَعْضٍ فَمَا جَزَآءُ مَن يَفْعَلُ ذَٰلِكَ مِنكُمْ إِلَّا خِزْىٌ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَيَوْمَ ٱلْقِيَٰمَةِ يُرَدُّونَ إِلَىٰٓ أَشَدِّ ٱلْعَذَابِ وَمَا ٱللَّهُ بِغَٰفِلٍ عَمَّا تَعْمَلُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 86,
+            "qac_location": "2:86:5",
+            "arabic": "ٱلدُّنْيَا",
+            "verse_arabic": "أُو۟لَٰٓئِكَ ٱلَّذِينَ ٱشْتَرَوُا۟ ٱلْحَيَوٰةَ ٱلدُّنْيَا بِٱلْـَٔاخِرَةِ فَلَا يُخَفَّفُ عَنْهُمُ ٱلْعَذَابُ وَلَا هُمْ يُنصَرُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 114,
+            "qac_location": "2:114:24",
+            "arabic": "ٱلدُّنْيَا",
+            "verse_arabic": "وَمَنْ أَظْلَمُ مِمَّن مَّنَعَ مَسَٰجِدَ ٱللَّهِ أَن يُذْكَرَ فِيهَا ٱسْمُهُۥ وَسَعَىٰ فِى خَرَابِهَآ أُو۟لَٰٓئِكَ مَا كَانَ لَهُمْ أَن يَدْخُلُوهَآ إِلَّا خَآئِفِينَ لَهُمْ فِى ٱلدُّنْيَا خِزْىٌ وَلَهُمْ فِى ٱلْـَٔاخِرَةِ عَذَابٌ عَظِيمٌ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "ٱلدُّنْيَا": 110,
+          "ٱلدُّنْيَآ": 5
+        },
+        "lemma_breakdown": {
+          "d~unoyaA": 115
+        },
+        "notes": "All 115 are al-dunya. Same root also gives adna (nearest/lower, 12), daniyah (near, 3), dana (drew near, 2) -- excluded via LEM."
+      },
+      "b": {
+        "term_en": "the Hereafter",
+        "term_ar": "الآخرة",
+        "qac_root": [
+          "Axr"
+        ],
+        "qac_lemmas": [
+          "A^xir"
+        ],
+        "root_note": "ROOT Axr, LEM A^xir, feminine al-akhira forms only",
+        "count": 115,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 4,
+            "qac_location": "2:4:10",
+            "arabic": "وَبِٱلْـَٔاخِرَةِ",
+            "verse_arabic": "وَٱلَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِٱلْـَٔاخِرَةِ هُمْ يُوقِنُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 86,
+            "qac_location": "2:86:6",
+            "arabic": "بِٱلْـَٔاخِرَةِ",
+            "verse_arabic": "أُو۟لَٰٓئِكَ ٱلَّذِينَ ٱشْتَرَوُا۟ ٱلْحَيَوٰةَ ٱلدُّنْيَا بِٱلْـَٔاخِرَةِ فَلَا يُخَفَّفُ عَنْهُمُ ٱلْعَذَابُ وَلَا هُمْ يُنصَرُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 94,
+            "qac_location": "2:94:6",
+            "arabic": "ٱلْـَٔاخِرَةُ",
+            "verse_arabic": "قُلْ إِن كَانَتْ لَكُمُ ٱلدَّارُ ٱلْـَٔاخِرَةُ عِندَ ٱللَّهِ خَالِصَةً مِّن دُونِ ٱلنَّاسِ فَتَمَنَّوُا۟ ٱلْمَوْتَ إِن كُنتُمْ صَٰدِقِينَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "وَبِٱلْـَٔاخِرَةِ": 1,
+          "بِٱلْـَٔاخِرَةِ": 21,
+          "ٱلْـَٔاخِرَةُ": 5,
+          "ٱلْـَٔاخِرَةِ": 55,
+          "وَٱلْـَٔاخِرَةِ": 15,
+          "ٱلْـَٔاخِرَةَ": 11,
+          "وَٱلْـَٔاخِرَةُ": 3,
+          "وَلَلْـَٔاخِرَةُ": 2,
+          "وَٱلْـَٔاخِرَةَ": 1,
+          "لَلْـَٔاخِرَةَ": 1
+        },
+        "lemma_breakdown": {
+          "A^xir": 115
+        },
+        "notes": "115 al-akhira forms. One of them (29:20, al-nash'a al-akhira, 'the latter creation') means 'latter', not the Hereafter, so the strict hereafter-sense count is 114. Masculine al-akhir ('the Last / the other') and plural akhirun/ukhar are excluded via FORM."
+      },
+      "ratio": 1.0,
+      "ratio_str": "115:115",
+      "notes": "Exact 115 : 115 tie -- the famous pairing reproduces exactly on QAC root/lemma matching."
+    },
+    {
+      "id": "life_death",
+      "label_en": "Life / Death",
+      "label_ar": "الحياة / الموت",
+      "a": {
+        "term_en": "life",
+        "term_ar": "الحياة",
+        "qac_root": [
+          "Hyy"
+        ],
+        "qac_lemmas": [
+          "Hayaw`p"
+        ],
+        "root_note": "ROOT Hyy, LEM Hayaw`p",
+        "count": 76,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 85,
+            "qac_location": "2:85:37",
+            "arabic": "ٱلْحَيَوٰةِ",
+            "verse_arabic": "ثُمَّ أَنتُمْ هَٰٓؤُلَآءِ تَقْتُلُونَ أَنفُسَكُمْ وَتُخْرِجُونَ فَرِيقًا مِّنكُم مِّن دِيَٰرِهِمْ تَظَٰهَرُونَ عَلَيْهِم بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَإِن يَأْتُوكُمْ أُسَٰرَىٰ تُفَٰدُوهُمْ وَهُوَ مُحَرَّمٌ عَلَيْكُمْ إِخْرَاجُهُمْ أَفَتُؤْمِنُونَ بِبَعْضِ ٱلْكِتَٰبِ وَتَكْفُرُونَ بِبَعْضٍ فَمَا جَزَآءُ مَن يَفْعَلُ ذَٰلِكَ مِنكُمْ إِلَّا خِزْىٌ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَيَوْمَ ٱلْقِيَٰمَةِ يُرَدُّونَ إِلَىٰٓ أَشَدِّ ٱلْعَذَابِ وَمَا ٱللَّهُ بِغَٰفِلٍ عَمَّا تَعْمَلُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 86,
+            "qac_location": "2:86:4",
+            "arabic": "ٱلْحَيَوٰةَ",
+            "verse_arabic": "أُو۟لَٰٓئِكَ ٱلَّذِينَ ٱشْتَرَوُا۟ ٱلْحَيَوٰةَ ٱلدُّنْيَا بِٱلْـَٔاخِرَةِ فَلَا يُخَفَّفُ عَنْهُمُ ٱلْعَذَابُ وَلَا هُمْ يُنصَرُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 96,
+            "qac_location": "2:96:5",
+            "arabic": "حَيَوٰةٍ",
+            "verse_arabic": "وَلَتَجِدَنَّهُمْ أَحْرَصَ ٱلنَّاسِ عَلَىٰ حَيَوٰةٍ وَمِنَ ٱلَّذِينَ أَشْرَكُوا۟ يَوَدُّ أَحَدُهُمْ لَوْ يُعَمَّرُ أَلْفَ سَنَةٍ وَمَا هُوَ بِمُزَحْزِحِهِۦ مِنَ ٱلْعَذَابِ أَن يُعَمَّرَ وَٱللَّهُ بَصِيرٌۢ بِمَا يَعْمَلُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "ٱلْحَيَوٰةِ": 37,
+          "ٱلْحَيَوٰةَ": 11,
+          "حَيَوٰةٍ": 1,
+          "حَيَوٰةٌ": 1,
+          "ٱلْحَيَوٰةُ": 15,
+          "حَيَاتُنَا": 3,
+          "بِٱلْحَيَوٰةِ": 3,
+          "حَيَوٰةً": 2,
+          "حَيَاتِكُمُ": 1,
+          "وَٱلْحَيَوٰةَ": 1,
+          "لِحَيَاتِى": 1
+        },
+        "lemma_breakdown": {
+          "Hayaw`p": 76
+        },
+        "notes": "Noun al-hayah only. Broad Hyy family (life_broad) = 169: noun + hayy (living, incl. the divine name al-Hayy) + ahya verbs (give life) + mahya (my living) + hayawan (the true life, 29:64) + yastahyi 'spare alive' (6). Excluded: greeting (hayya, tahiyyah), shyness (yastahyi 2:26, 33:53; istihya' 28:25) and hayyah 'snake' (20:20)."
+      },
+      "b": {
+        "term_en": "death",
+        "term_ar": "الموت",
+        "qac_root": [
+          "mwt"
+        ],
+        "qac_lemmas": [
+          "mawot"
+        ],
+        "root_note": "ROOT mwt, LEM mawot",
+        "count": 50,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 19,
+            "qac_location": "2:19:16",
+            "arabic": "ٱلْمَوْتِ",
+            "verse_arabic": "أَوْ كَصَيِّبٍ مِّنَ ٱلسَّمَآءِ فِيهِ ظُلُمَٰتٌ وَرَعْدٌ وَبَرْقٌ يَجْعَلُونَ أَصَٰبِعَهُمْ فِىٓ ءَاذَانِهِم مِّنَ ٱلصَّوَٰعِقِ حَذَرَ ٱلْمَوْتِ وَٱللَّهُ مُحِيطٌۢ بِٱلْكَٰفِرِينَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 56,
+            "qac_location": "2:56:5",
+            "arabic": "مَوْتِكُمْ",
+            "verse_arabic": "ثُمَّ بَعَثْنَٰكُم مِّنۢ بَعْدِ مَوْتِكُمْ لَعَلَّكُمْ تَشْكُرُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 94,
+            "qac_location": "2:94:14",
+            "arabic": "ٱلْمَوْتَ",
+            "verse_arabic": "قُلْ إِن كَانَتْ لَكُمُ ٱلدَّارُ ٱلْـَٔاخِرَةُ عِندَ ٱللَّهِ خَالِصَةً مِّن دُونِ ٱلنَّاسِ فَتَمَنَّوُا۟ ٱلْمَوْتَ إِن كُنتُمْ صَٰدِقِينَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "ٱلْمَوْتِ": 13,
+          "مَوْتِكُمْ": 1,
+          "ٱلْمَوْتَ": 10,
+          "ٱلْمَوْتُ": 11,
+          "مَوْتِهَا": 8,
+          "مَوْتِهِۦ": 1,
+          "إِلَى": 1,
+          "مَوْتِهَآ": 3,
+          "مَوْتًا": 1,
+          "مَوْتِهِۦٓ": 1
+        },
+        "lemma_breakdown": {
+          "mawot": 50
+        },
+        "notes": "Noun al-mawt only. Broad mwt family (death_broad) = 165: noun + amata (cause to die) + mayyit (dead) + maytah (carrion) + mamat (death)."
+      },
+      "ratio": 1.52,
+      "ratio_str": "76:50",
+      "notes": "Life-broad vs death-broad: 169 : 165. The widely quoted 145 : 145 for life/death does NOT reproduce under any clean QAC rule (noun 76 : 50; whole-root 184 : 165; broad families as defined here 169 : 165). See VERIFICATION.md."
+    },
+    {
+      "id": "angels_devils",
+      "label_en": "Angels / Devils",
+      "label_ar": "الملائكة / الشياطين",
+      "a": {
+        "term_en": "angels",
+        "term_ar": "الملائكة",
+        "qac_root": [
+          "mlk"
+        ],
+        "qac_lemmas": [
+          "malak"
+        ],
+        "root_note": "ROOT mlk, LEM malak",
+        "count": 88,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 30,
+            "qac_location": "2:30:4",
+            "arabic": "لِلْمَلَٰٓئِكَةِ",
+            "verse_arabic": "وَإِذْ قَالَ رَبُّكَ لِلْمَلَٰٓئِكَةِ إِنِّى جَاعِلٌ فِى ٱلْأَرْضِ خَلِيفَةً قَالُوٓا۟ أَتَجْعَلُ فِيهَا مَن يُفْسِدُ فِيهَا وَيَسْفِكُ ٱلدِّمَآءَ وَنَحْنُ نُسَبِّحُ بِحَمْدِكَ وَنُقَدِّسُ لَكَ قَالَ إِنِّىٓ أَعْلَمُ مَا لَا تَعْلَمُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 31,
+            "qac_location": "2:31:8",
+            "arabic": "ٱلْمَلَٰٓئِكَةِ",
+            "verse_arabic": "وَعَلَّمَ ءَادَمَ ٱلْأَسْمَآءَ كُلَّهَا ثُمَّ عَرَضَهُمْ عَلَى ٱلْمَلَٰٓئِكَةِ فَقَالَ أَنۢبِـُٔونِى بِأَسْمَآءِ هَٰٓؤُلَآءِ إِن كُنتُمْ صَٰدِقِينَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 34,
+            "qac_location": "2:34:3",
+            "arabic": "لِلْمَلَٰٓئِكَةِ",
+            "verse_arabic": "وَإِذْ قُلْنَا لِلْمَلَٰٓئِكَةِ ٱسْجُدُوا۟ لِـَٔادَمَ فَسَجَدُوٓا۟ إِلَّآ إِبْلِيسَ أَبَىٰ وَٱسْتَكْبَرَ وَكَانَ مِنَ ٱلْكَٰفِرِينَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "لِلْمَلَٰٓئِكَةِ": 9,
+          "ٱلْمَلَٰٓئِكَةِ": 8,
+          "وَمَلَٰٓئِكَتِهِۦ": 3,
+          "ٱلْمَلَكَيْنِ": 1,
+          "وَٱلْمَلَٰٓئِكَةِ": 4,
+          "وَٱلْمَلَٰٓئِكَةُ": 10,
+          "ٱلْمَلَٰٓئِكَةُ": 21,
+          "ٱلْمَلَٰٓئِكَةَ": 9,
+          "مَلَكٌ": 6,
+          "مَلَكًا": 3,
+          "مَلَكَيْنِ": 1,
+          "بِٱلْمَلَٰٓئِكَةِ": 1,
+          "مَلَٰٓئِكَةٌ": 2,
+          "مَلَٰٓئِكَةً": 3,
+          "مَّلَكُ": 1,
+          "وَمَلَٰٓئِكَتُهُۥ": 1,
+          "وَمَلَٰٓئِكَتَهُۥ": 1,
+          "مَّلَٰٓئِكَةً": 1,
+          "مَّلَكٍ": 1,
+          "وَٱلْمَلَكُ": 2
+        },
+        "lemma_breakdown": {
+          "malak": 88
+        },
+        "notes": "73 plural mala'ikah + 15 singular malak (incl. dual al-malakayn, the two angels, 2:102, and collective singulars 69:17, 89:22). Same root mlk also gives mulk (dominion, 48), malik (king, 15), malakut (kingdom, 4) -- excluded by FORM (malik/mulk) and LEM (malakato is the verb 'to own')."
+      },
+      "b": {
+        "term_en": "devils (shayatin)",
+        "term_ar": "الشياطين",
+        "qac_root": [
+          "$Tn"
+        ],
+        "qac_lemmas": [
+          "$ayoTa`n"
+        ],
+        "root_note": "ROOT $Tn (QAC root for shaytan is sh-T-n, not sh-y-T), LEM $ayoTa`n",
+        "count": 88,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 14,
+            "qac_location": "2:14:10",
+            "arabic": "شَيَٰطِينِهِمْ",
+            "verse_arabic": "وَإِذَا لَقُوا۟ ٱلَّذِينَ ءَامَنُوا۟ قَالُوٓا۟ ءَامَنَّا وَإِذَا خَلَوْا۟ إِلَىٰ شَيَٰطِينِهِمْ قَالُوٓا۟ إِنَّا مَعَكُمْ إِنَّمَا نَحْنُ مُسْتَهْزِءُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 36,
+            "qac_location": "2:36:2",
+            "arabic": "ٱلشَّيْطَٰنُ",
+            "verse_arabic": "فَأَزَلَّهُمَا ٱلشَّيْطَٰنُ عَنْهَا فَأَخْرَجَهُمَا مِمَّا كَانَا فِيهِ وَقُلْنَا ٱهْبِطُوا۟ بَعْضُكُمْ لِبَعْضٍ عَدُوٌّ وَلَكُمْ فِى ٱلْأَرْضِ مُسْتَقَرٌّ وَمَتَٰعٌ إِلَىٰ حِينٍ"
+          },
+          {
+            "surah": 2,
+            "ayah": 102,
+            "qac_location": "2:102:4",
+            "arabic": "ٱلشَّيَٰطِينُ",
+            "verse_arabic": "وَٱتَّبَعُوا۟ مَا تَتْلُوا۟ ٱلشَّيَٰطِينُ عَلَىٰ مُلْكِ سُلَيْمَٰنَ وَمَا كَفَرَ سُلَيْمَٰنُ وَلَٰكِنَّ ٱلشَّيَٰطِينَ كَفَرُوا۟ يُعَلِّمُونَ ٱلنَّاسَ ٱلسِّحْرَ وَمَآ أُنزِلَ عَلَى ٱلْمَلَكَيْنِ بِبَابِلَ هَٰرُوتَ وَمَٰرُوتَ وَمَا يُعَلِّمَانِ مِنْ أَحَدٍ حَتَّىٰ يَقُولَآ إِنَّمَا نَحْنُ فِتْنَةٌ فَلَا تَكْفُرْ فَيَتَعَلَّمُونَ مِنْهُمَا مَا يُفَرِّقُونَ بِهِۦ بَيْنَ ٱلْمَرْءِ وَزَوْجِهِۦ وَمَا هُم بِضَآرِّينَ بِهِۦ مِنْ أَحَدٍ إِلَّا بِإِذْنِ ٱللَّهِ وَيَتَعَلَّمُونَ مَا يَضُرُّهُمْ وَلَا يَنفَعُهُمْ وَلَقَدْ عَلِمُوا۟ لَمَنِ ٱشْتَرَىٰهُ مَا لَهُۥ فِى ٱلْـَٔاخِرَةِ مِنْ خَلَٰقٍ وَلَبِئْسَ مَا شَرَوْا۟ بِهِۦٓ أَنفُسَهُمْ لَوْ كَانُوا۟ يَعْلَمُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "شَيَٰطِينِهِمْ": 1,
+          "ٱلشَّيْطَٰنُ": 34,
+          "ٱلشَّيَٰطِينُ": 4,
+          "ٱلشَّيَٰطِينَ": 5,
+          "ٱلشَّيْطَٰنِ": 19,
+          "ٱلشَّيْطَٰنَ": 10,
+          "شَيْطَٰنًا": 2,
+          "شَيَٰطِينَ": 1,
+          "شَيْطَٰنٍ": 4,
+          "ٱلشَّيَٰطِينِ": 4,
+          "لِلشَّيْطَٰنِ": 1,
+          "وَٱلشَّيَٰطِينَ": 2,
+          "لِّلشَّيَٰطِينِ": 1
+        },
+        "lemma_breakdown": {
+          "$ayoTa`n": 88
+        },
+        "notes": "Singular shaytan + plural shayatin, all senses (the Devil and devils). QAC tags shaytan as a proper noun with ROOT $Tn."
+      },
+      "ratio": 1.0,
+      "ratio_str": "88:88",
+      "notes": "Angels 88 : devils 88."
+    },
+    {
+      "id": "belief_disbelief",
+      "label_en": "Belief / Disbelief",
+      "label_ar": "الإيمان / الكفر",
+      "a": {
+        "term_en": "belief / faith",
+        "term_ar": "الإيمان",
+        "qac_root": [
+          "Amn"
+        ],
+        "qac_lemmas": [
+          "'aAmana",
+          "mu&omin",
+          "<iyma`n",
+          "m~u&omina`t",
+          "m~u&ominap"
+        ],
+        "root_note": "ROOT Amn",
+        "count": 812,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 3,
+            "qac_location": "2:3:2",
+            "arabic": "يُؤْمِنُونَ",
+            "verse_arabic": "ٱلَّذِينَ يُؤْمِنُونَ بِٱلْغَيْبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 4,
+            "qac_location": "2:4:2",
+            "arabic": "يُؤْمِنُونَ",
+            "verse_arabic": "وَٱلَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِٱلْـَٔاخِرَةِ هُمْ يُوقِنُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 6,
+            "qac_location": "2:6:11",
+            "arabic": "يُؤْمِنُونَ",
+            "verse_arabic": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "يُؤْمِنُونَ": 86,
+          "ءَامَنَّا": 31,
+          "بِمُؤْمِنِينَ": 6,
+          "ءَامَنُوا۟": 212,
+          "ءَامِنُوا۟": 10,
+          "ءَامَنَ": 26,
+          "أَنُؤْمِنُ": 3,
+          "وَءَامِنُوا۟": 3,
+          "نُّؤْمِنَ": 6,
+          "يُؤْمِنُوا۟": 10,
+          "أَفَتُؤْمِنُونَ": 1,
+          "نُؤْمِنُ": 3,
+          "مُّؤْمِنِينَ": 25,
+          "إِيمَٰنُكُمْ": 1,
+          "لِلْمُؤْمِنِينَ": 7,
+          "بِٱلْإِيمَٰنِ": 5,
+          "إِيمَٰنِكُمْ": 4,
+          "ءَامَنتُم": 6,
+          "إِيمَٰنَكُمْ": 1,
+          "ءَامَنُوٓا۟": 41,
+          "وَلْيُؤْمِنُوا۟": 1,
+          "يُؤْمِنَّ": 2,
+          "مُّؤْمِنَةٌ": 1,
+          "مُّؤْمِنٌ": 3,
+          "ٱلْمُؤْمِنِينَ": 78,
+          "يُؤْمِنُ": 18,
+          "وَيُؤْمِنۢ": 1,
+          "تُؤْمِن": 2,
+          "وَٱلْمُؤْمِنُونَ": 7,
+          "ٱلْمُؤْمِنُونَ": 22,
+          "تُؤْمِنُوٓا۟": 2,
+          "لَتُؤْمِنُنَّ": 1,
+          "إِيمَٰنِهِمْ": 3,
+          "وَتُؤْمِنُونَ": 2,
+          "لِلْإِيمَٰنِ": 3,
+          "إِيمَٰنًا": 7,
+          "فَـَٔامِنُوا۟": 5,
+          "تُؤْمِنُوا۟": 7,
+          "نُؤْمِنَ": 1,
+          "فَـَٔامَنَّا": 2,
+          "ٱلْمُؤْمِنَٰتِ": 5,
+          "بِإِيمَٰنِكُم": 1,
+          "تُؤْمِنُونَ": 5,
+          "لِمُؤْمِنٍ": 2,
+          "مُؤْمِنًا": 7,
+          "مُّؤْمِنَةٍ": 3,
+          "مُؤْمِنٌ": 7,
+          "وَءَامَنتُمْ": 1,
+          "لَيُؤْمِنَنَّ": 1,
+          "وَءَامَنتُم": 1,
+          "بِٱلْمُؤْمِنِينَ": 6,
+          "مُؤْمِنُونَ": 4,
+          "وَّءَامَنُوا۟": 2,
+          "إِيمَٰنَهُم": 1,
+          "لَّيُؤْمِنُنَّ": 1,
+          "لِيُؤْمِنُوٓا۟": 1,
+          "مُؤْمِنِينَ": 8,
+          "إِيمَٰنُهَا": 1,
+          "ءَامَنَتْ": 4,
+          "إِيمَٰنِهَا": 1,
+          "لِيُؤْمِنُوا۟": 3,
+          "لَنُؤْمِنَنَّ": 1,
+          "وَءَامَنُوٓا۟": 1,
+          "وَبِٱلْمُؤْمِنِينَ": 1,
+          "مُؤْمِنٍ": 1,
+          "ٱلْإِيمَٰنِ": 3,
+          "وَيُؤْمِنُ": 1,
+          "وَٱلْمُؤْمِنَٰتُ": 2,
+          "وَٱلْمُؤْمِنَٰتِ": 9,
+          "بِإِيمَٰنِهِمْ": 1,
+          "لِّلْمُؤْمِنِينَ": 8,
+          "ءَامَنتُ": 3,
+          "إِيمَٰنُهَآ": 1,
+          "لَـَٔامَنَ": 1,
+          "تُؤْمِنَ": 1,
+          "يُؤْمِنَ": 1,
+          "بِمُؤْمِنٍ": 1,
+          "وَلِلْمُؤْمِنِينَ": 4,
+          "إِيمَٰنِهِۦٓ": 1,
+          "يُؤْمِنُوٓا۟": 2,
+          "فَلْيُؤْمِن": 1,
+          "مُؤْمِنَيْنِ": 1,
+          "وَءَامَنَ": 4,
+          "ءَامَنتُمْ": 2,
+          "يُؤْمِنۢ": 6,
+          "فَيُؤْمِنُوا۟": 1,
+          "لِّلْمُؤْمِنَٰتِ": 1,
+          "فَـَٔامَنَ": 2,
+          "وَٱلْإِيمَٰنَ": 2,
+          "إِيمَٰنُهُمْ": 2,
+          "وَٱلْمُؤْمِنِينَ": 1,
+          "مُؤْمِنَةٍ": 1,
+          "مُّؤْمِنَةً": 1,
+          "مُّؤْمِنُونَ": 2,
+          "فَـَٔامَنُوا۟": 1,
+          "وَيُؤْمِنُونَ": 1,
+          "إِيمَٰنَهُۥٓ": 1,
+          "ٱلْإِيمَٰنُ": 2,
+          "ءَامِنْ": 1,
+          "وَءَامَنُوا۟": 1,
+          "لِّتُؤْمِنُوا۟": 1,
+          "مُّؤْمِنَٰتٌ": 1,
+          "ٱلْإِيمَٰنَ": 2,
+          "بِإِيمَٰنٍ": 1,
+          "لِتُؤْمِنُوا۟": 2,
+          "ٱلْمُؤْمِنُ": 1,
+          "ٱلْمُؤْمِنَٰتُ": 2,
+          "بِإِيمَٰنِهِنَّ": 1,
+          "مُؤْمِنَٰتٍ": 1,
+          "فَـَٔامَنَت": 1,
+          "مُّؤْمِنَٰتٍ": 1,
+          "وَءَامَنَهُم": 1
+        },
+        "lemma_breakdown": {
+          "'aAmana": 537,
+          "mu&omin": 202,
+          "<iyma`n": 45,
+          "m~u&ominap": 6,
+          "m~u&omina`t": 22
+        },
+        "notes": "Verb amana (believed, 537) + mu'min (believer, 202 + 22 feminine plural + 6 feminine singular) + iman (faith, 45). QAC's LEM split cleanly separates belief from the same root's safety/trust senses: amin (trustworthy, 14), amn (security, 5), amanah (trust, 6), ma'man (safe place, 1), aaminin (secure ones, 10) etc. -- 67 words, excluded."
+      },
+      "b": {
+        "term_en": "disbelief",
+        "term_ar": "الكفر",
+        "qac_root": [
+          "kfr"
+        ],
+        "qac_lemmas": [
+          "kafara",
+          "ka`firuwn",
+          "kufor",
+          "kaAfir",
+          "kafuwr",
+          "kaf~aAr",
+          "kufuwr",
+          "kaAfirap",
+          "kuforaAn",
+          "kawaAfir",
+          "kaAfuwr",
+          ">akofara"
+        ],
+        "root_note": "ROOT kfr",
+        "count": 507,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 6,
+            "qac_location": "2:6:3",
+            "arabic": "كَفَرُوا۟",
+            "verse_arabic": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ سَوَآءٌ عَلَيْهِمْ ءَأَنذَرْتَهُمْ أَمْ لَمْ تُنذِرْهُمْ لَا يُؤْمِنُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 19,
+            "qac_location": "2:19:19",
+            "arabic": "بِٱلْكَٰفِرِينَ",
+            "verse_arabic": "أَوْ كَصَيِّبٍ مِّنَ ٱلسَّمَآءِ فِيهِ ظُلُمَٰتٌ وَرَعْدٌ وَبَرْقٌ يَجْعَلُونَ أَصَٰبِعَهُمْ فِىٓ ءَاذَانِهِم مِّنَ ٱلصَّوَٰعِقِ حَذَرَ ٱلْمَوْتِ وَٱللَّهُ مُحِيطٌۢ بِٱلْكَٰفِرِينَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 24,
+            "qac_location": "2:24:13",
+            "arabic": "لِلْكَٰفِرِينَ",
+            "verse_arabic": "فَإِن لَّمْ تَفْعَلُوا۟ وَلَن تَفْعَلُوا۟ فَٱتَّقُوا۟ ٱلنَّارَ ٱلَّتِى وَقُودُهَا ٱلنَّاسُ وَٱلْحِجَارَةُ أُعِدَّتْ لِلْكَٰفِرِينَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "كَفَرُوا۟": 166,
+          "بِٱلْكَٰفِرِينَ": 3,
+          "لِلْكَٰفِرِينَ": 16,
+          "تَكْفُرُونَ": 11,
+          "ٱلْكَٰفِرِينَ": 52,
+          "كَافِرٍۭ": 1,
+          "يَكْفُرُونَ": 12,
+          "وَتَكْفُرُونَ": 1,
+          "بِكُفْرِهِمْ": 4,
+          "يَكْفُرُوا۟": 3,
+          "وَلِلْكَٰفِرِينَ": 5,
+          "وَيَكْفُرُونَ": 1,
+          "لِّلْكَٰفِرِينَ": 7,
+          "يَكْفُرُ": 3,
+          "كَفَرَ": 18,
+          "تَكْفُرْ": 1,
+          "ٱلْكُفْرَ": 6,
+          "كُفَّارًا": 1,
+          "يَكْفُرْ": 8,
+          "تَكْفُرُونِ": 1,
+          "كُفَّارٌ": 4,
+          "وَكُفْرٌۢ": 1,
+          "كَافِرٌ": 2,
+          "وَٱلْكَٰفِرُونَ": 3,
+          "كَفَرُوٓا۟": 23,
+          "كَفَّارٍ": 2,
+          "كَافِرَةٌ": 1,
+          "وَٱكْفُرُوٓا۟": 1,
+          "بِٱلْكُفْرِ": 4,
+          "كُفْرًا": 4,
+          "كَٰفِرِينَ": 8,
+          "أَكَفَرْتُم": 1,
+          "يُكْفَرُوهُ": 1,
+          "لِلْكُفْرِ": 1,
+          "ٱلْكُفْرِ": 5,
+          "تَكْفُرُوا۟": 3,
+          "يُكْفَرُ": 1,
+          "وَٱلْكَٰفِرِينَ": 1,
+          "وَنَكْفُرُ": 1,
+          "ٱلْكَٰفِرُونَ": 17,
+          "وَكُفْرِهِم": 1,
+          "وَبِكُفْرِهِمْ": 1,
+          "وَٱلْكُفَّارَ": 2,
+          "وَكُفْرًا": 4,
+          "بِكَٰفِرِينَ": 1,
+          "كَٰفِرُونَ": 15,
+          "كَفَرْتُم": 2,
+          "ٱلْكُفَّارَ": 5,
+          "وَكَفَرُوا۟": 2,
+          "ٱلْكُفَّارِ": 5,
+          "كَفُورٌ": 2,
+          "ٱلْكُفَّٰرُ": 1,
+          "كَفَرْتُمْ": 4,
+          "تَكْفُرُوٓا۟": 1,
+          "كَفَرْنَا": 2,
+          "كَفَرْتُ": 1,
+          "كَفَّارٌ": 2,
+          "لِيَكْفُرُوا۟": 3,
+          "فَكَفَرَتْ": 1,
+          "كَفُورًا": 4,
+          "كُفُورًا": 3,
+          "فَلْيَكْفُرْ": 1,
+          "أَكَفَرْتَ": 1,
+          "سَيَكْفُرُونَ": 1,
+          "كُفْرَانَ": 1,
+          "كَفُورٍ": 3,
+          "لَكَفُورٌ": 2,
+          "ٱلْكَافِرُ": 2,
+          "أَكْفُرُ": 1,
+          "لَكَٰفِرُونَ": 1,
+          "كُفْرُهُۥ": 2,
+          "كُفْرُهُۥٓ": 1,
+          "ٱلْكَفُورَ": 1,
+          "نَّكْفُرَ": 1,
+          "كُفْرُهُمْ": 2,
+          "فَكَفَرُوا۟": 3,
+          "بِكُفْرِكَ": 1,
+          "فَتَكْفُرُونَ": 1,
+          "لِأَكْفُرَ": 1,
+          "وَكَفَرْنَا": 1,
+          "لَتَكْفُرُونَ": 1,
+          "وَكَفَرْتُم": 1,
+          "كُفِرَ": 1,
+          "أَكُفَّارُكُمْ": 1,
+          "ٱكْفُرْ": 1,
+          "ٱلْكَوَافِرِ": 1,
+          "ٱلْكُفَّارُ": 2,
+          "وَكَفَرَت": 1,
+          "كَفَّارًا": 1,
+          "كَافُورًا": 1,
+          "أَكْفَرَهُۥ": 1,
+          "ٱلْكَفَرَةُ": 1,
+          "وَكَفَرَ": 1
+        },
+        "lemma_breakdown": {
+          "kafara": 289,
+          "ka`firuwn": 129,
+          "kaAfir": 27,
+          "kufor": 37,
+          "kaf~aAr": 5,
+          "kaAfirap": 1,
+          "kafuwr": 12,
+          "kufuwr": 3,
+          "kuforaAn": 1,
+          "kawaAfir": 1,
+          "kaAfuwr": 1,
+          ">akofara": 1
+        },
+        "notes": "Verb kafara (289) + kafirun (129) + kufr (37) + kafir (27) + kafur (ungrateful, 12) + kaffar (5) etc. Excluded: kaffara 'to expiate/atone' (14) and kaffarah 'expiation' (4) -- same root, different sense."
+      },
+      "ratio": 1.6,
+      "ratio_str": "812:507",
+      "notes": "Whole ROOT:Amn = 879 words; belief-sense = 812. Whole ROOT:kfr = 525; disbelief-sense = 507."
+    },
+    {
+      "id": "reward_punishment",
+      "label_en": "Reward / Punishment",
+      "label_ar": "الأجر / العذاب",
+      "a": {
+        "term_en": "reward (ajr)",
+        "term_ar": "الأجر",
+        "qac_root": [
+          "Ajr"
+        ],
+        "qac_lemmas": [
+          ">ajor"
+        ],
+        "root_note": "ROOT Ajr, LEM >ajor",
+        "count": 105,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 62,
+            "qac_location": "2:62:16",
+            "arabic": "أَجْرُهُمْ",
+            "verse_arabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَٱلَّذِينَ هَادُوا۟ وَٱلنَّصَٰرَىٰ وَٱلصَّٰبِـِٔينَ مَنْ ءَامَنَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَعَمِلَ صَٰلِحًا فَلَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 112,
+            "qac_location": "2:112:9",
+            "arabic": "أَجْرُهُۥ",
+            "verse_arabic": "بَلَىٰ مَنْ أَسْلَمَ وَجْهَهُۥ لِلَّهِ وَهُوَ مُحْسِنٌ فَلَهُۥٓ أَجْرُهُۥ عِندَ رَبِّهِۦ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 262,
+            "qac_location": "2:262:16",
+            "arabic": "أَجْرُهُمْ",
+            "verse_arabic": "ٱلَّذِينَ يُنفِقُونَ أَمْوَٰلَهُمْ فِى سَبِيلِ ٱللَّهِ ثُمَّ لَا يُتْبِعُونَ مَآ أَنفَقُوا۟ مَنًّا وَلَآ أَذًى لَّهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ وَلَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "أَجْرُهُمْ": 6,
+          "أَجْرُهُۥ": 2,
+          "أُجُورَهُمْ": 4,
+          "أَجْرُ": 3,
+          "أَجْرَ": 8,
+          "أَجْرٌ": 11,
+          "أُجُورَكُمْ": 2,
+          "أُجُورَهُنَّ": 6,
+          "أَجْرًا": 22,
+          "وَأَجْرٌ": 5,
+          "لَأَجْرًا": 3,
+          "أَجْرٍ": 10,
+          "أَجْرِىَ": 9,
+          "وَلَأَجْرُ": 2,
+          "أَجْرَهُم": 5,
+          "أَجْرَهُۥ": 1,
+          "أَجْرَهَا": 1,
+          "وَأَجْرًا": 2,
+          "وَأَجْرٍ": 1,
+          "فَأَجْرُهُۥ": 1,
+          "أَجْرَهُمْ": 1
+        },
+        "lemma_breakdown": {
+          ">ajor": 105
+        },
+        "notes": "Noun ajr (reward/wage, incl. plural ujur). Excluded: ista'jara 'to hire' (28:26, 2) and ta'jurani 'you hire me' (28:27, 1) -- same root, hiring sense. Secondary reward-word: thawab (noun, 13; family 18) -- see extras."
+      },
+      "b": {
+        "term_en": "punishment (adhab)",
+        "term_ar": "العذاب",
+        "qac_root": [
+          "E*b"
+        ],
+        "qac_lemmas": [
+          "Ea*aAb",
+          "Ea*~aba",
+          "muEa*~ib",
+          "Ea*ob",
+          "muEa*~abiyn"
+        ],
+        "root_note": "ROOT E*b (QAC writes dhal as '*': E-b = ayn-dhal-ba), LEM Ea*aAb (noun) + verb forms",
+        "count": 373,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 7,
+            "qac_location": "2:7:11",
+            "arabic": "عَذَابٌ",
+            "verse_arabic": "خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ وَعَلَىٰٓ أَبْصَٰرِهِمْ غِشَٰوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ"
+          },
+          {
+            "surah": 2,
+            "ayah": 10,
+            "qac_location": "2:10:8",
+            "arabic": "عَذَابٌ",
+            "verse_arabic": "فِى قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ ٱللَّهُ مَرَضًا وَلَهُمْ عَذَابٌ أَلِيمٌۢ بِمَا كَانُوا۟ يَكْذِبُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 49,
+            "qac_location": "2:49:8",
+            "arabic": "ٱلْعَذَابِ",
+            "verse_arabic": "وَإِذْ نَجَّيْنَٰكُم مِّنْ ءَالِ فِرْعَوْنَ يَسُومُونَكُمْ سُوٓءَ ٱلْعَذَابِ يُذَبِّحُونَ أَبْنَآءَكُمْ وَيَسْتَحْيُونَ نِسَآءَكُمْ وَفِى ذَٰلِكُم بَلَآءٌ مِّن رَّبِّكُمْ عَظِيمٌ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "عَذَابٌ": 77,
+          "ٱلْعَذَابِ": 35,
+          "ٱلْعَذَابُ": 22,
+          "عَذَابِ": 14,
+          "ٱلْعَذَابَ": 28,
+          "وَٱلْعَذَابَ": 1,
+          "عَذَابَ": 37,
+          "وَيُعَذِّبُ": 4,
+          "بِعَذَابٍ": 11,
+          "فَأُعَذِّبُهُمْ": 1,
+          "عَذَابًا": 38,
+          "يُعَذِّبَهُمْ": 1,
+          "بِعَذَابِكُمْ": 1,
+          "فَيُعَذِّبُهُمْ": 1,
+          "يُعَذِّبُكُم": 1,
+          "يُعَذِّبُ": 3,
+          "أُعَذِّبُهُۥ": 1,
+          "أُعَذِّبُهُۥٓ": 1,
+          "تُعَذِّبْهُمْ": 2,
+          "عَذَابُ": 9,
+          "وَعَذَابٌ": 3,
+          "عَذَابِىٓ": 1,
+          "مُعَذِّبُهُمْ": 1,
+          "بِعَذَابٍۭ": 1,
+          "لِيُعَذِّبَهُمْ": 1,
+          "مُعَذِّبَهُمْ": 1,
+          "يُعَذِّبَهُمُ": 1,
+          "يُعَذِّبْهُمُ": 2,
+          "وَعَذَّبَ": 1,
+          "يُعَذِّبْكُمْ": 3,
+          "لِيُعَذِّبَهُم": 1,
+          "نُعَذِّبْ": 1,
+          "يُعَذِّبَهُم": 1,
+          "سَنُعَذِّبُهُم": 1,
+          "عَذَابٍ": 13,
+          "يُعَذِّبُهُمْ": 1,
+          "عَذَابُهُۥ": 1,
+          "وَلَعَذَابُ": 5,
+          "عَذَابِى": 8,
+          "مُعَذِّبِينَ": 1,
+          "عَذَابَهُۥٓ": 2,
+          "مُعَذِّبُوهَا": 1,
+          "تُعَذِّبَ": 1,
+          "نُعَذِّبُهُۥ": 1,
+          "فَيُعَذِّبُهُۥ": 1,
+          "بِٱلْعَذَابِ": 6,
+          "عَذَابَهُمَا": 1,
+          "عَذْبٌ": 2,
+          "عَذَابَهَا": 1,
+          "بِمُعَذَّبِينَ": 3,
+          "أَفَبِعَذَابِنَا": 2,
+          "ٱلْمُعَذَّبِينَ": 1,
+          "لَأُعَذِّبَنَّهُۥ": 1,
+          "كَعَذَابِ": 1,
+          "بِعَذَابِ": 1,
+          "وَيُعَذِّبَ": 2,
+          "لِّيُعَذِّبَ": 1,
+          "عَذَابِهَا": 1,
+          "وَعَذَابٍ": 1,
+          "يُعَذِّبْهُ": 1,
+          "لَعَذَّبْنَا": 1,
+          "يُعَذِّبُنَا": 1,
+          "لَعَذَّبَهُمْ": 1,
+          "وَعَذَّبْنَٰهَا": 1,
+          "وَعَذَابًا": 1,
+          "فَيُعَذِّبُهُ": 1
+        },
+        "lemma_breakdown": {
+          "Ea*aAb": 322,
+          "Ea*~aba": 41,
+          "muEa*~ib": 4,
+          "Ea*ob": 2,
+          "muEa*~abiyn": 4
+        },
+        "notes": "Noun adhab alone = 322; whole E*b family (noun + yu'adhdhibu 'He punishes' etc.) = 373."
+      },
+      "ratio": 0.28,
+      "ratio_str": "105:373",
+      "notes": "Noun-only comparison: ajr 105 : adhab 322."
+    },
+    {
+      "id": "day_night",
+      "label_en": "Day / Night",
+      "label_ar": "اليوم / الليل",
+      "a": {
+        "term_en": "day",
+        "term_ar": "اليوم",
+        "qac_root": [
+          "ywm"
+        ],
+        "qac_lemmas": [
+          "yawom",
+          "yawoma}i*"
+        ],
+        "root_note": "ROOT ywm, LEM yawom",
+        "count": 475,
+        "refs": [
+          {
+            "surah": 1,
+            "ayah": 4,
+            "qac_location": "1:4:2",
+            "arabic": "يَوْمِ",
+            "verse_arabic": "مَٰلِكِ يَوْمِ ٱلدِّينِ"
+          },
+          {
+            "surah": 2,
+            "ayah": 8,
+            "qac_location": "2:8:7",
+            "arabic": "وَبِٱلْيَوْمِ",
+            "verse_arabic": "وَمِنَ ٱلنَّاسِ مَن يَقُولُ ءَامَنَّا بِٱللَّهِ وَبِٱلْيَوْمِ ٱلْـَٔاخِرِ وَمَا هُم بِمُؤْمِنِينَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 48,
+            "qac_location": "2:48:2",
+            "arabic": "يَوْمًا",
+            "verse_arabic": "وَٱتَّقُوا۟ يَوْمًا لَّا تَجْزِى نَفْسٌ عَن نَّفْسٍ شَيْـًٔا وَلَا يُقْبَلُ مِنْهَا شَفَٰعَةٌ وَلَا يُؤْخَذُ مِنْهَا عَدْلٌ وَلَا هُمْ يُنصَرُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "يَوْمِ": 31,
+          "وَبِٱلْيَوْمِ": 1,
+          "يَوْمًا": 16,
+          "وَٱلْيَوْمِ": 21,
+          "أَيَّامًا": 3,
+          "وَيَوْمَ": 44,
+          "يَوْمَ": 133,
+          "أَيَّامٍ": 18,
+          "يَوْمَيْنِ": 3,
+          "ٱلْيَوْمَ": 38,
+          "يَوْمٌ": 9,
+          "يَوْمٍ": 28,
+          "لِيَوْمٍ": 4,
+          "ٱلْأَيَّامُ": 1,
+          "يَوْمَئِذٍ": 59,
+          "بِٱلْيَوْمِ": 2,
+          "يَوْمُ": 16,
+          "يَوْمِكُمْ": 4,
+          "فَٱلْيَوْمَ": 8,
+          "يَوْمِهِمْ": 1,
+          "أَيَّامِ": 1,
+          "يَوْمِئِذٍ": 1,
+          "بِأَيَّىٰمِ": 1,
+          "لِيَوْمِ": 4,
+          "يَوْمُكُمُ": 1,
+          "وَيَوْمَئِذٍ": 1,
+          "فَيَوْمَئِذٍ": 4,
+          "وَٱلْيَوْمَ": 2,
+          "وَأَيَّامًا": 1,
+          "بِيَوْمِ": 5,
+          "يَوْمَئِذٍۭ": 4,
+          "يَوْمَهُمُ": 3,
+          "أَيَّامَ": 1,
+          "يَوْمِهِمُ": 1,
+          "ٱلْأَيَّامِ": 1,
+          "يَوْمِئِذٍۭ": 1,
+          "ٱلْيَوْمُ": 2,
+          "ٱلْيَوْمِ": 1
+        },
+        "lemma_breakdown": {
+          "yawom": 405,
+          "yawoma}i*": 70
+        },
+        "notes": "Singular yawm (378, incl. al-yawm 'today') + plural ayyam (27) + yawma'idhin 'on that day' (70, LEM yawoma}i* -- QAC gives it no ROOT, so it is matched by LEM and listed separately in the breakdown). Dual yawmayn (2 days) is inside the 378."
+      },
+      "b": {
+        "term_en": "night",
+        "term_ar": "الليل",
+        "qac_root": [
+          "lyl"
+        ],
+        "qac_lemmas": [
+          "layol",
+          "layolap"
+        ],
+        "root_note": "ROOT lyl, LEM layol/layolap",
+        "count": 92,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 51,
+            "qac_location": "2:51:5",
+            "arabic": "لَيْلَةً",
+            "verse_arabic": "وَإِذْ وَٰعَدْنَا مُوسَىٰٓ أَرْبَعِينَ لَيْلَةً ثُمَّ ٱتَّخَذْتُمُ ٱلْعِجْلَ مِنۢ بَعْدِهِۦ وَأَنتُمْ ظَٰلِمُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 164,
+            "qac_location": "2:164:7",
+            "arabic": "ٱلَّيْلِ",
+            "verse_arabic": "إِنَّ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَٰفِ ٱلَّيْلِ وَٱلنَّهَارِ وَٱلْفُلْكِ ٱلَّتِى تَجْرِى فِى ٱلْبَحْرِ بِمَا يَنفَعُ ٱلنَّاسَ وَمَآ أَنزَلَ ٱللَّهُ مِنَ ٱلسَّمَآءِ مِن مَّآءٍ فَأَحْيَا بِهِ ٱلْأَرْضَ بَعْدَ مَوْتِهَا وَبَثَّ فِيهَا مِن كُلِّ دَآبَّةٍ وَتَصْرِيفِ ٱلرِّيَٰحِ وَٱلسَّحَابِ ٱلْمُسَخَّرِ بَيْنَ ٱلسَّمَآءِ وَٱلْأَرْضِ لَـَٔايَٰتٍ لِّقَوْمٍ يَعْقِلُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 187,
+            "qac_location": "2:187:3",
+            "arabic": "لَيْلَةَ",
+            "verse_arabic": "أُحِلَّ لَكُمْ لَيْلَةَ ٱلصِّيَامِ ٱلرَّفَثُ إِلَىٰ نِسَآئِكُمْ هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ عَلِمَ ٱللَّهُ أَنَّكُمْ كُنتُمْ تَخْتَانُونَ أَنفُسَكُمْ فَتَابَ عَلَيْكُمْ وَعَفَا عَنكُمْ فَٱلْـَٰٔنَ بَٰشِرُوهُنَّ وَٱبْتَغُوا۟ مَا كَتَبَ ٱللَّهُ لَكُمْ وَكُلُوا۟ وَٱشْرَبُوا۟ حَتَّىٰ يَتَبَيَّنَ لَكُمُ ٱلْخَيْطُ ٱلْأَبْيَضُ مِنَ ٱلْخَيْطِ ٱلْأَسْوَدِ مِنَ ٱلْفَجْرِ ثُمَّ أَتِمُّوا۟ ٱلصِّيَامَ إِلَى ٱلَّيْلِ وَلَا تُبَٰشِرُوهُنَّ وَأَنتُمْ عَٰكِفُونَ فِى ٱلْمَسَٰجِدِ تِلْكَ حُدُودُ ٱللَّهِ فَلَا تَقْرَبُوهَا كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ ءَايَٰتِهِۦ لِلنَّاسِ لَعَلَّهُمْ يَتَّقُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "لَيْلَةً": 3,
+          "ٱلَّيْلِ": 30,
+          "لَيْلَةَ": 1,
+          "بِٱلَّيْلِ": 6,
+          "ٱلَّيْلَ": 25,
+          "ٱلَّيْلُ": 4,
+          "لَيْلًا": 5,
+          "لَيَالٍ": 2,
+          "بِلَيْلٍ": 1,
+          "لَيَالِىَ": 1,
+          "وَبِٱلَّيْلِ": 1,
+          "لَيْلَةٍ": 1,
+          "وَٱلَّيْلِ": 7,
+          "لَيْلَهَا": 1,
+          "وَلَيَالٍ": 1,
+          "لَيْلَةِ": 1,
+          "لَيْلَةُ": 2
+        },
+        "lemma_breakdown": {
+          "layolap": 8,
+          "layol": 84
+        },
+        "notes": "Layl (84) + laylah (night, 8) + layal (nights, plural, inside layol count). Excluded: qalil 'little' and khalil 'friend' -- look-alikes that a naive substring search would catch."
+      },
+      "ratio": 5.16,
+      "ratio_str": "475:92",
+      "notes": "The widely quoted 'day 365' does not reproduce under any clean rule on this text: singular yawm = 378; + yawma'idhin = 448; + ayyam = 475. See VERIFICATION.md."
+    },
+    {
+      "id": "sun_moon",
+      "label_en": "Sun / Moon",
+      "label_ar": "الشمس / القمر",
+      "a": {
+        "term_en": "sun",
+        "term_ar": "الشمس",
+        "qac_root": [
+          "$ms"
+        ],
+        "qac_lemmas": [
+          "$amos"
+        ],
+        "root_note": "ROOT $ms, LEM $amos",
+        "count": 33,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 258,
+            "qac_location": "2:258:29",
+            "arabic": "بِٱلشَّمْسِ",
+            "verse_arabic": "أَلَمْ تَرَ إِلَى ٱلَّذِى حَآجَّ إِبْرَٰهِـۧمَ فِى رَبِّهِۦٓ أَنْ ءَاتَىٰهُ ٱللَّهُ ٱلْمُلْكَ إِذْ قَالَ إِبْرَٰهِـۧمُ رَبِّىَ ٱلَّذِى يُحْىِۦ وَيُمِيتُ قَالَ أَنَا۠ أُحْىِۦ وَأُمِيتُ قَالَ إِبْرَٰهِـۧمُ فَإِنَّ ٱللَّهَ يَأْتِى بِٱلشَّمْسِ مِنَ ٱلْمَشْرِقِ فَأْتِ بِهَا مِنَ ٱلْمَغْرِبِ فَبُهِتَ ٱلَّذِى كَفَرَ وَٱللَّهُ لَا يَهْدِى ٱلْقَوْمَ ٱلظَّٰلِمِينَ"
+          },
+          {
+            "surah": 6,
+            "ayah": 78,
+            "qac_location": "6:78:3",
+            "arabic": "ٱلشَّمْسَ",
+            "verse_arabic": "فَلَمَّا رَءَا ٱلشَّمْسَ بَازِغَةً قَالَ هَٰذَا رَبِّى هَٰذَآ أَكْبَرُ فَلَمَّآ أَفَلَتْ قَالَ يَٰقَوْمِ إِنِّى بَرِىٓءٌ مِّمَّا تُشْرِكُونَ"
+          },
+          {
+            "surah": 6,
+            "ayah": 96,
+            "qac_location": "6:96:6",
+            "arabic": "وَٱلشَّمْسَ",
+            "verse_arabic": "فَالِقُ ٱلْإِصْبَاحِ وَجَعَلَ ٱلَّيْلَ سَكَنًا وَٱلشَّمْسَ وَٱلْقَمَرَ حُسْبَانًا ذَٰلِكَ تَقْدِيرُ ٱلْعَزِيزِ ٱلْعَلِيمِ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "بِٱلشَّمْسِ": 1,
+          "ٱلشَّمْسَ": 11,
+          "وَٱلشَّمْسَ": 5,
+          "ٱلشَّمْسِ": 5,
+          "وَٱلشَّمْسُ": 3,
+          "لِلشَّمْسِ": 2,
+          "ٱلشَّمْسُ": 4,
+          "شَمْسًا": 1,
+          "وَٱلشَّمْسِ": 1
+        },
+        "lemma_breakdown": {
+          "$amos": 33
+        },
+        "notes": "All shams words; no look-alike collisions."
+      },
+      "b": {
+        "term_en": "moon",
+        "term_ar": "القمر",
+        "qac_root": [
+          "qmr"
+        ],
+        "qac_lemmas": [
+          "qamar"
+        ],
+        "root_note": "ROOT qmr, LEM qamar",
+        "count": 27,
+        "refs": [
+          {
+            "surah": 6,
+            "ayah": 77,
+            "qac_location": "6:77:3",
+            "arabic": "ٱلْقَمَرَ",
+            "verse_arabic": "فَلَمَّا رَءَا ٱلْقَمَرَ بَازِغًا قَالَ هَٰذَا رَبِّى فَلَمَّآ أَفَلَ قَالَ لَئِن لَّمْ يَهْدِنِى رَبِّى لَأَكُونَنَّ مِنَ ٱلْقَوْمِ ٱلضَّآلِّينَ"
+          },
+          {
+            "surah": 6,
+            "ayah": 96,
+            "qac_location": "6:96:7",
+            "arabic": "وَٱلْقَمَرَ",
+            "verse_arabic": "فَالِقُ ٱلْإِصْبَاحِ وَجَعَلَ ٱلَّيْلَ سَكَنًا وَٱلشَّمْسَ وَٱلْقَمَرَ حُسْبَانًا ذَٰلِكَ تَقْدِيرُ ٱلْعَزِيزِ ٱلْعَلِيمِ"
+          },
+          {
+            "surah": 7,
+            "ayah": 54,
+            "qac_location": "7:54:21",
+            "arabic": "وَٱلْقَمَرَ",
+            "verse_arabic": "إِنَّ رَبَّكُمُ ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ فِى سِتَّةِ أَيَّامٍ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ يُغْشِى ٱلَّيْلَ ٱلنَّهَارَ يَطْلُبُهُۥ حَثِيثًا وَٱلشَّمْسَ وَٱلْقَمَرَ وَٱلنُّجُومَ مُسَخَّرَٰتٍۭ بِأَمْرِهِۦٓ أَلَا لَهُ ٱلْخَلْقُ وَٱلْأَمْرُ تَبَارَكَ ٱللَّهُ رَبُّ ٱلْعَٰلَمِينَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "ٱلْقَمَرَ": 3,
+          "وَٱلْقَمَرَ": 13,
+          "وَٱلْقَمَرُ": 4,
+          "وَقَمَرًا": 1,
+          "لِلْقَمَرِ": 1,
+          "ٱلْقَمَرُ": 2,
+          "وَٱلْقَمَرِ": 3
+        },
+        "lemma_breakdown": {
+          "qamar": 27
+        },
+        "notes": "All qamar words; no look-alike collisions."
+      },
+      "ratio": 1.22,
+      "ratio_str": "33:27",
+      "notes": ""
+    },
+    {
+      "id": "man_woman",
+      "label_en": "Man / Woman",
+      "label_ar": "الرجل / المرأة",
+      "a": {
+        "term_en": "man",
+        "term_ar": "الرجل",
+        "qac_root": [
+          "rjl"
+        ],
+        "qac_lemmas": [
+          "rajul",
+          "rijaAl"
+        ],
+        "root_note": "ROOT rjl, LEM rajul/rijaAl",
+        "count": 57,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 228,
+            "qac_location": "2:228:35",
+            "arabic": "وَلِلرِّجَالِ",
+            "verse_arabic": "وَٱلْمُطَلَّقَٰتُ يَتَرَبَّصْنَ بِأَنفُسِهِنَّ ثَلَٰثَةَ قُرُوٓءٍ وَلَا يَحِلُّ لَهُنَّ أَن يَكْتُمْنَ مَا خَلَقَ ٱللَّهُ فِىٓ أَرْحَامِهِنَّ إِن كُنَّ يُؤْمِنَّ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَبُعُولَتُهُنَّ أَحَقُّ بِرَدِّهِنَّ فِى ذَٰلِكَ إِنْ أَرَادُوٓا۟ إِصْلَٰحًا وَلَهُنَّ مِثْلُ ٱلَّذِى عَلَيْهِنَّ بِٱلْمَعْرُوفِ وَلِلرِّجَالِ عَلَيْهِنَّ دَرَجَةٌ وَٱللَّهُ عَزِيزٌ حَكِيمٌ"
+          },
+          {
+            "surah": 2,
+            "ayah": 239,
+            "qac_location": "2:239:3",
+            "arabic": "فَرِجَالًا",
+            "verse_arabic": "فَإِنْ خِفْتُمْ فَرِجَالًا أَوْ رُكْبَانًا فَإِذَآ أَمِنتُمْ فَٱذْكُرُوا۟ ٱللَّهَ كَمَا عَلَّمَكُم مَّا لَمْ تَكُونُوا۟ تَعْلَمُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 282,
+            "qac_location": "2:282:55",
+            "arabic": "رِّجَالِكُمْ",
+            "verse_arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَدَايَنتُم بِدَيْنٍ إِلَىٰٓ أَجَلٍ مُّسَمًّى فَٱكْتُبُوهُ وَلْيَكْتُب بَّيْنَكُمْ كَاتِبٌۢ بِٱلْعَدْلِ وَلَا يَأْبَ كَاتِبٌ أَن يَكْتُبَ كَمَا عَلَّمَهُ ٱللَّهُ فَلْيَكْتُبْ وَلْيُمْلِلِ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ وَلْيَتَّقِ ٱللَّهَ رَبَّهُۥ وَلَا يَبْخَسْ مِنْهُ شَيْـًٔا فَإِن كَانَ ٱلَّذِى عَلَيْهِ ٱلْحَقُّ سَفِيهًا أَوْ ضَعِيفًا أَوْ لَا يَسْتَطِيعُ أَن يُمِلَّ هُوَ فَلْيُمْلِلْ وَلِيُّهُۥ بِٱلْعَدْلِ وَٱسْتَشْهِدُوا۟ شَهِيدَيْنِ مِن رِّجَالِكُمْ فَإِن لَّمْ يَكُونَا رَجُلَيْنِ فَرَجُلٌ وَٱمْرَأَتَانِ مِمَّن تَرْضَوْنَ مِنَ ٱلشُّهَدَآءِ أَن تَضِلَّ إِحْدَىٰهُمَا فَتُذَكِّرَ إِحْدَىٰهُمَا ٱلْأُخْرَىٰ وَلَا يَأْبَ ٱلشُّهَدَآءُ إِذَا مَا دُعُوا۟ وَلَا تَسْـَٔمُوٓا۟ أَن تَكْتُبُوهُ صَغِيرًا أَوْ كَبِيرًا إِلَىٰٓ أَجَلِهِۦ ذَٰلِكُمْ أَقْسَطُ عِندَ ٱللَّهِ وَأَقْوَمُ لِلشَّهَٰدَةِ وَأَدْنَىٰٓ أَلَّا تَرْتَابُوٓا۟ إِلَّآ أَن تَكُونَ تِجَٰرَةً حَاضِرَةً تُدِيرُونَهَا بَيْنَكُمْ فَلَيْسَ عَلَيْكُمْ جُنَاحٌ أَلَّا تَكْتُبُوهَا وَأَشْهِدُوٓا۟ إِذَا تَبَايَعْتُمْ وَلَا يُضَآرَّ كَاتِبٌ وَلَا شَهِيدٌ وَإِن تَفْعَلُوا۟ فَإِنَّهُۥ فُسُوقٌۢ بِكُمْ وَٱتَّقُوا۟ ٱللَّهَ وَيُعَلِّمُكُمُ ٱللَّهُ وَٱللَّهُ بِكُلِّ شَىْءٍ عَلِيمٌ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "وَلِلرِّجَالِ": 1,
+          "فَرِجَالًا": 1,
+          "رِّجَالِكُمْ": 2,
+          "رَجُلَيْنِ": 2,
+          "فَرَجُلٌ": 1,
+          "رِجَالًا": 7,
+          "لِّلرِّجَالِ": 2,
+          "رَجُلٌ": 7,
+          "ٱلرِّجَالُ": 1,
+          "ٱلرِّجَالِ": 3,
+          "رِّجَالًا": 1,
+          "رَجُلَانِ": 1,
+          "رَجُلًا": 6,
+          "رِجَالٌ": 6,
+          "رَجُلٍ": 5,
+          "ٱلرِّجَالَ": 3,
+          "رَّجُلَيْنِ": 2,
+          "رَجُلٌۢ": 1,
+          "لِرَجُلٍ": 1,
+          "رَّجُلًا": 1,
+          "وَرَجُلًا": 1,
+          "لِّرَجُلٍ": 1,
+          "بِرِجَالٍ": 1
+        },
+        "lemma_breakdown": {
+          "rijaAl": 28,
+          "rajul": 29
+        },
+        "notes": "Rajl (29, incl. dual rajulan) + rijal (28). Excluded: rijl 'foot/leg' (15, LEM rijol) and rajil 'on foot' (1, 2:239 fa-rijalan) -- same consonants, different word. Related: imru'/mar' 'a man/person' (ROOT mrA, 9) is NOT counted here; see notes."
+      },
+      "b": {
+        "term_en": "woman",
+        "term_ar": "المرأة",
+        "qac_root": [
+          "mrA",
+          "nsw"
+        ],
+        "qac_lemmas": [
+          "{mora>at",
+          "nisaA^'"
+        ],
+        "root_note": "ROOT mrA + nsw",
+        "count": 85,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 49,
+            "qac_location": "2:49:12",
+            "arabic": "نِسَآءَكُمْ",
+            "verse_arabic": "وَإِذْ نَجَّيْنَٰكُم مِّنْ ءَالِ فِرْعَوْنَ يَسُومُونَكُمْ سُوٓءَ ٱلْعَذَابِ يُذَبِّحُونَ أَبْنَآءَكُمْ وَيَسْتَحْيُونَ نِسَآءَكُمْ وَفِى ذَٰلِكُم بَلَآءٌ مِّن رَّبِّكُمْ عَظِيمٌ"
+          },
+          {
+            "surah": 2,
+            "ayah": 187,
+            "qac_location": "2:187:7",
+            "arabic": "نِسَآئِكُمْ",
+            "verse_arabic": "أُحِلَّ لَكُمْ لَيْلَةَ ٱلصِّيَامِ ٱلرَّفَثُ إِلَىٰ نِسَآئِكُمْ هُنَّ لِبَاسٌ لَّكُمْ وَأَنتُمْ لِبَاسٌ لَّهُنَّ عَلِمَ ٱللَّهُ أَنَّكُمْ كُنتُمْ تَخْتَانُونَ أَنفُسَكُمْ فَتَابَ عَلَيْكُمْ وَعَفَا عَنكُمْ فَٱلْـَٰٔنَ بَٰشِرُوهُنَّ وَٱبْتَغُوا۟ مَا كَتَبَ ٱللَّهُ لَكُمْ وَكُلُوا۟ وَٱشْرَبُوا۟ حَتَّىٰ يَتَبَيَّنَ لَكُمُ ٱلْخَيْطُ ٱلْأَبْيَضُ مِنَ ٱلْخَيْطِ ٱلْأَسْوَدِ مِنَ ٱلْفَجْرِ ثُمَّ أَتِمُّوا۟ ٱلصِّيَامَ إِلَى ٱلَّيْلِ وَلَا تُبَٰشِرُوهُنَّ وَأَنتُمْ عَٰكِفُونَ فِى ٱلْمَسَٰجِدِ تِلْكَ حُدُودُ ٱللَّهِ فَلَا تَقْرَبُوهَا كَذَٰلِكَ يُبَيِّنُ ٱللَّهُ ءَايَٰتِهِۦ لِلنَّاسِ لَعَلَّهُمْ يَتَّقُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 222,
+            "qac_location": "2:222:8",
+            "arabic": "ٱلنِّسَآءَ",
+            "verse_arabic": "وَيَسْـَٔلُونَكَ عَنِ ٱلْمَحِيضِ قُلْ هُوَ أَذًى فَٱعْتَزِلُوا۟ ٱلنِّسَآءَ فِى ٱلْمَحِيضِ وَلَا تَقْرَبُوهُنَّ حَتَّىٰ يَطْهُرْنَ فَإِذَا تَطَهَّرْنَ فَأْتُوهُنَّ مِنْ حَيْثُ أَمَرَكُمُ ٱللَّهُ إِنَّ ٱللَّهَ يُحِبُّ ٱلتَّوَّٰبِينَ وَيُحِبُّ ٱلْمُتَطَهِّرِينَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "نِسَآءَكُمْ": 3,
+          "نِسَآئِكُمْ": 2,
+          "ٱلنِّسَآءَ": 9,
+          "نِسَآؤُكُمْ": 1,
+          "نِّسَآئِهِمْ": 2,
+          "ٱلنِّسَآءِ": 14,
+          "وَٱمْرَأَتَانِ": 1,
+          "ٱمْرَأَتُ": 4,
+          "وَٱمْرَأَتِى": 1,
+          "نِسَآءِ": 1,
+          "وَنِسَآءَنَا": 1,
+          "وَنِسَآءَكُمْ": 1,
+          "وَنِسَآءً": 2,
+          "وَلِلنِّسَآءِ": 2,
+          "نِسَآءً": 1,
+          "ٱمْرَأَةٌ": 2,
+          "نِّسَآئِكُمْ": 2,
+          "نِّسَآئِكُمُ": 1,
+          "وَٱلنِّسَآءِ": 2,
+          "ٱمْرَأَتَهُۥ": 4,
+          "نِسَآءَهُمْ": 3,
+          "وَٱمْرَأَتُهُۥ": 2,
+          "ٱمْرَأَتَكَ": 2,
+          "لِٱمْرَأَتِهِۦٓ": 1,
+          "نِسْوَةٌ": 1,
+          "ٱلنِّسْوَةِ": 1,
+          "ٱمْرَأَتِى": 2,
+          "نِسَآئِهِنَّ": 2,
+          "ٱمْرَأَةً": 1,
+          "ٱمْرَأَتَيْنِ": 1,
+          "يَٰنِسَآءَ": 2,
+          "وَٱمْرَأَةً": 1,
+          "ٱلنِّسَآءُ": 1,
+          "وَنِسَآءِ": 1,
+          "وَنِسَآءٌ": 1,
+          "نِسَآءٌ": 1,
+          "نِّسَآءٍ": 1,
+          "ٱمْرَأَتُهُۥ": 1,
+          "نِّسَآئِهِم": 1,
+          "ٱمْرَأَتَ": 2,
+          "وَٱمْرَأَتَ": 1
+        },
+        "lemma_breakdown": {
+          "nisaA^'": 59,
+          "{mora>at": 26
+        },
+        "notes": "Imra'ah (26) + nisa' (women, 59). Nisa' is the plural of imra'ah (which has no plural of its own), so the two lemmas are counted together; both roots are cited."
+      },
+      "ratio": 0.67,
+      "ratio_str": "57:85",
+      "notes": "Counting the generic 'man/person' words imru'/mar' (ROOT mrA, 9) with man would give 66 : 85. Male/female as adjectives (dhakar/untha) is a separate, harder pair: untha (female) = 30, but dhakar is mostly dhikr 'remembrance' -- not counted here."
+    },
+    {
+      "id": "love_hate",
+      "label_en": "Love / Hate",
+      "label_ar": "الحب / الكره",
+      "a": {
+        "term_en": "love",
+        "term_ar": "الحب",
+        "qac_root": [
+          "Hbb"
+        ],
+        "qac_lemmas": [
+          ">aHobabo",
+          "Hub~",
+          "{sotaHab~u",
+          ">aHab~",
+          ">aHib~a`^&",
+          "maHab~ap",
+          "Hab~aba"
+        ],
+        "root_note": "ROOT Hbb",
+        "count": 83,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 165,
+            "qac_location": "2:165:9",
+            "arabic": "يُحِبُّونَهُمْ",
+            "verse_arabic": "وَمِنَ ٱلنَّاسِ مَن يَتَّخِذُ مِن دُونِ ٱللَّهِ أَندَادًا يُحِبُّونَهُمْ كَحُبِّ ٱللَّهِ وَٱلَّذِينَ ءَامَنُوٓا۟ أَشَدُّ حُبًّا لِّلَّهِ وَلَوْ يَرَى ٱلَّذِينَ ظَلَمُوٓا۟ إِذْ يَرَوْنَ ٱلْعَذَابَ أَنَّ ٱلْقُوَّةَ لِلَّهِ جَمِيعًا وَأَنَّ ٱللَّهَ شَدِيدُ ٱلْعَذَابِ"
+          },
+          {
+            "surah": 2,
+            "ayah": 177,
+            "qac_location": "2:177:22",
+            "arabic": "حُبِّهِۦ",
+            "verse_arabic": "لَّيْسَ ٱلْبِرَّ أَن تُوَلُّوا۟ وُجُوهَكُمْ قِبَلَ ٱلْمَشْرِقِ وَٱلْمَغْرِبِ وَلَٰكِنَّ ٱلْبِرَّ مَنْ ءَامَنَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَٱلْمَلَٰٓئِكَةِ وَٱلْكِتَٰبِ وَٱلنَّبِيِّـۧنَ وَءَاتَى ٱلْمَالَ عَلَىٰ حُبِّهِۦ ذَوِى ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينَ وَٱبْنَ ٱلسَّبِيلِ وَٱلسَّآئِلِينَ وَفِى ٱلرِّقَابِ وَأَقَامَ ٱلصَّلَوٰةَ وَءَاتَى ٱلزَّكَوٰةَ وَٱلْمُوفُونَ بِعَهْدِهِمْ إِذَا عَٰهَدُوا۟ وَٱلصَّٰبِرِينَ فِى ٱلْبَأْسَآءِ وَٱلضَّرَّآءِ وَحِينَ ٱلْبَأْسِ أُو۟لَٰٓئِكَ ٱلَّذِينَ صَدَقُوا۟ وَأُو۟لَٰٓئِكَ هُمُ ٱلْمُتَّقُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 190,
+            "qac_location": "2:190:12",
+            "arabic": "يُحِبُّ",
+            "verse_arabic": "وَقَٰتِلُوا۟ فِى سَبِيلِ ٱللَّهِ ٱلَّذِينَ يُقَٰتِلُونَكُمْ وَلَا تَعْتَدُوٓا۟ إِنَّ ٱللَّهَ لَا يُحِبُّ ٱلْمُعْتَدِينَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "يُحِبُّونَهُمْ": 1,
+          "كَحُبِّ": 1,
+          "حُبًّا": 3,
+          "حُبِّهِۦ": 2,
+          "يُحِبُّ": 39,
+          "تُحِبُّوا۟": 1,
+          "وَيُحِبُّ": 1,
+          "حُبُّ": 1,
+          "تُحِبُّونَ": 6,
+          "يُحْبِبْكُمُ": 1,
+          "تُحِبُّونَهُمْ": 1,
+          "يُحِبُّونَكُمْ": 1,
+          "وَّيُحِبُّونَ": 1,
+          "وَأَحِبَّٰٓؤُهُۥ": 1,
+          "يُحِبُّهُمْ": 1,
+          "وَيُحِبُّونَهُۥٓ": 1,
+          "أُحِبُّ": 1,
+          "ٱسْتَحَبُّوا۟": 2,
+          "أَحَبَّ": 1,
+          "يُحِبُّونَ": 4,
+          "أَحَبُّ": 2,
+          "يَسْتَحِبُّونَ": 1,
+          "مَحَبَّةً": 1,
+          "أَحْبَبْتَ": 1,
+          "أَحْبَبْتُ": 1,
+          "حُبَّ": 1,
+          "فَٱسْتَحَبُّوا۟": 1,
+          "حَبَّبَ": 1,
+          "أَيُحِبُّ": 1,
+          "تُحِبُّونَهَا": 1,
+          "وَتُحِبُّونَ": 1,
+          "لِحُبِّ": 1
+        },
+        "lemma_breakdown": {
+          ">aHobabo": 64,
+          "Hub~": 9,
+          ">aHib~a`^&": 1,
+          "{sotaHab~u": 4,
+          ">aHab~": 3,
+          "maHab~ap": 1,
+          "Hab~aba": 1
+        },
+        "notes": "Verb ahabba (64) + hubb (love, 9) + istahabba (preferred/loved, 4) + ahibba' (beloved ones, 1) + mahabbah (love, 1) + ahabb (dearest, 3) etc. Excluded: habb 'grain/seed' (7) and habbah 'a grain' (5) -- same root, different sense."
+      },
+      "b": {
+        "term_en": "hate / dislike",
+        "term_ar": "الكره",
+        "qac_root": [
+          "krh"
+        ],
+        "qac_lemmas": [
+          "kariha",
+          "ka`rihuwn",
+          "makoruwh",
+          "kar~aha",
+          "kuroh (only 2:216 'fighting is hateful to you')"
+        ],
+        "root_note": "ROOT krh",
+        "count": 27,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 216,
+            "qac_location": "2:216:5",
+            "arabic": "كُرْهٌ",
+            "verse_arabic": "كُتِبَ عَلَيْكُمُ ٱلْقِتَالُ وَهُوَ كُرْهٌ لَّكُمْ وَعَسَىٰٓ أَن تَكْرَهُوا۟ شَيْـًٔا وَهُوَ خَيْرٌ لَّكُمْ وَعَسَىٰٓ أَن تُحِبُّوا۟ شَيْـًٔا وَهُوَ شَرٌّ لَّكُمْ وَٱللَّهُ يَعْلَمُ وَأَنتُمْ لَا تَعْلَمُونَ"
+          },
+          {
+            "surah": 4,
+            "ayah": 19,
+            "qac_location": "4:19:25",
+            "arabic": "كَرِهْتُمُوهُنَّ",
+            "verse_arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا يَحِلُّ لَكُمْ أَن تَرِثُوا۟ ٱلنِّسَآءَ كَرْهًا وَلَا تَعْضُلُوهُنَّ لِتَذْهَبُوا۟ بِبَعْضِ مَآ ءَاتَيْتُمُوهُنَّ إِلَّآ أَن يَأْتِينَ بِفَٰحِشَةٍ مُّبَيِّنَةٍ وَعَاشِرُوهُنَّ بِٱلْمَعْرُوفِ فَإِن كَرِهْتُمُوهُنَّ فَعَسَىٰٓ أَن تَكْرَهُوا۟ شَيْـًٔا وَيَجْعَلَ ٱللَّهُ فِيهِ خَيْرًا كَثِيرًا"
+          },
+          {
+            "surah": 7,
+            "ayah": 88,
+            "qac_location": "7:88:21",
+            "arabic": "كَٰرِهِينَ",
+            "verse_arabic": "قَالَ ٱلْمَلَأُ ٱلَّذِينَ ٱسْتَكْبَرُوا۟ مِن قَوْمِهِۦ لَنُخْرِجَنَّكَ يَٰشُعَيْبُ وَٱلَّذِينَ ءَامَنُوا۟ مَعَكَ مِن قَرْيَتِنَآ أَوْ لَتَعُودُنَّ فِى مِلَّتِنَا قَالَ أَوَلَوْ كُنَّا كَٰرِهِينَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "كُرْهٌ": 1,
+          "تَكْرَهُوا۟": 2,
+          "كَرِهْتُمُوهُنَّ": 1,
+          "كَٰرِهِينَ": 1,
+          "لَكَٰرِهُونَ": 1,
+          "كَرِهَ": 8,
+          "كَٰرِهُونَ": 5,
+          "وَكَرِهُوٓا۟": 1,
+          "يَكْرَهُونَ": 1,
+          "مَكْرُوهًا": 1,
+          "كَرِهُوا۟": 2,
+          "وَكَرِهُوا۟": 1,
+          "وَكَرَّهَ": 1,
+          "فَكَرِهْتُمُوهُ": 1
+        },
+        "lemma_breakdown": {
+          "kuroh": 1,
+          "kariha": 17,
+          "ka`rihuwn": 7,
+          "makoruwh": 1,
+          "kar~aha": 1
+        },
+        "notes": "Verb kariha (17) + karihun (haters, 7) + makruh (hated thing, 1) + karraha (made hateful, 1) + kurh at 2:216 only ('fighting is hateful to you'). Excluded as compulsion/unwillingness or hardship, not hate: karhan 'unwillingly' (5: 3:83, 4:19, 9:53, 13:15, 41:11), kurhan 'in hardship' (46:15, 2), ukriha 'was compelled' (5), ikrah 'compulsion' (2)."
+      },
+      "ratio": 3.07,
+      "ratio_str": "83:27",
+      "notes": "Whole ROOT:Hbb = 95 (incl. 12 grain words); whole ROOT:krh = 41 (27 hate-sense + 14 compulsion/hardship)."
+    },
+    {
+      "id": "rich_poor",
+      "label_en": "Rich / Poor",
+      "label_ar": "الغني / الفقير",
+      "a": {
+        "term_en": "rich / self-sufficient",
+        "term_ar": "الغني",
+        "qac_root": [
+          "gny"
+        ],
+        "qac_lemmas": [
+          "ganiY~"
+        ],
+        "root_note": "ROOT gny",
+        "count": 24,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 263,
+            "qac_location": "2:263:10",
+            "arabic": "غَنِىٌّ",
+            "verse_arabic": "قَوْلٌ مَّعْرُوفٌ وَمَغْفِرَةٌ خَيْرٌ مِّن صَدَقَةٍ يَتْبَعُهَآ أَذًى وَٱللَّهُ غَنِىٌّ حَلِيمٌ"
+          },
+          {
+            "surah": 2,
+            "ayah": 267,
+            "qac_location": "2:267:28",
+            "arabic": "غَنِىٌّ",
+            "verse_arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ أَنفِقُوا۟ مِن طَيِّبَٰتِ مَا كَسَبْتُمْ وَمِمَّآ أَخْرَجْنَا لَكُم مِّنَ ٱلْأَرْضِ وَلَا تَيَمَّمُوا۟ ٱلْخَبِيثَ مِنْهُ تُنفِقُونَ وَلَسْتُم بِـَٔاخِذِيهِ إِلَّآ أَن تُغْمِضُوا۟ فِيهِ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ غَنِىٌّ حَمِيدٌ"
+          },
+          {
+            "surah": 2,
+            "ayah": 273,
+            "qac_location": "2:273:14",
+            "arabic": "أَغْنِيَآءَ",
+            "verse_arabic": "لِلْفُقَرَآءِ ٱلَّذِينَ أُحْصِرُوا۟ فِى سَبِيلِ ٱللَّهِ لَا يَسْتَطِيعُونَ ضَرْبًا فِى ٱلْأَرْضِ يَحْسَبُهُمُ ٱلْجَاهِلُ أَغْنِيَآءَ مِنَ ٱلتَّعَفُّفِ تَعْرِفُهُم بِسِيمَٰهُمْ لَا يَسْـَٔلُونَ ٱلنَّاسَ إِلْحَافًا وَمَا تُنفِقُوا۟ مِنْ خَيْرٍ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "غَنِىٌّ": 7,
+          "أَغْنِيَآءَ": 1,
+          "أَغْنِيَآءُ": 2,
+          "غَنِيًّا": 3,
+          "ٱلْغَنِىُّ": 8,
+          "لَغَنِىٌّ": 2,
+          "ٱلْأَغْنِيَآءِ": 1
+        },
+        "lemma_breakdown": {
+          "ganiY~": 24
+        },
+        "notes": "Adjective ghani (24, incl. al-Ghani 'the Self-Sufficient' as a divine name, and plural aghniya' 'the rich'). Verb forms of the same root are NOT in this count: aghna 'He enriched / it availed' (form IV, 28), ghaniya/aghnā 'to be rich, thrive, avail' (15), istaghna 'to be free of need' (4), mughnun 'one who avails' (2) -- whole ROOT:gny = 73."
+      },
+      "b": {
+        "term_en": "poor",
+        "term_ar": "الفقير",
+        "qac_root": [
+          "fqr"
+        ],
+        "qac_lemmas": [
+          "faqiyr",
+          "faqor",
+          "faAqirap"
+        ],
+        "root_note": "ROOT fqr",
+        "count": 14,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 268,
+            "qac_location": "2:268:3",
+            "arabic": "ٱلْفَقْرَ",
+            "verse_arabic": "ٱلشَّيْطَٰنُ يَعِدُكُمُ ٱلْفَقْرَ وَيَأْمُرُكُم بِٱلْفَحْشَآءِ وَٱللَّهُ يَعِدُكُم مَّغْفِرَةً مِّنْهُ وَفَضْلًا وَٱللَّهُ وَٰسِعٌ عَلِيمٌ"
+          },
+          {
+            "surah": 2,
+            "ayah": 271,
+            "qac_location": "2:271:9",
+            "arabic": "ٱلْفُقَرَآءَ",
+            "verse_arabic": "إِن تُبْدُوا۟ ٱلصَّدَقَٰتِ فَنِعِمَّا هِىَ وَإِن تُخْفُوهَا وَتُؤْتُوهَا ٱلْفُقَرَآءَ فَهُوَ خَيْرٌ لَّكُمْ وَيُكَفِّرُ عَنكُم مِّن سَيِّـَٔاتِكُمْ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ"
+          },
+          {
+            "surah": 2,
+            "ayah": 273,
+            "qac_location": "2:273:1",
+            "arabic": "لِلْفُقَرَآءِ",
+            "verse_arabic": "لِلْفُقَرَآءِ ٱلَّذِينَ أُحْصِرُوا۟ فِى سَبِيلِ ٱللَّهِ لَا يَسْتَطِيعُونَ ضَرْبًا فِى ٱلْأَرْضِ يَحْسَبُهُمُ ٱلْجَاهِلُ أَغْنِيَآءَ مِنَ ٱلتَّعَفُّفِ تَعْرِفُهُم بِسِيمَٰهُمْ لَا يَسْـَٔلُونَ ٱلنَّاسَ إِلْحَافًا وَمَا تُنفِقُوا۟ مِنْ خَيْرٍ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "ٱلْفَقْرَ": 1,
+          "ٱلْفُقَرَآءَ": 1,
+          "لِلْفُقَرَآءِ": 3,
+          "فَقِيرٌ": 2,
+          "فَقِيرًا": 2,
+          "ٱلْفَقِيرَ": 1,
+          "فُقَرَآءَ": 1,
+          "ٱلْفُقَرَآءُ": 2,
+          "فَاقِرَةٌ": 1
+        },
+        "lemma_breakdown": {
+          "faqor": 1,
+          "faqiyr": 12,
+          "faAqirap": 1
+        },
+        "notes": "Faqir (12) + faqr (poverty, 1) + faqirah (1). Related: miskin 'needy' (ROOT skn) is a different word -- see extras."
+      },
+      "ratio": 1.71,
+      "ratio_str": "24:14",
+      "notes": "Whole ROOT:gny = 73 (adjective ghani 24 + enrich/avail/thrive verbs 43 + istaghna 4 + mughnun 2) vs poor 14."
+    },
+    {
+      "id": "good_evil",
+      "label_en": "Good / Evil",
+      "label_ar": "الخير / الشر",
+      "a": {
+        "term_en": "good / better",
+        "term_ar": "الخير",
+        "qac_root": [
+          "xyr"
+        ],
+        "qac_lemmas": [
+          "xayor",
+          "xayora`t"
+        ],
+        "root_note": "ROOT xyr",
+        "count": 188,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 54,
+            "qac_location": "2:54:17",
+            "arabic": "خَيْرٌ",
+            "verse_arabic": "وَإِذْ قَالَ مُوسَىٰ لِقَوْمِهِۦ يَٰقَوْمِ إِنَّكُمْ ظَلَمْتُمْ أَنفُسَكُم بِٱتِّخَاذِكُمُ ٱلْعِجْلَ فَتُوبُوٓا۟ إِلَىٰ بَارِئِكُمْ فَٱقْتُلُوٓا۟ أَنفُسَكُمْ ذَٰلِكُمْ خَيْرٌ لَّكُمْ عِندَ بَارِئِكُمْ فَتَابَ عَلَيْكُمْ إِنَّهُۥ هُوَ ٱلتَّوَّابُ ٱلرَّحِيمُ"
+          },
+          {
+            "surah": 2,
+            "ayah": 61,
+            "qac_location": "2:61:30",
+            "arabic": "خَيْرٌ",
+            "verse_arabic": "وَإِذْ قُلْتُمْ يَٰمُوسَىٰ لَن نَّصْبِرَ عَلَىٰ طَعَامٍ وَٰحِدٍ فَٱدْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُنۢبِتُ ٱلْأَرْضُ مِنۢ بَقْلِهَا وَقِثَّآئِهَا وَفُومِهَا وَعَدَسِهَا وَبَصَلِهَا قَالَ أَتَسْتَبْدِلُونَ ٱلَّذِى هُوَ أَدْنَىٰ بِٱلَّذِى هُوَ خَيْرٌ ٱهْبِطُوا۟ مِصْرًا فَإِنَّ لَكُم مَّا سَأَلْتُمْ وَضُرِبَتْ عَلَيْهِمُ ٱلذِّلَّةُ وَٱلْمَسْكَنَةُ وَبَآءُو بِغَضَبٍ مِّنَ ٱللَّهِ ذَٰلِكَ بِأَنَّهُمْ كَانُوا۟ يَكْفُرُونَ بِـَٔايَٰتِ ٱللَّهِ وَيَقْتُلُونَ ٱلنَّبِيِّـۧنَ بِغَيْرِ ٱلْحَقِّ ذَٰلِكَ بِمَا عَصَوا۟ وَّكَانُوا۟ يَعْتَدُونَ"
+          },
+          {
+            "surah": 2,
+            "ayah": 103,
+            "qac_location": "2:103:9",
+            "arabic": "خَيْرٌ",
+            "verse_arabic": "وَلَوْ أَنَّهُمْ ءَامَنُوا۟ وَٱتَّقَوْا۟ لَمَثُوبَةٌ مِّنْ عِندِ ٱللَّهِ خَيْرٌ لَّوْ كَانُوا۟ يَعْلَمُونَ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "خَيْرٌ": 78,
+          "خَيْرٍ": 14,
+          "بِخَيْرٍ": 6,
+          "ٱلْخَيْرَٰتِ": 7,
+          "خَيْرًا": 37,
+          "خَيْرَ": 4,
+          "ٱلْخَيْرُ": 2,
+          "خَيْرُ": 20,
+          "ٱلْخَيْرِ": 6,
+          "ٱلْخَيْرَٰتُ": 1,
+          "بِٱلْخَيْرِ": 2,
+          "وَخَيْرٌ": 3,
+          "وَٱلْخَيْرِ": 1,
+          "ٱلْخَيْرَ": 1,
+          "بِٱلْخَيْرَٰتِ": 1,
+          "ٱلْأَخْيَارِ": 2,
+          "لِّلْخَيْرِ": 2,
+          "خَيْرَٰتٌ": 1
+        },
+        "lemma_breakdown": {
+          "xayor": 178,
+          "xayora`t": 10
+        },
+        "notes": "Khayr (178, incl. comparative 'better/best') + khayrat (good things, 10). Excluded: ikhtara/yatakhayyar 'to choose' (6) and khiyarah 'choice' (2) -- same root, different sense."
+      },
+      "b": {
+        "term_en": "evil",
+        "term_ar": "الشر",
+        "qac_root": [
+          "$rr"
+        ],
+        "qac_lemmas": [
+          "$ar~"
+        ],
+        "root_note": "ROOT $rr, LEM $ar~",
+        "count": 30,
+        "refs": [
+          {
+            "surah": 2,
+            "ayah": 216,
+            "qac_location": "2:216:19",
+            "arabic": "شَرٌّ",
+            "verse_arabic": "كُتِبَ عَلَيْكُمُ ٱلْقِتَالُ وَهُوَ كُرْهٌ لَّكُمْ وَعَسَىٰٓ أَن تَكْرَهُوا۟ شَيْـًٔا وَهُوَ خَيْرٌ لَّكُمْ وَعَسَىٰٓ أَن تُحِبُّوا۟ شَيْـًٔا وَهُوَ شَرٌّ لَّكُمْ وَٱللَّهُ يَعْلَمُ وَأَنتُمْ لَا تَعْلَمُونَ"
+          },
+          {
+            "surah": 3,
+            "ayah": 180,
+            "qac_location": "3:180:15",
+            "arabic": "شَرٌّ",
+            "verse_arabic": "وَلَا يَحْسَبَنَّ ٱلَّذِينَ يَبْخَلُونَ بِمَآ ءَاتَىٰهُمُ ٱللَّهُ مِن فَضْلِهِۦ هُوَ خَيْرًا لَّهُم بَلْ هُوَ شَرٌّ لَّهُمْ سَيُطَوَّقُونَ مَا بَخِلُوا۟ بِهِۦ يَوْمَ ٱلْقِيَٰمَةِ وَلِلَّهِ مِيرَٰثُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ"
+          },
+          {
+            "surah": 5,
+            "ayah": 60,
+            "qac_location": "5:60:4",
+            "arabic": "بِشَرٍّ",
+            "verse_arabic": "قُلْ هَلْ أُنَبِّئُكُم بِشَرٍّ مِّن ذَٰلِكَ مَثُوبَةً عِندَ ٱللَّهِ مَن لَّعَنَهُ ٱللَّهُ وَغَضِبَ عَلَيْهِ وَجَعَلَ مِنْهُمُ ٱلْقِرَدَةَ وَٱلْخَنَازِيرَ وَعَبَدَ ٱلطَّٰغُوتَ أُو۟لَٰٓئِكَ شَرٌّ مَّكَانًا وَأَضَلُّ عَن سَوَآءِ ٱلسَّبِيلِ"
+          }
+        ],
+        "surface_forms_tanzil": {
+          "شَرٌّ": 6,
+          "بِشَرٍّ": 2,
+          "شَرَّ": 3,
+          "ٱلشَّرَّ": 1,
+          "بِٱلشَّرِّ": 2,
+          "ٱلشَّرُّ": 4,
+          "شَرًّا": 2,
+          "لَشَرَّ": 1,
+          "ٱلْأَشْرَارِ": 1,
+          "أَشَرٌّ": 1,
+          "شَرُّهُۥ": 1,
+          "شَرُّ": 1,
+          "شَرِّ": 5
+        },
+        "lemma_breakdown": {
+          "$ar~": 30
+        },
+        "notes": "All sharr words (30). Excluded: sharar 'sparks' (1, 77:32) -- same root, different sense. A naive substring search for 'shr' would also catch shirk (association), bashar (human), 'ashr (ten), shariba (drink) -- all excluded here by ROOT/LEM."
+      },
+      "ratio": 6.27,
+      "ratio_str": "188:30",
+      "notes": ""
+    }
+  ],
+  "extras": [
+    {
+      "id": "allah",
+      "label_en": "Allah (sanity anchor)",
+      "label_ar": "الله",
+      "count": 2699,
+      "qac_root": [
+        "Alh"
+      ],
+      "qac_lemmas": [
+        "{ll~ah"
+      ],
+      "refs": [
+        {
+          "surah": 1,
+          "ayah": 1,
+          "qac_location": "1:1:2",
+          "arabic": "ٱللَّهِ",
+          "verse_arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"
+        },
+        {
+          "surah": 1,
+          "ayah": 2,
+          "qac_location": "1:2:2",
+          "arabic": "لِلَّهِ",
+          "verse_arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 7,
+          "qac_location": "2:7:2",
+          "arabic": "ٱللَّهُ",
+          "verse_arabic": "خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ وَعَلَىٰٓ أَبْصَٰرِهِمْ غِشَٰوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ"
+        }
+      ],
+      "notes": "The standard anchor figure is 2699 and it reproduces exactly. Excludes allahumma 'O Allah' (5, counted separately) and ilah 'god' (147, generic -- counted separately). NOTE: QAC excludes the 112 basmalahs prepended to surahs 2-114, each containing Allah once; a raw Tanzil-surface count is therefore 112 higher (2811)."
+    },
+    {
+      "id": "allahumma",
+      "label_en": "O Allah (allahumma)",
+      "label_ar": "اللهم",
+      "count": 5,
+      "qac_root": [
+        "Alh"
+      ],
+      "qac_lemmas": [
+        "{ll~ahum~a"
+      ],
+      "refs": [
+        {
+          "surah": 3,
+          "ayah": 26,
+          "qac_location": "3:26:2",
+          "arabic": "ٱللَّهُمَّ",
+          "verse_arabic": "قُلِ ٱللَّهُمَّ مَٰلِكَ ٱلْمُلْكِ تُؤْتِى ٱلْمُلْكَ مَن تَشَآءُ وَتَنزِعُ ٱلْمُلْكَ مِمَّن تَشَآءُ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُ بِيَدِكَ ٱلْخَيْرُ إِنَّكَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ"
+        },
+        {
+          "surah": 5,
+          "ayah": 114,
+          "qac_location": "5:114:5",
+          "arabic": "ٱللَّهُمَّ",
+          "verse_arabic": "قَالَ عِيسَى ٱبْنُ مَرْيَمَ ٱللَّهُمَّ رَبَّنَآ أَنزِلْ عَلَيْنَا مَآئِدَةً مِّنَ ٱلسَّمَآءِ تَكُونُ لَنَا عِيدًا لِّأَوَّلِنَا وَءَاخِرِنَا وَءَايَةً مِّنكَ وَٱرْزُقْنَا وَأَنتَ خَيْرُ ٱلرَّٰزِقِينَ"
+        },
+        {
+          "surah": 8,
+          "ayah": 32,
+          "qac_location": "8:32:3",
+          "arabic": "ٱللَّهُمَّ",
+          "verse_arabic": "وَإِذْ قَالُوا۟ ٱللَّهُمَّ إِن كَانَ هَٰذَا هُوَ ٱلْحَقَّ مِنْ عِندِكَ فَأَمْطِرْ عَلَيْنَا حِجَارَةً مِّنَ ٱلسَّمَآءِ أَوِ ٱئْتِنَا بِعَذَابٍ أَلِيمٍ"
+        }
+      ],
+      "notes": "Vocative form; not part of the 2699."
+    },
+    {
+      "id": "ilah",
+      "label_en": "god (generic, ilah)",
+      "label_ar": "إله",
+      "count": 147,
+      "qac_root": [
+        "Alh"
+      ],
+      "qac_lemmas": [
+        "<ila`h"
+      ],
+      "refs": [
+        {
+          "surah": 2,
+          "ayah": 133,
+          "qac_location": "2:133:17",
+          "arabic": "إِلَٰهَكَ",
+          "verse_arabic": "أَمْ كُنتُمْ شُهَدَآءَ إِذْ حَضَرَ يَعْقُوبَ ٱلْمَوْتُ إِذْ قَالَ لِبَنِيهِ مَا تَعْبُدُونَ مِنۢ بَعْدِى قَالُوا۟ نَعْبُدُ إِلَٰهَكَ وَإِلَٰهَ ءَابَآئِكَ إِبْرَٰهِـۧمَ وَإِسْمَٰعِيلَ وَإِسْحَٰقَ إِلَٰهًا وَٰحِدًا وَنَحْنُ لَهُۥ مُسْلِمُونَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 163,
+          "qac_location": "2:163:1",
+          "arabic": "وَإِلَٰهُكُمْ",
+          "verse_arabic": "وَإِلَٰهُكُمْ إِلَٰهٌ وَٰحِدٌ لَّآ إِلَٰهَ إِلَّا هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ"
+        },
+        {
+          "surah": 2,
+          "ayah": 255,
+          "qac_location": "2:255:3",
+          "arabic": "إِلَٰهَ",
+          "verse_arabic": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ"
+        }
+      ],
+      "notes": "Generic 'god' (incl. 'there is no god but Allah'). Same root Alh as Allah, different lemma -- kept separate."
+    },
+    {
+      "id": "jinn",
+      "label_en": "jinn (beings)",
+      "label_ar": "الجن",
+      "count": 39,
+      "qac_root": [
+        "jnn"
+      ],
+      "qac_lemmas": [
+        "jin~",
+        "jin~ap",
+        "jaA^n~"
+      ],
+      "refs": [
+        {
+          "surah": 6,
+          "ayah": 100,
+          "qac_location": "6:100:4",
+          "arabic": "ٱلْجِنَّ",
+          "verse_arabic": "وَجَعَلُوا۟ لِلَّهِ شُرَكَآءَ ٱلْجِنَّ وَخَلَقَهُمْ وَخَرَقُوا۟ لَهُۥ بَنِينَ وَبَنَٰتٍۭ بِغَيْرِ عِلْمٍ سُبْحَٰنَهُۥ وَتَعَٰلَىٰ عَمَّا يَصِفُونَ"
+        },
+        {
+          "surah": 6,
+          "ayah": 112,
+          "qac_location": "6:112:8",
+          "arabic": "وَٱلْجِنِّ",
+          "verse_arabic": "وَكَذَٰلِكَ جَعَلْنَا لِكُلِّ نَبِىٍّ عَدُوًّا شَيَٰطِينَ ٱلْإِنسِ وَٱلْجِنِّ يُوحِى بَعْضُهُمْ إِلَىٰ بَعْضٍ زُخْرُفَ ٱلْقَوْلِ غُرُورًا وَلَوْ شَآءَ رَبُّكَ مَا فَعَلُوهُ فَذَرْهُمْ وَمَا يَفْتَرُونَ"
+        },
+        {
+          "surah": 6,
+          "ayah": 128,
+          "qac_location": "6:128:5",
+          "arabic": "ٱلْجِنِّ",
+          "verse_arabic": "وَيَوْمَ يَحْشُرُهُمْ جَمِيعًا يَٰمَعْشَرَ ٱلْجِنِّ قَدِ ٱسْتَكْثَرْتُم مِّنَ ٱلْإِنسِ وَقَالَ أَوْلِيَآؤُهُم مِّنَ ٱلْإِنسِ رَبَّنَا ٱسْتَمْتَعَ بَعْضُنَا بِبَعْضٍ وَبَلَغْنَآ أَجَلَنَا ٱلَّذِىٓ أَجَّلْتَ لَنَا قَالَ ٱلنَّارُ مَثْوَىٰكُمْ خَٰلِدِينَ فِيهَآ إِلَّا مَا شَآءَ ٱللَّهُ إِنَّ رَبَّكَ حَكِيمٌ عَلِيمٌ"
+        }
+      ],
+      "notes": "Jinn (22) + jinnah (10) + jann (7, incl. serpent sense). Same root as jannah; separated by LEM."
+    },
+    {
+      "id": "sky",
+      "label_en": "heaven / sky (sama')",
+      "label_ar": "السماء",
+      "count": 310,
+      "qac_root": [
+        "smw"
+      ],
+      "qac_lemmas": [
+        "samaA^'"
+      ],
+      "refs": [
+        {
+          "surah": 2,
+          "ayah": 19,
+          "qac_location": "2:19:4",
+          "arabic": "ٱلسَّمَآءِ",
+          "verse_arabic": "أَوْ كَصَيِّبٍ مِّنَ ٱلسَّمَآءِ فِيهِ ظُلُمَٰتٌ وَرَعْدٌ وَبَرْقٌ يَجْعَلُونَ أَصَٰبِعَهُمْ فِىٓ ءَاذَانِهِم مِّنَ ٱلصَّوَٰعِقِ حَذَرَ ٱلْمَوْتِ وَٱللَّهُ مُحِيطٌۢ بِٱلْكَٰفِرِينَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 22,
+          "qac_location": "2:22:6",
+          "arabic": "وَٱلسَّمَآءَ",
+          "verse_arabic": "ٱلَّذِى جَعَلَ لَكُمُ ٱلْأَرْضَ فِرَٰشًا وَٱلسَّمَآءَ بِنَآءً وَأَنزَلَ مِنَ ٱلسَّمَآءِ مَآءً فَأَخْرَجَ بِهِۦ مِنَ ٱلثَّمَرَٰتِ رِزْقًا لَّكُمْ فَلَا تَجْعَلُوا۟ لِلَّهِ أَندَادًا وَأَنتُمْ تَعْلَمُونَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 29,
+          "qac_location": "2:29:12",
+          "arabic": "ٱلسَّمَآءِ",
+          "verse_arabic": "هُوَ ٱلَّذِى خَلَقَ لَكُم مَّا فِى ٱلْأَرْضِ جَمِيعًا ثُمَّ ٱسْتَوَىٰٓ إِلَى ٱلسَّمَآءِ فَسَوَّىٰهُنَّ سَبْعَ سَمَٰوَٰتٍ وَهُوَ بِكُلِّ شَىْءٍ عَلِيمٌ"
+        }
+      ],
+      "notes": "The other 'heaven' word (sky). Same root smw also gives ism 'name' (39) -- excluded by LEM."
+    },
+    {
+      "id": "thawab",
+      "label_en": "reward (thawab, noun)",
+      "label_ar": "الثواب",
+      "count": 13,
+      "qac_root": [
+        "vwb"
+      ],
+      "qac_lemmas": [
+        "vawaAb"
+      ],
+      "refs": [
+        {
+          "surah": 3,
+          "ayah": 145,
+          "qac_location": "3:145:13",
+          "arabic": "ثَوَابَ",
+          "verse_arabic": "وَمَا كَانَ لِنَفْسٍ أَن تَمُوتَ إِلَّا بِإِذْنِ ٱللَّهِ كِتَٰبًا مُّؤَجَّلًا وَمَن يُرِدْ ثَوَابَ ٱلدُّنْيَا نُؤْتِهِۦ مِنْهَا وَمَن يُرِدْ ثَوَابَ ٱلْـَٔاخِرَةِ نُؤْتِهِۦ مِنْهَا وَسَنَجْزِى ٱلشَّٰكِرِينَ"
+        },
+        {
+          "surah": 3,
+          "ayah": 148,
+          "qac_location": "3:148:3",
+          "arabic": "ثَوَابَ",
+          "verse_arabic": "فَـَٔاتَىٰهُمُ ٱللَّهُ ثَوَابَ ٱلدُّنْيَا وَحُسْنَ ثَوَابِ ٱلْـَٔاخِرَةِ وَٱللَّهُ يُحِبُّ ٱلْمُحْسِنِينَ"
+        },
+        {
+          "surah": 3,
+          "ayah": 195,
+          "qac_location": "3:195:36",
+          "arabic": "ثَوَابًا",
+          "verse_arabic": "فَٱسْتَجَابَ لَهُمْ رَبُّهُمْ أَنِّى لَآ أُضِيعُ عَمَلَ عَٰمِلٍ مِّنكُم مِّن ذَكَرٍ أَوْ أُنثَىٰ بَعْضُكُم مِّنۢ بَعْضٍ فَٱلَّذِينَ هَاجَرُوا۟ وَأُخْرِجُوا۟ مِن دِيَٰرِهِمْ وَأُوذُوا۟ فِى سَبِيلِى وَقَٰتَلُوا۟ وَقُتِلُوا۟ لَأُكَفِّرَنَّ عَنْهُمْ سَيِّـَٔاتِهِمْ وَلَأُدْخِلَنَّهُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ ثَوَابًا مِّنْ عِندِ ٱللَّهِ وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلثَّوَابِ"
+        }
+      ],
+      "notes": "Secondary reward-word. Family (noun 13 + athaba 'rewarded' 3 + mathubah 'reward' 2) = 18. Excluded: thiyab 'clothes' (8) and mathabah 'place of return' (1) -- same root, different senses."
+    },
+    {
+      "id": "miskin",
+      "label_en": "needy (miskin)",
+      "label_ar": "المسكين",
+      "count": 23,
+      "qac_root": [
+        "skn"
+      ],
+      "qac_lemmas": [
+        "misokiyn"
+      ],
+      "refs": [
+        {
+          "surah": 2,
+          "ayah": 83,
+          "qac_location": "2:83:15",
+          "arabic": "وَٱلْمَسَٰكِينِ",
+          "verse_arabic": "وَإِذْ أَخَذْنَا مِيثَٰقَ بَنِىٓ إِسْرَٰٓءِيلَ لَا تَعْبُدُونَ إِلَّا ٱللَّهَ وَبِٱلْوَٰلِدَيْنِ إِحْسَانًا وَذِى ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينِ وَقُولُوا۟ لِلنَّاسِ حُسْنًا وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ ثُمَّ تَوَلَّيْتُمْ إِلَّا قَلِيلًا مِّنكُمْ وَأَنتُم مُّعْرِضُونَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 177,
+          "qac_location": "2:177:26",
+          "arabic": "وَٱلْمَسَٰكِينَ",
+          "verse_arabic": "لَّيْسَ ٱلْبِرَّ أَن تُوَلُّوا۟ وُجُوهَكُمْ قِبَلَ ٱلْمَشْرِقِ وَٱلْمَغْرِبِ وَلَٰكِنَّ ٱلْبِرَّ مَنْ ءَامَنَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ وَٱلْمَلَٰٓئِكَةِ وَٱلْكِتَٰبِ وَٱلنَّبِيِّـۧنَ وَءَاتَى ٱلْمَالَ عَلَىٰ حُبِّهِۦ ذَوِى ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينَ وَٱبْنَ ٱلسَّبِيلِ وَٱلسَّآئِلِينَ وَفِى ٱلرِّقَابِ وَأَقَامَ ٱلصَّلَوٰةَ وَءَاتَى ٱلزَّكَوٰةَ وَٱلْمُوفُونَ بِعَهْدِهِمْ إِذَا عَٰهَدُوا۟ وَٱلصَّٰبِرِينَ فِى ٱلْبَأْسَآءِ وَٱلضَّرَّآءِ وَحِينَ ٱلْبَأْسِ أُو۟لَٰٓئِكَ ٱلَّذِينَ صَدَقُوا۟ وَأُو۟لَٰٓئِكَ هُمُ ٱلْمُتَّقُونَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 184,
+          "qac_location": "2:184:19",
+          "arabic": "مِسْكِينٍ",
+          "verse_arabic": "أَيَّامًا مَّعْدُودَٰتٍ فَمَن كَانَ مِنكُم مَّرِيضًا أَوْ عَلَىٰ سَفَرٍ فَعِدَّةٌ مِّنْ أَيَّامٍ أُخَرَ وَعَلَى ٱلَّذِينَ يُطِيقُونَهُۥ فِدْيَةٌ طَعَامُ مِسْكِينٍ فَمَن تَطَوَّعَ خَيْرًا فَهُوَ خَيْرٌ لَّهُۥ وَأَن تَصُومُوا۟ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ"
+        }
+      ],
+      "notes": "Related to 'poor' (faqir) but a different word; listed as an extra, not added to the poor count."
+    },
+    {
+      "id": "life_broad",
+      "label_en": "Life (broad Hyy family)",
+      "label_ar": "الحياة (broad)",
+      "count": 169,
+      "qac_root": [
+        "Hyy"
+      ],
+      "qac_lemmas": [
+        "Hayaw`p",
+        "Hay~",
+        ">aHoyaA",
+        "HaY~a",
+        "m~aHoyaA",
+        "muHoY",
+        "HayawaAn",
+        "yasotaHoYi.^ (spare-alive only)"
+      ],
+      "refs": [
+        {
+          "surah": 2,
+          "ayah": 28,
+          "qac_location": "2:28:6",
+          "arabic": "فَأَحْيَٰكُمْ",
+          "verse_arabic": "كَيْفَ تَكْفُرُونَ بِٱللَّهِ وَكُنتُمْ أَمْوَٰتًا فَأَحْيَٰكُمْ ثُمَّ يُمِيتُكُمْ ثُمَّ يُحْيِيكُمْ ثُمَّ إِلَيْهِ تُرْجَعُونَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 49,
+          "qac_location": "2:49:11",
+          "arabic": "وَيَسْتَحْيُونَ",
+          "verse_arabic": "وَإِذْ نَجَّيْنَٰكُم مِّنْ ءَالِ فِرْعَوْنَ يَسُومُونَكُمْ سُوٓءَ ٱلْعَذَابِ يُذَبِّحُونَ أَبْنَآءَكُمْ وَيَسْتَحْيُونَ نِسَآءَكُمْ وَفِى ذَٰلِكُم بَلَآءٌ مِّن رَّبِّكُمْ عَظِيمٌ"
+        },
+        {
+          "surah": 2,
+          "ayah": 73,
+          "qac_location": "2:73:5",
+          "arabic": "يُحْىِ",
+          "verse_arabic": "فَقُلْنَا ٱضْرِبُوهُ بِبَعْضِهَا كَذَٰلِكَ يُحْىِ ٱللَّهُ ٱلْمَوْتَىٰ وَيُرِيكُمْ ءَايَٰتِهِۦ لَعَلَّكُمْ تَعْقِلُونَ"
+        }
+      ],
+      "notes": "See life/death pair notes for what is included and excluded."
+    },
+    {
+      "id": "death_broad",
+      "label_en": "Death (broad mwt family)",
+      "label_ar": "الموت (broad)",
+      "count": 165,
+      "qac_root": [
+        "mwt"
+      ],
+      "qac_lemmas": [
+        "mawot",
+        "m~aAta",
+        "m~ay~it",
+        ">amaAta",
+        "mayotap",
+        "m~ayot",
+        "mamaAt",
+        "mawotat"
+      ],
+      "refs": [
+        {
+          "surah": 2,
+          "ayah": 19,
+          "qac_location": "2:19:16",
+          "arabic": "ٱلْمَوْتِ",
+          "verse_arabic": "أَوْ كَصَيِّبٍ مِّنَ ٱلسَّمَآءِ فِيهِ ظُلُمَٰتٌ وَرَعْدٌ وَبَرْقٌ يَجْعَلُونَ أَصَٰبِعَهُمْ فِىٓ ءَاذَانِهِم مِّنَ ٱلصَّوَٰعِقِ حَذَرَ ٱلْمَوْتِ وَٱللَّهُ مُحِيطٌۢ بِٱلْكَٰفِرِينَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 28,
+          "qac_location": "2:28:5",
+          "arabic": "أَمْوَٰتًا",
+          "verse_arabic": "كَيْفَ تَكْفُرُونَ بِٱللَّهِ وَكُنتُمْ أَمْوَٰتًا فَأَحْيَٰكُمْ ثُمَّ يُمِيتُكُمْ ثُمَّ يُحْيِيكُمْ ثُمَّ إِلَيْهِ تُرْجَعُونَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 56,
+          "qac_location": "2:56:5",
+          "arabic": "مَوْتِكُمْ",
+          "verse_arabic": "ثُمَّ بَعَثْنَٰكُم مِّنۢ بَعْدِ مَوْتِكُمْ لَعَلَّكُمْ تَشْكُرُونَ"
+        }
+      ],
+      "notes": "Whole ROOT:mwt; every lemma is a death sense."
+    },
+    {
+      "id": "punishment_noun",
+      "label_en": "Punishment (adhab, noun only)",
+      "label_ar": "العذاب",
+      "count": 322,
+      "qac_root": [
+        "E*b"
+      ],
+      "qac_lemmas": [
+        "Ea*aAb"
+      ],
+      "refs": [
+        {
+          "surah": 2,
+          "ayah": 7,
+          "qac_location": "2:7:11",
+          "arabic": "عَذَابٌ",
+          "verse_arabic": "خَتَمَ ٱللَّهُ عَلَىٰ قُلُوبِهِمْ وَعَلَىٰ سَمْعِهِمْ وَعَلَىٰٓ أَبْصَٰرِهِمْ غِشَٰوَةٌ وَلَهُمْ عَذَابٌ عَظِيمٌ"
+        },
+        {
+          "surah": 2,
+          "ayah": 10,
+          "qac_location": "2:10:8",
+          "arabic": "عَذَابٌ",
+          "verse_arabic": "فِى قُلُوبِهِم مَّرَضٌ فَزَادَهُمُ ٱللَّهُ مَرَضًا وَلَهُمْ عَذَابٌ أَلِيمٌۢ بِمَا كَانُوا۟ يَكْذِبُونَ"
+        },
+        {
+          "surah": 2,
+          "ayah": 49,
+          "qac_location": "2:49:8",
+          "arabic": "ٱلْعَذَابِ",
+          "verse_arabic": "وَإِذْ نَجَّيْنَٰكُم مِّنْ ءَالِ فِرْعَوْنَ يَسُومُونَكُمْ سُوٓءَ ٱلْعَذَابِ يُذَبِّحُونَ أَبْنَآءَكُمْ وَيَسْتَحْيُونَ نِسَآءَكُمْ وَفِى ذَٰلِكُم بَلَآءٌ مِّن رَّبِّكُمْ عَظِيمٌ"
+        }
+      ],
+      "notes": "Noun-only subset of the punishment count in the pair."
+    }
+  ]
+}
