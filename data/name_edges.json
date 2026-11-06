@@ -1,0 +1,7624 @@
+{
+  "nodes": [
+    {
+      "id": 1,
+      "transliteration": "Ar-Rahman",
+      "arabic": "ٱلرَّحْمَٰنِ",
+      "count": 57
+    },
+    {
+      "id": 2,
+      "transliteration": "Ar-Rahim",
+      "arabic": "ٱلرَّحِيمِ",
+      "count": 115
+    },
+    {
+      "id": 3,
+      "transliteration": "Al-Malik",
+      "arabic": "مَٰلِكِ",
+      "count": 7
+    },
+    {
+      "id": 4,
+      "transliteration": "Al-Quddus",
+      "arabic": "ٱلْقُدُّوسُ",
+      "count": 2
+    },
+    {
+      "id": 5,
+      "transliteration": "As-Salam",
+      "arabic": "ٱلسَّلَٰمُ",
+      "count": 1
+    },
+    {
+      "id": 6,
+      "transliteration": "Al-Mu'min",
+      "arabic": "ٱلْمُؤْمِنُ",
+      "count": 1
+    },
+    {
+      "id": 7,
+      "transliteration": "Al-Muhaymin",
+      "arabic": "ٱلْمُهَيْمِنُ",
+      "count": 1
+    },
+    {
+      "id": 8,
+      "transliteration": "Al-Aziz",
+      "arabic": "ٱلْعَزِيزُ",
+      "count": 91
+    },
+    {
+      "id": 9,
+      "transliteration": "Al-Jabbar",
+      "arabic": "ٱلْجَبَّارُ",
+      "count": 1
+    },
+    {
+      "id": 10,
+      "transliteration": "Al-Mutakabbir",
+      "arabic": "ٱلْمُتَكَبِّرُ",
+      "count": 1
+    },
+    {
+      "id": 11,
+      "transliteration": "Al-Khaliq",
+      "arabic": "خَٰلِقُ",
+      "count": 11
+    },
+    {
+      "id": 12,
+      "transliteration": "Al-Bari",
+      "arabic": "بَارِئِكُمْ",
+      "count": 3
+    },
+    {
+      "id": 13,
+      "transliteration": "Al-Musawwir",
+      "arabic": "ٱلْمُصَوِّرُ",
+      "count": 1
+    },
+    {
+      "id": 14,
+      "transliteration": "Al-Ghaffar",
+      "arabic": "لَغَفَّارٌ",
+      "count": 5
+    },
+    {
+      "id": 15,
+      "transliteration": "Al-Qahhar",
+      "arabic": "ٱلْقَهَّارُ",
+      "count": 6
+    },
+    {
+      "id": 16,
+      "transliteration": "Al-Wahhab",
+      "arabic": "ٱلْوَهَّابُ",
+      "count": 3
+    },
+    {
+      "id": 17,
+      "transliteration": "Ar-Razzaq",
+      "arabic": "ٱلرَّزَّاقُ",
+      "count": 1
+    },
+    {
+      "id": 18,
+      "transliteration": "Al-Fattah",
+      "arabic": "ٱلْفَتَّاحُ",
+      "count": 1
+    },
+    {
+      "id": 19,
+      "transliteration": "Al-Alim",
+      "arabic": "عَلِيمٌ",
+      "count": 157
+    },
+    {
+      "id": 20,
+      "transliteration": "Al-Qabid",
+      "arabic": "الْقَابِضُ",
+      "count": 0
+    },
+    {
+      "id": 21,
+      "transliteration": "Al-Basit",
+      "arabic": "الْبَاسِطُ",
+      "count": 0
+    },
+    {
+      "id": 22,
+      "transliteration": "Al-Khafid",
+      "arabic": "الْخَافِضُ",
+      "count": 0
+    },
+    {
+      "id": 23,
+      "transliteration": "Ar-Rafi",
+      "arabic": "وَرَافِعُكَ",
+      "count": 1
+    },
+    {
+      "id": 24,
+      "transliteration": "Al-Mu'izz",
+      "arabic": "الْمُعِزُّ",
+      "count": 0
+    },
+    {
+      "id": 25,
+      "transliteration": "Al-Mudhill",
+      "arabic": "الْمُذِلُّ",
+      "count": 0
+    },
+    {
+      "id": 26,
+      "transliteration": "As-Sami",
+      "arabic": "ٱلسَّمِيعُ",
+      "count": 45
+    },
+    {
+      "id": 27,
+      "transliteration": "Al-Basir",
+      "arabic": "بَصِيرٌۢ",
+      "count": 42
+    },
+    {
+      "id": 28,
+      "transliteration": "Al-Hakam",
+      "arabic": "حَكَمًا",
+      "count": 1
+    },
+    {
+      "id": 29,
+      "transliteration": "Al-Adl",
+      "arabic": "الْعَدْلُ",
+      "count": 0
+    },
+    {
+      "id": 30,
+      "transliteration": "Al-Latif",
+      "arabic": "ٱللَّطِيفُ",
+      "count": 7
+    },
+    {
+      "id": 31,
+      "transliteration": "Al-Khabir",
+      "arabic": "خَبِيرٌ",
+      "count": 45
+    },
+    {
+      "id": 32,
+      "transliteration": "Al-Halim",
+      "arabic": "حَلِيمٌ",
+      "count": 11
+    },
+    {
+      "id": 33,
+      "transliteration": "Al-Azim",
+      "arabic": "ٱلْعَظِيمُ",
+      "count": 6
+    },
+    {
+      "id": 34,
+      "transliteration": "Al-Ghafur",
+      "arabic": "غَفُورٌ",
+      "count": 91
+    },
+    {
+      "id": 35,
+      "transliteration": "Ash-Shakur",
+      "arabic": "شَكُورٌ",
+      "count": 4
+    },
+    {
+      "id": 36,
+      "transliteration": "Al-Aliyy",
+      "arabic": "ٱلْعَلِىُّ",
+      "count": 8
+    },
+    {
+      "id": 37,
+      "transliteration": "Al-Kabir",
+      "arabic": "كَبِيرًا",
+      "count": 6
+    },
+    {
+      "id": 38,
+      "transliteration": "Al-Hafiz",
+      "arabic": "حَفِيظٌ",
+      "count": 6
+    },
+    {
+      "id": 39,
+      "transliteration": "Al-Muqit",
+      "arabic": "مُّقِيتًا",
+      "count": 1
+    },
+    {
+      "id": 40,
+      "transliteration": "Al-Hasib",
+      "arabic": "حَسِيبًا",
+      "count": 3
+    },
+    {
+      "id": 41,
+      "transliteration": "Al-Jalil",
+      "arabic": "الْجَلِيلُ",
+      "count": 0
+    },
+    {
+      "id": 42,
+      "transliteration": "Al-Karim",
+      "arabic": "كَرِيمٌ",
+      "count": 2
+    },
+    {
+      "id": 43,
+      "transliteration": "Ar-Raqib",
+      "arabic": "رَقِيبًا",
+      "count": 3
+    },
+    {
+      "id": 44,
+      "transliteration": "Al-Mujib",
+      "arabic": "مُّجِيبٌ",
+      "count": 2
+    },
+    {
+      "id": 45,
+      "transliteration": "Al-Wasi",
+      "arabic": "وَٰسِعٌ",
+      "count": 9
+    },
+    {
+      "id": 46,
+      "transliteration": "Al-Hakim",
+      "arabic": "ٱلْحَكِيمُ",
+      "count": 92
+    },
+    {
+      "id": 47,
+      "transliteration": "Al-Wadud",
+      "arabic": "وَدُودٌ",
+      "count": 2
+    },
+    {
+      "id": 48,
+      "transliteration": "Al-Majid",
+      "arabic": "مَّجِيدٌ",
+      "count": 2
+    },
+    {
+      "id": 49,
+      "transliteration": "Al-Ba'ith",
+      "arabic": "الْبَاعِثُ",
+      "count": 0
+    },
+    {
+      "id": 50,
+      "transliteration": "Ash-Shahid",
+      "arabic": "شَهِيدٌ",
+      "count": 20
+    },
+    {
+      "id": 51,
+      "transliteration": "Al-Haqq",
+      "arabic": "ٱلْحَقِّ",
+      "count": 9
+    },
+    {
+      "id": 52,
+      "transliteration": "Al-Wakil",
+      "arabic": "ٱلْوَكِيلُ",
+      "count": 15
+    },
+    {
+      "id": 53,
+      "transliteration": "Al-Qawiyy",
+      "arabic": "قَوِىٌّ",
+      "count": 9
+    },
+    {
+      "id": 54,
+      "transliteration": "Al-Matin",
+      "arabic": "ٱلْمَتِينُ",
+      "count": 1
+    },
+    {
+      "id": 55,
+      "transliteration": "Al-Waliyy",
+      "arabic": "وَلِىٍّ",
+      "count": 33
+    },
+    {
+      "id": 56,
+      "transliteration": "Al-Hamid",
+      "arabic": "حَمِيدٌ",
+      "count": 17
+    },
+    {
+      "id": 57,
+      "transliteration": "Al-Muhsi",
+      "arabic": "الْمُحْصِي",
+      "count": 0
+    },
+    {
+      "id": 58,
+      "transliteration": "Al-Mubdi",
+      "arabic": "الْمُبْدِئُ",
+      "count": 0
+    },
+    {
+      "id": 59,
+      "transliteration": "Al-Mu'id",
+      "arabic": "الْمُعِيدُ",
+      "count": 0
+    },
+    {
+      "id": 60,
+      "transliteration": "Al-Muhyi",
+      "arabic": "لَمُحْىِ",
+      "count": 2
+    },
+    {
+      "id": 61,
+      "transliteration": "Al-Mumit",
+      "arabic": "الْمُمِيتُ",
+      "count": 0
+    },
+    {
+      "id": 62,
+      "transliteration": "Al-Hayy",
+      "arabic": "ٱلْحَىُّ",
+      "count": 5
+    },
+    {
+      "id": 63,
+      "transliteration": "Al-Qayyum",
+      "arabic": "ٱلْقَيُّومُ",
+      "count": 3
+    },
+    {
+      "id": 64,
+      "transliteration": "Al-Wajid",
+      "arabic": "الْوَاجِدُ",
+      "count": 0
+    },
+    {
+      "id": 65,
+      "transliteration": "Al-Maajid",
+      "arabic": "الْمَاجِدُ",
+      "count": 0
+    },
+    {
+      "id": 66,
+      "transliteration": "Al-Wahid",
+      "arabic": "وَٰحِدًا",
+      "count": 22
+    },
+    {
+      "id": 67,
+      "transliteration": "Al-Ahad",
+      "arabic": "أَحَدٌ",
+      "count": 1
+    },
+    {
+      "id": 68,
+      "transliteration": "As-Samad",
+      "arabic": "ٱلصَّمَدُ",
+      "count": 1
+    },
+    {
+      "id": 69,
+      "transliteration": "Al-Qadir",
+      "arabic": "قَدِيرٌ",
+      "count": 57
+    },
+    {
+      "id": 70,
+      "transliteration": "Al-Muqtadir",
+      "arabic": "مُّقْتَدِرًا",
+      "count": 4
+    },
+    {
+      "id": 71,
+      "transliteration": "Al-Muqaddim",
+      "arabic": "الْمُقَدِّمُ",
+      "count": 0
+    },
+    {
+      "id": 72,
+      "transliteration": "Al-Mu'akhkhir",
+      "arabic": "الْمُؤَخِّرُ",
+      "count": 0
+    },
+    {
+      "id": 73,
+      "transliteration": "Al-Awwal",
+      "arabic": "ٱلْأَوَّلُ",
+      "count": 1
+    },
+    {
+      "id": 74,
+      "transliteration": "Al-Akhir",
+      "arabic": "وَٱلْـَٔاخِرُ",
+      "count": 1
+    },
+    {
+      "id": 75,
+      "transliteration": "Az-Zahir",
+      "arabic": "وَٱلظَّٰهِرُ",
+      "count": 1
+    },
+    {
+      "id": 76,
+      "transliteration": "Al-Batin",
+      "arabic": "وَٱلْبَاطِنُ",
+      "count": 1
+    },
+    {
+      "id": 77,
+      "transliteration": "Al-Wali",
+      "arabic": "وَالٍ",
+      "count": 1
+    },
+    {
+      "id": 78,
+      "transliteration": "Al-Muta'ali",
+      "arabic": "ٱلْمُتَعَالِ",
+      "count": 1
+    },
+    {
+      "id": 79,
+      "transliteration": "Al-Barr",
+      "arabic": "ٱلْبَرُّ",
+      "count": 1
+    },
+    {
+      "id": 80,
+      "transliteration": "At-Tawwab",
+      "arabic": "ٱلتَّوَّابُ",
+      "count": 11
+    },
+    {
+      "id": 81,
+      "transliteration": "Al-Muntaqim",
+      "arabic": "مُنتَقِمُونَ",
+      "count": 3
+    },
+    {
+      "id": 82,
+      "transliteration": "Al-Afuww",
+      "arabic": "عَفُوًّا",
+      "count": 5
+    },
+    {
+      "id": 83,
+      "transliteration": "Ar-Ra'uf",
+      "arabic": "لَرَءُوفٌ",
+      "count": 10
+    },
+    {
+      "id": 84,
+      "transliteration": "Malik al-Mulk",
+      "arabic": "مَٰلِكَ ٱلْمُلْكِ",
+      "count": 1
+    },
+    {
+      "id": 85,
+      "transliteration": "Dhu al-Jalal wa-l-Ikram",
+      "arabic": "ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
+      "count": 2
+    },
+    {
+      "id": 86,
+      "transliteration": "Al-Muqsit",
+      "arabic": "الْمُقْسِطُ",
+      "count": 0
+    },
+    {
+      "id": 87,
+      "transliteration": "Al-Jami",
+      "arabic": "جَامِعُ",
+      "count": 2
+    },
+    {
+      "id": 88,
+      "transliteration": "Al-Ghani",
+      "arabic": "غَنِىٌّ",
+      "count": 18
+    },
+    {
+      "id": 89,
+      "transliteration": "Al-Mughni",
+      "arabic": "الْمُغْنِي",
+      "count": 0
+    },
+    {
+      "id": 90,
+      "transliteration": "Al-Mani",
+      "arabic": "الْمَانِعُ",
+      "count": 0
+    },
+    {
+      "id": 91,
+      "transliteration": "Ad-Darr",
+      "arabic": "الضَّارُّ",
+      "count": 0
+    },
+    {
+      "id": 92,
+      "transliteration": "An-Nafi",
+      "arabic": "النَّافِعُ",
+      "count": 0
+    },
+    {
+      "id": 93,
+      "transliteration": "An-Nur",
+      "arabic": "نُورُ",
+      "count": 1
+    },
+    {
+      "id": 94,
+      "transliteration": "Al-Hadi",
+      "arabic": "لَهَادِ",
+      "count": 2
+    },
+    {
+      "id": 95,
+      "transliteration": "Al-Badi",
+      "arabic": "بَدِيعُ",
+      "count": 2
+    },
+    {
+      "id": 96,
+      "transliteration": "Al-Baqi",
+      "arabic": "الْبَاقِي",
+      "count": 0
+    },
+    {
+      "id": 97,
+      "transliteration": "Al-Warith",
+      "arabic": "ٱلْوَٰرِثُونَ",
+      "count": 3
+    },
+    {
+      "id": 98,
+      "transliteration": "Ar-Rashid",
+      "arabic": "الرَّشِيدُ",
+      "count": 0
+    },
+    {
+      "id": 99,
+      "transliteration": "As-Sabur",
+      "arabic": "الصَّبُورُ",
+      "count": 0
+    }
+  ],
+  "verse_edges": [
+    {
+      "a": 2,
+      "b": 34,
+      "weight": 72,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 173
+        },
+        {
+          "surah": 2,
+          "ayah": 182
+        },
+        {
+          "surah": 2,
+          "ayah": 192
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 46,
+      "weight": 47,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 129
+        },
+        {
+          "surah": 2,
+          "ayah": 209
+        },
+        {
+          "surah": 2,
+          "ayah": 220
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 46,
+      "weight": 36,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 32
+        },
+        {
+          "surah": 4,
+          "ayah": 11
+        },
+        {
+          "surah": 4,
+          "ayah": 17
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 26,
+      "weight": 32,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 127
+        },
+        {
+          "surah": 2,
+          "ayah": 137
+        },
+        {
+          "surah": 2,
+          "ayah": 181
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "b": 8,
+      "weight": 13,
+      "example_refs": [
+        {
+          "surah": 26,
+          "ayah": 9
+        },
+        {
+          "surah": 26,
+          "ayah": 68
+        },
+        {
+          "surah": 26,
+          "ayah": 104
+        }
+      ]
+    },
+    {
+      "a": 26,
+      "b": 27,
+      "weight": 10,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 58
+        },
+        {
+          "surah": 4,
+          "ayah": 134
+        },
+        {
+          "surah": 17,
+          "ayah": 1
+        }
+      ]
+    },
+    {
+      "a": 56,
+      "b": 88,
+      "weight": 10,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 267
+        },
+        {
+          "surah": 4,
+          "ayah": 131
+        },
+        {
+          "surah": 14,
+          "ayah": 8
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "b": 80,
+      "weight": 9,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 37
+        },
+        {
+          "surah": 2,
+          "ayah": 54
+        },
+        {
+          "surah": 2,
+          "ayah": 128
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "b": 83,
+      "weight": 8,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 143
+        },
+        {
+          "surah": 9,
+          "ayah": 117
+        },
+        {
+          "surah": 16,
+          "ayah": 7
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 53,
+      "weight": 7,
+      "example_refs": [
+        {
+          "surah": 11,
+          "ayah": 66
+        },
+        {
+          "surah": 22,
+          "ayah": 40
+        },
+        {
+          "surah": 22,
+          "ayah": 74
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 45,
+      "weight": 7,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 115
+        },
+        {
+          "surah": 2,
+          "ayah": 247
+        },
+        {
+          "surah": 2,
+          "ayah": 261
+        }
+      ]
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "weight": 6,
+      "example_refs": [
+        {
+          "surah": 1,
+          "ayah": 1
+        },
+        {
+          "surah": 1,
+          "ayah": 3
+        },
+        {
+          "surah": 2,
+          "ayah": 163
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 19,
+      "weight": 6,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 96
+        },
+        {
+          "surah": 27,
+          "ayah": 78
+        },
+        {
+          "surah": 36,
+          "ayah": 38
+        }
+      ]
+    },
+    {
+      "a": 15,
+      "b": 66,
+      "weight": 6,
+      "example_refs": [
+        {
+          "surah": 12,
+          "ayah": 39
+        },
+        {
+          "surah": 13,
+          "ayah": 16
+        },
+        {
+          "surah": 14,
+          "ayah": 48
+        }
+      ]
+    },
+    {
+      "a": 32,
+      "b": 34,
+      "weight": 6,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 225
+        },
+        {
+          "surah": 2,
+          "ayah": 235
+        },
+        {
+          "surah": 3,
+          "ayah": 155
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 69,
+      "weight": 5,
+      "example_refs": [
+        {
+          "surah": 16,
+          "ayah": 70
+        },
+        {
+          "surah": 30,
+          "ayah": 54
+        },
+        {
+          "surah": 35,
+          "ayah": 44
+        }
+      ]
+    },
+    {
+      "a": 27,
+      "b": 31,
+      "weight": 5,
+      "example_refs": [
+        {
+          "surah": 17,
+          "ayah": 17
+        },
+        {
+          "surah": 17,
+          "ayah": 30
+        },
+        {
+          "surah": 17,
+          "ayah": 96
+        }
+      ]
+    },
+    {
+      "a": 30,
+      "b": 31,
+      "weight": 5,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 103
+        },
+        {
+          "surah": 22,
+          "ayah": 63
+        },
+        {
+          "surah": 31,
+          "ayah": 16
+        }
+      ]
+    },
+    {
+      "a": 36,
+      "b": 37,
+      "weight": 5,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 34
+        },
+        {
+          "surah": 22,
+          "ayah": 62
+        },
+        {
+          "surah": 31,
+          "ayah": 30
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 31,
+      "weight": 4,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 35
+        },
+        {
+          "surah": 31,
+          "ayah": 34
+        },
+        {
+          "surah": 49,
+          "ayah": 13
+        }
+      ]
+    },
+    {
+      "a": 31,
+      "b": 46,
+      "weight": 4,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 18
+        },
+        {
+          "surah": 6,
+          "ayah": 73
+        },
+        {
+          "surah": 11,
+          "ayah": 1
+        }
+      ]
+    },
+    {
+      "a": 34,
+      "b": 82,
+      "weight": 4,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 43
+        },
+        {
+          "surah": 4,
+          "ayah": 99
+        },
+        {
+          "surah": 22,
+          "ayah": 60
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 14,
+      "weight": 3,
+      "example_refs": [
+        {
+          "surah": 38,
+          "ayah": 66
+        },
+        {
+          "surah": 39,
+          "ayah": 5
+        },
+        {
+          "surah": 40,
+          "ayah": 42
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 56,
+      "weight": 3,
+      "example_refs": [
+        {
+          "surah": 14,
+          "ayah": 1
+        },
+        {
+          "surah": 34,
+          "ayah": 6
+        },
+        {
+          "surah": 85,
+          "ayah": 8
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 32,
+      "weight": 3,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 12
+        },
+        {
+          "surah": 22,
+          "ayah": 59
+        },
+        {
+          "surah": 33,
+          "ayah": 51
+        }
+      ]
+    },
+    {
+      "a": 34,
+      "b": 35,
+      "weight": 3,
+      "example_refs": [
+        {
+          "surah": 35,
+          "ayah": 30
+        },
+        {
+          "surah": 35,
+          "ayah": 34
+        },
+        {
+          "surah": 42,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 62,
+      "b": 63,
+      "weight": 3,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        },
+        {
+          "surah": 3,
+          "ayah": 2
+        },
+        {
+          "surah": 20,
+          "ayah": 111
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        },
+        {
+          "surah": 62,
+          "ayah": 1
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 8,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        },
+        {
+          "surah": 62,
+          "ayah": 1
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 51,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 20,
+          "ayah": 114
+        },
+        {
+          "surah": 23,
+          "ayah": 116
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "b": 8,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        },
+        {
+          "surah": 62,
+          "ayah": 1
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 34,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 35,
+          "ayah": 28
+        },
+        {
+          "surah": 67,
+          "ayah": 2
+        }
+      ]
+    },
+    {
+      "a": 11,
+      "b": 52,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 102
+        },
+        {
+          "surah": 39,
+          "ayah": 62
+        }
+      ]
+    },
+    {
+      "a": 33,
+      "b": 36,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        },
+        {
+          "surah": 42,
+          "ayah": 4
+        }
+      ]
+    },
+    {
+      "a": 36,
+      "b": 51,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 22,
+          "ayah": 62
+        },
+        {
+          "surah": 31,
+          "ayah": 30
+        }
+      ]
+    },
+    {
+      "a": 37,
+      "b": 51,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 22,
+          "ayah": 62
+        },
+        {
+          "surah": 31,
+          "ayah": 30
+        }
+      ]
+    },
+    {
+      "a": 60,
+      "b": 69,
+      "weight": 2,
+      "example_refs": [
+        {
+          "surah": 30,
+          "ayah": 50
+        },
+        {
+          "surah": 41,
+          "ayah": 39
+        }
+      ]
+    },
+    {
+      "a": 1,
+      "b": 27,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 67,
+          "ayah": 19
+        }
+      ]
+    },
+    {
+      "a": 1,
+      "b": 31,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 25,
+          "ayah": 59
+        }
+      ]
+    },
+    {
+      "a": 1,
+      "b": 66,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 163
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "b": 12,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 54
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "b": 47,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 11,
+          "ayah": 90
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "b": 50,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 46,
+          "ayah": 8
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "b": 66,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 163
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "b": 69,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 60,
+          "ayah": 7
+        }
+      ]
+    },
+    {
+      "a": 2,
+      "b": 79,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 52,
+          "ayah": 28
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 5,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 6,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 7,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 9,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 10,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 46,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 62,
+          "ayah": 1
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 69,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 3,
+          "ayah": 26
+        }
+      ]
+    },
+    {
+      "a": 3,
+      "b": 84,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 3,
+          "ayah": 26
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "b": 5,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "b": 6,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "b": 7,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "b": 10,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 4,
+      "b": 46,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 62,
+          "ayah": 1
+        }
+      ]
+    },
+    {
+      "a": 5,
+      "b": 6,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 5,
+      "b": 7,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 5,
+      "b": 8,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 5,
+      "b": 9,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 5,
+      "b": 10,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 6,
+      "b": 8,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 6,
+      "b": 9,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 6,
+      "b": 10,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 7,
+      "b": 8,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 7,
+      "b": 9,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 7,
+      "b": 10,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 9,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 10,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 11,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 12,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 13,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 16,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 38,
+          "ayah": 9
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 30,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 42,
+          "ayah": 19
+        }
+      ]
+    },
+    {
+      "a": 8,
+      "b": 70,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 54,
+          "ayah": 42
+        }
+      ]
+    },
+    {
+      "a": 9,
+      "b": 10,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "a": 11,
+      "b": 12,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "a": 11,
+      "b": 13,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "a": 11,
+      "b": 15,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 13,
+          "ayah": 16
+        }
+      ]
+    },
+    {
+      "a": 11,
+      "b": 46,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "a": 11,
+      "b": 66,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 13,
+          "ayah": 16
+        }
+      ]
+    },
+    {
+      "a": 12,
+      "b": 13,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "a": 12,
+      "b": 46,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "a": 12,
+      "b": 80,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 54
+        }
+      ]
+    },
+    {
+      "a": 13,
+      "b": 46,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "a": 17,
+      "b": 54,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 51,
+          "ayah": 58
+        }
+      ]
+    },
+    {
+      "a": 18,
+      "b": 19,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 34,
+          "ayah": 26
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 30,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 12,
+          "ayah": 100
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 73,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 74,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 75,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 76,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 88,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 39,
+          "ayah": 7
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 93,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 24,
+          "ayah": 35
+        }
+      ]
+    },
+    {
+      "a": 19,
+      "b": 95,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 101
+        }
+      ]
+    },
+    {
+      "a": 27,
+      "b": 50,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 17,
+          "ayah": 96
+        }
+      ]
+    },
+    {
+      "a": 30,
+      "b": 46,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 12,
+          "ayah": 100
+        }
+      ]
+    },
+    {
+      "a": 30,
+      "b": 53,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 42,
+          "ayah": 19
+        }
+      ]
+    },
+    {
+      "a": 31,
+      "b": 50,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 17,
+          "ayah": 96
+        }
+      ]
+    },
+    {
+      "a": 31,
+      "b": 62,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 25,
+          "ayah": 58
+        }
+      ]
+    },
+    {
+      "a": 32,
+      "b": 35,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 64,
+          "ayah": 17
+        }
+      ]
+    },
+    {
+      "a": 32,
+      "b": 88,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 263
+        }
+      ]
+    },
+    {
+      "a": 33,
+      "b": 62,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        }
+      ]
+    },
+    {
+      "a": 33,
+      "b": 63,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        }
+      ]
+    },
+    {
+      "a": 34,
+      "b": 47,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 85,
+          "ayah": 14
+        }
+      ]
+    },
+    {
+      "a": 34,
+      "b": 50,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 46,
+          "ayah": 8
+        }
+      ]
+    },
+    {
+      "a": 34,
+      "b": 69,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 60,
+          "ayah": 7
+        }
+      ]
+    },
+    {
+      "a": 36,
+      "b": 46,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 42,
+          "ayah": 51
+        }
+      ]
+    },
+    {
+      "a": 36,
+      "b": 62,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        }
+      ]
+    },
+    {
+      "a": 36,
+      "b": 63,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        }
+      ]
+    },
+    {
+      "a": 37,
+      "b": 78,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 13,
+          "ayah": 9
+        }
+      ]
+    },
+    {
+      "a": 42,
+      "b": 88,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 27,
+          "ayah": 40
+        }
+      ]
+    },
+    {
+      "a": 43,
+      "b": 50,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 5,
+          "ayah": 117
+        }
+      ]
+    },
+    {
+      "a": 45,
+      "b": 46,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 130
+        }
+      ]
+    },
+    {
+      "a": 46,
+      "b": 56,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 41,
+          "ayah": 42
+        }
+      ]
+    },
+    {
+      "a": 46,
+      "b": 80,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 24,
+          "ayah": 10
+        }
+      ]
+    },
+    {
+      "a": 48,
+      "b": 56,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 11,
+          "ayah": 73
+        }
+      ]
+    },
+    {
+      "a": 50,
+      "b": 66,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 19
+        }
+      ]
+    },
+    {
+      "a": 51,
+      "b": 69,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 22,
+          "ayah": 6
+        }
+      ]
+    },
+    {
+      "a": 52,
+      "b": 66,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 171
+        }
+      ]
+    },
+    {
+      "a": 55,
+      "b": 56,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 42,
+          "ayah": 28
+        }
+      ]
+    },
+    {
+      "a": 55,
+      "b": 69,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 42,
+          "ayah": 9
+        }
+      ]
+    },
+    {
+      "a": 69,
+      "b": 82,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 149
+        }
+      ]
+    },
+    {
+      "a": 69,
+      "b": 84,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 3,
+          "ayah": 26
+        }
+      ]
+    },
+    {
+      "a": 73,
+      "b": 74,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "a": 73,
+      "b": 75,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "a": 73,
+      "b": 76,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "a": 74,
+      "b": 75,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "a": 74,
+      "b": 76,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "a": 75,
+      "b": 76,
+      "weight": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    }
+  ],
+  "surah_edges": [
+    {
+      "a": 2,
+      "b": 34,
+      "weight": 34
+    },
+    {
+      "a": 19,
+      "b": 46,
+      "weight": 34
+    },
+    {
+      "a": 2,
+      "b": 19,
+      "weight": 32
+    },
+    {
+      "a": 8,
+      "b": 19,
+      "weight": 32
+    },
+    {
+      "a": 8,
+      "b": 46,
+      "weight": 32
+    },
+    {
+      "a": 19,
+      "b": 34,
+      "weight": 30
+    },
+    {
+      "a": 2,
+      "b": 8,
+      "weight": 29
+    },
+    {
+      "a": 2,
+      "b": 46,
+      "weight": 29
+    },
+    {
+      "a": 34,
+      "b": 46,
+      "weight": 28
+    },
+    {
+      "a": 8,
+      "b": 34,
+      "weight": 26
+    },
+    {
+      "a": 2,
+      "b": 69,
+      "weight": 25
+    },
+    {
+      "a": 19,
+      "b": 69,
+      "weight": 25
+    },
+    {
+      "a": 8,
+      "b": 69,
+      "weight": 24
+    },
+    {
+      "a": 34,
+      "b": 69,
+      "weight": 24
+    },
+    {
+      "a": 46,
+      "b": 69,
+      "weight": 24
+    },
+    {
+      "a": 19,
+      "b": 26,
+      "weight": 23
+    },
+    {
+      "a": 31,
+      "b": 34,
+      "weight": 23
+    },
+    {
+      "a": 2,
+      "b": 31,
+      "weight": 22
+    },
+    {
+      "a": 19,
+      "b": 31,
+      "weight": 22
+    },
+    {
+      "a": 2,
+      "b": 26,
+      "weight": 21
+    },
+    {
+      "a": 19,
+      "b": 27,
+      "weight": 21
+    },
+    {
+      "a": 27,
+      "b": 34,
+      "weight": 21
+    },
+    {
+      "a": 31,
+      "b": 46,
+      "weight": 21
+    },
+    {
+      "a": 8,
+      "b": 27,
+      "weight": 20
+    },
+    {
+      "a": 8,
+      "b": 31,
+      "weight": 20
+    },
+    {
+      "a": 31,
+      "b": 69,
+      "weight": 20
+    },
+    {
+      "a": 2,
+      "b": 27,
+      "weight": 19
+    },
+    {
+      "a": 26,
+      "b": 34,
+      "weight": 19
+    },
+    {
+      "a": 27,
+      "b": 31,
+      "weight": 19
+    },
+    {
+      "a": 27,
+      "b": 46,
+      "weight": 19
+    },
+    {
+      "a": 8,
+      "b": 26,
+      "weight": 18
+    },
+    {
+      "a": 26,
+      "b": 46,
+      "weight": 18
+    },
+    {
+      "a": 27,
+      "b": 69,
+      "weight": 18
+    },
+    {
+      "a": 8,
+      "b": 56,
+      "weight": 14
+    },
+    {
+      "a": 8,
+      "b": 88,
+      "weight": 14
+    },
+    {
+      "a": 19,
+      "b": 88,
+      "weight": 14
+    },
+    {
+      "a": 26,
+      "b": 27,
+      "weight": 14
+    },
+    {
+      "a": 26,
+      "b": 31,
+      "weight": 14
+    },
+    {
+      "a": 34,
+      "b": 50,
+      "weight": 14
+    },
+    {
+      "a": 46,
+      "b": 88,
+      "weight": 14
+    },
+    {
+      "a": 2,
+      "b": 50,
+      "weight": 13
+    },
+    {
+      "a": 2,
+      "b": 55,
+      "weight": 13
+    },
+    {
+      "a": 8,
+      "b": 50,
+      "weight": 13
+    },
+    {
+      "a": 8,
+      "b": 55,
+      "weight": 13
+    },
+    {
+      "a": 8,
+      "b": 66,
+      "weight": 13
+    },
+    {
+      "a": 19,
+      "b": 55,
+      "weight": 13
+    },
+    {
+      "a": 19,
+      "b": 66,
+      "weight": 13
+    },
+    {
+      "a": 26,
+      "b": 69,
+      "weight": 13
+    },
+    {
+      "a": 34,
+      "b": 55,
+      "weight": 13
+    },
+    {
+      "a": 34,
+      "b": 56,
+      "weight": 13
+    },
+    {
+      "a": 34,
+      "b": 88,
+      "weight": 13
+    },
+    {
+      "a": 46,
+      "b": 55,
+      "weight": 13
+    },
+    {
+      "a": 46,
+      "b": 56,
+      "weight": 13
+    },
+    {
+      "a": 46,
+      "b": 66,
+      "weight": 13
+    },
+    {
+      "a": 2,
+      "b": 88,
+      "weight": 12
+    },
+    {
+      "a": 19,
+      "b": 50,
+      "weight": 12
+    },
+    {
+      "a": 19,
+      "b": 56,
+      "weight": 12
+    },
+    {
+      "a": 26,
+      "b": 66,
+      "weight": 12
+    },
+    {
+      "a": 27,
+      "b": 56,
+      "weight": 12
+    },
+    {
+      "a": 34,
+      "b": 66,
+      "weight": 12
+    },
+    {
+      "a": 2,
+      "b": 56,
+      "weight": 11
+    },
+    {
+      "a": 2,
+      "b": 66,
+      "weight": 11
+    },
+    {
+      "a": 26,
+      "b": 50,
+      "weight": 11
+    },
+    {
+      "a": 26,
+      "b": 55,
+      "weight": 11
+    },
+    {
+      "a": 46,
+      "b": 50,
+      "weight": 11
+    },
+    {
+      "a": 50,
+      "b": 69,
+      "weight": 11
+    },
+    {
+      "a": 2,
+      "b": 52,
+      "weight": 10
+    },
+    {
+      "a": 27,
+      "b": 50,
+      "weight": 10
+    },
+    {
+      "a": 31,
+      "b": 50,
+      "weight": 10
+    },
+    {
+      "a": 31,
+      "b": 55,
+      "weight": 10
+    },
+    {
+      "a": 31,
+      "b": 56,
+      "weight": 10
+    },
+    {
+      "a": 31,
+      "b": 88,
+      "weight": 10
+    },
+    {
+      "a": 34,
+      "b": 52,
+      "weight": 10
+    },
+    {
+      "a": 55,
+      "b": 69,
+      "weight": 10
+    },
+    {
+      "a": 56,
+      "b": 69,
+      "weight": 10
+    },
+    {
+      "a": 69,
+      "b": 88,
+      "weight": 10
+    },
+    {
+      "a": 1,
+      "b": 2,
+      "weight": 9
+    },
+    {
+      "a": 26,
+      "b": 88,
+      "weight": 9
+    },
+    {
+      "a": 27,
+      "b": 32,
+      "weight": 9
+    },
+    {
+      "a": 27,
+      "b": 88,
+      "weight": 9
+    },
+    {
+      "a": 31,
+      "b": 32,
+      "weight": 9
+    },
+    {
+      "a": 32,
+      "b": 34,
+      "weight": 9
+    },
+    {
+      "a": 32,
+      "b": 69,
+      "weight": 9
+    },
+    {
+      "a": 50,
+      "b": 55,
+      "weight": 9
+    },
+    {
+      "a": 55,
+      "b": 66,
+      "weight": 9
+    },
+    {
+      "a": 56,
+      "b": 88,
+      "weight": 9
+    },
+    {
+      "a": 66,
+      "b": 69,
+      "weight": 9
+    },
+    {
+      "a": 1,
+      "b": 8,
+      "weight": 8
+    },
+    {
+      "a": 1,
+      "b": 19,
+      "weight": 8
+    },
+    {
+      "a": 2,
+      "b": 32,
+      "weight": 8
+    },
+    {
+      "a": 2,
+      "b": 83,
+      "weight": 8
+    },
+    {
+      "a": 8,
+      "b": 32,
+      "weight": 8
+    },
+    {
+      "a": 8,
+      "b": 53,
+      "weight": 8
+    },
+    {
+      "a": 19,
+      "b": 32,
+      "weight": 8
+    },
+    {
+      "a": 19,
+      "b": 53,
+      "weight": 8
+    },
+    {
+      "a": 26,
+      "b": 56,
+      "weight": 8
+    },
+    {
+      "a": 27,
+      "b": 53,
+      "weight": 8
+    },
+    {
+      "a": 27,
+      "b": 55,
+      "weight": 8
+    },
+    {
+      "a": 32,
+      "b": 46,
+      "weight": 8
+    },
+    {
+      "a": 46,
+      "b": 83,
+      "weight": 8
+    },
+    {
+      "a": 69,
+      "b": 83,
+      "weight": 8
+    },
+    {
+      "a": 1,
+      "b": 69,
+      "weight": 7
+    },
+    {
+      "a": 2,
+      "b": 53,
+      "weight": 7
+    },
+    {
+      "a": 8,
+      "b": 36,
+      "weight": 7
+    },
+    {
+      "a": 8,
+      "b": 83,
+      "weight": 7
+    },
+    {
+      "a": 19,
+      "b": 30,
+      "weight": 7
+    },
+    {
+      "a": 19,
+      "b": 36,
+      "weight": 7
+    },
+    {
+      "a": 19,
+      "b": 52,
+      "weight": 7
+    },
+    {
+      "a": 19,
+      "b": 83,
+      "weight": 7
+    },
+    {
+      "a": 26,
+      "b": 36,
+      "weight": 7
+    },
+    {
+      "a": 27,
+      "b": 36,
+      "weight": 7
+    },
+    {
+      "a": 31,
+      "b": 83,
+      "weight": 7
+    },
+    {
+      "a": 34,
+      "b": 53,
+      "weight": 7
+    },
+    {
+      "a": 34,
+      "b": 83,
+      "weight": 7
+    },
+    {
+      "a": 36,
+      "b": 46,
+      "weight": 7
+    },
+    {
+      "a": 46,
+      "b": 52,
+      "weight": 7
+    },
+    {
+      "a": 46,
+      "b": 53,
+      "weight": 7
+    },
+    {
+      "a": 50,
+      "b": 66,
+      "weight": 7
+    },
+    {
+      "a": 66,
+      "b": 88,
+      "weight": 7
+    },
+    {
+      "a": 1,
+      "b": 27,
+      "weight": 6
+    },
+    {
+      "a": 1,
+      "b": 31,
+      "weight": 6
+    },
+    {
+      "a": 1,
+      "b": 34,
+      "weight": 6
+    },
+    {
+      "a": 8,
+      "b": 11,
+      "weight": 6
+    },
+    {
+      "a": 8,
+      "b": 30,
+      "weight": 6
+    },
+    {
+      "a": 8,
+      "b": 52,
+      "weight": 6
+    },
+    {
+      "a": 11,
+      "b": 19,
+      "weight": 6
+    },
+    {
+      "a": 11,
+      "b": 46,
+      "weight": 6
+    },
+    {
+      "a": 11,
+      "b": 66,
+      "weight": 6
+    },
+    {
+      "a": 15,
+      "b": 66,
+      "weight": 6
+    },
+    {
+      "a": 19,
+      "b": 38,
+      "weight": 6
+    },
+    {
+      "a": 19,
+      "b": 51,
+      "weight": 6
+    },
+    {
+      "a": 26,
+      "b": 32,
+      "weight": 6
+    },
+    {
+      "a": 27,
+      "b": 66,
+      "weight": 6
+    },
+    {
+      "a": 30,
+      "b": 31,
+      "weight": 6
+    },
+    {
+      "a": 30,
+      "b": 34,
+      "weight": 6
+    },
+    {
+      "a": 30,
+      "b": 46,
+      "weight": 6
+    },
+    {
+      "a": 31,
+      "b": 36,
+      "weight": 6
+    },
+    {
+      "a": 31,
+      "b": 52,
+      "weight": 6
+    },
+    {
+      "a": 31,
+      "b": 53,
+      "weight": 6
+    },
+    {
+      "a": 31,
+      "b": 66,
+      "weight": 6
+    },
+    {
+      "a": 32,
+      "b": 50,
+      "weight": 6
+    },
+    {
+      "a": 32,
+      "b": 88,
+      "weight": 6
+    },
+    {
+      "a": 36,
+      "b": 56,
+      "weight": 6
+    },
+    {
+      "a": 50,
+      "b": 88,
+      "weight": 6
+    },
+    {
+      "a": 52,
+      "b": 69,
+      "weight": 6
+    },
+    {
+      "a": 53,
+      "b": 69,
+      "weight": 6
+    },
+    {
+      "a": 1,
+      "b": 26,
+      "weight": 5
+    },
+    {
+      "a": 1,
+      "b": 46,
+      "weight": 5
+    },
+    {
+      "a": 2,
+      "b": 30,
+      "weight": 5
+    },
+    {
+      "a": 2,
+      "b": 36,
+      "weight": 5
+    },
+    {
+      "a": 2,
+      "b": 38,
+      "weight": 5
+    },
+    {
+      "a": 2,
+      "b": 45,
+      "weight": 5
+    },
+    {
+      "a": 2,
+      "b": 80,
+      "weight": 5
+    },
+    {
+      "a": 8,
+      "b": 37,
+      "weight": 5
+    },
+    {
+      "a": 19,
+      "b": 37,
+      "weight": 5
+    },
+    {
+      "a": 19,
+      "b": 45,
+      "weight": 5
+    },
+    {
+      "a": 19,
+      "b": 80,
+      "weight": 5
+    },
+    {
+      "a": 26,
+      "b": 30,
+      "weight": 5
+    },
+    {
+      "a": 26,
+      "b": 37,
+      "weight": 5
+    },
+    {
+      "a": 26,
+      "b": 45,
+      "weight": 5
+    },
+    {
+      "a": 26,
+      "b": 51,
+      "weight": 5
+    },
+    {
+      "a": 26,
+      "b": 52,
+      "weight": 5
+    },
+    {
+      "a": 26,
+      "b": 53,
+      "weight": 5
+    },
+    {
+      "a": 26,
+      "b": 80,
+      "weight": 5
+    },
+    {
+      "a": 26,
+      "b": 83,
+      "weight": 5
+    },
+    {
+      "a": 27,
+      "b": 30,
+      "weight": 5
+    },
+    {
+      "a": 27,
+      "b": 37,
+      "weight": 5
+    },
+    {
+      "a": 27,
+      "b": 52,
+      "weight": 5
+    },
+    {
+      "a": 27,
+      "b": 62,
+      "weight": 5
+    },
+    {
+      "a": 30,
+      "b": 69,
+      "weight": 5
+    },
+    {
+      "a": 31,
+      "b": 45,
+      "weight": 5
+    },
+    {
+      "a": 31,
+      "b": 80,
+      "weight": 5
+    },
+    {
+      "a": 32,
+      "b": 55,
+      "weight": 5
+    },
+    {
+      "a": 32,
+      "b": 56,
+      "weight": 5
+    },
+    {
+      "a": 34,
+      "b": 36,
+      "weight": 5
+    },
+    {
+      "a": 34,
+      "b": 38,
+      "weight": 5
+    },
+    {
+      "a": 34,
+      "b": 45,
+      "weight": 5
+    },
+    {
+      "a": 34,
+      "b": 51,
+      "weight": 5
+    },
+    {
+      "a": 34,
+      "b": 80,
+      "weight": 5
+    },
+    {
+      "a": 36,
+      "b": 37,
+      "weight": 5
+    },
+    {
+      "a": 37,
+      "b": 46,
+      "weight": 5
+    },
+    {
+      "a": 38,
+      "b": 46,
+      "weight": 5
+    },
+    {
+      "a": 45,
+      "b": 46,
+      "weight": 5
+    },
+    {
+      "a": 45,
+      "b": 69,
+      "weight": 5
+    },
+    {
+      "a": 46,
+      "b": 80,
+      "weight": 5
+    },
+    {
+      "a": 50,
+      "b": 52,
+      "weight": 5
+    },
+    {
+      "a": 50,
+      "b": 56,
+      "weight": 5
+    },
+    {
+      "a": 52,
+      "b": 55,
+      "weight": 5
+    },
+    {
+      "a": 55,
+      "b": 88,
+      "weight": 5
+    },
+    {
+      "a": 56,
+      "b": 66,
+      "weight": 5
+    },
+    {
+      "a": 1,
+      "b": 66,
+      "weight": 4
+    },
+    {
+      "a": 2,
+      "b": 11,
+      "weight": 4
+    },
+    {
+      "a": 2,
+      "b": 51,
+      "weight": 4
+    },
+    {
+      "a": 8,
+      "b": 15,
+      "weight": 4
+    },
+    {
+      "a": 8,
+      "b": 45,
+      "weight": 4
+    },
+    {
+      "a": 11,
+      "b": 15,
+      "weight": 4
+    },
+    {
+      "a": 11,
+      "b": 34,
+      "weight": 4
+    },
+    {
+      "a": 11,
+      "b": 69,
+      "weight": 4
+    },
+    {
+      "a": 15,
+      "b": 46,
+      "weight": 4
+    },
+    {
+      "a": 26,
+      "b": 38,
+      "weight": 4
+    },
+    {
+      "a": 27,
+      "b": 45,
+      "weight": 4
+    },
+    {
+      "a": 27,
+      "b": 83,
+      "weight": 4
+    },
+    {
+      "a": 30,
+      "b": 55,
+      "weight": 4
+    },
+    {
+      "a": 31,
+      "b": 37,
+      "weight": 4
+    },
+    {
+      "a": 31,
+      "b": 51,
+      "weight": 4
+    },
+    {
+      "a": 32,
+      "b": 45,
+      "weight": 4
+    },
+    {
+      "a": 32,
+      "b": 52,
+      "weight": 4
+    },
+    {
+      "a": 32,
+      "b": 66,
+      "weight": 4
+    },
+    {
+      "a": 36,
+      "b": 55,
+      "weight": 4
+    },
+    {
+      "a": 36,
+      "b": 66,
+      "weight": 4
+    },
+    {
+      "a": 36,
+      "b": 69,
+      "weight": 4
+    },
+    {
+      "a": 36,
+      "b": 88,
+      "weight": 4
+    },
+    {
+      "a": 37,
+      "b": 50,
+      "weight": 4
+    },
+    {
+      "a": 37,
+      "b": 56,
+      "weight": 4
+    },
+    {
+      "a": 37,
+      "b": 66,
+      "weight": 4
+    },
+    {
+      "a": 45,
+      "b": 55,
+      "weight": 4
+    },
+    {
+      "a": 46,
+      "b": 51,
+      "weight": 4
+    },
+    {
+      "a": 51,
+      "b": 69,
+      "weight": 4
+    },
+    {
+      "a": 51,
+      "b": 88,
+      "weight": 4
+    },
+    {
+      "a": 52,
+      "b": 66,
+      "weight": 4
+    },
+    {
+      "a": 52,
+      "b": 88,
+      "weight": 4
+    },
+    {
+      "a": 53,
+      "b": 56,
+      "weight": 4
+    },
+    {
+      "a": 55,
+      "b": 56,
+      "weight": 4
+    },
+    {
+      "a": 66,
+      "b": 83,
+      "weight": 4
+    },
+    {
+      "a": 69,
+      "b": 80,
+      "weight": 4
+    },
+    {
+      "a": 83,
+      "b": 88,
+      "weight": 4
+    },
+    {
+      "a": 1,
+      "b": 3,
+      "weight": 3
+    },
+    {
+      "a": 1,
+      "b": 50,
+      "weight": 3
+    },
+    {
+      "a": 1,
+      "b": 62,
+      "weight": 3
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "weight": 3
+    },
+    {
+      "a": 2,
+      "b": 15,
+      "weight": 3
+    },
+    {
+      "a": 2,
+      "b": 37,
+      "weight": 3
+    },
+    {
+      "a": 2,
+      "b": 43,
+      "weight": 3
+    },
+    {
+      "a": 2,
+      "b": 62,
+      "weight": 3
+    },
+    {
+      "a": 2,
+      "b": 82,
+      "weight": 3
+    },
+    {
+      "a": 3,
+      "b": 8,
+      "weight": 3
+    },
+    {
+      "a": 3,
+      "b": 19,
+      "weight": 3
+    },
+    {
+      "a": 3,
+      "b": 46,
+      "weight": 3
+    },
+    {
+      "a": 3,
+      "b": 69,
+      "weight": 3
+    },
+    {
+      "a": 8,
+      "b": 14,
+      "weight": 3
+    },
+    {
+      "a": 8,
+      "b": 35,
+      "weight": 3
+    },
+    {
+      "a": 8,
+      "b": 38,
+      "weight": 3
+    },
+    {
+      "a": 8,
+      "b": 43,
+      "weight": 3
+    },
+    {
+      "a": 8,
+      "b": 51,
+      "weight": 3
+    },
+    {
+      "a": 8,
+      "b": 62,
+      "weight": 3
+    },
+    {
+      "a": 8,
+      "b": 80,
+      "weight": 3
+    },
+    {
+      "a": 8,
+      "b": 81,
+      "weight": 3
+    },
+    {
+      "a": 8,
+      "b": 82,
+      "weight": 3
+    },
+    {
+      "a": 11,
+      "b": 14,
+      "weight": 3
+    },
+    {
+      "a": 11,
+      "b": 31,
+      "weight": 3
+    },
+    {
+      "a": 11,
+      "b": 88,
+      "weight": 3
+    },
+    {
+      "a": 14,
+      "b": 15,
+      "weight": 3
+    },
+    {
+      "a": 14,
+      "b": 66,
+      "weight": 3
+    },
+    {
+      "a": 15,
+      "b": 19,
+      "weight": 3
+    },
+    {
+      "a": 15,
+      "b": 26,
+      "weight": 3
+    },
+    {
+      "a": 15,
+      "b": 34,
+      "weight": 3
+    },
+    {
+      "a": 19,
+      "b": 35,
+      "weight": 3
+    },
+    {
+      "a": 19,
+      "b": 43,
+      "weight": 3
+    },
+    {
+      "a": 19,
+      "b": 62,
+      "weight": 3
+    },
+    {
+      "a": 19,
+      "b": 82,
+      "weight": 3
+    },
+    {
+      "a": 26,
+      "b": 62,
+      "weight": 3
+    },
+    {
+      "a": 26,
+      "b": 82,
+      "weight": 3
+    },
+    {
+      "a": 27,
+      "b": 35,
+      "weight": 3
+    },
+    {
+      "a": 27,
+      "b": 38,
+      "weight": 3
+    },
+    {
+      "a": 27,
+      "b": 43,
+      "weight": 3
+    },
+    {
+      "a": 27,
+      "b": 51,
+      "weight": 3
+    },
+    {
+      "a": 27,
+      "b": 63,
+      "weight": 3
+    },
+    {
+      "a": 27,
+      "b": 80,
+      "weight": 3
+    },
+    {
+      "a": 27,
+      "b": 82,
+      "weight": 3
+    },
+    {
+      "a": 30,
+      "b": 36,
+      "weight": 3
+    },
+    {
+      "a": 30,
+      "b": 50,
+      "weight": 3
+    },
+    {
+      "a": 30,
+      "b": 51,
+      "weight": 3
+    },
+    {
+      "a": 30,
+      "b": 52,
+      "weight": 3
+    },
+    {
+      "a": 30,
+      "b": 53,
+      "weight": 3
+    },
+    {
+      "a": 30,
+      "b": 56,
+      "weight": 3
+    },
+    {
+      "a": 30,
+      "b": 66,
+      "weight": 3
+    },
+    {
+      "a": 30,
+      "b": 88,
+      "weight": 3
+    },
+    {
+      "a": 31,
+      "b": 35,
+      "weight": 3
+    },
+    {
+      "a": 31,
+      "b": 38,
+      "weight": 3
+    },
+    {
+      "a": 31,
+      "b": 43,
+      "weight": 3
+    },
+    {
+      "a": 31,
+      "b": 62,
+      "weight": 3
+    },
+    {
+      "a": 31,
+      "b": 82,
+      "weight": 3
+    },
+    {
+      "a": 32,
+      "b": 36,
+      "weight": 3
+    },
+    {
+      "a": 32,
+      "b": 43,
+      "weight": 3
+    },
+    {
+      "a": 32,
+      "b": 83,
+      "weight": 3
+    },
+    {
+      "a": 34,
+      "b": 35,
+      "weight": 3
+    },
+    {
+      "a": 34,
+      "b": 37,
+      "weight": 3
+    },
+    {
+      "a": 34,
+      "b": 43,
+      "weight": 3
+    },
+    {
+      "a": 34,
+      "b": 62,
+      "weight": 3
+    },
+    {
+      "a": 34,
+      "b": 82,
+      "weight": 3
+    },
+    {
+      "a": 35,
+      "b": 46,
+      "weight": 3
+    },
+    {
+      "a": 35,
+      "b": 56,
+      "weight": 3
+    },
+    {
+      "a": 35,
+      "b": 69,
+      "weight": 3
+    },
+    {
+      "a": 36,
+      "b": 50,
+      "weight": 3
+    },
+    {
+      "a": 36,
+      "b": 53,
+      "weight": 3
+    },
+    {
+      "a": 37,
+      "b": 55,
+      "weight": 3
+    },
+    {
+      "a": 37,
+      "b": 88,
+      "weight": 3
+    },
+    {
+      "a": 38,
+      "b": 55,
+      "weight": 3
+    },
+    {
+      "a": 38,
+      "b": 56,
+      "weight": 3
+    },
+    {
+      "a": 43,
+      "b": 46,
+      "weight": 3
+    },
+    {
+      "a": 43,
+      "b": 50,
+      "weight": 3
+    },
+    {
+      "a": 43,
+      "b": 55,
+      "weight": 3
+    },
+    {
+      "a": 43,
+      "b": 69,
+      "weight": 3
+    },
+    {
+      "a": 45,
+      "b": 50,
+      "weight": 3
+    },
+    {
+      "a": 45,
+      "b": 66,
+      "weight": 3
+    },
+    {
+      "a": 45,
+      "b": 80,
+      "weight": 3
+    },
+    {
+      "a": 45,
+      "b": 83,
+      "weight": 3
+    },
+    {
+      "a": 45,
+      "b": 88,
+      "weight": 3
+    },
+    {
+      "a": 46,
+      "b": 62,
+      "weight": 3
+    },
+    {
+      "a": 50,
+      "b": 51,
+      "weight": 3
+    },
+    {
+      "a": 50,
+      "b": 53,
+      "weight": 3
+    },
+    {
+      "a": 50,
+      "b": 82,
+      "weight": 3
+    },
+    {
+      "a": 51,
+      "b": 66,
+      "weight": 3
+    },
+    {
+      "a": 55,
+      "b": 80,
+      "weight": 3
+    },
+    {
+      "a": 55,
+      "b": 83,
+      "weight": 3
+    },
+    {
+      "a": 56,
+      "b": 83,
+      "weight": 3
+    },
+    {
+      "a": 62,
+      "b": 63,
+      "weight": 3
+    },
+    {
+      "a": 62,
+      "b": 69,
+      "weight": 3
+    },
+    {
+      "a": 66,
+      "b": 80,
+      "weight": 3
+    },
+    {
+      "a": 80,
+      "b": 83,
+      "weight": 3
+    },
+    {
+      "a": 1,
+      "b": 11,
+      "weight": 2
+    },
+    {
+      "a": 1,
+      "b": 12,
+      "weight": 2
+    },
+    {
+      "a": 1,
+      "b": 32,
+      "weight": 2
+    },
+    {
+      "a": 1,
+      "b": 55,
+      "weight": 2
+    },
+    {
+      "a": 1,
+      "b": 56,
+      "weight": 2
+    },
+    {
+      "a": 1,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 1,
+      "b": 83,
+      "weight": 2
+    },
+    {
+      "a": 1,
+      "b": 88,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 12,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 33,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 35,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 40,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 60,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 81,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 94,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 2,
+      "b": 97,
+      "weight": 2
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "weight": 2
+    },
+    {
+      "a": 3,
+      "b": 11,
+      "weight": 2
+    },
+    {
+      "a": 3,
+      "b": 27,
+      "weight": 2
+    },
+    {
+      "a": 3,
+      "b": 31,
+      "weight": 2
+    },
+    {
+      "a": 3,
+      "b": 51,
+      "weight": 2
+    },
+    {
+      "a": 3,
+      "b": 62,
+      "weight": 2
+    },
+    {
+      "a": 3,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 3,
+      "b": 83,
+      "weight": 2
+    },
+    {
+      "a": 4,
+      "b": 8,
+      "weight": 2
+    },
+    {
+      "a": 4,
+      "b": 46,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 12,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 16,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 33,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 40,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 47,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 48,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 60,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 70,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 8,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 11,
+      "b": 26,
+      "weight": 2
+    },
+    {
+      "a": 11,
+      "b": 27,
+      "weight": 2
+    },
+    {
+      "a": 11,
+      "b": 37,
+      "weight": 2
+    },
+    {
+      "a": 11,
+      "b": 50,
+      "weight": 2
+    },
+    {
+      "a": 11,
+      "b": 51,
+      "weight": 2
+    },
+    {
+      "a": 11,
+      "b": 52,
+      "weight": 2
+    },
+    {
+      "a": 11,
+      "b": 55,
+      "weight": 2
+    },
+    {
+      "a": 12,
+      "b": 31,
+      "weight": 2
+    },
+    {
+      "a": 12,
+      "b": 46,
+      "weight": 2
+    },
+    {
+      "a": 12,
+      "b": 69,
+      "weight": 2
+    },
+    {
+      "a": 12,
+      "b": 83,
+      "weight": 2
+    },
+    {
+      "a": 14,
+      "b": 19,
+      "weight": 2
+    },
+    {
+      "a": 14,
+      "b": 27,
+      "weight": 2
+    },
+    {
+      "a": 14,
+      "b": 46,
+      "weight": 2
+    },
+    {
+      "a": 14,
+      "b": 62,
+      "weight": 2
+    },
+    {
+      "a": 15,
+      "b": 37,
+      "weight": 2
+    },
+    {
+      "a": 15,
+      "b": 52,
+      "weight": 2
+    },
+    {
+      "a": 15,
+      "b": 55,
+      "weight": 2
+    },
+    {
+      "a": 15,
+      "b": 88,
+      "weight": 2
+    },
+    {
+      "a": 19,
+      "b": 33,
+      "weight": 2
+    },
+    {
+      "a": 19,
+      "b": 40,
+      "weight": 2
+    },
+    {
+      "a": 19,
+      "b": 60,
+      "weight": 2
+    },
+    {
+      "a": 19,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 19,
+      "b": 81,
+      "weight": 2
+    },
+    {
+      "a": 19,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 19,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 19,
+      "b": 97,
+      "weight": 2
+    },
+    {
+      "a": 26,
+      "b": 33,
+      "weight": 2
+    },
+    {
+      "a": 26,
+      "b": 43,
+      "weight": 2
+    },
+    {
+      "a": 26,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 26,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 26,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 27,
+      "b": 33,
+      "weight": 2
+    },
+    {
+      "a": 27,
+      "b": 40,
+      "weight": 2
+    },
+    {
+      "a": 27,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 27,
+      "b": 94,
+      "weight": 2
+    },
+    {
+      "a": 30,
+      "b": 32,
+      "weight": 2
+    },
+    {
+      "a": 30,
+      "b": 37,
+      "weight": 2
+    },
+    {
+      "a": 30,
+      "b": 38,
+      "weight": 2
+    },
+    {
+      "a": 31,
+      "b": 33,
+      "weight": 2
+    },
+    {
+      "a": 31,
+      "b": 40,
+      "weight": 2
+    },
+    {
+      "a": 31,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 31,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 31,
+      "b": 94,
+      "weight": 2
+    },
+    {
+      "a": 31,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 32,
+      "b": 35,
+      "weight": 2
+    },
+    {
+      "a": 32,
+      "b": 37,
+      "weight": 2
+    },
+    {
+      "a": 32,
+      "b": 40,
+      "weight": 2
+    },
+    {
+      "a": 32,
+      "b": 53,
+      "weight": 2
+    },
+    {
+      "a": 32,
+      "b": 62,
+      "weight": 2
+    },
+    {
+      "a": 32,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 32,
+      "b": 80,
+      "weight": 2
+    },
+    {
+      "a": 32,
+      "b": 82,
+      "weight": 2
+    },
+    {
+      "a": 32,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 33,
+      "b": 34,
+      "weight": 2
+    },
+    {
+      "a": 33,
+      "b": 36,
+      "weight": 2
+    },
+    {
+      "a": 33,
+      "b": 46,
+      "weight": 2
+    },
+    {
+      "a": 33,
+      "b": 55,
+      "weight": 2
+    },
+    {
+      "a": 33,
+      "b": 56,
+      "weight": 2
+    },
+    {
+      "a": 33,
+      "b": 69,
+      "weight": 2
+    },
+    {
+      "a": 34,
+      "b": 40,
+      "weight": 2
+    },
+    {
+      "a": 34,
+      "b": 47,
+      "weight": 2
+    },
+    {
+      "a": 34,
+      "b": 48,
+      "weight": 2
+    },
+    {
+      "a": 34,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 34,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 34,
+      "b": 94,
+      "weight": 2
+    },
+    {
+      "a": 34,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 34,
+      "b": 97,
+      "weight": 2
+    },
+    {
+      "a": 35,
+      "b": 88,
+      "weight": 2
+    },
+    {
+      "a": 36,
+      "b": 38,
+      "weight": 2
+    },
+    {
+      "a": 36,
+      "b": 45,
+      "weight": 2
+    },
+    {
+      "a": 36,
+      "b": 51,
+      "weight": 2
+    },
+    {
+      "a": 36,
+      "b": 62,
+      "weight": 2
+    },
+    {
+      "a": 36,
+      "b": 80,
+      "weight": 2
+    },
+    {
+      "a": 36,
+      "b": 82,
+      "weight": 2
+    },
+    {
+      "a": 36,
+      "b": 83,
+      "weight": 2
+    },
+    {
+      "a": 37,
+      "b": 51,
+      "weight": 2
+    },
+    {
+      "a": 37,
+      "b": 53,
+      "weight": 2
+    },
+    {
+      "a": 37,
+      "b": 69,
+      "weight": 2
+    },
+    {
+      "a": 37,
+      "b": 82,
+      "weight": 2
+    },
+    {
+      "a": 38,
+      "b": 52,
+      "weight": 2
+    },
+    {
+      "a": 38,
+      "b": 53,
+      "weight": 2
+    },
+    {
+      "a": 38,
+      "b": 66,
+      "weight": 2
+    },
+    {
+      "a": 38,
+      "b": 69,
+      "weight": 2
+    },
+    {
+      "a": 38,
+      "b": 97,
+      "weight": 2
+    },
+    {
+      "a": 40,
+      "b": 43,
+      "weight": 2
+    },
+    {
+      "a": 40,
+      "b": 46,
+      "weight": 2
+    },
+    {
+      "a": 40,
+      "b": 50,
+      "weight": 2
+    },
+    {
+      "a": 40,
+      "b": 52,
+      "weight": 2
+    },
+    {
+      "a": 40,
+      "b": 55,
+      "weight": 2
+    },
+    {
+      "a": 40,
+      "b": 69,
+      "weight": 2
+    },
+    {
+      "a": 43,
+      "b": 45,
+      "weight": 2
+    },
+    {
+      "a": 43,
+      "b": 52,
+      "weight": 2
+    },
+    {
+      "a": 43,
+      "b": 66,
+      "weight": 2
+    },
+    {
+      "a": 45,
+      "b": 52,
+      "weight": 2
+    },
+    {
+      "a": 45,
+      "b": 56,
+      "weight": 2
+    },
+    {
+      "a": 45,
+      "b": 62,
+      "weight": 2
+    },
+    {
+      "a": 45,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 45,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 46,
+      "b": 60,
+      "weight": 2
+    },
+    {
+      "a": 46,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 46,
+      "b": 82,
+      "weight": 2
+    },
+    {
+      "a": 46,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 46,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 47,
+      "b": 48,
+      "weight": 2
+    },
+    {
+      "a": 47,
+      "b": 56,
+      "weight": 2
+    },
+    {
+      "a": 48,
+      "b": 56,
+      "weight": 2
+    },
+    {
+      "a": 50,
+      "b": 83,
+      "weight": 2
+    },
+    {
+      "a": 50,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 51,
+      "b": 55,
+      "weight": 2
+    },
+    {
+      "a": 51,
+      "b": 56,
+      "weight": 2
+    },
+    {
+      "a": 51,
+      "b": 83,
+      "weight": 2
+    },
+    {
+      "a": 52,
+      "b": 53,
+      "weight": 2
+    },
+    {
+      "a": 52,
+      "b": 56,
+      "weight": 2
+    },
+    {
+      "a": 52,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 53,
+      "b": 55,
+      "weight": 2
+    },
+    {
+      "a": 53,
+      "b": 66,
+      "weight": 2
+    },
+    {
+      "a": 53,
+      "b": 82,
+      "weight": 2
+    },
+    {
+      "a": 53,
+      "b": 83,
+      "weight": 2
+    },
+    {
+      "a": 53,
+      "b": 88,
+      "weight": 2
+    },
+    {
+      "a": 55,
+      "b": 62,
+      "weight": 2
+    },
+    {
+      "a": 55,
+      "b": 63,
+      "weight": 2
+    },
+    {
+      "a": 55,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 55,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 56,
+      "b": 80,
+      "weight": 2
+    },
+    {
+      "a": 56,
+      "b": 82,
+      "weight": 2
+    },
+    {
+      "a": 60,
+      "b": 69,
+      "weight": 2
+    },
+    {
+      "a": 62,
+      "b": 66,
+      "weight": 2
+    },
+    {
+      "a": 62,
+      "b": 83,
+      "weight": 2
+    },
+    {
+      "a": 62,
+      "b": 88,
+      "weight": 2
+    },
+    {
+      "a": 63,
+      "b": 69,
+      "weight": 2
+    },
+    {
+      "a": 63,
+      "b": 83,
+      "weight": 2
+    },
+    {
+      "a": 63,
+      "b": 88,
+      "weight": 2
+    },
+    {
+      "a": 66,
+      "b": 82,
+      "weight": 2
+    },
+    {
+      "a": 66,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 69,
+      "b": 82,
+      "weight": 2
+    },
+    {
+      "a": 69,
+      "b": 87,
+      "weight": 2
+    },
+    {
+      "a": 69,
+      "b": 94,
+      "weight": 2
+    },
+    {
+      "a": 69,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 80,
+      "b": 88,
+      "weight": 2
+    },
+    {
+      "a": 82,
+      "b": 88,
+      "weight": 2
+    },
+    {
+      "a": 87,
+      "b": 88,
+      "weight": 2
+    },
+    {
+      "a": 88,
+      "b": 95,
+      "weight": 2
+    },
+    {
+      "a": 1,
+      "b": 4,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 5,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 6,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 7,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 9,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 10,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 14,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 15,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 30,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 33,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 36,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 37,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 38,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 42,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 45,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 51,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 60,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 70,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 77,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 78,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 81,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 85,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 1,
+      "b": 97,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 5,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 6,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 7,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 9,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 10,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 14,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 16,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 18,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 23,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 28,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 42,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 44,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 47,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 48,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 79,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 2,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 5,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 6,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 7,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 9,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 10,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 12,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 14,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 16,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 23,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 26,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 32,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 34,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 45,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 55,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 3,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 5,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 6,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 7,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 10,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 11,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 12,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 19,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 4,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 6,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 7,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 8,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 9,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 10,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 11,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 12,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 5,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 8,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 9,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 10,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 11,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 12,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 6,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 8,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 9,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 10,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 11,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 12,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 7,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 9,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 10,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 18,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 23,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 28,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 42,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 44,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 8,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 9,
+      "b": 10,
+      "weight": 1
+    },
+    {
+      "a": 9,
+      "b": 11,
+      "weight": 1
+    },
+    {
+      "a": 9,
+      "b": 12,
+      "weight": 1
+    },
+    {
+      "a": 9,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 9,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 9,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 9,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 9,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 10,
+      "b": 11,
+      "weight": 1
+    },
+    {
+      "a": 10,
+      "b": 12,
+      "weight": 1
+    },
+    {
+      "a": 10,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 10,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 10,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 10,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 10,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 12,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 16,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 28,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 30,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 32,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 33,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 35,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 36,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 38,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 44,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 56,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 77,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 78,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 11,
+      "b": 97,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 13,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 19,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 26,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 27,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 32,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 33,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 34,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 36,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 45,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 55,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 56,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 66,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 12,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 13,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 13,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 13,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 13,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 16,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 26,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 34,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 36,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 37,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 51,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 14,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 16,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 27,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 30,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 36,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 38,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 56,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 77,
+      "weight": 1
+    },
+    {
+      "a": 15,
+      "b": 78,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 19,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 23,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 26,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 27,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 32,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 34,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 45,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 55,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 66,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 16,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 17,
+      "b": 19,
+      "weight": 1
+    },
+    {
+      "a": 17,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 17,
+      "b": 54,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 19,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 26,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 27,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 34,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 36,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 37,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 38,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 55,
+      "weight": 1
+    },
+    {
+      "a": 18,
+      "b": 56,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 23,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 28,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 42,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 44,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 47,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 48,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 54,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 70,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 19,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 26,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 27,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 32,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 34,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 45,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 55,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 23,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 28,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 35,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 40,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 60,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 81,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 26,
+      "b": 97,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 44,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 47,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 48,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 60,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 27,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 30,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 31,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 34,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 51,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 55,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 66,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 28,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 30,
+      "b": 33,
+      "weight": 1
+    },
+    {
+      "a": 30,
+      "b": 35,
+      "weight": 1
+    },
+    {
+      "a": 30,
+      "b": 40,
+      "weight": 1
+    },
+    {
+      "a": 30,
+      "b": 43,
+      "weight": 1
+    },
+    {
+      "a": 30,
+      "b": 82,
+      "weight": 1
+    },
+    {
+      "a": 30,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 30,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 30,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 42,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 44,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 47,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 48,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 31,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 32,
+      "b": 33,
+      "weight": 1
+    },
+    {
+      "a": 32,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 32,
+      "b": 51,
+      "weight": 1
+    },
+    {
+      "a": 32,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 32,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 32,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 35,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 38,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 45,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 66,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 33,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 42,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 44,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 60,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 70,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 34,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 35,
+      "b": 36,
+      "weight": 1
+    },
+    {
+      "a": 35,
+      "b": 38,
+      "weight": 1
+    },
+    {
+      "a": 35,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 35,
+      "b": 55,
+      "weight": 1
+    },
+    {
+      "a": 36,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 36,
+      "b": 40,
+      "weight": 1
+    },
+    {
+      "a": 36,
+      "b": 43,
+      "weight": 1
+    },
+    {
+      "a": 36,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 36,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 36,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 36,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 36,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 38,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 39,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 40,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 43,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 45,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 77,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 78,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 37,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 38,
+      "b": 44,
+      "weight": 1
+    },
+    {
+      "a": 38,
+      "b": 47,
+      "weight": 1
+    },
+    {
+      "a": 38,
+      "b": 48,
+      "weight": 1
+    },
+    {
+      "a": 38,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 40,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 43,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 45,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 55,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 56,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 66,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 82,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 39,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 40,
+      "b": 45,
+      "weight": 1
+    },
+    {
+      "a": 40,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 40,
+      "b": 56,
+      "weight": 1
+    },
+    {
+      "a": 40,
+      "b": 66,
+      "weight": 1
+    },
+    {
+      "a": 40,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 40,
+      "b": 82,
+      "weight": 1
+    },
+    {
+      "a": 40,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 40,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 42,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 42,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 43,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 43,
+      "b": 56,
+      "weight": 1
+    },
+    {
+      "a": 43,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 43,
+      "b": 82,
+      "weight": 1
+    },
+    {
+      "a": 43,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 43,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 44,
+      "b": 46,
+      "weight": 1
+    },
+    {
+      "a": 44,
+      "b": 47,
+      "weight": 1
+    },
+    {
+      "a": 44,
+      "b": 48,
+      "weight": 1
+    },
+    {
+      "a": 44,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 44,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 44,
+      "b": 56,
+      "weight": 1
+    },
+    {
+      "a": 44,
+      "b": 66,
+      "weight": 1
+    },
+    {
+      "a": 44,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 45,
+      "b": 51,
+      "weight": 1
+    },
+    {
+      "a": 45,
+      "b": 82,
+      "weight": 1
+    },
+    {
+      "a": 45,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 45,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 45,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 47,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 48,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 54,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 70,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 81,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 46,
+      "b": 97,
+      "weight": 1
+    },
+    {
+      "a": 47,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 47,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 47,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 47,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 48,
+      "b": 50,
+      "weight": 1
+    },
+    {
+      "a": 48,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 48,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 48,
+      "b": 69,
+      "weight": 1
+    },
+    {
+      "a": 50,
+      "b": 60,
+      "weight": 1
+    },
+    {
+      "a": 50,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 50,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 50,
+      "b": 77,
+      "weight": 1
+    },
+    {
+      "a": 50,
+      "b": 78,
+      "weight": 1
+    },
+    {
+      "a": 50,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 50,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 50,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 50,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 52,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 53,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 70,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 82,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 51,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 52,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 52,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 52,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 52,
+      "b": 82,
+      "weight": 1
+    },
+    {
+      "a": 52,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 52,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 52,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 52,
+      "b": 97,
+      "weight": 1
+    },
+    {
+      "a": 53,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 53,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 53,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 53,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 53,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 53,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 55,
+      "b": 70,
+      "weight": 1
+    },
+    {
+      "a": 55,
+      "b": 77,
+      "weight": 1
+    },
+    {
+      "a": 55,
+      "b": 78,
+      "weight": 1
+    },
+    {
+      "a": 55,
+      "b": 81,
+      "weight": 1
+    },
+    {
+      "a": 55,
+      "b": 82,
+      "weight": 1
+    },
+    {
+      "a": 55,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 60,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 62,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 63,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 56,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 60,
+      "b": 66,
+      "weight": 1
+    },
+    {
+      "a": 62,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 62,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 62,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 62,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 62,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 63,
+      "b": 66,
+      "weight": 1
+    },
+    {
+      "a": 63,
+      "b": 80,
+      "weight": 1
+    },
+    {
+      "a": 63,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 63,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 63,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 66,
+      "b": 70,
+      "weight": 1
+    },
+    {
+      "a": 66,
+      "b": 77,
+      "weight": 1
+    },
+    {
+      "a": 66,
+      "b": 78,
+      "weight": 1
+    },
+    {
+      "a": 66,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 66,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 66,
+      "b": 97,
+      "weight": 1
+    },
+    {
+      "a": 67,
+      "b": 68,
+      "weight": 1
+    },
+    {
+      "a": 69,
+      "b": 73,
+      "weight": 1
+    },
+    {
+      "a": 69,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 69,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 69,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 69,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 69,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 70,
+      "b": 81,
+      "weight": 1
+    },
+    {
+      "a": 73,
+      "b": 74,
+      "weight": 1
+    },
+    {
+      "a": 73,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 73,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 73,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 73,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 74,
+      "b": 75,
+      "weight": 1
+    },
+    {
+      "a": 74,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 74,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 74,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 75,
+      "b": 76,
+      "weight": 1
+    },
+    {
+      "a": 75,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 75,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 76,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 76,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 77,
+      "b": 78,
+      "weight": 1
+    },
+    {
+      "a": 80,
+      "b": 82,
+      "weight": 1
+    },
+    {
+      "a": 80,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 80,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 80,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 82,
+      "b": 83,
+      "weight": 1
+    },
+    {
+      "a": 82,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 82,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 83,
+      "b": 84,
+      "weight": 1
+    },
+    {
+      "a": 83,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 83,
+      "b": 93,
+      "weight": 1
+    },
+    {
+      "a": 83,
+      "b": 94,
+      "weight": 1
+    },
+    {
+      "a": 83,
+      "b": 95,
+      "weight": 1
+    },
+    {
+      "a": 84,
+      "b": 87,
+      "weight": 1
+    },
+    {
+      "a": 84,
+      "b": 88,
+      "weight": 1
+    },
+    {
+      "a": 88,
+      "b": 94,
+      "weight": 1
+    }
+  ],
+  "edge_cutoff_note": "verse_edges: top 150 edges by weight, plus all edges with weight >= 2 (135 of 135 total edges kept). surah_edges: all pairs, weaker link (same surah)."
+}
