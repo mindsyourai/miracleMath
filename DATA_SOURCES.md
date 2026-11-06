@@ -81,7 +81,5 @@ Last updated: 2026-11-06.
 - No corpus website other than corpus.quran.com / Tanzil was used. If MK
   names a different corpus site later, the corpus must be re-verified and
   this file updated; counts derived from the QAC file remain valid as stated.
-- Said Nursi, İşârâtü'l-İ'câz (Signs of Miraculousness): PDF NOT yet
-  received as of 2026-11-06 (checked ~/workspace/user/files/ — absent).
-  Recorded in Agent 3's output as pending; nothing from it is summarised
-  until the PDF lands.
+- Said Nursi, İşârâtü'l-İ'câz (Signs of Miraculousness): PARKED entirely
+  per MK 2026-11-06 — ignored for now, not included, PDF not awaited.
