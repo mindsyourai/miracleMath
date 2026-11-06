@@ -1,0 +1,4410 @@
+{
+  "methodology": {
+    "corpus": {
+      "primary": "Quranic Arabic Corpus, morphology version 0.4, Copyright (C) 2011 Kais Dukes, GNU GPL. File corpus/quranic-corpus-morphology-0.4.txt, SHA-256 a1d12923815341face765083805d2148ed2d9f5cc3f7d6665219d887675d8c46, 6,309,503 bytes, 128,276 lines, 128,219 data lines = 77,429 words, 6,236 verses, 114 surahs.",
+      "provenance": "corpus.quran.com's official download page serves v0.4 only behind an email form and publishes no direct file URL; the Java API (JQuranTree) is a Java library, not a REST API. The file was fetched from the textminingthequran.com mirror of the identical v0.4 file and verified against the corpus's own published figures (128,276 lines; 77,429 words; header copyright block verbatim). It was NOT downloaded directly from corpus.quran.com.",
+      "display_and_cross_check": "Tanzil Quran Text, Uthmani script, corpus/quran-uthmani.txt, SHA-256 ac0724796cbbda0f4801470fbbd11d0f3c5802067bae0493466d0128b0c667af, 1,334,737 bytes, 6,236 verses, 77,881 whitespace tokens. Used only for display Arabic (copied byte-for-byte) and for a raw stem cross-check (tanzil_raw_count).",
+      "download_date": "2026-11-06"
+    },
+    "name_list_source": "Standard 99-name Tirmidhi enumeration (Jami' at-Tirmidhi 3507), as tabulated at openarabic.org/99-names-of-allah/ and cross-checked against asmaulhusna.com and getlivingquran.com. Caveat: the hadith affirms 99 Names, but the enumeration itself is a weaker narration; some compilations count Allah itself as first. Two duplicate-transliteration pairs exist in the list: 48 Al-Majid (al-majiyd) vs 65 Al-Majid (al-maajid, rendered 'Al-Maajid' here), and 55 Al-Waliyy (al-waliyy) vs 77 Al-Wali (al-waalii, defective form wal).",
+    "counting_rules": [
+      "Primary count = QAC segments whose LEM: is the Name's lemma and whose referent is God. A word counts only when it is predicated of God (or in apposition to Allah / huwa / rabb), NOT when the same lemma describes a human, angel, prophet, the Book/Quran, the Throne, provisions, rewards, places, or abstract nouns (justice, truth as a concept, sovereignty, light as guidance).",
+      "Where a lemma is ambiguous, the script uses an explicit whitelist or blacklist of verse references (see each Name's notes and excluded_refs), decided by reading every occurrence of that lemma in context.",
+      "Plural forms sharing the Name's lemma are counted when divine (e.g. al-khaliqun 56:59, al-warithun 15:23, muntaqimun 32:22/43:41/44:16, al-mujibun 37:75, al-qadirun 77:23) and excluded when human (e.g. al-tawwabin 2:222, al-muqsiTin 5:42/49:9/60:8).",
+      "Related-form lemmas (a different lemma of the same attribute, e.g. Ealim al-ghayb for Al-Alim, ghafir a*-*anb for Al-Ghafur, arHam ar-raHimin, khayr ar-raziqin, allahu >akobar) are reported separately as related_forms and are NOT in the primary count — except where the Name never occurs in its exact lemma and only a variant/plural form is attested (qadir, muHyi, had, mutaEal, wal, muntaqimun plural, wari*un plural), where the counted variant LEM: is listed explicitly in qac_lemmas.",
+      "QAC counts exclude the 113 surah-initial basmalahs (they are not numbered verses except 1:1). The basmalah at 1:1 and the inline basmalah at 27:30 ARE in QAC; basmalah_count records how many of a Name's occurrences are basmalahs (Rahman 2, Rahim 2). Tanzil text has 112 further basmalahs, so the Tanzil totals are Rahman 57+112=169 and Rahim 115+112=227.",
+      "Phrase vs standalone: an occurrence is 'phrase' when another counted Name occurs in the same verse within word distance <= 2 (covers ar-Rahman ar-Rahim, Eaziz Hakim, ghafur raHim, samiE Ealim, and the 59:22-24 sequence); otherwise 'standalone'.",
+      "Display Arabic: the exact Uthmani token from the Tanzil corpus at the same surah:verse, copied byte-for-byte, never retyped. For Names with count 0, the conventional vowelled form from the name-list source is used.",
+      "Tanzil cross-check (tanzil_raw_count): raw count of tokens whose normalised stem matches the Name, over the whole Tanzil text including basmalahs. It is deliberately un-disambiguated — it over-counts homonyms (Eali 'high' vs the preposition EalaY, aHad 'anyone', Haqq 'truth') and under/over-counts where the Name's form is defective or plural. It is a sanity check only; the QAC count is the reported count."
+    ],
+    "ayah_table_correction": "The brief's ayah-count table listed surahs 5 and 6 as 165, 120; the correct order is 120 (Al-Ma'idah) then 165 (Al-An'am). The sum is 6236 either way, but the order matters for verse references; the table in this script is corrected.",
+    "qac_vs_tanzil": "QAC has 77,429 segmented words; Tanzil has 77,881 whitespace tokens. Difference 452 = 448 (112 surah-initial basmalahs x 4 words, present in Tanzil but not numbered in QAC) + 4 verses where QAC merges two Tanzil tokens into one word: 2:181, 8:6, 13:37, 37:130. Only 4 of 6,236 verses differ in word count.",
+    "script": "data/names_script.py — run with `python3 names_script.py` from the data/ directory. It re-parses both corpora, re-counts, and asserts every Name's count equals the verified expected count and every related-form count reconciles with the corpus lemma total; it exits non-zero on any mismatch."
+  },
+  "names": [
+    {
+      "id": 1,
+      "arabic": "ٱلرَّحْمَٰنِ",
+      "transliteration": "Ar-Rahman",
+      "meaning_en": "The Most Gracious",
+      "root": "ر ح م",
+      "count": 57,
+      "standalone_count": 51,
+      "phrase_count": 6,
+      "qac_lemmas": [
+        "r~aHoma`n"
+      ],
+      "lemma_counts": {
+        "r~aHoma`n": 57
+      },
+      "counting_rule": "all",
+      "notes": "QAC excludes the 113 surah-initial basmalahs (they are not numbered verses except 1:1), so the QAC count 57 is the familiar figure; Tanzil text has 57 + 112 = 169 (the other 112 basmalahs).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 169,
+      "basmalah_count": 2,
+      "verse_count": 56,
+      "surah_count": 18,
+      "example_refs": [
+        {
+          "surah": 1,
+          "ayah": 1
+        },
+        {
+          "surah": 1,
+          "ayah": 3
+        },
+        {
+          "surah": 2,
+          "ayah": 163
+        },
+        {
+          "surah": 13,
+          "ayah": 30
+        },
+        {
+          "surah": 17,
+          "ayah": 110
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "arabic": "ٱلرَّحِيمِ",
+      "transliteration": "Ar-Rahim",
+      "meaning_en": "The Most Merciful",
+      "root": "ر ح م",
+      "count": 115,
+      "standalone_count": 5,
+      "phrase_count": 110,
+      "qac_lemmas": [
+        "r~aHiym"
+      ],
+      "lemma_counts": {
+        "r~aHiym": 115
+      },
+      "counting_rule": "blacklist",
+      "notes": "9:128 (ra'uwf raHiym) describes the Messenger, not God, and is excluded. The often-quoted 114 is the number of basmalahs, not the count of the Name: QAC has 115 non-basmalah + 2 basmalah occurrences.",
+      "related_forms": [
+        {
+          "lemma": "r~a`Himiyn",
+          "count": 6,
+          "note": "arHam ar-raHimiyn, 'most merciful of the merciful' (7:151, 12:64, 12:92, 21:83, 23:109, 23:118) — plural form of the same attribute, not in the primary count."
+        }
+      ],
+      "excluded_refs": [
+        {
+          "surah": 9,
+          "ayah": 128
+        }
+      ],
+      "tanzil_raw_count": 227,
+      "basmalah_count": 2,
+      "verse_count": 115,
+      "surah_count": 42,
+      "example_refs": [
+        {
+          "surah": 1,
+          "ayah": 1
+        },
+        {
+          "surah": 1,
+          "ayah": 3
+        },
+        {
+          "surah": 2,
+          "ayah": 37
+        },
+        {
+          "surah": 2,
+          "ayah": 54
+        },
+        {
+          "surah": 2,
+          "ayah": 128
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "arabic": "مَٰلِكِ",
+      "transliteration": "Al-Malik",
+      "meaning_en": "The King",
+      "root": "م ل ك",
+      "count": 7,
+      "standalone_count": 2,
+      "phrase_count": 5,
+      "qac_lemmas": [
+        "ma`lik",
+        "malik"
+      ],
+      "lemma_counts": {
+        "ma`lik": 2,
+        "malik": 5
+      },
+      "counting_rule": "whitelist",
+      "notes": "ma`lik (mAlik) is the construct form: 1:4 malik yawm ad-din, 3:26 malik al-mulk; malik (malik) is the King: 20:114, 23:116, 59:23, 62:1 and 114:2 malik an-nas. Other malik tokens are human kings (12:43-76, Yusuf's king; 2:246-247 Talut; 18:79; 5:20, 27:34 plurals) or owners (36:71 malikun, 'they own them').",
+      "related_forms": [
+        {
+          "lemma": "mulok",
+          "count": 48,
+          "note": "mulk, 'kingdom/sovereignty' (e.g. lahu al-mulk, 'to Him belongs the kingdom') — the attribute's noun, not the Name."
+        },
+        {
+          "lemma": "malak",
+          "count": 88,
+          "note": "malak, 'angel' — a different word from the same root."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 80,
+      "basmalah_count": 0,
+      "verse_count": 7,
+      "surah_count": 7,
+      "example_refs": [
+        {
+          "surah": 1,
+          "ayah": 4
+        },
+        {
+          "surah": 3,
+          "ayah": 26
+        },
+        {
+          "surah": 20,
+          "ayah": 114
+        },
+        {
+          "surah": 23,
+          "ayah": 116
+        },
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "arabic": "ٱلْقُدُّوسُ",
+      "transliteration": "Al-Quddus",
+      "meaning_en": "The Most Holy",
+      "root": "ق د س",
+      "count": 2,
+      "standalone_count": 0,
+      "phrase_count": 2,
+      "qac_lemmas": [
+        "qud~uws"
+      ],
+      "lemma_counts": {
+        "qud~uws": 2
+      },
+      "counting_rule": "all",
+      "notes": "Both occurrences are in the name sequences 59:23 and 62:1.",
+      "related_forms": [
+        {
+          "lemma": "qudus",
+          "count": 4,
+          "note": "qudus in ruH al-qudus, 'the Holy Spirit' (2:87, 2:253, 5:110, 16:102) — not the Name."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 2,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        },
+        {
+          "surah": 62,
+          "ayah": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "arabic": "ٱلسَّلَٰمُ",
+      "transliteration": "As-Salam",
+      "meaning_en": "The Peace",
+      "root": "س ل م",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "sala`m"
+      ],
+      "lemma_counts": {
+        "sala`m": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "The Name as-salaam occurs once, in the 59:22-24 sequence. Every other salaam is the greeting or the noun 'peace'.",
+      "related_forms": [
+        {
+          "lemma": "sala`m",
+          "count": 41,
+          "note": "41 other salaam tokens: greetings (salaamun Ealaykum), dar as-salaam 'abode of peace' (6:127, 10:25), subul as-salaam (5:16), salaam as safety (21:69) — all 'peace', not the Name."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 42,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "arabic": "ٱلْمُؤْمِنُ",
+      "transliteration": "Al-Mu'min",
+      "meaning_en": "The Giver of Security",
+      "root": "أ م ن",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "mu&omin"
+      ],
+      "lemma_counts": {
+        "mu&omin": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "The Name al-mu'min occurs once (59:23). All other mu'min are believers.",
+      "related_forms": [
+        {
+          "lemma": "mu&omin",
+          "count": 201,
+          "note": "201 other mu'min tokens are believers (singular, plural al-mu'minun, feminine) — the same lemma, a human referent."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 202,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "arabic": "ٱلْمُهَيْمِنُ",
+      "transliteration": "Al-Muhaymin",
+      "meaning_en": "The Guardian over all",
+      "root": "ه ي م ن",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "muhayomin"
+      ],
+      "lemma_counts": {
+        "muhayomin": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "QAC lemma muhayomin, root hmn. Only 59:23 predicates the Name of God.",
+      "related_forms": [
+        {
+          "lemma": "muhayomin",
+          "count": 1,
+          "note": "5:48 muhayminan Ealayhi — 'a guardian over it' describes the revealed Book, not God; excluded by the predication rule (the popular figure 2 counts it)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 2,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "arabic": "ٱلْعَزِيزُ",
+      "transliteration": "Al-Aziz",
+      "meaning_en": "The Exalted in Might",
+      "root": "ع ز ز",
+      "count": 91,
+      "standalone_count": 7,
+      "phrase_count": 84,
+      "qac_lemmas": [
+        "Eaziyz"
+      ],
+      "lemma_counts": {
+        "Eaziyz": 91
+      },
+      "counting_rule": "blacklist",
+      "notes": "101 lemma tokens; 10 excluded: aEizza (believers mighty, 5:54; chiefs, 27:34), al-Eaziz the Egyptian minister / Joseph as minister (12:30, 12:51, 12:78, 12:88), Eaziz Ealayhi 'grievous to him' of the Prophet (9:128), 'you are not mighty among us' of ShuEayb (11:91), kitab Eaziz 'a mighty Book' (41:41), and the sarcastic 'you are the mighty, the noble' to a damned man (44:49). The familiar figure 92 counts 41:41; this count excludes it because the adjective predicates the Book, not God.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 5,
+          "ayah": 54
+        },
+        {
+          "surah": 9,
+          "ayah": 128
+        },
+        {
+          "surah": 11,
+          "ayah": 91
+        },
+        {
+          "surah": 12,
+          "ayah": 30
+        },
+        {
+          "surah": 12,
+          "ayah": 51
+        },
+        {
+          "surah": 12,
+          "ayah": 78
+        },
+        {
+          "surah": 12,
+          "ayah": 88
+        },
+        {
+          "surah": 27,
+          "ayah": 34
+        },
+        {
+          "surah": 41,
+          "ayah": 41
+        },
+        {
+          "surah": 44,
+          "ayah": 49
+        }
+      ],
+      "tanzil_raw_count": 99,
+      "basmalah_count": 0,
+      "verse_count": 91,
+      "surah_count": 41,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 129
+        },
+        {
+          "surah": 2,
+          "ayah": 209
+        },
+        {
+          "surah": 2,
+          "ayah": 220
+        },
+        {
+          "surah": 2,
+          "ayah": 228
+        },
+        {
+          "surah": 2,
+          "ayah": 240
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "arabic": "ٱلْجَبَّارُ",
+      "transliteration": "Al-Jabbar",
+      "meaning_en": "The Compeller",
+      "root": "ج ب ر",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "jab~aAr"
+      ],
+      "lemma_counts": {
+        "jab~aAr": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "The Name al-jabbar occurs once (59:23).",
+      "related_forms": [
+        {
+          "lemma": "jab~aAr",
+          "count": 9,
+          "note": "9 other jabbar tokens are human tyrants/giants: 5:22, 11:59, 14:15, 19:14 (John), 19:32 (Jesus), 26:130, 28:19, 40:35, 50:45."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 10,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "arabic": "ٱلْمُتَكَبِّرُ",
+      "transliteration": "Al-Mutakabbir",
+      "meaning_en": "The Supreme in Greatness",
+      "root": "ك ب ر",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "mutakab~ir"
+      ],
+      "lemma_counts": {
+        "mutakab~ir": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "The Name al-mutakabbir occurs once (59:23).",
+      "related_forms": [
+        {
+          "lemma": "mutakab~ir",
+          "count": 6,
+          "note": "6 other mutakabbir tokens are arrogant humans: al-mutakabbirin in Hell (16:29, 39:60, 39:72, 40:76) and kull mutakabbir (40:27, 40:35)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 7,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "arabic": "خَٰلِقُ",
+      "transliteration": "Al-Khaliq",
+      "meaning_en": "The Creator",
+      "root": "خ ل ق",
+      "count": 11,
+      "standalone_count": 10,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "xa`liq"
+      ],
+      "lemma_counts": {
+        "xa`liq": 11
+      },
+      "counting_rule": "blacklist",
+      "notes": "12 lemma tokens; 52:35 al-khaliqun ('or are they the creators?') is rhetorical, of humans, and is excluded. The plurals al-khaliqin 'best of creators' (23:14, 37:125) and naHnu al-khaliqun (56:59) are God speaking and are counted.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 52,
+          "ayah": 35
+        }
+      ],
+      "tanzil_raw_count": 12,
+      "basmalah_count": 0,
+      "verse_count": 11,
+      "surah_count": 11,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 102
+        },
+        {
+          "surah": 13,
+          "ayah": 16
+        },
+        {
+          "surah": 15,
+          "ayah": 28
+        },
+        {
+          "surah": 23,
+          "ayah": 14
+        },
+        {
+          "surah": 35,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "arabic": "بَارِئِكُمْ",
+      "transliteration": "Al-Bari",
+      "meaning_en": "The Maker",
+      "root": "ب ر أ",
+      "count": 3,
+      "standalone_count": 2,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "baAri}"
+      ],
+      "lemma_counts": {
+        "baAri}": 3
+      },
+      "counting_rule": "whitelist",
+      "notes": "59:24 al-bari' and 2:54 bari'ikum 'your Maker' (twice in the verse).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 54
+        },
+        {
+          "surah": 2,
+          "ayah": 54
+        },
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "arabic": "ٱلْمُصَوِّرُ",
+      "transliteration": "Al-Musawwir",
+      "meaning_en": "The Fashioner of forms",
+      "root": "ص و ر",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "muSaw~ir"
+      ],
+      "lemma_counts": {
+        "muSaw~ir": 1
+      },
+      "counting_rule": "all",
+      "notes": "Occurs once, 59:24.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 59,
+          "ayah": 24
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "arabic": "لَغَفَّارٌ",
+      "transliteration": "Al-Ghaffar",
+      "meaning_en": "The Repeatedly Forgiving",
+      "root": "غ ف ر",
+      "count": 5,
+      "standalone_count": 2,
+      "phrase_count": 3,
+      "qac_lemmas": [
+        "gaf~aAr"
+      ],
+      "lemma_counts": {
+        "gaf~aAr": 5
+      },
+      "counting_rule": "all",
+      "notes": "5 occurrences, all divine (20:82, 38:66, 39:5, 40:42, 71:10).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 5,
+      "basmalah_count": 0,
+      "verse_count": 5,
+      "surah_count": 5,
+      "example_refs": [
+        {
+          "surah": 20,
+          "ayah": 82
+        },
+        {
+          "surah": 38,
+          "ayah": 66
+        },
+        {
+          "surah": 39,
+          "ayah": 5
+        },
+        {
+          "surah": 40,
+          "ayah": 42
+        },
+        {
+          "surah": 71,
+          "ayah": 10
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "arabic": "ٱلْقَهَّارُ",
+      "transliteration": "Al-Qahhar",
+      "meaning_en": "The Subduer",
+      "root": "ق ه ر",
+      "count": 6,
+      "standalone_count": 0,
+      "phrase_count": 6,
+      "qac_lemmas": [
+        "qah~aAr"
+      ],
+      "lemma_counts": {
+        "qah~aAr": 6
+      },
+      "counting_rule": "all",
+      "notes": "6 occurrences, all 'al-waHid al-qahhar' (12:39, 13:16, 14:48, 38:65, 39:4, 40:16).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 6,
+      "basmalah_count": 0,
+      "verse_count": 6,
+      "surah_count": 6,
+      "example_refs": [
+        {
+          "surah": 12,
+          "ayah": 39
+        },
+        {
+          "surah": 13,
+          "ayah": 16
+        },
+        {
+          "surah": 14,
+          "ayah": 48
+        },
+        {
+          "surah": 38,
+          "ayah": 65
+        },
+        {
+          "surah": 39,
+          "ayah": 4
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "arabic": "ٱلْوَهَّابُ",
+      "transliteration": "Al-Wahhab",
+      "meaning_en": "The Bestower",
+      "root": "و ه ب",
+      "count": 3,
+      "standalone_count": 2,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "wah~aAb"
+      ],
+      "lemma_counts": {
+        "wah~aAb": 3
+      },
+      "counting_rule": "all",
+      "notes": "3 occurrences (3:8, 38:9, 38:35).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 3,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 3,
+          "ayah": 8
+        },
+        {
+          "surah": 38,
+          "ayah": 9
+        },
+        {
+          "surah": 38,
+          "ayah": 35
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "arabic": "ٱلرَّزَّاقُ",
+      "transliteration": "Ar-Razzaq",
+      "meaning_en": "The Provider",
+      "root": "ر ز ق",
+      "count": 1,
+      "standalone_count": 1,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "r~az~aAq"
+      ],
+      "lemma_counts": {
+        "r~az~aAq": 1
+      },
+      "counting_rule": "all",
+      "notes": "Occurs once, 51:58.",
+      "related_forms": [
+        {
+          "lemma": "r~a`ziqiyn",
+          "count": 6,
+          "note": "khayr ar-raziqin, 'best of providers' (5:114, 15:20, 22:58, 23:72, 34:39, 62:11) — plural form of the same attribute, not in the primary count."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 51,
+          "ayah": 58
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "arabic": "ٱلْفَتَّاحُ",
+      "transliteration": "Al-Fattah",
+      "meaning_en": "The Opener",
+      "root": "ف ت ح",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "fat~aAH"
+      ],
+      "lemma_counts": {
+        "fat~aAH": 1
+      },
+      "counting_rule": "all",
+      "notes": "Occurs once, 34:26 (al-fattaH al-Ealim).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 34,
+          "ayah": 26
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "arabic": "عَلِيمٌ",
+      "transliteration": "Al-Alim",
+      "meaning_en": "The All-Knowing",
+      "root": "ع ل م",
+      "count": 157,
+      "standalone_count": 64,
+      "phrase_count": 93,
+      "qac_lemmas": [
+        "Ealiym"
+      ],
+      "lemma_counts": {
+        "Ealiym": 157
+      },
+      "counting_rule": "blacklist",
+      "notes": "163 lemma tokens; 6 excluded: Joseph's 'I am a guardian, knowing' (12:55), 'a knowledgeable sorcerer' of Moses as alleged by Pharaoh's people (7:109, 26:34, 26:37), and the scholars (Eulama') of Israel (26:197) and of God's servants (35:28). Result 157 matches the commonly quoted figure.",
+      "related_forms": [
+        {
+          "lemma": "Ea`lim",
+          "count": 18,
+          "note": "Ealim al-ghayb, 'Knower of the unseen' (6:73, 9:94, 9:105, 13:9, 23:92, 32:6, 39:46, 59:22, 62:8, 64:18 and others) — the same attribute in participle form, not in the primary count."
+        }
+      ],
+      "excluded_refs": [
+        {
+          "surah": 12,
+          "ayah": 55
+        },
+        {
+          "surah": 7,
+          "ayah": 109
+        },
+        {
+          "surah": 26,
+          "ayah": 34
+        },
+        {
+          "surah": 26,
+          "ayah": 37
+        },
+        {
+          "surah": 26,
+          "ayah": 197
+        },
+        {
+          "surah": 35,
+          "ayah": 28
+        }
+      ],
+      "tanzil_raw_count": 161,
+      "basmalah_count": 0,
+      "verse_count": 157,
+      "surah_count": 43,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 29
+        },
+        {
+          "surah": 2,
+          "ayah": 32
+        },
+        {
+          "surah": 2,
+          "ayah": 95
+        },
+        {
+          "surah": 2,
+          "ayah": 115
+        },
+        {
+          "surah": 2,
+          "ayah": 127
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "arabic": "الْقَابِضُ",
+      "transliteration": "Al-Qabid",
+      "meaning_en": "The Withholder",
+      "root": "ق ب ض",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. The Name is drawn from the verb in 2:245, not from a noun in the text.",
+      "related_forms": [
+        {
+          "lemma": "qaboD",
+          "count": 1,
+          "note": "qabDa, 'a handful' (20:96, the Samaritan's handful of dust) — the verb yaqbiD 'He withholds' occurs (2:245 wa-llahu yaqbiDu wa-yabsuT) but the Name al-qabiD never appears as a noun."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 21,
+      "arabic": "الْبَاسِطُ",
+      "transliteration": "Al-Basit",
+      "meaning_en": "The Extender",
+      "root": "ب س ط",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "ba`siT"
+      ],
+      "lemma_counts": {},
+      "counting_rule": "blacklist",
+      "notes": "ZERO occurrences. All 4 basiT tokens are non-divine: Abel 'I will not stretch my hand' (5:28), the angels stretching their hands (6:93), the simile of one stretching his hands to water (13:14), and the dog stretching its forelegs (18:18).",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 5,
+          "ayah": 28
+        },
+        {
+          "surah": 6,
+          "ayah": 93
+        },
+        {
+          "surah": 13,
+          "ayah": 14
+        },
+        {
+          "surah": 18,
+          "ayah": 18
+        }
+      ],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 22,
+      "arabic": "الْخَافِضُ",
+      "transliteration": "Al-Khafid",
+      "meaning_en": "The One who lowers",
+      "root": "خ ف ض",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "xaAfiDap"
+      ],
+      "lemma_counts": {},
+      "counting_rule": "blacklist",
+      "notes": "ZERO occurrences. The only khafiDa (56:3, 'it will bring low') is the feminine adjective of the Event (the Hour), not the Name.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 56,
+          "ayah": 3
+        }
+      ],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 23,
+      "arabic": "وَرَافِعُكَ",
+      "transliteration": "Ar-Rafi",
+      "meaning_en": "The One who raises",
+      "root": "ر ف ع",
+      "count": 1,
+      "standalone_count": 1,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "raAfiE"
+      ],
+      "lemma_counts": {
+        "raAfiE": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 3:55 wa-rafiEuka ilayya, 'and I will raise you to Me' (God to Jesus).",
+      "related_forms": [
+        {
+          "lemma": "r~aAfiEap",
+          "count": 1,
+          "note": "rafiEa (56:3, 'it will raise high') — the feminine adjective of the Event, not the Name."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 3,
+          "ayah": 55
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "arabic": "الْمُعِزُّ",
+      "transliteration": "Al-Mu'izz",
+      "meaning_en": "The Giver of Honour",
+      "root": "ع ز ز",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. Drawn from the verb in 3:26.",
+      "related_forms": [
+        {
+          "lemma": "tuEiz~u",
+          "count": 1,
+          "note": "tuEizzu man tasha', 'You honour whom You will' (3:26) — the verb only; the Name al-muEizz never appears."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 25,
+      "arabic": "الْمُذِلُّ",
+      "transliteration": "Al-Mudhill",
+      "meaning_en": "The Giver of Dishonour",
+      "root": "ذ ل ل",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. No mu*ill lemma in the corpus; the verb form is in 3:26 (wa-tu*illu).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 26,
+      "arabic": "ٱلسَّمِيعُ",
+      "transliteration": "As-Sami",
+      "meaning_en": "The All-Hearing",
+      "root": "س م ع",
+      "count": 45,
+      "standalone_count": 3,
+      "phrase_count": 42,
+      "qac_lemmas": [
+        "samiyE"
+      ],
+      "lemma_counts": {
+        "samiyE": 45
+      },
+      "counting_rule": "blacklist",
+      "notes": "47 lemma tokens; 2 excluded: the parable of the deaf/blind vs the hearing/seeing (11:24) and 'We made him hearing, seeing' of man (76:2). Result 45.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 11,
+          "ayah": 24
+        },
+        {
+          "surah": 76,
+          "ayah": 2
+        }
+      ],
+      "tanzil_raw_count": 47,
+      "basmalah_count": 0,
+      "verse_count": 45,
+      "surah_count": 25,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 127
+        },
+        {
+          "surah": 2,
+          "ayah": 137
+        },
+        {
+          "surah": 2,
+          "ayah": 181
+        },
+        {
+          "surah": 2,
+          "ayah": 224
+        },
+        {
+          "surah": 2,
+          "ayah": 227
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "arabic": "بَصِيرٌۢ",
+      "transliteration": "Al-Basir",
+      "meaning_en": "The All-Seeing",
+      "root": "ب ص ر",
+      "count": 42,
+      "standalone_count": 27,
+      "phrase_count": 15,
+      "qac_lemmas": [
+        "baSiyr"
+      ],
+      "lemma_counts": {
+        "baSiyr": 42
+      },
+      "counting_rule": "blacklist",
+      "notes": "51 lemma tokens; 9 excluded, all 'seeing' of humans: the blind-vs-seeing parables (6:50, 11:24, 13:16, 35:19, 40:58), Jacob regaining sight (12:93, 12:96), the raised-blind man (20:125), and man made 'hearing, seeing' (76:2). Result 42.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 6,
+          "ayah": 50
+        },
+        {
+          "surah": 11,
+          "ayah": 24
+        },
+        {
+          "surah": 12,
+          "ayah": 93
+        },
+        {
+          "surah": 12,
+          "ayah": 96
+        },
+        {
+          "surah": 13,
+          "ayah": 16
+        },
+        {
+          "surah": 20,
+          "ayah": 125
+        },
+        {
+          "surah": 35,
+          "ayah": 19
+        },
+        {
+          "surah": 40,
+          "ayah": 58
+        },
+        {
+          "surah": 76,
+          "ayah": 2
+        }
+      ],
+      "tanzil_raw_count": 51,
+      "basmalah_count": 0,
+      "verse_count": 42,
+      "surah_count": 25,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 96
+        },
+        {
+          "surah": 2,
+          "ayah": 110
+        },
+        {
+          "surah": 2,
+          "ayah": 233
+        },
+        {
+          "surah": 2,
+          "ayah": 237
+        },
+        {
+          "surah": 2,
+          "ayah": 265
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "arabic": "حَكَمًا",
+      "transliteration": "Al-Hakam",
+      "meaning_en": "The Judge",
+      "root": "ح ك م",
+      "count": 1,
+      "standalone_count": 1,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "Hakam"
+      ],
+      "lemma_counts": {
+        "Hakam": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 6:114 afa-ghayra allahi abtaghi Hakaman, 'shall I seek a judge other than Allah?' — the judge sought is God Himself. The other 2 Hakam tokens are human arbitrators in a marital dispute (4:35, twice). Note: the familiar 'the judgment belongs to Allah' verses (6:57, 12:40, 12:67) use the different lemma Hukom, not Hakam.",
+      "related_forms": [
+        {
+          "lemma": "Hukom",
+          "count": 30,
+          "note": "30 Hukom tokens are the noun 'judgment/decree/ruling' (e.g. inna al-Hukm illa lillah, 'the judgment belongs to Allah alone', 6:57, 12:40, 12:67) — a different lemma from Hakam 'judge'."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 33,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 114
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "arabic": "الْعَدْلُ",
+      "transliteration": "Al-Adl",
+      "meaning_en": "The Utterly Just",
+      "root": "ع د ل",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "Eadol"
+      ],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences as the Name.",
+      "related_forms": [
+        {
+          "lemma": "Eadol",
+          "count": 14,
+          "note": "14 Eadl tokens are all the noun 'justice' (e.g. 16:90 'God commands justice') or 'equivalent/ransom' (2:48, 5:95) — never the personal Name."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 15,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 30,
+      "arabic": "ٱللَّطِيفُ",
+      "transliteration": "Al-Latif",
+      "meaning_en": "The Subtle and Kind",
+      "root": "ل ط ف",
+      "count": 7,
+      "standalone_count": 2,
+      "phrase_count": 5,
+      "qac_lemmas": [
+        "laTiyf"
+      ],
+      "lemma_counts": {
+        "laTiyf": 7
+      },
+      "counting_rule": "all",
+      "notes": "7 occurrences, all divine (6:103, 12:100, 22:63, 31:16, 33:34, 42:19, 67:14).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 7,
+      "basmalah_count": 0,
+      "verse_count": 7,
+      "surah_count": 7,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 103
+        },
+        {
+          "surah": 12,
+          "ayah": 100
+        },
+        {
+          "surah": 22,
+          "ayah": 63
+        },
+        {
+          "surah": 31,
+          "ayah": 16
+        },
+        {
+          "surah": 33,
+          "ayah": 34
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "arabic": "خَبِيرٌ",
+      "transliteration": "Al-Khabir",
+      "meaning_en": "The All-Aware",
+      "root": "خ ب ر",
+      "count": 45,
+      "standalone_count": 27,
+      "phrase_count": 18,
+      "qac_lemmas": [
+        "xabiyr"
+      ],
+      "lemma_counts": {
+        "xabiyr": 45
+      },
+      "counting_rule": "all",
+      "notes": "45 occurrences, all divine (including 25:59 'ask about Him of one All-Aware').",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 45,
+      "basmalah_count": 0,
+      "verse_count": 45,
+      "surah_count": 27,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 234
+        },
+        {
+          "surah": 2,
+          "ayah": 271
+        },
+        {
+          "surah": 3,
+          "ayah": 153
+        },
+        {
+          "surah": 3,
+          "ayah": 180
+        },
+        {
+          "surah": 4,
+          "ayah": 35
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "arabic": "حَلِيمٌ",
+      "transliteration": "Al-Halim",
+      "meaning_en": "The Forbearing",
+      "root": "ح ل م",
+      "count": 11,
+      "standalone_count": 0,
+      "phrase_count": 11,
+      "qac_lemmas": [
+        "Haliym"
+      ],
+      "lemma_counts": {
+        "Haliym": 11
+      },
+      "counting_rule": "blacklist",
+      "notes": "15 lemma tokens; 4 excluded, all of humans: Abraham 'forbearing' (9:114, 11:75), ShuEayb mocked as 'the forbearing, the rightly-guided' (11:87), and 'a forbearing boy' Ishmael (37:101). Result 11.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 9,
+          "ayah": 114
+        },
+        {
+          "surah": 11,
+          "ayah": 75
+        },
+        {
+          "surah": 11,
+          "ayah": 87
+        },
+        {
+          "surah": 37,
+          "ayah": 101
+        }
+      ],
+      "tanzil_raw_count": 15,
+      "basmalah_count": 0,
+      "verse_count": 11,
+      "surah_count": 9,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 225
+        },
+        {
+          "surah": 2,
+          "ayah": 235
+        },
+        {
+          "surah": 2,
+          "ayah": 263
+        },
+        {
+          "surah": 3,
+          "ayah": 155
+        },
+        {
+          "surah": 4,
+          "ayah": 12
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "arabic": "ٱلْعَظِيمُ",
+      "transliteration": "Al-Azim",
+      "meaning_en": "The Magnificent",
+      "root": "ع ظ م",
+      "count": 6,
+      "standalone_count": 4,
+      "phrase_count": 2,
+      "qac_lemmas": [
+        "EaZiym"
+      ],
+      "lemma_counts": {
+        "EaZiym": 6
+      },
+      "counting_rule": "whitelist",
+      "notes": "Only 6 occurrences predicate greatness of God/Lord (al-Ealiy al-EaZiym; rabbika al-EaZiym; billah al-EaZiym). The raw surface count of EaZiym is 120, which is why naive counts of 'al-EaZiym' overstate the Name.",
+      "related_forms": [
+        {
+          "lemma": "EaZiym",
+          "count": 114,
+          "note": "114 other EaZiym tokens describe things: al-fawz al-EaZiym 'the great success', *u al-faDl al-EaZiym 'the great bounty', al-Earsh al-EaZiym 'the great Throne' (9:129, 23:86, 27:26), al-Qur'an al-EaZiym (15:87), al-EiZam 'bones' (2:259, 23:14, 36:78), and indefinite EaZiym of punishments, rewards and sins."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 107,
+      "basmalah_count": 0,
+      "verse_count": 6,
+      "surah_count": 4,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        },
+        {
+          "surah": 42,
+          "ayah": 4
+        },
+        {
+          "surah": 56,
+          "ayah": 74
+        },
+        {
+          "surah": 56,
+          "ayah": 96
+        },
+        {
+          "surah": 69,
+          "ayah": 33
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "arabic": "غَفُورٌ",
+      "transliteration": "Al-Ghafur",
+      "meaning_en": "The All-Forgiving",
+      "root": "غ ف ر",
+      "count": 91,
+      "standalone_count": 3,
+      "phrase_count": 88,
+      "qac_lemmas": [
+        "gafuwr"
+      ],
+      "lemma_counts": {
+        "gafuwr": 91
+      },
+      "counting_rule": "all",
+      "notes": "91 occurrences, all divine (overwhelmingly ghafur raHim).",
+      "related_forms": [
+        {
+          "lemma": "gaAfir",
+          "count": 2,
+          "note": "ghafir a*-*anb 'Forgiver of sin' (40:3) and khayr al-ghafirin 'best of forgivers' (7:155) — the same attribute in participle/plural form, not in the primary count."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 91,
+      "basmalah_count": 0,
+      "verse_count": 91,
+      "surah_count": 38,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 173
+        },
+        {
+          "surah": 2,
+          "ayah": 182
+        },
+        {
+          "surah": 2,
+          "ayah": 192
+        },
+        {
+          "surah": 2,
+          "ayah": 199
+        },
+        {
+          "surah": 2,
+          "ayah": 218
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "arabic": "شَكُورٌ",
+      "transliteration": "Ash-Shakur",
+      "meaning_en": "The Most Appreciative",
+      "root": "ش ك ر",
+      "count": 4,
+      "standalone_count": 0,
+      "phrase_count": 4,
+      "qac_lemmas": [
+        "$akuwr"
+      ],
+      "lemma_counts": {
+        "$akuwr": 4
+      },
+      "counting_rule": "whitelist",
+      "notes": "Only 4 occurrences are divine (all ghafur shakur / shakur Halim of God).",
+      "related_forms": [
+        {
+          "lemma": "$akuwr",
+          "count": 6,
+          "note": "6 other shakur tokens describe grateful humans: likulli Sabbar shakur 'for every patient, grateful one' (14:5, 31:31, 34:19, 42:33), Eabdan shakura 'a grateful servant', Noah (17:3), and al-shakur among God's servants (34:13)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 12,
+      "basmalah_count": 0,
+      "verse_count": 4,
+      "surah_count": 3,
+      "example_refs": [
+        {
+          "surah": 35,
+          "ayah": 30
+        },
+        {
+          "surah": 35,
+          "ayah": 34
+        },
+        {
+          "surah": 42,
+          "ayah": 23
+        },
+        {
+          "surah": 64,
+          "ayah": 17
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "arabic": "ٱلْعَلِىُّ",
+      "transliteration": "Al-Aliyy",
+      "meaning_en": "The Most High",
+      "root": "ع ل و",
+      "count": 8,
+      "standalone_count": 0,
+      "phrase_count": 8,
+      "qac_lemmas": [
+        "Ealiy~"
+      ],
+      "lemma_counts": {
+        "Ealiy~": 8
+      },
+      "counting_rule": "blacklist",
+      "notes": "11 lemma tokens; 3 excluded: lisan Sidq Ealiyya 'a lofty reputation' (19:50), makanan Ealiyya 'a lofty place', Idris (19:57), and laEaliy Hakkim 'exalted, wise' of the Book (43:4). Result 8. (QAC's lemma cleanly separates Ealiy~ the Name from the preposition EalaY.)",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 19,
+          "ayah": 50
+        },
+        {
+          "surah": 19,
+          "ayah": 57
+        },
+        {
+          "surah": 43,
+          "ayah": 4
+        }
+      ],
+      "tanzil_raw_count": 1467,
+      "basmalah_count": 0,
+      "verse_count": 8,
+      "surah_count": 7,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        },
+        {
+          "surah": 4,
+          "ayah": 34
+        },
+        {
+          "surah": 22,
+          "ayah": 62
+        },
+        {
+          "surah": 31,
+          "ayah": 30
+        },
+        {
+          "surah": 34,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "arabic": "كَبِيرًا",
+      "transliteration": "Al-Kabir",
+      "meaning_en": "The Most Great",
+      "root": "ك ب ر",
+      "count": 6,
+      "standalone_count": 0,
+      "phrase_count": 6,
+      "qac_lemmas": [
+        "kabiyr"
+      ],
+      "lemma_counts": {
+        "kabiyr": 6
+      },
+      "counting_rule": "whitelist",
+      "notes": "6 occurrences: al-kabir al-mutaEal (13:9), al-Ealiy al-kabir (22:62, 31:30, 34:23, 40:12) and wa-kana allahu Ealiyyan kabira (4:34).",
+      "related_forms": [
+        {
+          "lemma": "kabiyr",
+          "count": 34,
+          "note": "34 other kabir tokens: al-faDl al-kabir / al-fawz al-kabir 'the great bounty/success' (35:32, 42:22, 85:11), kabir/kabira of sins, punishments, rewards, debts, idols, old men and 'your chief' (20:71, 26:49), and >akobar 'greater' (24 tokens, incl. allahu >akobar) — a separate elative lemma."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 40,
+      "basmalah_count": 0,
+      "verse_count": 6,
+      "surah_count": 6,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 34
+        },
+        {
+          "surah": 13,
+          "ayah": 9
+        },
+        {
+          "surah": 22,
+          "ayah": 62
+        },
+        {
+          "surah": 31,
+          "ayah": 30
+        },
+        {
+          "surah": 34,
+          "ayah": 23
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "arabic": "حَفِيظٌ",
+      "transliteration": "Al-Hafiz",
+      "meaning_en": "The Preserver",
+      "root": "ح ف ظ",
+      "count": 6,
+      "standalone_count": 6,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "HafiyZ",
+        "Ha`fiZ"
+      ],
+      "lemma_counts": {
+        "Ha`fiZ": 3,
+        "HafiyZ": 3
+      },
+      "counting_rule": "whitelist",
+      "notes": "Two forms of one attribute are counted together: HafiZ (3: 11:57, 34:21, 42:6) and HafiZ the participle (3: 12:64 khayr HafiZa, 15:9 la-HafiZun of the Quran, 21:82 HafiZin of the devils) — all predicated of God.",
+      "related_forms": [
+        {
+          "lemma": "HafiyZ",
+          "count": 9,
+          "note": "9 other HafiZ tokens: the Prophet 'not a guardian over you' (4:80, 6:104, 6:107, 11:86, 42:48), Joseph 'I am a guardian, knowing' (12:55), guardian angels (6:61, 82:10), kitab HafiZ 'a preserving Book' (50:4), and a keeper of the covenant (50:32)."
+        },
+        {
+          "lemma": "Ha`fiZ",
+          "count": 10,
+          "note": "10 other Ha'fiZ tokens: guardians of chastity/bounds (9:112, 23:5, 33:35, 70:29), Joseph's brothers (12:12, 12:63, 12:81), 'we were not keepers of the unseen' (12:81), and the angel-guardian over every soul (86:4)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 24,
+      "basmalah_count": 0,
+      "verse_count": 6,
+      "surah_count": 6,
+      "example_refs": [
+        {
+          "surah": 11,
+          "ayah": 57
+        },
+        {
+          "surah": 12,
+          "ayah": 64
+        },
+        {
+          "surah": 15,
+          "ayah": 9
+        },
+        {
+          "surah": 21,
+          "ayah": 82
+        },
+        {
+          "surah": 34,
+          "ayah": 21
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "arabic": "مُّقِيتًا",
+      "transliteration": "Al-Muqit",
+      "meaning_en": "The Nourisher",
+      "root": "ق و ت",
+      "count": 1,
+      "standalone_count": 1,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "m~uqiyt"
+      ],
+      "lemma_counts": {
+        "m~uqiyt": 1
+      },
+      "counting_rule": "all",
+      "notes": "Occurs once, 4:85 (wa-kana allahu Eala kulli shay'in muqita).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 85
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "arabic": "حَسِيبًا",
+      "transliteration": "Al-Hasib",
+      "meaning_en": "The Reckoner",
+      "root": "ح س ب",
+      "count": 3,
+      "standalone_count": 3,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "Hasiyb"
+      ],
+      "lemma_counts": {
+        "Hasiyb": 3
+      },
+      "counting_rule": "blacklist",
+      "notes": "4 lemma tokens; 17:14 ('sufficient is your own self against you today as a reckoner') is one's own self, not God. Result 3 (4:6, 4:86, 33:39).",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 17,
+          "ayah": 14
+        }
+      ],
+      "tanzil_raw_count": 4,
+      "basmalah_count": 0,
+      "verse_count": 3,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 6
+        },
+        {
+          "surah": 4,
+          "ayah": 86
+        },
+        {
+          "surah": 33,
+          "ayah": 39
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "arabic": "الْجَلِيلُ",
+      "transliteration": "Al-Jalil",
+      "meaning_en": "The Majestic",
+      "root": "ج ل ل",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences.",
+      "related_forms": [
+        {
+          "lemma": "jala`l",
+          "count": 2,
+          "note": "jalaal occurs only inside *u al-jalaal wa-l-ikraam, 'Owner of Majesty and Honour' (55:27, 55:78) — see Name 85. The Name al-jalil itself never appears."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 42,
+      "arabic": "كَرِيمٌ",
+      "transliteration": "Al-Karim",
+      "meaning_en": "The Most Generous",
+      "root": "ك ر م",
+      "count": 2,
+      "standalone_count": 1,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "kariym"
+      ],
+      "lemma_counts": {
+        "kariym": 2
+      },
+      "counting_rule": "whitelist",
+      "notes": "Only 2 occurrences predicate generosity of God: rabbika al-karim (82:6) and rabbi ghaniy karim (27:40).",
+      "related_forms": [
+        {
+          "lemma": "kariym",
+          "count": 28,
+          "note": "28 other karim tokens: rizq karim 'generous provision', ajr karim 'generous reward', qur'an karim (56:77), rasul karim (44:17, 69:40, 81:19), malak karim 'a noble angel' (12:31), kitab karim 'a noble letter' (27:29), rabb al-Earsh al-karim 'Lord of the Noble Throne' (23:116), al-Eaziz al-karim addressed sarcastically to a damned man (44:49), and noble places, spouses, plants and scribes."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 27,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 27,
+          "ayah": 40
+        },
+        {
+          "surah": 82,
+          "ayah": 6
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "arabic": "رَقِيبًا",
+      "transliteration": "Ar-Raqib",
+      "meaning_en": "The Watchful",
+      "root": "ر ق ب",
+      "count": 3,
+      "standalone_count": 3,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "raqiyb"
+      ],
+      "lemma_counts": {
+        "raqiyb": 3
+      },
+      "counting_rule": "whitelist",
+      "notes": "3 occurrences, all divine (4:1, 5:117 'You are the Watcher over them', 33:52).",
+      "related_forms": [
+        {
+          "lemma": "raqiyb",
+          "count": 2,
+          "note": "2 other raqib tokens: ShuEayb 'I am a watcher with you' (11:93) and raqib Eatid, the recording watcher-angel (50:18)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 5,
+      "basmalah_count": 0,
+      "verse_count": 3,
+      "surah_count": 3,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 1
+        },
+        {
+          "surah": 5,
+          "ayah": 117
+        },
+        {
+          "surah": 33,
+          "ayah": 52
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "arabic": "مُّجِيبٌ",
+      "transliteration": "Al-Mujib",
+      "meaning_en": "The Answerer of prayer",
+      "root": "ج و ب",
+      "count": 2,
+      "standalone_count": 2,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "m~ujiyb"
+      ],
+      "lemma_counts": {
+        "m~ujiyb": 2
+      },
+      "counting_rule": "all",
+      "notes": "2 occurrences: 11:61 (rabbi qarib mujib) and 37:75 (fa-niEma al-mujibun, 'how excellent are We as Responders' — plural of majesty).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 2,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 11,
+          "ayah": 61
+        },
+        {
+          "surah": 37,
+          "ayah": 75
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "arabic": "وَٰسِعٌ",
+      "transliteration": "Al-Wasi",
+      "meaning_en": "The All-Encompassing",
+      "root": "و س ع",
+      "count": 9,
+      "standalone_count": 1,
+      "phrase_count": 8,
+      "qac_lemmas": [
+        "wa`siE"
+      ],
+      "lemma_counts": {
+        "wa`siE": 9
+      },
+      "counting_rule": "all",
+      "notes": "9 occurrences, all divine (overwhelmingly wa-llahu wasiE Ealim).",
+      "related_forms": [
+        {
+          "lemma": "wa`siEap",
+          "count": 4,
+          "note": "4 feminine wasiEa tokens: 'My earth is vast' / 'God's earth is vast' (4:97, 29:56, 39:10) and wasiEa raHmatuhu (6:147) — vastness of earth/mercy, not the Name."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 9,
+      "basmalah_count": 0,
+      "verse_count": 9,
+      "surah_count": 6,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 115
+        },
+        {
+          "surah": 2,
+          "ayah": 247
+        },
+        {
+          "surah": 2,
+          "ayah": 261
+        },
+        {
+          "surah": 2,
+          "ayah": 268
+        },
+        {
+          "surah": 3,
+          "ayah": 73
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "arabic": "ٱلْحَكِيمُ",
+      "transliteration": "Al-Hakim",
+      "meaning_en": "The All-Wise",
+      "root": "ح ك م",
+      "count": 92,
+      "standalone_count": 1,
+      "phrase_count": 91,
+      "qac_lemmas": [
+        "Hakiym"
+      ],
+      "lemma_counts": {
+        "Hakiym": 92
+      },
+      "counting_rule": "blacklist",
+      "notes": "97 lemma tokens; 5 excluded, all predicated of the Book/decree: al-kitab al-Hakim 'the Wise Book' (10:1, 31:2), al-Qur'an al-Hakim (36:2), laEaliy Hakim of the Book (43:4), and amr Hakim 'a wise decree' (44:4). Result 92.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 10,
+          "ayah": 1
+        },
+        {
+          "surah": 31,
+          "ayah": 2
+        },
+        {
+          "surah": 36,
+          "ayah": 2
+        },
+        {
+          "surah": 43,
+          "ayah": 4
+        },
+        {
+          "surah": 44,
+          "ayah": 4
+        }
+      ],
+      "tanzil_raw_count": 97,
+      "basmalah_count": 0,
+      "verse_count": 92,
+      "surah_count": 39,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 32
+        },
+        {
+          "surah": 2,
+          "ayah": 129
+        },
+        {
+          "surah": 2,
+          "ayah": 209
+        },
+        {
+          "surah": 2,
+          "ayah": 220
+        },
+        {
+          "surah": 2,
+          "ayah": 228
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "arabic": "وَدُودٌ",
+      "transliteration": "Al-Wadud",
+      "meaning_en": "The Most Loving",
+      "root": "و د د",
+      "count": 2,
+      "standalone_count": 0,
+      "phrase_count": 2,
+      "qac_lemmas": [
+        "waduwd"
+      ],
+      "lemma_counts": {
+        "waduwd": 2
+      },
+      "counting_rule": "all",
+      "notes": "2 occurrences: 11:90 (rabbi raHim wadud) and 85:14 (al-ghafur al-wadud).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 2,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 11,
+          "ayah": 90
+        },
+        {
+          "surah": 85,
+          "ayah": 14
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "arabic": "مَّجِيدٌ",
+      "transliteration": "Al-Majid",
+      "meaning_en": "The All-Glorious",
+      "root": "م ج د",
+      "count": 2,
+      "standalone_count": 1,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "m~ajiyd"
+      ],
+      "lemma_counts": {
+        "m~ajiyd": 2
+      },
+      "counting_rule": "whitelist",
+      "notes": "2 occurrences: 11:73 (innahu Hamid majid) and 85:15 (*u al-Earsh al-majid, where al-majid is nominative and describes *u/Allah, not the Throne).",
+      "related_forms": [
+        {
+          "lemma": "m~ajiyd",
+          "count": 2,
+          "note": "2 other majid tokens describe the Quran: wa-l-Qur'an al-majid (50:1) and qur'an majid (85:21)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 4,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 11,
+          "ayah": 73
+        },
+        {
+          "surah": 85,
+          "ayah": 15
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "arabic": "الْبَاعِثُ",
+      "transliteration": "Al-Ba'ith",
+      "meaning_en": "The Resurrector",
+      "root": "ب ع ث",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. Only the verb yabEa*u 'He resurrects' occurs; the Name al-baEi* never appears as a noun.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 50,
+      "arabic": "شَهِيدٌ",
+      "transliteration": "Ash-Shahid",
+      "meaning_en": "The Witness",
+      "root": "ش ه د",
+      "count": 20,
+      "standalone_count": 20,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "$ahiyd"
+      ],
+      "lemma_counts": {
+        "$ahiyd": 20
+      },
+      "counting_rule": "blacklist",
+      "notes": "56 lemma tokens; 36 excluded — all human/angelic witnesses: legal witnesses (2:282, 24:4, 24:6, 24:13), prophets as witnesses (4:41, 16:84, 16:89, 22:78, 28:75, 4:159), martyrs (4:69, 3:140-class, 39:69, 57:19), Jesus as witness over his people (5:117 w15), and man as witness to his own ingratitude (100:7). Result 20, all 'Allah is witness' / 'sufficient is Allah as witness' / 'You are witness over all things' (5:117 w29).",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 2,
+          "ayah": 23
+        },
+        {
+          "surah": 2,
+          "ayah": 133
+        },
+        {
+          "surah": 2,
+          "ayah": 143
+        },
+        {
+          "surah": 2,
+          "ayah": 282
+        },
+        {
+          "surah": 3,
+          "ayah": 140
+        },
+        {
+          "surah": 4,
+          "ayah": 41
+        },
+        {
+          "surah": 4,
+          "ayah": 69
+        },
+        {
+          "surah": 4,
+          "ayah": 72
+        },
+        {
+          "surah": 4,
+          "ayah": 135
+        },
+        {
+          "surah": 4,
+          "ayah": 159
+        },
+        {
+          "surah": 5,
+          "ayah": 8
+        },
+        {
+          "surah": 5,
+          "ayah": 44
+        },
+        {
+          "surah": 5,
+          "ayah": 117,
+          "word": 15
+        },
+        {
+          "surah": 6,
+          "ayah": 144
+        },
+        {
+          "surah": 6,
+          "ayah": 150
+        },
+        {
+          "surah": 16,
+          "ayah": 84
+        },
+        {
+          "surah": 16,
+          "ayah": 89
+        },
+        {
+          "surah": 22,
+          "ayah": 78
+        },
+        {
+          "surah": 24,
+          "ayah": 4
+        },
+        {
+          "surah": 24,
+          "ayah": 6
+        },
+        {
+          "surah": 24,
+          "ayah": 13
+        },
+        {
+          "surah": 28,
+          "ayah": 75
+        },
+        {
+          "surah": 39,
+          "ayah": 69
+        },
+        {
+          "surah": 41,
+          "ayah": 47
+        },
+        {
+          "surah": 50,
+          "ayah": 21
+        },
+        {
+          "surah": 50,
+          "ayah": 37
+        },
+        {
+          "surah": 57,
+          "ayah": 19
+        },
+        {
+          "surah": 100,
+          "ayah": 7
+        }
+      ],
+      "tanzil_raw_count": 36,
+      "basmalah_count": 0,
+      "verse_count": 20,
+      "surah_count": 16,
+      "example_refs": [
+        {
+          "surah": 3,
+          "ayah": 98
+        },
+        {
+          "surah": 3,
+          "ayah": 99
+        },
+        {
+          "surah": 4,
+          "ayah": 33
+        },
+        {
+          "surah": 4,
+          "ayah": 79
+        },
+        {
+          "surah": 4,
+          "ayah": 166
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "arabic": "ٱلْحَقِّ",
+      "transliteration": "Al-Haqq",
+      "meaning_en": "The Truth",
+      "root": "ح ق ق",
+      "count": 9,
+      "standalone_count": 7,
+      "phrase_count": 2,
+      "qac_lemmas": [
+        "Haq~"
+      ],
+      "lemma_counts": {
+        "Haq~": 9
+      },
+      "counting_rule": "whitelist",
+      "notes": "Only 9 occurrences predicate Truth of God: huwa al-Haqq (22:6, 22:62, 31:30), al-malik al-Haqq (20:114, 23:116), mawlahum al-Haqq (6:62, 10:30), lillah al-Haqq (18:44), and huwa al-Haqq al-mubin (24:25, word 10 — the verse's first Haqq, w5, is dinahum al-Haqq 'their true due'). The raw surface count of al-Haqq is 247.",
+      "related_forms": [
+        {
+          "lemma": "Haq~",
+          "count": 238,
+          "note": "238 other Haqq tokens are 'the truth' as a concept: ja'a al-Haqq 'the truth has come', al-Haqq min rabbik 'the truth from your Lord', din al-Haqq 'the religion of truth', etc."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 259,
+      "basmalah_count": 0,
+      "verse_count": 9,
+      "surah_count": 8,
+      "example_refs": [
+        {
+          "surah": 6,
+          "ayah": 62
+        },
+        {
+          "surah": 10,
+          "ayah": 30
+        },
+        {
+          "surah": 18,
+          "ayah": 44
+        },
+        {
+          "surah": 20,
+          "ayah": 114
+        },
+        {
+          "surah": 22,
+          "ayah": 6
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "arabic": "ٱلْوَكِيلُ",
+      "transliteration": "Al-Wakil",
+      "meaning_en": "The Trustee",
+      "root": "و ك ل",
+      "count": 15,
+      "standalone_count": 15,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "wakiyl"
+      ],
+      "lemma_counts": {
+        "wakiyl": 15
+      },
+      "counting_rule": "whitelist",
+      "notes": "15 occurrences, all predicated of God (overwhelmingly wa-kafa bi-llah wakila).",
+      "related_forms": [
+        {
+          "lemma": "wakiyl",
+          "count": 9,
+          "note": "9 other wakil tokens: the Prophet 'I am not a guardian over you' (6:66, 6:107, 10:108, 17:54, 39:41, 42:6), a human advocate (4:109), a guardian for a person (25:43), and an advocate against God (17:86)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 24,
+      "basmalah_count": 0,
+      "verse_count": 15,
+      "surah_count": 10,
+      "example_refs": [
+        {
+          "surah": 3,
+          "ayah": 173
+        },
+        {
+          "surah": 4,
+          "ayah": 81
+        },
+        {
+          "surah": 4,
+          "ayah": 132
+        },
+        {
+          "surah": 4,
+          "ayah": 171
+        },
+        {
+          "surah": 6,
+          "ayah": 102
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "arabic": "قَوِىٌّ",
+      "transliteration": "Al-Qawiyy",
+      "meaning_en": "The All-Strong",
+      "root": "ق و ي",
+      "count": 9,
+      "standalone_count": 2,
+      "phrase_count": 7,
+      "qac_lemmas": [
+        "qawiY~"
+      ],
+      "lemma_counts": {
+        "qawiY~": 9
+      },
+      "counting_rule": "blacklist",
+      "notes": "11 lemma tokens; 2 excluded: the jinn 'I am strong, trustworthy' (27:39) and Moses 'the strong, the trustworthy' (28:26). Result 9.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 27,
+          "ayah": 39
+        },
+        {
+          "surah": 28,
+          "ayah": 26
+        }
+      ],
+      "tanzil_raw_count": 12,
+      "basmalah_count": 0,
+      "verse_count": 9,
+      "surah_count": 8,
+      "example_refs": [
+        {
+          "surah": 8,
+          "ayah": 52
+        },
+        {
+          "surah": 11,
+          "ayah": 66
+        },
+        {
+          "surah": 22,
+          "ayah": 40
+        },
+        {
+          "surah": 22,
+          "ayah": 74
+        },
+        {
+          "surah": 33,
+          "ayah": 25
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "arabic": "ٱلْمَتِينُ",
+      "transliteration": "Al-Matin",
+      "meaning_en": "The Firm",
+      "root": "م ت ن",
+      "count": 1,
+      "standalone_count": 1,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "matiyn"
+      ],
+      "lemma_counts": {
+        "matiyn": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 51:58 (*u al-quwwa al-matin).",
+      "related_forms": [
+        {
+          "lemma": "matiyn",
+          "count": 2,
+          "note": "2 other matin tokens are inna kaydi matin, 'My scheme is firm' (7:183, 68:45) — firmness predicated of God's scheme, not of God; excluded by the predication rule."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 51,
+          "ayah": 58
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "arabic": "وَلِىٍّ",
+      "transliteration": "Al-Waliyy",
+      "meaning_en": "The Protecting Friend",
+      "root": "و ل ي",
+      "count": 33,
+      "standalone_count": 32,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "waliY~"
+      ],
+      "lemma_counts": {
+        "waliY~": 33
+      },
+      "counting_rule": "blacklist",
+      "notes": "86 lemma tokens; 53 excluded: all plural awliya' (allies — of disbelievers, Satan, Jews/Christians, believers among themselves, angels as protectors in 41:31, and 'friends of Allah' as saints in 10:62 and 62:6) and singular wali as a human guardian/heir (2:282 debtor's guardian; 17:33, 27:49 heirs; 19:5 Zakariya's heir; 4:75 a human protector; 19:45 Satan's ally; 41:34 a close friend; 17:111 'He has no protector out of weakness' — negating God HAVING a protector, not predicating God AS one; 16:63 Satan as protector). Result 33, all predicated of God ('Allah is the Protector', 'no protector besides God', 'sufficient is Allah as Protector', 'You are our Protector').",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 2,
+          "ayah": 282
+        },
+        {
+          "surah": 2,
+          "ayah": 257,
+          "word": 12
+        },
+        {
+          "surah": 3,
+          "ayah": 28
+        },
+        {
+          "surah": 3,
+          "ayah": 175
+        },
+        {
+          "surah": 4,
+          "ayah": 75
+        },
+        {
+          "surah": 4,
+          "ayah": 76
+        },
+        {
+          "surah": 4,
+          "ayah": 89
+        },
+        {
+          "surah": 4,
+          "ayah": 119
+        },
+        {
+          "surah": 4,
+          "ayah": 139
+        },
+        {
+          "surah": 4,
+          "ayah": 144
+        },
+        {
+          "surah": 5,
+          "ayah": 51
+        },
+        {
+          "surah": 5,
+          "ayah": 57
+        },
+        {
+          "surah": 5,
+          "ayah": 81
+        },
+        {
+          "surah": 6,
+          "ayah": 121
+        },
+        {
+          "surah": 6,
+          "ayah": 128
+        },
+        {
+          "surah": 7,
+          "ayah": 3
+        },
+        {
+          "surah": 7,
+          "ayah": 27
+        },
+        {
+          "surah": 7,
+          "ayah": 30
+        },
+        {
+          "surah": 8,
+          "ayah": 34
+        },
+        {
+          "surah": 8,
+          "ayah": 72
+        },
+        {
+          "surah": 8,
+          "ayah": 73
+        },
+        {
+          "surah": 9,
+          "ayah": 23
+        },
+        {
+          "surah": 9,
+          "ayah": 71
+        },
+        {
+          "surah": 10,
+          "ayah": 62
+        },
+        {
+          "surah": 11,
+          "ayah": 20
+        },
+        {
+          "surah": 11,
+          "ayah": 113
+        },
+        {
+          "surah": 13,
+          "ayah": 16
+        },
+        {
+          "surah": 16,
+          "ayah": 63
+        },
+        {
+          "surah": 17,
+          "ayah": 33
+        },
+        {
+          "surah": 17,
+          "ayah": 97
+        },
+        {
+          "surah": 17,
+          "ayah": 111
+        },
+        {
+          "surah": 18,
+          "ayah": 50
+        },
+        {
+          "surah": 18,
+          "ayah": 102
+        },
+        {
+          "surah": 19,
+          "ayah": 5
+        },
+        {
+          "surah": 19,
+          "ayah": 45
+        },
+        {
+          "surah": 25,
+          "ayah": 18
+        },
+        {
+          "surah": 27,
+          "ayah": 49
+        },
+        {
+          "surah": 29,
+          "ayah": 41
+        },
+        {
+          "surah": 33,
+          "ayah": 6
+        },
+        {
+          "surah": 39,
+          "ayah": 3
+        },
+        {
+          "surah": 41,
+          "ayah": 31
+        },
+        {
+          "surah": 41,
+          "ayah": 34
+        },
+        {
+          "surah": 42,
+          "ayah": 6
+        },
+        {
+          "surah": 42,
+          "ayah": 9,
+          "word": 5
+        },
+        {
+          "surah": 42,
+          "ayah": 46
+        },
+        {
+          "surah": 45,
+          "ayah": 10
+        },
+        {
+          "surah": 45,
+          "ayah": 19,
+          "word": 11
+        },
+        {
+          "surah": 46,
+          "ayah": 32
+        },
+        {
+          "surah": 60,
+          "ayah": 1
+        },
+        {
+          "surah": 62,
+          "ayah": 6
+        }
+      ],
+      "tanzil_raw_count": 50,
+      "basmalah_count": 0,
+      "verse_count": 33,
+      "surah_count": 17,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 107
+        },
+        {
+          "surah": 2,
+          "ayah": 120
+        },
+        {
+          "surah": 2,
+          "ayah": 257
+        },
+        {
+          "surah": 3,
+          "ayah": 68
+        },
+        {
+          "surah": 3,
+          "ayah": 122
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "arabic": "حَمِيدٌ",
+      "transliteration": "Al-Hamid",
+      "meaning_en": "The Praiseworthy",
+      "root": "ح م د",
+      "count": 17,
+      "standalone_count": 1,
+      "phrase_count": 16,
+      "qac_lemmas": [
+        "Hamiyd"
+      ],
+      "lemma_counts": {
+        "Hamiyd": 17
+      },
+      "counting_rule": "all",
+      "notes": "17 occurrences, all divine (overwhelmingly al-ghaniy al-Hamid).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 17,
+      "basmalah_count": 0,
+      "verse_count": 17,
+      "surah_count": 14,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 267
+        },
+        {
+          "surah": 4,
+          "ayah": 131
+        },
+        {
+          "surah": 11,
+          "ayah": 73
+        },
+        {
+          "surah": 14,
+          "ayah": 1
+        },
+        {
+          "surah": 14,
+          "ayah": 8
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "arabic": "الْمُحْصِي",
+      "transliteration": "Al-Muhsi",
+      "meaning_en": "The One who counts all things",
+      "root": "ح ص ي",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. Only the verb aHSa 'He counted' occurs (e.g. 19:94, 72:28); the Name al-muHSI never appears.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 58,
+      "arabic": "الْمُبْدِئُ",
+      "transliteration": "Al-Mubdi",
+      "meaning_en": "The Originator of creation",
+      "root": "ب د أ",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "mubodiy"
+      ],
+      "lemma_counts": {},
+      "counting_rule": "blacklist",
+      "notes": "ZERO occurrences of the Name. The only mubdi token (33:37 mubdihi, 'what Allah will disclose') is from a different root (b-d-w, 'to disclose'), not b-d-' (the Name's root); the verb yubdi'u 'He originates' is what the Name is drawn from.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 33,
+          "ayah": 37
+        }
+      ],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 59,
+      "arabic": "الْمُعِيدُ",
+      "transliteration": "Al-Mu'id",
+      "meaning_en": "The Restorer",
+      "root": "ع و د",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. Only the verb yuEidu 'He restores' occurs; the Name al-muEid never appears.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 60,
+      "arabic": "لَمُحْىِ",
+      "transliteration": "Al-Muhyi",
+      "meaning_en": "The Giver of Life",
+      "root": "ح ي ي",
+      "count": 2,
+      "standalone_count": 2,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "muHoY"
+      ],
+      "lemma_counts": {
+        "muHoY": 2
+      },
+      "counting_rule": "all",
+      "notes": "2 occurrences, both la-muHyi al-mawta 'the Reviver of the dead' (30:50, 41:39) — the Name's only Quranic form; the definite al-muHyi never appears. (Uthmani writes the form defectively, la-muHyi, with a single yeh.)",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 2,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 30,
+          "ayah": 50
+        },
+        {
+          "surah": 41,
+          "ayah": 39
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "arabic": "الْمُمِيتُ",
+      "transliteration": "Al-Mumit",
+      "meaning_en": "The Bringer of Death",
+      "root": "م و ت",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. Only the verb yumitu 'He gives death' occurs; the Name al-mumit never appears.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 62,
+      "arabic": "ٱلْحَىُّ",
+      "transliteration": "Al-Hayy",
+      "meaning_en": "The Ever-Living",
+      "root": "ح ي ي",
+      "count": 5,
+      "standalone_count": 2,
+      "phrase_count": 3,
+      "qac_lemmas": [
+        "Hay~"
+      ],
+      "lemma_counts": {
+        "Hay~": 5
+      },
+      "counting_rule": "whitelist",
+      "notes": "5 occurrences, all al-Hayy (al-Hayy al-qayyum in 2:255, 3:2, 20:111; 25:58; 40:65).",
+      "related_forms": [
+        {
+          "lemma": "Hay~",
+          "count": 19,
+          "note": "19 other Hayy tokens are 'the living' as creatures: yukhrij al-Hayy min al-mayyit 'He brings the living from the dead' (3:27, 6:95, 10:31, 30:19), martyrs alive (2:154, 3:169), 'every living thing' (21:30), and John/Jesus 'alive' (19:15, 19:31, 19:33, 19:66)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 26,
+      "basmalah_count": 0,
+      "verse_count": 5,
+      "surah_count": 5,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        },
+        {
+          "surah": 3,
+          "ayah": 2
+        },
+        {
+          "surah": 20,
+          "ayah": 111
+        },
+        {
+          "surah": 25,
+          "ayah": 58
+        },
+        {
+          "surah": 40,
+          "ayah": 65
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "arabic": "ٱلْقَيُّومُ",
+      "transliteration": "Al-Qayyum",
+      "meaning_en": "The Self-Subsisting",
+      "root": "ق و م",
+      "count": 3,
+      "standalone_count": 0,
+      "phrase_count": 3,
+      "qac_lemmas": [
+        "qay~uwm"
+      ],
+      "lemma_counts": {
+        "qay~uwm": 3
+      },
+      "counting_rule": "all",
+      "notes": "3 occurrences (2:255, 3:2, 20:111), always with al-Hayy.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 3,
+      "surah_count": 3,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 255
+        },
+        {
+          "surah": 3,
+          "ayah": 2
+        },
+        {
+          "surah": 20,
+          "ayah": 111
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "arabic": "الْوَاجِدُ",
+      "transliteration": "Al-Wajid",
+      "meaning_en": "The Finder",
+      "root": "و ج د",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. No wa'jid lemma; only the verb wajada 'he found' occurs.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 65,
+      "arabic": "الْمَاجِدُ",
+      "transliteration": "Al-Maajid",
+      "meaning_en": "The Illustrious",
+      "root": "م ج د",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. The lemma ma'jid never appears; only al-majid (48, a different pattern of the same root) occurs.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 66,
+      "arabic": "وَٰحِدًا",
+      "transliteration": "Al-Wahid",
+      "meaning_en": "The One",
+      "root": "و ح د",
+      "count": 22,
+      "standalone_count": 16,
+      "phrase_count": 6,
+      "qac_lemmas": [
+        "wa`Hid"
+      ],
+      "lemma_counts": {
+        "wa`Hid": 22
+      },
+      "counting_rule": "whitelist",
+      "notes": "22 occurrences: 6 definite al-waHid (all al-waHid al-qahhar) and 16 bare waHid in 'ilah waHid / ilahan waHidan' ('one God') phrases (including 38:5, where disbelievers mock 'has he made the gods one God?' — the referent is still God as One). The other 8 bare waHid are the numeral: one food (2:61), one daughter / one sibling (4:11, 4:12), one gate (12:67), one water (13:4), one each (24:2), one destruction (25:14), one man (54:24).",
+      "related_forms": [
+        {
+          "lemma": "wa`Hidap",
+          "count": 31,
+          "note": "31 feminine waHida tokens: umma waHida 'one community', nafs waHida 'one soul', SayHa waHida 'one cry' — the numeral, not the Name."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 30,
+      "basmalah_count": 0,
+      "verse_count": 22,
+      "surah_count": 18,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 133
+        },
+        {
+          "surah": 2,
+          "ayah": 163
+        },
+        {
+          "surah": 4,
+          "ayah": 171
+        },
+        {
+          "surah": 5,
+          "ayah": 73
+        },
+        {
+          "surah": 6,
+          "ayah": 19
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "arabic": "أَحَدٌ",
+      "transliteration": "Al-Ahad",
+      "meaning_en": "The Indivisible One",
+      "root": "أ ح د",
+      "count": 1,
+      "standalone_count": 1,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        ">aHad"
+      ],
+      "lemma_counts": {
+        ">aHad": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 112:1 qul huwa allahu aHad. The definite al-aHad never occurs.",
+      "related_forms": [
+        {
+          "lemma": ">aHad",
+          "count": 73,
+          "note": "73 other aHad tokens are the indefinite pronoun 'one / anyone' (aHadukum, aHad al-nas, ma kana MuHammad aba aHad, lam yakun lahu kufuwan aHad in 112:4)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 108,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 112,
+          "ayah": 1
+        }
+      ]
+    },
+    {
+      "id": 68,
+      "arabic": "ٱلصَّمَدُ",
+      "transliteration": "As-Samad",
+      "meaning_en": "The Eternal Refuge",
+      "root": "ص م د",
+      "count": 1,
+      "standalone_count": 1,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "S~amad"
+      ],
+      "lemma_counts": {
+        "S~amad": 1
+      },
+      "counting_rule": "all",
+      "notes": "Occurs once, 112:2.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 112,
+          "ayah": 2
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "arabic": "قَدِيرٌ",
+      "transliteration": "Al-Qadir",
+      "meaning_en": "The Able",
+      "root": "ق د ر",
+      "count": 57,
+      "standalone_count": 51,
+      "phrase_count": 6,
+      "qac_lemmas": [
+        "qadiyr",
+        "qaAdir"
+      ],
+      "lemma_counts": {
+        "qaAdir": 12,
+        "qadiyr": 45
+      },
+      "counting_rule": "blacklist",
+      "notes": "Two forms of one attribute are counted together: qadir (45 tokens, overwhelmingly 'ala kulli shay'in qadir, 'powerful over all things') and qadir (14 tokens, of which 2 are human: 'they think they are able', 10:24, and the garden owners 'able to prevent the poor', 68:25). Result 57. Note the Quran's usual form is qadir; the Tirmidhi form al-qadir (definite, qadir pattern) never occurs — the definite form that does occur is al-qaadir (6:65).",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 10,
+          "ayah": 24
+        },
+        {
+          "surah": 68,
+          "ayah": 25
+        }
+      ],
+      "tanzil_raw_count": 59,
+      "basmalah_count": 0,
+      "verse_count": 56,
+      "surah_count": 34,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 20
+        },
+        {
+          "surah": 2,
+          "ayah": 106
+        },
+        {
+          "surah": 2,
+          "ayah": 109
+        },
+        {
+          "surah": 2,
+          "ayah": 148
+        },
+        {
+          "surah": 2,
+          "ayah": 259
+        }
+      ]
+    },
+    {
+      "id": 70,
+      "arabic": "مُّقْتَدِرًا",
+      "transliteration": "Al-Muqtadir",
+      "meaning_en": "The Omnipotent",
+      "root": "ق د ر",
+      "count": 4,
+      "standalone_count": 3,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "m~uqotadir"
+      ],
+      "lemma_counts": {
+        "m~uqotadir": 4
+      },
+      "counting_rule": "all",
+      "notes": "4 occurrences, all divine (18:45, 43:42 plural of majesty, 54:42, 54:55).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 4,
+      "basmalah_count": 0,
+      "verse_count": 4,
+      "surah_count": 3,
+      "example_refs": [
+        {
+          "surah": 18,
+          "ayah": 45
+        },
+        {
+          "surah": 43,
+          "ayah": 42
+        },
+        {
+          "surah": 54,
+          "ayah": 42
+        },
+        {
+          "surah": 54,
+          "ayah": 55
+        }
+      ]
+    },
+    {
+      "id": 71,
+      "arabic": "الْمُقَدِّمُ",
+      "transliteration": "Al-Muqaddim",
+      "meaning_en": "The One who brings forward",
+      "root": "ق د م",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. No muqaddim lemma; only verbs (qaddama, yastaqdimun) occur.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 72,
+      "arabic": "الْمُؤَخِّرُ",
+      "transliteration": "Al-Mu'akhkhir",
+      "meaning_en": "The One who delays",
+      "root": "أ خ ر",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. Only the verb yu'akhkhiru 'He delays' occurs.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 73,
+      "arabic": "ٱلْأَوَّلُ",
+      "transliteration": "Al-Awwal",
+      "meaning_en": "The First",
+      "root": "أ و ل",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        ">aw~al"
+      ],
+      "lemma_counts": {
+        ">aw~al": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 57:3 huwa al-awwal wa-l-akhir. The definite al-awwal as the Name occurs only here.",
+      "related_forms": [
+        {
+          "lemma": ">aw~al",
+          "count": 81,
+          "note": "81 other awwal tokens: al-awwalun/al-awwalin 'the former peoples', al-ula 'the former (life)', awwal al-muslimin/al-mu'minin 'first of the Muslims/believers', and al-khalq al-awwal 'the first creation' (50:15)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 89,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "arabic": "وَٱلْـَٔاخِرُ",
+      "transliteration": "Al-Akhir",
+      "meaning_en": "The Last",
+      "root": "أ خ ر",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "A^xir"
+      ],
+      "lemma_counts": {
+        "A^xir": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 57:3. The raw surface count of al-akhir is 155, of which 154 are 'the Last Day'.",
+      "related_forms": [
+        {
+          "lemma": "A^xir",
+          "count": 154,
+          "note": "154 other a'khir tokens are al-yawm al-akhir 'the Last Day' (and al-akhirin 'the later ones'). The related lemma A^xar (70 tokens) is al-akhira 'the Hereafter'."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 87,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "arabic": "وَٱلظَّٰهِرُ",
+      "transliteration": "Az-Zahir",
+      "meaning_en": "The Manifest",
+      "root": "ظ ه ر",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "Za`hir"
+      ],
+      "lemma_counts": {
+        "Za`hir": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 57:3.",
+      "related_forms": [
+        {
+          "lemma": "Za`hir",
+          "count": 7,
+          "note": "7 other Zahir tokens are 'outward/apparent': bi-Zahir min al-qawl 'outward speech' (13:33), Zahiran 'openly' (18:22), Zahir min al-Haya 'the outward of (worldly) life' (30:7), and the Za`haru/Zahiyr verb and noun forms."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 8,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "arabic": "وَٱلْبَاطِنُ",
+      "transliteration": "Al-Batin",
+      "meaning_en": "The Hidden",
+      "root": "ب ط ن",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "baATin"
+      ],
+      "lemma_counts": {
+        "baATin": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 57:3.",
+      "related_forms": [
+        {
+          "lemma": "baATin",
+          "count": 2,
+          "note": "2 other baTin tokens: Zahir/batin of sin (6:120) and baTinuhu 'its inside' (57:13). The feminine baTinatan, 'hidden (blessings)' (31:20), is the separate lemma baATinap."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 57,
+          "ayah": 3
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "arabic": "وَالٍ",
+      "transliteration": "Al-Wali",
+      "meaning_en": "The Patron",
+      "root": "و ل ي",
+      "count": 1,
+      "standalone_count": 1,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "waAl"
+      ],
+      "lemma_counts": {
+        "waAl": 1
+      },
+      "counting_rule": "all",
+      "notes": "1 occurrence: 13:11 wa-ma lahum min dunihi min wal, 'they have no protector besides Him' — the defective form wal (the final ya' drops in the indefinite nominative/genitive). The definite al-wali never occurs. (QAC's lemma waAl is distinct from the preposition ila and from waliY~ the Protecting Friend, Name 55.)",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 63,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 13,
+          "ayah": 11
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "arabic": "ٱلْمُتَعَالِ",
+      "transliteration": "Al-Muta'ali",
+      "meaning_en": "The Most Exalted",
+      "root": "ع ل و",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "mutaEaAl"
+      ],
+      "lemma_counts": {
+        "mutaEaAl": 1
+      },
+      "counting_rule": "all",
+      "notes": "1 occurrence: 13:9 al-kabir al-mutaEal — the defective form al-mutaEal (final ya' dropped); the full form al-mutaEali never occurs.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 13,
+          "ayah": 9
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "arabic": "ٱلْبَرُّ",
+      "transliteration": "Al-Barr",
+      "meaning_en": "The Source of Goodness",
+      "root": "ب ر ر",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "bar~"
+      ],
+      "lemma_counts": {
+        "bar~": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 52:28 innahu huwa al-barr al-raHim. (The definite al-barr is otherwise always 'the land'.)",
+      "related_forms": [
+        {
+          "lemma": "bar~",
+          "count": 21,
+          "note": "21 other barr tokens: al-barr 'the land' (vs the sea, 12 times), al-abrar 'the righteous' (3:193, 3:198, 76:5, 82:13, 83:18, 83:22), barra 'dutiful' of John and Jesus (19:14, 19:32), and barara 'noble scribes' (80:16). The related lemma bir~ (8 tokens) is al-birr 'piety/righteousness'."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 50,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 52,
+          "ayah": 28
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "arabic": "ٱلتَّوَّابُ",
+      "transliteration": "At-Tawwab",
+      "meaning_en": "The Ever-Accepting of Repentance",
+      "root": "ت و ب",
+      "count": 11,
+      "standalone_count": 1,
+      "phrase_count": 10,
+      "qac_lemmas": [
+        "taw~aAb"
+      ],
+      "lemma_counts": {
+        "taw~aAb": 11
+      },
+      "counting_rule": "blacklist",
+      "notes": "12 lemma tokens; 1 excluded: al-tawwabin 'those who repent' (2:222, humans God loves). Result 11.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 2,
+          "ayah": 222
+        }
+      ],
+      "tanzil_raw_count": 12,
+      "basmalah_count": 0,
+      "verse_count": 11,
+      "surah_count": 6,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 37
+        },
+        {
+          "surah": 2,
+          "ayah": 54
+        },
+        {
+          "surah": 2,
+          "ayah": 128
+        },
+        {
+          "surah": 2,
+          "ayah": 160
+        },
+        {
+          "surah": 4,
+          "ayah": 16
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "arabic": "مُنتَقِمُونَ",
+      "transliteration": "Al-Muntaqim",
+      "meaning_en": "The Avenger",
+      "root": "ن ق م",
+      "count": 3,
+      "standalone_count": 3,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "muntaqimuwn"
+      ],
+      "lemma_counts": {
+        "muntaqimuwn": 3
+      },
+      "counting_rule": "all",
+      "notes": "3 occurrences, all in the plural muntaqimun of God speaking in the plural of majesty (32:22, 43:41, 44:16: inna muntaqimun, 'We are the Avenger'). The singular al-muntaqim never occurs.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 3,
+      "surah_count": 3,
+      "example_refs": [
+        {
+          "surah": 32,
+          "ayah": 22
+        },
+        {
+          "surah": 43,
+          "ayah": 41
+        },
+        {
+          "surah": 44,
+          "ayah": 16
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "arabic": "عَفُوًّا",
+      "transliteration": "Al-Afuww",
+      "meaning_en": "The Pardoner",
+      "root": "ع ف و",
+      "count": 5,
+      "standalone_count": 0,
+      "phrase_count": 5,
+      "qac_lemmas": [
+        "Eafuw~"
+      ],
+      "lemma_counts": {
+        "Eafuw~": 5
+      },
+      "counting_rule": "all",
+      "notes": "5 occurrences, all divine (4:43, 4:99, 4:149, 22:60, 58:2 — all Eafuw ghafur).",
+      "related_forms": [
+        {
+          "lemma": "Eafow",
+          "count": 2,
+          "note": "2 Eafw tokens are the noun 'pardon/forbearance': qul al-Eafw 'say: pardoning' (what to spend, 2:219) and khu* al-Eafw 'take forbearance' (7:199)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 10,
+      "basmalah_count": 0,
+      "verse_count": 5,
+      "surah_count": 3,
+      "example_refs": [
+        {
+          "surah": 4,
+          "ayah": 43
+        },
+        {
+          "surah": 4,
+          "ayah": 99
+        },
+        {
+          "surah": 4,
+          "ayah": 149
+        },
+        {
+          "surah": 22,
+          "ayah": 60
+        },
+        {
+          "surah": 58,
+          "ayah": 2
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "arabic": "لَرَءُوفٌ",
+      "transliteration": "Ar-Ra'uf",
+      "meaning_en": "The Most Kind",
+      "root": "ر أ ف",
+      "count": 10,
+      "standalone_count": 2,
+      "phrase_count": 8,
+      "qac_lemmas": [
+        "ra'uwf"
+      ],
+      "lemma_counts": {
+        "ra'uwf": 10
+      },
+      "counting_rule": "blacklist",
+      "notes": "11 lemma tokens; 1 excluded: 9:128 ra'uwf raHim of the Messenger. Result 10. (The definite ar-ra'uwf never occurs; all 10 are bare ra'uwf, usually la-ra'uwf.)",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 9,
+          "ayah": 128
+        }
+      ],
+      "tanzil_raw_count": 11,
+      "basmalah_count": 0,
+      "verse_count": 10,
+      "surah_count": 8,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 143
+        },
+        {
+          "surah": 2,
+          "ayah": 207
+        },
+        {
+          "surah": 3,
+          "ayah": 30
+        },
+        {
+          "surah": 9,
+          "ayah": 117
+        },
+        {
+          "surah": 16,
+          "ayah": 7
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "arabic": "مَٰلِكَ ٱلْمُلْكِ",
+      "transliteration": "Malik al-Mulk",
+      "meaning_en": "Owner of All Sovereignty",
+      "root": "م ل ك",
+      "count": 1,
+      "standalone_count": 0,
+      "phrase_count": 1,
+      "qac_lemmas": [
+        "ma`lik"
+      ],
+      "lemma_counts": {
+        "ma`lik": 1
+      },
+      "counting_rule": "phrase",
+      "notes": "1 occurrence: 3:26 qul allahumma malik al-mulk. Counted as its own Name here and also inside Name 3 (Al-Malik), where the same token is counted.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 1,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 3,
+          "ayah": 26
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "arabic": "ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
+      "transliteration": "Dhu al-Jalal wa-l-Ikram",
+      "meaning_en": "Owner of Majesty and Honour",
+      "root": "ج ل ل + ك ر م",
+      "count": 2,
+      "standalone_count": 2,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "jala`l"
+      ],
+      "lemma_counts": {
+        "jala`l": 2
+      },
+      "counting_rule": "phrase",
+      "notes": "2 occurrences: 55:27 (*u al-jalaal wa-l-ikraam, nominative) and 55:78 (*i al-jalaal wa-l-ikraam, genitive after rabbik).",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 2,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 55,
+          "ayah": 27
+        },
+        {
+          "surah": 55,
+          "ayah": 78
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "arabic": "الْمُقْسِطُ",
+      "transliteration": "Al-Muqsit",
+      "meaning_en": "The Equitable",
+      "root": "ق س ط",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "muqosiTiyn"
+      ],
+      "lemma_counts": {},
+      "counting_rule": "blacklist",
+      "notes": "ZERO occurrences as the Name. The only muqsiT tokens are the plural al-muqsiTin 'the just ones' (humans God loves) in 5:42, 49:9, 60:8; the singular al-muqsiT never occurs.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 5,
+          "ayah": 42
+        },
+        {
+          "surah": 49,
+          "ayah": 9
+        },
+        {
+          "surah": 60,
+          "ayah": 8
+        }
+      ],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 87,
+      "arabic": "جَامِعُ",
+      "transliteration": "Al-Jami",
+      "meaning_en": "The Gatherer",
+      "root": "ج م ع",
+      "count": 2,
+      "standalone_count": 2,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "jaAmiE"
+      ],
+      "lemma_counts": {
+        "jaAmiE": 2
+      },
+      "counting_rule": "whitelist",
+      "notes": "2 occurrences: 3:9 (innaka jamiE an-nas) and 4:140 (inna allaha jamiE al-munafiqin).",
+      "related_forms": [
+        {
+          "lemma": "jaAmiE",
+          "count": 1,
+          "note": "1 other jamiE token: amr jamiE 'a common matter' (24:62) — not the Name."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 3,
+          "ayah": 9
+        },
+        {
+          "surah": 4,
+          "ayah": 140
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "arabic": "غَنِىٌّ",
+      "transliteration": "Al-Ghani",
+      "meaning_en": "The Self-Sufficient",
+      "root": "غ ن ي",
+      "count": 18,
+      "standalone_count": 6,
+      "phrase_count": 12,
+      "qac_lemmas": [
+        "ganiY~"
+      ],
+      "lemma_counts": {
+        "ganiY~": 18
+      },
+      "counting_rule": "blacklist",
+      "notes": "24 lemma tokens; 6 excluded, all rich humans: aghniya' 'the rich' (2:273, 3:181, 9:93, 59:7) and ghaniyyan 'rich' of a guardian or a person (4:6, 4:135). Result 18.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 2,
+          "ayah": 273
+        },
+        {
+          "surah": 3,
+          "ayah": 181
+        },
+        {
+          "surah": 4,
+          "ayah": 6
+        },
+        {
+          "surah": 4,
+          "ayah": 135
+        },
+        {
+          "surah": 9,
+          "ayah": 93
+        },
+        {
+          "surah": 59,
+          "ayah": 7
+        }
+      ],
+      "tanzil_raw_count": 21,
+      "basmalah_count": 0,
+      "verse_count": 18,
+      "surah_count": 16,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 263
+        },
+        {
+          "surah": 2,
+          "ayah": 267
+        },
+        {
+          "surah": 3,
+          "ayah": 97
+        },
+        {
+          "surah": 4,
+          "ayah": 131
+        },
+        {
+          "surah": 6,
+          "ayah": 133
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "arabic": "الْمُغْنِي",
+      "transliteration": "Al-Mughni",
+      "meaning_en": "The Enricher",
+      "root": "غ ن ي",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. Only the verb yughni 'He enriches' occurs; the Name al-mughni never appears.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 90,
+      "arabic": "الْمَانِعُ",
+      "transliteration": "Al-Mani",
+      "meaning_en": "The Preventer",
+      "root": "م ن ع",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. No maniE lemma; only the verb manaEa 'he prevented' occurs.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 91,
+      "arabic": "الضَّارُّ",
+      "transliteration": "Ad-Darr",
+      "meaning_en": "The Bringer of Adversity",
+      "root": "ض ر ر",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "DaA^r~"
+      ],
+      "lemma_counts": {},
+      "counting_rule": "blacklist",
+      "notes": "ZERO occurrences as the Name. The 2 Da'rr tokens are 'harming': bi-Darrin bihi 'they cannot harm anyone with it' (2:102, sorcerers) and bi-Darrihim 'harming them' (58:10, Satan's whispering). The noun Darr 'harm' (10 tokens) is a different lemma.",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 2,
+          "ayah": 102
+        },
+        {
+          "surah": 58,
+          "ayah": 10
+        }
+      ],
+      "tanzil_raw_count": 2,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 92,
+      "arabic": "النَّافِعُ",
+      "transliteration": "An-Nafi",
+      "meaning_en": "The Bringer of Benefit",
+      "root": "ن ف ع",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. No nafiE lemma; only the verb nafaEa 'it benefited' occurs.",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 93,
+      "arabic": "نُورُ",
+      "transliteration": "An-Nur",
+      "meaning_en": "The Light",
+      "root": "ن و ر",
+      "count": 1,
+      "standalone_count": 1,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "nuwr"
+      ],
+      "lemma_counts": {
+        "nuwr": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "1 occurrence: 24:35 allahu nur as-samawati wa-l-arD, 'Allah is the Light of the heavens and the earth' (word 2 of the verse). Every other nur is a created light, guidance, or the light OF God, not God Himself.",
+      "related_forms": [
+        {
+          "lemma": "nuwr",
+          "count": 42,
+          "note": "42 other nur tokens: light as guidance/revelation (5:15, 5:44, 14:1, 64:8), 'the light of Allah' (9:32, 61:8), believers' light on the Day (57:12, 57:13, 66:8), the moon as a light (10:5, 71:16), and the other four nur tokens in 24:35 itself (w6, w33, w35, w38 — 'His light', 'light upon light')."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 43,
+      "basmalah_count": 0,
+      "verse_count": 1,
+      "surah_count": 1,
+      "example_refs": [
+        {
+          "surah": 24,
+          "ayah": 35
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "arabic": "لَهَادِ",
+      "transliteration": "Al-Hadi",
+      "meaning_en": "The Guide",
+      "root": "ه د ي",
+      "count": 2,
+      "standalone_count": 2,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "haAd",
+        "haAdiy"
+      ],
+      "lemma_counts": {
+        "haAd": 1,
+        "haAdiy": 1
+      },
+      "counting_rule": "whitelist",
+      "notes": "2 occurrences: 22:54 (wa-inna allaha la-had alladhina amanu) and 25:31 (wa-kafa bi-rabbika hadiyyan wa-naSira). The definite al-hadi never occurs; both counted forms are the defective/bare participle.",
+      "related_forms": [
+        {
+          "lemma": "haAd",
+          "count": 6,
+          "note": "6 other had tokens are generic 'a guide / no guide': wa-likulli qawmin had 'for every people a guide' (13:7), fa-ma lahu min had 'he has no guide' (13:33, 39:23, 39:36, 40:33), and bi-hadi al-Eumy 'guide of the blind', of the Prophet (30:53)."
+        },
+        {
+          "lemma": "haAdiy",
+          "count": 1,
+          "note": "1 other hadi token: fa-la hadiya lahu 'no guide for him' (7:186)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 10,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 22,
+          "ayah": 54
+        },
+        {
+          "surah": 25,
+          "ayah": 31
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "arabic": "بَدِيعُ",
+      "transliteration": "Al-Badi",
+      "meaning_en": "The Incomparable Originator",
+      "root": "ب د ع",
+      "count": 2,
+      "standalone_count": 2,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "badiyE"
+      ],
+      "lemma_counts": {
+        "badiyE": 2
+      },
+      "counting_rule": "all",
+      "notes": "2 occurrences: 2:117 and 6:101 (badiE as-samawati wa-l-arD, 'Originator of the heavens and the earth').",
+      "related_forms": [],
+      "excluded_refs": [],
+      "tanzil_raw_count": 2,
+      "basmalah_count": 0,
+      "verse_count": 2,
+      "surah_count": 2,
+      "example_refs": [
+        {
+          "surah": 2,
+          "ayah": 117
+        },
+        {
+          "surah": 6,
+          "ayah": 101
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "arabic": "الْبَاقِي",
+      "transliteration": "Al-Baqi",
+      "meaning_en": "The Everlasting",
+      "root": "ب ق ي",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "baAq",
+        "baAqiyap",
+        "baqiy~at",
+        "baAqiyn"
+      ],
+      "lemma_counts": {},
+      "counting_rule": "blacklist",
+      "notes": "ZERO occurrences as the Name. The 8 baq- tokens are all 'remaining': baqiyyat 'a remnant' (2:248, 11:86, 11:116), wa-ma Einda allahi baq 'what is with Allah remains' (16:96 — endurance predicated of what is with Allah, not of Allah), al-baqin 'the remaining ones' (26:120, 37:77), kalima baqiya 'an enduring word' (43:28), baqiya 'any survivor' (69:8).",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 2,
+          "ayah": 248
+        },
+        {
+          "surah": 11,
+          "ayah": 86
+        },
+        {
+          "surah": 11,
+          "ayah": 116
+        },
+        {
+          "surah": 16,
+          "ayah": 96
+        },
+        {
+          "surah": 26,
+          "ayah": 120
+        },
+        {
+          "surah": 37,
+          "ayah": 77
+        },
+        {
+          "surah": 43,
+          "ayah": 28
+        },
+        {
+          "surah": 69,
+          "ayah": 8
+        }
+      ],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 97,
+      "arabic": "ٱلْوَٰرِثُونَ",
+      "transliteration": "Al-Warith",
+      "meaning_en": "The Inheritor",
+      "root": "و ر ث",
+      "count": 3,
+      "standalone_count": 3,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "waAriv"
+      ],
+      "lemma_counts": {
+        "waAriv": 3
+      },
+      "counting_rule": "whitelist",
+      "notes": "3 occurrences, all in the plural: wa-naHnu al-wari*un (15:23, 28:58) and khayr al-wari*in (21:89). The singular al-wari* never occurs.",
+      "related_forms": [
+        {
+          "lemma": "waAriv",
+          "count": 4,
+          "note": "4 other wari* tokens are human inheritors: al-wari*un 'they are the inheritors' of Paradise, the believers (23:10), wa-najEaluhum al-wari*in 'We make them the inheritors', the oppressed Israelites (28:5), and the heirs in the inheritance laws (2:233, 26:85)."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 6,
+      "basmalah_count": 0,
+      "verse_count": 3,
+      "surah_count": 3,
+      "example_refs": [
+        {
+          "surah": 15,
+          "ayah": 23
+        },
+        {
+          "surah": 21,
+          "ayah": 89
+        },
+        {
+          "surah": 28,
+          "ayah": 58
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "arabic": "الرَّشِيدُ",
+      "transliteration": "Ar-Rashid",
+      "meaning_en": "The Guide to the Right Path",
+      "root": "ر ش د",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [
+        "r~a$iyd",
+        "r~a`$iduwn"
+      ],
+      "lemma_counts": {},
+      "counting_rule": "blacklist",
+      "notes": "ZERO occurrences as the Name. rashiyd tokens: rajul rashiyd 'a right-minded man' (11:78), al-Halim ar-rashiyd mocked of ShuEayb (11:87), bi-rashiyd 'not rightly guided', Pharaoh's command (11:97), and ar-rashidun 'the rightly-guided' believers (49:7).",
+      "related_forms": [],
+      "excluded_refs": [
+        {
+          "surah": 11,
+          "ayah": 78
+        },
+        {
+          "surah": 11,
+          "ayah": 87
+        },
+        {
+          "surah": 11,
+          "ayah": 97
+        },
+        {
+          "surah": 49,
+          "ayah": 7
+        }
+      ],
+      "tanzil_raw_count": 3,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    },
+    {
+      "id": 99,
+      "arabic": "الصَّبُورُ",
+      "transliteration": "As-Sabur",
+      "meaning_en": "The Most Patient",
+      "root": "ص ب ر",
+      "count": 0,
+      "standalone_count": 0,
+      "phrase_count": 0,
+      "qac_lemmas": [],
+      "lemma_counts": {},
+      "counting_rule": "none",
+      "notes": "ZERO occurrences. The Name aS-Sabur never appears in the Quran.",
+      "related_forms": [
+        {
+          "lemma": "Sab~aAr",
+          "count": 4,
+          "note": "Sabbar 'most patient' (4 tokens, e.g. likulli Sabbar shakur) is a different word — the patient human, not the Name."
+        }
+      ],
+      "excluded_refs": [],
+      "tanzil_raw_count": 0,
+      "basmalah_count": 0,
+      "verse_count": 0,
+      "surah_count": 0,
+      "example_refs": []
+    }
+  ],
+  "totals": {
+    "names_with_count_gt_0": 75,
+    "zero_occurrence_count": 24,
+    "total_occurrences": 1120,
+    "total_unique_word_occurrences": 1119,
+    "double_counted_note": "Name 84 (Malik al-Mulk, 3:26) counts the same word that Name 3 (Al-Malik) counts, so the sum of the 99 counts (1120) exceeds the number of distinct Quranic words bearing a Name (1119) by 1. Name 85's two jala`l tokens are not counted under any other Name (Al-Jalil is 0).",
+    "distinct_verses_with_at_least_one_name": 727,
+    "distinct_surahs_with_at_least_one_name": 83,
+    "verse_edges_total": 135,
+    "verse_edges_kept": 135,
+    "verse_edges_cutoff": "Top 150 edges by weight, plus all edges with weight >= 2.",
+    "surah_edges_total": 1056
+  },
+  "zero_occurrence": [
+    20,
+    21,
+    22,
+    24,
+    25,
+    29,
+    41,
+    49,
+    57,
+    58,
+    59,
+    61,
+    64,
+    65,
+    71,
+    72,
+    86,
+    89,
+    90,
+    91,
+    92,
+    96,
+    98,
+    99
+  ]
+}
