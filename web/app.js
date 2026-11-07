@@ -198,7 +198,12 @@
       .slice(0, edgeKind === "verse" ? 200 : 120);
     graphState.nodes = top; graphState.edges = kept;
     var W = canvas.width, H = canvas.height;
-    var cx = W / 2, cy = H / 2, R = Math.min(W, H) / 2 - 70;
+    var cx = W / 2, cy = H / 2;
+    // Ring radius leaves room for the largest node circle plus its label,
+    // so outer labels never sit on (or past) the canvas edge.
+    var maxR = 0;
+    top.forEach(function (n) { maxR = Math.max(maxR, 7 + Math.sqrt(n.count || 0) * 1.6); });
+    var R = Math.min(W, H) / 2 - 70 - maxR - 16;
     graphState.pos = {};
     top.forEach(function (n, i) {
       var a = (i / top.length) * Math.PI * 2 - Math.PI / 2;
@@ -241,7 +246,12 @@
       ctx.font = "11px system-ui, sans-serif";
       ctx.textAlign = "center";
       ctx.fillStyle = dim ? "#5b6b82" : "#e8eef7";
-      ctx.fillText(n.transliteration.replace("Ar-", "").replace("Al-", ""), p.x, p.y + r + 13);
+      var label = n.transliteration.replace("Ar-", "").replace("Al-", "");
+      var tw = label.length * 6;
+      try { tw = ctx.measureText(label).width; } catch (e) { /* stubbed canvas: keep estimate */ }
+      var lx = Math.max(tw / 2 + 6, Math.min(W - tw / 2 - 6, p.x));
+      var ly = Math.max(13, Math.min(H - 4, p.y + r + 13));
+      ctx.fillText(label, lx, ly);
     });
     if (sel != null) {
       var n = namesById[sel];
