@@ -1,1 +1,1068 @@
-{"findings":[{"category":"paired_counts","claim":"The words 'world' (dunya) and 'hereafter' (akhira) each occur 115 times in the Quran.","claim_arabic_or_terms":"الدنيا / الآخرة","confidence":"confirmed by our recount","corpus_and_method":"Method not stated by the source.","id":"dunya-akhira-115","our_note":"Our substring recount on the Tanzil Uthmani text: دنيا 115, اخرة 115 — exact match.","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'paradise' (jannah) and 'hell' (jahannam) each occur 77 times.","claim_arabic_or_terms":"الجنة / جهنم","confidence":"confirmed by our recount","corpus_and_method":"Method not stated by the source.","id":"jannah-jahannam-77","our_note":"Strict forms الجنة/جنة with prefixes: 77; جهنم substring 77. (جنة substring alone is 78 — one extra is a construct form.)","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'devil' (shaytan) and 'angel' each occur 88 times.","claim_arabic_or_terms":"الشيطان / الملائكة","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"shaytan-angels-88","our_note":"Devil: شيط 70 + شياطين 18 = 88 confirmed (the plural needs the شياط pattern because the dagger alif breaks the شيط substring). Angels: ملائكة 73 confirmed; singular malak-as-angel is about 11-12 by verse inspection (6:8, 6:9, 6:50, 11:12, 11:31, 12:31, 25:7, 32:11, 53:26, 69:17, 89:22, plus dual الملكين 2:102), giving a total of about 85 — three short of 88. The form ملك/الملك totals 63 and mostly means king/sovereignty, so sense disambiguation is required.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The word 'day' (yawm) occurs 365 times, matching the days of a (Gregorian) year.","claim_arabic_or_terms":"يوم","confidence":"confirmed by our recount","corpus_and_method":"Method not stated by the source; our recount reproduces 365 only under a stated selective method (see note).","id":"day-365","our_note":"Simple forms يوم/اليوم/يوما = 274; plus prefixed ويوم 44, واليوم 23, ليوم 8, فاليوم 8, بيوم 5, باليوم 2, وباليوم 1 = 365 exactly. Caveat: suffixed forms (يومكم, يومهم, يومئذ 65+), dual يومين and plural أيام are excluded by this method; all tokens containing يوم = 590, polluted by belief verbs (يؤمنون). The Islamic calendar has 354/355 days, so the Gregorian-365 framing is itself a critique point (WikiIslam).","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The word 'month' (shahr) occurs 12 times, matching the months of a year.","claim_arabic_or_terms":"شهر","confidence":"confirmed by our recount","corpus_and_method":"Method not stated by the source; our recount reproduces 12 only under a stated selective method (see note).","id":"month-12","our_note":"Simple شهر/الشهر/شهرا = 10; plus بالشهر 1, والشهر 1 = 12 exactly. Dual شهرين (2) and plural أشهر (5) + الأشهر (1) are excluded by this method.","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The word for the (five daily) prayers (salawat) occurs 5 times.","claim_arabic_or_terms":"صلوات","confidence":"confirmed by our recount","corpus_and_method":"Method not stated by the source.","id":"salawat-5","our_note":"7 tokens match صلوات, at 2:157, 2:238, 9:99, 9:103, 11:87, 22:40, 23:9. The 5 plural صلوات are 2:157, 2:238, 9:99, 22:40, 23:9; 9:103 and 11:87 are singular صلاة written صلوة in Uthmani. Only 3 of the 5 mean 'prayers' (2:157 = blessings, 22:40 = synagogues) — WikiIslam's sense critique.","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The word 'sea' occurs 32 times and 'land' 13 times (the ratio 13/45 = 29% land, 71% sea, matching the Earth's surface).","claim_arabic_or_terms":"البحر / البر","confidence":"reported, method unclear","corpus_and_method":"Method not stated by the source.","id":"sea-land-32-13","our_note":"Sea: البحر 23 + والبحر 9 = 32 confirmed (all بحر tokens 40, incl. dual البحرين 4). Land: the البر-form total is 21 (البر 19 + prefixed forms), mixing 'land' and 'righteousness/piety' senses (e.g. 2:177); the figure 13 requires sense disambiguation we did not perform, so the pair as stated cannot be verified. The 29:71 land/sea ratio claim therefore cannot be verified as stated.","our_status":"cannot_verify","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'man' and 'woman' (singular) each occur 24 times.","claim_arabic_or_terms":"رجل / امرأة","confidence":"confirmed by our recount","corpus_and_method":"Method not stated by the source.","id":"man-woman-24-24","our_note":"Man singular (رجل family): رجل 13 + رجلا 7 + لرجل 2 + فرجل 1 + ورجلا 1 = 24. Woman singular (امرأة family): امرات 6 + امراتهي 5 + امراة 3 + وامراتهي 2 + امراتك 2 + امراتى 2 + وامراتى 1 + لامراتهو 1 + وامراة 1 + وامرات 1 = 24. Harun Yahya's own list gives 23/23 — one short on each side. With duals/plurals: man 30 (excl. feet), woman 26. Naive substrings both give 45/45 only by coincidence (رجل mixes in 13-15 foot/feet forms; امرا mixes in امرأ 'man' 19 and السامري 1).","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'life' (hayat) and 'death' (mawt) each occur 145 times.","claim_arabic_or_terms":"الحياة / الموت","confidence":"contested","corpus_and_method":"Method not stated by the source. (Note: Harun Yahya's published list does not include this pair; it circulates on other sites, e.g. quranic-miracles.com.)","id":"life-death-145","our_note":"حياة family (حيو/حيي/حيا) = 125; الحياة noun = 67. موت family = 171 (موت/ميت/مات, after removing the 22 الظلمات/ظلمات and 14 كلمات-forms false positives caught by the مات substring); الموت noun = 35; موت substring = 91. No straightforward form/root count reproduces 145/145.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'sun' (shams) and 'moon' (qamar) occur 33 and 27 times.","claim_arabic_or_terms":"الشمس / القمر","confidence":"confirmed by our recount","corpus_and_method":"Method not stated by the source.","id":"sun-moon-33-27","our_note":"شمس substring 33, قمر substring 27 — both exact.","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The name 'Muhammad' occurs 4 times in the Quran.","claim_arabic_or_terms":"محمد","confidence":"confirmed by our recount","corpus_and_method":"Method not stated by the source.","id":"muhammad-4","our_note":"محمد substring = 4.","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'belief' (iman) and 'disbelief' (kufr) each occur 25 times.","claim_arabic_or_terms":"إيمان / كفر","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"iman-kufr-25","our_note":"Naive substring counts: ايمان 86, كفر 343 — far from 25/25. The 25 figure must rest on a very narrow form selection that the source does not state.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'charity' (zakah) and 'blessing' (barakah) each occur 32 times.","claim_arabic_or_terms":"الزكاة / البركة","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"zakah-blessing-32","our_note":"زك substring 67 (incl. الزكاة, زكاة, يزكي and derived verb forms); برك substring 5. Neither side is near 32 under a simple substring count.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The word 'say' (qul) occurs 332 times and 'they said' (qalu) 332 times.","claim_arabic_or_terms":"قل / قالوا","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"say-they-said-332","our_note":"'They said' (قالوا substring) = 332 exactly. 'Say' (قل, imperative, exact-form count after stripping prefixes) = 333 — one more than the claimed 332. The قال family as a whole (substring) is 932.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'plant' and 'tree' each occur 26 times.","claim_arabic_or_terms":"نبات / شجر","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"plant-tree-26","our_note":"نبات substring 11; شجر substring 27. Plant is far from 26; tree is one over.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'reward' (thawab) and 'forgiveness' (maghfira) occur 117 and 234 times (forgiveness exactly double reward).","claim_arabic_or_terms":"ثواب / مغفرة","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"reward-forgiveness-117-234","our_note":"ثواب substring 13; مغفر substring 28. Both far from 117/234.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'guidance' (huda) and 'mercy' (rahma) each occur 79 times.","claim_arabic_or_terms":"هدى / رحمة","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"guidance-mercy-79","our_note":"هد substring 432; رحم substring 318 — polluted by الرحمن 169 and الرحيم 227, which share the root. The 79 figure must use a narrow selection the source does not state.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'tongue' (lisan) and 'sermon' (maw'iza) each occur 25 times.","claim_arabic_or_terms":"لسان / موعظة","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"tongue-sermon-25","our_note":"لسان substring 15; موعظ substring 9. Both below 25.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'wine' (khamr) and 'intoxication' (sakara) each occur 6 times.","claim_arabic_or_terms":"خمر / سكر","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"wine-intoxication-6","our_note":"خمر substring 7 (claimed 6); سكر substring 4 (claimed 6), rising to 7 with the سكارى (4:43, 22:2) and سكرة (50:19) forms — the root count WikiIslam cites. The two sides do not match as claimed.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'mind' ('aql) and 'light' (nur) each occur 49 times.","claim_arabic_or_terms":"عقل / نور","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"mind-light-49","our_note":"عقل substring 49 exactly; نور substring 46 — three short of 49. The pair matches on one side only.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'benefit' (naf') and 'corrupt' (fasad) each occur 50 times.","claim_arabic_or_terms":"نفع / فساد","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"benefit-corrupt-50","our_note":"نفع substring 45; فساد substring 11. Corrupt is far from 50.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'love' (hubb) and 'obedience' (ta'a) each occur 83 times.","claim_arabic_or_terms":"حب / طاعة","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"love-obedience-83","our_note":"حب substring 153; طاع substring 16. Neither is near 83.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'refuge' (malja') and 'forever' (abadan) each occur 28 times.","claim_arabic_or_terms":"ملجأ / أبدا","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"refuge-forever-28","our_note":"ملجا substring 3; ابدا substring 29 (one over 28). Refuge is far from 28.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'disaster' (musiba) and 'thanks' (shukr) each occur 75 times.","claim_arabic_or_terms":"مصيبة / شكر","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"disaster-thanks-75","our_note":"مصيب substring 11; شكر substring 47. Both below 75.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'trouble' (durr) and 'peace' (salam) each occur 13 times.","claim_arabic_or_terms":"ضر / سلام","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"trouble-peace-13","our_note":"ضر substring 162 (incl. الضرر, يضر and derived forms); سلم substring 84 (incl. السلام, مسلم and derived forms). The 13 figure must use a narrow selection the source does not state.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'treachery' (khiyana) and 'foul' (khabith) each occur 16 times.","claim_arabic_or_terms":"خيانة / خبيث","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"treachery-foul-16","our_note":"خيان substring 2; خبيث substring 13. Both below 16.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'righteous' (salih) and 'wicked' (talih) occur 6 and 3 times.","claim_arabic_or_terms":"صالح / طالح","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"righteous-wicked-6-3","our_note":"صلح substring 37; طلح substring 1 (56:29). WikiIslam's literal-form recount gives 5 vs 2, not 6 vs 3.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The words 'summer-hot' and 'winter-cold' each occur 5 times.","claim_arabic_or_terms":"صيف / شتاء","confidence":"contested","corpus_and_method":"Method not stated by the source.","id":"summer-winter-5","our_note":"صيف (summer) substring 1; شتاء (winter) substring 3. The words 'summer' and 'winter' barely occur as such; WikiIslam notes heat 4 and cold 3 (our برد substring is 4). The 5/5 pair does not reproduce.","our_status":"differs","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"The word 'human being' (insan) occurs 65 times.","claim_arabic_or_terms":"إنسان","confidence":"confirmed by our recount","corpus_and_method":"Method not stated by the source.","id":"human-being-65","our_note":"انسان substring = 65 exactly. The creation-stage reading (the stages of human creation summing to 65) does not reproduce: تراب 20 + نطفة 12 + علقة 7 + مضغة 3 + عظام 13 + لحم 58 = 113 by substring.","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"paired_counts","claim":"Harun Yahya (Adnan Oktar) popularised the paired-count list in his book Miracles of the Qur'an.","claim_arabic_or_terms":null,"confidence":"reported, method unclear","corpus_and_method":"Literature fact; the full list is published at harunyahya.info (fetched 2026-11-06). Method not stated in the source.","id":"harun-yahya-populariser","our_note":"The list as published at harunyahya.info does not include life/death 145; that claim circulates on other sites (e.g. quranic-miracles.com).","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar)","title":"Miracles of the Qur'an (Goodword Books, 2005) — 'Word Repetitions in the Qur'an'","url":"https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran","year":2005}},{"category":"letter_counts","claim":"The letter Qaf occurs 57 times in surah 50 (Qaf) and 57 times in surah 42 (Shura) — 57 + 57 = 114.","claim_arabic_or_terms":"ق","confidence":"confirmed by our recount","corpus_and_method":"Letter counting under our stated convention (see meta). Khalifa's headline finding.","id":"qaf-57-57","our_note":"ق in surah 50 = 57 and in surah 42 = 57, confirmed by our recount.","our_status":"confirmed","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"letter_counts","claim":"The letter Nun occurs 133 times in surah 68 (Qalam).","claim_arabic_or_terms":"ن","confidence":"contested","corpus_and_method":"Letter counting under our stated convention (see meta).","id":"nun-132-vs-133","our_note":"ن in surah 68 = 132 by our recount. Khalifa's 133 requires counting the spelled-out name 'Noon' (ن و ن) as 2 nuns; the orthodox written initial is a single ن.","our_status":"differs","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"letter_counts","claim":"The letter Sad occurs 152 times across surahs 7, 19 and 38 (97 + 26 + 29).","claim_arabic_or_terms":"ص","confidence":"contested","corpus_and_method":"Letter counting under our stated convention (see meta).","id":"sad-153-vs-152","our_note":"ص: surah 38 = 29, surah 7 = 98, surah 19 = 26; total 153. Khalifa's 152 requires 97 in surah 7, which requires reading 7:69 as بسطة with س (Samarkand codex spelling); the Tanzil file reads بصطة with ص.","our_status":"differs","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"letter_counts","claim":"29 surahs open with disconnected letters (muqatta'at), using 14 distinct letters, 78 initial letters in total.","claim_arabic_or_terms":"الم، المص، الر، المر، كهيعص، طه، طسم، طس، يس، ص، حم، حم عسق، ق، ن","confidence":"confirmed by our recount","corpus_and_method":"First-verse check on the Tanzil file after stripping the merged unnumbered basmalah; structure per Sayoud (2013) and SeekersGuidance.","id":"muqattaat-structure-29-14-78","our_note":"The expected initials match in 28/29 surahs from verse 1; surah 42's عسق is in verse 2 (42:1 is حم, 42:2 is عسق). Distinct initial letters 14 (ا ل م ص ر ك ه ي ع ط س ح ق ن); total initial letters 78 (3 monograms, 10 bigrams, 13 trigrams, 2 tetragrams, 1 pentagram).","our_status":"confirmed","source":{"author":"Khalifa Sayoud (and SeekersGuidance, Shaykh Anas al-Musa)","title":"'Quranic Descriptors' / 'What is the total number of words, verses, and letters in the Quran?'","url":"https://seekersguidance.org/answers/quran/what-is-the-total-number-of-words-verses-and-letters-in-the-quran/","year":2013}},{"category":"letter_counts","claim":"Two verses contain all 28 letters of the Arabic alphabet: 3:154 and 48:29.","claim_arabic_or_terms":null,"confidence":"confirmed by our recount","corpus_and_method":"Distinct-letter count per verse on the Tanzil file.","id":"all-28-letters-verses","our_note":"3:154 and 48:29 each have 28 distinct letters, none missing — confirmed by our recount.","our_status":"confirmed","source":{"author":"Classical observation, cited in Sayoud (2013) and Quran-code literature","title":"Quranic letter-count literature","url":"https://submission.org/App1.html","year":null}},{"category":"letter_counts","claim":"The longest word in the Quran is fa'asqaynakumuhu (15:22), with 11 letters.","claim_arabic_or_terms":"فَأَسْقَيْنَاكُمُوهُ","confidence":"contested","corpus_and_method":"Letter counting under our stated convention (see meta).","id":"longest-word-fasqaynakumuhu","our_note":"فأسقيناكموه (15:22) is 10 letters under our convention (the dagger alif is a mark, not a letter); the longest words are والمستغفرين (3:17) and والمستضعفين (4:75, 4:127) at 11 letters. Under a convention counting the dagger alif as a letter, فأسقيناكموه is 11 letters and tied for longest. Convention-dependent.","our_status":"differs","source":{"author":"Classical observation, repeated in modern Quran-statistics pages","title":"'How long is a Quran?' (calendar-uk FAQ, citing the classical claim)","url":"https://www.calendar-uk.co.uk/frequently-asked-questions/how-long-is-a-quran","year":null}},{"category":"letter_counts","claim":"The phrase 'seven heavens' (sab' samawat) occurs in 7 verses.","claim_arabic_or_terms":"سبع سماوات","confidence":"confirmed by our recount","corpus_and_method":"Verse-level substring search on the Tanzil file.","id":"seven-heavens-7","our_note":"7 verses contain سبع + سماوات (2:29, 17:44, 23:86, 41:12, 65:12, 67:3, 71:15); plus 1 'seven paths' (23:17 طرائق) and 2 'seven strong' (12:48 seven hard years; 78:12 seven strong heavens) = 9 total سبع + heaven-ish verses, matching WikiIslam's analysis.","our_status":"confirmed","source":{"author":"Harun Yahya (Adnan Oktar), with WikiIslam's verse-by-verse analysis","title":"Miracles of the Qur'an; WikiIslam, 'Word Count Miracles in the Qur'an'","url":"https://wikiislam.net/index.php?title=Word_Count_Miracles_in_the_Qur%27an","year":2005}},{"category":"code19","claim":"The Basmalah consists of 19 letters, occurs 114 times in the Quran, and the Quran has 114 surahs = 19 x 6.","claim_arabic_or_terms":"بسم الله الرحمن الرحيم","confidence":"confirmed by our recount","corpus_and_method":"Letter counting under our stated convention (see meta); occurrence count on the Tanzil file.","id":"basmalah-19-letters-114","our_note":"Basmalah = 19 letters under our convention; occurs 114 times in the text (113 at surah starts + 27:30); 114 surahs = 19 x 6.","our_status":"confirmed","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"The word 'Allah' (God) occurs 2,698 times in the Quran = 19 x 142.","claim_arabic_or_terms":"الله","confidence":"confirmed by our recount","corpus_and_method":"Lemma count (all forms of the name, incl. prefixed/clitic forms) on the Tanzil file, excluding the 112 unnumbered basmalahs (see note for the reconciliation).","id":"allah-2699","our_note":"Lemma count excl. 112 unnumbered basmalahs = 2,699 exactly (incl. basmalahs 2,801; strict surface الله 2,267). The 2,699 includes the oath forms تالله/وتالله (9) and interrogative أبالله (1). Dropping 9:129 (one of Khalifa's two rejected verses) gives his 2,698 = 19 x 142. (QuranCodex's 'strict surface 2,155' differs — method unstated.)","our_status":"confirmed","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"The names 'Rahman' (Most Gracious) and 'Rahim' (Most Merciful) occur 57 (= 19 x 3) and 114 (= 19 x 6) times.","claim_arabic_or_terms":"الرحمن / الرحيم","confidence":"confirmed by our recount","corpus_and_method":"Lemma count on the Tanzil file, excluding the 112 unnumbered basmalahs (see note).","id":"rahman-57-rahim-115","our_note":"Rahman lemma excl. unnumbered basmalahs = 57 = 19 x 3 (incl. basmalahs 169). Rahim lemma excl. basmalahs = 115; Khalifa's 114 = 115 minus the رحيم in 9:128, one of his two rejected verses.","our_status":"confirmed","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"The word 'ism' (name) in its full spelling occurs 19 times.","claim_arabic_or_terms":"اسم","confidence":"confirmed by our recount","corpus_and_method":"Exact-form count on the Tanzil file (plural أسماء excluded, per Khalifa's 'no plural forms' rule).","id":"ism-19","our_note":"اسم 14 + باسم 4 + الاسم 1 = 19; plural أسماء (skeletonised اسما, 4 occurrences) excluded. Contracted بسم = 115 (114 basmalahs + 11:41).","our_status":"confirmed","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"The first revelation (96:1-5) consists of 19 words.","claim_arabic_or_terms":null,"confidence":"contested","corpus_and_method":"Whitespace token count on the Tanzil file, excluding the merged basmalah.","id":"first-revelation-words-19","our_note":"96:1-5 has 20 whitespace tokens excl. basmalah (اقرأ باسم ربك الذي خلق / خلق الإنسان من علق / اقرأ وربك الأكرم / الذي علم بالقلم / علم الإنسان ما لم يعلم); 24 incl. basmalah. Khalifa's 19 is one short.","our_status":"differs","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"The first revelation (96:1-5) consists of 76 letters.","claim_arabic_or_terms":null,"confidence":"confirmed by our recount","corpus_and_method":"Letter counting under our stated convention (see meta), excluding the merged basmalah.","id":"first-revelation-letters-76","our_note":"96:1-5 = 76 letters excl. basmalah under our convention — confirmed.","our_status":"confirmed","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"Surah 96 has 19 verses and 304 letters in total.","claim_arabic_or_terms":null,"confidence":"confirmed by our recount","corpus_and_method":"Verse count (standard Hafs table) and letter counting under our stated convention (see meta).","id":"surah-96-19-verses-304-letters","our_note":"Surah 96 has 19 verses (standard) and 304 letters by our recount — Khalifa's figures exactly.","our_status":"confirmed","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"Surah 110 consists of 19 words (excluding the Basmalah), and its first verse consists of 19 letters.","claim_arabic_or_terms":null,"confidence":"confirmed by our recount","corpus_and_method":"Whitespace token count and letter counting under our stated convention (see meta), excluding the merged basmalah.","id":"surah-110-19-words","our_note":"Surah 110 = 19 words excl. basmalah; verse 110:1 = 19 letters excl. basmalah — confirmed.","our_status":"confirmed","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"The sum of the verse numbers of all verses containing the word 'Allah' is 118,123 = 19 x 6,217.","claim_arabic_or_terms":null,"confidence":"confirmed by our recount","corpus_and_method":"Verse-number sum over verses containing the Allah lemma, on the Tanzil file (see note for the two conditions required).","id":"verse-number-checksum-118123","our_note":"The sum is 118,123 exactly — but only under two conditions: excluding the 112 unnumbered basmalahs AND excluding Khalifa's two rejected verses 9:128-129 (only 9:129 contains Allah, verse number 129; 118,252 - 129 = 118,123). Without those exclusions the sum is 118,340. Khalifa's figure is therefore confirmed as a property of his edited text, not of the standard text.","our_status":"confirmed","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"The total number of verses in the Quran is 6,346 = 19 x 334 (6,234 numbered verses + 112 unnumbered Basmalahs).","claim_arabic_or_terms":null,"confidence":"contested","corpus_and_method":"Standard Hafs count is 6,236 verses; Khalifa's figure rests on counting basmalahs as verses and deleting 9:128-129.","id":"khalifa-verse-total-6346","our_note":"The arithmetic checks out (6,236 + 112 - 2 = 6,346) but the deletion of 9:128-129 is the contested step: with those verses the Allah count would be 2,699 not 2,698 and Rahim 115 not 114. The scholarly consensus rejects the deletion (see the reception finding).","our_status":"differs","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"code19","claim":"Khalifa's 19-based 'mathematical miracle' was published from 1973-1989 and drew both praise and sustained scholarly/skeptical criticism.","claim_arabic_or_terms":null,"confidence":"reported, method unclear","corpus_and_method":"Literature review (bibliographic sources, verified by web search 2026-11-06).","id":"khalifa-reception","our_note":"Timeline: initials research from 1969; Miracle of the Quran: Significance of the Mysterious Alphabets (1973); the 19-code claimed January 1974; The Computer Speaks: God's Message to the World (1981); Quran: Visual Presentation of the Miracle (1982); Quran: The Final Testament translation (1989). Reception: Martin Gardner, Scientific American, September 1980, p. 22 ('ingenious study...'); critical review in Skeptical Inquirer 21(5), September-October 1997, pp. 16-17, 58; Canadian Council on the Study of Religion, Quarterly Review, April 1983 (quoted by proponents as calling it 'an authenticating proof'); Bilal Philips, The Qur'an's Numerical Miracle: Hoax and Heresy (1987); Ziauddin Sardar, Explorations in Islamic Science (1989) on the Nun spelling and letter-count selectivity; Edip Yüksel (proponent), Nineteen: God's Signature in Nature and Scripture (Brainbow Press, 2011); Abdullah Arik, Beyond Probability (2012); Matthew Stanley, A Miracle on Trial (2016). Submission.org's own 2002 recount confirmed Khalifa's initial counts 'except for a few counts' (submission.org/App1.html).","our_status":"confirmed","source":{"author":"Rashad Khalifa; Martin Gardner; Bilal Philips; Ziauddin Sardar; Edip Yüksel","title":"Quran: The Final Testament (1989); Scientific American (1980); The Qur'an's Numerical Miracle: Hoax and Heresy (1987)","url":"https://submission.org/App1.html","year":1989}},{"category":"corpus_linguistics","claim":"The Quran contains 77,429 words (Quranic Arabic Corpus FAQ) / 77,430 words (release notes).","claim_arabic_or_terms":null,"confidence":"confirmed by our recount","corpus_and_method":"QAC v0.4 morphological annotation; our recount on the Tanzil Uthmani text.","id":"qac-word-count-77429","our_note":"Our recount: 77,881 whitespace tokens incl. basmalahs; 77,433 excl. 112 unnumbered basmalahs — 3-4 above the published figures, attributed to word-boundary conventions (known cause: 37:130 آل ياسين is 2 words in Tanzil Uthmani vs 1 in QAC).","our_status":"confirmed","source":{"author":"Kais Dukes, University of Leeds","title":"Quranic Arabic Corpus — FAQ and release notes","url":"https://corpus.quran.com/faq.jsp","year":2009}},{"category":"corpus_linguistics","claim":"The Quran has 18,994 unique surface forms, 12,183 unique stems, 1,685 unique roots and 3,382 unique lemmas (QAC annotation).","claim_arabic_or_terms":null,"confidence":"confirmed by our recount","corpus_and_method":"QAC v0.4 annotation (Dukes' 2013 primary-source answer); our recount on the Tanzil Uthmani text for the surface-form figure only.","id":"dukes-unique-words","our_note":"Dukes: unique surface forms 18,994 — our raw unique count is 18,994 exactly. Skeletonised unique forms 14,881. His stem/root/lemma figures (12,183 / 1,685 / 3,382) were not recounted (they need the QAC annotation). Dukes' estimate: 'at most 7,000 unique words'.","our_status":"confirmed","source":{"author":"Kais Dukes","title":"'Number of Unique Words in the Quran' (primary-source answer, Quickest Way to the Quran blog)","url":"https://quickestwaytoquran.blogspot.com/2013/08/number-of-unique-words-in-the-quran.html","year":2013}},{"category":"corpus_linguistics","claim":"The Quranic Arabic Corpus provides manually verified morphological annotation of the whole Quran (128,076 morphemes), about 99% accurate, reviewed in stages by two annotators.","claim_arabic_or_terms":null,"confidence":"reported, method unclear","corpus_and_method":"QAC v0.4 release notes; verifying needs the QAC data itself, not the plain text.","id":"qac-morphology","our_note":"Treebank covered 40% by word count in v0.4. Not recounted here (the annotation layer is the sibling agents' and the data pipeline's work).","our_status":"cannot_verify","source":{"author":"Kais Dukes, University of Leeds","title":"Quranic Arabic Corpus — release notes","url":"https://corpus.quran.com/releasenotes.jsp","year":2011}},{"category":"corpus_linguistics","claim":"The Tanzil Quran Text (Uthmani) is derived from the Medina Mushaf, Hafs narration, distributed under CC BY 3.0 with verbatim redistribution only.","claim_arabic_or_terms":null,"confidence":"reported, method unclear","corpus_and_method":"Tanzil project documentation; the corpus file used for all recounts here is Tanzil Uthmani v1.1.","id":"tanzil-provenance","our_note":"File header and tanzil.net/download confirm the provenance. This is the text all our spot-recounts ran against.","our_status":"confirmed","source":{"author":"Tanzil Project","title":"Tanzil — Quran Text (Uthmani), download and FAQ","url":"https://tanzil.net/download","year":null}},{"category":"corpus_linguistics","claim":"Text-Fabric Quran (Roorda & van Lit, 2019) re-expresses the Quranic Arabic Corpus morphology as linked open data.","claim_arabic_or_terms":null,"confidence":"reported, method unclear","corpus_and_method":"GitHub q-ran/quran; Zenodo DOI 10.5281/zenodo.2532177; built from QAC 0.4 morphology + Tanzil Uthmani v1.0.2; CC-BY 4.0. Not used in our recounts.","id":"text-fabric-quran","our_note":"Roorda (2018), 'Text-Fabric: Text representation for linguistic annotation', Research Data Journal for the Humanities and Social Sciences 3(1), 1-23. The dataset itself was not re-analysed here.","our_status":"cannot_verify","source":{"author":"Dirk Roorda & Cornelis van Lit","title":"Text-Fabric Quran (2019)","url":"https://github.com/q-ran/quran","year":2019}},{"category":"corpus_linguistics","claim":"Root-frequency studies of the Quran (QAC 0.4) find about 1,650 roots; the most frequent root is Alh (Allah), about 2,851 occurrences.","claim_arabic_or_terms":"أ-ل-ه","confidence":"reported, method unclear","corpus_and_method":"Corpus-based root counts from QAC 0.4 morphology (abdulbaqi.io 2019; thequran.love 2026; Malkoç 2025). Root counting is the sibling agents' task; not recounted here.","id":"root-frequency-studies","our_note":"abdulbaqi.io (2019): 1,651 roots; top roots Alh 2,851, qwl 1,722, kwn 1,390, rbb 980 (data file quranic-corpus-morphology-0.4.txt, 128,276 lines). Zia H Shah / thequran.love (2026): 1,642 roots, verbal-only counts (qwl 1,618, kwn 1,358), 49,967 root-bearing tokens (64.5%). Muzaffer Malkoç, Beauty as Method (Zenodo, 2025): root concordance via Tanzil + Abd al-Baqi's al-Mu'jam al-Mufahras, e.g. Ḥ-S-N 194. Note the Alh root count (2,851) is a different unit from the Allah lemma count (2,699).","our_status":"cannot_verify","source":{"author":"Abdul Baqi / Kais Dukes (QAC 0.4 data)","title":"'Standing on the shoulder of Giants' (abdulbaqi.io, 2019)","url":"https://abdulbaqi.io/2019/01/01/standing-on-the-shoulder-of-giants/","year":2019}},{"category":"corpus_linguistics","claim":"The most frequent word in the Quran is 'min' (from), 3,226 times, followed by 'Allah' 2,699 and 'ma' 2,565.","claim_arabic_or_terms":"من / الله / ما","confidence":"contested","corpus_and_method":"wordsofquran.com, from QAC v0.4; our recount on the Tanzil file for the min lemma.","id":"most-frequent-min-3226","our_note":"Our min lemma recount = 3,314 (من 2,763 + ومن 342 + لمن 94 + فمن 90 + بمن 10 + كمن 9 + ولمن 5 + وبمن 1) — 88 above the published 3,226, method unclear. (wordsofquran.com also gives 4,832 unique lemmas of ~77,797 total words — figures that differ from Dukes' own, definitional.)","our_status":"differs","source":{"author":"Words of Quran (QAC v0.4 data)","title":"wordsofquran.com — most frequent words","url":"https://wordsofquran.com/","year":null}},{"category":"corpus_linguistics","claim":"Classical authorities give the Quran's word total as 77,439 (with variants 77,430 / 77,437 / 77,797 / 77,934).","claim_arabic_or_terms":null,"confidence":"confirmed by our recount","corpus_and_method":"Classical counts (al-Suyuti, al-Itqan; Basra reciters; Ata' bin Yasar); our recount on the Tanzil file.","id":"classical-word-totals","our_note":"Our 77,433 (excl. unnumbered basmalahs) is 6 below the lowest classical figure (77,439) — within the spread of counting conventions. Kufan reciters recorded 77,430, Basran 77,437 (arabiantongue.com).","our_status":"confirmed","source":{"author":"al-Suyuti (via SeekersGuidance, Shaykh Anas al-Musa)","title":"al-Itqan fi 'Ulum al-Qur'an — classical word and letter totals","url":"https://seekersguidance.org/answers/quran/what-is-the-total-number-of-words-verses-and-letters-in-the-quran/","year":null}},{"category":"corpus_linguistics","claim":"Classical authorities give the Quran's letter total as 323,671 (with variants 323,015 / 330,733).","claim_arabic_or_terms":null,"confidence":"contested","corpus_and_method":"Classical counts (al-Suyuti via Yahya ibn al-Harith and others); our recount on the Tanzil file under a stated convention (see meta).","id":"classical-letter-totals","our_note":"Our 325,386 (excl. unnumbered basmalahs) matches none of the classical figures exactly; the classical sources disagree among themselves by up to 7,718 (323,015 vs 330,733), and further variants exist (Mujahid 321,000; Ibn Mas'ud 300,670; Salam Abu Muhammad 340,740), so no single letter total is settled. The variation is partly definitional (e.g. whether a doubled letter counts as one or two).","our_status":"differs","source":{"author":"al-Suyuti (via SeekersGuidance, Shaykh Anas al-Musa)","title":"al-Itqan fi 'Ulum al-Qur'an — classical word and letter totals","url":"https://seekersguidance.org/answers/quran/what-is-the-total-number-of-words-verses-and-letters-in-the-quran/","year":null}},{"category":"corpus_linguistics","claim":"A Tanzil-based reproducible count (RDS-Q No. 4, Mulyana 2020) gives 77,430 words for the Quran.","claim_arabic_or_terms":null,"confidence":"confirmed by our recount","corpus_and_method":"Tanzil Uthmani text, unnumbered basmalahs excluded; our recount on the same text.","id":"rdsq-words-77430","our_note":"Ours 77,433 — differs by 3 (word-boundary conventions; known cause: 37:130 آل ياسين is 2 words in Tanzil Uthmani vs 1 in QAC). RDS-Q also notes odd/even verse-group word totals 38,716 / 38,714.","our_status":"confirmed","source":{"author":"Eueung Mulyana","title":"RDS-Q No. 4 — Quran Statistical Overview and Analysis (2020)","url":"https://www.scribd.com/document/550406160/RDS-Q-004","year":2020}},{"category":"corpus_linguistics","claim":"A Tanzil-based reproducible count (RDS-Q No. 4, Mulyana 2020) gives 325,666 letters for the Quran (unnumbered basmalahs excluded).","claim_arabic_or_terms":null,"confidence":"contested","corpus_and_method":"Tanzil Uthmani text, unnumbered basmalahs excluded; our recount on the same text under a stated convention (see meta).","id":"rdsq-letters-325666","our_note":"Ours 325,386 — 280 fewer under our letter convention (dagger alif/small waw/small yeh not counted as letters; alef wasla counted). The exact cause of the 280 gap is unidentified. RDS-Q notes Dukes' figure of 623,638 counts 'join letters and diacritics/harakah' — a different unit.","our_status":"differs","source":{"author":"Eueung Mulyana","title":"RDS-Q No. 4 — Quran Statistical Overview and Analysis (2020)","url":"https://www.scribd.com/document/550406160/RDS-Q-004","year":2020}},{"category":"corpus_linguistics","claim":"The Quran's verse/word/letter distributions can be fitted statistically (Botani 2012, using QuranCode software): 6,348 verses, 77,878 words, 327,792 letters.","claim_arabic_or_terms":null,"confidence":"reported, method unclear","corpus_and_method":"QuranCode software (Adams 2011), counting basmalahs as verses; distributions fitted as Exponential/Gamma. Not recounted.","id":"botani-2012-distributions","our_note":"Botani (2012), 'Probability Distributions of the Verses, Words, and Letters of the Holy Quran', International Journal of Mathematical and Computational Applications Research 2(3), 27-34. The higher totals come from counting basmalahs as verses and a different word/letter convention.","our_status":"cannot_verify","source":{"author":"Delshad Shaker Ismael Botani, Salahaddin University-Hawler","title":"'Probability Distributions of the Verses, Words, and Letters of the Holy Quran', IJMCAR 2(3), 27-34","url":"https://www.academia.edu/13913774/Probability_Distributions_of_the_Verses_Words_and_Letters_of_the_Holy_Quran","year":2012}},{"category":"corpus_linguistics","claim":"The word 'Quran' itself occurs 57 times in the Quran.","claim_arabic_or_terms":"القرآن","confidence":"contested","corpus_and_method":"Substring and narrow-selection counts on the Tanzil file.","id":"quran-word-57-khalifa","our_note":"Full substring count of قرآن = 71; narrow selection القرآن + والقرآن + بالقرآن + قرآنا = 59 under our skeleton (57 under an earlier normalisation, because قرانا went 7 to 9). The claimed 57 does not reproduce under either selection; the method behind it is unclear.","our_status":"differs","source":{"author":"Rashad Khalifa","title":"Appendix 1, Quran: The Final Testament (Authorized English Version)","url":"https://submission.org/App1.html","year":1989}},{"category":"corpus_linguistics","claim":"WikiIslam's 'Word Count Miracles in the Qur'an' documents, verse by verse, the selective counting tactics behind the paired-count claims.","claim_arabic_or_terms":null,"confidence":"reported, method unclear","corpus_and_method":"Corpus-based critique using actual verse counts (fetched 2026-11-06).","id":"wikiislam-critique","our_note":"Sub-articles cover 365 days, month 12, dunya/akhira 115, paradise/hell 77, iman/kufr 25, land/water ratio, tongue/sermon 25, shaytan/angel 88, life/death 145, zakah/blessing 32, sun/light 33. Documents selective tactics (prefix/suffix inclusion, plural/singular mixing, sense conflation, cherry-picking). Quoted scholarly refutations: Dr. Zahid Aziz ('no rule or principle for determining which word... must always occur a special number of times'); Dr. Ashraf 'Abd al-Razzaaq Qatanah ('the numerical miracle as presented in these books is not real at all'); Dr. Fahd al-Roomi (on the 365-day count excluding يومكم / يومهم / يومئذ).","our_status":"confirmed","source":{"author":"WikiIslam","title":"'Word Count Miracles in the Qur'an'","url":"https://wikiislam.net/index.php?title=Word_Count_Miracles_in_the_Qur%27an","year":null}},{"category":"corpus_linguistics","claim":"The Quranic Arabic Corpus is an annotated linguistic resource for Classical Arabic (Dukes & Atwell 2012; Dukes PhD 2013).","claim_arabic_or_terms":null,"confidence":"reported, method unclear","corpus_and_method":"Peer-reviewed papers; the treebank itself was not re-analysed here.","id":"dukes-atwell-2012","our_note":"Dukes & Atwell (2012), 'The Quranic Arabic Corpus: An annotated linguistic resource', Language Resources and Evaluation 46(3), 475-489, DOI 10.1007/s10579-012-9205-0; Dukes & Habash (2010), 'Morphological Annotation of Quranic Arabic', LREC 2010; Dukes, Atwell & Sharaf (2010), syntactic annotation guidelines, LREC 2010; Dukes & Atwell (2012), LAMP platform, LREC'12; Dukes PhD thesis (2013), Statistical Parsing by Machine Learning from a Classical Arabic Treebank, University of Leeds. The corpus and its annotation are the primary source for the app's morphology work.","our_status":"cannot_verify","source":{"author":"Kais Dukes & Eric Atwell","title":"'The Quranic Arabic Corpus: An annotated linguistic resource', Language Resources and Evaluation 46(3), 475-489","url":"https://doi.org/10.1007/s10579-012-9205-0","year":2012}},{"category":"corpus_linguistics","claim":"About 1,620 words occur only once in the Quran (hapax legomena).","claim_arabic_or_terms":null,"confidence":"reported, method unclear","corpus_and_method":"Lemma-based count (arabiantongue.com); our surface-form hapax is a different unit and is not comparable.","id":"hapax-legomena","our_note":"Our surface-form hapax (raw whitespace tokens occurring once) = 12,005 — a different unit from the lemma-based ~1,620, so the two figures cannot be compared directly. The lemma-based figure was not recounted (it needs the QAC annotation).","our_status":"cannot_verify","source":{"author":"arabiantongue.com","title":"'How Many Words Are in the Quran?'","url":"https://arabiantongue.com/blog/how-many-words-are-in-the-quran/","year":2026}}],"meta":{"corpus":"Tanzil Quran Text, Uthmani script (corpus/quran-uthmani.txt), 6,236 verses, downloaded 2026-11-06 from tanzil.net","date":"2026-11-06","project":"miracleMath — scholar findings on the Quran corpus","recount_method":"Whitespace tokens. Skeleton normalisation for matching: diacritics/tatweel removed; hamza variants normalised (أ إ آ ٱ → ا, ؤ → و, ئ → ي, ء dropped); dagger alif ٰ → ا, small waw ۥ → و, small yeh ۦ → ي are kept as letters for matching. Letter-counting convention: base letters count, including alef wasla ٱ as ا; dagger alif, small waw and small yeh are marks and do NOT count; standalone hamza ء counts. This convention reproduces the anchors: basmalah = 19 letters, 96:1-5 = 76 letters, 110:1 = 19 letters. 'Excl. unnumbered basmalahs' means excluding the 112 basmalahs merged into verse 1 of surahs 2-8 and 10-114 (the 2 numbered basmalahs, 1:1 and 27:30, are kept). Surah boundaries use the standard Hafs verse-count table (sums to 6,236).","tally":{"cannot_verify":7,"confirmed":29,"differs":28,"total":64},"warning":"Disputed numerology is presented here as reported findings with a source and a status — never as settled fact. our_status 'confirmed' means our own scripted recount on the Tanzil file reproduces the claimed figure under a stated method; 'differs' means it does not; 'cannot_verify' means no recount was possible or the claim needs sense disambiguation."}}
+{
+ "findings": [
+  {
+   "category": "paired_counts",
+   "claim": "The words 'world' (dunya) and 'hereafter' (akhira) each occur 115 times in the Quran.",
+   "claim_arabic_or_terms": "الدنيا / الآخرة",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "dunya-akhira-115",
+   "our_note": "Our substring recount on the Tanzil Uthmani text: دنيا 115, اخرة 115 — exact match.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'paradise' (jannah) and 'hell' (jahannam) each occur 77 times.",
+   "claim_arabic_or_terms": "الجنة / جهنم",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "jannah-jahannam-77",
+   "our_note": "Strict singular forms (الجنة/جنة with prefixes: الجنة 56 + جنة 18 + وجنة 2 + بالجنة 1) = 77; جهنم substring 77. The جنة substring alone is 78 — the one extra token is أَجِنَّةٌ (ajinnah, 'fetuses', 53:32), not a form of 'garden' (an earlier draft of this note called it a construct form). The popular 77/77 claim counts singular 'garden' only. Counting every garden by root/lemma (QAC lemma jan~ap: singular 71 + plural جنات 69 + dual 7) gives 147 — that is the 147 in Agent 1's heaven/hell pair (147:77), while hell (jahannam) is 77 under both rules. Both numbers are true under different stated rules: singular garden vs all gardens.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'devil' (shaytan) and 'angel' each occur 88 times.",
+   "claim_arabic_or_terms": "الشيطان / الملائكة",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "shaytan-angels-88",
+   "our_note": "Devils: شيط 70 + شياطين 18 = 88. Angels: QAC lemma malak = 88 — plural ملائكة 73 + 13 singular + 2 duals (الملكين 2:102, ملكين 7:20). The singulars: 6:8 ×2 (ملك and ملكا — two tokens in one verse), 6:9, 6:50, 11:12, 11:31, 12:31, 17:95, 25:7, 32:11 (ملك الموت, Angel of Death), 53:26, 69:17, 89:22. Our earlier note counted only 12 non-plural forms (missing the second 6:8 token, the 7:20 dual and 17:95) and so stopped three short at about 85. The pair 88:88 is confirmed. Note: the bare surface form ملك/الملك totals 63 and mostly means 'king/sovereignty' — sense disambiguation is required, which the lemma count provides.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The word 'day' (yawm) occurs 365 times, matching the days of a (Gregorian) year.",
+   "claim_arabic_or_terms": "يوم",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source; our recount reproduces 365 only under a stated selective method (see note).",
+   "id": "day-365",
+   "our_note": "Simple forms يوم/اليوم/يوما = 274; plus prefixed ويوم 44, واليوم 23, ليوم 8, فاليوم 8, بيوم 5, باليوم 2, وباليوم 1 = 365 exactly. Caveat: suffixed forms (يومكم, يومهم, يومئذ 65+), dual يومين and plural أيام are excluded by this method; all tokens containing يوم = 590, polluted by belief verbs (يؤمنون). The Islamic calendar has 354/355 days, so the Gregorian-365 framing is itself a critique point (WikiIslam).",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The word 'month' (shahr) occurs 12 times, matching the months of a year.",
+   "claim_arabic_or_terms": "شهر",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source; our recount reproduces 12 only under a stated selective method (see note).",
+   "id": "month-12",
+   "our_note": "Simple شهر/الشهر/شهرا = 10; plus بالشهر 1, والشهر 1 = 12 exactly. Dual شهرين (2) and plural أشهر (5) + الأشهر (1) are excluded by this method.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The word for the (five daily) prayers (salawat) occurs 5 times.",
+   "claim_arabic_or_terms": "صلوات",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "salawat-5",
+   "our_note": "7 tokens match صلوات, at 2:157, 2:238, 9:99, 9:103, 11:87, 22:40, 23:9. The 5 plural صلوات are 2:157, 2:238, 9:99, 22:40, 23:9; 9:103 and 11:87 are singular صلاة written صلوة in Uthmani. Only 3 of the 5 mean 'prayers' (2:157 = blessings, 22:40 = synagogues) — WikiIslam's sense critique.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The word 'sea' occurs 32 times and 'land' 13 times (the ratio 13/45 = 29% land, 71% sea, matching the Earth's surface).",
+   "claim_arabic_or_terms": "البحر / البر",
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "sea-land-32-13",
+   "our_note": "Sea: البحر 23 + والبحر 9 = 32 confirmed (all بحر tokens 40, incl. dual البحرين 4). Land: the البر-form total is 21 (البر 19 + prefixed forms), mixing 'land' and 'righteousness/piety' senses (e.g. 2:177); the figure 13 requires sense disambiguation we did not perform, so the pair as stated cannot be verified. The 29:71 land/sea ratio claim therefore cannot be verified as stated.",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'man' and 'woman' (singular) each occur 24 times.",
+   "claim_arabic_or_terms": "رجل / امرأة",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source. (Note: Harun Yahya's published list gives 23/23; the 24/24 figure is from the circulating Al-Suwaidan/Elias list.)",
+   "id": "man-woman-24-24",
+   "our_note": "Man singular (رجل family): رجل 13 + رجلا 7 + لرجل 2 + فرجل 1 + ورجلا 1 = 24. Woman singular (امرأة family): امرات 6 + امراتهو 5 + امراة 3 + وامراتهو 2 + امراتك 2 + امراتى 2 + وامراتى 1 + لامراتهي 1 + وامراة 1 + وامرات 1 = 24. (An earlier draft of this note mislabelled the -hu/-hi suffixes as امراتهي/لامراتهو — corrected here.) Harun Yahya's own list gives 23/23 — one short on each side — so the 24/24 figure belongs to the circulating Al-Suwaidan/Elias list, not to Yahya. With duals (plurals excluded): man 30, woman 26; with plurals (رجال 27, نساء 59) the root totals are 57/85. Naive substrings: رجل 45, امرا 46 — the امرا count includes امرأ 'man' 19 and the extra token سَامِرًا (23:67, 'chatting by night'), not السامري as an earlier draft said (السامري contains no امرا substring).",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Tariq Al-Suwaidan (circulating list; also Mufti Afzal Hoosen Elias, 'Astonishing Facts about the Qur'aan')",
+    "title": "'Mathematical Miracles of the Holy Quran' (circulating list)",
+    "url": "https://www.scribd.com/document/45864275/Mathematical-Miracles-of-the-Holy-Quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'life' (hayat) and 'death' (mawt) each occur 145 times.",
+   "claim_arabic_or_terms": "الحياة / الموت",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source. (Note: Harun Yahya's published list does not include this pair; it circulates on other sites, e.g. quranic-miracles.com.)",
+   "id": "life-death-145",
+   "our_note": "حياة family (حيو/حيي/حيا) = 125; الحياة noun = 67. موت family = 171 (موت/ميت/مات, after removing the 23 ظلم-forms (الظلمات 14 + ظلمات 8 + كظلمات 1) and 14 كلمات-forms false positives caught by the مات substring — an earlier draft of this note said 22 ظلم-forms, omitting كظلمات); الموت noun = 35; موت substring = 91. No straightforward form/root count reproduces 145/145. This pair is not in Harun Yahya's published list; it circulates on other sites.",
+   "our_status": "differs",
+   "source": {
+    "author": "Circulating list (quranic-miracles.com; Tariq Al-Suwaidan; Mufti Afzal Hoosen Elias)",
+    "title": "'Word repetitions' — circulating mathematical-miracle list",
+    "url": "https://www.quranic-miracles.com/miracles/mathematical/word-repetitions",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "Harun Yahya pairs 'sun' (shams) and 'light' (nur), each 33 times, counting simple forms only; separately, 'moon' (qamar) occurs 27 times.",
+   "claim_arabic_or_terms": "الشمس / النور (and القمر 27, separate claim)",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Yahya's rule for sun/light: 'only the simple forms of the word were included'. Moon 27 is a separate widely-circulated claim (WikiIslam), not paired with sun by Yahya — Yahya's page contains no 'moon' at all.",
+   "id": "sun-moon-33-27",
+   "our_note": "Sun: شمس substring 33 exact. Moon: قمر substring 27 exact. Light: نور substring 46; lemma nuwr 43; the claimed 33 is reproduced only by a narrow selection of simple forms — نور 8 + النور 10 + نورا 9 + والنور 3 + بنور 1 + نورهم 2 = 33 — excluding نورنا/نوركم and منير ('shining') forms. So the sun+light 33/33 pair is confirmed under that stated selection, and moon 27 stands on its own. An earlier draft of this finding conflated the two claims into one sun/moon pair.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The name 'Muhammad' occurs 4 times in the Quran.",
+   "claim_arabic_or_terms": "محمد",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "muhammad-4",
+   "our_note": "محمد substring = 4. Attribution note: we could not locate 'Muhammad 4' verbatim on the fetched Yahya article page, so the attribution to Yahya's list rests on the wider list tradition, not on a line seen on that page; the figure itself is verified by our recount.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'belief' (iman) and 'disbelief' (kufr) each occur 25 times.",
+   "claim_arabic_or_terms": "إيمان / كفر",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "iman-kufr-25",
+   "our_note": "Naive substring counts: ايمان 86, كفر 343 — far from 25/25. Yahya's wording is 'faith (iman) (without genitive) is repeated 25 times… as is also the word infidelity (kufr)' — the 25 figure must rest on a very narrow form selection (excluding genitive constructions) that the source does not state in countable detail, so it does not reproduce under any clean rule we could state. The circulating quranic-miracles.com list gives iman/kufr as 17, not 25.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'charity' (zakah) and 'blessing' (barakah) each occur 32 times.",
+   "claim_arabic_or_terms": "الزكاة / البركة",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "zakah-blessing-32",
+   "our_note": "زك substring 67 (incl. الزكاة, زكاة, يزكي and derived verb forms); برك substring 5. Neither side is near 32 under a simple substring count.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The word 'say' (qul) occurs 332 times and 'they said' (qalu) 332 times.",
+   "claim_arabic_or_terms": "قل / قالوا",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "say-they-said-332",
+   "our_note": "'They said' (قالوا substring) = 332 exactly. 'Say' (قل, imperative, exact-form count after stripping prefixes) = 333 — one more than the claimed 332. The قال family as a whole (substring) is 932.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'plant' and 'tree' each occur 26 times.",
+   "claim_arabic_or_terms": "نبات / شجر",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "plant-tree-26",
+   "our_note": "نبات substring 11; شجر substring 27. Plant is far from 26; tree is one over.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'reward' (al-jaza') and 'forgiveness' (maghfira) occur 117 and 234 times (forgiveness exactly double reward).",
+   "claim_arabic_or_terms": "الجزاء / المغفرة",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "reward-forgiveness-117-234",
+   "our_note": "The filed Arabic ثواب (thawab) was wrong — Yahya's word is الجزاء (al-jaza'), and the thawab substring is only 13. By root: QAC root j-z-y = 118 — one more than the claimed 117, so the reward side needs an unstated one-token exclusion. Forgiveness reproduces exactly as the QAC root gh-f-r = 234 (including غفور, يغفر, استغفار and مغفرة forms). So the pair as claimed differs by one on the reward side only. (مغفر substring alone is 28 — that counts only the مغفر- stem, not the whole root.)",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'guidance' (huda) and 'mercy' (rahma) each occur 79 times.",
+   "claim_arabic_or_terms": "هدى / رحمة",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "guidance-mercy-79",
+   "our_note": "هد substring 432; رحم substring 318 — polluted by الرحمن 169 and الرحيم 227, which share the root. The 79 figure must use a narrow selection the source does not state.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'tongue' (lisan) and 'sermon' (maw'iza) each occur 25 times.",
+   "claim_arabic_or_terms": "لسان / موعظة",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "tongue-sermon-25",
+   "our_note": "لسان substring 15; موعظ substring 9. Both below 25. Note: WikiIslam points out the counted word is 'admonition', not 'sermon' — 'sermon' as such does not appear in the Quran.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'wine' (khamr) and 'intoxication' (sakara) each occur 6 times.",
+   "claim_arabic_or_terms": "خمر / سكر",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "wine-intoxication-6",
+   "our_note": "خمر substring 7 (claimed 6); سكر substring 4 (claimed 6). The سكر family totals 7: the 4 are سكرت (15:15), سكرتهم (15:72), سكرا (16:67) and سكرة (50:19) — سكرة was already inside the 4, so it cannot be added again — plus سكارى, 3 tokens (4:43 ×1, 22:2 ×2, the verse containing it twice). An earlier draft of this note added سكرة on top of the 4 and counted سكارى as 2 — two compensating errors; the family total 7 is right either way. The two sides do not match as claimed (7 vs 7 by root would match, but the claimed figure is 6/6).",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'mind' ('aql) and 'light' (nur) each occur 49 times.",
+   "claim_arabic_or_terms": "عقل / نور",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "mind-light-49",
+   "our_note": "عقل substring 49 exactly; نور substring 46 — three short of 49. The pair matches on one side only. WikiIslam notes the 49 can be reached as nur 43 (lemma) + muneer 6 — but that mixes the noun 'light' with the adjective 'shining', so we do not accept it as the same word.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'benefit' (naf') and 'corrupt' (fasad) each occur 50 times.",
+   "claim_arabic_or_terms": "نفع / فساد",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "benefit-corrupt-50",
+   "our_note": "نفع substring 45; فساد substring 11. Corrupt is far from 50.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'love' (hubb) and 'obedience' (ta'a) each occur 83 times.",
+   "claim_arabic_or_terms": "حب / طاعة",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "love-obedience-83",
+   "our_note": "حب substring 153; طاع substring 16. Neither is near 83.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'destination/return' (al-maseer) and 'forever' (abadan) each occur 28 times.",
+   "claim_arabic_or_terms": "المصير / أبدا",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "refuge-forever-28",
+   "our_note": "The filed Arabic ملجأ (malja', 'refuge') was wrong — Yahya's word is المصير (al-maseer, 'destination/return'), and the ملجا substring is only 3. With the correct word: مصير substring = 28 exactly (المصير 23 + مصيرا/ومصيرا/مصيركم). Forever: ابدا substring 29 — one over 28. So the pair differs by one on the 'forever' side only; the 'refuge' side was never the problem, the filed word was.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'disaster' (musiba) and 'thanks' (shukr) each occur 75 times.",
+   "claim_arabic_or_terms": "مصيبة / شكر",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "disaster-thanks-75",
+   "our_note": "مصيب substring 11; شكر substring 47. Both below 75.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'distress' (al-dayq) and 'tranquillity' (al-tuma'nina) each occur 13 times.",
+   "claim_arabic_or_terms": "الضيق / الطمأنينة",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "trouble-peace-13",
+   "our_note": "The filed Arabic ضر/سلام was wrong — the counted words are الضيق (distress) and الطمأنينة (tranquillity). By QAC root: D-y-q = 13 exactly and T-m-n = 13 exactly. Plain substrings give ضيق 7 and طمان 3, so the 13/13 pair needs root counting, not substrings. Confirmed under the root rule.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'treachery' (khiyana) and 'foul' (khabith) each occur 16 times.",
+   "claim_arabic_or_terms": "خيانة / خبيث",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "treachery-foul-16",
+   "our_note": "خيان substring 2; خبيث substring 13. Both below 16.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'the righteous' (al-abrar) and 'the wicked' (al-fujjar) occur 6 and 3 times.",
+   "claim_arabic_or_terms": "الأبرار / الفجار",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "righteous-wicked-6-3",
+   "our_note": "The filed Arabic صالح/طالح was wrong — Yahya's words are الأبرار and الفجار. With the correct words: أبرار substring 6 (الأبرار 5 + للأبرار 1) and فجار substring 3 (الفجار 2 + كالفجار 1) — exact. (The filed words give صلح 37 and طلح 1, and WikiIslam's literal-form recount of those gives 5 vs 2 — all beside the point once the words are right.)",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The words 'summer-hot' and 'winter-cold' each occur 5 times.",
+   "claim_arabic_or_terms": "صيف / شتاء",
+   "confidence": "contested",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "summer-winter-5",
+   "our_note": "صيف (summer) substring 1; شتاء (winter) substring 3. The words 'summer' and 'winter' barely occur as such; WikiIslam notes heat 4 and cold 3 (our برد substring is 4). The 5/5 pair does not reproduce.",
+   "our_status": "differs",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "The word 'human being' (insan) occurs 65 times.",
+   "claim_arabic_or_terms": "إنسان",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Method not stated by the source.",
+   "id": "human-being-65",
+   "our_note": "انسان substring = 65 exactly. The creation-stage reading (the stages of human creation summing to 65) does not reproduce: تراب 20 + نطفة 12 + علقة 6 + مضغة 3 + عظام 13 + لحم 58 = 112 by substring. (An earlier draft of this note gave علقة as 7 — the 7th is the bare word علق in 96:2, which has no ة; علقة itself is 6: علقة 4 + العلقة 1 + كالمعلقة 1.) Yahya's own stage table gives different numbers again (soil 17, drop 12, embryo 6, lump 3, bone 15, flesh 12 = 65) — his stages are a different selection from the substring counts, so the 65 total for 'human being' is confirmed but the stage arithmetic is not.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "paired_counts",
+   "claim": "Harun Yahya (Adnan Oktar) popularised the paired-count list in his book Miracles of the Qur'an.",
+   "claim_arabic_or_terms": null,
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "Literature fact; the full list is published at harunyahya.info (fetched 2026-11-06). Method not stated in the source.",
+   "id": "harun-yahya-populariser",
+   "our_note": "The list as published at harunyahya.info does not include life/death 145; that claim circulates on other sites (e.g. quranic-miracles.com). The book's imprint could not be confirmed: harunyahya.info's own book page cites 'Miracles of the Qur'an, Harun Yahya, Araştırma Press', and a circulating edition is Global Publishing, Istanbul — the 'Goodword Books, 2005' imprint previously given here is not asserted. The live list also contains one pair this file omits: 'reward' (ajr) and 'action' (fa'il), both 107 times.",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar)",
+    "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
+    "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "letter_counts",
+   "claim": "The letter Qaf occurs 57 times in surah 50 (Qaf) and 57 times in surah 42 (Shura) — 57 + 57 = 114.",
+   "claim_arabic_or_terms": "ق",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Letter counting under our stated convention (see meta). Khalifa's headline finding.",
+   "id": "qaf-57-57",
+   "our_note": "ق in surah 50 = 57 and in surah 42 = 57, confirmed by our recount.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "letter_counts",
+   "claim": "The letter Nun occurs 133 times in surah 68 (Qalam).",
+   "claim_arabic_or_terms": "ن",
+   "confidence": "contested",
+   "corpus_and_method": "Letter counting under our stated convention (see meta).",
+   "id": "nun-132-vs-133",
+   "our_note": "ن in surah 68 = 132 by our recount. Khalifa's 133 requires counting the spelled-out name 'Noon' (ن و ن) as 2 nuns; the orthodox written initial is a single ن.",
+   "our_status": "differs",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "letter_counts",
+   "claim": "The letter Sad occurs 152 times across surahs 7, 19 and 38 (97 + 26 + 29).",
+   "claim_arabic_or_terms": "ص",
+   "confidence": "contested",
+   "corpus_and_method": "Letter counting under our stated convention (see meta).",
+   "id": "sad-153-vs-152",
+   "our_note": "ص: surah 38 = 29, surah 7 = 98, surah 19 = 26; total 153. Khalifa's 152 requires 97 in surah 7, which requires reading 7:69 as بسطة with س (Samarkand codex spelling); the Tanzil file reads بصطة with ص.",
+   "our_status": "differs",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "letter_counts",
+   "claim": "29 surahs open with disconnected letters (muqatta'at), using 14 distinct letters; 75 initial letters in the verse-1 openings (78 counting surah 42's second set, 'A.S.Q., separately).",
+   "claim_arabic_or_terms": "الم، المص، الر، المر، كهيعص، طه، طسم، طس، يس، ص، حم، حم عسق، ق، ن",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "First-verse check on the Tanzil file after stripping the merged unnumbered basmalah; structure per Sayoud (2013).",
+   "id": "muqattaat-structure-29-14-78",
+   "our_note": "The expected initials match in 29/29 surahs from verse 1 (an earlier draft said 28/29 — all 29 match, including 42:1 حم; عسق is in 42:2). Distinct initial letters 14 (ا ل م ص ر ك ه ي ع ط س ح ق ن). Total: 75 letters in the verse-1 openings (3 monograms, 10 bigrams, 13 trigrams, 2 tetragrams, 1 pentagram = 75), or 78 counting surah 42's second set عسق (3 more letters) separately — the earlier draft's '78 (3/10/13/2/1)' mixed the two counts. Author: Halim Sayoud (not 'Khalifa Sayoud' as previously filed); the SeekersGuidance URL previously cited contains none of this structure and is dropped.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Halim Sayoud",
+    "title": "'Investigation on the Mystery of the Qur'an's Disjointed Letters', QURANICA 5(2), December 2013, University of Malaya",
+    "url": "https://ijeas.um.edu.my/index.php/quranica/article/download/5185/2991/11903",
+    "year": 2013
+   }
+  },
+  {
+   "category": "letter_counts",
+   "claim": "Two verses contain all 28 letters of the Arabic alphabet: 3:154 and 48:29.",
+   "claim_arabic_or_terms": null,
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Distinct-letter count per verse on the Tanzil file.",
+   "id": "all-28-letters-verses",
+   "our_note": "3:154 and 48:29 each have 28 distinct letters, none missing — confirmed by our recount. Previously cited to Khalifa's Appendix 1, which contains no such claim; re-cited as a classical/traditional observation, corroborated by multiple modern checks against the Uthmani text.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Classical/traditional observation",
+    "title": "Two verses containing all 28 letters of the Arabic alphabet (3:154, 48:29)",
+    "url": null,
+    "year": null
+   }
+  },
+  {
+   "category": "letter_counts",
+   "claim": "The longest word in the Quran is fa'asqaynakumuhu (15:22).",
+   "claim_arabic_or_terms": "فَأَسْقَيْنَاكُمُوهُ",
+   "confidence": "contested",
+   "corpus_and_method": "Letter counting under our stated convention (see meta).",
+   "id": "longest-word-fasqaynakumuhu",
+   "our_note": "فأسقيناكموه (15:22) is 10 letters under our convention (the dagger alif is a mark, not a letter); the longest words are والمستغفرين (3:17) and والمستضعفين (4:75, 4:127) at 11 letters. Under a convention counting the dagger alif as a letter, فأسقيناكموه is 11 letters and tied for longest. The cited source (calendar-uk FAQ) confirms it as the longest word but gives no '11 letters' figure — the 11 is convention-dependent, not stated by the source.",
+   "our_status": "differs",
+   "source": {
+    "author": "Classical observation, repeated in modern Quran-statistics pages",
+    "title": "'How long is a Quran?' (calendar-uk FAQ, citing the classical claim)",
+    "url": "https://www.calendar-uk.co.uk/frequently-asked-questions/how-long-is-a-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "letter_counts",
+   "claim": "The phrase 'seven heavens' (sab' samawat) occurs in 7 verses.",
+   "claim_arabic_or_terms": "سبع سماوات",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Verse-level substring search on the Tanzil file.",
+   "id": "seven-heavens-7",
+   "our_note": "7 verses contain سبع + سماوات (2:29, 17:44, 23:86, 41:12, 65:12, 67:3, 71:15); plus 1 'seven paths' (23:17 طرائق) and 2 'seven strong' (12:48 seven hard years; 78:12 seven strong heavens) = 9 total سبع + heaven-ish verses, matching WikiIslam's analysis.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Harun Yahya (Adnan Oktar), with WikiIslam's verse-by-verse analysis",
+    "title": "Miracles of the Qur'an; WikiIslam, 'Word Count Miracles in the Qur'an'",
+    "url": "https://wikiislam.net/index.php?title=Word_Count_Miracles_in_the_Qur%27an",
+    "year": null
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "The Basmalah consists of 19 letters, occurs 114 times in the Quran, and the Quran has 114 surahs = 19 x 6.",
+   "claim_arabic_or_terms": "بسم الله الرحمن الرحيم",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Letter counting under our stated convention (see meta); occurrence count on the Tanzil file.",
+   "id": "basmalah-19-letters-114",
+   "our_note": "Basmalah = 19 letters under our convention; occurs 114 times in the text (113 at surah starts + 27:30); 114 surahs = 19 x 6.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "The word 'Allah' (God) occurs 2,698 times in the Quran = 19 x 142.",
+   "claim_arabic_or_terms": "الله",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Lemma count (all forms of the name, incl. prefixed/clitic forms) on the Tanzil file, excluding the 112 unnumbered basmalahs (see note for the reconciliation).",
+   "id": "allah-2699",
+   "our_note": "Lemma count excl. 112 unnumbered basmalahs = 2,699 exactly (incl. basmalahs 2,801; strict surface الله 2,267). The 2,699 includes the oath forms تالله/وتالله (9) and interrogative أبالله (1). Dropping 9:129 (one of Khalifa's two rejected verses) gives his 2,698 = 19 x 142. (QuranCodex's 'strict surface 2,155' differs — method unstated.)",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "The names 'Rahman' (Most Gracious) and 'Rahim' (Most Merciful) occur 57 (= 19 x 3) and 114 (= 19 x 6) times.",
+   "claim_arabic_or_terms": "الرحمن / الرحيم",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Lemma count on the Tanzil file, excluding the 112 unnumbered basmalahs (see note).",
+   "id": "rahman-57-rahim-115",
+   "our_note": "Rahman lemma excl. unnumbered basmalahs = 57 = 19 x 3 (incl. basmalahs 169). Rahim lemma excl. basmalahs = 115; Khalifa's 114 = 115 minus the رحيم in 9:128, one of his two rejected verses. Citation note: this table is in Appendix 1 Part 2, not Part 1 (the citation previously pointed at Part 1).",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Part 2, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1_p2.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "The word 'ism' (name) in its full spelling occurs 19 times.",
+   "claim_arabic_or_terms": "اسم",
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Exact-form count on the Tanzil file (plural أسماء excluded, per Khalifa's 'no plural forms' rule).",
+   "id": "ism-19",
+   "our_note": "اسم 14 + باسم 4 + الاسم 1 = 19; plural أسماء (skeletonised اسما, 4 occurrences) excluded. Contracted بسم = 115 (114 basmalahs + 11:41).",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Part 2, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1_p2.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "The first revelation (96:1-5) consists of 19 words.",
+   "claim_arabic_or_terms": null,
+   "confidence": "contested",
+   "corpus_and_method": "Whitespace token count on the Tanzil file, excluding the merged basmalah.",
+   "id": "first-revelation-words-19",
+   "our_note": "96:1-5 has 20 whitespace tokens excl. basmalah (اقرأ باسم ربك الذي خلق / خلق الإنسان من علق / اقرأ وربك الأكرم / الذي علم بالقلم / علم الإنسان ما لم يعلم); 24 incl. basmalah. Khalifa's 19 is one short.",
+   "our_status": "differs",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "The first revelation (96:1-5) consists of 76 letters.",
+   "claim_arabic_or_terms": null,
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Letter counting under our stated convention (see meta), excluding the merged basmalah.",
+   "id": "first-revelation-letters-76",
+   "our_note": "96:1-5 = 76 letters excl. basmalah under our convention — confirmed.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "Surah 96 has 19 verses and 304 letters in total.",
+   "claim_arabic_or_terms": null,
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Verse count (standard Hafs table) and letter counting under our stated convention (see meta).",
+   "id": "surah-96-19-verses-304-letters",
+   "our_note": "Surah 96 has 19 verses (standard) and 304 letters by our recount — Khalifa's figures exactly.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "Surah 110 consists of 19 words (excluding the Basmalah), and its first verse consists of 19 letters.",
+   "claim_arabic_or_terms": null,
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Whitespace token count and letter counting under our stated convention (see meta), excluding the merged basmalah.",
+   "id": "surah-110-19-words",
+   "our_note": "Surah 110 = 19 words excl. basmalah; verse 110:1 = 19 letters excl. basmalah — confirmed.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "The sum of the verse numbers of all verses containing the word 'Allah' is 118,123 = 19 x 6,217.",
+   "claim_arabic_or_terms": null,
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Verse-number sum over verses containing the Allah lemma, on the Tanzil file (see note for the two conditions required).",
+   "id": "verse-number-checksum-118123",
+   "our_note": "The sum is 118,123 exactly — but only under two conditions: excluding the 112 unnumbered basmalahs AND excluding Khalifa's two rejected verses 9:128-129 (only 9:129 contains Allah, verse number 129; 118,252 - 129 = 118,123). Without those exclusions the sum is 118,340. Khalifa's figure is therefore confirmed as a property of his edited text, not of the standard text.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "The total number of verses in the Quran is 6,346 = 19 x 334 (6,234 numbered verses + 112 unnumbered Basmalahs).",
+   "claim_arabic_or_terms": null,
+   "confidence": "contested",
+   "corpus_and_method": "Standard Hafs count is 6,236 verses; Khalifa's figure rests on counting basmalahs as verses and deleting 9:128-129.",
+   "id": "khalifa-verse-total-6346",
+   "our_note": "The arithmetic checks out (6,236 + 112 - 2 = 6,346) but the deletion of 9:128-129 is the contested step: with those verses the Allah count would be 2,699 not 2,698 and Rahim 115 not 114. The scholarly consensus rejects the deletion (see the reception finding).",
+   "our_status": "differs",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "code19",
+   "claim": "Khalifa's 19-based 'mathematical miracle' was published from 1973-1989 and drew both praise and sustained scholarly/skeptical criticism.",
+   "claim_arabic_or_terms": null,
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "Literature review (bibliographic sources, verified by web search 2026-11-06).",
+   "id": "khalifa-reception",
+   "our_note": "Timeline: initials research from 1969; Miracle of the Quran: Significance of the Mysterious Alphabets (1973); the 19-code claimed January 1974; The Computer Speaks: God's Message to the World (1981); Quran: Visual Presentation of the Miracle (1982); Quran: The Final Testament translation (1989). Reception: Martin Gardner, Scientific American, September 1980, p. 22 ('ingenious study...'); critical review in Skeptical Inquirer 21(5), September-October 1997, pp. 16-17; Canadian Council on the Study of Religion, Quarterly Review, April 1983 (quoted by proponents as calling it 'an authenticating proof'); Bilal Philips, The Qur'an's Numerical Miracle: Hoax and Heresy (1987/1407 AH, 76 pp., 2nd ed. 2002). Submission.org's own 2002 recount confirmed Khalifa's initial counts 'except for a few counts' (submission.org/App1.html). The following were listed in an earlier draft of this note but were NOT individually verified in the 2026-11-07 re-check and are not asserted here: Gardner, Skeptical Inquirer p. 58; Ziauddin Sardar, Explorations in Islamic Science (1989); Edip Yüksel, Nineteen: God's Signature in Nature and Scripture (Brainbow Press, 2011); Abdullah Arik, Beyond Probability (2012); Matthew Stanley, A Miracle on Trial (2016).",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "Rashad Khalifa; Martin Gardner; Bilal Philips; Ziauddin Sardar; Edip Yüksel",
+    "title": "Quran: The Final Testament (1989); Scientific American (1980); The Qur'an's Numerical Miracle: Hoax and Heresy (1987)",
+    "url": "https://submission.org/App1.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "The Quran contains 77,429 words (Quranic Arabic Corpus FAQ and v0.4 release notes); 77,430 is the earlier v0.3 figure.",
+   "claim_arabic_or_terms": null,
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "QAC v0.4 morphological annotation; our recount on the Tanzil Uthmani text.",
+   "id": "qac-word-count-77429",
+   "our_note": "Our recount: 77,881 whitespace tokens incl. basmalahs; 77,433 excl. 112 unnumbered basmalahs — 4 above the published 77,429. The gap is fully explained by word-boundary conventions: exactly 4 verses differ by one token each — 2:181, 8:6, 13:37 (بعدما: two tokens in Tanzil vs one QAC word) and 37:130 (آل ياسين: two words in Tanzil vs one in QAC). An earlier draft of this note attributed the whole gap to 37:130 alone; that accounts for only 1 of the 4.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Kais Dukes, University of Leeds",
+    "title": "Quranic Arabic Corpus — FAQ and release notes",
+    "url": "https://corpus.quran.com/faq.jsp",
+    "year": 2009
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "The Quran has 18,994 unique surface forms, 12,183 unique stems, 1,685 unique roots and 3,382 unique lemmas (QAC annotation).",
+   "claim_arabic_or_terms": null,
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "QAC v0.4 annotation (Dukes' 2013 primary-source answer); our recount on the Tanzil Uthmani text for the surface-form figure only.",
+   "id": "dukes-unique-words",
+   "our_note": "Unique surface forms 18,994 — our raw unique count is 18,994 exactly. Skeletonised unique forms 14,881. Stem/root/lemma figures (12,183 / 1,685 / 3,382) were not recounted (they need the QAC annotation). The earlier draft attributed these figures to a Dukes blog post (quickestwaytoquran.blogspot.com, 2013) — that URL returns 404 and Dukes' authorship of that post could not be confirmed, so the figures are cited here as the widely published estimate, not as Dukes' blog post. The earlier note's 'Dukes' estimate: at most 7,000 unique words' was not verified and is dropped.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Kais Dukes (figures as widely published)",
+    "title": "'Number of unique words in the Quran' — circulating estimate (QAC figures)",
+    "url": "https://www.calendar-uk.co.uk/frequently-asked-questions/how-long-is-a-quran",
+    "year": null
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "The Quranic Arabic Corpus provides manually verified morphological annotation of the whole Quran, about 99% accurate, reviewed in stages by two annotators.",
+   "claim_arabic_or_terms": null,
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "QAC v0.4 release notes; verifying needs the QAC data itself, not the plain text.",
+   "id": "qac-morphology",
+   "our_note": "Treebank covered 40% by word count in v0.4. The 128,076-morpheme figure is from the QAC v0.3 announcement (14 March 2011), not the v0.4 release notes as previously cited; our own count of the v0.4 file is 128,219 segments — 143 more. Not recounted here beyond that (the annotation layer is the sibling agents' and the data pipeline's work).",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "Kais Dukes, University of Leeds",
+    "title": "Quranic Arabic Corpus — release notes",
+    "url": "https://corpus.quran.com/releasenotes.jsp",
+    "year": 2011
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "The Tanzil Quran Text (Uthmani) is derived from the Medina Mushaf, Hafs narration, distributed under CC BY 3.0 with verbatim redistribution only.",
+   "claim_arabic_or_terms": null,
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "Tanzil project documentation; the corpus file used for all recounts here is Tanzil Uthmani v1.1.",
+   "id": "tanzil-provenance",
+   "our_note": "Tanzil's licence documentation (tanzil.net/docs/text_license) and Medina Mushaf documentation (tanzil.net/docs/Medina_Mushaf) confirm the provenance: Medina Mushaf, Hafs reading, CC BY 3.0, verbatim redistribution only. The previously cited download page (tanzil.net/download) does not display the licence or Mushaf details in its text, so the citation is re-pointed. This is the text all our spot-recounts ran against.",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "Tanzil Project",
+    "title": "Tanzil — Quran Text licence and Medina Mushaf documentation",
+    "url": "https://tanzil.net/docs/text_license",
+    "year": null
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "Text-Fabric Quran (Roorda & van Lit, 2019) re-expresses the Quranic Arabic Corpus morphology as linked open data.",
+   "claim_arabic_or_terms": null,
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "GitHub q-ran/quran; Zenodo DOI 10.5281/zenodo.2532177; built from QAC 0.4 morphology + Tanzil Uthmani v1.0.2; CC-BY 4.0. Not used in our recounts.",
+   "id": "text-fabric-quran",
+   "our_note": "Roorda (2018), 'Text-Fabric: Text representation for linguistic annotation', Research Data Journal for the Humanities and Social Sciences 3(1), 1-23. The dataset itself was not re-analysed here. (The Zenodo DOI 10.5281/zenodo.2532177 appears only as a badge image on the fetched repo page, so the DOI number itself was not legibly confirmed from that page.)",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "Dirk Roorda & Cornelis van Lit",
+    "title": "Text-Fabric Quran (2019)",
+    "url": "https://github.com/q-ran/quran",
+    "year": 2019
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "Root-frequency studies of the Quran (QAC 0.4) find about 1,650 roots; the most frequent root is Alh (Allah), about 2,851 occurrences.",
+   "claim_arabic_or_terms": "أ-ل-ه",
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "Corpus-based root counts from QAC 0.4 morphology (abdulbaqi.io 2019; thequran.love 2026; Malkoç 2025). Root counting is the sibling agents' task; not recounted here.",
+   "id": "root-frequency-studies",
+   "our_note": "abdulbaqi.io (2019): 1,651 roots; top roots Alh 2,851, qwl 1,722, kwn 1,390, rbb 980 (data file quranic-corpus-morphology-0.4.txt, 128,276 lines). Our independent QAC recount reproduces Alh 2,851, qwl 1,722, kwn 1,390, rbb 980 and Ḥ-S-N 194, and 49,967 root-bearing tokens (64.5%) — but counts 1,642 distinct roots, not 1,651 (thequran.love gives 1,642 too) and not Dukes' 1,685: the root total depends on how rare/derived forms are grouped. Zia H Shah / thequran.love (2026): 1,642 roots, verbal-only counts (qwl 1,618, kwn 1,358). Muzaffer Malkoç, Beauty as Method (Zenodo, 2025): root concordance via Tanzil + Abd al-Baqi's al-Mu'jam al-Mufahras, e.g. Ḥ-S-N 194. Note the Alh root count (2,851) is a different unit from the Allah lemma count (2,699). The earlier draft's file URL returned 404; the live page is /2019/01/15/quranic_roots/. The post is Abdul Baqi's; Dukes is the data source, not a co-author.",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "Abdul Baqi (QAC 0.4 data by Kais Dukes)",
+    "title": "'Standing on the Shoulder of Giants' (abdulbaqi.io, 2019)",
+    "url": "http://abdulbaqi.io/2019/01/15/quranic_roots/",
+    "year": 2019
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "The most frequent word in the Quran is 'min' (from), 3,226 times, followed by 'Allah' 2,699 and 'ma' 2,565.",
+   "claim_arabic_or_terms": "من / الله / ما",
+   "confidence": "contested",
+   "corpus_and_method": "wordsofquran.com, from QAC v0.4; our recount on the Tanzil file for the min lemma.",
+   "id": "most-frequent-min-3226",
+   "our_note": "Our min lemma recount = 3,314 (من 2,763 + ومن 342 + لمن 94 + فمن 90 + بمن 10 + كمن 9 + ولمن 5 + وبمن 1) — 88 above the published 3,226, method unclear. (wordsofquran.com also gives 4,832 unique lemmas of ~77,797 total words — figures that differ from Dukes' own, definitional.)",
+   "our_status": "differs",
+   "source": {
+    "author": "Words of Quran (QAC v0.4 data)",
+    "title": "wordsofquran.com — most frequent words",
+    "url": "https://wordsofquran.com/",
+    "year": null
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "Classical authorities give the Quran's word total as 77,439 (with variants 77,430 / 77,437 / 77,797 / 77,934).",
+   "claim_arabic_or_terms": null,
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Classical counts (al-Suyuti, al-Itqan; Basra reciters; Ata' bin Yasar); our recount on the Tanzil file.",
+   "id": "classical-word-totals",
+   "our_note": "Our 77,433 (excl. unnumbered basmalahs) is 6 below the lowest classical figure (77,439) — within the spread of counting conventions. Kufan reciters recorded 77,430, Basran 77,437 (arabiantongue.com). The 77,430 / 77,797 / 77,934 variants are not on the SeekersGuidance page (which gives 77,439 and 77,437); they are al-Suyuti variants reported by other witnesses (Kufan 77,430 per arabiantongue.com; al-Suyuti collecting 77,934, 77,437, 77,277 per answeringislam.net; eaalim.com lists 77,439, 77,797 and 77,934).",
+   "our_status": "confirmed",
+   "source": {
+    "author": "al-Suyuti (via SeekersGuidance, Shaykh Anas al-Musa)",
+    "title": "al-Itqan fi 'Ulum al-Qur'an — classical word and letter totals",
+    "url": "https://seekersguidance.org/answers/quran/what-is-the-total-number-of-words-verses-and-letters-in-the-quran/",
+    "year": null
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "Classical authorities give the Quran's letter total as 323,671 (with variants 323,015 / 330,733).",
+   "claim_arabic_or_terms": null,
+   "confidence": "contested",
+   "corpus_and_method": "Classical counts (al-Suyuti via Yahya ibn al-Harith and others); our recount on the Tanzil file under a stated convention (see meta).",
+   "id": "classical-letter-totals",
+   "our_note": "Our 325,386 (excl. unnumbered basmalahs) matches none of the classical figures exactly; the classical sources disagree among themselves by up to 7,718 (323,015 vs 330,733), and further variants exist (Mujahid 321,000; Ibn Mas'ud 300,670; Salam Abu Muhammad 340,740), so no single letter total is settled. The variation is partly definitional (e.g. whether a doubled letter counts as one or two). The 323,671 and 330,733 variants are not on the SeekersGuidance page (which gives 323,015); they are genuine al-Suyuti variants corroborated elsewhere (eaalim.com lists 323,015, 323,671 and 330,733; riwaqalquran.com cites 323,671 from al-Suyuti's al-Itqan).",
+   "our_status": "differs",
+   "source": {
+    "author": "al-Suyuti (via SeekersGuidance, Shaykh Anas al-Musa)",
+    "title": "al-Itqan fi 'Ulum al-Qur'an — classical word and letter totals",
+    "url": "https://seekersguidance.org/answers/quran/what-is-the-total-number-of-words-verses-and-letters-in-the-quran/",
+    "year": null
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "A Tanzil-based reproducible count (RDS-Q No. 4, Mulyana 2020) gives 77,430 words for the Quran.",
+   "claim_arabic_or_terms": null,
+   "confidence": "confirmed by our recount",
+   "corpus_and_method": "Tanzil Uthmani text, unnumbered basmalahs excluded; our recount on the same text.",
+   "id": "rdsq-words-77430",
+   "our_note": "Ours 77,433 — differs by 3 (word-boundary conventions; the 4 verses that differ by one token each are 2:181, 8:6, 13:37 and 37:130 — see the qac-word-count finding). The odd/even verse-group totals 38,716 / 38,714 quoted in an earlier draft of this note did not reproduce under any natural grouping (ayah-number parity 39,647/38,234; global verse-index parity 38,433/39,000; surah-number parity 36,446/41,435) and are dropped.",
+   "our_status": "confirmed",
+   "source": {
+    "author": "Eueung Mulyana",
+    "title": "RDS-Q No. 4 — Quran Statistical Overview and Analysis (2020)",
+    "url": "https://www.scribd.com/document/550406160/RDS-Q-004",
+    "year": 2020
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "A Tanzil-based reproducible count (RDS-Q No. 4, Mulyana 2020) gives 325,666 letters for the Quran (unnumbered basmalahs excluded).",
+   "claim_arabic_or_terms": null,
+   "confidence": "contested",
+   "corpus_and_method": "Tanzil Uthmani text, unnumbered basmalahs excluded; our recount on the same text under a stated convention (see meta).",
+   "id": "rdsq-letters-325666",
+   "our_note": "Ours 325,386 — 280 fewer under our letter convention (dagger alif/small waw/small yeh not counted as letters; alef wasla counted). The exact cause of the 280 gap is unidentified. RDS-Q notes Dukes' figure of 623,638 counts 'join letters and diacritics/harakah' — a different unit.",
+   "our_status": "differs",
+   "source": {
+    "author": "Eueung Mulyana",
+    "title": "RDS-Q No. 4 — Quran Statistical Overview and Analysis (2020)",
+    "url": "https://www.scribd.com/document/550406160/RDS-Q-004",
+    "year": 2020
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "The Quran's verse/word/letter distributions can be fitted statistically (Botani 2012, using QuranCode software): 6,348 verses, 77,878 words, 327,792 letters.",
+   "claim_arabic_or_terms": null,
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "QuranCode software (Adams 2011), counting basmalahs as verses; distributions fitted as Exponential/Gamma. Not recounted.",
+   "id": "botani-2012-distributions",
+   "our_note": "Botani (2012), 'Probability Distributions of the Verses, Words, and Letters of the Holy Quran', International Journal of Mathematical and Computational Applications Research 2(3), 27-34. The higher totals come from counting basmalahs as verses and a different word/letter convention.",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "Delshad Shaker Ismael Botani, Salahaddin University-Hawler",
+    "title": "'Probability Distributions of the Verses, Words, and Letters of the Holy Quran', IJMCAR 2(3), 27-34",
+    "url": "https://www.academia.edu/13913774/Probability_Distributions_of_the_Verses_Words_and_Letters_of_the_Holy_Quran",
+    "year": 2012
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "The word 'Quran' occurs 57 times in the Quran — 'this Quran', after excluding 10:15's 'another Quran' from a raw 58.",
+   "claim_arabic_or_terms": "القرآن",
+   "confidence": "contested",
+   "corpus_and_method": "Substring and narrow-selection counts on the Tanzil file.",
+   "id": "quran-word-57-khalifa",
+   "our_note": "Full substring count of قرآن = 71; narrow selection القرآن + والقرآن + بالقرآن + قرآنا = 59 under our skeleton. Khalifa's own table (Appendix 1, Part 2, Table 21) is explicit: 'The word 'Quran' occurs in the Quran 58 times, with one of them, in 10:15, referring to 'another Quran'… must be excluded. Thus, the frequency of 'this Quran' is 57, or 19x3.' Our recount gives 59 for the narrow selection, not 57 — the claimed 57 does not reproduce even under Khalifa's own stated rule. The citation previously pointed at Part 1; the table is in Part 2.",
+   "our_status": "differs",
+   "source": {
+    "author": "Rashad Khalifa",
+    "title": "Appendix 1, Part 2, Quran: The Final Testament (Authorized English Version)",
+    "url": "https://submission.org/App1_p2.html",
+    "year": 1989
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "WikiIslam's 'Word Count Miracles in the Qur'an' documents, verse by verse, the selective counting tactics behind the paired-count claims.",
+   "claim_arabic_or_terms": null,
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "Corpus-based critique using actual verse counts (fetched 2026-11-06).",
+   "id": "wikiislam-critique",
+   "our_note": "Sub-articles cover 365 days, month 12, dunya/akhira 115, paradise/hell 77, iman/kufr 25, land/water ratio, tongue/sermon 25, shaytan/angel 88, life/death 145, zakah/blessing 32, sun/light 33. Documents selective tactics (prefix/suffix inclusion, plural/singular mixing, sense conflation, cherry-picking). Quoted scholarly refutations: Dr. Zahid Aziz ('no rule or principle for determining which word... must always occur a special number of times'); Dr. Ashraf 'Abd al-Razzaaq Qatanah ('the numerical miracle as presented in these books is not real at all'); Dr. Fahd al-Roomi (on the 365-day count excluding يومكم / يومهم / يومئذ). Dr. Fahd al-Roomi's point on the 365-day count was not separately located in the fetched WikiIslam text, so it is not asserted here.",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "WikiIslam",
+    "title": "'Word Count Miracles in the Qur'an'",
+    "url": "https://wikiislam.net/index.php?title=Word_Count_Miracles_in_the_Qur%27an",
+    "year": null
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "The Quranic Arabic Corpus is an annotated linguistic resource for Classical Arabic (Dukes & Atwell 2012; Dukes PhD 2013).",
+   "claim_arabic_or_terms": null,
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "Peer-reviewed papers; the treebank itself was not re-analysed here.",
+   "id": "dukes-atwell-2012",
+   "our_note": "Dukes & Atwell (2012), 'The Quranic Arabic Corpus: An annotated linguistic resource', Language Resources and Evaluation 46(3), 475-489, DOI 10.1007/s10579-012-9205-0; Dukes & Habash (2010), 'Morphological Annotation of Quranic Arabic', LREC 2010; Dukes, Atwell & Sharaf (2010), syntactic annotation guidelines, LREC 2010; Dukes & Atwell (2012), LAMP platform, LREC'12; Dukes PhD thesis (2013), Statistical Parsing by Machine Learning from a Classical Arabic Treebank, University of Leeds. The corpus and its annotation are the primary source for the app's morphology work.",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "Kais Dukes & Eric Atwell",
+    "title": "'The Quranic Arabic Corpus: An annotated linguistic resource', Language Resources and Evaluation 46(3), 475-489",
+    "url": "https://doi.org/10.1007/s10579-012-9205-0",
+    "year": 2012
+   }
+  },
+  {
+   "category": "corpus_linguistics",
+   "claim": "About 1,620 words occur only once in the Quran (hapax legomena).",
+   "claim_arabic_or_terms": null,
+   "confidence": "reported, method unclear",
+   "corpus_and_method": "Lemma-based count (arabiantongue.com); our surface-form hapax is a different unit and is not comparable.",
+   "id": "hapax-legomena",
+   "our_note": "Our surface-form hapax (raw whitespace tokens occurring once) = 12,005 — a different unit from the lemma-based ~1,620, so the two figures cannot be compared directly. The lemma-based figure was not recounted (it needs the QAC annotation).",
+   "our_status": "cannot_verify",
+   "source": {
+    "author": "arabiantongue.com",
+    "title": "'How Many Words Are in the Quran?'",
+    "url": "https://arabiantongue.com/blog/how-many-words-are-in-the-quran/",
+    "year": 2026
+   }
+  }
+ ],
+ "meta": {
+  "corpus": "Tanzil Quran Text, Uthmani script (corpus/quran-uthmani.txt), 6,236 verses, downloaded 2026-11-06 from tanzil.net",
+  "date": "2026-11-06",
+  "project": "miracleMath — scholar findings on the Quran corpus",
+  "recount_method": "Whitespace tokens. Skeleton normalisation for matching: diacritics/tatweel removed; hamza variants normalised (أ إ آ ٱ → ا, ؤ → و, ئ → ي, ء dropped); dagger alif ٰ → ا, small waw ۥ → و, small yeh ۦ → ي are kept as letters for matching. Letter-counting convention: base letters count, including alef wasla ٱ as ا; dagger alif, small waw and small yeh are marks and do NOT count; standalone hamza ء counts. This convention reproduces the anchors: basmalah = 19 letters, 96:1-5 = 76 letters, 110:1 = 19 letters. 'Excl. unnumbered basmalahs' means excluding the 112 basmalahs merged into verse 1 of surahs 2-8 and 10-114 (the 2 numbered basmalahs, 1:1 and 27:30, are kept). Surah boundaries use the standard Hafs verse-count table (sums to 6,236).",
+  "tally": {
+   "confirmed": 28,
+   "differs": 25,
+   "cannot_verify": 11,
+   "total": 64
+  },
+  "warning": "Disputed numerology is presented here as reported findings with a source and a status — never as settled fact. our_status 'confirmed' means our own scripted recount on the Tanzil file reproduces the claimed figure under a stated method; 'differs' means it does not; 'cannot_verify' means no recount was possible or the claim needs sense disambiguation.",
+  "reconciled": "2026-11-07: scholar-vs-recount reconciliation (Checker A re-counted our numbers; Checker B verified every scholar claim against its source). Tallies now confirmed 28 / differs 25 / cannot_verify 11; our_status and confidence agree on all 64 findings. See RECONCILIATION.md.",
+  "category_tally": {
+   "paired_counts": {
+    "confirmed": 12,
+    "differs": 16,
+    "cannot_verify": 2,
+    "total": 30
+   },
+   "letter_counts": {
+    "confirmed": 4,
+    "differs": 3,
+    "cannot_verify": 0,
+    "total": 7
+   },
+   "code19": {
+    "confirmed": 8,
+    "differs": 2,
+    "cannot_verify": 1,
+    "total": 11
+   },
+   "corpus_linguistics": {
+    "confirmed": 4,
+    "differs": 4,
+    "cannot_verify": 8,
+    "total": 16
+   }
+  }
+ }
+}
