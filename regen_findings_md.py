@@ -50,6 +50,27 @@ for cat, heading in CAT_HEADINGS:
     lines.append("- %s: %d (confirmed %d, differs %d, cannot verify %d)"
                  % (heading, ct["total"], ct["confirmed"], ct["differs"], ct["cannot_verify"]))
 lines.append("")
+sec_tally = {}
+for x in findings:
+    sec = x.get("section", "scholarly")
+    t = sec_tally.setdefault(sec, {"total": 0, "confirmed": 0, "differs": 0, "cannot_verify": 0})
+    t["total"] += 1
+    if x["our_status"] in t:
+        t[x["our_status"]] += 1
+lines.append("## Sections (split 2026-11-07)")
+lines.append("")
+lines.append("- Scholar findings: %d (confirmed %d, differs %d, cannot verify %d)"
+             % (sec_tally["scholarly"]["total"], sec_tally["scholarly"]["confirmed"],
+                sec_tally["scholarly"]["differs"], sec_tally["scholarly"]["cannot_verify"]))
+lines.append("- Popular claims (Harun Yahya, Adnan Oktar): %d (confirmed %d, differs %d, cannot verify %d)"
+             % (sec_tally["popular"]["total"], sec_tally["popular"]["confirmed"],
+                sec_tally["popular"]["differs"], sec_tally["popular"]["cannot_verify"]))
+lines.append("")
+lines.append("Harun Yahya is the pen name of Adnan Oktar, a Turkish popular creationist author — not a "
+             "scholarly source. He was convicted in Turkey in 2022 (8,658-year sentence, upheld 2024). "
+             "His widely circulated claims are included so they can be tested against the corpus; "
+             "inclusion is not endorsement. Each claim carries its recount label.")
+lines.append("")
 lines.append("## Recount method")
 lines.append("")
 lines.append(meta["recount_method"])
@@ -77,6 +98,10 @@ for cat, heading in CAT_HEADINGS:
         if s.get("url"):
             src += " — <%s>" % s["url"]
         lines.append(src)
+        lines.append("")
+        sec_label = ("Popular claims (Harun Yahya)" if x.get("section") == "popular"
+                     else "Scholar findings")
+        lines.append("**Section:** " + sec_label)
         lines.append("")
         lines.append("**Corpus and method:** " + x.get("corpus_and_method", ""))
         lines.append("")
