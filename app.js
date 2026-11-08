@@ -1,14 +1,22 @@
 /* miracleMath app — renders from window.MIRACLE_DATA (embedded data.js).
    No network calls, no backend. Charts are CSS bars; the Name network is a
    guarded canvas drawing (no-ops safely where canvas is unavailable).
-   Findings render as data tables. Each finding may carry an "assumptions"
-   object {scholar_set, our_set, reconciles_under, numbers_by_set, reason};
-   when it is absent the page falls back to the method status and a
-   shortened our_note, so the page never breaks on older data. */
+   Shared by index.html (verified counts only) and unverified.html
+   (differs / cannot_verify only): the script detects which page it is on
+   from the DOM ids present and renders only that page's sections, so the
+   row-rendering code is written once. Findings render as data tables.
+   Each finding may carry an "assumptions" object {scholar_set, our_set,
+   reconciles_under, numbers_by_set, reason}; when it is absent the page
+   falls back to the method status and a shortened our_note, so the page
+   never breaks on older data. */
 (function () {
   "use strict";
   var D = window.MIRACLE_DATA || {};
   var $ = function (id) { return document.getElementById(id); };
+  function on(id, ev, fn) {
+    var el = $(id);
+    if (el && el.addEventListener) el.addEventListener(ev, fn);
+  }
 
   function esc(s) {
     return String(s == null ? "" : s)
@@ -18,6 +26,9 @@
   function catLabel(c) {
     return { paired_counts: "Paired counts", letter_counts: "Letter counts",
       code19: "Code 19", corpus_linguistics: "Corpus linguistics" }[c] || c;
+  }
+  function sectionLabel(s) {
+    return s === "popular" ? "Popular claims" : "Scholar findings";
   }
   function statusBadge(f) {
     if (f.our_status === "confirmed")
@@ -70,39 +81,82 @@
     return h2;
   }
 
-  /* ---------- tabs ---------- */
-  var tabs = document.querySelectorAll(".tab");
-  tabs.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      tabs.forEach(function (b) { b.classList.remove("active"); });
-      btn.classList.add("active");
-      document.querySelectorAll(".panel").forEach(function (p) { p.classList.remove("active"); });
-      $("tab-" + btn.getAttribute("data-tab")).classList.add("active");
-      if (btn.getAttribute("data-tab") === "names") drawGraph();
-    });
-  });
-
   /* ---------- research header ---------- */
   (function stats() {
+    var statsEl = $("stats");
+    if (!statsEl) return;
     var c = D.corpus || {};
+    var all = D.findings || [];
+    var verified = all.filter(function (f) { return f.our_status === "confirmed"; }).length;
     var items = [
       [c.words ? c.words.toLocaleString("en-US") : "77,429", "words"],
       [c.verses ? c.verses.toLocaleString("en-US") : "6,236", "verses"],
       [c.surahs || 114, "surahs"],
       [(D.names || []).length || 99, "Names of God"],
       [(D.names_totals && D.names_totals.total_occurrences) || 1120, "Name occurrences"],
-      [(D.findings || []).length || 64, "findings reviewed"]
+      [verified || 37, "verified counts"]
     ];
-    $("stats").innerHTML = items.map(function (it) {
+    statsEl.innerHTML = items.map(function (it) {
       return "<span><b>" + esc(it[0]) + "</b> " + esc(it[1]) + "</span>";
     }).join(" · ");
-    var all = D.findings || [];
     var t = { confirmed: 0, differs: 0, cannot_verify: 0 };
     all.forEach(function (f) { if (t[f.our_status] != null) t[f.our_status]++; });
     var tl = $("tally-line");
     if (tl && all.length)
       tl.textContent = t.confirmed + " confirmed · " + t.differs + " differ · " +
-        t.cannot_verify + " cannot verify";
+        t.cannot_verify + " cannot verify — this page shows verified counts only; " +
+        "the " + (t.differs + t.cannot_verify) + " unverified claims are on a separate page.";
+  })();
+
+  /* ---------- About the Quran: sourced facts table ---------- */
+  (function renderFacts() {
+    var host = $("facts-table");
+    if (!host) return;
+    var facts = D.quran_facts || [];
+    if (!facts.length) {
+      host.innerHTML = "<p class=\"method-note\">About-the-Quran facts are not yet in the data payload " +
+        "(see data/quran_facts.json in the repo).</p>";
+      return;
+    }
+    var h = "";
+    if (D.quran_facts_sample)
+      h += '<p class="sample-note">Sample data — citations pending; this table will be replaced ' +
+        "with sourced facts (Agent A).</p>";
+    h += '<div class="table-scroll"><table class="data-table"><thead><tr>' +
+      "<th>Fact</th><th>Value</th><th>Source</th></tr></thead><tbody>";
+    facts.forEach(function (f) {
+      var src = esc(f.source || "—");
+      if (f.source_url) src = '<a href="' + esc(f.source_url) + '" target="_blank" rel="noopener">' + src + "</a>";
+      h += "<tr><td><b>" + esc(f.label || f.id || "") + "</b>" +
+        (f.note ? '<div class="reason">' + esc(f.note) + "</div>" : "") + "</td>" +
+        "<td><b>" + esc(f.value) + "</b></td><td>" + src + "</td></tr>";
+    });
+    host.innerHTML = h + "</tbody></table></div>";
+  })();
+
+  /* ---------- The corpus in numbers ---------- */
+  (function renderCorpusNumbers() {
+    var host = $("corpus-table");
+    if (!host) return;
+    var nums = D.corpus_numbers || [];
+    if (!nums.length) {
+      host.innerHTML = "<p class=\"method-note\">Corpus numbers are not yet in the data payload " +
+        "(see data/corpus_numbers.json in the repo).</p>";
+      return;
+    }
+    var h = "";
+    if (D.corpus_numbers_sample)
+      h += '<p class="sample-note">Sample data — script-computed QAC v0.4 totals; ' +
+        "this table will be replaced / extended with Agent A's corpus numbers (e.g. a letter count).</p>";
+    h += '<div class="table-scroll"><table class="data-table"><thead><tr>' +
+      "<th>Number</th><th>Count</th><th>Counting rule</th></tr></thead><tbody>";
+    nums.forEach(function (n) {
+      var v = typeof n.value === "number" ? n.value.toLocaleString("en-US") : String(n.value == null ? "—" : n.value);
+      h += "<tr><td><b>" + esc(n.label || n.id || "") + "</b></td>" +
+        "<td><b>" + esc(v) + "</b></td><td>" + esc(n.rule || "") +
+        (n.source ? ' <span class="src-title">(' + esc(n.source) + ")</span>" : "") + "</td></tr>";
+    });
+    host.innerHTML = h + "</tbody></table></div>";
   })();
 
   /* ---------- methodology: assumption sets table ---------- */
@@ -135,8 +189,10 @@
       side.refs.map(refHtml).join("") + "</ul></details>";
   }
   function renderPairs() {
-    var q = ($("pair-search").value || "").toLowerCase();
-    var eqOnly = $("pair-equal-only").checked;
+    var searchEl = $("pair-search");
+    if (!searchEl || !$("pairs-list")) return;
+    var q = (searchEl.value || "").toLowerCase();
+    var eqOnly = $("pair-equal-only") && $("pair-equal-only").checked;
     var max = 1;
     (D.pairs || []).forEach(function (p) {
       max = Math.max(max, p.a.count || 0, p.b.count || 0);
@@ -178,10 +234,11 @@
         ' <span class="ar">' + esc(x.label_ar || "") + "</span></span>" +
         (x.notes ? "<p>" + esc(x.notes) + "</p>" : "") + "</div>";
     });
-    $("extras-list").innerHTML = ex || "<p>No single counts match that search.</p>";
+    var extrasEl = $("extras-list");
+    if (extrasEl) extrasEl.innerHTML = ex || "<p>No single counts match that search.</p>";
   }
-  $("pair-search").addEventListener("input", renderPairs);
-  $("pair-equal-only").addEventListener("change", renderPairs);
+  on("pair-search", "input", renderPairs);
+  on("pair-equal-only", "change", renderPairs);
 
   /* ---------- names ---------- */
   var namesById = {};
@@ -190,6 +247,7 @@
   (D.names || []).forEach(function (n) { maxName = Math.max(maxName, n.count || 0); });
 
   function renderNames() {
+    if (!$("name-search") || !$("names-list")) return;
     var q = ($("name-search").value || "").toLowerCase();
     var f = $("name-filter").value;
     var list = (D.names || []).slice().sort(function (a, b) { return b.count - a.count; });
@@ -222,7 +280,7 @@
   }
   function showNameDetail(id) {
     var n = namesById[id];
-    if (!n) return;
+    if (!n || !$("name-detail")) return;
     var refs = (n.example_refs || []).map(function (r) {
       return esc(r.surah) + ":" + esc(r.ayah);
     }).join(" · ");
@@ -242,8 +300,8 @@
     var det = $("name-detail");
     if (det.scrollIntoView) det.scrollIntoView({ behavior: "smooth", block: "nearest" });
   }
-  $("name-search").addEventListener("input", renderNames);
-  $("name-filter").addEventListener("change", renderNames);
+  on("name-search", "input", renderNames);
+  on("name-filter", "change", renderNames);
 
   /* ---------- network graph ---------- */
   var graphState = { nodes: [], edges: [], pos: {}, selected: null };
@@ -252,8 +310,9 @@
     if (!canvas) return;
     var ctx = null;
     try { ctx = canvas.getContext("2d"); } catch (e) { ctx = null; }
-    var scope = parseInt($("graph-scope").value, 10) || 25;
-    var edgeKind = $("graph-edges").value;
+    var scopeEl = $("graph-scope"), edgesEl = $("graph-edges");
+    var scope = (scopeEl && parseInt(scopeEl.value, 10)) || 25;
+    var edgeKind = (edgesEl && edgesEl.value) || "verse";
     var top = (D.names || []).slice().sort(function (a, b) { return b.count - a.count; })
       .filter(function (n) { return n.count > 0; }).slice(0, scope);
     var ids = {};
@@ -275,8 +334,9 @@
       var a = (i / top.length) * Math.PI * 2 - Math.PI / 2;
       graphState.pos[n.id] = { x: cx + R * Math.cos(a), y: cy + R * Math.sin(a) };
     });
+    var detail = $("graph-detail");
     if (!ctx) {
-      $("graph-detail").textContent = "Graph needs a canvas-capable browser; the pair counts below are the same data in table form.";
+      if (detail) detail.textContent = "Graph needs a canvas-capable browser; the pair counts below are the same data in table form.";
       return;
     }
     renderGraphCanvas(ctx, W, H);
@@ -325,14 +385,16 @@
         return { name: namesById[+k], w: neighbours[k] };
       }).filter(function (x) { return x.name; })
         .sort(function (a, b) { return b.w - a.w; }).slice(0, 8);
-      $("graph-detail").innerHTML = n ? "<b>" + esc(n.transliteration) + "</b> (" + esc(n.count) +
+      var detail = $("graph-detail");
+      if (detail) detail.innerHTML = n ? "<b>" + esc(n.transliteration) + "</b> (" + esc(n.count) +
         " occurrences) co-occurs most with: " +
         parts.map(function (x) { return esc(x.name.transliteration) + " (" + x.w + ")"; }).join(" · ") +
         (parts.length ? "" : " — no verse partners in this scope.") : "";
     }
   }
-  $("graph").addEventListener("click", function (ev) {
+  on("graph", "click", function (ev) {
     var canvas = $("graph");
+    if (!canvas) return;
     var rect = canvas.getBoundingClientRect();
     var x = (ev.clientX - rect.left) * (canvas.width / rect.width);
     var y = (ev.clientY - rect.top) * (canvas.height / rect.height);
@@ -348,13 +410,16 @@
       var ctx = null;
       try { ctx = canvas.getContext("2d"); } catch (e) { ctx = null; }
       if (ctx) renderGraphCanvas(ctx, canvas.width, canvas.height);
-      if (graphState.selected == null)
-        $("graph-detail").textContent = "Select a Name in the graph to see its strongest partners.";
-      else showNameDetail(graphState.selected);
+      var detail = $("graph-detail");
+      if (detail) {
+        if (graphState.selected == null)
+          detail.textContent = "Select a Name in the graph to see its strongest partners.";
+        else showNameDetail(graphState.selected);
+      }
     }
   });
-  $("graph-scope").addEventListener("change", drawGraph);
-  $("graph-edges").addEventListener("change", drawGraph);
+  on("graph-scope", "change", drawGraph);
+  on("graph-edges", "change", drawGraph);
 
   /* ---------- findings: method & locations (collapsed) ---------- */
   function fmtCount(c) {
@@ -400,7 +465,7 @@
     return h;
   }
 
-  /* ---------- findings: data tables ---------- */
+  /* ---------- findings: data tables (shared by both pages) ---------- */
   function sourceCell(f) {
     var s = f.source || {};
     var h = esc(s.author || "—");
@@ -422,7 +487,7 @@
       : fmtCount(f.verification_root_rule && f.verification_root_rule.count);
     var h = '<tr class="frow"><td class="c-claim"><b>' + esc(f.claim) + "</b>" +
       (f.claim_arabic_or_terms ? ' <span class="ar">' + esc(f.claim_arabic_or_terms) + "</span>" : "") +
-      '<div class="cat-tag">' + esc(catLabel(f.category)) + "</div>" +
+      '<div class="cat-tag">' + esc(sectionLabel(f.section)) + " · " + esc(catLabel(f.category)) + "</div>" +
       methodBlock(f) + "</td>" +
       '<td class="c-num">' + esc(scholarN) + "</td>" +
       '<td class="c-num">' + esc(ourN) + "</td>" +
@@ -432,59 +497,78 @@
       '<td class="c-src">' + sourceCell(f) + "</td></tr>";
     return h;
   }
-  function renderFindings(section, ids) {
-    var q = ($(ids.search).value || "").toLowerCase();
-    var cat = $(ids.cat).value, st = $(ids.status).value;
+  function findingsTable(list) {
+    if (!list.length) return "<p>No findings match those filters.</p>";
+    return '<div class="table-scroll"><table class="data-table f-table"><thead><tr>' +
+      "<th>Claim</th><th>Scholar's number</th><th>Our number</th>" +
+      "<th>Assumption</th><th>Verdict</th><th>Source</th></tr></thead><tbody>" +
+      list.map(findingRow).join("") + "</tbody></table></div>";
+  }
+  function matchesFilters(f, q, cat, st) {
+    var hay = (f.claim + " " + (f.claim_arabic_or_terms || "") + " " +
+      ((f.source && f.source.author) || "") + " " + ((f.source && f.source.title) || "") + " " +
+      (f.scholar_method || "") + " " + (f.exceptions || "") + " " +
+      (f.assumptions && f.assumptions.reason ? f.assumptions.reason : "") + " " +
+      (f.our_note || "")).toLowerCase();
+    if (q && hay.indexOf(q) === -1) return false;
+    if (cat !== "all" && f.category !== cat) return false;
+    if (st !== "all" && f.our_status !== st) return false;
+    return true;
+  }
+  /* Main page: ONE merged table of CONFIRMED findings only. The filter in
+     code (our_status === 'confirmed') is the guarantee — no differs or
+     cannot_verify row can reach this page. No status filter: every row here
+     is confirmed. */
+  function renderVerified() {
+    var host = $("verified-list");
+    if (!host) return;
+    var q = (($("verified-search") || {}).value || "").toLowerCase();
+    var cat = ($("verified-cat") || {}).value || "all";
     var all = D.findings || [];
-    var inSection = all.filter(function (f) { return (f.section || "scholarly") === section; });
-    var list = inSection.filter(function (f) {
-      var hay = (f.claim + " " + (f.claim_arabic_or_terms || "") + " " +
-        ((f.source && f.source.author) || "") + " " + ((f.source && f.source.title) || "") + " " +
-        (f.scholar_method || "") + " " + (f.exceptions || "") + " " +
-        (f.assumptions && f.assumptions.reason ? f.assumptions.reason : "") + " " +
-        (f.our_note || "")).toLowerCase();
-      if (q && hay.indexOf(q) === -1) return false;
-      if (cat !== "all" && f.category !== cat) return false;
-      if (st !== "all" && f.our_status !== st) return false;
-      return true;
+    var confirmed = all.filter(function (f) { return f.our_status === "confirmed"; });
+    var list = confirmed.filter(function (f) { return matchesFilters(f, q, cat, "all"); });
+    var sch = confirmed.filter(function (f) { return f.section === "scholarly"; }).length;
+    var pop = confirmed.filter(function (f) { return f.section === "popular"; }).length;
+    var tally = $("verified-tally");
+    if (tally) tally.textContent = confirmed.length + " verified findings — " + sch +
+      " scholarly · " + pop + " popular. Showing " + list.length + ".";
+    host.innerHTML = findingsTable(list);
+  }
+  /* Unverified page: differs + cannot_verify only, kept in Scholar / Popular
+     groups with a status filter (differs vs cannot_verify). */
+  function renderUnverified() {
+    var host = $("unverified-list");
+    if (!host) return;
+    var q = (($("unverified-search") || {}).value || "").toLowerCase();
+    var cat = ($("unverified-cat") || {}).value || "all";
+    var st = ($("unverified-status") || {}).value || "all";
+    var all = D.findings || [];
+    var unv = all.filter(function (f) { return f.our_status !== "confirmed"; });
+    var list = unv.filter(function (f) { return matchesFilters(f, q, cat, st); });
+    var t = { differs: 0, cannot_verify: 0 };
+    unv.forEach(function (f) { if (t[f.our_status] != null) t[f.our_status]++; });
+    var tally = $("unverified-tally");
+    if (tally) tally.textContent = unv.length + " unverified claims — " + t.differs +
+      " differ from our recount · " + t.cannot_verify + " cannot verify. Showing " + list.length + ".";
+    var html = "";
+    ["scholarly", "popular"].forEach(function (section) {
+      var group = list.filter(function (f) { return (f.section || "scholarly") === section; });
+      if (!group.length) return;
+      html += "<h3>" + esc(sectionLabel(section)) + " — " + group.length + " unverified</h3>" +
+        findingsTable(group);
     });
-    var tally = { confirmed: 0, differs: 0, cannot_verify: 0 };
-    inSection.forEach(function (f) { if (tally[f.our_status] != null) tally[f.our_status]++; });
-    var overall = { confirmed: 0, differs: 0, cannot_verify: 0 };
-    all.forEach(function (f) { if (overall[f.our_status] != null) overall[f.our_status]++; });
-    $(ids.tally).textContent = inSection.length + " findings in this section — " +
-      tally.confirmed + " confirmed by our recount · " + tally.differs +
-      " differ from our recount · " + tally.cannot_verify + " cannot verify. Showing " +
-      list.length + ". Overall: " + all.length + " findings in total (" +
-      overall.confirmed + " confirmed · " + overall.differs + " differ · " +
-      overall.cannot_verify + " cannot verify).";
-    var html = list.length
-      ? '<div class="table-scroll"><table class="data-table f-table"><thead><tr>' +
-        "<th>Claim</th><th>Scholar's number</th><th>Our number</th>" +
-        "<th>Assumption</th><th>Verdict</th><th>Source</th></tr></thead><tbody>" +
-        list.map(findingRow).join("") + "</tbody></table></div>"
-      : "<p>No findings match those filters.</p>";
-    $(ids.list).innerHTML = html;
+    host.innerHTML = html || "<p>No unverified claims match those filters.</p>";
   }
-  function renderScholarFindings() {
-    renderFindings("scholarly", { search: "finding-search", cat: "finding-cat",
-      status: "finding-status", tally: "finding-tally", list: "findings-list" });
-  }
-  function renderPopularFindings() {
-    renderFindings("popular", { search: "popular-search", cat: "popular-cat",
-      status: "popular-status", tally: "popular-tally", list: "popular-list" });
-  }
-  $("finding-search").addEventListener("input", renderScholarFindings);
-  $("finding-cat").addEventListener("change", renderScholarFindings);
-  $("finding-status").addEventListener("change", renderScholarFindings);
-  $("popular-search").addEventListener("input", renderPopularFindings);
-  $("popular-cat").addEventListener("change", renderPopularFindings);
-  $("popular-status").addEventListener("change", renderPopularFindings);
+  on("verified-search", "input", renderVerified);
+  on("verified-cat", "change", renderVerified);
+  on("unverified-search", "input", renderUnverified);
+  on("unverified-cat", "change", renderUnverified);
+  on("unverified-status", "change", renderUnverified);
 
-  /* ---------- init ---------- */
+  /* ---------- init: render only the sections this page has ---------- */
   renderPairs();
   renderNames();
-  renderScholarFindings();
-  renderPopularFindings();
+  renderVerified();
+  renderUnverified();
   drawGraph();
 })();
