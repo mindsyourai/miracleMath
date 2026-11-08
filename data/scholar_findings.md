@@ -6,6 +6,8 @@ Reconciled 2026-11-07 — every finding now states the scholar claim as sourced,
 
 Methods pass 2026-11-08 — every finding now also carries the scholar's own method (stated / reconstructed / unstated / not a count), the exceptions to that method, verification under both the scholar's rule and our standard QAC root rule, and script-computed verse locations (see METHODS.md; full location lists in data/locations.json). Tallies after this pass: 37 confirmed / 17 differ / 10 cannot verify.
 
+Assumptions pass 2026-11-08 — every finding now also carries named assumption sets (A1–A7) with per-set numbers and which sets reconcile the scholar's number with ours (see ASSUMPTIONS.md). Tallies unchanged: 37 confirmed / 17 differ / 10 cannot verify.
+
 > **Read this first:** disputed numerology is presented here as *reported findings* — each with a source and a status — never as settled fact. “Confirmed” means our own scripted recount on the Tanzil file reproduces the claimed figure under a stated method; “differs” means it does not; “cannot verify” means no recount was possible or the claim needs sense disambiguation. The Nursi strand (Isaratul-I'jaz) is parked by MK's decision and is **not** covered here.
 
 ## Tally
@@ -56,6 +58,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Verification — root rule:** 115 / 115 — QAC: LEM d~unoyaA = 115; akhira = feminine al-akhira stem forms ('aAxirapi/'aAxirapa/'aAxirapu) = 115. Both rules agree.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A3, A6 · numbers by set: A1: 115 / 115, A2: 115 / 155, A3: 115 / 115, A6: 115 / 115 · Both sides are 115 under the root rule and the surface rule; the lemma rule gives akhira 155 (the masculine al-akhir and plural forms are a separate lemma).
+
 **Locations (170 verses; verses per surah — 2: 13, 3: 12, 4: 5, 5: 3, 6: 7, 7: 7, 8: 2, 9: 5, 10: 7, 11: 6, 12: 4, 13: 2, 14: 2, 16: 7, 17: 7, 18: 4, 20: 3, 22: 3, 23: 3, 24: 4, 27: 4, 28: 7, 29: 4, 30: 2, 31: 3, 33: 3, 34: 3, 35: 1, 37: 1, 38: 1, 39: 4, 40: 3, 41: 4, 42: 2, 43: 2, 45: 2, 46: 1, 47: 1, 53: 3, 57: 1, 59: 1, 60: 1, 67: 1, 68: 1, 74: 1, 75: 1, 79: 2, 87: 2, 92: 1, 93: 1):** first 20: 2:4, 2:85, 2:86, 2:94, 2:102, 2:114, 2:130, 2:200, 2:201, 2:204, 2:212, 2:217, 2:220, 3:14, 3:22, 3:45, 3:56, 3:77, 3:85, 3:117 … (full list in data/locations.json)
 **Locations — scholar's rule (170 verses):** 2:4, 2:85, 2:86, 2:94, 2:102, 2:114, 2:130, 2:200, 2:201, 2:204, 2:212, 2:217, 2:220, 3:14, 3:22, 3:45, 3:56, 3:77, 3:85, 3:117, 3:145, 3:148, 3:152, 3:176, 3:185, 4:74, 4:77, 4:94, 4:109, 4:134, 5:5, 5:33, 5:41, 6:29, 6:32, 6:70, 6:92, 6:113, 6:130, 6:150, 7:32, 7:45, 7:51, 7:147, 7:152, 7:156, 7:169, 8:42, 8:67, 9:38, 9:55, 9:69, 9:74, 9:85, 10:7, 10:23, 10:24, 10:64, 10:70, 10:88 …
 
@@ -85,6 +89,8 @@ Methods pass (2026-11-08): confirmed→differs: 12 of the 77 exact surface forms
 
 **Verification — root rule:** 147 / 77 — QAC: LEM jan~ap (all gardens) = 147 (singular 70 = 65 in the four surface forms + 1 construct spelling وجنتُ (56:89) + 4 suffixed; plural 69; dual 8); LEM jahan~am = 77. Sense-correct garden counts are 65 / 70 / 147 -- none is 77.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A3, A6 · numbers by set: A1: 147 / 77, A2: 147 / 77, A3: 77 / 77, A6: 77 / 77 · 77/77 reproduces only under the sense-blind surface-form rule; sense-correct garden is 66 (bare singular), 70 (lemma singular) or 147 (all gardens) — none is 77.
+
 **Locations (220 verses; verses per surah — 2: 9, 3: 10, 4: 11, 5: 5, 6: 2, 7: 13, 8: 3, 9: 13, 10: 2, 11: 3, 13: 4, 14: 3, 15: 2, 16: 3, 17: 6, 18: 10, 19: 5, 20: 4, 21: 2, 22: 3, 23: 2, 25: 6, 26: 5, 29: 3, 31: 1, 32: 2, 34: 2, 35: 2, 36: 4, 37: 1, 38: 3, 39: 6, 40: 5, 41: 1, 42: 2, 43: 3, 44: 2, 45: 1, 46: 2, 47: 3, 48: 3, 50: 4, 51: 1, 52: 2, 53: 1, 54: 1, 55: 4, 56: 2, 57: 2, 58: 2, 59: 1, 61: 1, 64: 1, 65: 1, 66: 3, 67: 1, 68: 2, 69: 1, 70: 2, 71: 1, 72: 2, 74: 1, 76: 1, 78: 2, 79: 1, 81: 1, 85: 2, 88: 1, 89: 2, 98: 2):** first 20: 2:25, 2:35, 2:82, 2:111, 2:206, 2:214, 2:221, 2:265, 2:266, 3:12, 3:15, 3:133, 3:136, 3:142, 3:162, 3:185, 3:195, 3:197, 3:198, 4:13 … (full list in data/locations.json)
 **Locations — scholar's rule (150 verses):** 2:35, 2:82, 2:111, 2:206, 2:214, 2:221, 2:265, 2:266, 3:12, 3:133, 3:142, 3:162, 3:185, 3:197, 4:55, 4:93, 4:97, 4:115, 4:121, 4:124, 4:140, 4:169, 5:72, 7:18, 7:19, 7:22, 7:27, 7:40, 7:41, 7:42, 7:43, 7:44, 7:46, 7:49, 7:50, 7:179, 7:184, 8:16, 8:36, 8:37, 9:35, 9:49, 9:63, 9:68, 9:73, 9:81, 9:95, 9:109, 9:111, 10:26, 11:23, 11:108, 11:119, 13:18, 13:35, 14:16, 14:29, 15:43, 16:29, 16:32 …
 
@@ -112,6 +118,8 @@ Methods pass (2026-11-08): confirmed→differs: 12 of the 77 exact surface forms
 
 **Verification — root rule:** 88 / 88 — QAC: ROOT $Tn (shaytan) = 88; LEM malak = 88. Whole ROOT mlk would be far larger (mulk dominion, malik king) -- the lemma narrowing is essential. Both rules agree.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 88 / 88, A2: 88 / 88, A6: 88 / 88 · 88/88 reproduces under the root rule, the lemma rule and the reconstructed rule (devils by root $Tn, angels by lemma malak).
+
 **Locations (162 verses; verses per surah — 2: 16, 3: 11, 4: 11, 5: 2, 6: 12, 7: 8, 8: 5, 11: 2, 12: 4, 13: 2, 14: 1, 15: 5, 16: 7, 17: 7, 18: 2, 19: 4, 20: 2, 21: 2, 22: 4, 23: 2, 24: 1, 25: 5, 26: 2, 27: 1, 28: 1, 29: 1, 31: 1, 32: 1, 33: 2, 34: 1, 35: 2, 36: 1, 37: 3, 38: 4, 39: 1, 41: 3, 42: 1, 43: 5, 47: 2, 53: 2, 58: 2, 59: 1, 66: 2, 67: 1, 69: 1, 70: 1, 74: 1, 78: 1, 81: 1, 89: 1, 97: 1):** first 20: 2:14, 2:30, 2:31, 2:34, 2:36, 2:98, 2:102, 2:161, 2:168, 2:177, 2:208, 2:210, 2:248, 2:268, 2:275, 2:285, 3:18, 3:36, 3:39, 3:42 … (full list in data/locations.json)
 
 ### day-365
@@ -137,6 +145,8 @@ Methods pass (2026-11-08): confirmed→differs: 12 of the 77 exact surface forms
 **Verification — scholar's rule:** 365 — Stated rule verified: singular yawm without suffixes = 365 (simple يوم/اليوم/يوما 274 + prefixed ويوم 44, واليوم 23, ليوم 8, فاليوم 8, بيوم 5, باليوم 2, وباليوم 1). QAC agrees: singular yawm = 375, minus 10 suffixed = 365.
 
 **Verification — root rule:** 475 — QAC: ROOT ywm = 405 (singular 375 + plural 27 + dual 3) + LEM yawoma}i* (yawma'idhin) 70 = 475. The 365 is a subset: it excludes the 10 suffixed singulars, 3 duals, 27 plurals and 70 yawma'idhin (110 tokens).
+
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: A3, A5 · numbers by set: A1: 475, A2: 405, A3: 365, A5: 365 · 365 is the stated singular, suffix-free selection; the whole root gives 475 (375 singular + 27 plural + 3 dual + 70 yawma'idhin).
 
 **Locations (437 verses; verses per surah — 1: 1, 2: 22, 3: 17, 4: 10, 5: 9, 6: 10, 7: 10, 8: 3, 9: 12, 10: 8, 11: 14, 12: 2, 14: 8, 15: 3, 16: 10, 17: 7, 18: 6, 19: 8, 20: 10, 21: 3, 22: 8, 23: 6, 24: 5, 25: 9, 26: 8, 27: 3, 28: 9, 29: 4, 30: 7, 31: 1, 32: 5, 33: 3, 34: 4, 35: 1, 36: 5, 37: 5, 38: 6, 39: 8, 40: 14, 41: 7, 42: 3, 43: 5, 44: 4, 45: 7, 46: 5, 50: 8, 51: 3, 52: 5, 54: 4, 55: 2, 56: 2, 57: 4, 58: 4, 60: 2, 62: 1, 64: 1, 65: 1, 66: 2, 68: 3, 69: 7, 70: 7, 73: 2, 74: 2, 75: 8, 76: 4, 77: 15, 78: 5, 79: 4, 80: 4, 82: 4, 83: 6, 85: 1, 86: 1, 88: 2, 89: 2, 90: 1, 99: 2, 100: 1, 101: 1, 102: 1):** first 20: 1:4, 2:8, 2:48, 2:62, 2:80, 2:85, 2:113, 2:123, 2:126, 2:174, 2:177, 2:184, 2:185, 2:196, 2:203, 2:212, 2:228, 2:232, 2:249, 2:254 … (full list in data/locations.json)
 **Locations — scholar's rule (341 verses):** 1:4, 2:8, 2:48, 2:62, 2:85, 2:113, 2:123, 2:126, 2:174, 2:177, 2:212, 2:228, 2:232, 2:249, 2:254, 2:259, 2:264, 2:281, 3:9, 3:25, 3:30, 3:55, 3:77, 3:106, 3:114, 3:155, 3:161, 3:166, 3:180, 3:185, 3:194, 4:38, 4:39, 4:59, 4:87, 4:109, 4:136, 4:141, 4:159, 4:162, 5:3, 5:5, 5:14, 5:36, 5:64, 5:69, 5:109, 5:119, 6:12, 6:15, 6:22, 6:73, 6:93, 6:128, 6:141, 6:158, 7:14, 7:32, 7:51, 7:53 …
@@ -165,6 +175,8 @@ Methods pass (2026-11-08): confirmed→differs: 12 of the 77 exact surface forms
 
 **Verification — root rule:** 21 — QAC: ROOT $hr / LEM $ahor = 21 (singular 12 + dual 2 + plural 7). The 12 is the singular-only subset.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A3, A6 · numbers by set: A1: 21, A2: 21, A3: 12, A6: 12 · 12 is the singular-only selection; the root/lemma total is 21 (12 singular + 2 dual + 7 plural).
+
 **Locations (17 verses):** 2:185, 2:194, 2:197, 2:217, 2:226, 2:234, 4:92, 5:2, 5:97, 9:2, 9:5, 9:36, 34:12, 46:15, 58:4, 65:4, 97:3
 **Locations — scholar's rule (9 verses):** 2:185, 2:194, 2:217, 5:2, 5:97, 9:36, 34:12, 46:15, 97:3
 
@@ -191,6 +203,8 @@ Methods pass (2026-11-08): confirmed→differs: 12 of the 77 exact surface forms
 **Verification — scholar's rule:** 5 — Reconstructed: plural surface form صلوات = 5 (QAC plural stems Salawa`tN/Salawa`ti/S~alawa`ti). The source states no method; this is the selection that reproduces the claim.
 
 **Verification — root rule:** 5 — QAC: LEM Salaw`p plural stems = 5; the same lemma covers singular صلاة (78 words, incl. the 2 صلوة spellings). Both rules agree on 5.
+
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A3, A6 · numbers by set: A1: 5, A2: 83, A3: 5, A6: 5 · 5 is the plural surface form صلوات (and the plural stems of the lemma); the whole lemma is 83 words.
 
 **Locations (5 verses):** 2:157, 2:238, 9:99, 22:40, 23:9
 **Locations — scholar's rule (5 verses):** 2:157, 2:238, 9:99, 22:40, 23:9
@@ -221,6 +235,8 @@ Methods pass (2026-11-08): cannot_verify→differs: land-sense البرّ occurs
 
 **Verification — root rule:** 41 / 12 — QAC: LEM baHor (sea-sense) = 41; LEM bar~ land-sense = 12 (of 22 bar~ tokens; the rest are piety/righteousness). Whole ROOT brr = 32 (bar~ 22 + bir~ piety 8 + tabar~u 2) -- coincidentally the sea number, not the land number.
 
+**Assumptions:** scholar set — · our set A1 · reconciles under: none · numbers by set: A1: 41 / 12, A2: 41 / 12, A3: 32 / 21 · Sea 32 reproduces as definite singular البحر; land 13 reproduces under no rule — sense-correct land is 12, surface البر is 21.
+
 **Locations (42 verses):** 2:50, 2:164, 5:96, 6:59, 6:63, 6:97, 7:138, 7:163, 10:22, 10:90, 14:32, 16:14, 17:66, 17:67, 17:68, 17:70, 18:60, 18:61, 18:63, 18:79, 18:109, 20:77, 22:65, 24:40, 25:53, 26:63, 27:61, 27:63, 29:65, 30:41, 31:27, 31:31, 31:32, 35:12, 42:32, 44:24, 45:12, 52:6, 55:19, 55:24, 81:6, 82:3
 **Locations — scholar's rule (31 verses):** 2:50, 2:164, 5:96, 6:59, 6:63, 6:97, 7:138, 7:163, 10:22, 10:90, 14:32, 16:14, 17:66, 17:67, 17:70, 18:61, 18:63, 18:79, 18:109, 20:77, 22:65, 26:63, 27:63, 30:41, 31:27, 31:31, 42:32, 44:24, 45:12, 52:6, 55:24
 
@@ -247,6 +263,8 @@ Methods pass (2026-11-08): cannot_verify→differs: land-sense البرّ occurs
 **Verification — scholar's rule:** 24 / 24 — Reconstructed (Al-Suwaidan/Elias list, not Yahya's): singular surface forms = 24/24. Yahya's stated number is 23/23; the one-token exclusion that would give 23 is not stated anywhere and cannot be reconstructed. Scribd source for the Al-Suwaidan list was not fetched (Scribd blocks text fetch); the 24/24 is verified from the corpus, not from the source.
 
 **Verification — root rule:** 57 / 85 — QAC: LEM rajul 29 (24 singular + 5 dual) + LEM rijaAl (men, plural) 28 = 57; LEM {mora>at 26 (24 singular + 2 dual) + LEM nisaA^' (women) 59 = 85. The 24/24 is the singular-only subset on both sides.
+
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A3, A6 · numbers by set: A1: 57 / 85, A2: 29 / 26, A3: 24 / 24, A6: 24 / 24 · 24/24 is the singular-only surface selection; root totals are 57/85, singular lemmas 29/26.
 
 **Locations (115 verses; verses per surah — 2: 12, 3: 5, 4: 20, 5: 2, 6: 1, 7: 9, 9: 1, 10: 1, 11: 3, 12: 5, 14: 1, 15: 1, 16: 2, 17: 1, 18: 2, 19: 2, 21: 1, 22: 1, 23: 2, 24: 3, 25: 1, 27: 3, 28: 5, 29: 3, 33: 9, 34: 2, 36: 1, 38: 1, 39: 1, 40: 2, 43: 1, 48: 1, 49: 1, 51: 1, 58: 2, 65: 2, 66: 2, 72: 1, 111: 1):** first 20: 2:49, 2:187, 2:222, 2:223, 2:226, 2:228, 2:231, 2:232, 2:235, 2:236, 2:239, 2:282, 3:14, 3:35, 3:40, 3:42, 3:61, 4:1, 4:3, 4:4 … (full list in data/locations.json)
 **Locations — scholar's rule (43 verses):** 2:282, 3:35, 3:40, 4:12, 4:128, 6:9, 7:63, 7:69, 7:83, 7:155, 10:2, 11:71, 11:78, 11:81, 12:21, 12:30, 12:51, 15:60, 17:47, 18:37, 19:5, 19:8, 23:25, 23:38, 25:8, 27:23, 27:57, 28:9, 28:20, 29:32, 29:33, 33:4, 33:50, 34:7, 34:43, 36:20, 39:29, 40:28, 43:31, 51:29, 66:10, 66:11, 111:4
@@ -275,6 +293,8 @@ Methods pass (2026-11-08): cannot_verify→differs: land-sense البرّ occurs
 
 **Verification — root rule:** 184 / 165 — QAC whole-root: Hyy 184, mwt 165. Noun-only: Hayaw`p 76, mawot 50. Neither pairing is 145/145.
 
+**Assumptions:** scholar set — · our set A1 · reconciles under: none · numbers by set: A1: 184 / 165, A2: 76 / 50, A3: 125 / 171 · No rule reproduces 145/145 — whole roots 184/165, nouns 76/50, surface families 125/171.
+
 **Locations (239 verses; verses per surah — 2: 26, 3: 17, 4: 9, 5: 4, 6: 13, 7: 8, 8: 3, 9: 5, 10: 9, 11: 2, 13: 3, 14: 5, 15: 1, 16: 6, 17: 1, 18: 4, 19: 5, 20: 6, 21: 3, 22: 3, 23: 7, 24: 2, 25: 4, 26: 1, 27: 1, 28: 5, 29: 4, 30: 6, 31: 2, 32: 1, 33: 5, 34: 1, 35: 4, 36: 5, 37: 4, 39: 3, 40: 6, 41: 3, 42: 2, 43: 3, 44: 3, 45: 5, 46: 2, 47: 3, 49: 1, 50: 4, 53: 2, 56: 2, 57: 3, 58: 1, 62: 2, 63: 1, 67: 1, 75: 1, 77: 1, 79: 1, 80: 1, 87: 2, 89: 1):** first 20: 2:19, 2:26, 2:28, 2:49, 2:56, 2:73, 2:85, 2:86, 2:94, 2:96, 2:132, 2:133, 2:154, 2:161, 2:164, 2:173, 2:179, 2:180, 2:204, 2:212 … (full list in data/locations.json)
 
 ### sun-moon-33-27
@@ -300,6 +320,8 @@ Methods pass (2026-11-08): cannot_verify→differs: land-sense البرّ occurs
 **Verification — scholar's rule:** 33 / 33 / 27 — Stated rule verified: sun شمس substring = 33; light simple forms = 33 (selection above); moon قمر substring = 27. The pair is really sun/light 33/33 plus a separate moon 27.
 
 **Verification — root rule:** 33 / 27 / 43 — QAC: ROOT $ms (sun) = 33; ROOT qmr (moon) = 27; LEM nuwr (light) = 43, or 49 counting LEM m~uniyr ('shining', 6). Sun and moon agree under both rules; light is 33 only under Yahya's stated simple-forms selection.
+
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: A3, A5 · numbers by set: A1: 33 / 43 / 27, A2: 33 / 43 / 27, A3: 33 / 33 / 27, A5: 33 / 33 / 27 · 33/33/27 reproduces under Yahya's stated simple-forms rule and the surface rule; the root/lemma rule gives light 43 (49 with منير).
 
 **Locations (71 verses; verses per surah — 2: 3, 4: 1, 5: 4, 6: 6, 7: 2, 9: 1, 10: 1, 12: 1, 13: 2, 14: 3, 16: 1, 17: 1, 18: 3, 20: 1, 21: 1, 22: 1, 24: 2, 25: 2, 27: 1, 29: 1, 31: 1, 33: 1, 35: 2, 36: 3, 39: 3, 41: 1, 42: 1, 50: 1, 54: 1, 55: 1, 57: 5, 61: 1, 64: 1, 65: 1, 66: 1, 71: 1, 74: 1, 75: 2, 76: 1, 81: 1, 84: 1, 91: 2):** first 20: 2:17, 2:257, 2:258, 4:174, 5:15, 5:16, 5:44, 5:46, 6:1, 6:77, 6:78, 6:91, 6:96, 6:122, 7:54, 7:157, 9:32, 10:5, 12:4, 13:2 … (full list in data/locations.json)
 **Locations — scholar's rule (67 verses):** 2:257, 2:258, 4:174, 5:15, 5:16, 6:1, 6:77, 6:78, 6:91, 6:96, 6:122, 7:54, 7:157, 9:32, 10:5, 12:4, 13:2, 13:16, 14:1, 14:5, 14:33, 16:12, 17:78, 18:17, 18:86, 18:90, 20:130, 21:33, 22:18, 24:35, 24:40, 25:45, 25:61, 27:24, 29:61, 31:29, 33:43, 35:13, 35:20, 36:38, 36:39, 36:40, 39:5, 39:22, 39:69, 41:37, 42:52, 50:39, 54:1, 55:5, 57:9, 57:12, 57:13, 57:28, 61:8, 64:8, 65:11, 66:8, 71:16, 74:32 …
@@ -327,6 +349,8 @@ Methods pass (2026-11-08): cannot_verify→differs: land-sense البرّ occurs
 **Verification — scholar's rule:** 4 — Reconstructed: plain surface count محمد = 4. The source states no method; this is the selection that reproduces the claim.
 
 **Verification — root rule:** 4 — QAC: LEM muHam~ad = 4. Both rules agree.
+
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A3, A6 · numbers by set: A1: 4, A2: 4, A3: 4, A6: 4 · 4 under every rule tried (surface, lemma and root-narrowed).
 
 **Locations (4 verses):** 3:144, 33:40, 47:2, 48:29
 **Locations — scholar's rule (4 verses):** 3:144, 33:40, 47:2, 48:29
@@ -357,6 +381,8 @@ Methods pass (2026-11-08): differs→confirmed: bare (unsuffixed) noun forms rep
 
 **Verification — root rule:** 45 / 37 — QAC noun-only (root narrowed by lemma to the intended sense): LEM <iyma`n = 45, LEM kufor = 37. The 25/25 is the bare-noun subset. Broader sense-level families: belief (verb آمن 537 + مؤمن 202 + إيمان 45 + مؤمنات 22 + مؤمنة 6) = 812; disbelief (ROOT kfr minus كفّارة 'expiation') = 507.
 
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: A3, A5 · numbers by set: A1: 45 / 37, A2: 45 / 37, A3: 25 / 25, A5: 25 / 25 · 25/25 is the bare (unsuffixed) noun selection — Yahya's stated '(without genitive)'; lemma totals are 45/37.
+
 **Locations (67 verses; verses per surah — 2: 6, 3: 11, 4: 5, 5: 5, 6: 2, 8: 1, 9: 9, 10: 2, 14: 1, 16: 1, 18: 1, 30: 2, 31: 1, 32: 1, 33: 1, 35: 1, 39: 2, 40: 3, 42: 1, 48: 1, 49: 4, 52: 1, 58: 1, 59: 2, 60: 1, 74: 1):** first 20: 2:88, 2:93, 2:108, 2:109, 2:143, 2:217, 3:52, 3:80, 3:86, 3:90, 3:100, 3:106, 3:167, 3:173, 3:176, 3:177, 3:193, 4:25, 4:46, 4:137 … (full list in data/locations.json)
 **Locations — scholar's rule (43 verses):** 2:108, 2:217, 3:52, 3:80, 3:90, 3:167, 3:173, 3:176, 3:177, 3:193, 4:137, 5:5, 5:41, 5:61, 5:64, 5:68, 8:2, 9:12, 9:17, 9:23, 9:37, 9:74, 9:97, 9:107, 9:124, 14:28, 16:106, 18:80, 30:56, 33:22, 39:7, 40:10, 42:52, 48:4, 49:7, 49:11, 49:14, 49:17, 52:21, 58:22, 59:9, 59:10, 74:31
 
@@ -386,6 +412,8 @@ Methods pass (2026-11-08): differs→confirmed: by lemma/root, zakah (LEM zakaw`
 
 **Verification — root rule:** 32 / 32 — QAC: LEM zakaw`p = 32; ROOT brk = 32. Both rules agree.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 32 / 32, A2: 32 / 32, A3: 67 / 5, A6: 32 / 32 · 32/32 reproduces under the root and lemma rules; plain substrings give 67/5.
+
 **Locations (63 verses; verses per surah — 2: 5, 3: 1, 4: 2, 5: 2, 6: 2, 7: 4, 9: 4, 11: 2, 17: 1, 18: 1, 19: 3, 21: 4, 22: 2, 23: 3, 24: 4, 25: 3, 27: 2, 28: 1, 30: 1, 31: 1, 33: 1, 34: 1, 37: 1, 38: 1, 40: 1, 41: 2, 43: 1, 44: 1, 50: 1, 55: 1, 58: 1, 67: 1, 73: 1, 98: 1):** first 20: 2:43, 2:83, 2:110, 2:177, 2:277, 3:96, 4:77, 4:162, 5:12, 5:55, 6:92, 6:155, 7:54, 7:96, 7:137, 7:156, 9:5, 9:11, 9:18, 9:71 … (full list in data/locations.json)
 
 ### say-they-said-332
@@ -413,6 +441,8 @@ Methods pass (2026-11-08): differs→confirmed: singular imperative قل is 332 
 **Verification — scholar's rule:** 332 / 332 — Reconstructed: singular imperative قل (QAC LEM qaAla, IMPV, 2MS) = 332; قالوا = 332 (surface and QAC PERF 3MP agree). The source states no method; these are the selections that reproduce the claim.
 
 **Verification — root rule:** 332 / 332 — QAC: LEM qaAla IMPV 2MS = 332; LEM qaAla PERF 3MP قالوا = 332. Whole ROOT qwl = 1722 (all 'say/said' forms). Both rules agree on 332/332.
+
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 332 / 332, A2: 332 / 332, A3: 333 / 332, A6: 332 / 332 · 332/332 reproduces under the lemma/POS rule; the plain surface count of قل gives 333 (one non-imperative token).
 
 **Locations (603 verses; verses per surah — 2: 40, 3: 28, 4: 9, 5: 23, 6: 46, 7: 34, 8: 6, 9: 15, 10: 24, 11: 13, 12: 22, 13: 6, 14: 5, 15: 9, 16: 5, 17: 24, 18: 14, 19: 4, 20: 12, 21: 16, 22: 3, 23: 16, 24: 5, 25: 9, 26: 15, 27: 12, 28: 9, 29: 9, 30: 1, 31: 2, 32: 3, 33: 8, 34: 20, 35: 2, 36: 7, 37: 6, 38: 8, 39: 16, 40: 7, 41: 11, 42: 2, 43: 9, 44: 1, 45: 4, 46: 10, 47: 2, 48: 3, 49: 3, 51: 5, 52: 2, 54: 2, 56: 1, 57: 1, 58: 1, 60: 1, 61: 1, 62: 3, 63: 1, 64: 2, 67: 8, 68: 3, 71: 1, 72: 5, 74: 1, 79: 2, 83: 1, 109: 1, 112: 1, 113: 1, 114: 1):** first 20: 2:11, 2:13, 2:14, 2:25, 2:30, 2:32, 2:67, 2:68, 2:69, 2:70, 2:71, 2:76, 2:80, 2:88, 2:91, 2:93, 2:94, 2:97, 2:111, 2:116 … (full list in data/locations.json)
 **Locations — scholar's rule (603 verses):** 2:11, 2:13, 2:14, 2:25, 2:30, 2:32, 2:67, 2:68, 2:69, 2:70, 2:71, 2:76, 2:80, 2:88, 2:91, 2:93, 2:94, 2:97, 2:111, 2:116, 2:120, 2:133, 2:135, 2:139, 2:140, 2:142, 2:156, 2:170, 2:189, 2:215, 2:217, 2:219, 2:220, 2:222, 2:246, 2:247, 2:249, 2:250, 2:275, 2:285, 3:12, 3:15, 3:20, 3:24, 3:26, 3:29, 3:31, 3:32, 3:61, 3:64, 3:73, 3:75, 3:81, 3:84, 3:93, 3:95, 3:98, 3:99, 3:119, 3:147 …
@@ -443,6 +473,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, plant (nbt) is exactly 
 
 **Verification — root rule:** 26 / 26 — QAC: ROOT nbt = 26; ROOT $jr tree-sense = 26 (whole root 27 incl. the 4:65 dispute verb). Both rules agree.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 26 / 26, A2: 26 / 26, A3: 11 / 27, A6: 26 / 26 · 26/26 reproduces under the root rule (tree minus the 4:65 dispute verb); substrings give 11/27.
+
 **Locations (45 verses):** 2:35, 2:61, 2:261, 3:37, 6:99, 7:19, 7:20, 7:22, 7:58, 10:24, 14:24, 14:26, 15:19, 16:10, 16:11, 16:68, 17:60, 18:45, 20:53, 20:120, 22:5, 22:18, 23:20, 24:35, 26:7, 27:60, 28:30, 31:10, 31:27, 36:36, 36:80, 37:62, 37:64, 37:146, 44:43, 48:18, 50:7, 50:9, 55:6, 56:52, 56:72, 57:20, 71:17, 78:15, 80:27
 
 ### reward-forgiveness-117-234
@@ -470,6 +502,8 @@ Methods pass (2026-11-08): differs→confirmed: reward (ROOT jzy) is 118 minus t
 **Verification — scholar's rule:** 117 / 234 — Reconstructed: reward by ROOT jzy minus the jizya tax token = 117; forgiveness by ROOT gfr = 234. The source states no method; these are the selections that reproduce the claim.
 
 **Verification — root rule:** 117 / 234 — QAC: ROOT jzy reward-sense = 117 (whole root 118 incl. jizya 9:29); ROOT gfr = 234. Both rules agree.
+
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 117 / 234, A2: 117 / 234, A3: 48 / 28, A6: 117 / 234 · 117/234 reproduces under the root rule (reward minus the jizya tax token); substrings give 48/28.
 
 **Locations (306 verses; verses per surah — 2: 20, 3: 16, 4: 17, 5: 15, 6: 11, 7: 13, 8: 7, 9: 12, 10: 5, 11: 7, 12: 10, 13: 1, 14: 4, 15: 1, 16: 7, 17: 4, 18: 4, 19: 1, 20: 5, 21: 1, 22: 2, 23: 3, 24: 6, 25: 4, 26: 3, 27: 3, 28: 4, 29: 1, 30: 1, 31: 1, 32: 1, 33: 7, 34: 6, 35: 6, 36: 3, 37: 6, 38: 4, 39: 4, 40: 6, 41: 5, 42: 5, 45: 3, 46: 5, 47: 3, 48: 4, 49: 3, 51: 1, 52: 1, 53: 3, 54: 2, 55: 1, 56: 1, 57: 3, 58: 2, 59: 2, 60: 4, 61: 1, 63: 2, 64: 2, 66: 3, 67: 2, 71: 4, 73: 1, 74: 1, 76: 3, 77: 1, 78: 2, 85: 1, 92: 1, 98: 1, 110: 1):** first 20: 2:48, 2:58, 2:85, 2:123, 2:173, 2:175, 2:182, 2:191, 2:192, 2:199, 2:218, 2:221, 2:225, 2:226, 2:235, 2:263, 2:268, 2:284, 2:285, 2:286 … (full list in data/locations.json)
 
@@ -499,6 +533,8 @@ Methods pass (2026-11-08): differs→confirmed: bare (unsuffixed) nouns reproduc
 
 **Verification — root rule:** 79 / 79 — QAC: bare nouns hudFY 79 / raHomap 79. Noun totals 85/114; whole-root 316/339. The 79/79 is the bare-noun subset on both sides.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A3, A6 · numbers by set: A1: 79 / 79, A2: 85 / 114, A3: 79 / 79, A6: 79 / 79 · 79/79 is the bare-noun selection (same rule as iman/kufr); lemma totals are 85/114, whole roots 316/339.
+
 **Locations (138 verses; verses per surah — 2: 12, 3: 8, 4: 3, 5: 2, 6: 10, 7: 8, 9: 3, 10: 2, 11: 8, 12: 1, 15: 1, 16: 3, 17: 7, 18: 8, 19: 3, 20: 3, 21: 2, 22: 2, 27: 2, 28: 7, 29: 1, 30: 4, 31: 3, 32: 1, 33: 1, 34: 2, 35: 1, 36: 1, 38: 2, 39: 4, 40: 3, 41: 3, 42: 1, 43: 1, 44: 1, 45: 2, 46: 1, 47: 3, 48: 1, 53: 1, 57: 2, 61: 1, 72: 1, 92: 1, 96: 1):** first 20: 2:2, 2:5, 2:16, 2:38, 2:97, 2:120, 2:157, 2:159, 2:175, 2:178, 2:185, 2:218, 3:4, 3:8, 3:73, 3:96, 3:107, 3:138, 3:157, 3:159 … (full list in data/locations.json)
 
 ### tongue-sermon-25
@@ -527,6 +563,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, tongue (lsn) is exactly
 
 **Verification — root rule:** 25 / 25 — QAC: ROOT lsn = 25; ROOT wEZ = 25. Both rules agree.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 25 / 25, A2: 25 / 25, A3: 15 / 9, A6: 25 / 25 · 25/25 reproduces under the root and lemma rules; substrings give 15/9.
+
 **Locations (48 verses):** 2:66, 2:231, 2:232, 2:275, 3:78, 3:138, 4:34, 4:46, 4:58, 4:63, 4:66, 5:46, 5:78, 7:145, 7:164, 10:57, 11:46, 11:120, 14:4, 16:62, 16:90, 16:103, 16:116, 16:125, 19:50, 19:97, 20:27, 24:15, 24:17, 24:24, 24:34, 26:13, 26:84, 26:136, 26:195, 28:34, 30:22, 31:13, 33:19, 34:46, 44:58, 46:12, 48:11, 58:3, 60:2, 65:2, 75:16, 90:9
 
 ### wine-intoxication-6
@@ -552,6 +590,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, tongue (lsn) is exactly
 **Verification — scholar's rule:** 6 / None — Wine 6 reproduces as the noun (LEM xamor). Intoxication does not reproduce as 6: ROOT skr = 7, all intoxication-sense. No stated or reconstructable rule gives 6/6.
 
 **Verification — root rule:** 6 / 7 — QAC: LEM xamor (wine noun) = 6 (whole ROOT xmr 7 incl. veils 24:31); ROOT skr (intoxication) = 7. The pair differs by one on the intoxication side.
+
+**Assumptions:** scholar set — · our set A1 · reconciles under: none · numbers by set: A1: 6 / 7, A2: 6 / 7, A3: 7 / 4 · Wine 6 reproduces as the noun; intoxication is 7 under every rule tried — no rule gives 6/6.
 
 **Locations (12 verses):** 2:219, 4:43, 5:90, 5:91, 12:36, 12:41, 15:15, 15:72, 16:67, 22:2, 47:15, 50:19
 
@@ -579,6 +619,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, tongue (lsn) is exactly
 
 **Verification — root rule:** 49 / 43 — QAC: ROOT Eql = 49; LEM nuwr = 43 (49 with m~uniyr). Under the plain lemma rule the pair is 49/43; under a root rule that counts منير as light it is 49/49. NOT proposed as a correction: the prior team explicitly rejected mixing the noun with the adjective, and the choice is a judgement call for the coordinator/MK.
 
+**Assumptions:** scholar set — · our set A1 · reconciles under: none · numbers by set: A1: 49 / 43, A2: 49 / 43, A3: 49 / 46 · Mind 49 reproduces by root; light is 43 as the noun (49 only if the adjective منير is counted as 'light' — left undecided).
+
 **Locations (82 verses; verses per surah — 2: 10, 3: 2, 4: 1, 5: 6, 6: 5, 7: 2, 8: 1, 9: 1, 10: 4, 11: 1, 12: 2, 13: 2, 14: 2, 16: 2, 21: 2, 22: 1, 23: 1, 24: 3, 25: 1, 26: 1, 28: 1, 29: 3, 30: 2, 33: 1, 35: 1, 36: 2, 37: 1, 39: 3, 40: 1, 42: 1, 43: 1, 45: 1, 49: 1, 57: 6, 59: 1, 61: 1, 64: 1, 65: 1, 66: 1, 67: 1, 71: 1):** first 20: 2:17, 2:44, 2:73, 2:75, 2:76, 2:164, 2:170, 2:171, 2:242, 2:257, 3:65, 3:118, 4:174, 5:15, 5:16, 5:44, 5:46, 5:58, 5:103, 6:1 … (full list in data/locations.json)
 
 ### benefit-corrupt-50
@@ -605,6 +647,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, tongue (lsn) is exactly
 
 **Verification — root rule:** 50 / 50 — QAC: ROOT nfE = 50; ROOT fsd = 50. Both rules agree. NOTE: this is the same result as the benefit-corrupt-50 flip proposed in PASTED_PAGE_CHECK.md, which is still UNAPPROVED by MK -- so NO correction is recorded here, per the task instructions. The numbers are reported; the status change is left to the coordinator/MK.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 50 / 50, A2: 50 / 50, A3: 45 / 11, A6: 50 / 50 · Both sides are exactly 50 under the root and lemma rules; the status flip is still unapproved by MK, so the finding stays 'differs'.
+
 **Locations (96 verses; verses per surah — 2: 12, 3: 1, 4: 1, 5: 5, 6: 2, 7: 8, 8: 1, 10: 7, 11: 3, 12: 2, 13: 3, 16: 2, 17: 1, 18: 1, 20: 2, 21: 2, 22: 4, 23: 2, 25: 2, 26: 4, 27: 3, 28: 4, 29: 2, 30: 2, 32: 1, 33: 1, 34: 2, 36: 1, 38: 1, 40: 4, 43: 1, 47: 1, 48: 1, 51: 1, 57: 1, 60: 1, 74: 1, 80: 1, 87: 1, 89: 1):** first 20: 2:11, 2:12, 2:27, 2:30, 2:60, 2:102, 2:123, 2:164, 2:205, 2:219, 2:220, 2:251, 3:63, 4:11, 5:32, 5:33, 5:64, 5:76, 5:119, 6:71 … (full list in data/locations.json)
 
 ### love-obedience-83
@@ -630,6 +674,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, tongue (lsn) is exactly
 **Verification — scholar's rule:** 83 / None — Love 83 reproduces under root-minus-grain. Obedience does not reproduce as 83: obedience-sense root = 87, whole root = 129. No stated or reconstructable rule gives 83/83.
 
 **Verification — root rule:** 83 / 87 — QAC: ROOT Hbb love-sense = 83 (whole root 95 incl. grain 12); ROOT TwE obedience-sense = 87 (whole root 129 incl. 'to be able' 42). The pair differs by four on the obedience side.
+
+**Assumptions:** scholar set — · our set A1 · reconciles under: none · numbers by set: A1: 83 / 87, A2: 83 / 87, A3: 153 / 16 · Love 83 reproduces (root minus grain); obedience is 87 sense-correct (129 whole root) — no rule gives 83.
 
 **Locations (150 verses; verses per surah — 2: 11, 3: 20, 4: 11, 5: 10, 6: 4, 7: 3, 8: 4, 9: 8, 12: 3, 13: 1, 14: 1, 16: 2, 18: 1, 20: 2, 22: 1, 23: 1, 24: 8, 25: 1, 26: 9, 28: 3, 29: 1, 30: 1, 31: 2, 33: 6, 38: 1, 40: 1, 41: 2, 42: 1, 43: 2, 47: 3, 48: 2, 49: 4, 57: 1, 58: 1, 59: 2, 60: 1, 61: 2, 64: 2, 68: 2, 71: 1, 75: 1, 76: 3, 81: 1, 89: 1, 96: 1, 100: 1):** first 20: 2:158, 2:165, 2:177, 2:184, 2:190, 2:195, 2:205, 2:216, 2:222, 2:276, 2:285, 3:14, 3:31, 3:32, 3:50, 3:57, 3:76, 3:83, 3:92, 3:100 … (full list in data/locations.json)
 
@@ -659,6 +705,8 @@ Methods pass (2026-11-08): differs→confirmed: refuge (LEM maSiyr) is 28 and fo
 
 **Verification — root rule:** 28 / 28 — QAC: LEM maSiyr = 28; LEM >abadFA = 28. Both rules agree.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 28 / 28, A2: 28 / 28, A3: 28 / 29, A6: 28 / 28 · 28/28 reproduces under the root and lemma rules; the ابدا substring gives 29 (the 66:5 عابدات false positive).
+
 **Locations (55 verses):** 2:95, 2:126, 2:285, 3:28, 3:162, 4:57, 4:97, 4:115, 4:122, 4:169, 5:18, 5:24, 5:119, 8:16, 9:22, 9:73, 9:83, 9:84, 9:100, 9:108, 14:30, 18:3, 18:20, 18:35, 18:57, 22:48, 22:72, 24:4, 24:17, 24:21, 24:42, 24:57, 25:15, 31:14, 33:53, 33:65, 35:18, 40:3, 42:15, 48:6, 48:12, 50:43, 57:15, 58:8, 59:11, 60:4, 62:7, 64:3, 64:9, 64:10, 65:11, 66:9, 67:6, 72:23, 98:8
 
 ### disaster-thanks-75
@@ -687,6 +735,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, thanks ($kr) is exactly
 
 **Verification — root rule:** 75 / 75 — QAC: ROOT Swb disaster-sense = 75 (whole root 77); ROOT $kr = 75. Both rules agree.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 75 / 75, A2: 75 / 75, A3: 11 / 47, A6: 75 / 75 · 75/75 reproduces under the root and lemma rules (disaster minus the two non-disaster lemmas); substrings give 11/47.
+
 **Locations (123 verses; verses per surah — 2: 11, 3: 10, 4: 6, 5: 5, 6: 3, 7: 8, 8: 2, 9: 5, 10: 3, 11: 2, 12: 2, 13: 2, 14: 3, 16: 5, 17: 2, 21: 1, 22: 3, 23: 1, 24: 2, 25: 1, 27: 3, 28: 2, 29: 1, 30: 3, 31: 4, 32: 1, 34: 3, 35: 3, 36: 2, 38: 1, 39: 3, 40: 2, 42: 5, 45: 1, 46: 1, 48: 1, 49: 1, 54: 1, 56: 1, 57: 1, 64: 2, 67: 1, 76: 3):** first 20: 2:52, 2:56, 2:152, 2:156, 2:158, 2:172, 2:185, 2:243, 2:264, 2:265, 2:266, 3:117, 3:120, 3:123, 3:144, 3:145, 3:146, 3:153, 3:165, 3:166 … (full list in data/locations.json)
 
 ### trouble-peace-13
@@ -712,6 +762,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, thanks ($kr) is exactly
 **Verification — scholar's rule:** 13 / 13 — Reconstructed: ROOT Dyq = 13 and ROOT Tmn = 13. The source states no method and gives no Arabic; this is the selection that reproduces the claim.
 
 **Verification — root rule:** 13 / 13 — QAC: ROOT Dyq = 13; ROOT Tmn = 13. Both rules agree.
+
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 13 / 13, A2: 13 / 13, A3: 7 / 3, A6: 13 / 13 · 13/13 reproduces under the root and lemma rules; substrings give 7/3.
 
 **Locations (24 verses):** 2:260, 3:126, 4:103, 5:113, 6:125, 8:10, 9:25, 9:118, 10:7, 11:12, 11:77, 13:28, 15:97, 16:106, 16:112, 16:127, 17:95, 22:11, 25:13, 26:13, 27:70, 29:33, 65:6, 89:27
 
@@ -741,6 +793,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 16 / 16 — QAC: ROOT xwn = 16; ROOT xbv = 16. Both rules agree.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A2, A6 · numbers by set: A1: 16 / 16, A2: 16 / 16, A3: 2 / 13, A6: 16 / 16 · 16/16 reproduces under the root and lemma rules; substrings give 2/13.
+
 **Locations (21 verses):** 2:187, 2:267, 3:179, 4:2, 4:105, 4:107, 5:13, 5:100, 7:58, 7:157, 8:27, 8:37, 8:58, 8:71, 12:52, 14:26, 21:74, 22:38, 24:26, 40:19, 66:10
 
 ### righteous-wicked-6-3
@@ -766,6 +820,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** 6 / 3 — Reconstructed: surface forms أبرار 6 / فجار 3. The source states no method; this is the selection that reproduces the claim.
 
 **Verification — root rule:** 6 / 4 — QAC: righteous (surface الأبرار) = 6; wicked by LEM fuj~aAr = 4 (الفجار 3 + الفجرة 80:42). The two rules differ by the one 80:42 token; the finding stands confirmed on the surface-form rule.
+
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A3, A6 · numbers by set: A1: 6 / 4, A3: 6 / 3, A6: 6 / 3 · 6/3 reproduces as exact surface forms; under the lemma rule the wicked side is 4 (الفجرة 80:42).
 
 **Locations (10 verses):** 3:193, 3:198, 38:28, 76:5, 80:42, 82:13, 82:14, 83:7, 83:18, 83:22
 **Locations — scholar's rule (9 verses):** 3:193, 3:198, 38:28, 76:5, 82:13, 82:14, 83:7, 83:18, 83:22
@@ -794,6 +850,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 1 / 1 — QAC: ROOT Syf = 1; ROOT $tw = 1; ROOT Hrr (heat) = 15; ROOT brd (cold) = 5. Locations are the single verse 106:2, which contains both words.
 
+**Assumptions:** scholar set — · our set A1 · reconciles under: none · numbers by set: A1: 1 / 1, A2: 1 / 1, A3: 1 / 3 · Summer/winter occur once each (both 106:2); heat 15 / cold 5 — no rule gives 5/5.
+
 **Locations (1 verses):** 106:2
 
 ### human-being-65
@@ -820,6 +878,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 65 — QAC: LEM <insa`n = 71 (65 انسان + 6 أناس/أناسيّ collective); انسان on its own = 65. Both rules agree on 65 for the word as claimed.
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A1, A3, A6 · numbers by set: A1: 65, A2: 71, A3: 65, A6: 65 · 65 is the انسان surface count (and the انسان subset of the lemma); the whole lemma is 71 (6 collective أناس/أناسيّ).
+
 **Locations (63 verses; verses per surah — 4: 1, 10: 1, 11: 1, 12: 1, 14: 1, 15: 1, 16: 1, 17: 6, 18: 1, 19: 2, 21: 1, 22: 1, 23: 1, 25: 1, 29: 1, 31: 1, 32: 1, 33: 1, 36: 1, 39: 2, 41: 2, 42: 1, 43: 1, 46: 1, 50: 1, 53: 2, 55: 2, 59: 1, 70: 1, 75: 6, 76: 2, 79: 1, 80: 2, 82: 1, 84: 1, 86: 1, 89: 2, 90: 1, 95: 1, 96: 3, 99: 1, 100: 1, 103: 1):** first 20: 4:28, 10:12, 11:9, 12:5, 14:34, 15:26, 16:4, 17:11, 17:13, 17:53, 17:67, 17:83, 17:100, 18:54, 19:66, 19:67, 21:37, 22:66, 23:12, 25:29 … (full list in data/locations.json)
 **Locations — scholar's rule (63 verses):** 4:28, 10:12, 11:9, 12:5, 14:34, 15:26, 16:4, 17:11, 17:13, 17:53, 17:67, 17:83, 17:100, 18:54, 19:66, 19:67, 21:37, 22:66, 23:12, 25:29, 29:8, 31:14, 32:7, 33:72, 36:77, 39:8, 39:49, 41:49, 41:51, 42:48, 43:15, 46:15, 50:16, 53:24, 53:39, 55:3, 55:14, 59:16, 70:19, 75:3, 75:5, 75:10, 75:13, 75:14, 75:36, 76:1, 76:2, 79:35, 80:17, 80:24, 82:6, 84:6, 86:5, 89:15, 89:23, 90:4, 95:4, 96:2, 96:5, 96:6 …
 
@@ -844,6 +904,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** — — Not applicable -- no count is claimed.
 
 **Verification — root rule:** — — Not applicable -- no count is claimed.
+
+**Assumptions:** scholar set — · our set — · reconciles under: none · numbers by set: — · Not a word/letter count — a literature fact (Yahya popularised the paired-count list); no counting assumption applies.
 
 **Locations:** not applicable — locations: not applicable -- this is a literature fact, not a word count.
 
@@ -873,6 +935,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 57 / 57 — Same count -- this is a letter count, not a word count, so the 'root rule' is the project letter convention (base letters count; dagger alif/small waw/small yeh are marks). Both agree: 57/57.
 
+**Assumptions:** scholar set A5 · our set A4 · reconciles under: A4, A5 · numbers by set: A4: 57 / 57, A5: 57 / 57 · 57/57 reproduces under the project letter convention and Khalifa's stated rule; the basmalahs contain no ق.
+
 **Locations (65 verses; verses per surah — 42: 31, 50: 34):** first 20: 42:2, 42:3, 42:5, 42:7, 42:9, 42:12, 42:13, 42:14, 42:15, 42:17, 42:18, 42:19, 42:21, 42:22, 42:23, 42:24, 42:25, 42:27, 42:28, 42:29 … (full list in data/locations.json)
 
 ### nun-132-vs-133
@@ -898,6 +962,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** 133 — Stated rule verified arithmetically: our count 132 + 1 for the spelled-out initial (ن و ن) = 133. The rule itself is Khalifa's, stated in the source.
 
 **Verification — root rule:** 132 — Project letter convention: ن in surah 68 = 132 (131 in the surah text proper + 1 from the unnumbered basmalah in 68:1). Differs from Khalifa's 133 by exactly the spelled-out initial.
+
+**Assumptions:** scholar set A5 · our set A4 · reconciles under: A5 · numbers by set: A4: 131, A5: 133, A7: 132 · 133 requires Khalifa's stated rule (the spelled-out initial ن و ن counts as two); the written text gives 132 with the basmalah, 131 without it.
 
 **Locations (50 verses):** 68:1, 68:2, 68:3, 68:4, 68:5, 68:6, 68:7, 68:8, 68:9, 68:10, 68:11, 68:12, 68:13, 68:14, 68:15, 68:16, 68:17, 68:18, 68:19, 68:21, 68:22, 68:23, 68:24, 68:25, 68:26, 68:27, 68:28, 68:29, 68:30, 68:31, 68:32, 68:33, 68:34, 68:35, 68:36, 68:37, 68:38, 68:39, 68:41, 68:42, 68:43, 68:44, 68:45, 68:46, 68:47, 68:48, 68:49, 68:50, 68:51, 68:52
 
@@ -925,6 +991,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 98 / 26 / 29 — Project letter convention on the Tanzil text: ص in surah 7 = 98, surah 19 = 26, surah 38 = 29; total 153. Differs from Khalifa's 152 by exactly the one ص in 7:69.
 
+**Assumptions:** scholar set A5 · our set A4 · reconciles under: A5 · numbers by set: A4: 98 / 26 / 29, A5: 97 / 26 / 29 · 152 requires Khalifa's stated textual rule (7:69 read بسطة with س); the Tanzil text reads بصطة, giving 153.
+
 **Locations (133 verses; verses per surah — 7: 81, 19: 25, 38: 27):** first 20: 7:1, 7:2, 7:7, 7:11, 7:13, 7:16, 7:21, 7:22, 7:29, 7:32, 7:35, 7:36, 7:37, 7:42, 7:43, 7:44, 7:45, 7:46, 7:47, 7:48 … (full list in data/locations.json)
 
 ### muqattaat-structure-29-14-78
@@ -951,6 +1019,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 29 / 14 / 75 — Same -- this is a structural count of opening verses, not a word count; both rules are the same count. 78 counting 42:2 عسق separately.
 
+**Assumptions:** scholar set A5 · our set A4 · reconciles under: A4, A5 · numbers by set: A4: 29 / 14 / 75, A5: 29 / 14 / 75 · 29 surahs, 14 letters, 75 opening letters (78 counting 42:2 عسق) — the stated structure reproduces exactly.
+
 **Locations (30 verses):** 2:1, 3:1, 7:1, 10:1, 11:1, 12:1, 13:1, 14:1, 15:1, 19:1, 20:1, 26:1, 27:1, 28:1, 29:1, 30:1, 31:1, 32:1, 36:1, 38:1, 40:1, 41:1, 42:1, 42:2, 43:1, 44:1, 45:1, 46:1, 50:1, 68:1
 
 ### all-28-letters-verses
@@ -974,6 +1044,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** 28 / 28 — Stated rule verified: 3:154 and 48:29 each have 28 distinct letters, none missing; no other verse does.
 
 **Verification — root rule:** 28 / 28 — Same -- distinct-letter count per verse under the project letter convention. Both agree.
+
+**Assumptions:** scholar set A5 · our set A4 · reconciles under: A4, A5 · numbers by set: A4: 28 / 28, A5: 28 / 28 · 3:154 and 48:29 each have 28 distinct letters and no other verse does.
 
 **Locations (2 verses):** 3:154, 48:29
 
@@ -1001,6 +1073,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 11 — Project convention (dagger alif is a mark): فأسقيناكموه is 10 letters; the longest words are والمستغفرين (3:17) and والمستضعفين (4:75, 4:127) at 11 letters. The claim 'longest word' fails under this convention and ties under the other.
 
+**Assumptions:** scholar set — · our set A4 · reconciles under: none · numbers by set: A4: 10 · فأسقيناكموه is 10 letters under the project convention; 11 only if the dagger alif counts as a letter, and then it merely ties for longest (3:17, 4:75, 4:127 also 11).
+
 **Locations (4 verses):** 3:17, 4:75, 4:127, 15:22
 
 ### seven-heavens-7
@@ -1026,6 +1100,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** 7 — Stated rule verified: 7 verses contain سبع + سماوات.
 
 **Verification — root rule:** 7 — QAC: verses containing both ROOT sbE and LEM samaA^' = 7 (same verses). Both rules agree.
+
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: A1, A2, A3, A5 · numbers by set: A1: 7, A2: 7, A3: 7, A5: 7 · 7 verses contain سبع + سماوات under every rule tried.
 
 **Locations (7 verses):** 2:29, 17:44, 23:86, 41:12, 65:12, 67:3, 71:15
 
@@ -1055,6 +1131,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 19 — Same 19 letters (a letter count has no root rule); occurrences in the text = 114 (113 surah openings + 27:30).
 
+**Assumptions:** scholar set — · our set A4 · reconciles under: A4 · numbers by set: A4: 19 / 114 · 19 letters and 114 occurrences reproduce under the project letter convention (alef wasla counts); Khalifa states no letter rule.
+
 **Locations (114 verses; verses per surah — 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 6: 1, 7: 1, 8: 1, 10: 1, 11: 1, 12: 1, 13: 1, 14: 1, 15: 1, 16: 1, 17: 1, 18: 1, 19: 1, 20: 1, 21: 1, 22: 1, 23: 1, 24: 1, 25: 1, 26: 1, 27: 2, 28: 1, 29: 1, 30: 1, 31: 1, 32: 1, 33: 1, 34: 1, 35: 1, 36: 1, 37: 1, 38: 1, 39: 1, 40: 1, 41: 1, 42: 1, 43: 1, 44: 1, 45: 1, 46: 1, 47: 1, 48: 1, 49: 1, 50: 1, 51: 1, 52: 1, 53: 1, 54: 1, 55: 1, 56: 1, 57: 1, 58: 1, 59: 1, 60: 1, 61: 1, 62: 1, 63: 1, 64: 1, 65: 1, 66: 1, 67: 1, 68: 1, 69: 1, 70: 1, 71: 1, 72: 1, 73: 1, 74: 1, 75: 1, 76: 1, 77: 1, 78: 1, 79: 1, 80: 1, 81: 1, 82: 1, 83: 1, 84: 1, 85: 1, 86: 1, 87: 1, 88: 1, 89: 1, 90: 1, 91: 1, 92: 1, 93: 1, 94: 1, 95: 1, 96: 1, 97: 1, 98: 1, 99: 1, 100: 1, 101: 1, 102: 1, 103: 1, 104: 1, 105: 1, 106: 1, 107: 1, 108: 1, 109: 1, 110: 1, 111: 1, 112: 1, 113: 1, 114: 1):** first 20: 1:1, 2:1, 3:1, 4:1, 5:1, 6:1, 7:1, 8:1, 10:1, 11:1, 12:1, 13:1, 14:1, 15:1, 16:1, 17:1, 18:1, 19:1, 20:1, 21:1 … (full list in data/locations.json)
 
 ### allah-2699
@@ -1080,6 +1158,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** 2698 — Lemma count excl. unnumbered basmalahs (2,699) minus the Allah in 9:129 = 2,698 = 19 x 142. Test: 2,699 (Tanzil lemma) = 2,699 (QAC lemma {ll~ah).
 
 **Verification — root rule:** 2699 — QAC lemma {ll~ah = 2,699 (standard text, basmalahs excluded by QAC construction). Tanzil lemma incl. basmalahs = 2,811; strict surface الله = 2267.
+
+**Assumptions:** scholar set A6 · our set A2 · reconciles under: A6 · numbers by set: A1: 2851, A2: 2699, A3: 2155, A6: 2698, A7: 2811 · 2,698 reproduces only under Khalifa's reconstructed rule (lemma count, basmalahs out, 9:129 dropped); the standard text gives 2,699.
 
 **Locations (1821 verses; verses per surah — 1: 2, 2: 172, 3: 131, 4: 135, 5: 88, 6: 65, 7: 45, 8: 52, 9: 101, 10: 49, 11: 33, 12: 34, 13: 23, 14: 28, 15: 2, 16: 64, 17: 10, 18: 14, 19: 8, 20: 6, 21: 5, 22: 50, 23: 12, 24: 50, 25: 6, 26: 13, 27: 25, 28: 21, 29: 30, 30: 21, 31: 21, 32: 1, 33: 51, 34: 8, 35: 27, 36: 2, 37: 15, 38: 2, 39: 43, 40: 37, 41: 11, 42: 24, 43: 3, 44: 3, 45: 15, 46: 14, 47: 21, 48: 25, 49: 14, 50: 1, 51: 3, 52: 2, 53: 6, 57: 22, 58: 22, 59: 17, 60: 11, 61: 10, 62: 8, 63: 9, 64: 14, 65: 9, 66: 8, 67: 3, 69: 1, 70: 1, 71: 7, 72: 8, 73: 1, 74: 2, 76: 4, 79: 1, 81: 1, 82: 1, 84: 1, 85: 3, 87: 1, 88: 1, 91: 1, 95: 1, 96: 1, 98: 3, 104: 1, 110: 2, 112: 2):** first 20: 1:1, 1:2, 2:7, 2:8, 2:9, 2:10, 2:15, 2:17, 2:19, 2:20, 2:22, 2:23, 2:26, 2:27, 2:28, 2:55, 2:60, 2:61, 2:62, 2:64 … (full list in data/locations.json)
 **Locations — scholar's rule (1820 verses):** 1:1, 1:2, 2:7, 2:8, 2:9, 2:10, 2:15, 2:17, 2:19, 2:20, 2:22, 2:23, 2:26, 2:27, 2:28, 2:55, 2:60, 2:61, 2:62, 2:64, 2:67, 2:70, 2:72, 2:73, 2:74, 2:75, 2:76, 2:77, 2:79, 2:80, 2:83, 2:85, 2:88, 2:89, 2:90, 2:91, 2:94, 2:95, 2:96, 2:97, 2:98, 2:101, 2:102, 2:103, 2:105, 2:106, 2:107, 2:109, 2:110, 2:112, 2:113, 2:114, 2:115, 2:116, 2:118, 2:120, 2:126, 2:132, 2:136, 2:137 …
@@ -1108,6 +1188,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 116 — Rahim under the QAC lemma rule (r~aHiym = 116, incl. the 48:29 plural); 115 under the Tanzil surface-lemma rule. Rahman 57 under both rules.
 
+**Assumptions:** scholar set A6 · our set A2 · reconciles under: A6 · numbers by set: A1: 57 / 116, A2: 57 / 116, A3: 57 / 115, A6: 57 / 114, A7: 169 / 227 · 57 reproduces under the lemma rule; 114 needs the 9:128 رحيم dropped (115 on the standard text, 116 by QAC lemma incl. the 48:29 plural).
+
 **Locations (166 verses; verses per surah — 1: 2, 2: 12, 3: 3, 4: 11, 5: 5, 6: 3, 7: 2, 8: 2, 9: 9, 10: 1, 11: 2, 12: 2, 13: 1, 14: 1, 15: 1, 16: 6, 17: 2, 19: 16, 20: 4, 21: 4, 22: 1, 24: 5, 25: 6, 26: 10, 27: 2, 28: 1, 30: 1, 32: 1, 33: 6, 34: 1, 36: 6, 39: 1, 41: 2, 42: 1, 43: 7, 44: 1, 46: 1, 48: 2, 49: 3, 50: 1, 52: 1, 55: 1, 57: 2, 58: 1, 59: 2, 60: 2, 64: 1, 66: 1, 67: 4, 73: 1, 78: 2):** first 20: 1:1, 1:3, 2:37, 2:54, 2:128, 2:143, 2:160, 2:163, 2:173, 2:182, 2:192, 2:199, 2:218, 2:226, 3:31, 3:89, 3:129, 4:16, 4:23, 4:25 … (full list in data/locations.json)
 **Locations — scholar's rule (165 verses):** 1:1, 1:3, 2:37, 2:54, 2:128, 2:143, 2:160, 2:163, 2:173, 2:182, 2:192, 2:199, 2:218, 2:226, 3:31, 3:89, 3:129, 4:16, 4:23, 4:25, 4:29, 4:64, 4:96, 4:100, 4:106, 4:110, 4:129, 4:152, 5:3, 5:34, 5:39, 5:74, 5:98, 6:54, 6:145, 6:165, 7:153, 7:167, 8:69, 8:70, 9:5, 9:27, 9:91, 9:99, 9:102, 9:104, 9:117, 9:118, 10:107, 11:41, 11:90, 12:53, 12:98, 13:30, 14:36, 15:49, 16:7, 16:18, 16:47, 16:110 …
 
@@ -1135,6 +1217,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 39 — QAC lemma {som} = 39: 19 full-spelling + 12 plural أسماء forms + 5 suffixed singular (اسمه/اسمهو) + 3 contracted بسم (1:1, 11:41, 27:30 — the only basmalahs in the QAC word list).
 
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A3, A6 · numbers by set: A1: 39, A2: 39, A3: 19, A6: 19 · 19 reproduces only for the full spelling اسم (plural أسماء and contracted بسم excluded); the lemma total is 39.
+
 **Locations (19 verses):** 5:4, 6:118, 6:119, 6:121, 6:138, 22:28, 22:34, 22:36, 22:40, 49:11, 55:78, 56:74, 56:96, 69:52, 73:8, 76:25, 87:1, 87:15, 96:1
 
 ### first-revelation-words-19
@@ -1158,6 +1242,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** — — No rule reconstructs 19: 20 words excl. basmalah under every natural count (Tanzil whitespace tokens 20; QAC words 20), 24 incl. basmalah. 19 would require dropping exactly one word (e.g. the repeated اقرأ or the contracted باسم) — no such rule is stated, so none is asserted here.
 
 **Verification — root rule:** 20 — QAC words in 96:1-5 = 20; Tanzil tokens excl. basmalah = 20.
+
+**Assumptions:** scholar set — · our set A1 · reconciles under: none · numbers by set: A1: 20, A3: 20, A7: 24 · 20 words under every natural count (24 with the basmalah); 19 would require dropping exactly one word — no such rule is stated.
 
 **Locations (5 verses):** 96:1, 96:2, 96:3, 96:4, 96:5
 
@@ -1183,6 +1269,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 76 — Same 76 (a letter count has no root rule).
 
+**Assumptions:** scholar set — · our set A4 · reconciles under: A4 · numbers by set: A4: 76, A7: 95 · 76 letters excl. the basmalah under the project convention; 95 with it — Khalifa states no letter rule.
+
 **Locations (5 verses):** 96:1, 96:2, 96:3, 96:4, 96:5
 
 ### surah-96-19-verses-304-letters
@@ -1206,6 +1294,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** 304 — 304 letters incl. the merged basmalah under the project's letter convention; 19 verses (standard Hafs count; QAC max verse for surah 96 is 19).
 
 **Verification — root rule:** 285 — 285 letters excl. the merged basmalah under the project's letter convention (QAC words in surah 96 = 102).
+
+**Assumptions:** scholar set A6 · our set A4 · reconciles under: A6, A7 · numbers by set: A4: 19 / 285, A6: 19 / 304, A7: 19 / 304 · 19 verses and 304 letters reproduce only with the merged basmalah counted in (285 without it) — the opposite basmalah convention from the 76-letter count for 96:1–5.
 
 **Locations (19 verses):** 96:1, 96:2, 96:3, 96:4, 96:5, 96:6, 96:7, 96:8, 96:9, 96:10, 96:11, 96:12, 96:13, 96:14, 96:15, 96:16, 96:17, 96:18, 96:19
 
@@ -1231,6 +1321,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 19 — Same 19 words (QAC words in surah 110 = 19).
 
+**Assumptions:** scholar set — · our set A1 · reconciles under: A1, A4 · numbers by set: A1: 19 / —, A4: — / 19, A7: 23 / 38 · 19 words (A1) and 19 letters in 110:1 (A4) both reproduce excl. the basmalah; 23 words / 38 letters with it.
+
 **Locations (3 verses):** 110:1, 110:2, 110:3
 
 ### verse-number-checksum-118123
@@ -1254,6 +1346,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** 118123 — Sum of verse numbers of Allah-containing verses, excl. unnumbered basmalahs and excl. 9:128-129 = 118,123 exactly. Cross-check on QAC lemma verses gives the same 118,252 excl. basmalahs, minus 129 = 118,123.
 
 **Verification — root rule:** 118340 — Same sum on the standard text incl. the unnumbered basmalahs = 118,340; excl. basmalahs only = 118,252. 1,821 verses contain Allah excl. basmalahs (1,909 incl.).
+
+**Assumptions:** scholar set A6 · our set A1 · reconciles under: A6 · numbers by set: A1: 118252, A2: 118252, A6: 118123, A7: 118340 · 118,123 reproduces only excluding the basmalahs and Khalifa's two deleted verses (9:129 contributes 129); the standard text gives 118,252.
 
 **Locations (1821 verses; verses per surah — 1: 2, 2: 172, 3: 131, 4: 135, 5: 88, 6: 65, 7: 45, 8: 52, 9: 101, 10: 49, 11: 33, 12: 34, 13: 23, 14: 28, 15: 2, 16: 64, 17: 10, 18: 14, 19: 8, 20: 6, 21: 5, 22: 50, 23: 12, 24: 50, 25: 6, 26: 13, 27: 25, 28: 21, 29: 30, 30: 21, 31: 21, 32: 1, 33: 51, 34: 8, 35: 27, 36: 2, 37: 15, 38: 2, 39: 43, 40: 37, 41: 11, 42: 24, 43: 3, 44: 3, 45: 15, 46: 14, 47: 21, 48: 25, 49: 14, 50: 1, 51: 3, 52: 2, 53: 6, 57: 22, 58: 22, 59: 17, 60: 11, 61: 10, 62: 8, 63: 9, 64: 14, 65: 9, 66: 8, 67: 3, 69: 1, 70: 1, 71: 7, 72: 8, 73: 1, 74: 2, 76: 4, 79: 1, 81: 1, 82: 1, 84: 1, 85: 3, 87: 1, 88: 1, 91: 1, 95: 1, 96: 1, 98: 3, 104: 1, 110: 2, 112: 2):** first 20: 1:1, 1:2, 2:7, 2:8, 2:9, 2:10, 2:15, 2:17, 2:19, 2:20, 2:22, 2:23, 2:26, 2:27, 2:28, 2:55, 2:60, 2:61, 2:62, 2:64 … (full list in data/locations.json)
 **Locations — scholar's rule (1820 verses):** 1:1, 1:2, 2:7, 2:8, 2:9, 2:10, 2:15, 2:17, 2:19, 2:20, 2:22, 2:23, 2:26, 2:27, 2:28, 2:55, 2:60, 2:61, 2:62, 2:64, 2:67, 2:70, 2:72, 2:73, 2:74, 2:75, 2:76, 2:77, 2:79, 2:80, 2:83, 2:85, 2:88, 2:89, 2:90, 2:91, 2:94, 2:95, 2:96, 2:97, 2:98, 2:101, 2:102, 2:103, 2:105, 2:106, 2:107, 2:109, 2:110, 2:112, 2:113, 2:114, 2:115, 2:116, 2:118, 2:120, 2:126, 2:132, 2:136, 2:137 …
@@ -1280,6 +1374,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 6236 — Standard Hafs numbered verses = 6,236 (QAC file: 6,236 verses). Counting the 112 unnumbered basmalahs as verses WITHOUT dropping 9:128-129 gives 6,348 (Botani's figure).
 
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: A5 · numbers by set: A1: 6236, A5: 6346, A7: 6348 · 6,346 is arithmetic under Khalifa's stated rule (6,234 numbered + 112 basmalahs); the standard count is 6,236, or 6,348 with basmalahs counted and no verses deleted.
+
 **Locations:** not applicable — verse total, not a word/letter count — no occurrences to locate; the two verses at issue are 9:128-129
 
 ### khalifa-reception
@@ -1303,6 +1399,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 **Verification — scholar's rule:** — — Timeline verified: initials research from 1969 (Khalifa, App1; Wikipedia 'Quran code'); 'Miracle of the Quran: Significance of the Mysterious Alphabets' 1973 (Philips book, foreword/contents); 19-code claimed January 1974 (App1; Wikipedia); 'The Computer Speaks' 1981 and 'Visual Presentation of the Miracle' 1982 (Philips foreword); 'The Final Testament' 1989 (App1 itself). Gardner, Scientific American, September 1980, p. 22 ('ingenious study of the Koran') — confirmed via Philips' book, which quotes the passage and its context (a fictional 'Mathematical Games' story). Skeptical Inquirer 21(5), Sept-Oct 1997 — confirmed as the issue carrying Gardner's 'The Numerology of Dr Rashad Khalifa' (fetched PDF, pp. 16 and 58 visible; the finding's pp. 16-17 range is consistent with the fetched file). Bilal Philips, 'The Qur'an's Numerical Miracle: Hoax and Heresy', 1987/1407 AH, 76 pp., 2nd ed. 2002 — confirmed via the Scribd/pdf-archive copies. Submission.org's 2002 recount ('confirmed Khalifa's counts of all the Quranic initials except for a few counts in "A" and "L"') — confirmed verbatim on submission.org/App1.html itself.
 
 **Verification — root rule:** — — Same verification (no corpus count applies). NOT verified: the Canadian Council on the Study of Religion, Quarterly Review, April 1983 quotation ('an authenticating proof') — no source for it was located in this pass; the finding's note already hedges it as 'quoted by proponents'. The items the finding's note lists as not individually verified (Gardner SI p. 58; Sardar 1989; Yuksel 2011; Arik 2012; Stanley 2016) remain unverified.
+
+**Assumptions:** scholar set — · our set — · reconciles under: none · numbers by set: — · Not a word/letter count — a reception-history fact; no counting assumption applies.
 
 **Locations:** not applicable — literature/reception fact — no occurrences to locate
 
@@ -1330,6 +1428,8 @@ Methods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exac
 
 **Verification — root rule:** 77429 — Same 77,429 QAC words. Tanzil whitespace tokens excl. unnumbered basmalahs = 77,433 (4 more; see exceptions).
 
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: A1, A5 · numbers by set: A1: 77429, A3: 77433, A5: 77429, A7: 77881 · 77,429 QAC words reproduces exactly; Tanzil whitespace tokens give 77,433 excl. basmalahs (77,881 incl.) — 4 verses differ by one token each.
+
 **Locations:** not applicable — whole-corpus total, not a set of occurrences; per-surah QAC word counts are in data/methods_check_B_results.json (qac_words_per_surah)
 
 ### dukes-unique-words
@@ -1356,6 +1456,8 @@ Methods pass (2026-11-08): confirmed→differs: recounted from QAC v0.4, only th
 
 **Verification — root rule:** 4832 — From the QAC v0.4 annotation: unique stem lemmas 4,832 (not 3,382); unique stem forms 12,113 (not 12,183); unique roots 1,642 at both word and segment level (not 1,685); skeletonised unique surface forms 14,881.
 
+**Assumptions:** scholar set — · our set A1 · reconciles under: none · numbers by set: A1: — / — / 1642 / —, A2: — / — / — / 4832, A3: 18994 / — / — / — · Only the 18,994 unique surface forms reproduce; stems 12,113 (not 12,183), roots 1,642 (not 1,685), lemmas 4,832 (not 3,382).
+
 **Locations:** not applicable — vocabulary inventory, not a set of occurrences
 
 ### qac-morphology
@@ -1379,6 +1481,8 @@ Methods pass (2026-11-08): confirmed→differs: recounted from QAC v0.4, only th
 **Verification — scholar's rule:** — — FAQ (fetched 2026-11-08): 'The annotation for each of the 77,429 words in the Quran was then reviewed in stages by two annotators. It is believed that the text is now 99% accurate in terms of morphological annotation.' Release notes v0.4 (1 May 2011, fetched): treebank 'covers 40% of the Quran by word count (30,895 out of 77,429 words)' for chapters 1-8 and 59-114. V0.3 announcement (Kais Dukes, Corpora-List, archived): 'Each of the 77,430 words in the Quran has been morphologically segmented, resulting in 128,076 individual morphemes' — confirmed verbatim. Our v0.4 file: 128,219 segments.
 
 **Verification — root rule:** — — Same verification (no corpus count applies beyond the segment count above: 128,219).
+
+**Assumptions:** scholar set — · our set — · reconciles under: none · numbers by set: — · Not a word/letter count — a provenance fact about the corpus; no counting assumption applies.
 
 **Locations:** not applicable — provenance fact about the corpus — no occurrences to locate
 
@@ -1404,6 +1508,8 @@ Methods pass (2026-11-08): confirmed→differs: recounted from QAC v0.4, only th
 
 **Verification — root rule:** — — Same verification (no corpus count applies).
 
+**Assumptions:** scholar set — · our set — · reconciles under: none · numbers by set: — · Not a word/letter count — a provenance fact; no counting assumption applies.
+
 **Locations:** not applicable — provenance fact — no occurrences to locate
 
 ### text-fabric-quran
@@ -1427,6 +1533,8 @@ Methods pass (2026-11-08): confirmed→differs: recounted from QAC v0.4, only th
 **Verification — scholar's rule:** — — GitHub q-ran/quran (fetched): 'We have taken the source materials from Quranic Arabic Corpus 0.4 (2011) by Kais Dukes and Tanzil'; 'The data in TF format is licensed as CC-BY 4.0'; authors Cornelis van Lit and Dirk Roorda; released 2019-01-07; repo now archived. Zenodo DOI 10.5281/zenodo.2532177 (resolved via doi.org, fetched): 'q-ran/quran: Initial release', published 5 January 2019, Version v0.1, Dirk Roorda — the DOI is now confirmed, correcting the finding's note.
 
 **Verification — root rule:** — — Same verification (no corpus count applies). Roorda (2018), 'Text-Fabric: Text representation for linguistic annotation', Research Data Journal for the Humanities and Social Sciences 3(1), 1-23, was not re-fetched in this pass.
+
+**Assumptions:** scholar set — · our set — · reconciles under: none · numbers by set: — · Not a word/letter count — a provenance fact; no counting assumption applies.
 
 **Locations:** not applicable — provenance fact — no occurrences to locate
 
@@ -1453,6 +1561,8 @@ Methods pass (2026-11-08): confirmed→differs: recounted from QAC v0.4, only th
 **Verification — scholar's rule:** 1641 — Abdulbaqi's own published pipeline re-run on this file: 1,641 unique roots, 49,960 segment ROOT occurrences. His printed 1,651 does not reproduce from this file by his own method.
 
 **Verification — root rule:** 1642 — Unique roots 1,642 (word level = segment level). Top roots reproduce exactly at both levels: Alh 2,851, qwl 1,722, kwn 1,390, rbb 980; Ḥ-S-N 194 reproduces (word level). Alh root count (2,851) is a different unit from the Allah lemma count (2,699): the root also covers allahumma (5) and generic ilah (147).
+
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: none · numbers by set: A1: 1642 / 2851, A5: 1641 / 2851 · Alh 2,851 reproduces exactly; the 1,651 root total reproduces under no rule (1,642 by word/segment count, 1,641 by the post's own pipeline).
 
 **Locations (1879 verses; verses per surah — 1: 2, 2: 174, 3: 133, 4: 135, 5: 89, 6: 67, 7: 47, 8: 53, 9: 101, 10: 50, 11: 34, 12: 34, 13: 24, 14: 29, 15: 2, 16: 66, 17: 11, 18: 16, 19: 9, 20: 8, 21: 17, 22: 50, 23: 12, 24: 50, 25: 9, 26: 14, 27: 25, 28: 22, 29: 31, 30: 21, 31: 21, 32: 1, 33: 51, 34: 8, 35: 27, 36: 3, 37: 18, 38: 4, 39: 44, 40: 39, 41: 12, 42: 24, 43: 6, 44: 4, 45: 15, 46: 15, 47: 21, 48: 25, 49: 14, 50: 1, 51: 3, 52: 2, 53: 6, 57: 22, 58: 22, 59: 17, 60: 11, 61: 10, 62: 8, 63: 9, 64: 14, 65: 9, 66: 8, 67: 3, 69: 1, 70: 1, 71: 8, 72: 8, 73: 2, 74: 2, 76: 4, 79: 1, 81: 1, 82: 1, 84: 1, 85: 3, 87: 1, 88: 1, 91: 1, 95: 1, 96: 1, 98: 3, 104: 1, 110: 2, 112: 2, 114: 1):** first 20: 1:1, 1:2, 2:7, 2:8, 2:9, 2:10, 2:15, 2:17, 2:19, 2:20, 2:22, 2:23, 2:26, 2:27, 2:28, 2:55, 2:60, 2:61, 2:62, 2:64 … (full list in data/locations.json)
 
@@ -1482,6 +1592,8 @@ Methods pass (2026-11-08): differs→confirmed: QAC lemma min (preposition) is 3
 
 **Verification — root rule:** 3226 — Same 3,226 under the QAC lemma rule. The Tanzil skeleton-lemma count is 3,314 — a different unit (it merges min and man); the earlier note's '88 above' is arithmetic coincidence, not an explanation (3,314 - 3,226 = 88, but the man tokens inside the 3,314 number 806, not 88).
 
+**Assumptions:** scholar set — · our set A2 · reconciles under: A1, A2 · numbers by set: A1: 3226 / 2699 / 2565, A2: 3226 / 2699 / 2565, A3: 3314 / — / — · All three figures reproduce exactly under the QAC lemma rule; the Tanzil skeleton count for من is 3,314 because it conflates مِن with مَن.
+
 **Locations (2230 verses; verses per surah — 2: 159, 3: 103, 4: 105, 5: 74, 6: 67, 7: 108, 8: 30, 9: 66, 10: 53, 11: 58, 12: 52, 13: 27, 14: 27, 15: 34, 16: 58, 17: 35, 18: 46, 19: 34, 20: 40, 21: 46, 22: 37, 23: 28, 24: 29, 25: 17, 26: 44, 27: 35, 28: 48, 29: 32, 30: 30, 31: 12, 32: 17, 33: 35, 34: 25, 35: 25, 36: 28, 37: 31, 38: 28, 39: 35, 40: 30, 41: 25, 42: 33, 43: 30, 44: 10, 45: 16, 46: 21, 47: 14, 48: 11, 49: 8, 50: 15, 51: 14, 52: 9, 53: 11, 54: 12, 55: 8, 56: 19, 57: 15, 58: 10, 59: 13, 60: 7, 61: 6, 62: 7, 63: 2, 64: 5, 65: 9, 66: 5, 67: 7, 68: 6, 69: 8, 70: 7, 71: 6, 72: 8, 73: 2, 74: 4, 75: 2, 76: 10, 77: 3, 78: 3, 79: 2, 80: 4, 81: 1, 83: 4, 85: 3, 86: 4, 88: 3, 90: 1, 92: 1, 93: 1, 96: 1, 97: 2, 98: 5, 105: 1, 106: 1, 111: 1, 113: 4, 114: 2):** first 20: 2:3, 2:4, 2:5, 2:8, 2:19, 2:21, 2:22, 2:23, 2:25, 2:26, 2:27, 2:34, 2:35, 2:36, 2:37, 2:38, 2:48, 2:49, 2:51, 2:52 … (full list in data/locations.json)
 
 ### classical-word-totals
@@ -1505,6 +1617,8 @@ Methods pass (2026-11-08): differs→confirmed: QAC lemma min (preposition) is 3
 **Verification — scholar's rule:** 77439 — Headline Basra figure 77,439 as stated on the page; variants 77,430 (Kufan) and 77,437 (Ata' b. Yasar) stated on the same page.
 
 **Verification — root rule:** 77433 — Tanzil whitespace tokens excl. unnumbered basmalahs = 77,433 — 6 below the lowest classical figure (77,439) and 3 above the Kufan 77,430; within the spread of counting conventions. QAC words = 77,429.
+
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: none · numbers by set: A1: 77429, A3: 77433, A7: 77881 · No modern recount reproduces 77,439 exactly; closest is Tanzil tokens 77,433 (6 below) — within the spread of the classical word-boundary conventions.
 
 **Locations:** not applicable — whole-Quran total, not a set of occurrences
 
@@ -1530,6 +1644,8 @@ Methods pass (2026-11-08): differs→confirmed: QAC lemma min (preposition) is 3
 
 **Verification — root rule:** 325386 — 325,386 letters excl. unnumbered basmalahs under the project's letter convention (327,514 incl.) — matches none of the classical figures. Counting shaddah as doubled would give 348,402, far above all of them, so the classical counters were not simply doubling shaddah.
 
+**Assumptions:** scholar set A5 · our set A4 · reconciles under: none · numbers by set: A4: 325386, A7: 327514 · Headline 323,671 (Basra 323,015; variants to 330,733) reproduces under no modern rule — project convention gives 325,386 excl. basmalahs, 327,514 incl.
+
 **Locations:** not applicable — whole-Quran total, not a set of occurrences
 
 ### rdsq-words-77430
@@ -1553,6 +1669,8 @@ Methods pass (2026-11-08): differs→confirmed: QAC lemma min (preposition) is 3
 **Verification — scholar's rule:** 77430 — RDS-Q's headline total, 77,430 words (6236 verses, Tanzil Uthmani, unnumbered basmalahs excluded).
 
 **Verification — root rule:** 77433 — Our Tanzil token count on the same text and rule = 77,433 — 3 above RDS-Q (unexplained at token level). QAC words = 77,429 (4 below ours; the 4 boundary verses).
+
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: none · numbers by set: A1: 77429, A3: 77433, A5: 77433, A7: 77881 · RDS-Q's stated rule (Tanzil tokens, basmalahs out) gives 77,433 on this file, not 77,430 — a 3-word gap the document does not explain; QAC words 77,429.
 
 **Locations:** not applicable — whole-Quran total, not a set of occurrences
 
@@ -1578,6 +1696,8 @@ Methods pass (2026-11-08): differs→confirmed: QAC lemma min (preposition) is 3
 
 **Verification — root rule:** 325386 — Our letter count = 325,386 — 280 fewer. Variants tested, none gives +280: counting dagger alif as a letter gives 335,224 (+9,838); dagger alif + small waw/yeh gives 337,438; doubling shaddah gives 348,402. The exact cause of the 280 gap remains unidentified.
 
+**Assumptions:** scholar set A5 · our set A4 · reconciles under: none · numbers by set: A4: 325386, A7: 327514 · 325,666 reproduces under no letter convention tried (project convention 325,386 excl. basmalahs; 327,514 incl.) — a 280-letter gap with no stated rule to explain it.
+
 **Locations:** not applicable — whole-Quran total, not a set of occurrences
 
 ### botani-2012-distributions
@@ -1601,6 +1721,8 @@ Methods pass (2026-11-08): differs→confirmed: QAC lemma min (preposition) is 3
 **Verification — scholar's rule:** 6348 — Verse arithmetic checks: 6,236 + 112 = 6,348. Words 77,878 and letters 327,792 are the paper's QuranCode figures (see root rule for the comparison).
 
 **Verification — root rule:** 6236 — Numbered verses 6,236. On the same Tanzil text incl. basmalahs: words 77,881 (3 above Botani's 77,878) and letters 327,514 (278 below Botani's 327,792) under the project's letter convention. Both gaps are unexplained; the letter gap is in the same family as the 280 RDS-Q gap (278 vs 280 — they differ by 2, so the same unknown convention difference cannot explain both exactly).
+
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: none · numbers by set: A1: 6236 / 77429 / 325386, A7: 6348 / 77881 / 327514 · Verses 6,348 reproduce (6,236 + 112 basmalahs); words 77,878 vs our 77,881 and letters 327,792 vs our 327,514 do not — both gaps unexplained.
 
 **Locations:** not applicable — whole-Quran totals plus fitted distributions, not a set of occurrences
 
@@ -1628,6 +1750,8 @@ Methods pass (2026-11-08): differs→confirmed: QAC lemma min (preposition) is 3
 
 **Verification — root rule:** 70 — QAC lemma quro'aAn (the noun 'Quran') = 70 words in 69 verses. Tanzil substring قران = 71 tokens — the extra token is the verb at 75:18:2.
 
+**Assumptions:** scholar set A5 · our set A1 · reconciles under: none · numbers by set: A1: 70, A2: 70, A3: 59, A5: 59 · Khalifa's own stated rule gives 59, not 57 (his table silently also excludes 13:31 and 41:44 on semantic grounds); the lemma total is 70.
+
 **Locations (69 verses; verses per surah — 2: 1, 4: 1, 5: 1, 6: 1, 7: 1, 9: 1, 10: 3, 12: 2, 13: 1, 15: 3, 16: 1, 17: 10, 18: 1, 20: 3, 25: 2, 27: 4, 28: 1, 30: 1, 34: 1, 36: 2, 38: 1, 39: 2, 41: 3, 42: 1, 43: 2, 46: 1, 47: 1, 50: 2, 54: 4, 55: 1, 56: 1, 59: 1, 72: 1, 73: 2, 75: 2, 76: 1, 84: 1, 85: 1):** first 20: 2:185, 4:82, 5:101, 6:19, 7:204, 9:111, 10:15, 10:37, 10:61, 12:2, 12:3, 13:31, 15:1, 15:87, 15:91, 16:98, 17:9, 17:41, 17:45, 17:46 … (full list in data/locations.json)
 **Locations — scholar's rule (57 verses):** 2:185, 4:82, 5:101, 6:19, 7:204, 9:111, 10:37, 12:2, 12:3, 15:87, 15:91, 16:98, 17:9, 17:41, 17:45, 17:46, 17:60, 17:82, 17:88, 17:89, 18:54, 20:2, 20:113, 20:114, 25:30, 25:32, 27:1, 27:6, 27:76, 27:92, 28:85, 30:58, 34:31, 36:2, 38:1, 39:27, 39:28, 41:3, 41:26, 42:7, 43:3, 43:31, 46:29, 47:24, 50:1, 50:45, 54:17, 54:22, 54:32, 54:40, 55:2, 59:21, 72:1, 73:4, 73:20, 76:23, 84:21
 
@@ -1652,6 +1776,8 @@ Methods pass (2026-11-08): differs→confirmed: QAC lemma min (preposition) is 3
 **Verification — scholar's rule:** — — Page fetched (wikiislam.net, 'Word Count Miracles in the Qur'an', 1,195 lines): documents the selective tactics — selective choice of words, adding counts of similar words, phrase counts instead of word counts, selective choice of grammatical forms (singular/plural/dual, prefixes/suffixes), calling the selected form 'the simple form', ignoring other meanings, mistranslations, cherry-picking. Sub-articles linked from the page include the zakah/blessing 32-times item (confirmed at line 908). Quoted scholarly refutations: Dr. Zahid Aziz — confirmed quoted at lines 1132-1139 ('A conclusion of Dr. Zahid Aziz after he refuted several "miracles"'). The lead's figures agree with our recounts (day total 475, night 92).
 
 **Verification — root rule:** — — Same verification (no corpus count applies). The finding's sub-article list (365 days, month 12, dunya/akhira 115, paradise/hell 77, iman/kufr 25, land/water ratio, tongue/sermon 25, shaytan/angel 88, life/death 145, zakah/blessing 32, sun/light 33) was not exhaustively re-checked link by link in this pass — only the zakah/blessing link and the Zahid Aziz quotation were individually located.
+
+**Assumptions:** scholar set — · our set — · reconciles under: none · numbers by set: — · Not a word/letter count — a critique of counting tactics; no counting assumption applies.
 
 **Locations:** not applicable — critique of counting methods — no occurrences to locate
 
@@ -1679,6 +1805,8 @@ Methods pass (2026-11-08): the DOI formerly cited here (10.1007/s10579-012-9205-
 
 **Verification — root rule:** — — Same verification (no corpus count applies). The corpus and its annotation are genuinely the primary source for the app's morphology work — only this finding's citation is wrong, not the underlying claim that the corpus exists and is Dukes' work.
 
+**Assumptions:** scholar set — · our set — · reconciles under: none · numbers by set: — · Not a word/letter count — a bibliographic fact; no counting assumption applies.
+
 **Locations:** not applicable — bibliographic fact — no occurrences to locate
 
 ### hapax-legomena
@@ -1702,5 +1830,7 @@ Methods pass (2026-11-08): the DOI formerly cited here (10.1007/s10579-012-9205-
 **Verification — scholar's rule:** — — No unit stated, so no scholar-rule count can be constructed. No rule tried reproduces ~1,620 (see root rule).
 
 **Verification — root rule:** 1994 — QAC stem-lemma hapax = 1,994 lemmas occurring exactly once (in 1,528 verses). Surface-form hapax (raw whitespace tokens) = 12,005 — a different unit, confirmed. Skeletonised surface hapax = 8,709. Hapax by POS subsets: nouns only 1,249; nouns+adjectives+verbs 1,943; excl. proper nouns 1,954; roots occurring once 395. None is ~1,620.
+
+**Assumptions:** scholar set — · our set A2 · reconciles under: none · numbers by set: A1: 395, A2: 1994, A3: 12005 · No unit gives ~1,620 — lemma hapax 1,994, surface-form hapax 12,005, roots occurring once 395.
 
 **Locations (1528 verses; verses per surah — 1: 1, 2: 78, 3: 45, 4: 45, 5: 33, 6: 32, 7: 32, 8: 20, 9: 48, 10: 11, 11: 32, 12: 30, 13: 12, 14: 14, 15: 16, 16: 30, 17: 40, 18: 41, 19: 33, 20: 38, 21: 28, 22: 24, 23: 15, 24: 22, 25: 20, 26: 26, 27: 21, 28: 22, 29: 6, 30: 13, 31: 5, 32: 2, 33: 26, 34: 15, 35: 10, 36: 13, 37: 29, 38: 27, 39: 11, 40: 12, 41: 9, 42: 7, 43: 17, 44: 8, 45: 5, 46: 5, 47: 13, 48: 7, 49: 6, 50: 14, 51: 10, 52: 11, 53: 18, 54: 17, 55: 16, 56: 30, 57: 8, 58: 4, 59: 10, 60: 3, 61: 3, 62: 1, 63: 2, 64: 1, 65: 4, 66: 3, 67: 7, 68: 16, 69: 19, 70: 10, 71: 9, 72: 8, 73: 10, 74: 17, 75: 17, 76: 11, 77: 13, 78: 10, 79: 18, 80: 16, 81: 13, 82: 3, 83: 10, 84: 6, 85: 3, 86: 6, 87: 3, 88: 11, 89: 11, 90: 10, 91: 7, 92: 4, 93: 4, 94: 1, 95: 3, 96: 4, 97: 1, 98: 1, 99: 1, 100: 7, 101: 3, 102: 1, 103: 1, 104: 4, 105: 4, 106: 2, 107: 1, 108: 3, 111: 2, 112: 2, 113: 4, 114: 1):** first 20: 1:7, 2:16, 2:17, 2:19, 2:20, 2:25, 2:26, 2:30, 2:36, 2:54, 2:60, 2:61, 2:68, 2:69, 2:71, 2:72, 2:74, 2:85, 2:93, 2:96 … (full list in data/locations.json)
