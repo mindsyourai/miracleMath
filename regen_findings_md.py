@@ -41,6 +41,10 @@ lines.append("Methods pass 2026-11-08 — every finding now also carries the sch
              "(see METHODS.md; full location lists in data/locations.json). Tallies after this pass: "
              "37 confirmed / 17 differ / 10 cannot verify.")
 lines.append("")
+lines.append("Assumptions pass 2026-11-08 — every finding now also carries named assumption sets (A1–A7) "
+             "with per-set numbers and which sets reconcile the scholar's number with ours "
+             "(see ASSUMPTIONS.md). Tallies unchanged: 37 confirmed / 17 differ / 10 cannot verify.")
+lines.append("")
 lines.append("> **Read this first:** disputed numerology is presented here as *reported findings* — each with a source "
              "and a status — never as settled fact. “Confirmed” means our own scripted recount on the Tanzil file "
              "reproduces the claimed figure under a stated method; “differs” means it does not; “cannot verify” means "
@@ -138,6 +142,20 @@ for cat, heading in CAT_HEADINGS:
         lines.append("")
         lines.append("**Verification — root rule:** " + fmt_ver(x.get("verification_root_rule")))
         lines.append("")
+        a = x.get("assumptions") or {}
+        if a:
+            def fmt_nbs(v):
+                if v is None:
+                    return "—"
+                if isinstance(v, list):
+                    return " / ".join("—" if n is None else str(n) for n in v)
+                return str(v)
+            nbs_str = ", ".join("%s: %s" % (k, fmt_nbs(v)) for k, v in sorted((a.get("numbers_by_set") or {}).items()))
+            lines.append("**Assumptions:** scholar set %s · our set %s · reconciles under: %s · numbers by set: %s · %s"
+                         % (a.get("scholar_set") or "—", a.get("our_set") or "—",
+                            (", ".join(a.get("reconciles_under") or []) or "none"),
+                            (nbs_str or "—"), a.get("reason", "")))
+            lines.append("")
         loc = locs.get(x["id"], {})
         if "not_applicable" in loc:
             lines.append("**Locations:** not applicable — " + loc["not_applicable"])
