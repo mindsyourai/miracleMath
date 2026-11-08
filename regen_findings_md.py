@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 
 f = json.load(open(DATA / "scholar_findings.json", encoding="utf-8"))
+locs = json.load(open(DATA / "locations.json", encoding="utf-8"))["locations"]
 meta = f["meta"]
 findings = f["findings"]
 tally = meta["tally"]
@@ -33,6 +34,12 @@ lines.append("Date: 2026-11-06. Corpus: Tanzil Quran Text, Uthmani script "
 lines.append("")
 lines.append("Reconciled 2026-11-07 — every finding now states the scholar claim as sourced, our recount number, "
              "and the reason for any difference (see RECONCILIATION.md).")
+lines.append("")
+lines.append("Methods pass 2026-11-08 — every finding now also carries the scholar's own method (stated / "
+             "reconstructed / unstated / not a count), the exceptions to that method, verification under both "
+             "the scholar's rule and our standard QAC root rule, and script-computed verse locations "
+             "(see METHODS.md; full location lists in data/locations.json). Tallies after this pass: "
+             "37 confirmed / 17 differ / 10 cannot verify.")
 lines.append("")
 lines.append("> **Read this first:** disputed numerology is presented here as *reported findings* — each with a source "
              "and a status — never as settled fact. “Confirmed” means our own scripted recount on the Tanzil file "
@@ -109,6 +116,46 @@ for cat, heading in CAT_HEADINGS:
                      % (EMOJI[x["our_status"]], x["our_status"], x["confidence"]))
         lines.append("")
         lines.append("**Our note:** " + x.get("our_note", ""))
+        lines.append("")
+        # --- methods pass (2026-11-08) ---
+        lines.append("**Scholar's method (%s):** %s"
+                     % (x.get("method_status", "unstated"), x.get("scholar_method", "")))
+        lines.append("")
+        if x.get("exceptions"):
+            lines.append("**Exceptions:** " + x["exceptions"])
+            lines.append("")
+
+        def fmt_ver(v):
+            if not v:
+                return "not applicable"
+            c = v.get("count")
+            cstr = (" / ".join(str(n) for n in c) if isinstance(c, list)
+                    else (str(c) if c is not None else "—"))
+            note = v.get("note", "")
+            return cstr + ((" — " + note) if note else "")
+
+        lines.append("**Verification — scholar's rule:** " + fmt_ver(x.get("verification_scholar_rule")))
+        lines.append("")
+        lines.append("**Verification — root rule:** " + fmt_ver(x.get("verification_root_rule")))
+        lines.append("")
+        loc = locs.get(x["id"], {})
+        if "not_applicable" in loc:
+            lines.append("**Locations:** not applicable — " + loc["not_applicable"])
+        elif not loc.get("verses"):
+            lines.append("**Locations:** not applicable — " + loc.get("note", "no occurrences to locate."))
+        else:
+            verses = loc["verses"]
+            per = loc.get("per_surah", {})
+            ps = ", ".join("%s: %d" % (s, n) for s, n in sorted(per.items(), key=lambda kv: int(kv[0])))
+            if len(verses) <= 60:
+                lines.append("**Locations (%d verses):** %s" % (len(verses), ", ".join(verses)))
+            else:
+                lines.append("**Locations (%d verses; verses per surah — %s):** first 20: %s … (full list in data/locations.json)"
+                             % (len(verses), ps, ", ".join(verses[:20])))
+            if loc.get("verses_scholar_rule"):
+                sv = loc["verses_scholar_rule"]
+                lines.append("**Locations — scholar's rule (%d verses):** %s"
+                             % (len(sv), ", ".join(sv[:60]) + (" …" if len(sv) > 60 else "")))
         lines.append("")
 
 out = "\n".join(lines)
