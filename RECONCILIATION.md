@@ -107,3 +107,35 @@ Names graph and Methodology are untouched. `data/scholar_findings.md` was regene
 `regen_findings_md.py` regenerates `data/scholar_findings.md` from the JSON; `build.py` rebuilds `web/data.js`.
 Checker A's verifier: `/tmp/checkerA_verify.py` (values in `/tmp/checkerA_values.json`); merge verification:
 `/tmp/merge_verify.py`, `/tmp/merge_verify2.py`, `/tmp/merge_verify3.py`, `/tmp/mv4.py`.
+
+## Addendum — methods + locations pass, 2026-11-08
+
+Every finding now carries the scholar's own method (stated / reconstructed /
+unstated / not a count), exceptions, verification under both the scholar's rule
+and the standard QAC root rule, and script-computed verse locations
+(`data/locations.json`, served as `web/locations.js`). Full detail in
+`METHODS.md`; merge script `merge_enriched.py`; checkers
+`data/methods_check_A.py` and `data/methods_check_B.py`.
+
+Method coverage: stated 19 / reconstructed 24 / unstated 15 / not a count 6.
+Locations: 50 findings with verse lists (13,359 root-rule refs + 5,400
+scholar-rule refs), 14 not applicable.
+
+14 status flips applied (each re-verified by the coordinator's own scripts):
+10 differs→confirmed (iman-kufr-25, zakah-blessing-32, say-they-said-332,
+plant-tree-26, reward-forgiveness-117-234, guidance-mercy-79, tongue-sermon-25,
+refuge-forever-28, disaster-thanks-75, treachery-foul-16), 1 confirmed→differs
+(jannah-jahannam-77 — 12 of the 77 surface forms are jinn/shield, not garden),
+1 cannot_verify→differs (sea-land-32-13 — land-sense is 12, not 13),
+1 differs→confirmed (most-frequent-min-3226 — QAC lemma min 3,226),
+1 confirmed→differs (dukes-unique-words — only the 18,994 surface-form figure
+reproduces). Plus 6 note-only corrections (human-being-65 stage table,
+hapax-legomena 1,994, rdsq-words odd/even, text-fabric DOI confirmed,
+dukes-atwell-2012 wrong DOI removed, qac-morphology date 12 March 2011).
+
+New tallies: **37 confirmed / 17 differ / 10 cannot verify** (was 28 / 25 / 11).
+Per section: Scholar findings 16 / 10 / 9; Popular claims 21 / 7 / 1.
+
+Still parked: the PASTED_PAGE_CHECK.md proposals (11 new findings and the
+benefit-corrupt-50 flip) — not applied. mind-light-49 left as differs
+(borderline: needs منير counted as "light"). İşârâtü'l-İ'câz still parked.
