@@ -15,24 +15,58 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "plain substring count on the Tanzil skeleton text gives دنيا 115 and اخرة 115.",
+      "method_status": "reconstructed",
+      "exceptions": "29:20 (al-nash'a al-akhira, 'the latter creation') is inside the 115 akhira forms but means 'latter', not the Hereafter; it is counted as a form under both rules. Root dnw also gives adna (nearest/lower, 12), daniyah (3), dana (2) -- excluded by lemma. Root Axr (250 words) also gives masculine al-akhir ('the Last/the other') and plural forms -- excluded by the feminine-stem rule.",
+      "verification_scholar_rule": {
+        "count": [
+          115,
+          115
+        ],
+        "note": "Reconstructed: plain substring count on the Tanzil skeleton text gives دنيا 115 and اخرة 115. The source states no method; this is the selection that reproduces the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          115,
+          115
+        ],
+        "note": "QAC: LEM d~unoyaA = 115; akhira = feminine al-akhira stem forms ('aAxirapi/'aAxirapa/'aAxirapu) = 115. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'paradise' (jannah) and 'hell' (jahannam) each occur 77 times.",
       "claim_arabic_or_terms": "الجنة / جهنم",
-      "confidence": "confirmed by our recount",
+      "confidence": "contested",
       "corpus_and_method": "Method not stated by the source.",
       "id": "jannah-jahannam-77",
-      "our_note": "Strict singular forms (الجنة/جنة with prefixes: الجنة 56 + جنة 18 + وجنة 2 + بالجنة 1) = 77; جهنم substring 77. The جنة substring alone is 78 — the one extra token is أَجِنَّةٌ (ajinnah, 'fetuses', 53:32), not a form of 'garden' (an earlier draft of this note called it a construct form). The popular 77/77 claim counts singular 'garden' only. Counting every garden by root/lemma (QAC lemma jan~ap: singular 71 + plural جنات 69 + dual 7) gives 147 — that is the 147 in Agent 1's heaven/hell pair (147:77), while hell (jahannam) is 77 under both rules. Both numbers are true under different stated rules: singular garden vs all gardens.",
-      "our_status": "confirmed",
+      "our_note": "Strict singular forms (الجنة/جنة with prefixes: الجنة 56 + جنة 18 + وجنة 2 + بالجنة 1) = 77; جهنم substring 77. The جنة substring alone is 78 — the one extra token is أَجِنَّةٌ (ajinnah, 'fetuses', 53:32), not a form of 'garden' (an earlier draft of this note called it a construct form). The popular 77/77 claim counts singular 'garden' only. Counting every garden by root/lemma (QAC lemma jan~ap: singular 71 + plural جنات 69 + dual 7) gives 147 — that is the 147 in Agent 1's heaven/hell pair (147:77), while hell (jahannam) is 77 under both rules. Both numbers are true under different stated rules: singular garden vs all gardens.\n\nMethods pass (2026-11-08): confirmed→differs: 12 of the 77 exact surface forms are not 'garden' — جِنَّة (jinn/madness, 10 tokens) and جُنَّة (shield, 2). Sense-correct garden counts are 65 (unsuffixed singular), 70 (QAC lemma singular), 147 (all gardens) — none is 77. Hell is 77 under both rules.",
+      "our_status": "differs",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "(sense-blind): exact surface forms الجنة 56 + جنة 18 + وجنة 2 + بالجنة 1 = 77; جهنم substring = 77.",
+      "method_status": "reconstructed",
+      "exceptions": "The surface string الجنة/جنة does NOT mean 'garden' in 12 tokens that the popular 77 counts as paradise: جِنَّة (jinn/madness, LEM jin~ap) at 7:184, 11:119, 23:25, 23:70, 32:13, 34:8, 34:46, 37:158 (x2), 114:6, and جُنَّة (shield, LEM jun~ap) at 58:16, 63:2. A 13th look-alike, أَجِنَّة (ajinnah, 'fetuses', 53:32), is outside the four exact forms but inside the جنة substring (78 total). Plural جنات (69) and dual (8) are excluded by the singular-only reading.",
+      "verification_scholar_rule": {
+        "count": [
+          77,
+          77
+        ],
+        "note": "Reconstructed (sense-blind): exact surface forms الجنة 56 + جنة 18 + وجنة 2 + بالجنة 1 = 77; جهنم substring = 77. This is the selection that reproduces the claim -- but it counts 12 non-garden tokens as 'paradise' (see exceptions)."
+      },
+      "verification_root_rule": {
+        "count": [
+          147,
+          77
+        ],
+        "note": "QAC: LEM jan~ap (all gardens) = 147 (singular 70 = 65 in the four surface forms + 1 construct spelling وجنتُ (56:89) + 4 suffixed; plural 69; dual 8); LEM jahan~am = 77. Sense-correct garden counts are 65 / 70 / 147 -- none is 77."
+      }
     },
     {
       "category": "paired_counts",
@@ -49,7 +83,24 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "شيط substring 70 + شياطين substring 18 = 88; angels by QAC lemma malak = 88 (73 plural + 13 singular + 2 dual).",
+      "method_status": "reconstructed",
+      "exceptions": "Bare surface ملك/الملك (63 tokens) mostly means 'king/sovereignty', not angel -- sense disambiguation by QAC lemma is required. Angel singulars (13): 6:8 x2 (ملك and ملكا, two tokens in one verse), 6:9, 6:50, 11:12, 11:31, 12:31, 17:95, 25:7, 32:11 (ملك الموت, Angel of Death), 53:26, 69:17, 89:22. Duals (2): الملكين 2:102, ملكين 7:20. Plural ملائكة 73.",
+      "verification_scholar_rule": {
+        "count": [
+          88,
+          88
+        ],
+        "note": "Reconstructed: شيط substring 70 + شياطين substring 18 = 88; angels by QAC lemma malak = 88 (73 plural + 13 singular + 2 dual). The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          88,
+          88
+        ],
+        "note": "QAC: ROOT $Tn (shaytan) = 88; LEM malak = 88. Whole ROOT mlk would be far larger (mulk dominion, malik king) -- the lemma narrowing is essential. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
@@ -66,7 +117,18 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "Yahya's page states it: '\"Day (yawm)\" is repeated 365 times in singular form, while its plural and dual forms \"days (ayyam and yawmayn)\" together are repeated 30 times.' Units: the singular form of yawm, with prefixes (wa-/fa-/bi-/li-) counted in and suffixed forms (possessive pronouns) counted out; dual and plural counted separately.",
+      "method_status": "stated",
+      "exceptions": "Excluded by the stated singular-only rule, all named: 10 suffixed singulars (يومكم/يومهم at 6:130, 7:51, 21:103, 32:14, 39:71, 43:83, 45:34, 51:60, 52:45, 70:42); 3 duals (يومين at 2:203, 41:9, 41:12); 27 plurals (أيام); 70 يومئذ (yawma'idhin, 'on that day' -- QAC gives it no ROOT, LEM yawoma}i* only). The Islamic year is 354/355 days, so the Gregorian-365 framing is itself a critique point (WikiIslam).",
+      "verification_scholar_rule": {
+        "count": 365,
+        "note": "Stated rule verified: singular yawm without suffixes = 365 (simple يوم/اليوم/يوما 274 + prefixed ويوم 44, واليوم 23, ليوم 8, فاليوم 8, بيوم 5, باليوم 2, وباليوم 1). QAC agrees: singular yawm = 375, minus 10 suffixed = 365."
+      },
+      "verification_root_rule": {
+        "count": 475,
+        "note": "QAC: ROOT ywm = 405 (singular 375 + plural 27 + dual 3) + LEM yawoma}i* (yawma'idhin) 70 = 475. The 365 is a subset: it excludes the 10 suffixed singulars, 3 duals, 27 plurals and 70 yawma'idhin (110 tokens)."
+      }
     },
     {
       "category": "paired_counts",
@@ -83,7 +145,18 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "simple شهر/الشهر/شهرا 10 + بالشهر 1 + والشهر 1 = 12.",
+      "method_status": "reconstructed",
+      "exceptions": "Excluded by the singular-only selection: 2 duals (شهرين at 4:92, 58:4) and 7 plurals (أشهر 6 + الشهور 1 at 9:36). All 12 counted forms are singular شهر.",
+      "verification_scholar_rule": {
+        "count": 12,
+        "note": "Reconstructed: simple شهر/الشهر/شهرا 10 + بالشهر 1 + والشهر 1 = 12. The source states no method; this is the selection that reproduces the claim."
+      },
+      "verification_root_rule": {
+        "count": 21,
+        "note": "QAC: ROOT $hr / LEM $ahor = 21 (singular 12 + dual 2 + plural 7). The 12 is the singular-only subset."
+      }
     },
     {
       "category": "paired_counts",
@@ -100,24 +173,52 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "plural surface form صلوات = 5 (QAC plural stems Salawa`tN/Salawa`ti/S~alawa`ti).",
+      "method_status": "reconstructed",
+      "exceptions": "The 5 plural صلوات are at 2:157, 2:238, 9:99, 22:40, 23:9. Two further tokens match the صلوات substring but are singular صلاة written صلوة in Uthmani (9:103, 11:87) -- excluded. Sense: only 3 of the 5 mean 'prayers' (2:157 = blessings, 22:40 = synagogues/churches -- WikiIslam's sense critique).",
+      "verification_scholar_rule": {
+        "count": 5,
+        "note": "Reconstructed: plural surface form صلوات = 5 (QAC plural stems Salawa`tN/Salawa`ti/S~alawa`ti). The source states no method; this is the selection that reproduces the claim."
+      },
+      "verification_root_rule": {
+        "count": 5,
+        "note": "QAC: LEM Salaw`p plural stems = 5; the same lemma covers singular صلاة (78 words, incl. the 2 صلوة spellings). Both rules agree on 5."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The word 'sea' occurs 32 times and 'land' 13 times (the ratio 13/45 = 29% land, 71% sea, matching the Earth's surface).",
       "claim_arabic_or_terms": "البحر / البر",
-      "confidence": "reported, method unclear",
+      "confidence": "contested",
       "corpus_and_method": "Method not stated by the source.",
       "id": "sea-land-32-13",
-      "our_note": "Sea: البحر 23 + والبحر 9 = 32 confirmed (all بحر tokens 40, incl. dual البحرين 4). Land: the البر-form total is 21 (البر 19 + prefixed forms), mixing 'land' and 'righteousness/piety' senses (e.g. 2:177); the figure 13 requires sense disambiguation we did not perform, so the pair as stated cannot be verified. The 29:71 land/sea ratio claim therefore cannot be verified as stated.",
-      "our_status": "cannot_verify",
+      "our_note": "Sea: البحر 23 + والبحر 9 = 32 confirmed (all بحر tokens 40, incl. dual البحرين 4). Land: the البر-form total is 21 (البر 19 + prefixed forms), mixing 'land' and 'righteousness/piety' senses (e.g. 2:177); the figure 13 requires sense disambiguation we did not perform, so the pair as stated cannot be verified. The 29:71 land/sea ratio claim therefore cannot be verified as stated.\n\nMethods pass (2026-11-08): cannot_verify→differs: land-sense البرّ occurs 12 times, not 13 (the other 10 LEM bar~ tokens are piety/righteousness). Sea (definite singular البحر) is 32, confirmed.",
+      "our_status": "differs",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "method not stated by the source",
+      "method_status": "unstated",
+      "exceptions": "Sea: البحر 23 + والبحر 9 = 32 (definite singular only); excluded are the dual البحرين (4), plural البحار (2), indefinite بحر (1), أبحر (1) and البحران (1) -- sea-sense total 41, plus بحيرة (a slit-eared camel, 5:103) which shares ROOT bHr but is not sea. Land: LEM bar~ = 22 tokens, of which 12 are land-sense (5:96, 6:59, 6:63, 6:97, 10:22, 17:67, 17:68, 17:70, 27:63, 29:65, 30:41, 31:32) and 10 are not land: الأبرار (the righteous) x6 (3:193, 3:198, 76:5, 82:13, 83:18, 83:22), برًّا (dutiful) x2 (19:14, 19:32), البرّ (the Benign, a divine name) 52:28, بررة (dutiful) 80:16.",
+      "verification_scholar_rule": {
+        "count": [
+          32,
+          null
+        ],
+        "note": "Sea 32 reproduces under the definite-singular selection. Land 13 does NOT reproduce: sense-classified land = 12 (see exceptions). No stated or reconstructable rule gives 13."
+      },
+      "verification_root_rule": {
+        "count": [
+          41,
+          12
+        ],
+        "note": "QAC: LEM baHor (sea-sense) = 41; LEM bar~ land-sense = 12 (of 22 bar~ tokens; the rest are piety/righteousness). Whole ROOT brr = 32 (bar~ 22 + bir~ piety 8 + tabar~u 2) -- coincidentally the sea number, not the land number."
+      }
     },
     {
       "category": "paired_counts",
@@ -134,7 +235,24 @@
         "url": "https://www.scribd.com/document/45864275/Mathematical-Miracles-of-the-Holy-Quran",
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "(Al-Suwaidan/Elias list, not Yahya's): singular surface forms = 24/24.",
+      "method_status": "reconstructed",
+      "exceptions": "Man singular (24): رجل 13 (رجلٌ 7 + رجلٍ 5 + رجلٌۢ 1) + رجلا 7 + لرجل 2 + فرجل 1 + ورجلا 1. Woman singular (24): امرأت 6 + امرأته 5 + امرأة 3 + وامرأته 2 + امرأتك 2 + امرأتي 2 + وامرأتي 1 + لامرأته 1 + وامرأة 1 + وامرأت 1. Excluded from the 24/24: duals (man رجلين/رجلان 5; woman امرأتان/امرأتين 2) and plurals (رجال 28, نساء 59). Yahya's own page gives 23/23 -- one short on each side -- and no principled exclusion produces 23 from the 24 singulars.",
+      "verification_scholar_rule": {
+        "count": [
+          24,
+          24
+        ],
+        "note": "Reconstructed (Al-Suwaidan/Elias list, not Yahya's): singular surface forms = 24/24. Yahya's stated number is 23/23; the one-token exclusion that would give 23 is not stated anywhere and cannot be reconstructed. Scribd source for the Al-Suwaidan list was not fetched (Scribd blocks text fetch); the 24/24 is verified from the corpus, not from the source."
+      },
+      "verification_root_rule": {
+        "count": [
+          57,
+          85
+        ],
+        "note": "QAC: LEM rajul 29 (24 singular + 5 dual) + LEM rijaAl (men, plural) 28 = 57; LEM {mora>at 26 (24 singular + 2 dual) + LEM nisaA^' (women) 59 = 85. The 24/24 is the singular-only subset on both sides."
+      }
     },
     {
       "category": "paired_counts",
@@ -151,7 +269,24 @@
         "url": "https://www.quranic-miracles.com/miracles/mathematical/word-repetitions",
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "method not stated by the source",
+      "method_status": "unstated",
+      "exceptions": "Life: noun الحياة (LEM Hayaw`p) 76; whole ROOT Hyy 184 (noun 76 + أحيا 'give life' 51 + حيّ 'living' 24 + يستحيي 9 -- of which 2:26 and 33:53 are 'shy', the rest 'spare alive' -- + تحية 'greeting' 6, حياة senses etc.); excluded: حيّة 'snake' (20:20) and shyness. Death: noun الموت (LEM mawot) 50; whole ROOT mwt 165 (noun 50 + مات 'died' 39 + ميّت 'dead' 38 + أمات 'cause to die' 21 + ميتة 'carrion' 6 + موت forms). The circulating list (quranic-miracles.com, fetched 2026-11-07) states no method and gives no form list.",
+      "verification_scholar_rule": {
+        "count": [
+          null,
+          null
+        ],
+        "note": "No rule reproduces 145/145. Tested: noun 76/50; whole-root 184/165; substring حياة-family 125 / موت-family 171 (after removing ظلمات/كلمات false positives); broad families (root_counts_script) do not reach 145 either."
+      },
+      "verification_root_rule": {
+        "count": [
+          184,
+          165
+        ],
+        "note": "QAC whole-root: Hyy 184, mwt 165. Noun-only: Hayaw`p 76, mawot 50. Neither pairing is 145/145."
+      }
     },
     {
       "category": "paired_counts",
@@ -168,7 +303,26 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "Yahya's page states for light: 'In counting the word \"light\" only the simple forms of the word were included.' Sun and moon carry no method statement on the page; the moon 27 is a separate claim (WikiIslam), not paired with sun by Yahya -- his page contains no 'moon' at all. Units: simple surface forms.",
+      "method_status": "stated",
+      "exceptions": "Light simple forms counted: نور 8 + النور 10 + نورا 9 + والنور 3 + بنور 1 + نورهم 2 = 33. Excluded: نورنا/نوركم (suffixed) and منير 'shining' forms (6). Sun: شمس substring 33, all sun-sense, no look-alikes. Moon: قمر substring 27, all moon-sense.",
+      "verification_scholar_rule": {
+        "count": [
+          33,
+          33,
+          27
+        ],
+        "note": "Stated rule verified: sun شمس substring = 33; light simple forms = 33 (selection above); moon قمر substring = 27. The pair is really sun/light 33/33 plus a separate moon 27."
+      },
+      "verification_root_rule": {
+        "count": [
+          33,
+          27,
+          43
+        ],
+        "note": "QAC: ROOT $ms (sun) = 33; ROOT qmr (moon) = 27; LEM nuwr (light) = 43, or 49 counting LEM m~uniyr ('shining', 6). Sun and moon agree under both rules; light is 33 only under Yahya's stated simple-forms selection."
+      }
     },
     {
       "category": "paired_counts",
@@ -185,126 +339,256 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "plain surface count محمد = 4.",
+      "method_status": "reconstructed",
+      "exceptions": "The name occurs at 3:144, 33:40, 47:2, 48:29. Excluded: أحمد (Ahmad, 61:6) -- a different name for the same person, not counted. The attribution to Yahya's list rests on the wider list tradition: the fetched Yahya article page does not contain 'Muhammad 4' verbatim.",
+      "verification_scholar_rule": {
+        "count": 4,
+        "note": "Reconstructed: plain surface count محمد = 4. The source states no method; this is the selection that reproduces the claim."
+      },
+      "verification_root_rule": {
+        "count": 4,
+        "note": "QAC: LEM muHam~ad = 4. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'belief' (iman) and 'disbelief' (kufr) each occur 25 times.",
       "claim_arabic_or_terms": "إيمان / كفر",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "iman-kufr-25",
-      "our_note": "Naive substring counts: ايمان 86, كفر 343 — far from 25/25. Yahya's wording is 'faith (iman) (without genitive) is repeated 25 times… as is also the word infidelity (kufr)' — the 25 figure must rest on a very narrow form selection (excluding genitive constructions) that the source does not state in countable detail, so it does not reproduce under any clean rule we could state. The circulating quranic-miracles.com list gives iman/kufr as 17, not 25.",
-      "our_status": "differs",
+      "our_note": "Naive substring counts: ايمان 86, كفر 343 — far from 25/25. Yahya's wording is 'faith (iman) (without genitive) is repeated 25 times… as is also the word infidelity (kufr)' — the 25 figure must rest on a very narrow form selection (excluding genitive constructions) that the source does not state in countable detail, so it does not reproduce under any clean rule we could state. The circulating quranic-miracles.com list gives iman/kufr as 17, not 25.\n\nMethods pass (2026-11-08): differs→confirmed: bare (unsuffixed) noun forms reproduce exactly — bare إيمان 25, bare كفر 25 (QAC). Yahya's '(without genitive)' = no possessive suffix.",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "Yahya's page states the qualifier: 'The word faith (iman) (without genitive) is repeated 25 times throughout the Qur'an as is also the word infidelity (kufr).' Units: the nouns إيمان / كفر, with the genitive excluded. What '(without genitive)' means in practice is reconstructed below (see verification note); the qualifier itself is verbatim from the source.",
+      "method_status": "stated",
+      "exceptions": "Genitive in Arabic covers the possessive pronoun suffixes (إيمانهم/إيمانكم/كفرهم -- the suffix is a genitive pronoun). Bare (unsuffixed) tokens: iman 25 (GEN-case 12 + ACC-case 11 + NOM-case 2); kufr 25 (ACC-case 14 + GEN-case 10 + NOM-case 1). Suffixed tokens excluded: iman 20, kufr 12. The alternative reading -- excluding all GEN-case tokens -- gives 21 (iman) and 20 (kufr) and does NOT reproduce 25. The circulating list (quranic-miracles.com) gives iman/kufr as 17, not 25.",
+      "verification_scholar_rule": {
+        "count": [
+          25,
+          25
+        ],
+        "note": "Reconstructed implementation of the stated qualifier: bare (unsuffixed) noun forms give exactly 25/25 (QAC LEM <iyma`n bare 25; LEM kufor bare 25). Both words occur together in several of the same verses (2:108, 3:167, 3:177, 9:23, 16:106, 49:7)."
+      },
+      "verification_root_rule": {
+        "count": [
+          45,
+          37
+        ],
+        "note": "QAC noun-only (root narrowed by lemma to the intended sense): LEM <iyma`n = 45, LEM kufor = 37. The 25/25 is the bare-noun subset. Broader sense-level families: belief (verb آمن 537 + مؤمن 202 + إيمان 45 + مؤمنات 22 + مؤمنة 6) = 812; disbelief (ROOT kfr minus كفّارة 'expiation') = 507."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'charity' (zakah) and 'blessing' (barakah) each occur 32 times.",
       "claim_arabic_or_terms": "الزكاة / البركة",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "zakah-blessing-32",
-      "our_note": "زك substring 67 (incl. الزكاة, زكاة, يزكي and derived verb forms); برك substring 5. Neither side is near 32 under a simple substring count.",
-      "our_status": "differs",
+      "our_note": "زك substring 67 (incl. الزكاة, زكاة, يزكي and derived verb forms); برك substring 5. Neither side is near 32 under a simple substring count.\n\nMethods pass (2026-11-08): differs→confirmed: by lemma/root, zakah (LEM zakaw`p) is exactly 32 and blessing (ROOT brk) is exactly 32. The old substring test was the wrong unit.",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "zakah noun (LEM zakaw`p) = 32; blessing by ROOT brk = 32.",
+      "method_status": "reconstructed",
+      "exceptions": "Zakah: noun الزكاة (LEM zakaw`p) 32; excluded are the same-root purify verbs (زكّى 12, تزكّى 8, أزكى 4, زكيّ 2 -- ROOT zkw total 59). Blessing: ROOT brk 32, all blessing-sense lemmas (مبارك 8, تبارك 9, بركة 3, بارك 8, مباركة 4). The برك substring (5) misses بارك/تبارك because of the alif; the زك substring (67) catches the purify verbs.",
+      "verification_scholar_rule": {
+        "count": [
+          32,
+          32
+        ],
+        "note": "Reconstructed: zakah noun (LEM zakaw`p) = 32; blessing by ROOT brk = 32. The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          32,
+          32
+        ],
+        "note": "QAC: LEM zakaw`p = 32; ROOT brk = 32. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The word 'say' (qul) occurs 332 times and 'they said' (qalu) 332 times.",
       "claim_arabic_or_terms": "قل / قالوا",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "say-they-said-332",
-      "our_note": "'They said' (قالوا substring) = 332 exactly. 'Say' (قل, imperative, exact-form count after stripping prefixes) = 333 — one more than the claimed 332. The قال family as a whole (substring) is 932.",
-      "our_status": "differs",
+      "our_note": "'They said' (قالوا substring) = 332 exactly. 'Say' (قل, imperative, exact-form count after stripping prefixes) = 333 — one more than the claimed 332. The قال family as a whole (substring) is 932.\n\nMethods pass (2026-11-08): differs→confirmed: singular imperative قل is 332 exactly (293 + 18 + 21 by prefix, QAC LEM qaAla IMPV 2MS) and قالوا is 332 (QAC PERF 3MP).",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "singular imperative قل (QAC LEM qaAla, IMPV, 2MS) = 332; قالوا = 332 (surface and QAC PERF 3MP agree).",
+      "method_status": "reconstructed",
+      "exceptions": "\"Say\" is the 2nd-person masculine singular imperative قُلْ: قُلْ 293 (قُلْ 218 + قُل 45 + قُلِ 30) + فَقُلْ 18 + وَقُلْ 21 = 332. Excluded from 'say': plural/dual/feminine imperatives قولوا (17 tokens: وقولوا 8, قولوا 2, فقولوا 2, فقولا 3, فقولي 1, وقلن 1) and the jussive وَلْيَقُولُوا (1) -- 350 imperatives in all. 'They said' is the perfect 3rd-person masculine plural قالوا (332: قالوا/وقالوا/فقالوا/لقالوا); the imperfect يقولون ('they say') is a different form and is excluded.",
+      "verification_scholar_rule": {
+        "count": [
+          332,
+          332
+        ],
+        "note": "Reconstructed: singular imperative قل (QAC LEM qaAla, IMPV, 2MS) = 332; قالوا = 332 (surface and QAC PERF 3MP agree). The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          332,
+          332
+        ],
+        "note": "QAC: LEM qaAla IMPV 2MS = 332; LEM qaAla PERF 3MP قالوا = 332. Whole ROOT qwl = 1722 (all 'say/said' forms). Both rules agree on 332/332."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'plant' and 'tree' each occur 26 times.",
       "claim_arabic_or_terms": "نبات / شجر",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "plant-tree-26",
-      "our_note": "نبات substring 11; شجر substring 27. Plant is far from 26; tree is one over.",
-      "our_status": "differs",
+      "our_note": "نبات substring 11; شجر substring 27. Plant is far from 26; tree is one over.\n\nMethods pass (2026-11-08): differs→confirmed: by root, plant (nbt) is exactly 26 and tree ($jr) is 27 of which one token (شَجَرَ, 4:65) is the verb 'to dispute', leaving 26.",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "plant by ROOT nbt = 26; tree by ROOT $jr minus the dispute verb = 26.",
+      "method_status": "reconstructed",
+      "exceptions": "Plant: ROOT nbt 26 (أنبت verbs 16 + نبات nouns 9 + تنبت 1). Tree: ROOT $jr 27, of which 1 is the dispute verb شَجَرَ (4:65, LEM $ajara, 'what has arisen/disputed between them') -- not a tree. Tree-sense = 26 (شجرة 19 + شجر 7).",
+      "verification_scholar_rule": {
+        "count": [
+          26,
+          26
+        ],
+        "note": "Reconstructed: plant by ROOT nbt = 26; tree by ROOT $jr minus the dispute verb = 26. The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          26,
+          26
+        ],
+        "note": "QAC: ROOT nbt = 26; ROOT $jr tree-sense = 26 (whole root 27 incl. the 4:65 dispute verb). Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'reward' (al-jaza') and 'forgiveness' (maghfira) occur 117 and 234 times (forgiveness exactly double reward).",
       "claim_arabic_or_terms": "الجزاء / المغفرة",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "reward-forgiveness-117-234",
-      "our_note": "The filed Arabic ثواب (thawab) was wrong — Yahya's word is الجزاء (al-jaza'), and the thawab substring is only 13. By root: QAC root j-z-y = 118 — one more than the claimed 117, so the reward side needs an unstated one-token exclusion. Forgiveness reproduces exactly as the QAC root gh-f-r = 234 (including غفور, يغفر, استغفار and مغفرة forms). So the pair as claimed differs by one on the reward side only. (مغفر substring alone is 28 — that counts only the مغفر- stem, not the whole root.)",
-      "our_status": "differs",
+      "our_note": "The filed Arabic ثواب (thawab) was wrong — Yahya's word is الجزاء (al-jaza'), and the thawab substring is only 13. By root: QAC root j-z-y = 118 — one more than the claimed 117, so the reward side needs an unstated one-token exclusion. Forgiveness reproduces exactly as the QAC root gh-f-r = 234 (including غفور, يغفر, استغفار and مغفرة forms). So the pair as claimed differs by one on the reward side only. (مغفر substring alone is 28 — that counts only the مغفر- stem, not the whole root.)\n\nMethods pass (2026-11-08): differs→confirmed: reward (ROOT jzy) is 118 minus the jizya tax token (9:29) = 117; forgiveness (ROOT gfr) is 234 exactly.",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "reward by ROOT jzy minus the jizya tax token = 117; forgiveness by ROOT gfr = 234.",
+      "method_status": "reconstructed",
+      "exceptions": "Reward: ROOT jzy 118 = جزى verbs (jazaY` 73) + جزاء nouns (jazaA^' 42) + جازٍ 'one who avails' (31:33) + نجازي 'We recompense' (34:17) + الجزية 'jizya tax' (9:29). Only the jizya (1 token) is not reward. Forgiveness: ROOT gfr 234 = غفور 91 + غفر 65 + استغفر 40 + مغفرة 28 + غفّار 5 + غافر 2 + غفران 1 + مستغفرين 1 + استغفار 1 -- all forgiveness-sense.",
+      "verification_scholar_rule": {
+        "count": [
+          117,
+          234
+        ],
+        "note": "Reconstructed: reward by ROOT jzy minus the jizya tax token = 117; forgiveness by ROOT gfr = 234. The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          117,
+          234
+        ],
+        "note": "QAC: ROOT jzy reward-sense = 117 (whole root 118 incl. jizya 9:29); ROOT gfr = 234. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'guidance' (huda) and 'mercy' (rahma) each occur 79 times.",
       "claim_arabic_or_terms": "هدى / رحمة",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "guidance-mercy-79",
-      "our_note": "هد substring 432; رحم substring 318 — polluted by الرحمن 169 and الرحيم 227, which share the root. The 79 figure must use a narrow selection the source does not state.",
-      "our_status": "differs",
+      "our_note": "هد substring 432; رحم substring 318 — polluted by الرحمن 169 and الرحيم 227, which share the root. The 79 figure must use a narrow selection the source does not state.\n\nMethods pass (2026-11-08): differs→confirmed: bare (unsuffixed) nouns reproduce exactly — hudFY 79 (85−6 suffixed), raHomap 79 (114−35 suffixed); same bare-form rule as iman/kufr.",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "bare (unsuffixed) noun forms give exactly 79/79 (QAC LEM hudFY bare 79; LEM raHomap bare 79).",
+      "method_status": "reconstructed",
+      "exceptions": "Guidance: noun هدى (LEM hudFY) 85 total, of which 79 are bare (unsuffixed) -- QAC stem forms hudFY 43 + hudaY` 24 + hudaY 7 + hudaY`^ 5; the 6 suffixed tokens (هداه/هداهم...) are excluded. Mercy: noun رحمة (LEM raHomap) 114 total, of which 79 are bare (unsuffixed) -- stem forms raHomapF 34 + raHomapN 12 + raHomapK 11 + r~aHomapi 5 + raHomata 3 + raHomapi 3 and 11 further bare forms; the 35 suffixed tokens (رحمته/رحمتهم/رحمتك...) are excluded. Whole roots: hdy 316, rHm 339. This is the same bare-form (unsuffixed noun) rule that reproduces iman/kufr 25/25 -- Yahya's '(without genitive)' for iman is the same idea (no possessive/genitive suffix).",
+      "verification_scholar_rule": {
+        "count": [
+          79,
+          79
+        ],
+        "note": "Reconstructed: bare (unsuffixed) noun forms give exactly 79/79 (QAC LEM hudFY bare 79; LEM raHomap bare 79). The source states no method; this is the selection that reproduces the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          79,
+          79
+        ],
+        "note": "QAC: bare nouns hudFY 79 / raHomap 79. Noun totals 85/114; whole-root 316/339. The 79/79 is the bare-noun subset on both sides."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'tongue' (lisan) and 'sermon' (maw'iza) each occur 25 times.",
       "claim_arabic_or_terms": "لسان / موعظة",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "tongue-sermon-25",
-      "our_note": "لسان substring 15; موعظ substring 9. Both below 25. Note: WikiIslam points out the counted word is 'admonition', not 'sermon' — 'sermon' as such does not appear in the Quran.",
-      "our_status": "differs",
+      "our_note": "لسان substring 15; موعظ substring 9. Both below 25. Note: WikiIslam points out the counted word is 'admonition', not 'sermon' — 'sermon' as such does not appear in the Quran.\n\nMethods pass (2026-11-08): differs→confirmed: by root, tongue (lsn) is exactly 25 and admonition (wEZ) is exactly 25. 'Sermon' mistranslates موعظة (admonition).",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "tongue by ROOT lsn = 25; admonition by ROOT wEZ = 25.",
+      "method_status": "reconstructed",
+      "exceptions": "Tongue: ROOT lsn 25, all LEM lisaAn -- singular لسان plus plural ألسنة (the substring لسان 15 misses the plurals). Sermon: the counted word is موعظة 'admonition', not 'sermon' (WikiIslam: 'sermon' as such does not appear in the Quran). ROOT wEZ 25 = وعظ verbs 15 + موعظة 9 + واعظين 1 (the substring موعظ 9 misses the verbs).",
+      "verification_scholar_rule": {
+        "count": [
+          25,
+          25
+        ],
+        "note": "Reconstructed: tongue by ROOT lsn = 25; admonition by ROOT wEZ = 25. The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          25,
+          25
+        ],
+        "note": "QAC: ROOT lsn = 25; ROOT wEZ = 25. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
@@ -321,7 +605,24 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "method not stated by the source",
+      "method_status": "unstated",
+      "exceptions": "Wine: noun خمر (LEM xamor) 6; the 7th ROOT xmr token is خمرهن 'their veils' (24:31, LEM xumur) -- not wine. Intoxication: ROOT skr 7, all intoxication-sense -- سكرت 15:15, سكرتهم 15:72, سكرا 16:67, سكرة الموت 50:19, سكارى x3 (4:43, 22:2 x2). No token can be excluded on sense grounds; intoxication is 7, not 6.",
+      "verification_scholar_rule": {
+        "count": [
+          6,
+          null
+        ],
+        "note": "Wine 6 reproduces as the noun (LEM xamor). Intoxication does not reproduce as 6: ROOT skr = 7, all intoxication-sense. No stated or reconstructable rule gives 6/6."
+      },
+      "verification_root_rule": {
+        "count": [
+          6,
+          7
+        ],
+        "note": "QAC: LEM xamor (wine noun) = 6 (whole ROOT xmr 7 incl. veils 24:31); ROOT skr (intoxication) = 7. The pair differs by one on the intoxication side."
+      }
     },
     {
       "category": "paired_counts",
@@ -338,7 +639,24 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "method not stated by the source",
+      "method_status": "unstated",
+      "exceptions": "Mind: ROOT Eql 49 -- all verb forms (تعقلون 'you use reason' etc.); there is no noun عقل in the Quran, so the 'mind' count is already a root count over verbs. Light: LEM nuwr 43; LEM m~uniyr ('shining, illuminating', adjective) 6; nuwr + muniyr = 49. ROOT nwr as a whole is 194 because it includes نار 'fire' (145) -- not light. The 49 for light therefore requires counting منير as 'light', which mixes the noun with the adjective (WikiIslam's route to 49).",
+      "verification_scholar_rule": {
+        "count": [
+          49,
+          null
+        ],
+        "note": "Mind 49 reproduces by ROOT Eql. Light 49 reproduces ONLY as nuwr 43 + muniyr 6; the noun alone is 43. No stated method; the light side needs the adjective included."
+      },
+      "verification_root_rule": {
+        "count": [
+          49,
+          43
+        ],
+        "note": "QAC: ROOT Eql = 49; LEM nuwr = 43 (49 with m~uniyr). Under the plain lemma rule the pair is 49/43; under a root rule that counts منير as light it is 49/49. NOT proposed as a correction: the prior team explicitly rejected mixing the noun with the adjective, and the choice is a judgement call for the coordinator/MK."
+      }
     },
     {
       "category": "paired_counts",
@@ -355,7 +673,24 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "both sides are exactly 50 under the QAC root rule (nfE 50, fsd 50).",
+      "method_status": "reconstructed",
+      "exceptions": "Benefit: ROOT nfE 50 (نفع verb 31 + نفع noun 11 + منافع 8). Corrupt: ROOT fsd 50 (مفسد 21 + أفسد 15 + فساد 11 + فسدت 3). The old differs rested on substrings (نفع 45, فساد 11).",
+      "verification_scholar_rule": {
+        "count": [
+          50,
+          50
+        ],
+        "note": "Reconstructed: both sides are exactly 50 under the QAC root rule (nfE 50, fsd 50)."
+      },
+      "verification_root_rule": {
+        "count": [
+          50,
+          50
+        ],
+        "note": "QAC: ROOT nfE = 50; ROOT fsd = 50. Both rules agree. NOTE: this is the same result as the benefit-corrupt-50 flip proposed in PASTED_PAGE_CHECK.md, which is still UNAPPROVED by MK -- so NO correction is recorded here, per the task instructions. The numbers are reported; the status change is left to the coordinator/MK."
+      }
     },
     {
       "category": "paired_counts",
@@ -372,41 +707,92 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "method not stated by the source",
+      "method_status": "unstated",
+      "exceptions": "Love: ROOT Hbb 95, minus grain (حبّ 'grain/seed' 7 + حبّة 5 = 12) = 83 love-sense (أحبّ verbs 64 + حبّ noun 9 + استحبّ 4 + أحبّ 3 + أحبّاء 1 + محبّة 1 + حبّب 1). Obedience: ROOT TwE 129, minus استطاع 'to be able' (LEM {sotaTaAEa, 42) = 87 obedience-sense (أطاع 72 + طوع 4 + طاعة 3 + تطوّع 2 + يطاع 2 + طواعية 1 + مطوّعين 1 + طائعين 1 + مطاع 1). Love reproduces (83); obedience is 87, four over.",
+      "verification_scholar_rule": {
+        "count": [
+          83,
+          null
+        ],
+        "note": "Love 83 reproduces under root-minus-grain. Obedience does not reproduce as 83: obedience-sense root = 87, whole root = 129. No stated or reconstructable rule gives 83/83."
+      },
+      "verification_root_rule": {
+        "count": [
+          83,
+          87
+        ],
+        "note": "QAC: ROOT Hbb love-sense = 83 (whole root 95 incl. grain 12); ROOT TwE obedience-sense = 87 (whole root 129 incl. 'to be able' 42). The pair differs by four on the obedience side."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'destination/return' (al-maseer) and 'forever' (abadan) each occur 28 times.",
       "claim_arabic_or_terms": "المصير / أبدا",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "refuge-forever-28",
-      "our_note": "The filed Arabic ملجأ (malja', 'refuge') was wrong — Yahya's word is المصير (al-maseer, 'destination/return'), and the ملجا substring is only 3. With the correct word: مصير substring = 28 exactly (المصير 23 + مصيرا/ومصيرا/مصيركم). Forever: ابدا substring 29 — one over 28. So the pair differs by one on the 'forever' side only; the 'refuge' side was never the problem, the filed word was.",
-      "our_status": "differs",
+      "our_note": "The filed Arabic ملجأ (malja', 'refuge') was wrong — Yahya's word is المصير (al-maseer, 'destination/return'), and the ملجا substring is only 3. With the correct word: مصير substring = 28 exactly (المصير 23 + مصيرا/ومصيرا/مصيركم). Forever: ابدا substring 29 — one over 28. So the pair differs by one on the 'forever' side only; the 'refuge' side was never the problem, the filed word was.\n\nMethods pass (2026-11-08): differs→confirmed: refuge (LEM maSiyr) is 28 and forever (LEM >abadFA) is 28. The old '29' was a substring false positive: عابدات (66:5) contains ابدا in its skeleton but is not أبدا.",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "maseer (LEM maSiyr) = 28; forever (LEM >abadFA, exact form) = 28.",
+      "method_status": "reconstructed",
+      "exceptions": "The filed Arabic ملجأ (malja', 'refuge') was wrong -- Yahya's page says 'refuge (maseer)', i.e. المصير 'destination/return'. مصير substring = 28 (المصير 23 + مصيرا/ومصيرا/مصيركم forms); LEM maSiyr = 28. Forever: ابدا = 28 by exact surface form and by QAC lemma >abadFA (28 verses). The earlier '29' was a substring false positive: the ابدا substring also catches عابدات 'devout [women]' (66:5, LEM Ea`bida`t, ROOT Ebd), which is not أبدا at all.",
+      "verification_scholar_rule": {
+        "count": [
+          28,
+          28
+        ],
+        "note": "Reconstructed: maseer (LEM maSiyr) = 28; forever (LEM >abadFA, exact form) = 28. The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          28,
+          28
+        ],
+        "note": "QAC: LEM maSiyr = 28; LEM >abadFA = 28. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'disaster' (musiba) and 'thanks' (shukr) each occur 75 times.",
       "claim_arabic_or_terms": "مصيبة / شكر",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "disaster-thanks-75",
-      "our_note": "مصيب substring 11; شكر substring 47. Both below 75.",
-      "our_status": "differs",
+      "our_note": "مصيب substring 11; شكر substring 47. Both below 75.\n\nMethods pass (2026-11-08): differs→confirmed: by root, thanks ($kr) is exactly 75 and disaster-sense (Swb) is 75, excluding صيّب (rainstorm, 2:19) and صواب ('right', 78:38).",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "disaster by ROOT Swb minus the two non-disaster lemmas (صيّب, صواب) = 75; thanks by ROOT $kr = 75.",
+      "method_status": "reconstructed",
+      "exceptions": "Disaster: ROOT Swb 77 = أصاب 'befall/afflict' verbs 64 + مصيبة 10 + مصيب 'one who is struck' (11:81) 1 + صيّب 'rainstorm' (2:19) 1 + صواب 'what is right' (78:38) 1. The last two are not disaster-sense; excluding them gives 75. Thanks: ROOT $kr 75, all thanks-sense (شكر 46 + شاكر 14 + شكور 10 + مشكور 2 + شكور 2 + شكر 1).",
+      "verification_scholar_rule": {
+        "count": [
+          75,
+          75
+        ],
+        "note": "Reconstructed: disaster by ROOT Swb minus the two non-disaster lemmas (صيّب, صواب) = 75; thanks by ROOT $kr = 75. The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          75,
+          75
+        ],
+        "note": "QAC: ROOT Swb disaster-sense = 75 (whole root 77); ROOT $kr = 75. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
@@ -423,24 +809,58 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "ROOT Dyq = 13 and ROOT Tmn = 13.",
+      "method_status": "reconstructed",
+      "exceptions": "The counted words are الضيق (distress) and الطمأنينة (tranquillity) -- the filed Arabic ضر/سلام was wrong. Yahya's English page just says 'trouble' and 'peace' with no Arabic, so the word identification is itself reconstructed from the root counts. Distress: ROOT Dyq 13 (ضاق verbs 7 + ضيق 2 + ضيق 2 + ضائق 1 + تضيق 1). Tranquillity: ROOT Tmn 13 (اطمأنّ 9 + مطمئن 2 + مطمئنة 2). Plain substrings give ضيق 7 and طمأن 3 -- the 13/13 needs root counting, not substrings.",
+      "verification_scholar_rule": {
+        "count": [
+          13,
+          13
+        ],
+        "note": "Reconstructed: ROOT Dyq = 13 and ROOT Tmn = 13. The source states no method and gives no Arabic; this is the selection that reproduces the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          13,
+          13
+        ],
+        "note": "QAC: ROOT Dyq = 13; ROOT Tmn = 13. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
       "claim": "The words 'treachery' (khiyana) and 'foul' (khabith) each occur 16 times.",
       "claim_arabic_or_terms": "خيانة / خبيث",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "treachery-foul-16",
-      "our_note": "خيان substring 2; خبيث substring 13. Both below 16.",
-      "our_status": "differs",
+      "our_note": "خيان substring 2; خبيث substring 13. Both below 16.\n\nMethods pass (2026-11-08): differs→confirmed: by root, treachery (xwn) is exactly 16 and foul (xbv) is exactly 16.",
+      "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
         "title": "Miracles of the Qur'an — 'Word Repetitions in the Qur'an'",
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "treachery by ROOT xwn = 16; foul by ROOT xbv = 16.",
+      "method_status": "reconstructed",
+      "exceptions": "Treachery: ROOT xwn 16 (خان 5 + خائنين 3 + يختانون 2 + خوّان 2 + خائنة 2 + خيانة 2). Foul: ROOT xbv 16 (خبيث 9 + خبيثة 4 + خبيثات 2 + خبث 1). The substrings (خيان 2, خبيث 13) miss the verb forms.",
+      "verification_scholar_rule": {
+        "count": [
+          16,
+          16
+        ],
+        "note": "Reconstructed: treachery by ROOT xwn = 16; foul by ROOT xbv = 16. The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          16,
+          16
+        ],
+        "note": "QAC: ROOT xwn = 16; ROOT xbv = 16. Both rules agree."
+      }
     },
     {
       "category": "paired_counts",
@@ -457,7 +877,24 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "surface forms أبرار 6 / فجار 3.",
+      "method_status": "reconstructed",
+      "exceptions": "The filed Arabic صالح/طالح was wrong -- Yahya's words are الأبرار (the righteous) and الفجار (the wicked). أبرار substring 6 (الأبرار 5 + للأبرار 1); فجار substring 3 (الفجار 2 + كالفجار 1). Under the lemma rule the wicked side is 4, not 3: LEM fuj~aAr also covers الفجرة (80:42, a different plural pattern of the same lemma). The righteous side is 6 under both rules (LEM bar~ does not separate الأبرار from البرّ, so the surface form is the identifier).",
+      "verification_scholar_rule": {
+        "count": [
+          6,
+          3
+        ],
+        "note": "Reconstructed: surface forms أبرار 6 / فجار 3. The source states no method; this is the selection that reproduces the claim."
+      },
+      "verification_root_rule": {
+        "count": [
+          6,
+          4
+        ],
+        "note": "QAC: righteous (surface الأبرار) = 6; wicked by LEM fuj~aAr = 4 (الفجار 3 + الفجرة 80:42). The two rules differ by the one 80:42 token; the finding stands confirmed on the surface-form rule."
+      }
     },
     {
       "category": "paired_counts",
@@ -474,7 +911,24 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "method not stated by the source",
+      "method_status": "unstated",
+      "exceptions": "Summer: ROOT Syf = 1 (الصيف, 106:2 only). Winter: ROOT $tw = 1 (الشتاء, 106:2 only -- Uthmani spelling الشتآء, which is why a raw search for شتاء finds nothing) -- both words occur in a single verse. The nearest neighbours do not give 5/5 either: heat ROOT Hrr = 15 (حرور, حرّ, تحرير...), cold ROOT brd = 5 (برد 2 + بارد 2 + برد 1). Cold alone is 5; heat is 15 and summer/winter are 1 each.",
+      "verification_scholar_rule": {
+        "count": [
+          null,
+          null
+        ],
+        "note": "No rule reproduces 5/5. Summer/winter by root = 1/1 (each occurs once, both in 106:2); heat/cold by root = 15/5."
+      },
+      "verification_root_rule": {
+        "count": [
+          1,
+          1
+        ],
+        "note": "QAC: ROOT Syf = 1; ROOT $tw = 1; ROOT Hrr (heat) = 15; ROOT brd (cold) = 5. Locations are the single verse 106:2, which contains both words."
+      }
     },
     {
       "category": "paired_counts",
@@ -483,7 +937,7 @@
       "confidence": "confirmed by our recount",
       "corpus_and_method": "Method not stated by the source.",
       "id": "human-being-65",
-      "our_note": "انسان substring = 65 exactly. The creation-stage reading (the stages of human creation summing to 65) does not reproduce: تراب 20 + نطفة 12 + علقة 6 + مضغة 3 + عظام 13 + لحم 58 = 112 by substring. (An earlier draft of this note gave علقة as 7 — the 7th is the bare word علق in 96:2, which has no ة; علقة itself is 6: علقة 4 + العلقة 1 + كالمعلقة 1.) Yahya's own stage table gives different numbers again (soil 17, drop 12, embryo 6, lump 3, bone 15, flesh 12 = 65) — his stages are a different selection from the substring counts, so the 65 total for 'human being' is confirmed but the stage arithmetic is not.",
+      "our_note": "انسان substring = 65 exactly. The creation-stage reading (the stages of human creation summing to 65) reproduces under lemma/form rules: soil (turaAb) 17 + drop (n~uTofap) 12 + clot (Ealaqap 5 + Ealaq 96:2) 6 + lump (muDogap) 3 + bone (عظام 13 + عظم 6:146, 19:4) 15 + flesh (laHom) 12 = 65. (An earlier draft of this note gave علقة as 7 — the 7th is the bare word علق in 96:2, which has no ة; علقة itself is 6: علقة 4 + العلقة 1 + كالمعلقة 1.) Yahya's own stage table (soil 17, drop 12, embryo 6, lump 3, bone 15, flesh 12 = 65) matches the lemma/form recount exactly — the 65 total for 'human being' is confirmed, and the stage arithmetic now is too.",
       "our_status": "confirmed",
       "source": {
         "author": "Harun Yahya (Adnan Oktar)",
@@ -491,7 +945,18 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "انسان surface count = 65; the stage table reproduces exactly under lemma/form rules (see exceptions).",
+      "method_status": "reconstructed",
+      "exceptions": "Human being: انسان substring 65; QAC LEM <insa`n = 71, of which 65 are انسان (الانسان 58 + للانسان 6 + انسان 1) and 6 are أناس/أناسيّ (people/mankind collective: أناس 5 + وأناسيّ 1) -- a different word, excluded. Creation stages (Yahya's table, verified here by lemma/form): soil تراب (LEM turaAb) 17 -- the substring 20 catches أتراب 'peers' (3 tokens); drop نطفة (LEM n~uTofap) 12; embryo علقة (LEM Ealaqap) 5 + علق (LEM Ealaq, 96:2) 1 = 6 -- كالمعلقة 'like one suspended' (4:129, LEM muEal~aqap) is NOT an embryo and is excluded; lump مضغة (LEM muDogap) 3; bone عظام 13 + عظم (6:146, 19:4) 2 = 15; flesh لحم (LEM laHom) 12 -- the substring 58 catches لحوم 'meats' and other forms. Stages sum: 17+12+6+3+15+12 = 65.",
+      "verification_scholar_rule": {
+        "count": 65,
+        "note": "Reconstructed: انسان surface count = 65; the stage table reproduces exactly under lemma/form rules (see exceptions). The source states no method; these are the selections that reproduce the claim."
+      },
+      "verification_root_rule": {
+        "count": 65,
+        "note": "QAC: LEM <insa`n = 71 (65 انسان + 6 أناس/أناسيّ collective); انسان on its own = 65. Both rules agree on 65 for the word as claimed."
+      }
     },
     {
       "category": "paired_counts",
@@ -508,7 +973,18 @@
         "url": "https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "method not stated by the source",
+      "method_status": "unstated",
+      "exceptions": "Not a word count: a literature fact (Yahya popularised the paired-count list in Miracles of the Qur'an). The full list is published at harunyahya.info (fetched 2026-11-07); it does not include life/death 145, which circulates on other sites. The list also contains one pair this file omits: 'reward' (ajr) and 'action' (fa'il), both 107 times -- side-check here: LEM >ajor (ajr noun) = 105, ROOT fEl = 108, LEM faAEil = 9; the 107/107 does not reproduce under the QAC rules tested.",
+      "verification_scholar_rule": {
+        "count": null,
+        "note": "Not applicable -- no count is claimed."
+      },
+      "verification_root_rule": {
+        "count": null,
+        "note": "Not applicable -- no count is claimed."
+      }
     },
     {
       "category": "letter_counts",
@@ -525,7 +1001,24 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Khalifa states it (Appendix 1, fetched 2026-11-07): 'The computer data showed that the text of the only Q-initialed suras, 42 and 50, contained the same number of Q's, 57 and 57.' Units: occurrences of the letter ق in the text of surahs 42 and 50. The unnumbered basmalahs contain no ق, so basmalah handling does not affect the count.",
+      "method_status": "stated",
+      "exceptions": "None. The letter ق occurs in surah 50 (57) and surah 42 (57); the initial ق of 50:1 itself counts. No textual variant is involved.",
+      "verification_scholar_rule": {
+        "count": [
+          57,
+          57
+        ],
+        "note": "Stated rule verified: letter ق in surah 50 = 57, in surah 42 = 57, under the project letter convention."
+      },
+      "verification_root_rule": {
+        "count": [
+          57,
+          57
+        ],
+        "note": "Same count -- this is a letter count, not a word count, so the 'root rule' is the project letter convention (base letters count; dagger alif/small waw/small yeh are marks). Both agree: 57/57."
+      }
     },
     {
       "category": "letter_counts",
@@ -542,7 +1035,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Khalifa states it (Appendix 1, fetched 2026-11-07): the initial 'is unique; it occurs in one sura, 68, and the name of the letter is spelled out as three letters -- Noon Wow Noon -- in the original text, and is therefore counted as two N's. The total count of this letter in the N-initialed sura is 133.' Units: occurrences of the letter ن in surah 68, with the 68:1 initial counted as two.",
+      "method_status": "stated",
+      "exceptions": "The orthodox written initial is a single ن (68:1), counted once under the project convention. The unnumbered basmalah prepended to 68:1 contributes exactly one ن (in الرحمن): surah 68 has 132 ن including it, 131 without it. Khalifa's 133 = 132 + 1 for the spelled-out initial.",
+      "verification_scholar_rule": {
+        "count": 133,
+        "note": "Stated rule verified arithmetically: our count 132 + 1 for the spelled-out initial (ن و ن) = 133. The rule itself is Khalifa's, stated in the source."
+      },
+      "verification_root_rule": {
+        "count": 132,
+        "note": "Project letter convention: ن in surah 68 = 132 (131 in the surah text proper + 1 from the unnumbered basmalah in 68:1). Differs from Khalifa's 133 by exactly the spelled-out initial."
+      }
     },
     {
       "category": "letter_counts",
@@ -559,7 +1063,26 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Khalifa states it (Appendix 1, Table 2, fetched 2026-11-07): S in sura 7 = 97, sura 19 = 26, sura 38 = 29, total 152. He also states the textual rule: in 7:69 'the word \"Bastatan\" is written in some printings with a \"Saad,\" instead of \"Seen.\" This is an erroneous distortion... By looking at the oldest available copy of the Quran, the Tashkent Copy, it was found that the word \"Bastatan\" is correctly written with a \"Seen\".' Units: occurrences of the letter ص in surahs 7, 19 and 38, with 7:69 read بسطة (Seen).",
+      "method_status": "stated",
+      "exceptions": "The Tanzil text reads 7:69 as بصطة (with ص, small seen above it) -- verified by script: the skeleton of 7:69 contains بصطة, not بسطة. That one ص is the whole difference: surah 7 has 98 ص under Tanzil against Khalifa's 97. Surahs 19 (26) and 38 (29) agree. The unnumbered basmalahs contain no ص.",
+      "verification_scholar_rule": {
+        "count": [
+          97,
+          26,
+          29
+        ],
+        "note": "Stated rule verified arithmetically: 97+26+29 = 152 requires 7:69 read بسطة (Seen). Under the Tanzil reading (بصطة) the counts are 98/26/29 = 153."
+      },
+      "verification_root_rule": {
+        "count": [
+          98,
+          26,
+          29
+        ],
+        "note": "Project letter convention on the Tanzil text: ص in surah 7 = 98, surah 19 = 26, surah 38 = 29; total 153. Differs from Khalifa's 152 by exactly the one ص in 7:69."
+      }
     },
     {
       "category": "letter_counts",
@@ -576,7 +1099,26 @@
         "url": "https://ijeas.um.edu.my/index.php/quranica/article/download/5185/2991/11903",
         "year": 2013
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Sayoud states it (QURANICA 5(2), 2013, fetched 2026-11-07): 'there exist 29 Surahs that begin with... \"muqattaat letters\"... There are fourteen of such letters in total'; 'There are 3 Surahs that begin with 1 disjointed letter (character-monogram); 10 Surahs that begin with 2 disjointed letters (character-bigram); 13 Surahs that begin with 3 disjointed letters (character-trigram); 2 Surahs that begin with 4 disjointed letters (character-tetragram); 1 Surah that begins with 5 disjointed letters (character-pentagram).' Units: the opening letters of verse 1 of each initialed surah (surah 42's second set عسق is in 42:2, counted separately).",
+      "method_status": "stated",
+      "exceptions": "All 29 verse-1 openings match the expected initials (verified by script after stripping the merged unnumbered basmalah from verse 1). Breakdown: monograms ص (38), ق (50), ن (68); bigrams طه (20), طس (27), يس (36), حم (40-46); trigrams الم (2, 3, 29-32), الر (10-12, 14, 15), طسم (26, 28); tetragrams المص (7), المر (13); pentagram كهيعص (19). Distinct letters 14: ا ل م ص ر ك ه ي ع ط س ح ق ن. Total 75 letters in the verse-1 openings (3x1 + 10x2 + 13x3 + 2x4 + 1x5), or 78 counting 42:2 عسق separately.",
+      "verification_scholar_rule": {
+        "count": [
+          29,
+          14,
+          75
+        ],
+        "note": "Stated structure verified: 29 surahs, 14 distinct letters, 75 letters in verse-1 openings (78 with 42:2)."
+      },
+      "verification_root_rule": {
+        "count": [
+          29,
+          14,
+          75
+        ],
+        "note": "Same -- this is a structural count of opening verses, not a word count; both rules are the same count. 78 counting 42:2 عسق separately."
+      }
     },
     {
       "category": "letter_counts",
@@ -593,7 +1135,24 @@
         "url": null,
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Classical/traditional observation; the claim itself states the method: a verse contains all 28 letters of the Arabic alphabet (distinct-letter count per verse). No source URL (previously cited to Khalifa's Appendix 1, which contains no such claim; re-cited as a traditional observation).",
+      "method_status": "stated",
+      "exceptions": "Distinct-letter count per verse on the Tanzil skeleton text (ة counted as ه, ى as ي, per the project convention). Only two verses in the whole Quran have 28 distinct letters: 3:154 and 48:29 (verified by script over all 6,236 verses; neither verse is a verse 1, so no basmalah is involved).",
+      "verification_scholar_rule": {
+        "count": [
+          28,
+          28
+        ],
+        "note": "Stated rule verified: 3:154 and 48:29 each have 28 distinct letters, none missing; no other verse does."
+      },
+      "verification_root_rule": {
+        "count": [
+          28,
+          28
+        ],
+        "note": "Same -- distinct-letter count per verse under the project letter convention. Both agree."
+      }
     },
     {
       "category": "letter_counts",
@@ -610,7 +1169,18 @@
         "url": "https://www.calendar-uk.co.uk/frequently-asked-questions/how-long-is-a-quran",
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Classical observation, repeated in modern Quran-statistics pages (calendar-uk FAQ, fetched 2026-11-07: 'The longest word in the Qur'an is: \"fa'asqaynākumūhu\" (فَأَسْقَيْنَاكُمُوهُ)'). The source states the word but gives no letter figure and no counting convention -- the '11 letters' figure is convention-dependent, not stated by the source. Units: the longest whitespace token in the Quran, by letter count.",
+      "method_status": "stated",
+      "exceptions": "فأسقيناكموه (15:22) is 10 letters under the project convention (the dagger alif is a mark, not a letter); it is 11 letters under a convention counting the dagger alif as a letter -- in which case it ties for longest with والمستغفرين (3:17) and والمستضعفين (4:75, 4:127), all 11 letters. Under the project convention the longest words are those three 11-letter tokens; the next tier is 10 letters (اقترفتموها 9:24, وبالمؤمنين 8:62, فسينفقونها 8:36, ...).",
+      "verification_scholar_rule": {
+        "count": 11,
+        "note": "Under a dagger-alif-counts convention, فأسقيناكموه is 11 letters and tied for longest (with 3:17, 4:75, 4:127). The source does not state this convention."
+      },
+      "verification_root_rule": {
+        "count": 11,
+        "note": "Project convention (dagger alif is a mark): فأسقيناكموه is 10 letters; the longest words are والمستغفرين (3:17) and والمستضعفين (4:75, 4:127) at 11 letters. The claim 'longest word' fails under this convention and ties under the other."
+      }
     },
     {
       "category": "letter_counts",
@@ -627,7 +1197,18 @@
         "url": "https://wikiislam.net/index.php?title=Word_Count_Miracles_in_the_Qur%27an",
         "year": null
       },
-      "section": "popular"
+      "section": "popular",
+      "scholar_method": "Phrase count, stated in the claim itself (Yahya's page: 'The statement of \"seven heavens\" is repeated seven times'): verses containing سبع ('seven') together with سماوات ('heavens'). WikiIslam's verse-by-verse analysis agrees on the 7 verses.",
+      "method_status": "stated",
+      "exceptions": "The 7 verses are 2:29, 17:44, 23:86, 41:12, 65:12, 67:3, 71:15. Further سبع + heaven-ish verses (WikiIslam's 9 total): 'seven paths' (طرائق, 23:17), 'seven hard years' (12:48, سنين) and 'seven strong' (شدادا, 78:12) -- these are سبع with a different second word, not سماوات, and are excluded from the 7.",
+      "verification_scholar_rule": {
+        "count": 7,
+        "note": "Stated rule verified: 7 verses contain سبع + سماوات."
+      },
+      "verification_root_rule": {
+        "count": 7,
+        "note": "QAC: verses containing both ROOT sbE and LEM samaA^' = 7 (same verses). Both rules agree."
+      }
     },
     {
       "category": "code19",
@@ -644,7 +1225,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "method not stated by the source. Khalifa lists the basmalah facts among the 'Simple Facts' that 'do not require any tools to be verified' and 'refer to the original Arabic text' (Appendix 1, Part 1); he states no letter-counting rule — not which marks count as letters, not whether the alef wasla counts. Note: 19 requires counting the alef wasla in ٱلله (بسم 3 + الله 4 + الرحمن 6 + الرحيم 6 = 19); a rule that dropped the wasla would give 18.",
+      "method_status": "unstated",
+      "exceptions": "The 112 unnumbered basmalahs (surah openings) are not QAC words — only 1:1 and the 27:30 basmalah are numbered-verse words. Surah 9 has no opening basmalah; surah 27 has two basmalahs (opening + 27:30).",
+      "verification_scholar_rule": {
+        "count": 19,
+        "note": "19 letters under the project's stated letter convention (alef wasla counts; no dagger alif or small letters occur in the basmalah). The letter rule itself is unstated by Khalifa, so this is a reproduction under our convention, not his."
+      },
+      "verification_root_rule": {
+        "count": 19,
+        "note": "Same 19 letters (a letter count has no root rule); occurrences in the text = 114 (113 surah openings + 27:30)."
+      }
     },
     {
       "category": "code19",
@@ -661,7 +1253,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Reconstructed. Khalifa states only the totals (2,698 occurrences; checksum 118,123) and no word-counting rule — nothing in Appendix 1 says whether prefixes, oath forms or the basmalahs count. The operative rule is stated in his Appendix 24: verses 9:128-129 are 'false injections' to be removed, and 'the count of the word \"God\" in the Quran was found to be 2699, which is not a multiple of 19, unless we remove one'. Reconstructed rule: (a) count every form of the name, including prefixed/clitic forms (lemma rule) — oath تالله/وتالله (9x) and interrogative أبالله (1x) included; (b) exclude the 112 unnumbered basmalahs (QAC convention); (c) drop 9:129.",
+      "method_status": "reconstructed",
+      "exceptions": "9:129 contains the one Allah dropped by Khalifa's rule (9:128 contains no Allah). The 112 unnumbered basmalahs are excluded (each contains one Allah; including them gives 2,811). Allahumma (5x, QAC lemma {ll~ahum~a) and generic ilah (147x, lemma <ila`h) are separate lemmas and are not counted.",
+      "verification_scholar_rule": {
+        "count": 2698,
+        "note": "Lemma count excl. unnumbered basmalahs (2,699) minus the Allah in 9:129 = 2,698 = 19 x 142. Test: 2,699 (Tanzil lemma) = 2,699 (QAC lemma {ll~ah)."
+      },
+      "verification_root_rule": {
+        "count": 2699,
+        "note": "QAC lemma {ll~ah = 2,699 (standard text, basmalahs excluded by QAC construction). Tanzil lemma incl. basmalahs = 2,811; strict surface الله = 2267."
+      }
     },
     {
       "category": "code19",
@@ -678,7 +1281,18 @@
         "url": "https://submission.org/App1_p2.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Reconstructed. Khalifa states only the totals (Rahman 57, Rahim 114) in Appendix 1, Part 2 ('A Strong Foundation'); no counting rule is stated. Reconstructed: Rahman 57 reproduces exactly under the lemma rule excl. unnumbered basmalahs with no further exclusion. Rahim 114 reproduces only as 115 minus the رحيم in 9:128 (one of the two verses Khalifa deletes; his surah 9 has 127 verses). Note the rule matters: the QAC lemma gives Rahim 116, not 115, because QAC lemmatises the plural رُحَمَاءُ at 48:29 ('merciful ones', describing the believers) as r~aHiym — so Khalifa's 114 reproduces only under the singular-form (Tanzil surface-lemma) rule, not under the QAC lemma rule.",
+      "method_status": "reconstructed",
+      "exceptions": "9:128 رحيم dropped under Khalifa's rule (Rahim 115 -> 114). 48:29 رحماء (plural) is counted by the QAC lemma but not by the singular-form rule. The 112 unnumbered basmalahs are excluded (each contains Rahman once and Rahim once; including them: Rahman 169, Rahim 227).",
+      "verification_scholar_rule": {
+        "count": 114,
+        "note": "Rahim: 115 (Tanzil surface-lemma, excl. basmalahs) minus 9:128 = 114 = 19 x 6. Rahman is 57 under the same rule with no exclusion needed (Tanzil 57 = QAC lemma r~aHoma`n 57)."
+      },
+      "verification_root_rule": {
+        "count": 116,
+        "note": "Rahim under the QAC lemma rule (r~aHiym = 116, incl. the 48:29 plural); 115 under the Tanzil surface-lemma rule. Rahman 57 under both rules."
+      }
     },
     {
       "category": "code19",
@@ -695,7 +1309,18 @@
         "url": "https://submission.org/App1_p2.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Reconstructed. Khalifa states only 'Ism (Name) occurs 19 times' (Appendix 1, Part 2). No rule is stated anywhere in Appendix 1 about which forms count: the word 'plural' does not occur in Appendix 1 Part 2 and there is no 'no plural forms' rule in the source. Reconstructed: 19 reproduces only for the full spelling اسم with prefixes (اسم 14 + باسم 4 + الاسم 1), excluding the plural أسماء (12 prefixed/suffixed forms; 4 tokens strip to اسما on the Tanzil text) and the contracted بسم (115 occurrences: 114 basmalahs + 11:41).",
+      "method_status": "reconstructed",
+      "exceptions": "Plural أسماء excluded (12 prefixed/suffixed forms in the text; the bare skeleton count is 4). Contracted بسم excluded (115x). Suffixed singular forms (اسمه, اسمهو, 5x) excluded by the full-spelling rule but counted by the QAC lemma.",
+      "verification_scholar_rule": {
+        "count": 19,
+        "note": "Full-spelling forms on the Tanzil text: اسم 14 + باسم 4 + الاسم 1 = 19."
+      },
+      "verification_root_rule": {
+        "count": 39,
+        "note": "QAC lemma {som} = 39: 19 full-spelling + 12 plural أسماء forms + 5 suffixed singular (اسمه/اسمهو) + 3 contracted بسم (1:1, 11:41, 27:30 — the only basmalahs in the QAC word list)."
+      }
     },
     {
       "category": "code19",
@@ -712,7 +1337,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "method not stated by the source. Khalifa states only 'The famous first revelation (96:1-5) consists of 19 words' (Simple Fact 8). No counting rule is stated — nothing says whether the merged basmalah counts, or whether a repeated or contracted word counts.",
+      "method_status": "unstated",
+      "exceptions": "The basmalah merged into 96:1 in the Tanzil text (4 words) is not a QAC word. The 20 words are: اقرأ باسم ربك الذي خلق / خلق الإنسان من علق / اقرأ وربك الأكرم / الذي علم بالقلم / علم الإنسان ما لم يعلم.",
+      "verification_scholar_rule": {
+        "count": null,
+        "note": "No rule reconstructs 19: 20 words excl. basmalah under every natural count (Tanzil whitespace tokens 20; QAC words 20), 24 incl. basmalah. 19 would require dropping exactly one word (e.g. the repeated اقرأ or the contracted باسم) — no such rule is stated, so none is asserted here."
+      },
+      "verification_root_rule": {
+        "count": 20,
+        "note": "QAC words in 96:1-5 = 20; Tanzil tokens excl. basmalah = 20."
+      }
     },
     {
       "category": "code19",
@@ -729,7 +1365,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "method not stated by the source. Khalifa states only 'This 19-worded first revelation consists of 76 letters' (Simple Fact 9). No letter-counting rule is stated.",
+      "method_status": "unstated",
+      "exceptions": "Basmalah excluded (19 letters; including it the count is 95).",
+      "verification_scholar_rule": {
+        "count": 76,
+        "note": "76 letters excl. basmalah under the project's stated letter convention (base letters; alef wasla counts; dagger alif/small waw/small yeh do not count). The letter rule itself is unstated by Khalifa."
+      },
+      "verification_root_rule": {
+        "count": 76,
+        "note": "Same 76 (a letter count has no root rule)."
+      }
     },
     {
       "category": "code19",
@@ -746,7 +1393,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "method not stated by the source for the letter total. Khalifa states 'Sura 96 consists of 304 Arabic letters' (Simple Fact 12) and 19 verses (Simple Fact 10, the standard Hafs count). No letter-counting rule is stated.",
+      "method_status": "unstated",
+      "exceptions": "The 304 total REQUIRES the merged basmalah to be counted (285 letters excl. basmalah + 19 = 304). Note the inconsistency inside Khalifa's own figures: his 76 letters for 96:1-5 requires the basmalah EXCLUDED, while his 304 for the whole surah requires it INCLUDED.",
+      "verification_scholar_rule": {
+        "count": 304,
+        "note": "304 letters incl. the merged basmalah under the project's letter convention; 19 verses (standard Hafs count; QAC max verse for surah 96 is 19)."
+      },
+      "verification_root_rule": {
+        "count": 285,
+        "note": "285 letters excl. the merged basmalah under the project's letter convention (QAC words in surah 96 = 102)."
+      }
     },
     {
       "category": "code19",
@@ -763,7 +1421,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "method not stated by the source. Khalifa states only 'The last revelation (Sura 110) consists of 19 words' (Simple Fact 13) and 'The first verse of the last revelation (110:1) consists of 19 letters' (Simple Fact 14). No counting rule is stated for either.",
+      "method_status": "unstated",
+      "exceptions": "Basmalah merged into 110:1 excluded from both counts (4 words / 19 letters).",
+      "verification_scholar_rule": {
+        "count": 19,
+        "note": "19 words excl. basmalah (Tanzil tokens 19; QAC words 19); verse 110:1 = 19 letters excl. basmalah under the project's letter convention."
+      },
+      "verification_root_rule": {
+        "count": 19,
+        "note": "Same 19 words (QAC words in surah 110 = 19)."
+      }
     },
     {
       "category": "code19",
@@ -780,7 +1449,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Reconstructed. Khalifa states only the total (118,123 = 19 x 6,217) and the Allah total (2,698). No rule is stated for which verses enter the sum. Reconstructed: the sum reproduces only if (a) each verse is counted once however many times Allah occurs in it, (b) the 112 unnumbered basmalahs are excluded (they would add the verse-1 numbers of 112 surahs), and (c) 9:128-129 are dropped (only 9:129 contains Allah: -129). 118,252 - 129 = 118,123.",
+      "method_status": "reconstructed",
+      "exceptions": "9:129 (verse number 129) dropped — the only effect of deleting 9:128-129 on this sum, since 9:128 contains no Allah. Unnumbered basmalahs excluded: including them adds 88 to the sum (verse-1 numbers of the surahs whose verse 1 does not otherwise contain Allah).",
+      "verification_scholar_rule": {
+        "count": 118123,
+        "note": "Sum of verse numbers of Allah-containing verses, excl. unnumbered basmalahs and excl. 9:128-129 = 118,123 exactly. Cross-check on QAC lemma verses gives the same 118,252 excl. basmalahs, minus 129 = 118,123."
+      },
+      "verification_root_rule": {
+        "count": 118340,
+        "note": "Same sum on the standard text incl. the unnumbered basmalahs = 118,340; excl. basmalahs only = 118,252. 1,821 verses contain Allah excl. basmalahs (1,909 incl.)."
+      }
     },
     {
       "category": "code19",
@@ -797,7 +1477,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Stated by Khalifa himself (Simple Fact 3): 'The total number of verses in the Quran is 6346, or 19 x 334. [6234 numbered verses & 112 un-numbered verses (Basmalahs) 6234+112 = 6346]'. His tables (Appendix 1, Part 2, Tables 22 and 25) give surah 9 as 127 verses, i.e. 6,234 = 6,236 - 2 (9:128-129 dropped).",
+      "method_status": "stated",
+      "exceptions": "9:128-129 deleted from the numbered verses (surah 9 = 127 verses in his text, not 129). The 112 unnumbered basmalahs are counted as verses; surah 1's basmalah is a numbered verse (1:1) and is not double-counted.",
+      "verification_scholar_rule": {
+        "count": 6346,
+        "note": "Arithmetic checks: 6,234 + 112 = 6,346 = 19 x 334."
+      },
+      "verification_root_rule": {
+        "count": 6236,
+        "note": "Standard Hafs numbered verses = 6,236 (QAC file: 6,236 verses). Counting the 112 unnumbered basmalahs as verses WITHOUT dropping 9:128-129 gives 6,348 (Botani's figure)."
+      }
     },
     {
       "category": "code19",
@@ -814,7 +1505,18 @@
         "url": "https://submission.org/App1.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "not a count — literature/provenance fact. No counting method applies; the items below were checked against the cited publications and against Khalifa's own Appendix 1 text.",
+      "method_status": "not_a_count",
+      "exceptions": "None — the claim is a reception history, not a count. Note the Gardner date conflict: Philips' book (quoting the column) and this finding say September 1980, p. 22; Yuksel's 'Nineteen' material says September 1981, pp. 22-24. Philips is treated as the stronger witness here.",
+      "verification_scholar_rule": {
+        "count": null,
+        "note": "Timeline verified: initials research from 1969 (Khalifa, App1; Wikipedia 'Quran code'); 'Miracle of the Quran: Significance of the Mysterious Alphabets' 1973 (Philips book, foreword/contents); 19-code claimed January 1974 (App1; Wikipedia); 'The Computer Speaks' 1981 and 'Visual Presentation of the Miracle' 1982 (Philips foreword); 'The Final Testament' 1989 (App1 itself). Gardner, Scientific American, September 1980, p. 22 ('ingenious study of the Koran') — confirmed via Philips' book, which quotes the passage and its context (a fictional 'Mathematical Games' story). Skeptical Inquirer 21(5), Sept-Oct 1997 — confirmed as the issue carrying Gardner's 'The Numerology of Dr Rashad Khalifa' (fetched PDF, pp. 16 and 58 visible; the finding's pp. 16-17 range is consistent with the fetched file). Bilal Philips, 'The Qur'an's Numerical Miracle: Hoax and Heresy', 1987/1407 AH, 76 pp., 2nd ed. 2002 — confirmed via the Scribd/pdf-archive copies. Submission.org's 2002 recount ('confirmed Khalifa's counts of all the Quranic initials except for a few counts in \"A\" and \"L\"') — confirmed verbatim on submission.org/App1.html itself."
+      },
+      "verification_root_rule": {
+        "count": null,
+        "note": "Same verification (no corpus count applies). NOT verified: the Canadian Council on the Study of Religion, Quarterly Review, April 1983 quotation ('an authenticating proof') — no source for it was located in this pass; the finding's note already hedges it as 'quoted by proponents'. The items the finding's note lists as not individually verified (Gardner SI p. 58; Sardar 1989; Yuksel 2011; Arik 2012; Stanley 2016) remain unverified."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -831,24 +1533,46 @@
         "url": "https://corpus.quran.com/faq.jsp",
         "year": 2009
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Stated by the QAC FAQ: 'The annotation for each of the 77,429 words in the Quran was then reviewed in stages by two annotators.' The word unit is the QAC morphological word (LOCATION surah:verse:word:segment); only the 1:1 basmalah is in the word list — the 112 unnumbered basmalahs prepended in Tanzil are NOT QAC words.",
+      "method_status": "stated",
+      "exceptions": "QAC word boundaries differ from Tanzil whitespace tokens in exactly 4 verses (2:181, 8:6, 13:37 — بعدما as one QAC word vs two Tanzil tokens — and 37:130 — آل ياسين as two Tanzil tokens vs one QAC word). Those 4 verses explain the whole gap between the QAC total (77,429) and the Tanzil token total excl. basmalahs (77,433).",
+      "verification_scholar_rule": {
+        "count": 77429,
+        "note": "Counted from the v0.4 file itself: 77,429 words, 128,219 segments, 6,236 verses — exactly the published figure."
+      },
+      "verification_root_rule": {
+        "count": 77429,
+        "note": "Same 77,429 QAC words. Tanzil whitespace tokens excl. unnumbered basmalahs = 77,433 (4 more; see exceptions)."
+      }
     },
     {
       "category": "corpus_linguistics",
       "claim": "The Quran has 18,994 unique surface forms, 12,183 unique stems, 1,685 unique roots and 3,382 unique lemmas (QAC annotation).",
       "claim_arabic_or_terms": null,
-      "confidence": "confirmed by our recount",
+      "confidence": "contested",
       "corpus_and_method": "QAC v0.4 annotation (Dukes' 2013 primary-source answer); our recount on the Tanzil Uthmani text for the surface-form figure only.",
       "id": "dukes-unique-words",
-      "our_note": "Unique surface forms 18,994 — our raw unique count is 18,994 exactly. Skeletonised unique forms 14,881. Stem/root/lemma figures (12,183 / 1,685 / 3,382) were not recounted (they need the QAC annotation). The earlier draft attributed these figures to a Dukes blog post (quickestwaytoquran.blogspot.com, 2013) — that URL returns 404 and Dukes' authorship of that post could not be confirmed, so the figures are cited here as the widely published estimate, not as Dukes' blog post. The earlier note's 'Dukes' estimate: at most 7,000 unique words' was not verified and is dropped.",
-      "our_status": "confirmed",
+      "our_note": "Unique surface forms 18,994 — our raw unique count is 18,994 exactly. Skeletonised unique forms 14,881. Stem/root/lemma figures (12,183 / 1,685 / 3,382) were not recounted (they need the QAC annotation). The earlier draft attributed these figures to a Dukes blog post (quickestwaytoquran.blogspot.com, 2013) — that URL returns 404 and Dukes' authorship of that post could not be confirmed, so the figures are cited here as the widely published estimate, not as Dukes' blog post. The earlier note's 'Dukes' estimate: at most 7,000 unique words' was not verified and is dropped.\n\nMethods pass (2026-11-08): confirmed→differs: recounted from QAC v0.4, only the 18,994 surface-form figure reproduces exactly. Stems 12,113 (not 12,183), roots 1,642 (not 1,685), lemmas 4,832 (not 3,382).",
+      "our_status": "differs",
       "source": {
         "author": "Kais Dukes (figures as widely published)",
         "title": "'Number of unique words in the Quran' — circulating estimate (QAC figures)",
         "url": "https://www.calendar-uk.co.uk/frequently-asked-questions/how-long-is-a-quran",
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "method not stated by the source. The estimate ('77,430 words, 18,994 unique words, 12,183 stems, 3,382 lemmas and 1,685 roots') is printed without author, method, version or counting unit on calendar-uk.co.uk; no rule is stated for what counts as a 'unique word', 'stem', 'lemma' or 'root'.",
+      "method_status": "unstated",
+      "exceptions": "The four figures may come from an older QAC version (v0.3: 77,430 words, 128,076 morphemes) or a different lemmatisation — no natural QAC v0.4 rule reproduces 12,183 / 1,685 / 3,382 (POS subsets tried: nouns only 2,690 lemmas; nouns+adjectives+verbs 4,593; none is 3,382).",
+      "verification_scholar_rule": {
+        "count": 18994,
+        "note": "Unique surface forms (raw whitespace tokens) = 18,994 exactly — the one figure that reproduces. Stems/roots/lemmas do not reproduce (see root rule)."
+      },
+      "verification_root_rule": {
+        "count": 4832,
+        "note": "From the QAC v0.4 annotation: unique stem lemmas 4,832 (not 3,382); unique stem forms 12,113 (not 12,183); unique roots 1,642 at both word and segment level (not 1,685); skeletonised unique surface forms 14,881."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -857,7 +1581,7 @@
       "confidence": "reported, method unclear",
       "corpus_and_method": "QAC v0.4 release notes; verifying needs the QAC data itself, not the plain text.",
       "id": "qac-morphology",
-      "our_note": "Treebank covered 40% by word count in v0.4. The 128,076-morpheme figure is from the QAC v0.3 announcement (14 March 2011), not the v0.4 release notes as previously cited; our own count of the v0.4 file is 128,219 segments — 143 more. Not recounted here beyond that (the annotation layer is the sibling agents' and the data pipeline's work).",
+      "our_note": "Treebank covered 40% by word count in v0.4. The 128,076-morpheme figure is from the QAC v0.3 announcement (12 March 2011) ... Not recounted here beyond that (the annotation layer is the sibling agents' and the data pipeline's work).",
       "our_status": "cannot_verify",
       "source": {
         "author": "Kais Dukes, University of Leeds",
@@ -865,7 +1589,18 @@
         "url": "https://corpus.quran.com/releasenotes.jsp",
         "year": 2011
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "not a count — literature/provenance fact about the corpus itself. No counting method applies; the factual items were checked against the QAC FAQ and release notes and against the v0.4 file.",
+      "method_status": "not_a_count",
+      "exceptions": "The 128,076-morpheme figure is from the v0.3 announcement, not v0.4; the v0.4 file has 128,219 segments (143 more). The treebank coverage figure (40%) is a v0.4 release-notes figure, not a recount (the syntax layer is not in the morphology file).",
+      "verification_scholar_rule": {
+        "count": null,
+        "note": "FAQ (fetched 2026-11-08): 'The annotation for each of the 77,429 words in the Quran was then reviewed in stages by two annotators. It is believed that the text is now 99% accurate in terms of morphological annotation.' Release notes v0.4 (1 May 2011, fetched): treebank 'covers 40% of the Quran by word count (30,895 out of 77,429 words)' for chapters 1-8 and 59-114. V0.3 announcement (Kais Dukes, Corpora-List, archived): 'Each of the 77,430 words in the Quran has been morphologically segmented, resulting in 128,076 individual morphemes' — confirmed verbatim. Our v0.4 file: 128,219 segments."
+      },
+      "verification_root_rule": {
+        "count": null,
+        "note": "Same verification (no corpus count applies beyond the segment count above: 128,219)."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -882,7 +1617,18 @@
         "url": "https://tanzil.net/docs/text_license",
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "not a count — literature/provenance fact. No counting method applies; checked against Tanzil's own documentation pages.",
+      "method_status": "not_a_count",
+      "exceptions": "None. The file used for all recounts here is Tanzil Uthmani v1.1 (per the finding's note); the licence and Mushaf pages do not carry a version number, so the v1.1 label itself was not re-verified from those pages.",
+      "verification_scholar_rule": {
+        "count": null,
+        "note": "Licence page (tanzil.net/docs/text_license, fetched): 'License: Creative Commons Attribution 3.0', 'Permission is granted to copy and distribute verbatim copies of this text, but CHANGING IT IS NOT ALLOWED' — confirms CC BY 3.0 with verbatim redistribution only. Medina Mushaf page (tanzil.net/docs/Medina_Mushaf, fetched): 'The Quran text provided by Tanzil is based on the Medina Mushaf, narration of Hafs.'"
+      },
+      "verification_root_rule": {
+        "count": null,
+        "note": "Same verification (no corpus count applies)."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -891,7 +1637,7 @@
       "confidence": "reported, method unclear",
       "corpus_and_method": "GitHub q-ran/quran; Zenodo DOI 10.5281/zenodo.2532177; built from QAC 0.4 morphology + Tanzil Uthmani v1.0.2; CC-BY 4.0. Not used in our recounts.",
       "id": "text-fabric-quran",
-      "our_note": "Roorda (2018), 'Text-Fabric: Text representation for linguistic annotation', Research Data Journal for the Humanities and Social Sciences 3(1), 1-23. The dataset itself was not re-analysed here. (The Zenodo DOI 10.5281/zenodo.2532177 appears only as a badge image on the fetched repo page, so the DOI number itself was not legibly confirmed from that page.)",
+      "our_note": "Roorda (2018), 'Text-Fabric: Text representation for linguistic annotation', Research Data Journal for the Humanities and Social Sciences 3(1), 1-23. The dataset itself was not re-analysed here. (The Zenodo DOI 10.5281/zenodo.2532177 is now confirmed: doi.org resolves it to 'q-ran/quran: Initial release', published 5 January 2019, v0.1, Dirk Roorda.)",
       "our_status": "cannot_verify",
       "source": {
         "author": "Dirk Roorda & Cornelis van Lit",
@@ -899,7 +1645,18 @@
         "url": "https://github.com/q-ran/quran",
         "year": 2019
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "not a count — literature/provenance fact. No counting method applies; checked against the GitHub repository and the Zenodo DOI record.",
+      "method_status": "not_a_count",
+      "exceptions": "The Zenodo record for the v0.1 release lists Dirk Roorda alone as author; Cornelis van Lit is co-author of the repository (README lists both). The dataset was not re-analysed here.",
+      "verification_scholar_rule": {
+        "count": null,
+        "note": "GitHub q-ran/quran (fetched): 'We have taken the source materials from Quranic Arabic Corpus 0.4 (2011) by Kais Dukes and Tanzil'; 'The data in TF format is licensed as CC-BY 4.0'; authors Cornelis van Lit and Dirk Roorda; released 2019-01-07; repo now archived. Zenodo DOI 10.5281/zenodo.2532177 (resolved via doi.org, fetched): 'q-ran/quran: Initial release', published 5 January 2019, Version v0.1, Dirk Roorda — the DOI is now confirmed, correcting the finding's note."
+      },
+      "verification_root_rule": {
+        "count": null,
+        "note": "Same verification (no corpus count applies). Roorda (2018), 'Text-Fabric: Text representation for linguistic annotation', Research Data Journal for the Humanities and Social Sciences 3(1), 1-23, was not re-fetched in this pass."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -916,24 +1673,46 @@
         "url": "http://abdulbaqi.io/2019/01/15/quranic_roots/",
         "year": 2019
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Stated in the post itself (abdulbaqi.io, 2019): the pipeline greps ROOT: from the FEATURES column of the QAC v0.4 morphology file and counts occurrences per SEGMENT line (sort | uniq -c), i.e. a segment-level count, not a per-word count. The post's file is the same 128,276-line v0.4 file used here. Note the post counts every ROOT: occurrence including repeated roots inside one word; in this file that makes no difference (see exceptions).",
+      "method_status": "stated",
+      "exceptions": "Segment-level and word-level root counting give identical results for every root in this file: no root's segment count exceeds its word count (exactly one word carries two root-bearing segments — 20:94:2, يابنُمَّ 'O son of my mother', stems bona [ROOT bny] + &um~a [ROOT Amm] — giving 49,968 segment ROOT occurrences vs 49,967 root-bearing words). Abdulbaqi's published pipeline re-run on this file gives 1,641 unique roots, not his printed 1,651: it loses the root wAd (81:8:2, الموءودة 'the baby girl buried alive') because that word's FORM 'mawo'u,dapu' contains a comma, shifting cut -d',' -f4. His printed 1,651 reproduces under no rule constructed here (word level 1,642; segment level 1,642; his pipeline 1,641). The thequran.love figure (1,642) matches the word/segment count.",
+      "verification_scholar_rule": {
+        "count": 1641,
+        "note": "Abdulbaqi's own published pipeline re-run on this file: 1,641 unique roots, 49,960 segment ROOT occurrences. His printed 1,651 does not reproduce from this file by his own method."
+      },
+      "verification_root_rule": {
+        "count": 1642,
+        "note": "Unique roots 1,642 (word level = segment level). Top roots reproduce exactly at both levels: Alh 2,851, qwl 1,722, kwn 1,390, rbb 980; Ḥ-S-N 194 reproduces (word level). Alh root count (2,851) is a different unit from the Allah lemma count (2,699): the root also covers allahumma (5) and generic ilah (147)."
+      }
     },
     {
       "category": "corpus_linguistics",
       "claim": "The most frequent word in the Quran is 'min' (from), 3,226 times, followed by 'Allah' 2,699 and 'ma' 2,565.",
       "claim_arabic_or_terms": "من / الله / ما",
-      "confidence": "contested",
+      "confidence": "confirmed by our recount",
       "corpus_and_method": "wordsofquran.com, from QAC v0.4; our recount on the Tanzil file for the min lemma.",
       "id": "most-frequent-min-3226",
-      "our_note": "Our min lemma recount = 3,314 (من 2,763 + ومن 342 + لمن 94 + فمن 90 + بمن 10 + كمن 9 + ولمن 5 + وبمن 1) — 88 above the published 3,226, method unclear. (wordsofquran.com also gives 4,832 unique lemmas of ~77,797 total words — figures that differ from Dukes' own, definitional.)",
-      "our_status": "differs",
+      "our_note": "Our min lemma recount = 3,314 (من 2,763 + ومن 342 + لمن 94 + فمن 90 + بمن 10 + كمن 9 + ولمن 5 + وبمن 1) — 88 above the published 3,226, method unclear. (wordsofquran.com also gives 4,832 unique lemmas of ~77,797 total words — figures that differ from Dukes' own, definitional.)\n\nMethods pass (2026-11-08): differs→confirmed: QAC lemma min (preposition) is 3,226 exactly; ma 2,565 and Allah 2,699 also reproduce exactly under the same lemma rule. The old 'differs' rested on a Tanzil skeleton count (3,314) that conflates مِن with مَن.",
+      "our_status": "confirmed",
       "source": {
         "author": "Words of Quran (QAC v0.4 data)",
         "title": "wordsofquran.com — most frequent words",
         "url": "https://wordsofquran.com/",
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "method not stated by the source. wordsofquran.com states its data come from QAC v0.4 but gives no counting rule for 'min' — nothing says whether the relative pronoun مَن counts, whether suffixed forms (منها, مما) count, or what a 'word' is. The method is identified by reproduction (see verification): the QAC lemma rule reproduces all three of the site's figures exactly.",
+      "method_status": "unstated",
+      "exceptions": "Tanzil skeleton matching conflates مِن (preposition, QAC lemma min) with مَن (relative pronoun, QAC lemma man) once diacritics are stripped. Of the 3,314 Tanzil bare-من tokens, 2,499 are QAC min, 806 are QAC man, 6 are the verb man~a ('he bestowed'), and 3 are alignment artifacts at 13:37 (the بعدما verse). The QAC min total (3,226) = 2,499 bare tokens + 727 suffixed/contracted forms (مما, منها, مني ...). The site also gives 4,832 unique lemmas of ~77,797 total words — the lemma total matches QAC (4,832); the 77,797 word total matches no count here (QAC 77,429; Tanzil excl. basmalahs 77,433; incl. 77,881).",
+      "verification_scholar_rule": {
+        "count": 3226,
+        "note": "QAC lemma min (preposition) = 3,226 exactly. The site's other two figures also reproduce exactly under the same rule: lemma maA = 2,565, lemma {ll~ah = 2,699. All three figures identify the method as QAC v0.4 lemma counts."
+      },
+      "verification_root_rule": {
+        "count": 3226,
+        "note": "Same 3,226 under the QAC lemma rule. The Tanzil skeleton-lemma count is 3,314 — a different unit (it merges min and man); the earlier note's '88 above' is arithmetic coincidence, not an explanation (3,314 - 3,226 = 88, but the man tokens inside the 3,314 number 806, not 88)."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -950,7 +1729,18 @@
         "url": "https://seekersguidance.org/answers/quran/what-is-the-total-number-of-words-verses-and-letters-in-the-quran/",
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Stated on the SeekersGuidance page (Shaykh Anas al-Musa, summarising al-Suyuti's al-Itqan and classical sources): the variation comes from word-boundary rules — 'they counted (في السماء) and (في الأرض) and (في خلق) and the like as two words, while some counted them as one word'. The Basra reciters' figure is 77,439 words; Kufan 77,430; Ata' b. Yasar 77,437. The 77,430 / 77,797 / 77,934 variants are al-Suyuti variants reported by other witnesses, not on that page.",
+      "method_status": "stated",
+      "exceptions": "The classical counts are hand counts (the Basra count was made with barley over four months, per the page). Word-boundary conventions for prepositional phrases are the stated cause of the spread (77,430-77,439).",
+      "verification_scholar_rule": {
+        "count": 77439,
+        "note": "Headline Basra figure 77,439 as stated on the page; variants 77,430 (Kufan) and 77,437 (Ata' b. Yasar) stated on the same page."
+      },
+      "verification_root_rule": {
+        "count": 77433,
+        "note": "Tanzil whitespace tokens excl. unnumbered basmalahs = 77,433 — 6 below the lowest classical figure (77,439) and 3 above the Kufan 77,430; within the spread of counting conventions. QAC words = 77,429."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -967,7 +1757,18 @@
         "url": "https://seekersguidance.org/answers/quran/what-is-the-total-number-of-words-verses-and-letters-in-the-quran/",
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Stated on the same SeekersGuidance page: the variation comes from whether 'the emphasized letter' (shaddah) is counted as two letters or one — 'those who counted the emphasized letter as two had a higher count of Quranic letters'. Basra reciters: 323,015 letters; Mujahid 321,000; Ibn Mas'ud 300,670; Salam Abu Muhammad 340,740; Abu Mu'adh 321,200. The 323,671 and 330,733 variants are al-Suyuti variants reported elsewhere (eaalim.com, riwaqalquran.com), not on that page.",
+      "method_status": "stated",
+      "exceptions": "The classical sources disagree among themselves by up to 7,718 letters (323,015 vs 330,733) and further variants exist, so no single letter total is settled. Doubled-letter handling is the stated definitional cause; the Uthmani spelling (omitted alifs, variant readings) is also cited on the page as a cause.",
+      "verification_scholar_rule": {
+        "count": 323015,
+        "note": "Headline Basra figure 323,015 as stated on the page."
+      },
+      "verification_root_rule": {
+        "count": 325386,
+        "note": "325,386 letters excl. unnumbered basmalahs under the project's letter convention (327,514 incl.) — matches none of the classical figures. Counting shaddah as doubled would give 348,402, far above all of them, so the classical counters were not simply doubling shaddah."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -976,7 +1777,7 @@
       "confidence": "confirmed by our recount",
       "corpus_and_method": "Tanzil Uthmani text, unnumbered basmalahs excluded; our recount on the same text.",
       "id": "rdsq-words-77430",
-      "our_note": "Ours 77,433 — differs by 3 (word-boundary conventions; the 4 verses that differ by one token each are 2:181, 8:6, 13:37 and 37:130 — see the qac-word-count finding). The odd/even verse-group totals 38,716 / 38,714 quoted in an earlier draft of this note did not reproduce under any natural grouping (ayah-number parity 39,647/38,234; global verse-index parity 38,433/39,000; surah-number parity 36,446/41,435) and are dropped.",
+      "our_note": "Ours 77,433 — differs by 3 (word-boundary conventions; the 4 verses that differ by one token each are 2:181, 8:6, 13:37 and 37:130 — see the qac-word-count finding). The odd/even verse-group totals 38,716 / 38,714 DO reproduce under the document's own stated criterion, odd/even C+V parity (chapter + verse number): on QAC data exactly 38,715 / 38,714 (the document's own Dukes-data figures, p. 20), and on Tanzil 38,717 / 38,716 — within the same 3-word gap as the headline total. The earlier draft's groupings (ayah-number, verse-index, surah-number parity) were not the document's criterion.",
       "our_status": "confirmed",
       "source": {
         "author": "Eueung Mulyana",
@@ -984,7 +1785,18 @@
         "url": "https://www.scribd.com/document/550406160/RDS-Q-004",
         "year": 2020
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Stated in RDS-Q No. 4 (Mulyana 2020) itself, fetched from Scribd: 'the Quran text is based on the Uthmani version published by Tanzil project... the Quran is composed of 77430 words and 325666 letters (note: unnumbered Basmallah at the beginning of 112 chapters is not counted)'. Word unit = Tanzil whitespace token. The document also gives odd/even splits by C+V parity (chapter + verse number), per RDS-Q #1/#2.",
+      "method_status": "stated",
+      "exceptions": "RDS-Q attributes the QAC-vs-Tanzil word gap to 37:130 alone (QAC one word, Tanzil two); the full gap is 4 verses (2:181, 8:6, 13:37, 37:130). The 3-word gap between our Tanzil count (77,433) and RDS-Q's (77,430) on the same text is not explained by the document.",
+      "verification_scholar_rule": {
+        "count": 77430,
+        "note": "RDS-Q's headline total, 77,430 words (6236 verses, Tanzil Uthmani, unnumbered basmalahs excluded)."
+      },
+      "verification_root_rule": {
+        "count": 77433,
+        "note": "Our Tanzil token count on the same text and rule = 77,433 — 3 above RDS-Q (unexplained at token level). QAC words = 77,429 (4 below ours; the 4 boundary verses)."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -1001,7 +1813,18 @@
         "url": "https://www.scribd.com/document/550406160/RDS-Q-004",
         "year": 2020
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Stated in RDS-Q No. 4 itself (same passage as the word total): 325,666 letters on the Tanzil Uthmani text, unnumbered basmalahs excluded. The document states NO letter-counting convention — nothing says which marks count as letters — so the 280 gap below cannot be attributed to a stated rule.",
+      "method_status": "stated",
+      "exceptions": "RDS-Q notes Dukes' figure of 623,638 counts 'join letters and diacritics/harakah' — a different unit (all characters including diacritics), not comparable. The 280-letter gap to our count is still unexplained after testing variants (see verification).",
+      "verification_scholar_rule": {
+        "count": 325666,
+        "note": "RDS-Q's headline total, 325,666 letters (same text and rule as the word total)."
+      },
+      "verification_root_rule": {
+        "count": 325386,
+        "note": "Our letter count = 325,386 — 280 fewer. Variants tested, none gives +280: counting dagger alif as a letter gives 335,224 (+9,838); dagger alif + small waw/yeh gives 337,438; doubling shaddah gives 348,402. The exact cause of the 280 gap remains unidentified."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -1018,7 +1841,18 @@
         "url": "https://www.academia.edu/13913774/Probability_Distributions_of_the_Verses_Words_and_Letters_of_the_Holy_Quran",
         "year": 2012
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Stated in the paper (Botani 2012, IJMCAR 2(3), 27-34, fetched from Academia): 'All the data which is used in this paper are obtained from QuranCode software created by Adams (2011)'; '29 Arabic letters take into consideration (with accounting Hamza as a letter)'; 'the starting verse of each chapter (Basmalah) considered as a verse in whole Quran' — hence 6,348 verses, 77,878 words, 327,792 letters. Distributions fitted with Excel, Statgraphics Centurion XV and EasyFit 5.5: verses Exponential (lambda = 0.01795), words Gamma (alpha = 0.538, beta = 1269.9).",
+      "method_status": "stated",
+      "exceptions": "Counting the basmalah as a verse is the whole reason the verse total is 6,348 rather than 6,236 ('In most of literatures, the number of verses is equal to 6236 verses because of non-accounting 112 starting verses as a Quranic verse'). The word/letter totals are QuranCode-software counts, not hand counts; no tokenisation rule beyond the software is stated.",
+      "verification_scholar_rule": {
+        "count": 6348,
+        "note": "Verse arithmetic checks: 6,236 + 112 = 6,348. Words 77,878 and letters 327,792 are the paper's QuranCode figures (see root rule for the comparison)."
+      },
+      "verification_root_rule": {
+        "count": 6236,
+        "note": "Numbered verses 6,236. On the same Tanzil text incl. basmalahs: words 77,881 (3 above Botani's 77,878) and letters 327,514 (278 below Botani's 327,792) under the project's letter convention. Both gaps are unexplained; the letter gap is in the same family as the 280 RDS-Q gap (278 vs 280 — they differ by 2, so the same unknown convention difference cannot explain both exactly)."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -1035,7 +1869,18 @@
         "url": "https://submission.org/App1_p2.html",
         "year": 1989
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "Stated by Khalifa (Appendix 1, Part 2, Table 21 and text): 'The word \"Quran\" occurs in the Quran 58 times, with one of them, in 10:15, referring to \"another Quran\"... must be excluded. Thus, the frequency of occurrence of \"this Quran\" in the Quran is 57, or 19x3.' Table 21 lists the suras and verses 'where the word \"Quran,\" in all its grammatical forms, occurs'. Two other grammatical forms ('Quranun' and 'Quranahu') 'occur in 12 verses'; 13:31 ('another Quran' that crumbles mountains) and 41:44 ('a non-Arabic Quran') are excluded.",
+      "method_status": "stated",
+      "exceptions": "Table 21 as printed has 66 rows, not 58. It excludes all three semantically-excluded verses (10:15, 13:31, 41:44) — the full all-forms verse set is 69 verses. 9 Table-21 verses contain only non-narrow forms (10:61, 15:1, 17:78, 17:106, 36:69, 56:77, 75:17, 75:18, 85:21 — 11 tokens); with 10:15 that is 10 verses containing a non-narrow form, not the 12 Khalifa states. No verse contains both a narrow and a non-narrow form. The substring count (71 tokens) catches one verb: قَرَأْنَاهُ ('We recited it', 75:18:2, QAC lemma qara>a), which is not the noun 'Quran'.",
+      "verification_scholar_rule": {
+        "count": 59,
+        "note": "Under Khalifa's own stated rule (the narrow forms القرآن / والقرآن / بالقرآن / قرآنا, minus 10:15): 59, not 57. 10:15's token is بقرآن (indefinite, outside the narrow set), so the stated exclusion changes nothing. His 57 = the 57 narrow-form verses in his table; the table silently also excludes 13:31 and 41:44 (both قرآنا, in the narrow set) on semantic grounds. His headline 58 = 57 + 10:15 — i.e. it counts 10:15 in the total while his table excludes it. Either way the claimed 57 does not reproduce under his own stated rule."
+      },
+      "verification_root_rule": {
+        "count": 70,
+        "note": "QAC lemma quro'aAn (the noun 'Quran') = 70 words in 69 verses. Tanzil substring قران = 71 tokens — the extra token is the verb at 75:18:2."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -1052,7 +1897,18 @@
         "url": "https://wikiislam.net/index.php?title=Word_Count_Miracles_in_the_Qur%27an",
         "year": null
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "not a count — literature/critique fact. No counting method applies; the page itself was fetched and its claims checked against it. WikiIslam's own method is corpus-based critique using actual verse counts.",
+      "method_status": "not_a_count",
+      "exceptions": "Dr. Fahd al-Roomi's point on the 365-day count was not separately located in the fetched WikiIslam text, so it is not asserted here (already noted in the finding).",
+      "verification_scholar_rule": {
+        "count": null,
+        "note": "Page fetched (wikiislam.net, 'Word Count Miracles in the Qur'an', 1,195 lines): documents the selective tactics — selective choice of words, adding counts of similar words, phrase counts instead of word counts, selective choice of grammatical forms (singular/plural/dual, prefixes/suffixes), calling the selected form 'the simple form', ignoring other meanings, mistranslations, cherry-picking. Sub-articles linked from the page include the zakah/blessing 32-times item (confirmed at line 908). Quoted scholarly refutations: Dr. Zahid Aziz — confirmed quoted at lines 1132-1139 ('A conclusion of Dr. Zahid Aziz after he refuted several \"miracles\"'). The lead's figures agree with our recounts (day total 475, night 92)."
+      },
+      "verification_root_rule": {
+        "count": null,
+        "note": "Same verification (no corpus count applies). The finding's sub-article list (365 days, month 12, dunya/akhira 115, paradise/hell 77, iman/kufr 25, land/water ratio, tongue/sermon 25, shaytan/angel 88, life/death 145, zakah/blessing 32, sun/light 33) was not exhaustively re-checked link by link in this pass — only the zakah/blessing link and the Zahid Aziz quotation were individually located."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -1061,15 +1917,26 @@
       "confidence": "reported, method unclear",
       "corpus_and_method": "Peer-reviewed papers; the treebank itself was not re-analysed here.",
       "id": "dukes-atwell-2012",
-      "our_note": "Dukes & Atwell (2012), 'The Quranic Arabic Corpus: An annotated linguistic resource', Language Resources and Evaluation 46(3), 475-489, DOI 10.1007/s10579-012-9205-0; Dukes & Habash (2010), 'Morphological Annotation of Quranic Arabic', LREC 2010; Dukes, Atwell & Sharaf (2010), syntactic annotation guidelines, LREC 2010; Dukes & Atwell (2012), LAMP platform, LREC'12; Dukes PhD thesis (2013), Statistical Parsing by Machine Learning from a Classical Arabic Treebank, University of Leeds. The corpus and its annotation are the primary source for the app's morphology work.",
+      "our_note": "Dukes & Atwell (2012), 'The Quranic Arabic Corpus: An annotated linguistic resource', Language Resources and Evaluation 46(3), 475-489, DOI 10.1007/s10579-012-9205-0; Dukes & Habash (2010), 'Morphological Annotation of Quranic Arabic', LREC 2010; Dukes, Atwell & Sharaf (2010), syntactic annotation guidelines, LREC 2010; Dukes & Atwell (2012), LAMP platform, LREC'12; Dukes PhD thesis (2013), Statistical Parsing by Machine Learning from a Classical Arabic Treebank, University of Leeds. The corpus and its annotation are the primary source for the app's morphology work.\n\nMethods pass (2026-11-08): the DOI formerly cited here (10.1007/s10579-012-9205-0) is wrong — it resolves to 'Evaluating Word Sense Induction and Disambiguation Methods' (Klapaftis & Manandhar, 2013), a different paper. The real items are Dukes & Atwell (2012), 'LAMP', Proc. LREC'12, pp. 3268–3275, and Dukes, Atwell & Habash (2013), Language Resources and Evaluation 47(1), 33–62, DOI 10.1007/s10579-011-9167-7 (verified via Crossref).",
       "our_status": "cannot_verify",
       "source": {
         "author": "Kais Dukes & Eric Atwell",
         "title": "'The Quranic Arabic Corpus: An annotated linguistic resource', Language Resources and Evaluation 46(3), 475-489",
-        "url": "https://doi.org/10.1007/s10579-012-9205-0",
+        "url": null,
         "year": 2012
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "not a count — bibliographic fact. No counting method applies; the citation itself was checked by resolving the DOI and searching for the cited paper.",
+      "method_status": "not_a_count",
+      "exceptions": "None beyond the citation error itself.",
+      "verification_scholar_rule": {
+        "count": null,
+        "note": "The cited DOI 10.1007/s10579-012-9205-0 is WRONG: doi.org resolves it to 'Evaluating Word Sense Induction and Disambiguation Methods' (Manandhar et al., Language Resources and Evaluation, published 2013-03-02) — a different paper by different authors. The cited journal article ('The Quranic Arabic Corpus: An annotated linguistic resource', Language Resources and Evaluation 46(3), 475-489) could not be located in this pass. The real items are: (a) Dukes & Atwell (2012), 'LAMP: A Multimodal Web Platform for Collaborative Linguistic Analysis', Proc. LREC'12, Istanbul, pp. 3268-3275 (conference paper, no Springer DOI); (b) Dukes, Atwell & Habash (2013), 'Supervised Collaboration for Syntactic Annotation of Quranic Arabic', Language Resources and Evaluation 47(1), 33-62, DOI 10.1007/s10579-011-9167-7. The exact title 'The Quranic Arabic Corpus: An annotated linguistic resource for the Holy Quran' belongs to a different paper: Dukhovny & Atwell, Proc. LREC 2009."
+      },
+      "verification_root_rule": {
+        "count": null,
+        "note": "Same verification (no corpus count applies). The corpus and its annotation are genuinely the primary source for the app's morphology work — only this finding's citation is wrong, not the underlying claim that the corpus exists and is Dukes' work."
+      }
     },
     {
       "category": "corpus_linguistics",
@@ -1078,7 +1945,7 @@
       "confidence": "reported, method unclear",
       "corpus_and_method": "Lemma-based count (arabiantongue.com); our surface-form hapax is a different unit and is not comparable.",
       "id": "hapax-legomena",
-      "our_note": "Our surface-form hapax (raw whitespace tokens occurring once) = 12,005 — a different unit from the lemma-based ~1,620, so the two figures cannot be compared directly. The lemma-based figure was not recounted (it needs the QAC annotation).",
+      "our_note": "Our surface-form hapax (raw whitespace tokens occurring once) = 12,005 — a different unit from the lemma-based ~1,620, so the two figures cannot be compared directly. The lemma-based figure has now been recounted from the QAC v0.4 annotation: 1,994 stem lemmas occur exactly once (in 1,528 verses) — which does not match ~1,620 under any POS subset tried (nouns only 1,249; nouns+adjectives+verbs 1,943).",
       "our_status": "cannot_verify",
       "source": {
         "author": "arabiantongue.com",
@@ -1086,7 +1953,18 @@
         "url": "https://arabiantongue.com/blog/how-many-words-are-in-the-quran/",
         "year": 2026
       },
-      "section": "scholarly"
+      "section": "scholarly",
+      "scholar_method": "method not stated by the source. arabiantongue.com states 'nearly 1,620 hapax legomena (words that appear only once in the entire text)' with no counting unit — nothing says whether the unit is a lemma, a surface form, or a root, or which text/edition was counted.",
+      "method_status": "unstated",
+      "exceptions": "The page's own figures are internally inconsistent in unit: it also gives '~14,800 unique words' and '~1,720 roots', while the QAC v0.4 annotation gives 14,881 skeletonised unique surface forms, 4,832 unique lemmas and 1,642 unique roots.",
+      "verification_scholar_rule": {
+        "count": null,
+        "note": "No unit stated, so no scholar-rule count can be constructed. No rule tried reproduces ~1,620 (see root rule)."
+      },
+      "verification_root_rule": {
+        "count": 1994,
+        "note": "QAC stem-lemma hapax = 1,994 lemmas occurring exactly once (in 1,528 verses). Surface-form hapax (raw whitespace tokens) = 12,005 — a different unit, confirmed. Skeletonised surface hapax = 8,709. Hapax by POS subsets: nouns only 1,249; nouns+adjectives+verbs 1,943; excl. proper nouns 1,954; roots occurring once 395. None is ~1,620."
+      }
     }
   ],
   "meta": {
@@ -1095,18 +1973,18 @@
     "project": "miracleMath — scholar findings on the Quran corpus",
     "recount_method": "Whitespace tokens. Skeleton normalisation for matching: diacritics/tatweel removed; hamza variants normalised (أ إ آ ٱ → ا, ؤ → و, ئ → ي, ء dropped); dagger alif ٰ → ا, small waw ۥ → و, small yeh ۦ → ي are kept as letters for matching. Letter-counting convention: base letters count, including alef wasla ٱ as ا; dagger alif, small waw and small yeh are marks and do NOT count; standalone hamza ء counts. This convention reproduces the anchors: basmalah = 19 letters, 96:1-5 = 76 letters, 110:1 = 19 letters. 'Excl. unnumbered basmalahs' means excluding the 112 basmalahs merged into verse 1 of surahs 2-8 and 10-114 (the 2 numbered basmalahs, 1:1 and 27:30, are kept). Surah boundaries use the standard Hafs verse-count table (sums to 6,236).",
     "tally": {
-      "confirmed": 28,
-      "differs": 25,
-      "cannot_verify": 11,
+      "confirmed": 37,
+      "differs": 17,
+      "cannot_verify": 10,
       "total": 64
     },
     "warning": "Disputed numerology is presented here as reported findings with a source and a status — never as settled fact. our_status 'confirmed' means our own scripted recount on the Tanzil file reproduces the claimed figure under a stated method; 'differs' means it does not; 'cannot_verify' means no recount was possible or the claim needs sense disambiguation.",
     "reconciled": "2026-11-07: scholar-vs-recount reconciliation (Checker A re-counted our numbers; Checker B verified every scholar claim against its source). Tallies now confirmed 28 / differs 25 / cannot_verify 11; our_status and confidence agree on all 64 findings. See RECONCILIATION.md.",
     "category_tally": {
       "paired_counts": {
-        "confirmed": 12,
-        "differs": 16,
-        "cannot_verify": 2,
+        "confirmed": 21,
+        "differs": 8,
+        "cannot_verify": 1,
         "total": 30
       },
       "letter_counts": {
@@ -1127,6 +2005,7 @@
         "cannot_verify": 8,
         "total": 16
       }
-    }
+    },
+    "methods_pass": "2026-11-08: every finding now carries the scholar's own method (stated / reconstructed / unstated), exceptions, verification under both the scholar's rule and the standard QAC root rule, and script-computed verse locations (data/locations.json). See METHODS.md. 14 status flips applied (10 differs→confirmed, 1 confirmed→differs, 1 cannot_verify→differs, 1 differs→confirmed, 1 confirmed→differs). Tallies now 37 confirmed / 17 differ / 10 cannot verify."
   }
 }
