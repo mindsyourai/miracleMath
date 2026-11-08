@@ -1,0 +1,37 @@
+[
+ {
+  "id": "A1",
+  "name": "Standard root rule",
+  "definition": "Count by QAC ROOT, all forms, prefixes/suffixes in, the 112 unnumbered basmalahs excluded (only 1:1 and 27:30 count); where the root covers other senses, narrow by lemma to the intended sense as documented per finding; where the claim is about a lemma or a form subset, that subset's number is given instead (METHODS.md convention). For corpus totals, the QAC word unit."
+ },
+ {
+  "id": "A2",
+  "name": "Lemma rule",
+  "definition": "Count by QAC LEM, all forms, prefixes/suffixes in, unnumbered basmalahs excluded as in A1."
+ },
+ {
+  "id": "A3",
+  "name": "Surface-form rule",
+  "definition": "Count exact surface forms on the Tanzil skeleton text — the forms listed in the finding's selection where one is documented (singular-only, bare-form, narrow or plural selections), otherwise the plain surface reading of the claimed word; unnumbered basmalahs excluded as in A1."
+ },
+ {
+  "id": "A4",
+  "name": "Letter rule",
+  "definition": "Count base letters on the Tanzil Uthmani text under the project letter convention (alef wasla counts as a letter; dagger alif, small waw and small yeh are marks, not letters; shaddah counts once); unnumbered basmalahs excluded."
+ },
+ {
+  "id": "A5",
+  "name": "Scholar's stated rule",
+  "definition": "The counting rule as stated in the scholar's own source, applied to the corpus (per-finding; null where the source states no counting rule)."
+ },
+ {
+  "id": "A6",
+  "name": "Scholar's reconstructed rule",
+  "definition": "The specific selection or exclusion documented in the finding's scholar_method that reproduces the scholar's number (per-finding; null where no reproducing rule was found)."
+ },
+ {
+  "id": "A7",
+  "name": "Basmalah-included variant",
+  "definition": "As the finding's primary rule (A1/A2/A3/A4 as applicable), but with the 112 unnumbered basmalahs counted in."
+ }
+]
