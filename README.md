@@ -11,9 +11,12 @@ Uthmani text. Live at https://mindsyourai.github.io/miracleMath/
 - **The 99 Names of God** — scripted occurrence counts per Name, a co-occurrence
   network graph (which Names appear together in a verse), and the 24 Names that do
   not occur in the Quran at all.
-- **Scholar findings** — 64 published / widely-cited claims about Quranic word-count
+- **Scholar findings** — 35 published claims about Quranic word-count
   mathematics, each labelled **confirmed by our recount**, **differs**, or **cannot verify**.
   Disputed numerology is presented as a reported finding with its status, never as settled fact.
+- **Popular claims** — 29 widely circulated claims by Harun Yahya (Adnan Oktar), kept in a
+  separate section with a source note; his list is popular, not scholarly, and each claim
+  carries its recount label the same way.
 - **Methodology & sources** — corpus, counting rules, and how to reproduce every number.
 
 ## Data
