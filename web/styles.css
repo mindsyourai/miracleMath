@@ -8,7 +8,9 @@
   --line:#1e2d4a; --chip:#16233c;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+/* scroll-padding-top keeps anchor jumps (#verified etc.) clear of the
+   sticky .tabs bar, which would otherwise cover the section's first line. */
 body{margin:0;background:var(--bg);color:var(--ink);
   font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   line-height:1.55}
@@ -73,15 +75,21 @@ main{max-width:1060px;margin:0 auto;padding:8px 20px 40px}
 .data-table.compact td{color:var(--muted)}
 .data-table.compact td b,.data-table.compact td strong{color:var(--ink)}
 
-/* findings table */
-.f-table .c-claim{min-width:280px}
+/* findings table — narrower column floors + wrapping headers so the table
+   fits its 1020px container at desktop widths instead of overflowing into
+   a horizontal scroll (the unverified page's table was ~60px too wide:
+   280+180+140 floors plus nowrap headers). overflow-wrap is a safety net
+   for long unbreakable tokens (e.g. URLs in a reason). */
+.f-table thead th{white-space:normal}
+.f-table td{overflow-wrap:anywhere}
+.f-table .c-claim{min-width:220px}
 .f-table .c-claim b{font-size:.95rem;line-height:1.4}
 .f-table .c-claim .ar{color:var(--gold);font-size:1.05em;margin-left:8px}
 .f-table .c-num{white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums;
   color:var(--cyan);text-align:right}
-.f-table .c-assume{min-width:180px}
+.f-table .c-assume{min-width:150px}
 .f-table .c-verdict{white-space:nowrap}
-.f-table .c-src{font-size:.82rem;color:var(--muted);min-width:140px}
+.f-table .c-src{font-size:.82rem;color:var(--muted);min-width:120px}
 .f-table .c-src .src-title{color:var(--faint)}
 .cat-tag{color:var(--faint);font-size:.78rem;margin-top:4px}
 .assume-label{font-weight:700;font-size:.88rem}
