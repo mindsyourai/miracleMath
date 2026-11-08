@@ -290,6 +290,50 @@
   $("graph-scope").addEventListener("change", drawGraph);
   $("graph-edges").addEventListener("change", drawGraph);
 
+  /* ---------- findings: method & locations ---------- */
+  function fmtCount(c) {
+    if (c == null) return "—";
+    if (Array.isArray(c)) return c.join(" / ");
+    return String(c);
+  }
+  function fmtVer(v) {
+    if (!v) return "not applicable";
+    var t = fmtCount(v.count);
+    return v.note ? t + " — " + v.note : t;
+  }
+  function methodBlock(f) {
+    var h = '<details class="method"><summary>Method &amp; where it occurs</summary>';
+    h += "<p><b>Scholar's method (" + esc(f.method_status || "unstated") + "):</b> " +
+      esc(f.scholar_method || "Method not stated by the source.") + "</p>";
+    if (f.exceptions)
+      h += "<p><b>Exceptions:</b> " + esc(f.exceptions) + "</p>";
+    h += "<p><b>Verification — scholar's rule:</b> " + esc(fmtVer(f.verification_scholar_rule)) + "</p>";
+    h += "<p><b>Verification — root rule:</b> " + esc(fmtVer(f.verification_root_rule)) + "</p>";
+    var locs = (typeof window !== "undefined" && window.MIRACLE_LOCATIONS) || {};
+    var loc = locs[f.id];
+    if (!loc) {
+      h += "<p><b>Locations:</b> location data not loaded.</p>";
+    } else if (loc.not_applicable) {
+      h += "<p><b>Locations:</b> not applicable — " + esc(loc.not_applicable) + "</p>";
+    } else if (!loc.verses || !loc.verses.length) {
+      h += "<p><b>Locations:</b> not applicable — " + esc(loc.note || "no occurrences to locate.") + "</p>";
+    } else {
+      var ps = loc.per_surah || {};
+      var keys = Object.keys(ps).sort(function (a, b) { return +a - +b; });
+      var breakdown = keys.map(function (k) { return k + ": " + ps[k]; }).join(" · ");
+      h += "<p><b>Locations (" + loc.verses.length + " verses):</b> " +
+        (breakdown ? "verses per surah — " + esc(breakdown) + "<br>" : "") +
+        '<span class="loc-list">' + esc(loc.verses.join(", ")) + "</span></p>";
+      if (loc.verses_scholar_rule && loc.verses_scholar_rule.length &&
+          loc.verses_scholar_rule.join(",") !== loc.verses.join(",")) {
+        h += "<p><b>Locations — scholar's rule (" + loc.verses_scholar_rule.length + " verses):</b> " +
+          '<span class="loc-list">' + esc(loc.verses_scholar_rule.join(", ")) + "</span></p>";
+      }
+    }
+    h += "</details>";
+    return h;
+  }
+
   /* ---------- findings ---------- */
   function renderFindings(section, ids) {
     var q = ($(ids.search).value || "").toLowerCase();
@@ -298,7 +342,8 @@
     var inSection = all.filter(function (f) { return (f.section || "scholarly") === section; });
     var list = inSection.filter(function (f) {
       var hay = (f.claim + " " + (f.claim_arabic_or_terms || "") + " " +
-        ((f.source && f.source.author) || "") + " " + ((f.source && f.source.title) || "")).toLowerCase();
+        ((f.source && f.source.author) || "") + " " + ((f.source && f.source.title) || "") + " " +
+        (f.scholar_method || "") + " " + (f.exceptions || "")).toLowerCase();
       if (q && hay.indexOf(q) === -1) return false;
       if (cat !== "all" && f.category !== cat) return false;
       if (st !== "all" && f.our_status !== st) return false;
@@ -326,6 +371,7 @@
         (s.url ? ' · <a href="' + esc(s.url) + '" target="_blank" rel="noopener">source link</a>' : "") + "</p>" +
         "<p><b>Corpus &amp; method:</b> " + esc(f.corpus_and_method || "Method not stated by the source.") + "</p>" +
         '<p class="note"><b>Our recount:</b> ' + esc(f.our_note || "") + "</p>" +
+        methodBlock(f) +
         "</article>";
     });
     $(ids.list).innerHTML = html || "<p>No findings match those filters.</p>";
