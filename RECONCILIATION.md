@@ -78,6 +78,29 @@ errors were in Agent 3's hand-written notes:
 - `text-fabric-quran`: the Zenodo DOI appears only as a badge image on the fetched repo page, so the DOI number was not legibly confirmed from that page.
 - The reconciliation re-checked the findings against the corpus; the counts were not re-counted a third time beyond Checker A's independent verifier and the three scripts' re-runs.
 
+## 2026-11-07 — Harun Yahya findings moved to a separate "Popular claims" section
+
+MK chose this treatment (separate section, not relabelling in place, not removal): the 29
+findings sourced to Harun Yahya (Adnan Oktar) — 28 with author exactly "Harun Yahya (Adnan
+Oktar)" plus 1 "Harun Yahya (Adnan Oktar), with WikiIslam's verse-by-verse analysis" — now
+carry `"section": "popular"` in `data/scholar_findings.json`; the other 35 carry
+`"section": "scholarly"`. No finding's claim, number, note, source, status or confidence
+changed — verified by diffing every field except `section` against the pre-move snapshot.
+
+Per-section tallies (overall unchanged at 64: 28 confirmed / 25 differ / 11 cannot verify):
+- Scholar findings: 35 — 16 confirmed / 10 differ / 9 cannot verify.
+- Popular claims (Harun Yahya): 29 — 12 confirmed / 15 differ / 2 cannot verify.
+
+Site: the findings display is now two tabs — "Scholar Findings" (35) and "Popular Claims"
+(29) — each with its own search, category and status filters and its own tally, plus the
+overall 64 total in both tallies. The Popular Claims tab carries the factual source note:
+Harun Yahya is the pen name of Adnan Oktar, a Turkish popular creationist author, not a
+scholarly source; convicted in Turkey in 2022 (8,658-year sentence, upheld 2024); the claims
+are included so they can be tested against the corpus; inclusion is not endorsement. The
+hero stat now reads "findings reviewed" instead of "scholar findings reviewed". Pairs,
+Names graph and Methodology are untouched. `data/scholar_findings.md` was regenerated with
+`regen_findings_md.py` (extended to emit the section split) and the README updated to match.
+
 ## How to reproduce
 
 `reconcile.py` applies every change above to `data/scholar_findings.json` (change log printed on stdout);
