@@ -50,7 +50,7 @@
       [c.surahs || 114, "surahs"],
       [(D.names || []).length || 99, "Names of God"],
       [(D.names_totals && D.names_totals.total_occurrences) || 1120, "Name occurrences"],
-      [(D.findings || []).length || 64, "scholar findings reviewed"]
+      [(D.findings || []).length || 64, "findings reviewed"]
     ];
     $("stats").innerHTML = items.map(function (it) {
       return '<div class="stat"><b>' + esc(it[0]) + "</b><span>" + esc(it[1]) + "</span></div>";
@@ -291,10 +291,12 @@
   $("graph-edges").addEventListener("change", drawGraph);
 
   /* ---------- findings ---------- */
-  function renderFindings() {
-    var q = ($("finding-search").value || "").toLowerCase();
-    var cat = $("finding-cat").value, st = $("finding-status").value;
-    var list = (D.findings || []).filter(function (f) {
+  function renderFindings(section, ids) {
+    var q = ($(ids.search).value || "").toLowerCase();
+    var cat = $(ids.cat).value, st = $(ids.status).value;
+    var all = D.findings || [];
+    var inSection = all.filter(function (f) { return (f.section || "scholarly") === section; });
+    var list = inSection.filter(function (f) {
       var hay = (f.claim + " " + (f.claim_arabic_or_terms || "") + " " +
         ((f.source && f.source.author) || "") + " " + ((f.source && f.source.title) || "")).toLowerCase();
       if (q && hay.indexOf(q) === -1) return false;
@@ -303,11 +305,15 @@
       return true;
     });
     var tally = { confirmed: 0, differs: 0, cannot_verify: 0 };
-    (D.findings || []).forEach(function (f) { if (tally[f.our_status] != null) tally[f.our_status]++; });
-    $("finding-tally").textContent = (D.findings || []).length + " findings in total — " +
+    inSection.forEach(function (f) { if (tally[f.our_status] != null) tally[f.our_status]++; });
+    var overall = { confirmed: 0, differs: 0, cannot_verify: 0 };
+    all.forEach(function (f) { if (overall[f.our_status] != null) overall[f.our_status]++; });
+    $(ids.tally).textContent = inSection.length + " findings in this section — " +
       tally.confirmed + " confirmed by our recount · " + tally.differs +
       " differ from our recount · " + tally.cannot_verify + " cannot verify. Showing " +
-      list.length + ".";
+      list.length + ". Overall: " + all.length + " findings in total (" +
+      overall.confirmed + " confirmed · " + overall.differs + " differ · " +
+      overall.cannot_verify + " cannot verify).";
     var html = "";
     list.forEach(function (f) {
       var s = f.source || {};
@@ -322,15 +328,27 @@
         '<p class="note"><b>Our recount:</b> ' + esc(f.our_note || "") + "</p>" +
         "</article>";
     });
-    $("findings-list").innerHTML = html || "<p>No findings match those filters.</p>";
+    $(ids.list).innerHTML = html || "<p>No findings match those filters.</p>";
   }
-  $("finding-search").addEventListener("input", renderFindings);
-  $("finding-cat").addEventListener("change", renderFindings);
-  $("finding-status").addEventListener("change", renderFindings);
+  function renderScholarFindings() {
+    renderFindings("scholarly", { search: "finding-search", cat: "finding-cat",
+      status: "finding-status", tally: "finding-tally", list: "findings-list" });
+  }
+  function renderPopularFindings() {
+    renderFindings("popular", { search: "popular-search", cat: "popular-cat",
+      status: "popular-status", tally: "popular-tally", list: "popular-list" });
+  }
+  $("finding-search").addEventListener("input", renderScholarFindings);
+  $("finding-cat").addEventListener("change", renderScholarFindings);
+  $("finding-status").addEventListener("change", renderScholarFindings);
+  $("popular-search").addEventListener("input", renderPopularFindings);
+  $("popular-cat").addEventListener("change", renderPopularFindings);
+  $("popular-status").addEventListener("change", renderPopularFindings);
 
   /* ---------- init ---------- */
   renderPairs();
   renderNames();
-  renderFindings();
+  renderScholarFindings();
+  renderPopularFindings();
   drawGraph();
 })();
