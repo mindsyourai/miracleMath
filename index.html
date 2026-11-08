@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>miracleMath — Word counts and mathematics of the Quran</title>
-<meta name="description" content="Word counts and mathematics of the Quran, computed by script from the Quranic Arabic Corpus (v0.4) and cross-checked against the Tanzil Uthmani text. Paired word counts, the 99 Names of God and their co-occurrence graph, and a labelled review of scholar findings.">
+<meta name="description" content="Word counts and mathematics of the Quran, computed by script from the Quranic Arabic Corpus (v0.4) and cross-checked against the Tanzil Uthmani text. Verified counts, paired word counts, the 99 Names of God and their co-occurrence graph.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,22 +12,69 @@
   <div class="research-head-inner">
     <h1>miracleMath — Word counts and mathematics of the Quran</h1>
     <p class="meta-line">Corpus: Quranic Arabic Corpus v0.4, 77,429 words · 6,236 verses · 114 surahs ·
-      Data: 2026-11-08 · 64 findings reviewed — <span id="tally-line">37 confirmed · 17 differ · 10 cannot verify</span></p>
+      Data: 2026-11-08 · <span id="tally-line">37 confirmed · 17 differ · 10 cannot verify</span></p>
     <div class="stats" id="stats"></div>
+    <p class="meta-line">This page shows <b>verified counts only</b>. The 27 claims our recount could not
+      confirm are listed separately, clearly labelled as not verified:
+      <a href="unverified.html">Unverified claims →</a></p>
   </div>
 </header>
 
 <nav class="tabs" aria-label="Sections">
-  <button class="tab active" data-tab="pairs">Paired Counts</button>
-  <button class="tab" data-tab="names">Names of God</button>
-  <button class="tab" data-tab="findings">Scholar Findings</button>
-  <button class="tab" data-tab="popular">Popular Claims</button>
-  <button class="tab" data-tab="method">Methodology &amp; Sources</button>
+  <a class="tab" href="#about">About the Quran</a>
+  <a class="tab" href="#corpus">The corpus in numbers</a>
+  <a class="tab" href="#verified">Verified counts</a>
+  <a class="tab" href="#pairs">Paired counts</a>
+  <a class="tab" href="#names">Names of God</a>
+  <a class="tab" href="#method">Methodology &amp; sources</a>
 </nav>
 
 <main>
-  <!-- ============ PAIRED COUNTS ============ -->
-  <section id="tab-pairs" class="panel active">
+  <!-- ============ 1. ABOUT THE QURAN ============ -->
+  <section id="about" class="panel active">
+    <div class="panel-head">
+      <h2>About the Quran</h2>
+      <p>Facts about the Quran, each with its source.</p>
+    </div>
+    <div id="facts-table"></div>
+  </section>
+
+  <!-- ============ 2. THE CORPUS IN NUMBERS ============ -->
+  <section id="corpus" class="panel active">
+    <div class="panel-head">
+      <h2>The corpus in numbers</h2>
+      <p>Script-computed totals for the corpus this site counts from, with the counting rule for each number.</p>
+    </div>
+    <div id="corpus-table"></div>
+  </section>
+
+  <!-- ============ 3. VERIFIED COUNTS ============ -->
+  <section id="verified" class="panel active">
+    <div class="panel-head">
+      <h2>Verified counts</h2>
+      <p>Published claims about Quranic word-count mathematics that our scripted recount
+        <span class="badge ok">confirmed</span> — 16 from scholarly sources and 21 popular claims,
+        in one table, with the source labelled on every row. Disputed numerology is a reported
+        finding with its status — never settled fact.</p>
+      <div class="controls">
+        <input id="verified-search" type="search" placeholder="Search verified counts — e.g. 19, dunya, letters…" aria-label="Search verified counts">
+        <select id="verified-cat" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="paired_counts">Paired counts</option>
+          <option value="letter_counts">Letter counts</option>
+          <option value="code19">Code 19</option>
+          <option value="corpus_linguistics">Corpus linguistics</option>
+        </select>
+      </div>
+      <p class="tally" id="verified-tally"></p>
+    </div>
+    <div id="verified-list"></div>
+    <p class="method-note">Claims our recount could not confirm are not on this page:
+      <a href="unverified.html">27 unverified claims (17 differ · 10 cannot verify) →</a></p>
+  </section>
+
+  <!-- ============ 4. PAIRED COUNTS ============ -->
+  <section id="pairs" class="panel active">
     <div class="panel-head">
       <h2>Paired word counts</h2>
       <p>Script-counted from the Quranic Arabic Corpus morphology (root, then lemma to fix the intended sense); one count per word occurrence. Click a pair for verse references with the Arabic in context.</p>
@@ -43,8 +90,8 @@
     <div id="extras-list" class="extras"></div>
   </section>
 
-  <!-- ============ NAMES OF GOD ============ -->
-  <section id="tab-names" class="panel">
+  <!-- ============ 5. NAMES OF GOD ============ -->
+  <section id="names" class="panel active">
     <div class="panel-head">
       <h2>The 99 Names of God <span class="ar">أَسْمَاءُ ٱللَّهِ ٱلْحُسْنَىٰ</span></h2>
       <p>Occurrences of each Name in the Arabic text, matched by lemma in the Quranic Arabic Corpus. A Name counts only where the word is used of God; excluded occurrences are listed per Name. 24 Names do not occur in the Quran at all.</p>
@@ -85,62 +132,8 @@
     <div id="name-detail"></div>
   </section>
 
-  <!-- ============ SCHOLAR FINDINGS ============ -->
-  <section id="tab-findings" class="panel">
-    <div class="panel-head">
-      <h2>Scholar findings</h2>
-      <p>Published and widely-cited claims about Quranic word-count mathematics, each labelled
-        <span class="badge ok">confirmed</span>, <span class="badge bad">differs</span> or
-        <span class="badge warn">cannot verify</span> against our scripted recount. Disputed numerology is a reported finding with its status — never settled fact. Harun Yahya's popular claims are in a separate tab.</p>
-      <div class="controls">
-        <input id="finding-search" type="search" placeholder="Search findings — e.g. 19, dunya, letters…" aria-label="Search findings">
-        <select id="finding-cat" aria-label="Filter by category">
-          <option value="all">All categories</option>
-          <option value="paired_counts">Paired counts</option>
-          <option value="letter_counts">Letter counts</option>
-          <option value="code19">Code 19</option>
-          <option value="corpus_linguistics">Corpus linguistics</option>
-        </select>
-        <select id="finding-status" aria-label="Filter by status">
-          <option value="all">All statuses</option>
-          <option value="confirmed">Confirmed by our recount</option>
-          <option value="differs">Differs from our recount</option>
-          <option value="cannot_verify">Cannot verify</option>
-        </select>
-      </div>
-      <p class="tally" id="finding-tally"></p>
-    </div>
-    <div id="findings-list"></div>
-  </section>
-
-  <!-- ============ POPULAR CLAIMS ============ -->
-  <section id="tab-popular" class="panel">
-    <div class="panel-head">
-      <h2>Popular claims — Harun Yahya</h2>
-      <p>Harun Yahya is the pen name of Adnan Oktar, a Turkish popular creationist author — not a scholarly source. He was convicted in Turkey in 2022 (8,658-year sentence, upheld 2024). These widely circulated claims are included so they can be tested against the corpus; inclusion is not endorsement. Each claim carries its recount label.</p>
-      <div class="controls">
-        <input id="popular-search" type="search" placeholder="Search popular claims — e.g. day, 145, angels…" aria-label="Search popular claims">
-        <select id="popular-cat" aria-label="Filter by category">
-          <option value="all">All categories</option>
-          <option value="paired_counts">Paired counts</option>
-          <option value="letter_counts">Letter counts</option>
-          <option value="code19">Code 19</option>
-          <option value="corpus_linguistics">Corpus linguistics</option>
-        </select>
-        <select id="popular-status" aria-label="Filter by status">
-          <option value="all">All statuses</option>
-          <option value="confirmed">Confirmed by our recount</option>
-          <option value="differs">Differs from our recount</option>
-          <option value="cannot_verify">Cannot verify</option>
-        </select>
-      </div>
-      <p class="tally" id="popular-tally"></p>
-    </div>
-    <div id="popular-list"></div>
-  </section>
-
-  <!-- ============ METHODOLOGY ============ -->
-  <section id="tab-method" class="panel">
+  <!-- ============ 6. METHODOLOGY ============ -->
+  <section id="method" class="panel active">
     <div class="panel-head">
       <h2>Methodology &amp; sources</h2>
       <p class="scope-line">Scope: counts of Arabic words and letters in the Quran, computed by script from the Quranic Arabic Corpus v0.4. Disputed claims are labelled, not asserted; no count is taken from an English translation.</p>
