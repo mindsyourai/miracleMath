@@ -22,6 +22,7 @@
   <button class="tab active" data-tab="pairs">Paired Counts</button>
   <button class="tab" data-tab="names">Names of God</button>
   <button class="tab" data-tab="findings">Scholar Findings</button>
+  <button class="tab" data-tab="popular">Popular Claims</button>
   <button class="tab" data-tab="method">Methodology &amp; Sources</button>
 </nav>
 
@@ -100,7 +101,8 @@
         <span class="badge warn">reported, method unclear</span>, or
         <span class="badge bad">contested</span>. Disputed numerology is presented as a
         <em>reported finding with its status</em> — never as settled fact. Each finding was
-        checked against our own scripted recount where the claim allows it.</p>
+        checked against our own scripted recount where the claim allows it.
+        Widely circulated popular claims by Harun Yahya are in a separate tab.</p>
       <div class="controls">
         <input id="finding-search" type="search" placeholder="Search findings — e.g. 19, dunya, letters…" aria-label="Search findings">
         <select id="finding-cat" aria-label="Filter by category">
@@ -120,6 +122,35 @@
       <p class="tally" id="finding-tally"></p>
     </div>
     <div id="findings-list"></div>
+  </section>
+
+  <!-- ============ POPULAR CLAIMS ============ -->
+  <section id="tab-popular" class="panel">
+    <div class="panel-head">
+      <h2>Popular claims — Harun Yahya</h2>
+      <p>Harun Yahya is the pen name of Adnan Oktar, a Turkish popular creationist author — not a
+        scholarly source. He was convicted in Turkey in 2022 (8,658-year sentence, upheld 2024).
+        These widely circulated claims are included so they can be tested against the corpus;
+        inclusion is not endorsement. Each claim carries its recount label.</p>
+      <div class="controls">
+        <input id="popular-search" type="search" placeholder="Search popular claims — e.g. day, 145, angels…" aria-label="Search popular claims">
+        <select id="popular-cat" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="paired_counts">Paired counts</option>
+          <option value="letter_counts">Letter counts</option>
+          <option value="code19">Code 19</option>
+          <option value="corpus_linguistics">Corpus linguistics</option>
+        </select>
+        <select id="popular-status" aria-label="Filter by status">
+          <option value="all">All statuses</option>
+          <option value="confirmed">Confirmed by our recount</option>
+          <option value="differs">Differs from our recount</option>
+          <option value="cannot_verify">Cannot verify</option>
+        </select>
+      </div>
+      <p class="tally" id="popular-tally"></p>
+    </div>
+    <div id="popular-list"></div>
   </section>
 
   <!-- ============ METHODOLOGY ============ -->
