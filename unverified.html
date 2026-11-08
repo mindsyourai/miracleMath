@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unverified claims — miracleMath</title>
+<meta name="description" content="Claims about Quranic word counts that our scripted recount could not confirm: 17 differ from our recount, 10 cannot be verified. Listed separately from the verified counts, clearly labelled as not verified.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="research-head">
+  <div class="research-head-inner">
+    <h1>Unverified claims — miracleMath</h1>
+    <p class="meta-line">Corpus: Quranic Arabic Corpus v0.4, 77,429 words · 6,236 verses · 114 surahs ·
+      Data: 2026-11-08</p>
+    <p class="unverified-banner"><b>Not verified.</b> Every claim on this page is one our scripted recount
+      could <b>not</b> confirm: <span class="badge bad">differs</span> from our recount, or
+      <span class="badge warn">cannot verify</span>. Nothing here is presented as a confirmed count.
+      The confirmed counts are on the <a href="index.html">main page →</a></p>
+    <p class="meta-line"><a href="index.html">← Back to the main page (verified counts only)</a></p>
+  </div>
+</header>
+
+<main>
+  <section class="panel active">
+    <div class="panel-head">
+      <h2>Claims our recount could not confirm</h2>
+      <p>Published and widely-cited claims about Quranic word-count mathematics, each labelled
+        <span class="badge bad">differs</span> or <span class="badge warn">cannot verify</span>
+        against our scripted recount, with the method, the one-line reason, and the verse locations
+        where applicable. Inclusion is not endorsement. Scholar findings and popular claims are kept
+        in separate groups below.</p>
+      <div class="controls">
+        <input id="unverified-search" type="search" placeholder="Search unverified claims — e.g. sea, 145, letters…" aria-label="Search unverified claims">
+        <select id="unverified-cat" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="paired_counts">Paired counts</option>
+          <option value="letter_counts">Letter counts</option>
+          <option value="code19">Code 19</option>
+          <option value="corpus_linguistics">Corpus linguistics</option>
+        </select>
+        <select id="unverified-status" aria-label="Filter by status">
+          <option value="all">All unverified statuses</option>
+          <option value="differs">Differs from our recount</option>
+          <option value="cannot_verify">Cannot verify</option>
+        </select>
+      </div>
+      <p class="tally" id="unverified-tally"></p>
+    </div>
+    <div id="unverified-list"></div>
+    <p class="method-note">Method, assumption sets and sources: see
+      <a href="index.html#method">Methodology &amp; sources on the main page</a>.
+      Reconciliation log: <a href="https://github.com/mindsyourai/miracleMath/blob/main/RECONCILIATION.md">RECONCILIATION.md</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <p>miracleMath · Data: Quranic Arabic Corpus v0.4 (GPL) via corpus.quran.com; display Arabic: Tanzil Uthmani text.
+  All counts computed by script and reproducible from the <a href="https://github.com/mindsyourai/miracleMath">repo</a>.
+  Claims on this page are not verified. · Built 2026-11-08.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="locations.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
