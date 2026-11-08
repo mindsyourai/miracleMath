@@ -18,12 +18,29 @@ def load(name):
         return json.load(f)
 
 
+def load_optional(name):
+    """Load a data file that may not exist yet (e.g. assumption_sets.json,
+    owned by another agent). Returns None instead of failing the build."""
+    path = DATA / name
+    if not path.exists():
+        return None
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
 def main():
     roots = load("root_counts.json")
     names = load("names.json")
     edges = load("name_edges.json")
     findings = load("scholar_findings.json")
     locations = load("locations.json")
+    assumption_sets = load_optional("assumption_sets.json")
+    # assumption_sets.json is a bare list: [{"id", "name", "definition"}].
+    # Tolerate a wrapped {"assumption_sets": [...]} shape too.
+    if isinstance(assumption_sets, dict):
+        assumption_sets = assumption_sets.get("assumption_sets", [])
+    if assumption_sets is None:
+        assumption_sets = []
 
     payload = {
         "generated": "2026-11-08",
@@ -47,6 +64,10 @@ def main():
         "verse_edges": edges.get("verse_edges", []),
         "surah_edges": edges.get("surah_edges", []),
         "findings": findings.get("findings", []),
+        # Assumption sets are passed through verbatim; finding objects are
+        # passed through whole, so a per-finding "assumptions" field (added
+        # by the data agent) reaches the page without a build change.
+        "assumption_sets": assumption_sets,
         "methodology": {
             "roots": roots.get("methodology", {}),
             "names": names.get("methodology", {}),
@@ -78,7 +99,9 @@ def main():
     print(f"wrote {outl} ({outl.stat().st_size} bytes)")
     print(f"pairs={len(payload['pairs'])} extras={len(payload['extras'])} "
           f"names={len(payload['names'])} verse_edges={len(payload['verse_edges'])} "
-          f"surah_edges={len(payload['surah_edges'])} findings={len(payload['findings'])}")
+          f"surah_edges={len(payload['surah_edges'])} findings={len(payload['findings'])} "
+          f"assumption_sets={len(payload['assumption_sets'])} "
+          f"findings_with_assumptions={sum(1 for f in payload['findings'] if f.get('assumptions'))}")
 
 
 if __name__ == "__main__":
