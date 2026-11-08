@@ -370,13 +370,23 @@
       ctx.fillStyle = n.id === sel ? "#eab308" : (dim ? "#233247" : "#22d3ee");
       ctx.fill();
       ctx.font = "11px system-ui, sans-serif";
-      ctx.textAlign = "center";
       ctx.fillStyle = dim ? "#5b6b82" : "#e8eef7";
-      var label = n.transliteration.replace("Ar-", "").replace("Al-", "");
+      /* Full transliteration (no Ar-/Al- stripping — the stripped forms read
+         as truncated labels), placed radially outward from the ring, so a
+         label never sits on the next node down the ring: right-side labels
+         anchor left, left-side labels anchor right, near-top/bottom centre. */
+      var label = n.transliteration;
       var tw = label.length * 6;
       try { tw = ctx.measureText(label).width; } catch (e) { /* stubbed canvas: keep estimate */ }
-      var lx = Math.max(tw / 2 + 6, Math.min(W - tw / 2 - 6, p.x));
-      var ly = Math.max(13, Math.min(H - 4, p.y + r + 13));
+      var dx = p.x - W / 2, dy = p.y - H / 2;
+      var len = Math.hypot(dx, dy) || 1;
+      var ux = dx / len, uy = dy / len;
+      var ox = p.x + ux * (r + 13), oy = p.y + uy * (r + 13);
+      var lx, ly;
+      if (ux > 0.1) { ctx.textAlign = "left"; lx = Math.min(ox, W - tw - 6); }
+      else if (ux < -0.1) { ctx.textAlign = "right"; lx = Math.max(ox, tw + 6); }
+      else { ctx.textAlign = "center"; lx = Math.max(tw / 2 + 6, Math.min(W - tw / 2 - 6, ox)); }
+      ly = Math.max(12, Math.min(H - 3, oy + 4));
       ctx.fillText(label, lx, ly);
     });
     if (sel != null) {
