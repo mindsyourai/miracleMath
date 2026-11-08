@@ -15,6 +15,13 @@ Reconciled 2026-11-07 — every finding now states the scholar claim as sourced,
 - Code 19 — Rashad Khalifa's 'mathematical miracle': 11 (confirmed 8, differs 2, cannot verify 1)
 - Modern corpus linguistics: 16 (confirmed 4, differs 4, cannot verify 8)
 
+## Sections (split 2026-11-07)
+
+- Scholar findings: 35 (confirmed 16, differs 10, cannot verify 9)
+- Popular claims (Harun Yahya, Adnan Oktar): 29 (confirmed 12, differs 15, cannot verify 2)
+
+Harun Yahya is the pen name of Adnan Oktar, a Turkish popular creationist author — not a scholarly source. He was convicted in Turkey in 2022 (8,658-year sentence, upheld 2024). His widely circulated claims are included so they can be tested against the corpus; inclusion is not endorsement. Each claim carries its recount label.
+
 ## Recount method
 
 Whitespace tokens. Skeleton normalisation for matching: diacritics/tatweel removed; hamza variants normalised (أ إ آ ٱ → ا, ؤ → و, ئ → ي, ء dropped); dagger alif ٰ → ا, small waw ۥ → و, small yeh ۦ → ي are kept as letters for matching. Letter-counting convention: base letters count, including alef wasla ٱ as ا; dagger alif, small waw and small yeh are marks and do NOT count; standalone hamza ء counts. This convention reproduces the anchors: basmalah = 19 letters, 96:1-5 = 76 letters, 110:1 = 19 letters. 'Excl. unnumbered basmalahs' means excluding the 112 basmalahs merged into verse 1 of surahs 2-8 and 10-114 (the 2 numbered basmalahs, 1:1 and 27:30, are kept). Surah boundaries use the standard Hafs verse-count table (sums to 6,236).
@@ -31,6 +38,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -44,6 +53,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** الجنة / جهنم
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -59,6 +70,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -72,6 +85,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** يوم
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source; our recount reproduces 365 only under a stated selective method (see note).
 
@@ -87,6 +102,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source; our recount reproduces 12 only under a stated selective method (see note).
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -100,6 +117,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** صلوات
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -115,6 +134,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ❓ cannot_verify · **confidence:** reported, method unclear
@@ -128,6 +149,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** رجل / امرأة
 
 **Source:** Tariq Al-Suwaidan (circulating list; also Mufti Afzal Hoosen Elias, 'Astonishing Facts about the Qur'aan'), *'Mathematical Miracles of the Holy Quran' (circulating list)* — <https://www.scribd.com/document/45864275/Mathematical-Miracles-of-the-Holy-Quran>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Method not stated by the source. (Note: Harun Yahya's published list gives 23/23; the 24/24 figure is from the circulating Al-Suwaidan/Elias list.)
 
@@ -143,6 +166,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Circulating list (quranic-miracles.com; Tariq Al-Suwaidan; Mufti Afzal Hoosen Elias), *'Word repetitions' — circulating mathematical-miracle list* — <https://www.quranic-miracles.com/miracles/mathematical/word-repetitions>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Method not stated by the source. (Note: Harun Yahya's published list does not include this pair; it circulates on other sites, e.g. quranic-miracles.com.)
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -156,6 +181,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** الشمس / النور (and القمر 27, separate claim)
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Yahya's rule for sun/light: 'only the simple forms of the word were included'. Moon 27 is a separate widely-circulated claim (WikiIslam), not paired with sun by Yahya — Yahya's page contains no 'moon' at all.
 
@@ -171,6 +198,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -184,6 +213,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** إيمان / كفر
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -199,6 +230,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -212,6 +245,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** قل / قالوا
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -227,6 +262,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -240,6 +277,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** الجزاء / المغفرة
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -255,6 +294,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -268,6 +309,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** لسان / موعظة
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -283,6 +326,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -296,6 +341,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** عقل / نور
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -311,6 +358,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -324,6 +373,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** حب / طاعة
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -339,6 +390,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -352,6 +405,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** مصيبة / شكر
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -367,6 +422,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -380,6 +437,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** خيانة / خبيث
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -395,6 +454,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -408,6 +469,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** صيف / شتاء
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Method not stated by the source.
 
@@ -423,6 +486,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
 
+**Section:** Popular claims (Harun Yahya)
+
 **Corpus and method:** Method not stated by the source.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -434,6 +499,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** Harun Yahya (Adnan Oktar) popularised the paired-count list in his book Miracles of the Qur'an.
 
 **Source:** Harun Yahya (Adnan Oktar), *Miracles of the Qur'an — 'Word Repetitions in the Qur'an'* — <https://www.harunyahya.info/en/articles/word-repetitions-in-the-quran>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Literature fact; the full list is published at harunyahya.info (fetched 2026-11-06). Method not stated in the source.
 
@@ -451,6 +518,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Letter counting under our stated convention (see meta). Khalifa's headline finding.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -464,6 +533,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** ن
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Letter counting under our stated convention (see meta).
 
@@ -479,6 +550,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Letter counting under our stated convention (see meta).
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -493,6 +566,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Halim Sayoud, *'Investigation on the Mystery of the Qur'an's Disjointed Letters', QURANICA 5(2), December 2013, University of Malaya* (2013) — <https://ijeas.um.edu.my/index.php/quranica/article/download/5185/2991/11903>
 
+**Section:** Scholar findings
+
 **Corpus and method:** First-verse check on the Tanzil file after stripping the merged unnumbered basmalah; structure per Sayoud (2013).
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -504,6 +579,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** Two verses contain all 28 letters of the Arabic alphabet: 3:154 and 48:29.
 
 **Source:** Classical/traditional observation, *Two verses containing all 28 letters of the Arabic alphabet (3:154, 48:29)*
+
+**Section:** Scholar findings
 
 **Corpus and method:** Distinct-letter count per verse on the Tanzil file.
 
@@ -519,6 +596,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Classical observation, repeated in modern Quran-statistics pages, *'How long is a Quran?' (calendar-uk FAQ, citing the classical claim)* — <https://www.calendar-uk.co.uk/frequently-asked-questions/how-long-is-a-quran>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Letter counting under our stated convention (see meta).
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -532,6 +611,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** سبع سماوات
 
 **Source:** Harun Yahya (Adnan Oktar), with WikiIslam's verse-by-verse analysis, *Miracles of the Qur'an; WikiIslam, 'Word Count Miracles in the Qur'an'* — <https://wikiislam.net/index.php?title=Word_Count_Miracles_in_the_Qur%27an>
+
+**Section:** Popular claims (Harun Yahya)
 
 **Corpus and method:** Verse-level substring search on the Tanzil file.
 
@@ -549,6 +630,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Letter counting under our stated convention (see meta); occurrence count on the Tanzil file.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -562,6 +645,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Arabic:** الله
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Lemma count (all forms of the name, incl. prefixed/clitic forms) on the Tanzil file, excluding the 112 unnumbered basmalahs (see note for the reconciliation).
 
@@ -577,6 +662,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Rashad Khalifa, *Appendix 1, Part 2, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1_p2.html>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Lemma count on the Tanzil file, excluding the 112 unnumbered basmalahs (see note).
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -591,6 +678,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Rashad Khalifa, *Appendix 1, Part 2, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1_p2.html>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Exact-form count on the Tanzil file (plural أسماء excluded, per Khalifa's 'no plural forms' rule).
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -602,6 +691,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** The first revelation (96:1-5) consists of 19 words.
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Whitespace token count on the Tanzil file, excluding the merged basmalah.
 
@@ -615,6 +706,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Letter counting under our stated convention (see meta), excluding the merged basmalah.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -626,6 +719,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** Surah 96 has 19 verses and 304 letters in total.
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Verse count (standard Hafs table) and letter counting under our stated convention (see meta).
 
@@ -639,6 +734,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Whitespace token count and letter counting under our stated convention (see meta), excluding the merged basmalah.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -650,6 +747,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** The sum of the verse numbers of all verses containing the word 'Allah' is 118,123 = 19 x 6,217.
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Verse-number sum over verses containing the Allah lemma, on the Tanzil file (see note for the two conditions required).
 
@@ -663,6 +762,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Rashad Khalifa, *Appendix 1, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1.html>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Standard Hafs count is 6,236 verses; Khalifa's figure rests on counting basmalahs as verses and deleting 9:128-129.
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -674,6 +775,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** Khalifa's 19-based 'mathematical miracle' was published from 1973-1989 and drew both praise and sustained scholarly/skeptical criticism.
 
 **Source:** Rashad Khalifa; Martin Gardner; Bilal Philips; Ziauddin Sardar; Edip Yüksel, *Quran: The Final Testament (1989); Scientific American (1980); The Qur'an's Numerical Miracle: Hoax and Heresy (1987)* (1989) — <https://submission.org/App1.html>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Literature review (bibliographic sources, verified by web search 2026-11-06).
 
@@ -689,6 +792,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Kais Dukes, University of Leeds, *Quranic Arabic Corpus — FAQ and release notes* (2009) — <https://corpus.quran.com/faq.jsp>
 
+**Section:** Scholar findings
+
 **Corpus and method:** QAC v0.4 morphological annotation; our recount on the Tanzil Uthmani text.
 
 **Our status:** ✅ confirmed · **confidence:** confirmed by our recount
@@ -700,6 +805,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** The Quran has 18,994 unique surface forms, 12,183 unique stems, 1,685 unique roots and 3,382 unique lemmas (QAC annotation).
 
 **Source:** Kais Dukes (figures as widely published), *'Number of unique words in the Quran' — circulating estimate (QAC figures)* — <https://www.calendar-uk.co.uk/frequently-asked-questions/how-long-is-a-quran>
+
+**Section:** Scholar findings
 
 **Corpus and method:** QAC v0.4 annotation (Dukes' 2013 primary-source answer); our recount on the Tanzil Uthmani text for the surface-form figure only.
 
@@ -713,6 +820,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Kais Dukes, University of Leeds, *Quranic Arabic Corpus — release notes* (2011) — <https://corpus.quran.com/releasenotes.jsp>
 
+**Section:** Scholar findings
+
 **Corpus and method:** QAC v0.4 release notes; verifying needs the QAC data itself, not the plain text.
 
 **Our status:** ❓ cannot_verify · **confidence:** reported, method unclear
@@ -725,6 +834,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Tanzil Project, *Tanzil — Quran Text licence and Medina Mushaf documentation* — <https://tanzil.net/docs/text_license>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Tanzil project documentation; the corpus file used for all recounts here is Tanzil Uthmani v1.1.
 
 **Our status:** ❓ cannot_verify · **confidence:** reported, method unclear
@@ -736,6 +847,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** Text-Fabric Quran (Roorda & van Lit, 2019) re-expresses the Quranic Arabic Corpus morphology as linked open data.
 
 **Source:** Dirk Roorda & Cornelis van Lit, *Text-Fabric Quran (2019)* (2019) — <https://github.com/q-ran/quran>
+
+**Section:** Scholar findings
 
 **Corpus and method:** GitHub q-ran/quran; Zenodo DOI 10.5281/zenodo.2532177; built from QAC 0.4 morphology + Tanzil Uthmani v1.0.2; CC-BY 4.0. Not used in our recounts.
 
@@ -751,6 +864,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Abdul Baqi (QAC 0.4 data by Kais Dukes), *'Standing on the Shoulder of Giants' (abdulbaqi.io, 2019)* (2019) — <http://abdulbaqi.io/2019/01/15/quranic_roots/>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Corpus-based root counts from QAC 0.4 morphology (abdulbaqi.io 2019; thequran.love 2026; Malkoç 2025). Root counting is the sibling agents' task; not recounted here.
 
 **Our status:** ❓ cannot_verify · **confidence:** reported, method unclear
@@ -765,6 +880,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Words of Quran (QAC v0.4 data), *wordsofquran.com — most frequent words* — <https://wordsofquran.com/>
 
+**Section:** Scholar findings
+
 **Corpus and method:** wordsofquran.com, from QAC v0.4; our recount on the Tanzil file for the min lemma.
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -776,6 +893,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** Classical authorities give the Quran's word total as 77,439 (with variants 77,430 / 77,437 / 77,797 / 77,934).
 
 **Source:** al-Suyuti (via SeekersGuidance, Shaykh Anas al-Musa), *al-Itqan fi 'Ulum al-Qur'an — classical word and letter totals* — <https://seekersguidance.org/answers/quran/what-is-the-total-number-of-words-verses-and-letters-in-the-quran/>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Classical counts (al-Suyuti, al-Itqan; Basra reciters; Ata' bin Yasar); our recount on the Tanzil file.
 
@@ -789,6 +908,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** al-Suyuti (via SeekersGuidance, Shaykh Anas al-Musa), *al-Itqan fi 'Ulum al-Qur'an — classical word and letter totals* — <https://seekersguidance.org/answers/quran/what-is-the-total-number-of-words-verses-and-letters-in-the-quran/>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Classical counts (al-Suyuti via Yahya ibn al-Harith and others); our recount on the Tanzil file under a stated convention (see meta).
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -800,6 +921,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** A Tanzil-based reproducible count (RDS-Q No. 4, Mulyana 2020) gives 77,430 words for the Quran.
 
 **Source:** Eueung Mulyana, *RDS-Q No. 4 — Quran Statistical Overview and Analysis (2020)* (2020) — <https://www.scribd.com/document/550406160/RDS-Q-004>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Tanzil Uthmani text, unnumbered basmalahs excluded; our recount on the same text.
 
@@ -813,6 +936,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Eueung Mulyana, *RDS-Q No. 4 — Quran Statistical Overview and Analysis (2020)* (2020) — <https://www.scribd.com/document/550406160/RDS-Q-004>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Tanzil Uthmani text, unnumbered basmalahs excluded; our recount on the same text under a stated convention (see meta).
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -824,6 +949,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** The Quran's verse/word/letter distributions can be fitted statistically (Botani 2012, using QuranCode software): 6,348 verses, 77,878 words, 327,792 letters.
 
 **Source:** Delshad Shaker Ismael Botani, Salahaddin University-Hawler, *'Probability Distributions of the Verses, Words, and Letters of the Holy Quran', IJMCAR 2(3), 27-34* (2012) — <https://www.academia.edu/13913774/Probability_Distributions_of_the_Verses_Words_and_Letters_of_the_Holy_Quran>
+
+**Section:** Scholar findings
 
 **Corpus and method:** QuranCode software (Adams 2011), counting basmalahs as verses; distributions fitted as Exponential/Gamma. Not recounted.
 
@@ -839,6 +966,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Rashad Khalifa, *Appendix 1, Part 2, Quran: The Final Testament (Authorized English Version)* (1989) — <https://submission.org/App1_p2.html>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Substring and narrow-selection counts on the Tanzil file.
 
 **Our status:** ❌ differs · **confidence:** contested
@@ -850,6 +979,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** WikiIslam's 'Word Count Miracles in the Qur'an' documents, verse by verse, the selective counting tactics behind the paired-count claims.
 
 **Source:** WikiIslam, *'Word Count Miracles in the Qur'an'* — <https://wikiislam.net/index.php?title=Word_Count_Miracles_in_the_Qur%27an>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Corpus-based critique using actual verse counts (fetched 2026-11-06).
 
@@ -863,6 +994,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 
 **Source:** Kais Dukes & Eric Atwell, *'The Quranic Arabic Corpus: An annotated linguistic resource', Language Resources and Evaluation 46(3), 475-489* (2012) — <https://doi.org/10.1007/s10579-012-9205-0>
 
+**Section:** Scholar findings
+
 **Corpus and method:** Peer-reviewed papers; the treebank itself was not re-analysed here.
 
 **Our status:** ❓ cannot_verify · **confidence:** reported, method unclear
@@ -874,6 +1007,8 @@ Spot-recount script: [`scholar_spotcheck.py`](scholar_spotcheck.py) (corpus tota
 **Claim:** About 1,620 words occur only once in the Quran (hapax legomena).
 
 **Source:** arabiantongue.com, *'How Many Words Are in the Quran?'* (2026) — <https://arabiantongue.com/blog/how-many-words-are-in-the-quran/>
+
+**Section:** Scholar findings
 
 **Corpus and method:** Lemma-based count (arabiantongue.com); our surface-form hapax is a different unit and is not comparable.
 
