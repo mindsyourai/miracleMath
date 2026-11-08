@@ -14,6 +14,9 @@ Uthmani text. Live at https://mindsyourai.github.io/miracleMath/
 - **Scholar findings** — 35 published claims about Quranic word-count
   mathematics, each labelled **confirmed by our recount**, **differs**, or **cannot verify**.
   Disputed numerology is presented as a reported finding with its status, never as settled fact.
+- **Assumption sets (A1–A7)** — every finding's numbers recomputed under named counting
+  assumptions; the sets reconcile the scholar's number with our recount where they agree,
+  with the reason stated (see ASSUMPTIONS.md). Findings are shown as data tables, not essays.
 - **Popular claims** — 29 widely circulated claims by Harun Yahya (Adnan Oktar), kept in a
   separate section with a source note; his list is popular, not scholarly, and each claim
   carries its recount label the same way.
@@ -28,6 +31,8 @@ Uthmani text. Live at https://mindsyourai.github.io/miracleMath/
 | `data/root_counts.json` + `root_counts_script.py` | 13 word pairs + extras, QAC root/lemma counts |
 | `data/names.json` + `name_edges.json` + `names_script.py` | 99 Names, co-occurrence graph |
 | `data/scholar_findings.json` + `.md` + `scholar_spotcheck.py` | 64 findings with sources and labels |
+| `data/assumption_sets.json` + `assumption_recompute.py` + `ASSUMPTIONS.md` | 7 named assumption sets (A1–A7) + per-finding reconciliation |
+| `data/locations.json` | Script-computed verse locations for the findings |
 | `DATA_SOURCES.md` | Corpus provenance, file hashes, counting rules |
 
 Re-running any `*_script.py` regenerates its JSON (root counts: byte-identical).
