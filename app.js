@@ -1,6 +1,10 @@
 /* miracleMath app — renders from window.MIRACLE_DATA (embedded data.js).
    No network calls, no backend. Charts are CSS bars; the Name network is a
-   guarded canvas drawing (no-ops safely where canvas is unavailable). */
+   guarded canvas drawing (no-ops safely where canvas is unavailable).
+   Findings render as data tables. Each finding may carry an "assumptions"
+   object {scholar_set, our_set, reconciles_under, numbers_by_set, reason};
+   when it is absent the page falls back to the method status and a
+   shortened our_note, so the page never breaks on older data. */
 (function () {
   "use strict";
   var D = window.MIRACLE_DATA || {};
@@ -17,16 +21,53 @@
   }
   function statusBadge(f) {
     if (f.our_status === "confirmed")
-      return '<span class="badge ok">Confirmed by our recount</span>';
+      return '<span class="badge ok">Confirmed</span>';
     if (f.our_status === "differs")
-      return '<span class="badge bad">Differs from our recount</span>';
+      return '<span class="badge bad">Differs</span>';
     return '<span class="badge warn">Cannot verify</span>';
   }
-  function confBadge(f) {
-    var c = f.confidence || "";
-    if (c.indexOf("confirmed") === 0) return '<span class="badge ok">' + esc(c) + "</span>";
-    if (c === "contested") return '<span class="badge bad">contested</span>';
-    return '<span class="badge warn">' + esc(c) + "</span>";
+
+  /* ---------- assumption sets ---------- */
+  var assumptionSets = {};
+  (D.assumption_sets || []).forEach(function (s) { assumptionSets[s.id] = s; });
+  function assumptionLabel(id) {
+    if (!id) return "—";
+    var s = assumptionSets[id];
+    return s ? esc(id) + " — " + esc(s.name) : esc(id);
+  }
+  /* One-line reconciliation reason: the new assumptions.reason when present,
+     otherwise the first sentence (or first ~160 chars) of our_note. */
+  function reasonLine(f) {
+    if (f.assumptions && f.assumptions.reason) return f.assumptions.reason;
+    var n = (f.our_note || "").trim();
+    if (!n) return "";
+    var cut = n.indexOf(". ");
+    var one = cut > 0 && cut < 200 ? n.slice(0, cut + 1) : n.slice(0, 160);
+    return one.length < n.length && one.slice(-1) !== "." ? one + "…" : one;
+  }
+  function assumptionCell(f) {
+    var a = f.assumptions;
+    if (a) {
+      var h = '<div class="assume-label">' + assumptionLabel(a.our_set) + "</div>";
+      if (a.scholar_set && a.scholar_set !== a.our_set)
+        h += '<div class="assume-sub">scholar: ' + assumptionLabel(a.scholar_set) + "</div>";
+      if (a.reconciles_under && a.reconciles_under.length)
+        h += '<div class="assume-sub">reconciles under: ' + a.reconciles_under.map(esc).join(", ") + "</div>";
+      if (a.numbers_by_set) {
+        var parts = Object.keys(a.numbers_by_set).sort().map(function (k) {
+          var v = a.numbers_by_set[k];
+          var vs = Array.isArray(v) ? v.map(function (n) { return n == null ? "—" : String(n); }).join(" / ") : String(v);
+          return esc(k) + ": " + esc(vs);
+        });
+        if (parts.length) h += '<div class="assume-sub">' + parts.join(" · ") + "</div>";
+      }
+      if (a.reason) h += '<div class="reason">' + esc(a.reason) + "</div>";
+      return h;
+    }
+    var h2 = '<div class="assume-label">Method: ' + esc(f.method_status || "unstated") + "</div>";
+    var r = reasonLine(f);
+    if (r) h2 += '<div class="reason">' + esc(r) + "</div>";
+    return h2;
   }
 
   /* ---------- tabs ---------- */
@@ -41,11 +82,11 @@
     });
   });
 
-  /* ---------- hero stats ---------- */
+  /* ---------- research header ---------- */
   (function stats() {
     var c = D.corpus || {};
     var items = [
-      [c.words ? c.words.toLocaleString("en-US") : "77,429", "words in the corpus"],
+      [c.words ? c.words.toLocaleString("en-US") : "77,429", "words"],
       [c.verses ? c.verses.toLocaleString("en-US") : "6,236", "verses"],
       [c.surahs || 114, "surahs"],
       [(D.names || []).length || 99, "Names of God"],
@@ -53,8 +94,33 @@
       [(D.findings || []).length || 64, "findings reviewed"]
     ];
     $("stats").innerHTML = items.map(function (it) {
-      return '<div class="stat"><b>' + esc(it[0]) + "</b><span>" + esc(it[1]) + "</span></div>";
-    }).join("");
+      return "<span><b>" + esc(it[0]) + "</b> " + esc(it[1]) + "</span>";
+    }).join(" · ");
+    var all = D.findings || [];
+    var t = { confirmed: 0, differs: 0, cannot_verify: 0 };
+    all.forEach(function (f) { if (t[f.our_status] != null) t[f.our_status]++; });
+    var tl = $("tally-line");
+    if (tl && all.length)
+      tl.textContent = t.confirmed + " confirmed · " + t.differs + " differ · " +
+        t.cannot_verify + " cannot verify";
+  })();
+
+  /* ---------- methodology: assumption sets table ---------- */
+  (function renderAssumptions() {
+    var host = $("assumption-table");
+    if (!host) return;
+    var sets = D.assumption_sets || [];
+    if (!sets.length) {
+      host.innerHTML = "<p class=\"method-note\">Assumption sets are not yet in the data payload " +
+        "(see data/assumption_sets.json in the repo). Findings below fall back to their method status.</p>";
+      return;
+    }
+    var h = '<table class="data-table"><thead><tr><th>Set</th><th>Name</th><th>Definition</th></tr></thead><tbody>';
+    sets.forEach(function (s) {
+      h += "<tr><td><b>" + esc(s.id) + "</b></td><td>" + esc(s.name || "") +
+        "</td><td>" + esc(s.definition || "") + "</td></tr>";
+    });
+    host.innerHTML = h + "</tbody></table>";
   })();
 
   /* ---------- paired counts ---------- */
@@ -290,7 +356,7 @@
   $("graph-scope").addEventListener("change", drawGraph);
   $("graph-edges").addEventListener("change", drawGraph);
 
-  /* ---------- findings: method & locations ---------- */
+  /* ---------- findings: method & locations (collapsed) ---------- */
   function fmtCount(c) {
     if (c == null) return "—";
     if (Array.isArray(c)) return c.join(" / ");
@@ -334,7 +400,38 @@
     return h;
   }
 
-  /* ---------- findings ---------- */
+  /* ---------- findings: data tables ---------- */
+  function sourceCell(f) {
+    var s = f.source || {};
+    var h = esc(s.author || "—");
+    if (s.title) h += '<br><span class="src-title">' + esc(s.title) + "</span>";
+    if (s.year) h += " (" + esc(s.year) + ")";
+    if (s.url) h += '<br><a href="' + esc(s.url) + '" target="_blank" rel="noopener">source</a>';
+    return h;
+  }
+  function findingRow(f) {
+    /* Numbers prefer the recomputed per-set values (consistent with the
+       Assumption column in the same row); fall back to the stored
+       verification counts where a set has no number (e.g. scholar_set null). */
+    var a = f.assumptions;
+    var scholarN = a && a.scholar_set && a.numbers_by_set && a.numbers_by_set[a.scholar_set] != null
+      ? fmtCount(a.numbers_by_set[a.scholar_set])
+      : fmtCount(f.verification_scholar_rule && f.verification_scholar_rule.count);
+    var ourN = a && a.our_set && a.numbers_by_set && a.numbers_by_set[a.our_set] != null
+      ? fmtCount(a.numbers_by_set[a.our_set])
+      : fmtCount(f.verification_root_rule && f.verification_root_rule.count);
+    var h = '<tr class="frow"><td class="c-claim"><b>' + esc(f.claim) + "</b>" +
+      (f.claim_arabic_or_terms ? ' <span class="ar">' + esc(f.claim_arabic_or_terms) + "</span>" : "") +
+      '<div class="cat-tag">' + esc(catLabel(f.category)) + "</div>" +
+      methodBlock(f) + "</td>" +
+      '<td class="c-num">' + esc(scholarN) + "</td>" +
+      '<td class="c-num">' + esc(ourN) + "</td>" +
+      '<td class="c-assume">' + assumptionCell(f) + "</td>" +
+      '<td class="c-verdict">' + statusBadge(f) +
+      (f.confidence ? '<div class="conf">' + esc(f.confidence) + "</div>" : "") + "</td>" +
+      '<td class="c-src">' + sourceCell(f) + "</td></tr>";
+    return h;
+  }
   function renderFindings(section, ids) {
     var q = ($(ids.search).value || "").toLowerCase();
     var cat = $(ids.cat).value, st = $(ids.status).value;
@@ -343,7 +440,9 @@
     var list = inSection.filter(function (f) {
       var hay = (f.claim + " " + (f.claim_arabic_or_terms || "") + " " +
         ((f.source && f.source.author) || "") + " " + ((f.source && f.source.title) || "") + " " +
-        (f.scholar_method || "") + " " + (f.exceptions || "")).toLowerCase();
+        (f.scholar_method || "") + " " + (f.exceptions || "") + " " +
+        (f.assumptions && f.assumptions.reason ? f.assumptions.reason : "") + " " +
+        (f.our_note || "")).toLowerCase();
       if (q && hay.indexOf(q) === -1) return false;
       if (cat !== "all" && f.category !== cat) return false;
       if (st !== "all" && f.our_status !== st) return false;
@@ -359,22 +458,13 @@
       list.length + ". Overall: " + all.length + " findings in total (" +
       overall.confirmed + " confirmed · " + overall.differs + " differ · " +
       overall.cannot_verify + " cannot verify).";
-    var html = "";
-    list.forEach(function (f) {
-      var s = f.source || {};
-      html += '<article class="finding"><h3>' + esc(f.claim) +
-        (f.claim_arabic_or_terms ? ' <span class="ar">' + esc(f.claim_arabic_or_terms) + "</span>" : "") + "</h3>" +
-        '<div class="label-row"><span class="badge cat">' + esc(catLabel(f.category)) + "</span>" +
-        statusBadge(f) + confBadge(f) + "</div>" +
-        '<p class="meta"><b>Source:</b> ' + esc(s.author || "—") + " — " + esc(s.title || "") +
-        (s.year ? " (" + esc(s.year) + ")" : "") +
-        (s.url ? ' · <a href="' + esc(s.url) + '" target="_blank" rel="noopener">source link</a>' : "") + "</p>" +
-        "<p><b>Corpus &amp; method:</b> " + esc(f.corpus_and_method || "Method not stated by the source.") + "</p>" +
-        '<p class="note"><b>Our recount:</b> ' + esc(f.our_note || "") + "</p>" +
-        methodBlock(f) +
-        "</article>";
-    });
-    $(ids.list).innerHTML = html || "<p>No findings match those filters.</p>";
+    var html = list.length
+      ? '<div class="table-scroll"><table class="data-table f-table"><thead><tr>' +
+        "<th>Claim</th><th>Scholar's number</th><th>Our number</th>" +
+        "<th>Assumption</th><th>Verdict</th><th>Source</th></tr></thead><tbody>" +
+        list.map(findingRow).join("") + "</tbody></table></div>"
+      : "<p>No findings match those filters.</p>";
+    $(ids.list).innerHTML = html;
   }
   function renderScholarFindings() {
     renderFindings("scholarly", { search: "finding-search", cat: "finding-cat",
