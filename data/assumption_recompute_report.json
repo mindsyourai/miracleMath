@@ -1,0 +1,2470 @@
+{
+ "sets": [
+  {
+   "id": "A1",
+   "name": "Standard root rule",
+   "definition": "Count by QAC ROOT, all forms, prefixes/suffixes in, the 112 unnumbered basmalahs excluded (only 1:1 and 27:30 count); where the root covers other senses, narrow by lemma to the intended sense as documented per finding; where the claim is about a lemma or a form subset, that subset's number is given instead (METHODS.md convention). For corpus totals, the QAC word unit."
+  },
+  {
+   "id": "A2",
+   "name": "Lemma rule",
+   "definition": "Count by QAC LEM, all forms, prefixes/suffixes in, unnumbered basmalahs excluded as in A1."
+  },
+  {
+   "id": "A3",
+   "name": "Surface-form rule",
+   "definition": "Count exact surface forms on the Tanzil skeleton text — the forms listed in the finding's selection where one is documented (singular-only, bare-form, narrow or plural selections), otherwise the plain surface reading of the claimed word; unnumbered basmalahs excluded as in A1."
+  },
+  {
+   "id": "A4",
+   "name": "Letter rule",
+   "definition": "Count base letters on the Tanzil Uthmani text under the project letter convention (alef wasla counts as a letter; dagger alif, small waw and small yeh are marks, not letters; shaddah counts once); unnumbered basmalahs excluded."
+  },
+  {
+   "id": "A5",
+   "name": "Scholar's stated rule",
+   "definition": "The counting rule as stated in the scholar's own source, applied to the corpus (per-finding; null where the source states no counting rule)."
+  },
+  {
+   "id": "A6",
+   "name": "Scholar's reconstructed rule",
+   "definition": "The specific selection or exclusion documented in the finding's scholar_method that reproduces the scholar's number (per-finding; null where no reproducing rule was found)."
+  },
+  {
+   "id": "A7",
+   "name": "Basmalah-included variant",
+   "definition": "As the finding's primary rule (A1/A2/A3/A4 as applicable), but with the 112 unnumbered basmalahs counted in."
+  }
+ ],
+ "values": {
+  "dunya_lem": 115,
+  "akhira_fem_stems": 115,
+  "akhira_lem_A^xir": 155,
+  "dunya_surf": 115,
+  "akhira_surf": 115,
+  "jan_lem_all": 147,
+  "jan_sing": 70,
+  "jan_plur": 69,
+  "jan_dual": 8,
+  "jan_sing_bare": 66,
+  "jahannam_lem": 77,
+  "garden_exact_4forms": 77,
+  "jahannam_substr": 77,
+  "devils_root_$Tn": 88,
+  "devils_lem_$ayoTa`n": 88,
+  "angels_lem_malak": 88,
+  "day_root_total": 405,
+  "day_yawma_idhin": 70,
+  "day_A1": 475,
+  "day_lem_yawom": 405,
+  "day_sing": 375,
+  "day_sing_bare": 365,
+  "day_surf_set": 365,
+  "month_root_$hr": 21,
+  "month_surf": 12,
+  "salawat_plur_stems": 5,
+  "salawat_lem_all": 83,
+  "salawat_surf": 5,
+  "sea_lem_baHor": 41,
+  "land_sense": 12,
+  "sea_surf_def_sing": 32,
+  "land_surf_bar": 21,
+  "man_lem_rajul": 29,
+  "man_root": 57,
+  "woman_lem_{mora>at": 26,
+  "woman_root": 85,
+  "man_sing": 24,
+  "woman_sing": 24,
+  "man_surf": 24,
+  "woman_surf": 24,
+  "life_root_Hyy": 184,
+  "life_noun_Hayaw`p": 76,
+  "death_root_mwt": 165,
+  "death_noun_mawot": 50,
+  "life_surf_family": 125,
+  "death_surf_family": 171,
+  "sun_root_$ms": 33,
+  "moon_root_qmr": 27,
+  "light_lem_nuwr": 43,
+  "light_lem_muniyr": 6,
+  "sun_surf": 33,
+  "moon_surf": 27,
+  "light_simple_forms": 33,
+  "light_substr": 46,
+  "muhammad_lem": 4,
+  "muhammad_surf": 4,
+  "iman_lem": 45,
+  "kufr_lem": 37,
+  "iman_bare": 25,
+  "kufr_bare": 25,
+  "zakah_lem": 32,
+  "bless_root_brk": 32,
+  "zak_surf": 67,
+  "brk_surf": 5,
+  "say_IMPV_2MS": 332,
+  "they_said_PERF_3MP": 332,
+  "say_surf_qul": 333,
+  "they_said_surf": 332,
+  "plant_root_nbt": 26,
+  "tree_root_$jr": 27,
+  "tree_sense": 26,
+  "plant_surf": 11,
+  "tree_surf": 27,
+  "reward_root_jzy": 118,
+  "reward_sense": 117,
+  "forgive_root_gfr": 234,
+  "reward_surf_jza": 48,
+  "forgive_surf_mgfr": 28,
+  "guidance_lem_hudFY": 85,
+  "mercy_lem_raHomap": 114,
+  "guidance_bare": 79,
+  "mercy_bare": 79,
+  "tongue_root_lsn": 25,
+  "admon_root_wEZ": 25,
+  "tongue_surf": 15,
+  "sermon_surf": 9,
+  "wine_lem_xamor": 6,
+  "intox_root_skr": 7,
+  "wine_surf": 7,
+  "intox_surf": 4,
+  "mind_root_Eql": 49,
+  "mind_surf": 49,
+  "benefit_root_nfE": 50,
+  "corrupt_root_fsd": 50,
+  "benefit_surf": 45,
+  "corrupt_surf": 11,
+  "love_root_Hbb": 95,
+  "love_sense": 83,
+  "obed_root_TwE": 129,
+  "obed_sense": 87,
+  "love_surf": 153,
+  "obed_surf": 16,
+  "maseer_lem": 28,
+  "forever_lem": 28,
+  "refuge_surf": 28,
+  "forever_surf": 29,
+  "disaster_root_Swb": 77,
+  "disaster_sense": 75,
+  "thanks_root_$kr": 75,
+  "disaster_surf": 11,
+  "thanks_surf": 47,
+  "distress_root_Dyq": 13,
+  "tranquil_root_Tmn": 13,
+  "trouble_surf": 7,
+  "peace_surf": 3,
+  "treach_root_xwn": 16,
+  "foul_root_xbv": 16,
+  "treach_surf": 2,
+  "foul_surf": 13,
+  "righteous_surf": 6,
+  "wicked_surf": 3,
+  "wicked_lem_fuj~aAr": 4,
+  "summer_root_Syf": 1,
+  "winter_root_$tw": 1,
+  "heat_root_Hrr": 15,
+  "cold_root_brd": 5,
+  "summer_surf": 1,
+  "winter_surf_skeleton_shta": 3,
+  "insan_lem": 71,
+  "insan_surf": 65,
+  "qaf_s50": 57,
+  "qaf_s42": 57,
+  "nun_s68_incl_basm": 132,
+  "nun_s68_excl_basm": 131,
+  "sad_s7": 98,
+  "sad_s19": 26,
+  "sad_s38": 29,
+  "muq_surahs": 29,
+  "muq_distinct": 14,
+  "muq_v1_letters": 75,
+  "muq_bad_openings": 0,
+  "all28_verses": [
+   "3:154",
+   "48:29"
+  ],
+  "fasq_len_project": 10,
+  "fasq_len_dagger": 11,
+  "longest_project": 11,
+  "longest_dagger_tied_n": 4,
+  "seven_heavens_verses": 7,
+  "seven_heavens_surf_verses": 7,
+  "basmalah_letters": 19,
+  "basmalah_occurrences": 114,
+  "allah_qac_lem": 2699,
+  "allah_root_Alh": 2851,
+  "allah_surf_strict": 2155,
+  "allah_surf_strict_incl": 2267,
+  "allah_tanz_lem_excl": 2699,
+  "allah_tanz_lem_incl": 2811,
+  "allah_in_9_129": 1,
+  "allah_minus_9_129": 2698,
+  "rahman_qac_lem": 57,
+  "rahim_qac_lem": 116,
+  "rahman_tanz_excl": 57,
+  "rahman_tanz_incl": 169,
+  "rahim_tanz_excl": 115,
+  "rahim_tanz_incl": 227,
+  "rahim_in_9_128": 1,
+  "rahim_minus_9_128": 114,
+  "ism_lem_{som}": 39,
+  "ism_full_spelling": 19,
+  "first_rev_qac_words": 20,
+  "first_rev_tok_excl": 20,
+  "first_rev_tok_incl": 24,
+  "first_rev_letters_excl": 76,
+  "first_rev_letters_incl": 95,
+  "s96_verses": 19,
+  "s96_letters_excl": 285,
+  "s96_letters_incl": 304,
+  "s110_words": 19,
+  "s110_words_incl": 23,
+  "s110_v1_letters_excl": 19,
+  "s110_v1_letters_incl": 38,
+  "checksum_excl_basm": 118252,
+  "checksum_incl_basm": 118340,
+  "checksum_recon": 118123,
+  "verses_std": 6236,
+  "verses_khalifa": 6346,
+  "verses_basm_only": 6348,
+  "qac_words": 77429,
+  "qac_segments": 128219,
+  "tanzil_tokens_incl": 77881,
+  "tanzil_tokens_excl": 77433,
+  "letters_incl_basm": 327514,
+  "letters_excl_basm": 325386,
+  "unique_surf_raw": 18994,
+  "unique_surf_skel": 14881,
+  "hapax_surf_raw": 12005,
+  "hapax_surf_skel": 8709,
+  "unique_stem_forms": 12113,
+  "unique_roots": 1642,
+  "unique_lemmas_all_segments": 4832,
+  "unique_stem_lemmas": 4832,
+  "hapax_stem_lemmas": 1994,
+  "hapax_roots": 395,
+  "root_Alh": 2851,
+  "abdulbaqi_pipeline_roots": 1641,
+  "min_lem": 3226,
+  "ma_lem": 2565,
+  "min_skel_conflated": 3314,
+  "quran_lem": 70,
+  "quran_narrow": 59,
+  "quran_substr": 71
+ },
+ "spot_check_failures": [],
+ "cross_checks": [
+  {
+   "finding": "dunya-akhira-115",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    115,
+    115
+   ],
+   "computed": [
+    115,
+    115
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "dunya-akhira-115",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    115,
+    115
+   ],
+   "computed": [
+    115,
+    115
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "jannah-jahannam-77",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    147,
+    77
+   ],
+   "computed": [
+    147,
+    77
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "jannah-jahannam-77",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    77,
+    77
+   ],
+   "computed": [
+    77,
+    77
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "shaytan-angels-88",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    88,
+    88
+   ],
+   "computed": [
+    88,
+    88
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "shaytan-angels-88",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    88,
+    88
+   ],
+   "computed": [
+    88,
+    88
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "day-365",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 475,
+   "computed": 475,
+   "verdict": "agree"
+  },
+  {
+   "finding": "day-365",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": 365,
+   "computed": 365,
+   "verdict": "agree"
+  },
+  {
+   "finding": "month-12",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 21,
+   "computed": 21,
+   "verdict": "agree"
+  },
+  {
+   "finding": "month-12",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": 12,
+   "computed": 12,
+   "verdict": "agree"
+  },
+  {
+   "finding": "salawat-5",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 5,
+   "computed": 5,
+   "verdict": "agree"
+  },
+  {
+   "finding": "salawat-5",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": 5,
+   "computed": 5,
+   "verdict": "agree"
+  },
+  {
+   "finding": "sea-land-32-13",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    41,
+    12
+   ],
+   "computed": [
+    41,
+    12
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "man-woman-24-24",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    57,
+    85
+   ],
+   "computed": [
+    57,
+    85
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "man-woman-24-24",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    24,
+    24
+   ],
+   "computed": [
+    24,
+    24
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "life-death-145",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    184,
+    165
+   ],
+   "computed": [
+    184,
+    165
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "sun-moon-33-27",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    33,
+    27,
+    43
+   ],
+   "computed": [
+    33,
+    43,
+    27
+   ],
+   "verdict": "partial (overlap)"
+  },
+  {
+   "finding": "sun-moon-33-27",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": [
+    33,
+    33,
+    27
+   ],
+   "computed": [
+    33,
+    33,
+    27
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "muhammad-4",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 4,
+   "computed": 4,
+   "verdict": "agree"
+  },
+  {
+   "finding": "muhammad-4",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": 4,
+   "computed": 4,
+   "verdict": "agree"
+  },
+  {
+   "finding": "iman-kufr-25",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    45,
+    37
+   ],
+   "computed": [
+    45,
+    37
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "iman-kufr-25",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": [
+    25,
+    25
+   ],
+   "computed": [
+    25,
+    25
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "zakah-blessing-32",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    32,
+    32
+   ],
+   "computed": [
+    32,
+    32
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "zakah-blessing-32",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    32,
+    32
+   ],
+   "computed": [
+    32,
+    32
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "say-they-said-332",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    332,
+    332
+   ],
+   "computed": [
+    332,
+    332
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "say-they-said-332",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    332,
+    332
+   ],
+   "computed": [
+    332,
+    332
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "plant-tree-26",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    26,
+    26
+   ],
+   "computed": [
+    26,
+    26
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "plant-tree-26",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    26,
+    26
+   ],
+   "computed": [
+    26,
+    26
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "reward-forgiveness-117-234",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    117,
+    234
+   ],
+   "computed": [
+    117,
+    234
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "reward-forgiveness-117-234",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    117,
+    234
+   ],
+   "computed": [
+    117,
+    234
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "guidance-mercy-79",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    79,
+    79
+   ],
+   "computed": [
+    79,
+    79
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "guidance-mercy-79",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    79,
+    79
+   ],
+   "computed": [
+    79,
+    79
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "tongue-sermon-25",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    25,
+    25
+   ],
+   "computed": [
+    25,
+    25
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "tongue-sermon-25",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    25,
+    25
+   ],
+   "computed": [
+    25,
+    25
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "wine-intoxication-6",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    6,
+    7
+   ],
+   "computed": [
+    6,
+    7
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "mind-light-49",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    49,
+    43
+   ],
+   "computed": [
+    49,
+    43
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "benefit-corrupt-50",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    50,
+    50
+   ],
+   "computed": [
+    50,
+    50
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "benefit-corrupt-50",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    50,
+    50
+   ],
+   "computed": [
+    50,
+    50
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "love-obedience-83",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    83,
+    87
+   ],
+   "computed": [
+    83,
+    87
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "refuge-forever-28",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    28,
+    28
+   ],
+   "computed": [
+    28,
+    28
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "refuge-forever-28",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    28,
+    28
+   ],
+   "computed": [
+    28,
+    28
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "disaster-thanks-75",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    75,
+    75
+   ],
+   "computed": [
+    75,
+    75
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "disaster-thanks-75",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    75,
+    75
+   ],
+   "computed": [
+    75,
+    75
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "trouble-peace-13",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    13,
+    13
+   ],
+   "computed": [
+    13,
+    13
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "trouble-peace-13",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    13,
+    13
+   ],
+   "computed": [
+    13,
+    13
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "treachery-foul-16",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    16,
+    16
+   ],
+   "computed": [
+    16,
+    16
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "treachery-foul-16",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    16,
+    16
+   ],
+   "computed": [
+    16,
+    16
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "righteous-wicked-6-3",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    6,
+    4
+   ],
+   "computed": [
+    6,
+    4
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "righteous-wicked-6-3",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": [
+    6,
+    3
+   ],
+   "computed": [
+    6,
+    3
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "summer-winter-5",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": [
+    1,
+    1
+   ],
+   "computed": [
+    1,
+    1
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "human-being-65",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 65,
+   "computed": 65,
+   "verdict": "agree"
+  },
+  {
+   "finding": "human-being-65",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": 65,
+   "computed": 65,
+   "verdict": "agree"
+  },
+  {
+   "finding": "qaf-57-57",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": [
+    57,
+    57
+   ],
+   "computed": [
+    57,
+    57
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "nun-132-vs-133",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": 133,
+   "computed": 133,
+   "verdict": "agree"
+  },
+  {
+   "finding": "sad-153-vs-152",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": [
+    97,
+    26,
+    29
+   ],
+   "computed": [
+    97,
+    26,
+    29
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "muqattaat-structure-29-14-78",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": [
+    29,
+    14,
+    75
+   ],
+   "computed": [
+    29,
+    14,
+    75
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "all-28-letters-verses",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": [
+    28,
+    28
+   ],
+   "computed": [
+    28,
+    28
+   ],
+   "verdict": "agree"
+  },
+  {
+   "finding": "seven-heavens-7",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 7,
+   "computed": 7,
+   "verdict": "agree"
+  },
+  {
+   "finding": "seven-heavens-7",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": 7,
+   "computed": 7,
+   "verdict": "agree"
+  },
+  {
+   "finding": "allah-2699",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 2699,
+   "computed": 2851,
+   "verdict": "MISMATCH"
+  },
+  {
+   "finding": "allah-2699",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": 2698,
+   "computed": 2698,
+   "verdict": "agree"
+  },
+  {
+   "finding": "rahman-57-rahim-115",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 116,
+   "computed": [
+    57,
+    116
+   ],
+   "verdict": "partial (stored value is one part of the computed list)"
+  },
+  {
+   "finding": "rahman-57-rahim-115",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": 114,
+   "computed": [
+    57,
+    114
+   ],
+   "verdict": "partial (stored value is one part of the computed list)"
+  },
+  {
+   "finding": "ism-19",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 39,
+   "computed": 39,
+   "verdict": "agree"
+  },
+  {
+   "finding": "ism-19",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": 19,
+   "computed": 19,
+   "verdict": "agree"
+  },
+  {
+   "finding": "first-revelation-words-19",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 20,
+   "computed": 20,
+   "verdict": "agree"
+  },
+  {
+   "finding": "surah-96-19-verses-304-letters",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": 304,
+   "computed": [
+    19,
+    304
+   ],
+   "verdict": "partial (stored value is one part of the computed list)"
+  },
+  {
+   "finding": "surah-110-19-words",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 19,
+   "computed": [
+    19,
+    null
+   ],
+   "verdict": "partial (stored value is one part of the computed list)"
+  },
+  {
+   "finding": "verse-number-checksum-118123",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 118340,
+   "computed": 118252,
+   "verdict": "MISMATCH"
+  },
+  {
+   "finding": "verse-number-checksum-118123",
+   "set": "A6",
+   "field": "verification_scholar_rule",
+   "stored": 118123,
+   "computed": 118123,
+   "verdict": "agree"
+  },
+  {
+   "finding": "khalifa-verse-total-6346",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 6236,
+   "computed": 6236,
+   "verdict": "agree"
+  },
+  {
+   "finding": "khalifa-verse-total-6346",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": 6346,
+   "computed": 6346,
+   "verdict": "agree"
+  },
+  {
+   "finding": "qac-word-count-77429",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 77429,
+   "computed": 77429,
+   "verdict": "agree"
+  },
+  {
+   "finding": "qac-word-count-77429",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": 77429,
+   "computed": 77429,
+   "verdict": "agree"
+  },
+  {
+   "finding": "dukes-unique-words",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 4832,
+   "computed": [
+    null,
+    null,
+    1642,
+    null
+   ],
+   "verdict": "MISMATCH"
+  },
+  {
+   "finding": "root-frequency-studies",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 1642,
+   "computed": [
+    1642,
+    2851
+   ],
+   "verdict": "partial (stored value is one part of the computed list)"
+  },
+  {
+   "finding": "root-frequency-studies",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": 1641,
+   "computed": [
+    1641,
+    2851
+   ],
+   "verdict": "partial (stored value is one part of the computed list)"
+  },
+  {
+   "finding": "most-frequent-min-3226",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 3226,
+   "computed": [
+    3226,
+    2699,
+    2565
+   ],
+   "verdict": "partial (stored value is one part of the computed list)"
+  },
+  {
+   "finding": "classical-word-totals",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 77433,
+   "computed": 77429,
+   "verdict": "MISMATCH"
+  },
+  {
+   "finding": "rdsq-words-77430",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 77433,
+   "computed": 77429,
+   "verdict": "MISMATCH"
+  },
+  {
+   "finding": "rdsq-words-77430",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": 77430,
+   "computed": 77433,
+   "verdict": "MISMATCH"
+  },
+  {
+   "finding": "botani-2012-distributions",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 6236,
+   "computed": [
+    6236,
+    77429,
+    325386
+   ],
+   "verdict": "partial (stored value is one part of the computed list)"
+  },
+  {
+   "finding": "quran-word-57-khalifa",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 70,
+   "computed": 70,
+   "verdict": "agree"
+  },
+  {
+   "finding": "quran-word-57-khalifa",
+   "set": "A5",
+   "field": "verification_scholar_rule",
+   "stored": 59,
+   "computed": 59,
+   "verdict": "agree"
+  },
+  {
+   "finding": "hapax-legomena",
+   "set": "A1",
+   "field": "verification_root_rule",
+   "stored": 1994,
+   "computed": 395,
+   "verdict": "MISMATCH"
+  }
+ ],
+ "tally": {
+  "confirmed": 37,
+  "differs": 17,
+  "cannot_verify": 10
+ },
+ "section_tally": {
+  "popular": 29,
+  "scholarly": 35
+ },
+ "reconciliation_coverage": {
+  "findings_with_any_reconciling_set": 40,
+  "reconcile_under_stated_A5": 11,
+  "reconcile_under_reconstructed_A6": 25,
+  "reconcile_under_a_standard_set_A1_A2_A3_A4": 33,
+  "no_reconciling_set_but_counted": 17,
+  "not_a_count": 7
+ },
+ "status_changes": [],
+ "per_finding": {
+  "dunya-akhira-115": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     115,
+     115
+    ],
+    "A2": [
+     115,
+     155
+    ],
+    "A3": [
+     115,
+     115
+    ],
+    "A6": [
+     115,
+     115
+    ]
+   },
+   "reason": "Both sides are 115 under the root rule and the surface rule; the lemma rule gives akhira 155 (the masculine al-akhir and plural forms are a separate lemma)."
+  },
+  "jannah-jahannam-77": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     147,
+     77
+    ],
+    "A2": [
+     147,
+     77
+    ],
+    "A3": [
+     77,
+     77
+    ],
+    "A6": [
+     77,
+     77
+    ]
+   },
+   "reason": "77/77 reproduces only under the sense-blind surface-form rule; sense-correct garden is 66 (bare singular), 70 (lemma singular) or 147 (all gardens) — none is 77."
+  },
+  "shaytan-angels-88": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     88,
+     88
+    ],
+    "A2": [
+     88,
+     88
+    ],
+    "A6": [
+     88,
+     88
+    ]
+   },
+   "reason": "88/88 reproduces under the root rule, the lemma rule and the reconstructed rule (devils by root $Tn, angels by lemma malak)."
+  },
+  "day-365": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A3",
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A1": 475,
+    "A2": 405,
+    "A3": 365,
+    "A5": 365
+   },
+   "reason": "365 is the stated singular, suffix-free selection; the whole root gives 475 (375 singular + 27 plural + 3 dual + 70 yawma'idhin)."
+  },
+  "month-12": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": 21,
+    "A2": 21,
+    "A3": 12,
+    "A6": 12
+   },
+   "reason": "12 is the singular-only selection; the root/lemma total is 21 (12 singular + 2 dual + 7 plural)."
+  },
+  "salawat-5": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": 5,
+    "A2": 83,
+    "A3": 5,
+    "A6": 5
+   },
+   "reason": "5 is the plural surface form صلوات (and the plural stems of the lemma); the whole lemma is 83 words."
+  },
+  "sea-land-32-13": {
+   "scholar_set": null,
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": [
+     41,
+     12
+    ],
+    "A2": [
+     41,
+     12
+    ],
+    "A3": [
+     32,
+     21
+    ]
+   },
+   "reason": "Sea 32 reproduces as definite singular البحر; land 13 reproduces under no rule — sense-correct land is 12, surface البر is 21."
+  },
+  "man-woman-24-24": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     57,
+     85
+    ],
+    "A2": [
+     29,
+     26
+    ],
+    "A3": [
+     24,
+     24
+    ],
+    "A6": [
+     24,
+     24
+    ]
+   },
+   "reason": "24/24 is the singular-only surface selection; root totals are 57/85, singular lemmas 29/26."
+  },
+  "life-death-145": {
+   "scholar_set": null,
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": [
+     184,
+     165
+    ],
+    "A2": [
+     76,
+     50
+    ],
+    "A3": [
+     125,
+     171
+    ]
+   },
+   "reason": "No rule reproduces 145/145 — whole roots 184/165, nouns 76/50, surface families 125/171."
+  },
+  "sun-moon-33-27": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A3",
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     33,
+     43,
+     27
+    ],
+    "A2": [
+     33,
+     43,
+     27
+    ],
+    "A3": [
+     33,
+     33,
+     27
+    ],
+    "A5": [
+     33,
+     33,
+     27
+    ]
+   },
+   "reason": "33/33/27 reproduces under Yahya's stated simple-forms rule and the surface rule; the root/lemma rule gives light 43 (49 with منير)."
+  },
+  "muhammad-4": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": 4,
+    "A2": 4,
+    "A3": 4,
+    "A6": 4
+   },
+   "reason": "4 under every rule tried (surface, lemma and root-narrowed)."
+  },
+  "iman-kufr-25": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A3",
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     45,
+     37
+    ],
+    "A2": [
+     45,
+     37
+    ],
+    "A3": [
+     25,
+     25
+    ],
+    "A5": [
+     25,
+     25
+    ]
+   },
+   "reason": "25/25 is the bare (unsuffixed) noun selection — Yahya's stated '(without genitive)'; lemma totals are 45/37."
+  },
+  "zakah-blessing-32": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     32,
+     32
+    ],
+    "A2": [
+     32,
+     32
+    ],
+    "A3": [
+     67,
+     5
+    ],
+    "A6": [
+     32,
+     32
+    ]
+   },
+   "reason": "32/32 reproduces under the root and lemma rules; plain substrings give 67/5."
+  },
+  "say-they-said-332": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     332,
+     332
+    ],
+    "A2": [
+     332,
+     332
+    ],
+    "A3": [
+     333,
+     332
+    ],
+    "A6": [
+     332,
+     332
+    ]
+   },
+   "reason": "332/332 reproduces under the lemma/POS rule; the plain surface count of قل gives 333 (one non-imperative token)."
+  },
+  "plant-tree-26": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     26,
+     26
+    ],
+    "A2": [
+     26,
+     26
+    ],
+    "A3": [
+     11,
+     27
+    ],
+    "A6": [
+     26,
+     26
+    ]
+   },
+   "reason": "26/26 reproduces under the root rule (tree minus the 4:65 dispute verb); substrings give 11/27."
+  },
+  "reward-forgiveness-117-234": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     117,
+     234
+    ],
+    "A2": [
+     117,
+     234
+    ],
+    "A3": [
+     48,
+     28
+    ],
+    "A6": [
+     117,
+     234
+    ]
+   },
+   "reason": "117/234 reproduces under the root rule (reward minus the jizya tax token); substrings give 48/28."
+  },
+  "guidance-mercy-79": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     79,
+     79
+    ],
+    "A2": [
+     85,
+     114
+    ],
+    "A3": [
+     79,
+     79
+    ],
+    "A6": [
+     79,
+     79
+    ]
+   },
+   "reason": "79/79 is the bare-noun selection (same rule as iman/kufr); lemma totals are 85/114, whole roots 316/339."
+  },
+  "tongue-sermon-25": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     25,
+     25
+    ],
+    "A2": [
+     25,
+     25
+    ],
+    "A3": [
+     15,
+     9
+    ],
+    "A6": [
+     25,
+     25
+    ]
+   },
+   "reason": "25/25 reproduces under the root and lemma rules; substrings give 15/9."
+  },
+  "wine-intoxication-6": {
+   "scholar_set": null,
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": [
+     6,
+     7
+    ],
+    "A2": [
+     6,
+     7
+    ],
+    "A3": [
+     7,
+     4
+    ]
+   },
+   "reason": "Wine 6 reproduces as the noun; intoxication is 7 under every rule tried — no rule gives 6/6."
+  },
+  "mind-light-49": {
+   "scholar_set": null,
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": [
+     49,
+     43
+    ],
+    "A2": [
+     49,
+     43
+    ],
+    "A3": [
+     49,
+     46
+    ]
+   },
+   "reason": "Mind 49 reproduces by root; light is 43 as the noun (49 only if the adjective منير is counted as 'light' — left undecided)."
+  },
+  "benefit-corrupt-50": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     50,
+     50
+    ],
+    "A2": [
+     50,
+     50
+    ],
+    "A3": [
+     45,
+     11
+    ],
+    "A6": [
+     50,
+     50
+    ]
+   },
+   "reason": "Both sides are exactly 50 under the root and lemma rules; the status flip is still unapproved by MK, so the finding stays 'differs'."
+  },
+  "love-obedience-83": {
+   "scholar_set": null,
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": [
+     83,
+     87
+    ],
+    "A2": [
+     83,
+     87
+    ],
+    "A3": [
+     153,
+     16
+    ]
+   },
+   "reason": "Love 83 reproduces (root minus grain); obedience is 87 sense-correct (129 whole root) — no rule gives 83."
+  },
+  "refuge-forever-28": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     28,
+     28
+    ],
+    "A2": [
+     28,
+     28
+    ],
+    "A3": [
+     28,
+     29
+    ],
+    "A6": [
+     28,
+     28
+    ]
+   },
+   "reason": "28/28 reproduces under the root and lemma rules; the ابدا substring gives 29 (the 66:5 عابدات false positive)."
+  },
+  "disaster-thanks-75": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     75,
+     75
+    ],
+    "A2": [
+     75,
+     75
+    ],
+    "A3": [
+     11,
+     47
+    ],
+    "A6": [
+     75,
+     75
+    ]
+   },
+   "reason": "75/75 reproduces under the root and lemma rules (disaster minus the two non-disaster lemmas); substrings give 11/47."
+  },
+  "trouble-peace-13": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     13,
+     13
+    ],
+    "A2": [
+     13,
+     13
+    ],
+    "A3": [
+     7,
+     3
+    ],
+    "A6": [
+     13,
+     13
+    ]
+   },
+   "reason": "13/13 reproduces under the root and lemma rules; substrings give 7/3."
+  },
+  "treachery-foul-16": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     16,
+     16
+    ],
+    "A2": [
+     16,
+     16
+    ],
+    "A3": [
+     2,
+     13
+    ],
+    "A6": [
+     16,
+     16
+    ]
+   },
+   "reason": "16/16 reproduces under the root and lemma rules; substrings give 2/13."
+  },
+  "righteous-wicked-6-3": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     6,
+     4
+    ],
+    "A3": [
+     6,
+     3
+    ],
+    "A6": [
+     6,
+     3
+    ]
+   },
+   "reason": "6/3 reproduces as exact surface forms; under the lemma rule the wicked side is 4 (الفجرة 80:42)."
+  },
+  "summer-winter-5": {
+   "scholar_set": null,
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": [
+     1,
+     1
+    ],
+    "A2": [
+     1,
+     1
+    ],
+    "A3": [
+     1,
+     3
+    ]
+   },
+   "reason": "Summer/winter occur once each (both 106:2); heat 15 / cold 5 — no rule gives 5/5."
+  },
+  "human-being-65": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": 65,
+    "A2": 71,
+    "A3": 65,
+    "A6": 65
+   },
+   "reason": "65 is the انسان surface count (and the انسان subset of the lemma); the whole lemma is 71 (6 collective أناس/أناسيّ)."
+  },
+  "harun-yahya-populariser": {
+   "scholar_set": null,
+   "our_set": null,
+   "reconciles_under": [],
+   "numbers_by_set": {},
+   "reason": "Not a word/letter count — a literature fact (Yahya popularised the paired-count list); no counting assumption applies."
+  },
+  "qaf-57-57": {
+   "scholar_set": "A5",
+   "our_set": "A4",
+   "reconciles_under": [
+    "A4",
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A4": [
+     57,
+     57
+    ],
+    "A5": [
+     57,
+     57
+    ]
+   },
+   "reason": "57/57 reproduces under the project letter convention and Khalifa's stated rule; the basmalahs contain no ق."
+  },
+  "nun-132-vs-133": {
+   "scholar_set": "A5",
+   "our_set": "A4",
+   "reconciles_under": [
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A4": 131,
+    "A5": 133,
+    "A7": 132
+   },
+   "reason": "133 requires Khalifa's stated rule (the spelled-out initial ن و ن counts as two); the written text gives 132 with the basmalah, 131 without it."
+  },
+  "sad-153-vs-152": {
+   "scholar_set": "A5",
+   "our_set": "A4",
+   "reconciles_under": [
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A4": [
+     98,
+     26,
+     29
+    ],
+    "A5": [
+     97,
+     26,
+     29
+    ]
+   },
+   "reason": "152 requires Khalifa's stated textual rule (7:69 read بسطة with س); the Tanzil text reads بصطة, giving 153."
+  },
+  "muqattaat-structure-29-14-78": {
+   "scholar_set": "A5",
+   "our_set": "A4",
+   "reconciles_under": [
+    "A4",
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A4": [
+     29,
+     14,
+     75
+    ],
+    "A5": [
+     29,
+     14,
+     75
+    ]
+   },
+   "reason": "29 surahs, 14 letters, 75 opening letters (78 counting 42:2 عسق) — the stated structure reproduces exactly."
+  },
+  "all-28-letters-verses": {
+   "scholar_set": "A5",
+   "our_set": "A4",
+   "reconciles_under": [
+    "A4",
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A4": [
+     28,
+     28
+    ],
+    "A5": [
+     28,
+     28
+    ]
+   },
+   "reason": "3:154 and 48:29 each have 28 distinct letters and no other verse does."
+  },
+  "longest-word-fasqaynakumuhu": {
+   "scholar_set": null,
+   "our_set": "A4",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A4": 10
+   },
+   "reason": "فأسقيناكموه is 10 letters under the project convention; 11 only if the dagger alif counts as a letter, and then it merely ties for longest (3:17, 4:75, 4:127 also 11)."
+  },
+  "seven-heavens-7": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A2",
+    "A3",
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A1": 7,
+    "A2": 7,
+    "A3": 7,
+    "A5": 7
+   },
+   "reason": "7 verses contain سبع + سماوات under every rule tried."
+  },
+  "basmalah-19-letters-114": {
+   "scholar_set": null,
+   "our_set": "A4",
+   "reconciles_under": [
+    "A4"
+   ],
+   "numbers_by_set": {
+    "A4": [
+     19,
+     114
+    ]
+   },
+   "reason": "19 letters and 114 occurrences reproduce under the project letter convention (alef wasla counts); Khalifa states no letter rule."
+  },
+  "allah-2699": {
+   "scholar_set": "A6",
+   "our_set": "A2",
+   "reconciles_under": [
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": 2851,
+    "A2": 2699,
+    "A3": 2155,
+    "A6": 2698,
+    "A7": 2811
+   },
+   "reason": "2,698 reproduces only under Khalifa's reconstructed rule (lemma count, basmalahs out, 9:129 dropped); the standard text gives 2,699."
+  },
+  "rahman-57-rahim-115": {
+   "scholar_set": "A6",
+   "our_set": "A2",
+   "reconciles_under": [
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     57,
+     116
+    ],
+    "A2": [
+     57,
+     116
+    ],
+    "A3": [
+     57,
+     115
+    ],
+    "A6": [
+     57,
+     114
+    ],
+    "A7": [
+     169,
+     227
+    ]
+   },
+   "reason": "57 reproduces under the lemma rule; 114 needs the 9:128 رحيم dropped (115 on the standard text, 116 by QAC lemma incl. the 48:29 plural)."
+  },
+  "ism-19": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A3",
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": 39,
+    "A2": 39,
+    "A3": 19,
+    "A6": 19
+   },
+   "reason": "19 reproduces only for the full spelling اسم (plural أسماء and contracted بسم excluded); the lemma total is 39."
+  },
+  "first-revelation-words-19": {
+   "scholar_set": null,
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": 20,
+    "A3": 20,
+    "A7": 24
+   },
+   "reason": "20 words under every natural count (24 with the basmalah); 19 would require dropping exactly one word — no such rule is stated."
+  },
+  "first-revelation-letters-76": {
+   "scholar_set": null,
+   "our_set": "A4",
+   "reconciles_under": [
+    "A4"
+   ],
+   "numbers_by_set": {
+    "A4": 76,
+    "A7": 95
+   },
+   "reason": "76 letters excl. the basmalah under the project convention; 95 with it — Khalifa states no letter rule."
+  },
+  "surah-96-19-verses-304-letters": {
+   "scholar_set": "A6",
+   "our_set": "A4",
+   "reconciles_under": [
+    "A6",
+    "A7"
+   ],
+   "numbers_by_set": {
+    "A4": [
+     19,
+     285
+    ],
+    "A6": [
+     19,
+     304
+    ],
+    "A7": [
+     19,
+     304
+    ]
+   },
+   "reason": "19 verses and 304 letters reproduce only with the merged basmalah counted in (285 without it) — the opposite basmalah convention from the 76-letter count for 96:1–5."
+  },
+  "surah-110-19-words": {
+   "scholar_set": null,
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A4"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     19,
+     null
+    ],
+    "A4": [
+     null,
+     19
+    ],
+    "A7": [
+     23,
+     38
+    ]
+   },
+   "reason": "19 words (A1) and 19 letters in 110:1 (A4) both reproduce excl. the basmalah; 23 words / 38 letters with it."
+  },
+  "verse-number-checksum-118123": {
+   "scholar_set": "A6",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A6"
+   ],
+   "numbers_by_set": {
+    "A1": 118252,
+    "A2": 118252,
+    "A6": 118123,
+    "A7": 118340
+   },
+   "reason": "118,123 reproduces only excluding the basmalahs and Khalifa's two deleted verses (9:129 contributes 129); the standard text gives 118,252."
+  },
+  "khalifa-verse-total-6346": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A1": 6236,
+    "A5": 6346,
+    "A7": 6348
+   },
+   "reason": "6,346 is arithmetic under Khalifa's stated rule (6,234 numbered + 112 basmalahs); the standard count is 6,236, or 6,348 with basmalahs counted and no verses deleted."
+  },
+  "khalifa-reception": {
+   "scholar_set": null,
+   "our_set": null,
+   "reconciles_under": [],
+   "numbers_by_set": {},
+   "reason": "Not a word/letter count — a reception-history fact; no counting assumption applies."
+  },
+  "qac-word-count-77429": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [
+    "A1",
+    "A5"
+   ],
+   "numbers_by_set": {
+    "A1": 77429,
+    "A3": 77433,
+    "A5": 77429,
+    "A7": 77881
+   },
+   "reason": "77,429 QAC words reproduces exactly; Tanzil whitespace tokens give 77,433 excl. basmalahs (77,881 incl.) — 4 verses differ by one token each."
+  },
+  "dukes-unique-words": {
+   "scholar_set": null,
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": [
+     null,
+     null,
+     1642,
+     null
+    ],
+    "A2": [
+     null,
+     null,
+     null,
+     4832
+    ],
+    "A3": [
+     18994,
+     null,
+     null,
+     null
+    ]
+   },
+   "reason": "Only the 18,994 unique surface forms reproduce; stems 12,113 (not 12,183), roots 1,642 (not 1,685), lemmas 4,832 (not 3,382)."
+  },
+  "qac-morphology": {
+   "scholar_set": null,
+   "our_set": null,
+   "reconciles_under": [],
+   "numbers_by_set": {},
+   "reason": "Not a word/letter count — a provenance fact about the corpus; no counting assumption applies."
+  },
+  "tanzil-provenance": {
+   "scholar_set": null,
+   "our_set": null,
+   "reconciles_under": [],
+   "numbers_by_set": {},
+   "reason": "Not a word/letter count — a provenance fact; no counting assumption applies."
+  },
+  "text-fabric-quran": {
+   "scholar_set": null,
+   "our_set": null,
+   "reconciles_under": [],
+   "numbers_by_set": {},
+   "reason": "Not a word/letter count — a provenance fact; no counting assumption applies."
+  },
+  "root-frequency-studies": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": [
+     1642,
+     2851
+    ],
+    "A5": [
+     1641,
+     2851
+    ]
+   },
+   "reason": "Alh 2,851 reproduces exactly; the 1,651 root total reproduces under no rule (1,642 by word/segment count, 1,641 by the post's own pipeline)."
+  },
+  "most-frequent-min-3226": {
+   "scholar_set": null,
+   "our_set": "A2",
+   "reconciles_under": [
+    "A1",
+    "A2"
+   ],
+   "numbers_by_set": {
+    "A1": [
+     3226,
+     2699,
+     2565
+    ],
+    "A2": [
+     3226,
+     2699,
+     2565
+    ],
+    "A3": [
+     3314,
+     null,
+     null
+    ]
+   },
+   "reason": "All three figures reproduce exactly under the QAC lemma rule; the Tanzil skeleton count for من is 3,314 because it conflates مِن with مَن."
+  },
+  "classical-word-totals": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": 77429,
+    "A3": 77433,
+    "A7": 77881
+   },
+   "reason": "No modern recount reproduces 77,439 exactly; closest is Tanzil tokens 77,433 (6 below) — within the spread of the classical word-boundary conventions."
+  },
+  "classical-letter-totals": {
+   "scholar_set": "A5",
+   "our_set": "A4",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A4": 325386,
+    "A7": 327514
+   },
+   "reason": "Headline 323,671 (Basra 323,015; variants to 330,733) reproduces under no modern rule — project convention gives 325,386 excl. basmalahs, 327,514 incl."
+  },
+  "rdsq-words-77430": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": 77429,
+    "A3": 77433,
+    "A5": 77433,
+    "A7": 77881
+   },
+   "reason": "RDS-Q's stated rule (Tanzil tokens, basmalahs out) gives 77,433 on this file, not 77,430 — a 3-word gap the document does not explain; QAC words 77,429."
+  },
+  "rdsq-letters-325666": {
+   "scholar_set": "A5",
+   "our_set": "A4",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A4": 325386,
+    "A7": 327514
+   },
+   "reason": "325,666 reproduces under no letter convention tried (project convention 325,386 excl. basmalahs; 327,514 incl.) — a 280-letter gap with no stated rule to explain it."
+  },
+  "botani-2012-distributions": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": [
+     6236,
+     77429,
+     325386
+    ],
+    "A7": [
+     6348,
+     77881,
+     327514
+    ]
+   },
+   "reason": "Verses 6,348 reproduce (6,236 + 112 basmalahs); words 77,878 vs our 77,881 and letters 327,792 vs our 327,514 do not — both gaps unexplained."
+  },
+  "quran-word-57-khalifa": {
+   "scholar_set": "A5",
+   "our_set": "A1",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": 70,
+    "A2": 70,
+    "A3": 59,
+    "A5": 59
+   },
+   "reason": "Khalifa's own stated rule gives 59, not 57 (his table silently also excludes 13:31 and 41:44 on semantic grounds); the lemma total is 70."
+  },
+  "wikiislam-critique": {
+   "scholar_set": null,
+   "our_set": null,
+   "reconciles_under": [],
+   "numbers_by_set": {},
+   "reason": "Not a word/letter count — a critique of counting tactics; no counting assumption applies."
+  },
+  "dukes-atwell-2012": {
+   "scholar_set": null,
+   "our_set": null,
+   "reconciles_under": [],
+   "numbers_by_set": {},
+   "reason": "Not a word/letter count — a bibliographic fact; no counting assumption applies."
+  },
+  "hapax-legomena": {
+   "scholar_set": null,
+   "our_set": "A2",
+   "reconciles_under": [],
+   "numbers_by_set": {
+    "A1": 395,
+    "A2": 1994,
+    "A3": 12005
+   },
+   "reason": "No unit gives ~1,620 — lemma hapax 1,994, surface-form hapax 12,005, roots occurring once 395."
+  }
+ }
+}
