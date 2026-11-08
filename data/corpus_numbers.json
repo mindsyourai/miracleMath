@@ -1,0 +1,109 @@
+{
+  "numbers": [
+    {
+      "id": "surahs",
+      "label": "Surahs",
+      "value": 114,
+      "rule": "Distinct surah numbers in QAC v0.4; Tanzil has 6,236 verse lines across 114 surahs",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "verses",
+      "label": "Verses (ayahs)",
+      "value": 6236,
+      "rule": "Distinct (surah, verse) locations in QAC v0.4; equals the 6,236 Tanzil verse lines and the Kufi ayah-count table",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "words",
+      "label": "Words (QAC v0.4)",
+      "value": 77429,
+      "rule": "One QAC word = one (surah, verse, word) location; a multi-segment word counts once",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "segments",
+      "label": "Segments (QAC v0.4)",
+      "value": 128219,
+      "rule": "One QAC data line = one segment (prefix, stem or suffix)",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "unique_surface_forms",
+      "label": "Unique surface forms",
+      "value": 18994,
+      "rule": "Distinct whitespace-separated tokens in the Tanzil Uthmani text as printed (diacritics kept), 6,236 verse lines incl. the 112 unnumbered basmalahs; excl. basmalahs 18,993",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "unique_stems",
+      "label": "Unique stems (QAC v0.4)",
+      "value": 12113,
+      "rule": "Distinct FORM values on STEM segments in QAC v0.4 (Buckwalter transliteration)",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "unique_roots",
+      "label": "Unique roots (QAC v0.4)",
+      "value": 1642,
+      "rule": "Distinct ROOT: values in QAC v0.4",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "unique_lemmas",
+      "label": "Unique lemmas (QAC v0.4)",
+      "value": 4832,
+      "rule": "Distinct LEM: values in QAC v0.4",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "letters_excl_unnumbered_basmalahs",
+      "label": "Letters (excl. unnumbered basmalahs)",
+      "value": 325386,
+      "rule": "HEADLINE letter figure. Base letters only on the Tanzil Uthmani text; diacritics/tashkil excluded, shaddah counts its letter once, hamza forms count as letters, alef wasla counts, dagger alif / small waw / small yeh are marks, not letters; the 112 unnumbered basmalahs (19 letters each) excluded",
+      "source": "data/letter_count.py"
+    },
+    {
+      "id": "letters_incl_unnumbered_basmalahs",
+      "label": "Letters (incl. unnumbered basmalahs)",
+      "value": 327514,
+      "rule": "Same letter rule as the headline figure, but with the 112 unnumbered basmalahs as printed in the Tanzil text included (+2,128 letters)",
+      "source": "data/letter_count.py"
+    },
+    {
+      "id": "letters_classical_323671",
+      "label": "Letters, classical total (Ibn Abbas report)",
+      "value": 323671,
+      "rule": "Classical report, NOT a script count: Ibn Abbas via al-Suyuti, al-Itqan fi Ulum al-Quran (1/231). Reproduces under no rule tried (325,386 excl. / 327,514 incl.); classical authorities disagree among themselves (Basra 323,015; Mujahid 321,000; Ibn Mas'ud 300,670; Salam Abu Muhammad 340,740). Shown for comparison only.",
+      "source": "al-Suyuti, al-Itqan fi Ulum al-Quran 1/231 (Ibn Abbas report); cf. SeekersGuidance, Shaykh Anas al-Musa"
+    },
+    {
+      "id": "basmalah_letters",
+      "label": "Letters in the Basmalah",
+      "value": 19,
+      "rule": "Letter count of Quran 1:1 under the project letter rule (alef wasla counts)",
+      "source": "data/letter_count.py"
+    },
+    {
+      "id": "basmalah_occurrences",
+      "label": "Basmalah occurrences",
+      "value": 114,
+      "rule": "113 surah openings (every surah except At-Tawbah, 9) + the Basmalah inside verse 27:30; counted on the Tanzil text",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "tanzil_tokens_incl_basmalahs",
+      "label": "Tanzil whitespace tokens (incl. basmalahs)",
+      "value": 77881,
+      "rule": "Whitespace-separated tokens over the 6,236 Tanzil verse lines as printed; 452 more than QAC words (448 basmalah words + 4 segmentation differences)",
+      "source": "data/corpus_numbers_check.py"
+    },
+    {
+      "id": "tanzil_tokens_excl_basmalahs",
+      "label": "Tanzil whitespace tokens (excl. basmalahs)",
+      "value": 77433,
+      "rule": "Whitespace-separated tokens over the 6,236 Tanzil verse lines with the 112 unnumbered basmalahs (4 words each) removed; 4 more than QAC words (segmentation differences)",
+      "source": "data/corpus_numbers_check.py"
+    }
+  ]
+}
