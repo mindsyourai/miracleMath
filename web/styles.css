@@ -138,6 +138,13 @@ main{max-width:1060px;margin:0 auto;padding:8px 20px 40px}
 .finding .label-row{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
 .finding .note{color:var(--muted);font-size:.92rem}
 .finding .note b{color:var(--ink)}
+.finding details.method{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
+.finding details.method summary{cursor:pointer;color:var(--cyan);font-size:.92rem;font-weight:600}
+.finding details.method p{margin:8px 0;font-size:.92rem;color:var(--muted)}
+.finding details.method p b{color:var(--ink)}
+.finding .loc-list{display:block;max-height:180px;overflow:auto;margin-top:4px;
+  font-size:.86rem;line-height:1.7;color:var(--faint);
+  border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:rgba(255,255,255,.02)}
 
 /* method */
 .method-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:18px}
