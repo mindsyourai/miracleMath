@@ -41,6 +41,21 @@ def main():
         assumption_sets = assumption_sets.get("assumption_sets", [])
     if assumption_sets is None:
         assumption_sets = []
+    quran_facts = load_optional("quran_facts.json")
+    corpus_numbers = load_optional("corpus_numbers.json")
+    # Both are wrapped {"facts": [...]} / {"numbers": [...]}; tolerate a
+    # bare list too. Absence is tolerated (Agent A may not have landed yet);
+    # the page then shows a clearly-marked "awaiting data" note.
+    def unwrap(obj, key):
+        if obj is None:
+            return [], False
+        if isinstance(obj, dict):
+            return obj.get(key, []) or [], bool(obj.get("sample"))
+        if isinstance(obj, list):
+            return obj, False
+        return [], False
+    facts, facts_sample = unwrap(quran_facts, "facts")
+    numbers, numbers_sample = unwrap(corpus_numbers, "numbers")
 
     payload = {
         "generated": "2026-11-08",
@@ -68,6 +83,10 @@ def main():
         # passed through whole, so a per-finding "assumptions" field (added
         # by the data agent) reaches the page without a build change.
         "assumption_sets": assumption_sets,
+        "quran_facts": facts,
+        "quran_facts_sample": facts_sample,
+        "corpus_numbers": numbers,
+        "corpus_numbers_sample": numbers_sample,
         "methodology": {
             "roots": roots.get("methodology", {}),
             "names": names.get("methodology", {}),
@@ -101,6 +120,10 @@ def main():
           f"names={len(payload['names'])} verse_edges={len(payload['verse_edges'])} "
           f"surah_edges={len(payload['surah_edges'])} findings={len(payload['findings'])} "
           f"assumption_sets={len(payload['assumption_sets'])} "
+          f"quran_facts={len(payload['quran_facts'])}"
+          f"{' (SAMPLE)' if payload['quran_facts_sample'] else ''} "
+          f"corpus_numbers={len(payload['corpus_numbers'])}"
+          f"{' (SAMPLE)' if payload['corpus_numbers_sample'] else ''} "
           f"findings_with_assumptions={sum(1 for f in payload['findings'] if f.get('assumptions'))}")
 
 
