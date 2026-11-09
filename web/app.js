@@ -28,7 +28,7 @@
       code19: "Code 19", corpus_linguistics: "Corpus linguistics" }[c] || c;
   }
   function sectionLabel(s) {
-    return s === "popular" ? "Popular claims" : "Scholar findings";
+    return s === "popular" ? "Popular claims" : s === "site" ? "Counted by this site" : "Scholar findings";
   }
   function statusBadge(f) {
     if (f.our_status === "confirmed")
@@ -516,7 +516,11 @@
   /* ---------- findings: method & locations (collapsed) ---------- */
   function fmtCount(c) {
     if (c == null) return "—";
-    if (Array.isArray(c)) return c.join(" / ");
+    if (Array.isArray(c)) {
+      var parts = c.map(function (x) { return x == null ? "—" : String(x); });
+      if (parts.every(function (p) { return p === "—"; })) return "—";
+      return parts.join(" / ");
+    }
     return String(c);
   }
   function fmtVer(v) {
@@ -525,12 +529,14 @@
     return v.note ? t + " — " + v.note : t;
   }
   function methodBlock(f) {
+    var mlabel = f.section === "site" ? "Counting rule" : "Scholar's method";
+    var vlabel = f.section === "site" ? "counting rule" : "scholar's rule";
     var h = '<details class="method"><summary>Method &amp; where it occurs</summary>';
-    h += "<p><b>Scholar's method (" + esc(f.method_status || "unstated") + "):</b> " +
+    h += "<p><b>" + mlabel + " (" + esc(f.method_status || "unstated") + "):</b> " +
       esc(f.scholar_method || "Method not stated by the source.") + "</p>";
     if (f.exceptions)
       h += "<p><b>Exceptions:</b> " + esc(f.exceptions) + "</p>";
-    h += "<p><b>Verification — scholar's rule:</b> " + esc(fmtVer(f.verification_scholar_rule)) + "</p>";
+    h += "<p><b>Verification — " + vlabel + ":</b> " + esc(fmtVer(f.verification_scholar_rule)) + "</p>";
     h += "<p><b>Verification — root rule:</b> " + esc(fmtVer(f.verification_root_rule)) + "</p>";
     var locs = (typeof window !== "undefined" && window.MIRACLE_LOCATIONS) || {};
     var loc = locs[f.id];
@@ -620,10 +626,11 @@
     var confirmed = all.filter(function (f) { return f.our_status === "confirmed"; });
     var list = confirmed.filter(function (f) { return matchesFilters(f, q, cat, "all"); });
     var sch = confirmed.filter(function (f) { return f.section === "scholarly"; }).length;
+    var site = confirmed.filter(function (f) { return f.section === "site"; }).length;
     var pop = confirmed.filter(function (f) { return f.section === "popular"; }).length;
     var tally = $("verified-tally");
     if (tally) tally.textContent = confirmed.length + " verified findings — " + sch +
-      " scholarly · " + pop + " popular. Showing " + list.length + ".";
+      " scholarly · " + site + " counted by this site · " + pop + " popular. Showing " + list.length + ".";
     host.innerHTML = findingsTable(list);
   }
   /* Unverified page: differs + cannot_verify only, kept in Scholar / Popular
