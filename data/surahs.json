@@ -1,0 +1,916 @@
+{
+  "surahs": [
+    {
+      "n": 1,
+      "name_tr": "Fâtiha",
+      "name_ar": "الفاتحة",
+      "verses": 7,
+      "type": "Meccan",
+      "recite": "https://quran.com/1"
+    },
+    {
+      "n": 2,
+      "name_tr": "Bakara",
+      "name_ar": "البقرة",
+      "verses": 286,
+      "type": "Medinan",
+      "recite": "https://quran.com/2"
+    },
+    {
+      "n": 3,
+      "name_tr": "Âl-i İmrân",
+      "name_ar": "آل عمران",
+      "verses": 200,
+      "type": "Medinan",
+      "recite": "https://quran.com/3"
+    },
+    {
+      "n": 4,
+      "name_tr": "Nisâ",
+      "name_ar": "النساء",
+      "verses": 176,
+      "type": "Medinan",
+      "recite": "https://quran.com/4"
+    },
+    {
+      "n": 5,
+      "name_tr": "Mâide",
+      "name_ar": "المائدة",
+      "verses": 120,
+      "type": "Medinan",
+      "recite": "https://quran.com/5"
+    },
+    {
+      "n": 6,
+      "name_tr": "En'âm",
+      "name_ar": "الأنعام",
+      "verses": 165,
+      "type": "Meccan",
+      "recite": "https://quran.com/6"
+    },
+    {
+      "n": 7,
+      "name_tr": "A'râf",
+      "name_ar": "الأعراف",
+      "verses": 206,
+      "type": "Meccan",
+      "recite": "https://quran.com/7"
+    },
+    {
+      "n": 8,
+      "name_tr": "Enfâl",
+      "name_ar": "الأنفال",
+      "verses": 75,
+      "type": "Medinan",
+      "recite": "https://quran.com/8"
+    },
+    {
+      "n": 9,
+      "name_tr": "Tevbe",
+      "name_ar": "التوبة",
+      "verses": 129,
+      "type": "Medinan",
+      "recite": "https://quran.com/9"
+    },
+    {
+      "n": 10,
+      "name_tr": "Yûnus",
+      "name_ar": "يونس",
+      "verses": 109,
+      "type": "Meccan",
+      "recite": "https://quran.com/10"
+    },
+    {
+      "n": 11,
+      "name_tr": "Hûd",
+      "name_ar": "هود",
+      "verses": 123,
+      "type": "Meccan",
+      "recite": "https://quran.com/11"
+    },
+    {
+      "n": 12,
+      "name_tr": "Yûsuf",
+      "name_ar": "يوسف",
+      "verses": 111,
+      "type": "Meccan",
+      "recite": "https://quran.com/12"
+    },
+    {
+      "n": 13,
+      "name_tr": "Ra'd",
+      "name_ar": "الرعد",
+      "verses": 43,
+      "type": "Medinan",
+      "recite": "https://quran.com/13"
+    },
+    {
+      "n": 14,
+      "name_tr": "İbrâhîm",
+      "name_ar": "ابراهيم",
+      "verses": 52,
+      "type": "Meccan",
+      "recite": "https://quran.com/14"
+    },
+    {
+      "n": 15,
+      "name_tr": "Hicr",
+      "name_ar": "الحجر",
+      "verses": 99,
+      "type": "Meccan",
+      "recite": "https://quran.com/15"
+    },
+    {
+      "n": 16,
+      "name_tr": "Nahl",
+      "name_ar": "النحل",
+      "verses": 128,
+      "type": "Meccan",
+      "recite": "https://quran.com/16"
+    },
+    {
+      "n": 17,
+      "name_tr": "İsrâ",
+      "name_ar": "الإسراء",
+      "verses": 111,
+      "type": "Meccan",
+      "recite": "https://quran.com/17"
+    },
+    {
+      "n": 18,
+      "name_tr": "Kehf",
+      "name_ar": "الكهف",
+      "verses": 110,
+      "type": "Meccan",
+      "recite": "https://quran.com/18"
+    },
+    {
+      "n": 19,
+      "name_tr": "Meryem",
+      "name_ar": "مريم",
+      "verses": 98,
+      "type": "Meccan",
+      "recite": "https://quran.com/19"
+    },
+    {
+      "n": 20,
+      "name_tr": "Tâhâ",
+      "name_ar": "طه",
+      "verses": 135,
+      "type": "Meccan",
+      "recite": "https://quran.com/20"
+    },
+    {
+      "n": 21,
+      "name_tr": "Enbiyâ",
+      "name_ar": "الأنبياء",
+      "verses": 112,
+      "type": "Meccan",
+      "recite": "https://quran.com/21"
+    },
+    {
+      "n": 22,
+      "name_tr": "Hac",
+      "name_ar": "الحج",
+      "verses": 78,
+      "type": "Medinan",
+      "recite": "https://quran.com/22"
+    },
+    {
+      "n": 23,
+      "name_tr": "Mü'minûn",
+      "name_ar": "المؤمنون",
+      "verses": 118,
+      "type": "Meccan",
+      "recite": "https://quran.com/23"
+    },
+    {
+      "n": 24,
+      "name_tr": "Nûr",
+      "name_ar": "النور",
+      "verses": 64,
+      "type": "Medinan",
+      "recite": "https://quran.com/24"
+    },
+    {
+      "n": 25,
+      "name_tr": "Furkân",
+      "name_ar": "الفرقان",
+      "verses": 77,
+      "type": "Meccan",
+      "recite": "https://quran.com/25"
+    },
+    {
+      "n": 26,
+      "name_tr": "Şuarâ",
+      "name_ar": "الشعراء",
+      "verses": 227,
+      "type": "Meccan",
+      "recite": "https://quran.com/26"
+    },
+    {
+      "n": 27,
+      "name_tr": "Neml",
+      "name_ar": "النمل",
+      "verses": 93,
+      "type": "Meccan",
+      "recite": "https://quran.com/27"
+    },
+    {
+      "n": 28,
+      "name_tr": "Kasas",
+      "name_ar": "القصص",
+      "verses": 88,
+      "type": "Meccan",
+      "recite": "https://quran.com/28"
+    },
+    {
+      "n": 29,
+      "name_tr": "Ankebût",
+      "name_ar": "العنكبوت",
+      "verses": 69,
+      "type": "Meccan",
+      "recite": "https://quran.com/29"
+    },
+    {
+      "n": 30,
+      "name_tr": "Rûm",
+      "name_ar": "الروم",
+      "verses": 60,
+      "type": "Meccan",
+      "recite": "https://quran.com/30"
+    },
+    {
+      "n": 31,
+      "name_tr": "Lokmân",
+      "name_ar": "لقمان",
+      "verses": 34,
+      "type": "Meccan",
+      "recite": "https://quran.com/31"
+    },
+    {
+      "n": 32,
+      "name_tr": "Secde",
+      "name_ar": "السجدة",
+      "verses": 30,
+      "type": "Meccan",
+      "recite": "https://quran.com/32"
+    },
+    {
+      "n": 33,
+      "name_tr": "Ahzâb",
+      "name_ar": "الأحزاب",
+      "verses": 73,
+      "type": "Medinan",
+      "recite": "https://quran.com/33"
+    },
+    {
+      "n": 34,
+      "name_tr": "Sebe'",
+      "name_ar": "سبإ",
+      "verses": 54,
+      "type": "Meccan",
+      "recite": "https://quran.com/34"
+    },
+    {
+      "n": 35,
+      "name_tr": "Fâtır",
+      "name_ar": "فاطر",
+      "verses": 45,
+      "type": "Meccan",
+      "recite": "https://quran.com/35"
+    },
+    {
+      "n": 36,
+      "name_tr": "Yâsîn",
+      "name_ar": "يس",
+      "verses": 83,
+      "type": "Meccan",
+      "recite": "https://quran.com/36"
+    },
+    {
+      "n": 37,
+      "name_tr": "Sâffât",
+      "name_ar": "الصافات",
+      "verses": 182,
+      "type": "Meccan",
+      "recite": "https://quran.com/37"
+    },
+    {
+      "n": 38,
+      "name_tr": "Sâd",
+      "name_ar": "ص",
+      "verses": 88,
+      "type": "Meccan",
+      "recite": "https://quran.com/38"
+    },
+    {
+      "n": 39,
+      "name_tr": "Zümer",
+      "name_ar": "الزمر",
+      "verses": 75,
+      "type": "Meccan",
+      "recite": "https://quran.com/39"
+    },
+    {
+      "n": 40,
+      "name_tr": "Mü'min",
+      "name_ar": "غافر",
+      "verses": 85,
+      "type": "Meccan",
+      "recite": "https://quran.com/40"
+    },
+    {
+      "n": 41,
+      "name_tr": "Fussilet",
+      "name_ar": "فصلت",
+      "verses": 54,
+      "type": "Meccan",
+      "recite": "https://quran.com/41"
+    },
+    {
+      "n": 42,
+      "name_tr": "Şûrâ",
+      "name_ar": "الشورى",
+      "verses": 53,
+      "type": "Meccan",
+      "recite": "https://quran.com/42"
+    },
+    {
+      "n": 43,
+      "name_tr": "Zuhruf",
+      "name_ar": "الزخرف",
+      "verses": 89,
+      "type": "Meccan",
+      "recite": "https://quran.com/43"
+    },
+    {
+      "n": 44,
+      "name_tr": "Duhân",
+      "name_ar": "الدخان",
+      "verses": 59,
+      "type": "Meccan",
+      "recite": "https://quran.com/44"
+    },
+    {
+      "n": 45,
+      "name_tr": "Câsiye",
+      "name_ar": "الجاثية",
+      "verses": 37,
+      "type": "Meccan",
+      "recite": "https://quran.com/45"
+    },
+    {
+      "n": 46,
+      "name_tr": "Ahkâf",
+      "name_ar": "الأحقاف",
+      "verses": 35,
+      "type": "Meccan",
+      "recite": "https://quran.com/46"
+    },
+    {
+      "n": 47,
+      "name_tr": "Muhammed",
+      "name_ar": "محمد",
+      "verses": 38,
+      "type": "Medinan",
+      "recite": "https://quran.com/47"
+    },
+    {
+      "n": 48,
+      "name_tr": "Fetih",
+      "name_ar": "الفتح",
+      "verses": 29,
+      "type": "Medinan",
+      "recite": "https://quran.com/48"
+    },
+    {
+      "n": 49,
+      "name_tr": "Hucurât",
+      "name_ar": "الحجرات",
+      "verses": 18,
+      "type": "Medinan",
+      "recite": "https://quran.com/49"
+    },
+    {
+      "n": 50,
+      "name_tr": "Kâf",
+      "name_ar": "ق",
+      "verses": 45,
+      "type": "Meccan",
+      "recite": "https://quran.com/50"
+    },
+    {
+      "n": 51,
+      "name_tr": "Zâriyât",
+      "name_ar": "الذاريات",
+      "verses": 60,
+      "type": "Meccan",
+      "recite": "https://quran.com/51"
+    },
+    {
+      "n": 52,
+      "name_tr": "Tûr",
+      "name_ar": "الطور",
+      "verses": 49,
+      "type": "Meccan",
+      "recite": "https://quran.com/52"
+    },
+    {
+      "n": 53,
+      "name_tr": "Necm",
+      "name_ar": "النجم",
+      "verses": 62,
+      "type": "Meccan",
+      "recite": "https://quran.com/53"
+    },
+    {
+      "n": 54,
+      "name_tr": "Kamer",
+      "name_ar": "القمر",
+      "verses": 55,
+      "type": "Meccan",
+      "recite": "https://quran.com/54"
+    },
+    {
+      "n": 55,
+      "name_tr": "Rahmân",
+      "name_ar": "الرحمن",
+      "verses": 78,
+      "type": "Medinan",
+      "recite": "https://quran.com/55"
+    },
+    {
+      "n": 56,
+      "name_tr": "Vâkıa",
+      "name_ar": "الواقعة",
+      "verses": 96,
+      "type": "Meccan",
+      "recite": "https://quran.com/56"
+    },
+    {
+      "n": 57,
+      "name_tr": "Hadîd",
+      "name_ar": "الحديد",
+      "verses": 29,
+      "type": "Medinan",
+      "recite": "https://quran.com/57"
+    },
+    {
+      "n": 58,
+      "name_tr": "Mücâdele",
+      "name_ar": "المجادلة",
+      "verses": 22,
+      "type": "Medinan",
+      "recite": "https://quran.com/58"
+    },
+    {
+      "n": 59,
+      "name_tr": "Haşr",
+      "name_ar": "الحشر",
+      "verses": 24,
+      "type": "Medinan",
+      "recite": "https://quran.com/59"
+    },
+    {
+      "n": 60,
+      "name_tr": "Mümtehine",
+      "name_ar": "الممتحنة",
+      "verses": 13,
+      "type": "Medinan",
+      "recite": "https://quran.com/60"
+    },
+    {
+      "n": 61,
+      "name_tr": "Saf",
+      "name_ar": "الصف",
+      "verses": 14,
+      "type": "Medinan",
+      "recite": "https://quran.com/61"
+    },
+    {
+      "n": 62,
+      "name_tr": "Cuma",
+      "name_ar": "الجمعة",
+      "verses": 11,
+      "type": "Medinan",
+      "recite": "https://quran.com/62"
+    },
+    {
+      "n": 63,
+      "name_tr": "Münâfikûn",
+      "name_ar": "المنافقون",
+      "verses": 11,
+      "type": "Medinan",
+      "recite": "https://quran.com/63"
+    },
+    {
+      "n": 64,
+      "name_tr": "Tegâbün",
+      "name_ar": "التغابن",
+      "verses": 18,
+      "type": "Medinan",
+      "recite": "https://quran.com/64"
+    },
+    {
+      "n": 65,
+      "name_tr": "Talâk",
+      "name_ar": "الطلاق",
+      "verses": 12,
+      "type": "Medinan",
+      "recite": "https://quran.com/65"
+    },
+    {
+      "n": 66,
+      "name_tr": "Tahrîm",
+      "name_ar": "التحريم",
+      "verses": 12,
+      "type": "Medinan",
+      "recite": "https://quran.com/66"
+    },
+    {
+      "n": 67,
+      "name_tr": "Mülk",
+      "name_ar": "الملك",
+      "verses": 30,
+      "type": "Meccan",
+      "recite": "https://quran.com/67"
+    },
+    {
+      "n": 68,
+      "name_tr": "Kalem",
+      "name_ar": "القلم",
+      "verses": 52,
+      "type": "Meccan",
+      "recite": "https://quran.com/68"
+    },
+    {
+      "n": 69,
+      "name_tr": "Hâkka",
+      "name_ar": "الحاقة",
+      "verses": 52,
+      "type": "Meccan",
+      "recite": "https://quran.com/69"
+    },
+    {
+      "n": 70,
+      "name_tr": "Meâric",
+      "name_ar": "المعارج",
+      "verses": 44,
+      "type": "Meccan",
+      "recite": "https://quran.com/70"
+    },
+    {
+      "n": 71,
+      "name_tr": "Nûh",
+      "name_ar": "نوح",
+      "verses": 28,
+      "type": "Meccan",
+      "recite": "https://quran.com/71"
+    },
+    {
+      "n": 72,
+      "name_tr": "Cin",
+      "name_ar": "الجن",
+      "verses": 28,
+      "type": "Meccan",
+      "recite": "https://quran.com/72"
+    },
+    {
+      "n": 73,
+      "name_tr": "Müzzemmil",
+      "name_ar": "المزمل",
+      "verses": 20,
+      "type": "Meccan",
+      "recite": "https://quran.com/73"
+    },
+    {
+      "n": 74,
+      "name_tr": "Müddessir",
+      "name_ar": "المدثر",
+      "verses": 56,
+      "type": "Meccan",
+      "recite": "https://quran.com/74"
+    },
+    {
+      "n": 75,
+      "name_tr": "Kıyâmet",
+      "name_ar": "القيامة",
+      "verses": 40,
+      "type": "Meccan",
+      "recite": "https://quran.com/75"
+    },
+    {
+      "n": 76,
+      "name_tr": "İnsân",
+      "name_ar": "الانسان",
+      "verses": 31,
+      "type": "Medinan",
+      "recite": "https://quran.com/76"
+    },
+    {
+      "n": 77,
+      "name_tr": "Mürselât",
+      "name_ar": "المرسلات",
+      "verses": 50,
+      "type": "Meccan",
+      "recite": "https://quran.com/77"
+    },
+    {
+      "n": 78,
+      "name_tr": "Nebe",
+      "name_ar": "النبإ",
+      "verses": 40,
+      "type": "Meccan",
+      "recite": "https://quran.com/78"
+    },
+    {
+      "n": 79,
+      "name_tr": "Naziât",
+      "name_ar": "النازعات",
+      "verses": 46,
+      "type": "Meccan",
+      "recite": "https://quran.com/79"
+    },
+    {
+      "n": 80,
+      "name_tr": "Abese",
+      "name_ar": "عبس",
+      "verses": 42,
+      "type": "Meccan",
+      "recite": "https://quran.com/80"
+    },
+    {
+      "n": 81,
+      "name_tr": "Tekvîr",
+      "name_ar": "التكوير",
+      "verses": 29,
+      "type": "Meccan",
+      "recite": "https://quran.com/81"
+    },
+    {
+      "n": 82,
+      "name_tr": "İnfitâr",
+      "name_ar": "الإنفطار",
+      "verses": 19,
+      "type": "Meccan",
+      "recite": "https://quran.com/82"
+    },
+    {
+      "n": 83,
+      "name_tr": "Mutaffifîn",
+      "name_ar": "المطففين",
+      "verses": 36,
+      "type": "Meccan",
+      "recite": "https://quran.com/83"
+    },
+    {
+      "n": 84,
+      "name_tr": "İnşikâk",
+      "name_ar": "الإنشقاق",
+      "verses": 25,
+      "type": "Meccan",
+      "recite": "https://quran.com/84"
+    },
+    {
+      "n": 85,
+      "name_tr": "Burûc",
+      "name_ar": "البروج",
+      "verses": 22,
+      "type": "Meccan",
+      "recite": "https://quran.com/85"
+    },
+    {
+      "n": 86,
+      "name_tr": "Târık",
+      "name_ar": "الطارق",
+      "verses": 17,
+      "type": "Meccan",
+      "recite": "https://quran.com/86"
+    },
+    {
+      "n": 87,
+      "name_tr": "A'lâ",
+      "name_ar": "الأعلى",
+      "verses": 19,
+      "type": "Meccan",
+      "recite": "https://quran.com/87"
+    },
+    {
+      "n": 88,
+      "name_tr": "Gâşiye",
+      "name_ar": "الغاشية",
+      "verses": 26,
+      "type": "Meccan",
+      "recite": "https://quran.com/88"
+    },
+    {
+      "n": 89,
+      "name_tr": "Fecr",
+      "name_ar": "الفجر",
+      "verses": 30,
+      "type": "Meccan",
+      "recite": "https://quran.com/89"
+    },
+    {
+      "n": 90,
+      "name_tr": "Beled",
+      "name_ar": "البلد",
+      "verses": 20,
+      "type": "Meccan",
+      "recite": "https://quran.com/90"
+    },
+    {
+      "n": 91,
+      "name_tr": "Şems",
+      "name_ar": "الشمس",
+      "verses": 15,
+      "type": "Meccan",
+      "recite": "https://quran.com/91"
+    },
+    {
+      "n": 92,
+      "name_tr": "Leyl",
+      "name_ar": "الليل",
+      "verses": 21,
+      "type": "Meccan",
+      "recite": "https://quran.com/92"
+    },
+    {
+      "n": 93,
+      "name_tr": "Duhâ",
+      "name_ar": "الضحى",
+      "verses": 11,
+      "type": "Meccan",
+      "recite": "https://quran.com/93"
+    },
+    {
+      "n": 94,
+      "name_tr": "İnşirâh",
+      "name_ar": "الشرح",
+      "verses": 8,
+      "type": "Meccan",
+      "recite": "https://quran.com/94"
+    },
+    {
+      "n": 95,
+      "name_tr": "Tîn",
+      "name_ar": "التين",
+      "verses": 8,
+      "type": "Meccan",
+      "recite": "https://quran.com/95"
+    },
+    {
+      "n": 96,
+      "name_tr": "Alak",
+      "name_ar": "العلق",
+      "verses": 19,
+      "type": "Meccan",
+      "recite": "https://quran.com/96"
+    },
+    {
+      "n": 97,
+      "name_tr": "Kadir",
+      "name_ar": "القدر",
+      "verses": 5,
+      "type": "Meccan",
+      "recite": "https://quran.com/97"
+    },
+    {
+      "n": 98,
+      "name_tr": "Beyyine",
+      "name_ar": "البينة",
+      "verses": 8,
+      "type": "Medinan",
+      "recite": "https://quran.com/98"
+    },
+    {
+      "n": 99,
+      "name_tr": "Zilzâl",
+      "name_ar": "الزلزلة",
+      "verses": 8,
+      "type": "Medinan",
+      "recite": "https://quran.com/99"
+    },
+    {
+      "n": 100,
+      "name_tr": "Âdiyât",
+      "name_ar": "العاديات",
+      "verses": 11,
+      "type": "Meccan",
+      "recite": "https://quran.com/100"
+    },
+    {
+      "n": 101,
+      "name_tr": "Kâria",
+      "name_ar": "القارعة",
+      "verses": 11,
+      "type": "Meccan",
+      "recite": "https://quran.com/101"
+    },
+    {
+      "n": 102,
+      "name_tr": "Tekâsür",
+      "name_ar": "التكاثر",
+      "verses": 8,
+      "type": "Meccan",
+      "recite": "https://quran.com/102"
+    },
+    {
+      "n": 103,
+      "name_tr": "Asr",
+      "name_ar": "العصر",
+      "verses": 3,
+      "type": "Meccan",
+      "recite": "https://quran.com/103"
+    },
+    {
+      "n": 104,
+      "name_tr": "Hümeze",
+      "name_ar": "الهمزة",
+      "verses": 9,
+      "type": "Meccan",
+      "recite": "https://quran.com/104"
+    },
+    {
+      "n": 105,
+      "name_tr": "Fîl",
+      "name_ar": "الفيل",
+      "verses": 5,
+      "type": "Meccan",
+      "recite": "https://quran.com/105"
+    },
+    {
+      "n": 106,
+      "name_tr": "Kureyş",
+      "name_ar": "قريش",
+      "verses": 4,
+      "type": "Meccan",
+      "recite": "https://quran.com/106"
+    },
+    {
+      "n": 107,
+      "name_tr": "Maûn",
+      "name_ar": "الماعون",
+      "verses": 7,
+      "type": "Meccan",
+      "recite": "https://quran.com/107"
+    },
+    {
+      "n": 108,
+      "name_tr": "Kevser",
+      "name_ar": "الكوثر",
+      "verses": 3,
+      "type": "Meccan",
+      "recite": "https://quran.com/108"
+    },
+    {
+      "n": 109,
+      "name_tr": "Kâfirûn",
+      "name_ar": "الكافرون",
+      "verses": 6,
+      "type": "Meccan",
+      "recite": "https://quran.com/109"
+    },
+    {
+      "n": 110,
+      "name_tr": "Nasr",
+      "name_ar": "النصر",
+      "verses": 3,
+      "type": "Medinan",
+      "recite": "https://quran.com/110"
+    },
+    {
+      "n": 111,
+      "name_tr": "Tebbet",
+      "name_ar": "المسد",
+      "verses": 5,
+      "type": "Meccan",
+      "recite": "https://quran.com/111"
+    },
+    {
+      "n": 112,
+      "name_tr": "İhlâs",
+      "name_ar": "الإخلاص",
+      "verses": 4,
+      "type": "Meccan",
+      "recite": "https://quran.com/112"
+    },
+    {
+      "n": 113,
+      "name_tr": "Felak",
+      "name_ar": "الفلق",
+      "verses": 5,
+      "type": "Meccan",
+      "recite": "https://quran.com/113"
+    },
+    {
+      "n": 114,
+      "name_tr": "Nâs",
+      "name_ar": "الناس",
+      "verses": 6,
+      "type": "Meccan",
+      "recite": "https://quran.com/114"
+    }
+  ]
+}
