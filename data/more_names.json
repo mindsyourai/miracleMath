@@ -1,0 +1,268 @@
+{
+  "note": "Allah has more than 99 names: the ninety-nine are the names whose memorisation the hadith promises Paradise for, not a count of all His names. These are verified additional names/attributes used of Allah in the Quran, each occurring in the Tanzil Uthmani text and cross-checked in QAC v0.4, and none of them is one of the 99 cards in data/names.json. No total number of additional names is claimed.",
+  "hadith_99_names": {
+    "text": "Allah has ninety-nine Names, one-hundred less one; and he who memorized them all by heart will enter Paradise.",
+    "narrator": "Abu Huraira",
+    "bukhari": "Sahih al-Bukhari 7392 (Book 97, Hadith 21)",
+    "muslim": "Sahih Muslim 2677a (Book 48, Hadith 5) and 2677b (Book 48, Hadith 6)",
+    "source_url": "https://sunnah.com/bukhari/97/21",
+    "source_url_muslim": "https://sunnah.com/muslim/48/5",
+    "caveat": "Neither narration lists the names. The familiar enumerated list of 99 comes from a narration in Jami' at-Tirmidhi 3507; the Bukhari/Muslim narrations give the number and the reward, not the list."
+  },
+  "verified_additional": [
+    {
+      "id": "khayrul_makirin",
+      "transliteration": "Khayrul-Makirin",
+      "meaning_en": "the Best of Planners",
+      "arabic": "خَيْرُ ٱلْمَٰكِرِينَ",
+      "verses": [
+        "3:54",
+        "8:30"
+      ],
+      "verse_count": 2,
+      "qac_cross_check": [
+        {
+          "verse": "3:54",
+          "roots_present": [
+            "mkr",
+            "xyr"
+          ],
+          "roots_missing": []
+        },
+        {
+          "verse": "8:30",
+          "roots_present": [
+            "mkr",
+            "xyr"
+          ],
+          "roots_missing": []
+        }
+      ],
+      "qac_roots_pass": true,
+      "already_in_99": false,
+      "in_99_card_id": null
+    },
+    {
+      "id": "ahsanul_khaliqin",
+      "transliteration": "Ahsanul-Khaliqin",
+      "meaning_en": "the Best of Creators",
+      "arabic": "أَحْسَنُ ٱلْخَٰلِقِينَ",
+      "verses": [
+        "23:14",
+        "37:125"
+      ],
+      "verse_count": 2,
+      "qac_cross_check": [
+        {
+          "verse": "23:14",
+          "roots_present": [
+            "Hsn",
+            "xlq"
+          ],
+          "roots_missing": []
+        },
+        {
+          "verse": "37:125",
+          "roots_present": [
+            "Hsn",
+            "xlq"
+          ],
+          "roots_missing": []
+        }
+      ],
+      "qac_roots_pass": true,
+      "already_in_99": false,
+      "in_99_card_id": null
+    },
+    {
+      "id": "rabbul_arshil_azim",
+      "transliteration": "Rabbul-Arshil-Azim",
+      "meaning_en": "Lord of the Mighty Throne",
+      "arabic": "رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+      "verses": [
+        "9:129",
+        "23:86",
+        "27:26"
+      ],
+      "verse_count": 3,
+      "qac_cross_check": [
+        {
+          "verse": "9:129",
+          "roots_present": [
+            "EZm",
+            "Er$",
+            "rbb"
+          ],
+          "roots_missing": []
+        },
+        {
+          "verse": "23:86",
+          "roots_present": [
+            "EZm",
+            "Er$",
+            "rbb"
+          ],
+          "roots_missing": []
+        },
+        {
+          "verse": "27:26",
+          "roots_present": [
+            "EZm",
+            "Er$",
+            "rbb"
+          ],
+          "roots_missing": []
+        }
+      ],
+      "qac_roots_pass": true,
+      "already_in_99": false,
+      "in_99_card_id": null
+    }
+  ],
+  "more_names": [
+    {
+      "id": "khayrul_makirin",
+      "transliteration": "Khayrul-Makirin",
+      "meaning_en": "the Best of Planners",
+      "arabic": "خَيْرُ ٱلْمَٰكِرِينَ",
+      "verses": [
+        "3:54",
+        "8:30"
+      ],
+      "verse_count": 2,
+      "qac_cross_check": [
+        {
+          "verse": "3:54",
+          "roots_present": [
+            "mkr",
+            "xyr"
+          ],
+          "roots_missing": []
+        },
+        {
+          "verse": "8:30",
+          "roots_present": [
+            "mkr",
+            "xyr"
+          ],
+          "roots_missing": []
+        }
+      ],
+      "qac_roots_pass": true,
+      "already_in_99": false,
+      "in_99_card_id": null
+    },
+    {
+      "id": "ahsanul_khaliqin",
+      "transliteration": "Ahsanul-Khaliqin",
+      "meaning_en": "the Best of Creators",
+      "arabic": "أَحْسَنُ ٱلْخَٰلِقِينَ",
+      "verses": [
+        "23:14",
+        "37:125"
+      ],
+      "verse_count": 2,
+      "qac_cross_check": [
+        {
+          "verse": "23:14",
+          "roots_present": [
+            "Hsn",
+            "xlq"
+          ],
+          "roots_missing": []
+        },
+        {
+          "verse": "37:125",
+          "roots_present": [
+            "Hsn",
+            "xlq"
+          ],
+          "roots_missing": []
+        }
+      ],
+      "qac_roots_pass": true,
+      "already_in_99": false,
+      "in_99_card_id": null
+    },
+    {
+      "id": "rabbul_arshil_azim",
+      "transliteration": "Rabbul-Arshil-Azim",
+      "meaning_en": "Lord of the Mighty Throne",
+      "arabic": "رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+      "verses": [
+        "9:129",
+        "23:86",
+        "27:26"
+      ],
+      "verse_count": 3,
+      "qac_cross_check": [
+        {
+          "verse": "9:129",
+          "roots_present": [
+            "EZm",
+            "Er$",
+            "rbb"
+          ],
+          "roots_missing": []
+        },
+        {
+          "verse": "23:86",
+          "roots_present": [
+            "EZm",
+            "Er$",
+            "rbb"
+          ],
+          "roots_missing": []
+        },
+        {
+          "verse": "27:26",
+          "roots_present": [
+            "EZm",
+            "Er$",
+            "rbb"
+          ],
+          "roots_missing": []
+        }
+      ],
+      "qac_roots_pass": true,
+      "already_in_99": false,
+      "in_99_card_id": null
+    }
+  ],
+  "checked_but_already_in_99": [
+    {
+      "id": "dhul_jalali_wal_ikram",
+      "transliteration": "Dhul-Jalali wal-Ikram",
+      "meaning_en": "Possessor of Majesty and Honour",
+      "arabic": "ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
+      "verses": [
+        "55:27",
+        "55:78"
+      ],
+      "verse_count": 2,
+      "qac_cross_check": [
+        {
+          "verse": "55:27",
+          "roots_present": [
+            "jll",
+            "krm"
+          ],
+          "roots_missing": []
+        },
+        {
+          "verse": "55:78",
+          "roots_present": [
+            "jll",
+            "krm"
+          ],
+          "roots_missing": []
+        }
+      ],
+      "qac_roots_pass": true,
+      "already_in_99": true,
+      "in_99_card_id": 85
+    }
+  ],
+  "checked_but_not_found": [],
+  "verification": "data/more_names_check.py -- Tanzil skeleton search over all 6,236 verses + QAC v0.4 root cross-check at each verse + names.json membership check. Run it to reproduce."
+}
