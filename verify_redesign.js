@@ -3,7 +3,7 @@
    twice — once as the main page (index.html ids present) and once as the
    unverified page (unverified.html ids present) — and asserts the split:
    main page = 37 verified findings only, 0 unverified; unverified page =
-   27 differs/cannot_verify rows only. Also checks the About-the-Quran
+   26 differs/cannot_verify rows only. Also checks the About-the-Quran
    facts table, the corpus-numbers table, pairs (13), Names (99) and graph.
    Supersedes verify_coldload.js, which asserted the old Scholar/Popular
    tab structure (35/29 rows). Usage: node verify_redesign.js */
@@ -85,11 +85,14 @@ function check(name, ok, detail) {
 }
 
 const data = JSON.parse(fs.readFileSync('data/scholar_findings.json', 'utf8'));
+const dataJsRaw = fs.readFileSync('web/data.js', 'utf8');
+const locJsRaw = fs.readFileSync('web/locations.js', 'utf8');
 const findings = data.findings;
 const confirmed = findings.filter((f) => f.our_status === 'confirmed');
 const unverified = findings.filter((f) => f.our_status !== 'confirmed');
 console.log('source data: confirmed=' + confirmed.length + ' unverified=' + unverified.length +
   ' (scholarly confirmed ' + confirmed.filter((f) => f.section === 'scholarly').length +
+  ', site confirmed ' + confirmed.filter((f) => f.section === 'site').length +
   ', popular confirmed ' + confirmed.filter((f) => f.section === 'popular').length + ')');
 
 /* ================= MAIN PAGE ================= */
@@ -97,8 +100,8 @@ console.log('\n--- main page (index.html) ---');
 const main = runPage(MAIN_IDS);
 const vHtml = () => (main.els['verified-list'] ? main.els['verified-list'].innerHTML : '');
 check('main: no load errors', main.errors.length === 0, main.errors.join(' | '));
-check('main: MIRACLE_DATA findings = 64', (main.data.findings || []).length === 64);
-check('main: MIRACLE_LOCATIONS entries = 64', Object.keys(main.locs).length === 64);
+check('main: MIRACLE_DATA findings = 63', (main.data.findings || []).length === 63);
+check('main: MIRACLE_LOCATIONS entries = 63', Object.keys(main.locs).length === 63);
 check('main: data.js embeds quran_facts + corpus_numbers',
   Array.isArray(main.data.quran_facts) && Array.isArray(main.data.corpus_numbers),
   'facts=' + (main.data.quran_facts || []).length + ' numbers=' + (main.data.corpus_numbers || []).length);
@@ -243,10 +246,12 @@ check('main: ZERO cannot_verify rows', count(/badge warn/g, vHtml()) === 0, 'got
 const unvClaims = unverified.map((f) => f.claim);
 check('main: no unverified claim text appears in verified table',
   !unvClaims.some((c) => vHtml().includes(c)), 'checked ' + unvClaims.length + ' claims');
-check('main: verified tally 37 — 16 scholarly · 21 popular',
+check('main: verified tally 37 — 16 scholarly · 21 site · 0 popular',
   (main.els['verified-tally'] || {}).textContent ===
-  '37 verified findings — 16 scholarly · 21 popular. Showing 37.',
+  '37 verified findings — 16 scholarly · 21 counted by this site · 0 popular. Showing 37.',
   (main.els['verified-tally'] || {}).textContent);
+check('main: 21 site-verified rows carry a "Counted by this site" tag',
+  count(/Counted by this site · /g, vHtml()) === 21, 'got ' + count(/Counted by this site · /g, vHtml()));
 check('main: method block (collapsed) on all 37 verified rows',
   count(/Method &amp; where it occurs/g, vHtml()) === 37, 'got ' + count(/Method &amp; where it occurs/g, vHtml()));
 check('main: allah locations render (1821 verses)', vHtml().includes('Locations (1821 verses)'));
@@ -295,12 +300,15 @@ check('main html: Names reframe — hadith cited, 99 not a ceiling',
   indexHtml.includes('Sahih al-Bukhari 7392') && indexHtml.includes('Sahih Muslim 2677') &&
   indexHtml.includes('not a ceiling') && indexHtml.includes('more names and attributes') &&
   indexHtml.includes('id="more-names"'));
-check('mizan: title, logo + favicon, Why Mizan section before About',
+check('mizan: title, logo + favicon, About Mizan after Names, concise line up top, closing line in footer',
   indexHtml.includes('<title>Mizan — The Quran in numbers</title>') &&
   indexHtml.includes('src="images/mizan-logo.png"') &&
   indexHtml.includes('href="images/mizan-favicon.png"') &&
-  indexHtml.includes('id="why-mizan"') &&
-  indexHtml.indexOf('id="why-mizan"') < indexHtml.indexOf('id="about"'));
+  indexHtml.includes('is Arabic for the Balance') &&
+  indexHtml.includes('id="about-mizan"') &&
+  indexHtml.indexOf('id="names"') < indexHtml.indexOf('id="about-mizan"') &&
+  indexHtml.indexOf('id="about-mizan"') < indexHtml.indexOf('id="method"') &&
+  indexHtml.includes('Named for the Balance'));
 check('mizan: 7 highlight rows with Tanzil Arabic + verse links',
   ['55:7–9', '57:25', '42:17', '21:47', '101:6–9', '17:35', '15:19']
     .every(r => indexHtml.includes('>' + r + '</a>')) &&
@@ -356,15 +364,15 @@ check('unverified: Mizan title + favicon, no miracleMath display text',
   unvHtmlRaw.includes('<title>Unverified claims — Mizan</title>') &&
   unvHtmlRaw.includes('href="images/mizan-favicon.png"') &&
   !unvHtmlRaw.replace(/github\.com\/mindsyourai\/mizan/g, '').includes('miracleMath'));
-check('unverified: renders exactly 27 rows', count(/<tr class="frow">/g, uHtml()) === 27,
+check('unverified: renders exactly 26 rows', count(/<tr class="frow">/g, uHtml()) === 26,
   'got ' + count(/<tr class="frow">/g, uHtml()));
 check('unverified: 17 differs badges', count(/badge bad/g, uHtml()) === 17, 'got ' + count(/badge bad/g, uHtml()));
-check('unverified: 10 cannot_verify badges', count(/badge warn/g, uHtml()) === 10, 'got ' + count(/badge warn/g, uHtml()));
+check('unverified: 9 cannot_verify badges', count(/badge warn/g, uHtml()) === 9, 'got ' + count(/badge warn/g, uHtml()));
 check('unverified: ZERO confirmed badges', count(/badge ok/g, uHtml()) === 0, 'got ' + count(/badge ok/g, uHtml()));
 check('unverified: Scholar group header (19 unverified)',
   uHtml().includes('Scholar findings — 19 unverified'), 'header present');
-check('unverified: Popular group header (8 unverified)',
-  uHtml().includes('Popular claims — 8 unverified'), 'header present');
+check('unverified: Popular group header (7 unverified)',
+  uHtml().includes('Popular claims — 7 unverified'), 'header present');
 check('unverified: mind-light-49 present as differs',
   uHtml().includes('mind-light') || uHtml().includes('light') && uHtml().includes('49'));
 check('unverified: benefit-corrupt-50 still differs (flip NOT applied)',
@@ -372,12 +380,17 @@ check('unverified: benefit-corrupt-50 still differs (flip NOT applied)',
     const f = findings.find((x) => x.id === 'benefit-corrupt-50');
     return f && f.our_status === 'differs' && uHtml().includes(f.claim);
   })());
-check('unverified: tally 27 — 17 differ · 10 cannot verify',
+check('unverified: tally 26 — 17 differ · 9 cannot verify',
   (unv.els['unverified-tally'] || {}).textContent ===
-  '27 unverified claims — 17 differ from our recount · 10 cannot verify. Showing 27.',
+  '26 unverified claims — 17 differ from our recount · 9 cannot verify. Showing 26.',
   (unv.els['unverified-tally'] || {}).textContent);
-check('unverified: method block (collapsed) on all 27 rows',
-  count(/Method &amp; where it occurs/g, uHtml()) === 27, 'got ' + count(/Method &amp; where it occurs/g, uHtml()));
+check('site: no "Harun Yahya" name or harunyahya link anywhere rendered or in data',
+  !vHtml().includes('Harun Yahya') && !uHtml().includes('Harun Yahya') &&
+  !dataJsRaw.includes('Harun Yahya') && !dataJsRaw.includes('harunyahya') &&
+  !locJsRaw.includes('Harun Yahya'),
+  'only "Yahya" left is Yahya ibn al-Harith, the classical transmitter');
+check('unverified: method block (collapsed) on all 26 rows',
+  count(/Method &amp; where it occurs/g, uHtml()) === 26, 'got ' + count(/Method &amp; where it occurs/g, uHtml()));
 check('unverified: no "location data not loaded" fallback', !uHtml().includes('location data not loaded'));
 check('unverified: no confirmed claim text appears',
   !confirmed.some((f) => uHtml().includes(f.claim)), 'checked ' + confirmed.length + ' claims');
@@ -405,16 +418,16 @@ check('unverified filter: status differs shows 17 rows',
 resetUnv();
 unv.els['unverified-status'].value = 'cannot_verify';
 unv.els['unverified-status']._fire('change');
-check('unverified filter: status cannot_verify shows 10 rows',
-  count(/<tr class="frow">/g, uHtml()) === 10, 'got ' + count(/<tr class="frow">/g, uHtml()));
+check('unverified filter: status cannot_verify shows 9 rows',
+  count(/<tr class="frow">/g, uHtml()) === 9, 'got ' + count(/<tr class="frow">/g, uHtml()));
 resetUnv();
 unv.els['unverified-search'].value = 'sea';
 unv.els['unverified-search']._fire('input');
 check('unverified filter: "sea" narrows table',
-  count(/<tr class="frow">/g, uHtml()) >= 1 && count(/<tr class="frow">/g, uHtml()) < 27,
+  count(/<tr class="frow">/g, uHtml()) >= 1 && count(/<tr class="frow">/g, uHtml()) < 26,
   'got ' + count(/<tr class="frow">/g, uHtml()) + ' rows');
 resetUnv();
-check('unverified filter: reset restores 27 rows', count(/<tr class="frow">/g, uHtml()) === 27);
+check('unverified filter: reset restores 26 rows', count(/<tr class="frow">/g, uHtml()) === 26);
 
 const failed = checks.filter((c) => !c[1]);
 console.log('\n' + (failed.length === 0 ? 'ALL CHECKS PASSED (' + checks.length + ')' : 'FAILURES: ' + failed.length + ' of ' + checks.length));
