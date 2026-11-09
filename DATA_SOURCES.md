@@ -1,7 +1,7 @@
-# DATA_SOURCES.md — miracleMath
+# DATA_SOURCES.md — Mizan
 
-Project: miracleMath — graphical / mathematical Quran web app (owner MK).
-Repo target: mindsyourai/miracleMath — https://mindsyourai.github.io/miracleMath/
+Project: Mizan — the Quran in numbers (owner MK).
+Repo target: mindsyourai/miracleMath — https://mindsyourai.github.io/mizan/
 Last updated: 2026-11-06.
 
 ## Primary corpus — Quranic Arabic Corpus (corpus.quran.com)
