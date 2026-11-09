@@ -1,4 +1,4 @@
-/* miracleMath — light professional theme: warm beige background, gold-brown
+/* Mizan — light professional theme: warm beige background, gold-brown
    accents, green reserved for verified/confirmed states. Serif headings,
    clean tables, generous whitespace.
    Contrast (WCAG AA, normal text): ink 14.11:1 on bg / 15.48:1 on panel;
@@ -13,9 +13,14 @@
   --line:#ddd2bd; --chip:#efe6d0;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
+html{scroll-behavior:smooth;scroll-padding-top:124px}
 /* scroll-padding-top keeps anchor jumps (#verified etc.) clear of the
-   sticky .tabs bar, which would otherwise cover the section's first line. */
+   sticky .tabs bar, which would otherwise cover the section's first line.
+   76px was too small: at desktop width the 7 tabs wrap to two rows, so the
+   bar is ~108px tall (2 x ~39px rows + 6px gap + 24px padding). 124px
+   clears it with ~16px to spare. section scroll-margin is belt-and-braces
+   for the same jumps. */
+section{scroll-margin-top:124px}
 body{margin:0;background:var(--bg);color:var(--ink);
   font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   line-height:1.55}
@@ -219,3 +224,7 @@ footer p{max-width:900px;margin:0 auto}
   .research-head{padding:14px 16px 10px}
   .data-table.compact th{width:110px;white-space:normal}
 }
+
+.brand-logo{display:block;margin:0 auto 8px;max-width:340px;width:72%;height:auto;border-radius:8px}
+.mizan-table td.ar{font-size:1.15em;line-height:2;text-align:right;direction:rtl}
+.research-head h1 .ar{color:var(--gold-text)}
