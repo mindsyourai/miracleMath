@@ -6,6 +6,21 @@ Date: 2026-11-08 (methods + locations pass). Companion to `RECONCILIATION.md`
 **unapproved and are NOT applied here**). The İşârâtü'l-İ'câz strand is still
 parked by MK's decision and is not covered here.
 
+## 2026-11-09 — Yahya re-attribution (MK's decision)
+
+Harun Yahya is no longer used as a source anywhere on the site. The 21
+confirmed counts formerly sourced to his list were independently re-counted
+from the corpus (20 reproduce exactly; righteous/wicked 6/3 holds only under
+the surface-form rule — the lemma rule gives 6/4) and are now presented as
+the site's own script-verified counts ("Counted by this site, QAC v0.4").
+The 7 counts from that list our recount could not confirm stay on the
+unverified page, re-attributed to the circulating popular list. The
+literature-fact finding about Yahya himself was dropped. Tallies are now
+**37 confirmed / 17 differ / 9 cannot verify** (63 findings: 35 Scholar
+Findings / 21 Counted by this site / 7 Popular claims). The sections below
+that describe the 2026-11-07 and 2026-11-08 passes are left as written;
+only the live coverage numbers in this section were updated.
+
 ## The two rules every finding was tested under
 
 Each finding carries two scripted verifications in `data/scholar_findings.json`
@@ -27,23 +42,24 @@ Each finding carries two scripted verifications in `data/scholar_findings.json`
    where they differ, it names the tokens that are in under one rule and out
    under the other, with verse examples.
 
-## Method coverage (64 findings)
+## Method coverage (63 findings)
 
 | Method status | Count | Meaning |
 |---|---|---|
 | `stated` | 19 | The source states its counting rule |
 | `reconstructed` | 24 | No stated rule, but a rule that reproduces the number was found and is shown with its test |
-| `unstated` | 15 | No stated rule and no reproducing rule found |
+| `unstated` | 14 | No stated rule and no reproducing rule found |
 | `not_a_count` | 6 | The finding is not a word/letter count (a provenance fact, an inventory, a literature fact, a critique) |
 
-By category: paired counts 3 stated / 20 reconstructed / 7 unstated;
+By category: paired counts 3 stated / 20 reconstructed / 6 unstated;
 letter counts 7 stated; Code 19 1 stated / 4 reconstructed / 5 unstated /
 1 not a count; corpus linguistics 8 stated / 3 unstated / 5 not a count.
 By section: Scholar Findings 15 stated / 5 reconstructed / 9 unstated /
-6 not a count; Popular Claims (Yahya) 4 stated / 19 reconstructed / 6 unstated.
+6 not a count; Counted by this site 4 stated / 17 reconstructed;
+Popular claims (circulating) 2 reconstructed / 5 unstated.
 
-The pattern is the story of this pass: **Harun Yahya almost never states a
-method** — 19 of his 29 claims reproduce only under a rule reconstructed from
+The pattern is the story of this pass: **the paired-count list almost never states a
+method** — 19 of its claims reproduce only under a rule reconstructed from
 the numbers, and 6 do not reproduce under any rule we could find. **Rashad
 Khalifa states almost no method either** (Appendix 1 "Simple Facts" gives no
 rule for root/lemma, prefixes, plurals or letters) — 5 stated / 4 reconstructed /
@@ -53,7 +69,7 @@ while the 76 letters of 96:1–5 need it EXCLUDED.
 
 ## The reconstructed rules that matter
 
-- **Bare (unsuffixed) nouns — "without genitive".** Yahya's "(without
+- **Bare (unsuffixed) nouns — "without genitive".** The list's "(without
   genitive)" reproduces exactly once read as *no possessive pronominal suffix*,
   prefixes allowed: bare إيمان 25 and bare كفر 25; bare هدى 79 and bare رحمة
   79. Counting with no prefix at all gives 7/4/32/40 — the rule is
@@ -82,8 +98,9 @@ while the 76 letters of 96:1–5 need it EXCLUDED.
 
 | Scholar / source | Findings | Stated | Reconstructed | Unstated | Not a count |
 |---|---|---|---|---|---|
-| Harun Yahya (Adnan Oktar) | 28 | 3 | 19 | 6 | 0 |
+| Counted by this site | 21 | 4 | 17 | 0 | 0 |
 | Rashad Khalifa | 14 | 5 | 4 | 5 | 0 |
+| Popular claim (circulating) | 7 | 0 | 2 | 5 | 0 |
 | Kais Dukes (QAC figures) | 3 | 1 | 0 | 1 | 1 |
 | al-Suyuti (via SeekersGuidance) | 2 | 2 | 0 | 0 | 0 |
 | Eueung Mulyana | 2 | 2 | 0 | 0 | 0 |
@@ -99,7 +116,6 @@ while the 76 letters of 96:1–5 need it EXCLUDED.
 | Classical/traditional observations | 2 | 2 | 0 | 0 | 0 |
 | arabiantongue.com | 1 | 0 | 0 | 1 | 0 |
 | Words of Quran (QAC data) | 1 | 0 | 0 | 1 | 0 |
-| Harun Yahya + WikiIslam verse analysis | 1 | 1 | 0 | 0 | 0 |
 
 ## Corrections made in this pass
 
