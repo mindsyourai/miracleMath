@@ -295,6 +295,19 @@ check('main html: Names reframe — hadith cited, 99 not a ceiling',
   indexHtml.includes('Sahih al-Bukhari 7392') && indexHtml.includes('Sahih Muslim 2677') &&
   indexHtml.includes('not a ceiling') && indexHtml.includes('more names and attributes') &&
   indexHtml.includes('id="more-names"'));
+check('mizan: title, logo + favicon, Why Mizan section before About',
+  indexHtml.includes('<title>Mizan — The Quran in numbers</title>') &&
+  indexHtml.includes('src="images/mizan-logo.png"') &&
+  indexHtml.includes('href="images/mizan-favicon.png"') &&
+  indexHtml.includes('id="why-mizan"') &&
+  indexHtml.indexOf('id="why-mizan"') < indexHtml.indexOf('id="about"'));
+check('mizan: 7 highlight rows with Tanzil Arabic + verse links',
+  ['55:7–9', '57:25', '42:17', '21:47', '101:6–9', '17:35', '15:19']
+    .every(r => indexHtml.includes('>' + r + '</a>')) &&
+  indexHtml.includes('ٱلْمِيزَانَ') && indexHtml.includes('occurs in 9 verses') &&
+  indexHtml.includes('quran.com/55/7') && indexHtml.includes('quran.com/101/6'));
+check('mizan: no miracleMath display text left (repo URLs excepted)',
+  !indexHtml.replace(/github\.com\/mindsyourai\/miracleMath/g, '').includes('miracleMath'));
 
 // Recolor checks: light palette on both pages (shared styles.css), no dark-theme leftovers.
 const css = fs.readFileSync('web/styles.css', 'utf8');
@@ -303,8 +316,8 @@ check('recolor: light beige background + gold-brown accents in palette',
 check('recolor: no leftover dark-theme background colors',
   !css.includes('#0b1220') && !css.includes('#0e1729') && !css.includes('#111c31') &&
   !css.includes('#0d1526') && !css.includes('#e8eef7') && !css.includes('#22d3ee'));
-check('recolor: scroll-padding-top layout fix kept (76px)',
-  css.includes('scroll-padding-top:76px'));
+check('recolor: scroll-padding-top layout fix kept (124px, clears two-row sticky nav)',
+  css.includes('scroll-padding-top:124px') && css.includes('scroll-margin-top:124px'));
 check('recolor: .table-scroll overflow-x fix kept', css.includes('.table-scroll{overflow-x:auto}'));
 const appJs = fs.readFileSync('web/app.js', 'utf8');
 check('recolor: graph label colors are light-theme (dark ink on light canvas)',
@@ -338,6 +351,11 @@ console.log('\n--- unverified page (unverified.html) ---');
 const unv = runPage(UNV_IDS);
 const uHtml = () => (unv.els['unverified-list'] ? unv.els['unverified-list'].innerHTML : '');
 check('unverified: no load errors', unv.errors.length === 0, unv.errors.join(' | '));
+const unvHtmlRaw = fs.readFileSync('web/unverified.html', 'utf8');
+check('unverified: Mizan title + favicon, no miracleMath display text',
+  unvHtmlRaw.includes('<title>Unverified claims — Mizan</title>') &&
+  unvHtmlRaw.includes('href="images/mizan-favicon.png"') &&
+  !unvHtmlRaw.replace(/github\.com\/mindsyourai\/miracleMath/g, '').includes('miracleMath'));
 check('unverified: renders exactly 27 rows', count(/<tr class="frow">/g, uHtml()) === 27,
   'got ' + count(/<tr class="frow">/g, uHtml()));
 check('unverified: 17 differs badges', count(/badge bad/g, uHtml()) === 17, 'got ' + count(/badge bad/g, uHtml()));
