@@ -23,6 +23,7 @@
 <nav class="tabs" aria-label="Sections">
   <a class="tab" href="#about">About the Quran</a>
   <a class="tab" href="#corpus">The corpus in numbers</a>
+  <a class="tab" href="#surahs">Surahs</a>
   <a class="tab" href="#verified">Verified counts</a>
   <a class="tab" href="#pairs">Paired counts</a>
   <a class="tab" href="#names">Names of God</a>
@@ -30,6 +31,13 @@
 </nav>
 
 <main>
+  <!-- ============ INTRO ============ -->
+  <p class="intro">miracleMath is a humble attempt to understand the Quran through its numbers —
+    what the text itself says, counted carefully and checked against the sources, not a claim of
+    authority. Every count here is computed by script from the Quranic Arabic Corpus and can be
+    re-checked from the data in the repo. Where a published claim could not be confirmed, it is
+    labelled as such and kept on a separate page.</p>
+
   <!-- ============ 1. ABOUT THE QURAN ============ -->
   <section id="about" class="panel active">
     <div class="panel-head">
@@ -46,6 +54,24 @@
       <p>Script-computed totals for the corpus this site counts from, with the counting rule for each number.</p>
     </div>
     <div id="corpus-table"></div>
+  </section>
+
+  <!-- ============ 2b. SURAHS ============ -->
+  <section id="surahs" class="panel active">
+    <div class="panel-head">
+      <h2>Surahs</h2>
+      <p id="surahs-totals">114 surahs · 30 juz</p>
+      <div class="controls">
+        <input id="surah-search" type="search" placeholder="Search a surah — e.g. Yasin, 36, Rahman…" aria-label="Search surahs">
+        <select id="surah-type" aria-label="Filter by revelation">
+          <option value="all">Meccan &amp; Medinan</option>
+          <option value="Meccan">Meccan only</option>
+          <option value="Medinan">Medinan only</option>
+        </select>
+      </div>
+      <p class="tally" id="surahs-tally"></p>
+    </div>
+    <div id="surahs-list"></div>
   </section>
 
   <!-- ============ 3. VERIFIED COUNTS ============ -->
@@ -94,7 +120,15 @@
   <section id="names" class="panel active">
     <div class="panel-head">
       <h2>The 99 Names of God <span class="ar">أَسْمَاءُ ٱللَّهِ ٱلْحُسْنَىٰ</span></h2>
-      <p>Occurrences of each Name in the Arabic text, matched by lemma in the Quranic Arabic Corpus. A Name counts only where the word is used of God; excluded occurrences are listed per Name. 24 Names do not occur in the Quran at all.</p>
+      <p>These are the famous ninety-nine — al-Asmāʾ al-Ḥusnā, the Beautiful Names — from the
+        hadith of the ninety-nine names: “Allah has ninety-nine names, one hundred less one;
+        whoever learns them will enter Paradise” (Sahih al-Bukhari 7392; Sahih Muslim 2677).
+        Ninety-nine is not a ceiling: scholars agree the hadith does not limit Allah's names
+        to this number, and the Quran uses more names and attributes of Allah than these 99.
+        Below, each Name is counted in the Arabic text, matched by lemma in the Quranic Arabic
+        Corpus. A Name counts only where the word is used of God; excluded occurrences are
+        listed per Name. 24 Names do not occur in the Quran at all.</p>
+      <div id="more-names"></div>
       <div class="controls">
         <input id="name-search" type="search" placeholder="Search a Name — e.g. Rahim, Aziz, Nur…" aria-label="Search Names">
         <select id="name-filter" aria-label="Filter Names">
