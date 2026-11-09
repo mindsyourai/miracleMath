@@ -3,14 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>miracleMath — Word counts and mathematics of the Quran</title>
-<meta name="description" content="Word counts and mathematics of the Quran, computed by script from the Quranic Arabic Corpus (v0.4) and cross-checked against the Tanzil Uthmani text. Verified counts, paired word counts, the 99 Names of God and their co-occurrence graph.">
+<title>Mizan — The Quran in numbers</title>
+<meta name="description" content="Mizan — the Quran in numbers. Word counts and mathematics of the Quran, computed by script from the Quranic Arabic Corpus (v0.4) and cross-checked against the Tanzil Uthmani text. Verified counts, paired word counts, the Names of God and their co-occurrence graph.">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="images/mizan-favicon.png">
 </head>
 <body>
 <header class="research-head">
   <div class="research-head-inner">
-    <h1>miracleMath — Word counts and mathematics of the Quran</h1>
+    <img class="brand-logo" src="images/mizan-logo.png" alt="Mizan — ميزان — calligraphy logo">
+    <h1>Mizan <span class="ar">ميزان</span> — The Quran in numbers</h1>
     <p class="meta-line">Corpus: Quranic Arabic Corpus v0.4, 77,429 words · 6,236 verses · 114 surahs ·
       Data: 2026-11-08 · <span id="tally-line">37 confirmed · 17 differ · 10 cannot verify</span></p>
     <div class="stats" id="stats"></div>
@@ -21,6 +23,7 @@
 </header>
 
 <nav class="tabs" aria-label="Sections">
+  <a class="tab" href="#why-mizan">Why Mizan?</a>
   <a class="tab" href="#about">About the Quran</a>
   <a class="tab" href="#corpus">The corpus in numbers</a>
   <a class="tab" href="#surahs">Surahs</a>
@@ -32,11 +35,43 @@
 
 <main>
   <!-- ============ INTRO ============ -->
-  <p class="intro">miracleMath is a humble attempt to understand the Quran through its numbers —
+  <p class="intro">Mizan is a humble attempt to understand the Quran through its numbers —
     what the text itself says, counted carefully and checked against the sources, not a claim of
     authority. Every count here is computed by script from the Quranic Arabic Corpus and can be
     re-checked from the data in the repo. Where a published claim could not be confirmed, it is
     labelled as such and kept on a separate page.</p>
+
+
+  <!-- ============ WHY MIZAN ============ -->
+  <section id="why-mizan" class="panel active">
+    <div class="panel-head">
+      <h2>Why Mizan?</h2>
+      <p>The name of this site, and what the Quran says about it.</p>
+    </div>
+    <p><b>Mizan</b> <span class="ar">ميزان</span> is the Arabic word for the balance — the scales.
+      In the Quran it is three things at once: the order God set into creation, the standard of
+      justice revealed with the Book, and the scales on which deeds are weighed on the Day of
+      Judgment. This site is named for it because that is what it tries to do: weigh the Quran's
+      words carefully, and say plainly what balances and what does not.</p>
+    <p class="method-note">Counted by script from the corpus: the word
+      <span class="ar">ٱلْمِيزَانَ</span> (al-Mizan) occurs in 9 verses,
+      <span class="ar">ٱلْمَوَٰزِينَ</span> (al-mawazin, the scales) in 7, and words from the
+      root w-z-n, to weigh, in 21 verses.</p>
+    <div class="table-scroll"><table class="data-table mizan-table">
+      <thead><tr><th>Verse</th><th>Arabic</th><th>What it says</th></tr></thead>
+      <tbody>
+      <tr><td><b><a href="https://quran.com/55/7" target="_blank" rel="noopener">55:7–9</a></b></td><td class="ar">وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلْمِيزَانَ ۝ أَلَّا تَطْغَوْا۟ فِى ٱلْمِيزَانِ ۝ وَأَقِيمُوا۟ ٱلْوَزْنَ بِٱلْقِسْطِ وَلَا تُخْسِرُوا۟ ٱلْمِيزَانَ</td><td>And the heaven He raised, and He set up the Balance — that you do not transgress within the Balance, and establish weight in justice, and do not make the Balance deficient.</td></tr>
+      <tr><td><b><a href="https://quran.com/57/25" target="_blank" rel="noopener">57:25</a></b></td><td class="ar">وَأَنزَلْنَا مَعَهُمُ ٱلْكِتَٰبَ وَٱلْمِيزَانَ لِيَقُومَ ٱلنَّاسُ بِٱلْقِسْطِ …</td><td>We sent Our messengers with clear proofs, and sent down with them the Book and the Balance, so that people may uphold justice.</td></tr>
+      <tr><td><b><a href="https://quran.com/42/17" target="_blank" rel="noopener">42:17</a></b></td><td class="ar">ٱللَّهُ ٱلَّذِىٓ أَنزَلَ ٱلْكِتَٰبَ بِٱلْحَقِّ وَٱلْمِيزَانَ وَمَا يُدْرِيكَ لَعَلَّ ٱلسَّاعَةَ قَرِيبٌ</td><td>It is Allah who sent down the Book in truth, and the Balance. And what will make you know? Perhaps the Hour is near.</td></tr>
+      <tr><td><b><a href="https://quran.com/21/47" target="_blank" rel="noopener">21:47</a></b></td><td class="ar">وَنَضَعُ ٱلْمَوَٰزِينَ ٱلْقِسْطَ لِيَوْمِ ٱلْقِيَٰمَةِ فَلَا تُظْلَمُ نَفْسٌ شَيْـًٔا …</td><td>We shall set up the scales of justice for the Day of Resurrection, and no soul will be wronged at all.</td></tr>
+      <tr><td><b><a href="https://quran.com/101/6" target="_blank" rel="noopener">101:6–9</a></b></td><td class="ar">فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ ۝ وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ فَأُمُّهُۥ هَاوِيَةٌ</td><td>As for one whose scales are heavy, he will be in a pleasant life; but one whose scales are light — his refuge will be an abyss.</td></tr>
+      <tr><td><b><a href="https://quran.com/17/35" target="_blank" rel="noopener">17:35</a></b></td><td class="ar">وَأَوْفُوا۟ ٱلْكَيْلَ إِذَا كِلْتُمْ وَزِنُوا۟ بِٱلْقِسْطَاسِ ٱلْمُسْتَقِيمِ ذَٰلِكَ خَيْرٌ وَأَحْسَنُ تَأْوِيلًا</td><td>Give full measure when you measure, and weigh with a straight balance. That is better, and best in outcome.</td></tr>
+      <tr><td><b><a href="https://quran.com/15/19" target="_blank" rel="noopener">15:19</a></b></td><td class="ar">وَٱلْأَرْضَ مَدَدْنَٰهَا وَأَلْقَيْنَا فِيهَا رَوَٰسِىَ وَأَنۢبَتْنَا فِيهَا مِن كُلِّ شَىْءٍ مَّوْزُونٍ</td><td>And the earth — We spread it out, and cast firmly set mountains therein, and caused to grow therein everything in due balance.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="method-note">Excerpts marked … are the relevant clauses of longer verses; each reference
+      links to the full verse. Arabic is the Tanzil Uthmani text.</p>
+  </section>
 
   <!-- ============ 1. ABOUT THE QURAN ============ -->
   <section id="about" class="panel active">
@@ -217,7 +252,7 @@
 </main>
 
 <footer>
-  <p>miracleMath · Data: Quranic Arabic Corpus v0.4 (GPL) via corpus.quran.com; display Arabic: Tanzil Uthmani text.
+  <p>Mizan · Data: Quranic Arabic Corpus v0.4 (GPL) via corpus.quran.com; display Arabic: Tanzil Uthmani text.
   All counts computed by script and reproducible from the <a href="https://github.com/mindsyourai/miracleMath">repo</a>.
   Disputed claims are labelled, not asserted. · Built 2026-11-08.</p>
 </footer>
