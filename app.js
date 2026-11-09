@@ -516,7 +516,11 @@
   /* ---------- findings: method & locations (collapsed) ---------- */
   function fmtCount(c) {
     if (c == null) return "—";
-    if (Array.isArray(c)) return c.join(" / ");
+    if (Array.isArray(c)) {
+      var parts = c.map(function (x) { return x == null ? "—" : String(x); });
+      if (parts.every(function (p) { return p === "—"; })) return "—";
+      return parts.join(" / ");
+    }
     return String(c);
   }
   function fmtVer(v) {
