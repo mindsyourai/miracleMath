@@ -24,10 +24,12 @@ line — no contested count is presented as the only number.
 | Longest surah | Al-Baqarah (2), 286 verses | Tanzil Uthmani text, script count; standard Kufi verse table. |
 | Shortest surah | Al-Kawthar (108), 3 verses | Tanzil Uthmani text, script count. Tied with Al-Asr (103) and An-Nasr (110), also 3 verses each. |
 | Surahs opening with the Basmalah | 113 | Tanzil Uthmani text, script count: every surah except At-Tawbah (9). Total Basmalah occurrences 114, including the one inside verse 27:30. |
+| Pages (standard Madinah mushaf) | 604 | King Fahd Complex, Mushaf al-Madinah: 604 pages at 15 lines per page, ~20 pages per juz. Tanzil's quran-data.xml metadata records the same 604 Medina Mushaf page boundaries. This is the printed edition's page count, not a property of the text — other prints differ (a 16-line print is ~548 pages). |
 
 No fact was dropped: all ten target facts were sourced properly. No
 popular-apologetics source (no Yahya, no miracle-websites) was used for
-any of them.
+any of them. The 604-pages fact (eleventh) was added 2026-11-09, sourced
+to the King Fahd Complex print and Tanzil's metadata.
 
 ## 2. Corpus numbers (all by script)
 
