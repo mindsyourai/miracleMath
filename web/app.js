@@ -159,6 +159,88 @@
     host.innerHTML = h + "</tbody></table></div>";
   })();
 
+  /* ---------- Surahs: 114-row table with search + Meccan/Medinan filter ---------- */
+  function renderSurahs() {
+    var host = $("surahs-list");
+    if (!host) return;
+    /* Header totals: "114 surahs · 30 juz" plus "· 604 pages" only once the
+       604-pages fact has landed in data/quran_facts.json (Agent A). */
+    var totalsEl = $("surahs-totals");
+    if (totalsEl) {
+      var hasPages = (D.quran_facts || []).some(function (f) {
+        return /604/.test(String(f.value || ""));
+      });
+      totalsEl.textContent = hasPages ? "114 surahs · 30 juz · 604 pages" : "114 surahs · 30 juz";
+    }
+    var list = D.surahs || [];
+    if (!list.length) {
+      host.innerHTML = "<p class=\"method-note\">The 114-surah list is being verified " +
+        "and will appear here (see data/surahs.json in the repo).</p>";
+      var tally0 = $("surahs-tally");
+      if (tally0) tally0.textContent = "";
+      return;
+    }
+    var q = (($("surah-search") || {}).value || "").toLowerCase().trim();
+    var t = ($("surah-type") || {}).value || "all";
+    /* Normalise punctuation AND diacritics so "yasin" finds "Yâsîn" and
+       "al fatiha" finds "Al-Fatiha": fold to base letters, then compare on
+       letters/digits only (Arabic kept as-is). */
+    var norm = function (s) {
+      return String(s || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9\u0600-\u06ff]/g, "");
+    };
+    var nq = norm(q);
+    var rows = "";
+    var shown = 0;
+    list.forEach(function (s) {
+      var hay = norm((s.name_tr || "") + " " + (s.name_ar || "") + " " + String(s.n));
+      if (nq && hay.indexOf(nq) === -1 && String(s.n) !== q) return;
+      if (t !== "all" && s.type !== t) return;
+      shown++;
+      rows += "<tr><td><b>" + esc(s.n) + "</b></td>" +
+        "<td><b>" + esc(s.name_tr || "") + '</b> <span class="ar">' + esc(s.name_ar || "") + "</span></td>" +
+        "<td><b>" + esc(s.verses) + "</b></td>" +
+        '<td><span class="type-tag ' + (s.type === "Medinan" ? "medinan" : "meccan") + '">' +
+        esc(s.type || "") + "</span></td>" +
+        '<td><a href="https://quran.com/' + esc(s.n) + '" target="_blank" rel="noopener">Recite →</a></td></tr>';
+    });
+    host.innerHTML = '<div class="table-scroll"><table class="data-table"><thead><tr>' +
+      "<th>#</th><th>Surah</th><th>Verses</th><th>Revealed</th><th></th></tr></thead><tbody>" +
+      (rows || '<tr><td colspan="5">No surahs match that search.</td></tr>') +
+      "</tbody></table></div>";
+    var tally = $("surahs-tally");
+    if (tally) tally.textContent = "Showing " + shown + " of " + list.length + " surahs.";
+  }
+  renderSurahs();
+  on("surah-search", "input", renderSurahs);
+  on("surah-type", "change", renderSurahs);
+
+  /* ---------- "More than 99": verified names/attributes beyond the 99 ---------- */
+  (function renderMoreNames() {
+    var host = $("more-names");
+    if (!host) return;
+    var list = D.more_names || [];
+    if (!list.length) return; /* renders only when Agent A's data exists */
+    function refsOf(it) {
+      var v = it.verses || it.verse || it.refs || it.ref || it.location || it.locations;
+      if (!v) return "";
+      if (Array.isArray(v)) return v.map(String).join(", ");
+      return String(v);
+    }
+    var items = list.map(function (it) {
+      var ar = it.arabic_printed || it.arabic || it.name_ar || it.name || "";
+      var tr = it.transliteration || it.name_tr || it.name_en || "";
+      var meaning = it.meaning_en || it.meaning || "";
+      var refs = refsOf(it);
+      return "<li><span class='ar'>" + esc(ar) + "</span>" +
+        (tr ? " <b>" + esc(tr) + "</b>" : "") +
+        (meaning ? " — " + esc(meaning) : "") +
+        (refs ? ' <span class="ref-refs">(' + esc(refs) + ")</span>" : "") + "</li>";
+    }).join("");
+    host.innerHTML = '<div class="more-names"><h3>More than 99</h3>' +
+      "<p>The Quran uses more names and attributes of Allah than the famous ninety-nine. " +
+      "Verified examples counted in the Quran:</p><ul>" + items + "</ul></div>";
+  })();
+
   /* ---------- methodology: assumption sets table ---------- */
   (function renderAssumptions() {
     var host = $("assumption-table");
@@ -357,8 +439,8 @@
       var active = sel == null || e.a === sel || e.b === sel;
       ctx.beginPath();
       ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y);
-      ctx.strokeStyle = active ? "rgba(34,211,238," + Math.min(0.85, 0.12 + e.weight / 40) + ")"
-        : "rgba(120,140,170,0.07)";
+      ctx.strokeStyle = active ? "rgba(122,92,0," + Math.min(0.85, 0.12 + e.weight / 40) + ")"
+        : "rgba(107,93,73,0.10)";
       ctx.lineWidth = Math.max(0.6, Math.min(7, e.weight / 9));
       ctx.stroke();
     });
@@ -367,10 +449,10 @@
       var r = 7 + Math.sqrt(n.count || 0) * 1.6;
       var dim = sel != null && n.id !== sel && !neighbours[n.id];
       ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
-      ctx.fillStyle = n.id === sel ? "#eab308" : (dim ? "#233247" : "#22d3ee");
+      ctx.fillStyle = n.id === sel ? "#7a5c00" : (dim ? "#d8cbb0" : "#8a6d1f");
       ctx.fill();
       ctx.font = "11px system-ui, sans-serif";
-      ctx.fillStyle = dim ? "#5b6b82" : "#e8eef7";
+      ctx.fillStyle = dim ? "#6b5d49" : "#2b2118";
       /* Full transliteration (no Ar-/Al- stripping — the stripped forms read
          as truncated labels), placed radially outward from the ring, so a
          label never sits on the next node down the ring: right-side labels
