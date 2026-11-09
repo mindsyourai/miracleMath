@@ -11,9 +11,10 @@ const vm = require('vm');
 const fs = require('fs');
 
 const MAIN_IDS = new Set(['stats', 'tally-line', 'facts-table', 'corpus-table',
+  'surah-search', 'surah-type', 'surahs-list', 'surahs-tally', 'surahs-totals',
   'assumption-table', 'pair-search', 'pair-equal-only', 'pairs-list', 'extras-list',
   'name-search', 'name-filter', 'graph-scope', 'graph-edges', 'graph', 'graph-detail',
-  'names-list', 'name-detail', 'verified-search', 'verified-cat', 'verified-tally',
+  'names-list', 'name-detail', 'more-names', 'verified-search', 'verified-cat', 'verified-tally',
   'verified-list']);
 const UNV_IDS = new Set(['unverified-search', 'unverified-cat', 'unverified-status',
   'unverified-tally', 'unverified-list']);
@@ -134,6 +135,104 @@ if (main.data.corpus_numbers_sample)
   check('main: SAMPLE corpus numbers flagged in-page (not silent)',
     corpHtml.includes('Sample data'), 'sample flag present in data.js');
 
+// Surahs section (2026-11-09): renders from data/surahs.json when present,
+// degrades to a "list coming" note when absent — never a crash.
+const surahsJsonPath = 'data/surahs.json';
+const surahsExist = fs.existsSync(surahsJsonPath);
+const surahsHtml = main.els['surahs-list'] ? main.els['surahs-list'].innerHTML : '';
+if (surahsExist) {
+  const sj = JSON.parse(fs.readFileSync(surahsJsonPath, 'utf8'));
+  const sRows = Array.isArray(sj) ? sj : (sj.surahs || []);
+  check('main: surahs payload = 114 rows', (main.data.surahs || []).length === 114,
+    'got ' + (main.data.surahs || []).length);
+  check('main: surah table renders 114 rows', count(/<tr><td><b>/g, surahsHtml) === 114,
+    'got ' + count(/<tr><td><b>/g, surahsHtml));
+  check('main: surah verse counts match data/surahs.json',
+    sRows.every((s) => surahsHtml.includes('<b>' + s.verses + '</b>') || surahsHtml.includes('>' + s.verses + '<')),
+    'checked ' + sRows.length + ' verse counts');
+  check('main: every surah row has a Recite link to quran.com/<n>',
+    count(/href="https:\/\/quran\.com\/\d+"/g, surahsHtml) === 114,
+    'got ' + count(/href="https:\/\/quran\.com\/\d+"/g, surahsHtml));
+  check('main: every surah row shows Meccan or Medinan tag',
+    count(/type-tag/g, surahsHtml) === 114, 'got ' + count(/type-tag/g, surahsHtml));
+  const facts604 = (JSON.parse(fs.readFileSync('data/quran_facts.json', 'utf8')).facts || [])
+    .some((f) => /604/.test(String(f.value || '')));
+  check('main: surah totals line shows 114 surahs · 30 juz' + (facts604 ? ' · 604 pages' : ''),
+    (main.els['surahs-totals'] || {}).textContent ===
+    (facts604 ? '114 surahs · 30 juz · 604 pages' : '114 surahs · 30 juz'),
+    (main.els['surahs-totals'] || {}).textContent);
+  check('main: surah tally says Showing 114 of 114 surahs',
+    (main.els['surahs-tally'] || {}).textContent === 'Showing 114 of 114 surahs.',
+    (main.els['surahs-tally'] || {}).textContent);
+  // Search + filter behaviour on the surah table
+  function resetSurahs() {
+    main.els['surah-search'].value = ''; main.els['surah-type'].value = 'all';
+    main.els['surah-search']._fire('input');
+  }
+  resetSurahs();
+  main.els['surah-search'].value = 'yasin';
+  main.els['surah-search']._fire('input');
+  check('main surah filter: "yasin" narrows to 1 row',
+    count(/<tr><td><b>/g, main.els['surahs-list'].innerHTML) === 1,
+    'got ' + count(/<tr><td><b>/g, main.els['surahs-list'].innerHTML));
+  resetSurahs();
+  main.els['surah-search'].value = '36';
+  main.els['surah-search']._fire('input');
+  check('main surah filter: number "36" finds Yâsîn',
+    main.els['surahs-list'].innerHTML.includes('Yâsîn') &&
+    count(/<tr><td><b>/g, main.els['surahs-list'].innerHTML) === 1,
+    'got ' + count(/<tr><td><b>/g, main.els['surahs-list'].innerHTML));
+  resetSurahs();
+  main.els['surah-type'].value = 'Meccan';
+  main.els['surah-type']._fire('change');
+  const meccanExpected = sRows.filter((s) => s.type === 'Meccan').length;
+  check('main surah filter: Meccan shows ' + meccanExpected + ' rows',
+    count(/<tr><td><b>/g, main.els['surahs-list'].innerHTML) === meccanExpected,
+    'got ' + count(/<tr><td><b>/g, main.els['surahs-list'].innerHTML));
+  resetSurahs();
+  main.els['surah-type'].value = 'Medinan';
+  main.els['surah-type']._fire('change');
+  const medinanExpected = sRows.filter((s) => s.type === 'Medinan').length;
+  check('main surah filter: Medinan shows ' + medinanExpected + ' rows',
+    count(/<tr><td><b>/g, main.els['surahs-list'].innerHTML) === medinanExpected,
+    'got ' + count(/<tr><td><b>/g, main.els['surahs-list'].innerHTML));
+  resetSurahs();
+  check('main surah filter: reset restores 114 rows',
+    count(/<tr><td><b>/g, main.els['surahs-list'].innerHTML) === 114);
+} else {
+  check('main: surahs.json absent — payload falls back to empty array',
+    Array.isArray(main.data.surahs) && main.data.surahs.length === 0);
+  check('main: surahs.json absent — "list coming" note renders, no crash',
+    surahsHtml.includes('being verified') && !surahsHtml.includes('<table'));
+  console.log('NOTE: data/surahs.json not present — surah rows will appear after ' +
+    "Agent A's file lands and build.py is re-run.");
+}
+
+// "More than 99" note (2026-11-09): renders only when data/more_names.json exists.
+const moreJsonPath = 'data/more_names.json';
+const moreExist = fs.existsSync(moreJsonPath);
+const moreHtml = main.els['more-names'] ? main.els['more-names'].innerHTML : '';
+if (moreExist) {
+  const mj = JSON.parse(fs.readFileSync(moreJsonPath, 'utf8'));
+  const mRows = Array.isArray(mj) ? mj : (mj.verified_additional || mj.more_names || mj.names || []);
+  check('main: more_names payload = ' + mRows.length + ' rows',
+    (main.data.more_names || []).length === mRows.length,
+    'got ' + (main.data.more_names || []).length);
+  check('main: "More than 99" note renders with Arabic + verse refs',
+    moreHtml.includes('More than 99') &&
+    mRows.every((m) => moreHtml.includes(m.arabic_printed || m.arabic || m.name_ar || m.name || '∅') ||
+      moreHtml.includes(m.transliteration || '')),
+    'checked ' + mRows.length + ' entries');
+  check('main: "More than 99" note lists each entry\'s verse refs',
+    mRows.every((m) => (m.verses || []).every((v) => moreHtml.includes(v))),
+    'checked ' + mRows.length + ' entries');
+} else {
+  check('main: more_names.json absent — payload falls back to empty array, note hidden',
+    Array.isArray(main.data.more_names) && main.data.more_names.length === 0 && moreHtml === '');
+  console.log('NOTE: data/more_names.json not present — "More than 99" note will ' +
+    "appear after Agent A's file lands and build.py is re-run.");
+}
+
 // Verified counts table — the core guarantee
 check('main: verified table renders exactly 37 rows', count(/<tr class="frow">/g, vHtml()) === 37,
   'got ' + count(/<tr class="frow">/g, vHtml()));
@@ -181,6 +280,38 @@ check('main html: old Scholar/Popular tabs gone',
   !indexHtml.includes('finding-search') && !indexHtml.includes('popular-search'));
 check('main html: no status filter on verified table',
   !indexHtml.includes('verified-status') && !indexHtml.includes('id="finding-status"'));
+check('main html: humble intro above About the Quran (2–3 sentences)',
+  indexHtml.indexOf('class="intro"') > indexHtml.indexOf('<main>') &&
+  indexHtml.indexOf('class="intro"') < indexHtml.indexOf('id="about"') &&
+  indexHtml.replace(/\s+/g, ' ').includes('humble attempt') &&
+  indexHtml.replace(/\s+/g, ' ').includes('not a claim of authority'));
+check('main html: surah section sits between corpus and verified',
+  indexHtml.indexOf('id="surahs"') > indexHtml.indexOf('id="corpus"') &&
+  indexHtml.indexOf('id="surahs"') < indexHtml.indexOf('id="verified"'));
+check('main html: surah search + Meccan/Medinan filter present',
+  indexHtml.includes('id="surah-search"') && indexHtml.includes('id="surah-type"') &&
+  indexHtml.includes('value="Meccan"') && indexHtml.includes('value="Medinan"'));
+check('main html: Names reframe — hadith cited, 99 not a ceiling',
+  indexHtml.includes('Sahih al-Bukhari 7392') && indexHtml.includes('Sahih Muslim 2677') &&
+  indexHtml.includes('not a ceiling') && indexHtml.includes('more names and attributes') &&
+  indexHtml.includes('id="more-names"'));
+
+// Recolor checks: light palette on both pages (shared styles.css), no dark-theme leftovers.
+const css = fs.readFileSync('web/styles.css', 'utf8');
+check('recolor: light beige background + gold-brown accents in palette',
+  css.includes('--bg:#f7f2e8') && css.includes('--gold:#8a6d1f') && css.includes('--green:#166b2d'));
+check('recolor: no leftover dark-theme background colors',
+  !css.includes('#0b1220') && !css.includes('#0e1729') && !css.includes('#111c31') &&
+  !css.includes('#0d1526') && !css.includes('#e8eef7') && !css.includes('#22d3ee'));
+check('recolor: scroll-padding-top layout fix kept (76px)',
+  css.includes('scroll-padding-top:76px'));
+check('recolor: .table-scroll overflow-x fix kept', css.includes('.table-scroll{overflow-x:auto}'));
+const appJs = fs.readFileSync('web/app.js', 'utf8');
+check('recolor: graph label colors are light-theme (dark ink on light canvas)',
+  appJs.includes('"#2b2118"') && !appJs.includes('#e8eef7') && !appJs.includes('#22d3ee'));
+check('recolor: graph geometry code untouched (radius + label clamping intact)',
+  appJs.includes('Math.min(W, H) / 2 - 70 - maxR - 16') &&
+  appJs.includes('Math.min(ox, W - tw - 6)') && appJs.includes('Math.max(ox, tw + 6)'));
 
 // Filter tests on the verified table
 function resetMain() {
