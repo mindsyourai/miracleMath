@@ -1,4 +1,4 @@
-# Pasted-page claims check — miracleMath
+# Pasted-page claims check — Mizan
 
 **Source:** pasted article text supplied by MK (no URL or site name given), treated as
 **"pasted article text, source unidentified"**. Sections checked: Exceptional Knowledge;
