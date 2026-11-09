@@ -56,6 +56,27 @@ def main():
         return [], False
     facts, facts_sample = unwrap(quran_facts, "facts")
     numbers, numbers_sample = unwrap(corpus_numbers, "numbers")
+    # Surah list (Agent A): bare list or {"surahs": [...]}; absent file is
+    # tolerated — the page then shows a "list coming" note, not a crash.
+    surahs_raw = load_optional("surahs.json")
+    if isinstance(surahs_raw, dict):
+        surahs = surahs_raw.get("surahs", []) or []
+    elif isinstance(surahs_raw, list):
+        surahs = surahs_raw
+    else:
+        surahs = []
+    # Additional names/attributes beyond the 99 (Agent A): bare list or
+    # {"more_names": [...]} / {"verified_additional": [...]}; absent file is
+    # tolerated — the "More than 99" note renders only when data exists.
+    more_raw = load_optional("more_names.json")
+    if isinstance(more_raw, dict):
+        more_names = (more_raw.get("verified_additional", []) or
+                      more_raw.get("more_names", []) or
+                      more_raw.get("names", []) or [])
+    elif isinstance(more_raw, list):
+        more_names = more_raw
+    else:
+        more_names = []
 
     payload = {
         "generated": "2026-11-08",
@@ -87,6 +108,8 @@ def main():
         "quran_facts_sample": facts_sample,
         "corpus_numbers": numbers,
         "corpus_numbers_sample": numbers_sample,
+        "surahs": surahs,
+        "more_names": more_names,
         "methodology": {
             "roots": roots.get("methodology", {}),
             "names": names.get("methodology", {}),
@@ -124,6 +147,7 @@ def main():
           f"{' (SAMPLE)' if payload['quran_facts_sample'] else ''} "
           f"corpus_numbers={len(payload['corpus_numbers'])}"
           f"{' (SAMPLE)' if payload['corpus_numbers_sample'] else ''} "
+          f"surahs={len(payload['surahs'])} more_names={len(payload['more_names'])} "
           f"findings_with_assumptions={sum(1 for f in payload['findings'] if f.get('assumptions'))}")
 
 
