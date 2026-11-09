@@ -1,4 +1,4 @@
-/* miracleMath app — renders from window.MIRACLE_DATA (embedded data.js).
+/* Mizan app — renders from window.MIRACLE_DATA (embedded data.js).
    No network calls, no backend. Charts are CSS bars; the Name network is a
    guarded canvas drawing (no-ops safely where canvas is unavailable).
    Shared by index.html (verified counts only) and unverified.html
