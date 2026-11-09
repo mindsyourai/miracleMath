@@ -1,4 +1,4 @@
-/* Cold-load stub test for the miracleMath research redesign (2026-11-08):
+/* Cold-load stub test for the Mizan research redesign (2026-11-08):
    loads web/data.js + web/locations.js + web/app.js in a minimal fake DOM
    twice — once as the main page (index.html ids present) and once as the
    unverified page (unverified.html ids present) — and asserts the split:
@@ -307,7 +307,7 @@ check('mizan: 7 highlight rows with Tanzil Arabic + verse links',
   indexHtml.includes('ٱلْمِيزَانَ') && indexHtml.includes('occurs in 9 verses') &&
   indexHtml.includes('quran.com/55/7') && indexHtml.includes('quran.com/101/6'));
 check('mizan: no miracleMath display text left (repo URLs excepted)',
-  !indexHtml.replace(/github\.com\/mindsyourai\/miracleMath/g, '').includes('miracleMath'));
+  !indexHtml.replace(/github\.com\/mindsyourai\/mizan/g, '').includes('miracleMath'));
 
 // Recolor checks: light palette on both pages (shared styles.css), no dark-theme leftovers.
 const css = fs.readFileSync('web/styles.css', 'utf8');
@@ -355,7 +355,7 @@ const unvHtmlRaw = fs.readFileSync('web/unverified.html', 'utf8');
 check('unverified: Mizan title + favicon, no miracleMath display text',
   unvHtmlRaw.includes('<title>Unverified claims — Mizan</title>') &&
   unvHtmlRaw.includes('href="images/mizan-favicon.png"') &&
-  !unvHtmlRaw.replace(/github\.com\/mindsyourai\/miracleMath/g, '').includes('miracleMath'));
+  !unvHtmlRaw.replace(/github\.com\/mindsyourai\/mizan/g, '').includes('miracleMath'));
 check('unverified: renders exactly 27 rows', count(/<tr class="frow">/g, uHtml()) === 27,
   'got ' + count(/<tr class="frow">/g, uHtml()));
 check('unverified: 17 differs badges', count(/badge bad/g, uHtml()) === 17, 'got ' + count(/badge bad/g, uHtml()));
