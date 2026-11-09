@@ -36,7 +36,7 @@ with `null` for parts a set does not cover. Sets that do not apply to a
 finding are omitted. Seven findings are not word/letter counts at all
 (literature/provenance/bibliographic facts) and carry no numbers.
 
-Coverage: **40 of 64** findings reconcile under at least one set — 11 under
+Coverage: **40 of 63** findings reconcile under at least one set — 11 under
 the scholar's stated rule (A5), 25 under the reconstructed rule (A6), 33
 under one of the standard sets (A1–A4). **17** counted findings reconcile
 under no set. **7** are not counts.
@@ -54,9 +54,9 @@ under no set. **7** are not counts.
 | sea-land-32-13 | 32/13 | 41/12 | — | Sea 32 reproduces as definite singular البحر; land 13 reproduces under no rule — sense-correct land is 12, surface البر is 21. |
 | man-woman-24-24 | 24/24 | 57/85 | A3, A6 | 24/24 is the singular-only surface selection; root totals are 57/85, singular lemmas 29/26. |
 | life-death-145 | 145/145 | 184/165 | — | No rule reproduces 145/145 — whole roots 184/165, nouns 76/50, surface families 125/171. |
-| sun-moon-33-27 | 33/33/27 | 33/43/27 | A3, A5 | 33/33/27 reproduces under Yahya's stated simple-forms rule and the surface rule; the root/lemma rule gives light 43 (49 with منير). |
+| sun-moon-33-27 | 33/33/27 | 33/43/27 | A3, A5 | 33/33/27 reproduces under the stated simple-forms rule and the surface rule; the root/lemma rule gives light 43 (49 with منير). |
 | muhammad-4 | 4 | 4 | A1, A2, A3, A6 | 4 under every rule tried (surface, lemma and root-narrowed). |
-| iman-kufr-25 | 25/25 | 45/37 | A3, A5 | 25/25 is the bare (unsuffixed) noun selection — Yahya's stated '(without genitive)'; lemma totals are 45/37. |
+| iman-kufr-25 | 25/25 | 45/37 | A3, A5 | 25/25 is the bare (unsuffixed) noun selection — the stated '(without genitive)'; lemma totals are 45/37. |
 | zakah-blessing-32 | 32/32 | 32/32 | A1, A2, A6 | 32/32 reproduces under the root and lemma rules; plain substrings give 67/5. |
 | say-they-said-332 | 332/332 | 332/332 | A1, A2, A6 | 332/332 reproduces under the lemma/POS rule; the plain surface count of قل gives 333 (one non-imperative token). |
 | plant-tree-26 | 26/26 | 26/26 | A1, A2, A6 | 26/26 reproduces under the root rule (tree minus the 4:65 dispute verb); substrings give 11/27. |
@@ -74,7 +74,6 @@ under no set. **7** are not counts.
 | righteous-wicked-6-3 | 6/3 | 6/4 | A3, A6 | 6/3 reproduces as exact surface forms; under the lemma rule the wicked side is 4 (الفجرة 80:42). |
 | summer-winter-5 | 5/5 | 1/1 | — | Summer/winter occur once each (both 106:2); heat 15 / cold 5 — no rule gives 5/5. |
 | human-being-65 | 65 | 65 | A1, A3, A6 | 65 is the انسان surface count (and the انسان subset of the lemma); the whole lemma is 71 (6 collective أناس/أناسيّ). |
-| harun-yahya-populariser | — | — | — | Not a word/letter count — a literature fact (Yahya popularised the paired-count list); no counting assumption applies. |
 | qaf-57-57 | 57/57 | 57/57 | A4, A5 | 57/57 reproduces under the project letter convention and Khalifa's stated rule; the basmalahs contain no ق. |
 | nun-132-vs-133 | 133 | 131 | A5 | 133 requires Khalifa's stated rule (the spelled-out initial ن و ن counts as two); the written text gives 132 with the basmalah, 131 without it. |
 | sad-153-vs-152 | 97/26/29 | 98/26/29 | A5 | 152 requires Khalifa's stated textual rule (7:69 read بسطة with س); the Tanzil text reads بصطة, giving 153. |
@@ -112,9 +111,11 @@ under no set. **7** are not counts.
 
 ## Status corrections
 
-**None.** Recomputation confirmed every stored `our_status`: the tallies
-are unchanged at 37 confirmed / 17 differ / 10 cannot verify (35 Scholar
-Findings / 29 Popular Claims). Two numbers in the stored prose were found
+**None.** Recomputation confirmed every stored `our_status`. The tallies
+moved to 37 confirmed / 17 differ / 9 cannot verify (35 Scholar
+Findings / 21 Counted by this site / 7 Popular claims) when the
+harun-yahya-populariser literature fact was dropped in the 2026-11-09
+re-attribution; no stored status itself changed. Two numbers in the stored prose were found
 to be one off, neither changing any status, and are recorded here rather
 than by editing the stored fields:
 
