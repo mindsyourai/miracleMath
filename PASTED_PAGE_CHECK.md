@@ -14,8 +14,10 @@ Revelation; Conclusion.
 `data/root_counts_script.py`, `data/names_script.py` and `data/scholar_spotcheck.py`
 — no new rules invented silently; where a claim needs a different rule to reproduce,
 that rule is stated. No live file or data file was changed in this pass — this is a
-check, not a publish. The Harun Yahya framing decision is still open with MK; Yahya
-overlap is noted only, framing unchanged.
+check, not a publish. The Harun Yahya framing is decided (2026-11-09): his
+21 confirmed counts are now the site's own script-verified counts, the 7
+unconfirmed ones are circulating popular claims, and his name is no longer
+used as a source on the site.
 
 **Date:** 2026-11-07/08. Checkers: A (word counts) and B (structural/arithmetic).
 
