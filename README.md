@@ -1,8 +1,8 @@
-# miracleMath — The Mathematics of the Quran
+# Mizan — The Quran in numbers
 
 A static web app showing word counts and mathematics of the Quran, computed by
 script from the Quranic Arabic Corpus and cross-checked against the Tanzil
-Uthmani text. Live at https://mindsyourai.github.io/miracleMath/
+Uthmani text. Live at https://mindsyourai.github.io/mizan/
 
 ## What is inside
 
